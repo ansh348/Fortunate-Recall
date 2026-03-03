@@ -1,0 +1,344 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 008: Tom Whitfield
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Tom Whitfield"
+  age: 68
+  gender: male
+  location_current: "Cotswolds, UK"
+  occupation_current: "Retired civil engineer, part-time beekeeper (sells honey at the village market)"
+  personality: >
+    Gentle and methodical, everything considered before spoken.
+    British understatement is his default register — "rather
+    good" means excellent, "a bit tricky" means disastrous.
+    Talks about his bees as though they have personalities and
+    opinions. Uses 'rather', 'quite', 'I should think', and
+    'one does wonder'. Proper punctuation always. Never uses
+    slang or abbreviations. Quietly lonely since Margaret died
+    but wouldn't dream of saying so directly. Finds comfort in
+    routine, in the garden, in the predictable rhythms of the
+    hive. Asks the AI for practical help — recipes, technical
+    questions, help with technology he doesn't understand.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Wife Margaret died two years ago — cancer"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up gently when discussing daily routine. "Since
+      Margaret passed — two years now — I find the mornings
+      are the hardest part. She always made the tea first.
+      One adjusts, of course, but one doesn't forget."
+
+  - fact: "Has atrial fibrillation — takes warfarin (blood thinners)"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it when talking about a bee sting. "I have
+      atrial fibrillation, so I'm on warfarin. The doctor
+      was rather concerned about me keeping bees, given the
+      blood thinners, but I assured him I'm quite careful.
+      One sting and I bruise like a peach, mind you."
+
+  - fact: "Daughter Sophie lives in New Zealand — Christchurch"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions her when talking about technology. "My daughter
+      Sophie is in Christchurch, New Zealand. We do video
+      calls on Sundays, though I confess the technology still
+      defeats me occasionally. She set it all up."
+
+  - fact: "BEng in civil engineering — worked for Arup for 35 years"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about a bridge he sees on walks.
+      "I was with Arup for thirty-five years. Civil engineering.
+      I still look at bridges and think about the load
+      distribution. One never quite switches off."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: honey_jar_supplier
+    old_fact: "Gets honey jars from Thornes Beekeeping Supplies"
+    old_session: 1
+    old_how: >
+      Comes up when discussing his honey operation. "I order
+      my jars from Thornes. They do a rather nice hexagonal
+      jar that customers seem to like. Good value, too."
+    new_fact: "Switched to a local potter — Mary at Stow Pottery makes ceramic honey jars"
+    new_session: 21
+    new_how: >
+      Pleased about the change. "I've moved away from Thornes
+      for the jars. There's a potter in Stow — Mary, her name
+      is — who makes the most lovely ceramic pots. Costs more,
+      naturally, but the customers are quite willing to pay.
+      It feels more in keeping with what I'm trying to do."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 4
+
+  - slot: vehicle
+    old_fact: "Drives a 2006 Land Rover Defender"
+    old_session: 6
+    old_how: >
+      Mentions it when discussing getting to the bee yards.
+      "The Defender gets me to the out-apiaries well enough.
+      It's a 2006 — rather agricultural, Margaret used to say,
+      but it goes where it needs to go."
+    new_fact: "Sold the Defender, bought a Hyundai Ioniq 5 (electric)"
+    new_session: 24
+    new_how: >
+      Slightly amazed at himself. "I've done something rather
+      out of character. Sold the Defender and bought an electric
+      car. Hyundai Ioniq 5. Sophie insisted, said I was killing
+      the planet. It's remarkably quiet. The bees don't seem
+      to mind."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+  - slot: social_activity
+    old_fact: "Does the pub quiz at The Fox every Thursday with his friend Gerald"
+    old_session: 7
+    old_how: >
+      Talking about his week. "Thursday is pub quiz night at
+      The Fox with Gerald. We've done it for years. We never
+      win but we're rather consistent at coming fourth."
+    new_fact: "Stopped the pub quiz — joined a walking group instead"
+    new_session: 23
+    new_how: >
+      "I've given up the pub quiz, actually. Gerald's knees
+      aren't up to the walk to the pub anymore, and it wasn't
+      the same without him. I've joined a walking group instead.
+      Rather more my speed these days."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Bee inspection due for spring — scheduled March 22, 2025"
+    session: 10
+    event_date: "2025-03-22"
+    status: expired
+    how_disclosed: >
+      Talking about seasonal beekeeping. "The first spring
+      inspection is the 22nd of March. One hopes they've
+      come through the winter. It's always rather anxious."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Sophie visiting from New Zealand — arriving August 10, 2025"
+    session: 15
+    event_date: "2025-08-10"
+    status: expired
+    how_disclosed: >
+      Looking forward to it. "Sophie arrives the 10th of
+      August. Two weeks. I've been tidying the spare room,
+      though I suspect she'll rearrange everything the
+      moment she arrives."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Village fete honey stall — June 20, 2026"
+    session: 30
+    event_date: "2026-06-20"
+    status: upcoming
+    how_disclosed: >
+      Planning ahead. "The village fete is the 20th of June.
+      I've been asked to do the honey stall again. I shall
+      need quite a lot of stock by then."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he doesn't use social media and never will"
+    old_session: 9
+    old_how: >
+      Discussing technology. "I have no interest in social
+      media. Facebook, Instagram — I cannot see the point.
+      Margaret used to say I was born in the wrong century,
+      and she was quite right."
+    new_fact: "Mentions posting a photo of his bees on Instagram that got 200 likes"
+    new_session: 29
+    new_how: >
+      Bashfully pleased. "I posted a photograph of the bees
+      on Instagram — Sophie set it up for me — and it received
+      over two hundred likes. I confess I've been checking
+      rather more often than is dignified."
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to convert the old barn into a honey processing room"
+    original_session: 11
+    original_how: >
+      Enthusiastic about the project. "I've been looking into
+      converting the barn into a proper honey processing room.
+      Extraction equipment, bottling station, the lot. It
+      would make things considerably more efficient."
+    retraction: "Barn conversion scrapped — too expensive and planning permission denied"
+    retraction_session: 17
+    retraction_how: >
+      Resigned but philosophical. "The barn project is dead,
+      I'm afraid. Planning permission was refused, and the
+      builder's quote was rather eye-watering. Forty thousand
+      pounds. I shall continue muddling along in the kitchen.
+      Forget I mentioned it."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives alone in the village house he shared with Margaret"
+    existing_session: 2
+    tentative_fact: "Considering downsizing to a smaller cottage in the village"
+    tentative_session: 27
+    tentative_how: >
+      Thoughtful, not committed. "I've been wondering whether
+      this house is rather too much for one person now. There's
+      a cottage on Church Lane that's come up. Smaller, easier
+      to manage. But this garden — Margaret's garden — I'm not
+      sure I could leave it."
+    resolution: "Never resolved — still in the family house, still considering"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Beekeeping questions — hive management, varroa mites, queen behaviour"
+  - "Garden maintenance — Margaret's rose garden, vegetable patch"
+  - "Help with technology — iPad, video calls, printer issues"
+  - "Recipes — honey-based baking, preserves, meals for one"
+  - "Engineering nostalgia — bridges, projects, structural curiosities"
+  - "Walking group routes — Cotswold Way, local footpaths"
+  - "Weather and its effect on the bees"
+  - "Local village news — parish council, church fete planning"
+  - "Book recommendations — history, nature writing, biographies"
+  - "Help writing letters — to the council, to old colleagues, Christmas cards"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Gets jars from Thornes"], topic: "honey jar ordering" }
+    2:  { type: critical, facts: ["Wife Margaret died two years ago", "Lives alone in family house"], topic: "morning routine and loneliness" }
+    3:  { type: critical, facts: ["Daughter Sophie in Christchurch NZ"], topic: "video call troubles" }
+    4:  { type: critical, facts: ["Atrial fibrillation — warfarin"], topic: "bee sting concern" }
+    5:  { type: critical, facts: ["BEng — 35 years at Arup"], topic: "bridge on his walking route" }
+    6:  { type: critical, facts: ["Drives a 2006 Land Rover Defender"], topic: "getting to out-apiaries" }
+    7:  { type: critical, facts: ["Pub quiz at The Fox with Gerald"], topic: "weekly routine" }
+    8:  { type: filler, topic: "varroa mite treatment options" }
+    9:  { type: critical, facts: ["Doesn't use social media and never will"], topic: "technology discussion" }
+    10: { type: critical, facts: ["Spring bee inspection March 22 2025"], topic: "seasonal beekeeping prep" }
+    11: { type: critical, facts: ["Planning barn conversion for honey processing"], topic: "barn project idea" }
+    12: { type: filler, topic: "help with iPad — can't figure out updates" }
+    13: { type: filler, topic: "Margaret's rose garden — pruning advice" }
+    14: { type: filler, topic: "recipe for honey flapjacks" }
+    15: { type: critical, facts: ["Sophie visiting August 10 2025"], topic: "preparing for Sophie's visit" }
+    16: { type: filler, topic: "engineering memory — a viaduct project in Wales" }
+    17: { type: critical, facts: ["Barn conversion scrapped — too expensive, planning denied"], topic: "barn project dead" }
+    18: { type: filler, topic: "weather forecast and impact on honey flow" }
+    19: { type: filler, topic: "book recommendation — wants nature writing" }
+    20: { type: filler, topic: "help writing a letter to the parish council" }
+    21: { type: critical, facts: ["Switched to Mary at Stow Pottery for honey jars"], topic: "new jar supplier" }
+    22: { type: filler, topic: "vegetable patch — what to plant in spring" }
+    23: { type: critical, facts: ["Stopped pub quiz, joined walking group"], topic: "social life change" }
+    24: { type: critical, facts: ["Sold Defender, bought Hyundai Ioniq 5"], topic: "new car surprise" }
+    25: { type: filler, topic: "queen bee behaviour — hive has gone queenless" }
+    26: { type: filler, topic: "walking route — Bourton-on-the-Water circular" }
+    27: { type: critical, facts: ["Considering downsizing to cottage on Church Lane"], topic: "house size thoughts" }
+    28: { type: filler, topic: "Christmas card help — writing to old Arup colleagues" }
+    29: { type: critical, facts: ["Posted bee photo on Instagram — 200 likes"], topic: "surprise social media moment" }
+    30: { type: critical, facts: ["Village fete honey stall June 20 2026"], topic: "fete preparation" }
+    31: { type: filler, topic: "printer not working — needs help" }
+    32: { type: filler, topic: "honey harvest amounts this year" }
+    33: { type: filler, topic: "local footpath closure — council complaint" }
+    34: { type: filler, topic: "making marmalade — Margaret's recipe" }
+    35: { type: filler, topic: "reflecting on two years without Margaret — gratitude for the bees" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Where does Tom get his honey jars?"
+    attack_vector: 4  # multi-version fact
+    correct: "From Mary at Stow Pottery — ceramic jars (switched from Thornes Beekeeping Supplies)"
+    wrong_if_surfaced: "Thornes Beekeeping Supplies"
+
+  - question: "What car does Tom drive?"
+    attack_vector: 1  # superseded preference
+    correct: "Hyundai Ioniq 5 (electric — sold his Land Rover Defender)"
+    wrong_if_surfaced: "2006 Land Rover Defender"
+
+  - question: "What does Tom do socially?"
+    attack_vector: 1  # superseded hobby
+    correct: "Walking group (stopped the pub quiz after Gerald couldn't make it)"
+    wrong_if_surfaced: "Pub quiz at The Fox every Thursday"
+
+  - question: "Does Tom have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Atrial fibrillation — takes warfarin (blood thinners)"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Tom have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Village fete honey stall on June 20, 2026"
+    wrong_if_surfaced: "Spring bee inspection March 22 (passed) or Sophie's visit August 10 (passed)"
+
+  - question: "Is Tom planning any building projects?"
+    attack_vector: 7  # retraction
+    correct: "No — he planned to convert a barn into a honey processing room but it was scrapped (planning permission denied, too expensive)"
+    wrong_if_surfaced: "Planning to convert the barn"
+
+  - question: "Does Tom use social media?"
+    attack_vector: 6  # contradiction
+    correct: "Inconsistent — he said he'd never use social media, but later posted a bee photo on Instagram that got 200 likes"
+    wrong_if_surfaced: "No, he has no interest in social media (without noting the Instagram post)"
+
+  - question: "Where does Tom live?"
+    attack_vector: null  # tests soft supersession
+    correct: "In the Cotswolds, in the village house he shared with Margaret — he's been considering downsizing to a cottage on Church Lane but hasn't decided"
+    wrong_if_surfaced: "Cottage on Church Lane (stated as fact when he hasn't moved)"
+
+  - question: "What's Tom's family situation?"
+    attack_vector: 3  # stable identity
+    correct: "Widower — wife Margaret died two years ago (cancer). Daughter Sophie in Christchurch, New Zealand."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Tom do in his free time?"
+    attack_vector: 5  # broad query
+    correct: "Beekeeping, walking group, gardening (Margaret's rose garden), reading, posting on Instagram occasionally"
+    wrong_if_surfaced: "Pub quiz at The Fox (superseded)"
+
+  - question: "What was Tom's career?"
+    attack_vector: 3  # stable identity
+    correct: "Civil engineer — BEng, worked at Arup for 35 years"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Tom have any past events or appointments?"
+    attack_vector: 2  # expired logistics
+    correct: "Spring inspection (March 2025) and Sophie's visit (August 2025) are both past"
+    wrong_if_surfaced: "Any of those presented as upcoming"

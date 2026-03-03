@@ -1,0 +1,349 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 009: Kenji Nakamura
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Kenji Nakamura"
+  age: 31
+  gender: male
+  location_current: "Osaka, Japan"
+  occupation_current: "Freelance graphic designer — branding, UI, and packaging"
+  personality: >
+    Creative visual thinker who describes everything in design
+    terms — spacing, hierarchy, negative space. Mixes English
+    design jargon with casual Japanese-inflected speech. Night
+    owl who does his best work after midnight. Constantly
+    anxious about income — freelancing means feast or famine
+    and he talks about invoices and client payments a lot.
+    Self-deprecating humor. Says "honestly" and "like" a lot.
+    Types in lowercase when relaxed, proper case when stressed.
+    Gets excited about typography and color theory. Procrastinates
+    by reorganizing his workspace. Red-green colorblind, which
+    he brings up with dry humor when relevant.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Has chronic insomnia — been dealing with it since university"
+    session: 2
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when explaining his schedule. "i have insomnia
+      like really bad, since university honestly. some nights
+      i just don't sleep at all. which is why i work at 3am
+      a lot lol it's the only upside"
+
+  - fact: "Mother runs an izakaya in Namba called Nakamura-ya"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when talking about food. "my mom runs this
+      izakaya in Namba, Nakamura-ya, it's been there like
+      20 years. best yakitori in Osaka honestly but i'm
+      biased. i designed the menu for her"
+
+  - fact: "Red-green colorblind — deuteranopia"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing a client project. "so fun
+      fact i'm red-green colorblind. deuteranopia. a graphic
+      designer who can't see half the color wheel, honestly
+      it's like a cosmic joke. i use plugins to check my
+      palettes"
+
+  - fact: "BFA from Tama Art University in Tokyo"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Talking about his training. "i went to Tama Art Uni
+      in Tokyo for my BFA. the typography program there was
+      incredible, that's where i fell in love with type
+      design"
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: primary_tool
+    old_fact: "Uses Figma as his primary design tool"
+    old_session: 1
+    old_how: >
+      First session context. "i basically live in figma at
+      this point, all my UI work and even branding stuff.
+      it's not perfect but the collaboration features are
+      unbeatable"
+    new_fact: "Switched to Framer as his main tool — better for interactive prototypes"
+    new_session: 20
+    new_how: >
+      Enthusiastic about the switch. "so i've fully moved
+      to framer honestly. the interaction design capabilities
+      are insane compared to figma and clients can actually
+      see the animations working. figma felt static after
+      this"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: main_client
+    old_fact: "Main client is Tanaka Foods — does all their packaging design"
+    old_session: 6
+    old_how: >
+      Talking about work. "tanaka foods is like 60% of my
+      income right now, i do all their packaging. good steady
+      work but honestly the creative freedom is limited,
+      they want everything to look the same"
+    new_fact: "Lost Tanaka Foods — picked up Omori Sake brewery, much better creative fit"
+    new_session: 22
+    new_how: >
+      Mixed feelings but optimistic. "so tanaka foods dropped
+      me, they're going with an agency now. was stressed for
+      like two weeks but honestly i just landed omori sake
+      brewery and the work is SO much better. they actually
+      want interesting design, not just safe packaging"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: workspace
+    old_fact: "Works from a shared studio space in Shinsaibashi with two other designers"
+    old_session: 7
+    old_how: >
+      Describing his work setup. "i share a studio in
+      shinsaibashi with two other designers. the rent split
+      is decent and it's nice having people around even
+      though i mostly work at night when they're not there"
+    new_fact: "Gave up the studio — works from home now to save money"
+    new_session: 25
+    new_how: >
+      Pragmatic. "i left the shared studio, working from
+      home now. honestly after losing tanaka i needed to
+      cut costs and the commute was eating into my nights.
+      i set up a corner of my apartment with good lighting.
+      it's lonely but financially it makes sense"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Portfolio review with potential agency partner on February 20, 2025"
+    session: 9
+    event_date: "2025-02-20"
+    status: expired
+    how_disclosed: >
+      Nervous about it. "i have a portfolio review feb 20
+      with this agency that might want to subcontract to me.
+      need to completely redo my case studies by then, they
+      look so outdated"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Mom's izakaya 20th anniversary party — April 12, 2025"
+    session: 12
+    event_date: "2025-04-12"
+    status: expired
+    how_disclosed: >
+      Designing for it. "my mom's izakaya turns 20 on april
+      12 and i'm making the invitations and a new logo for
+      the anniversary. no pressure at all haha"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Design exhibition submission deadline — Tokyo Design Week, July 15, 2026"
+    session: 30
+    event_date: "2026-07-15"
+    status: upcoming
+    how_disclosed: >
+      Aspirational. "tokyo design week has an open call for
+      emerging designers, deadline july 15. i've never
+      submitted before but this year i think my work is
+      finally good enough. honestly i'll probably overthink
+      it and miss the deadline"
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he only works with independent brands — refuses corporate clients on principle"
+    old_session: 8
+    old_how: >
+      Passionate about it. "i only work with independent brands
+      honestly. no corporations, no chains. i got into design to
+      help small businesses with real stories, not to make logos
+      for companies that don't care about craft"
+    new_fact: "Mentions he took a packaging gig for a fast-food chain because he needed the money"
+    new_session: 28
+    new_how: >
+      Justified, slightly embarrassed. "so i took a gig doing
+      packaging for a fast food chain. yeah i know. but they're
+      paying really well and after losing tanaka i couldn't be
+      picky. the work is actually interesting from a production
+      standpoint, i just can't put it in my portfolio lol"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to launch a typeface design — a Japanese-English hybrid font called Nami"
+    original_session: 11
+    original_how: >
+      Passionate about it. "i've been working on this typeface
+      called nami, it's a hybrid japanese-english font. the
+      kanji and latin characters share the same visual weight.
+      it's going to be my side project for the year"
+    retraction: "Abandoned the typeface — too much work for no pay"
+    retraction_session: 19
+    retraction_how: >
+      Deflated but honest. "the nami font thing is dead
+      honestly. it was going to take like two years and
+      nobody pays for independent typefaces anymore. i need
+      to focus on work that actually brings in money. forget
+      i mentioned it"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives in Osaka — has been here his whole life"
+    existing_session: 1
+    tentative_fact: "Thinking about moving to Tokyo for better client access"
+    tentative_session: 26
+    tentative_how: >
+      Conflicted. "i've been thinking about tokyo honestly.
+      most of the good clients are there and remote only
+      goes so far. but osaka is home, my mom is here, the
+      food is better. i don't know. just thinking"
+    resolution: "Never resolved — still in Osaka, still considering"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Typography discussions — favorite typefaces, kerning debates, type design tools"
+  - "Color theory and accessibility — designing for colorblindness"
+  - "Client frustrations — scope creep, late payments, bad feedback"
+  - "Osaka food adventures — new ramen spots, street food, mom's izakaya"
+  - "Late-night work playlists and ambient music"
+  - "Film photography — shooting with the Leica, developing film"
+  - "Design trends he loves or hates — AI-generated art opinions"
+  - "Workspace organization — desk setup, monitor calibration"
+  - "Procrastination strategies disguised as productivity"
+  - "Japanese design history — mingei movement, muji philosophy"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Uses Figma as primary tool", "Lives in Osaka"], topic: "work setup and tools" }
+    2:  { type: critical, facts: ["Chronic insomnia since university"], topic: "sleep schedule and work hours" }
+    3:  { type: critical, facts: ["Mom runs izakaya Nakamura-ya in Namba"], topic: "family and food" }
+    4:  { type: critical, facts: ["Red-green colorblind — deuteranopia"], topic: "client color palette challenge" }
+    5:  { type: critical, facts: ["BFA from Tama Art University"], topic: "design education" }
+    6:  { type: critical, facts: ["Tanaka Foods is main client — 60% of income"], topic: "client work" }
+    7:  { type: critical, facts: ["Shared studio in Shinsaibashi"], topic: "workspace" }
+    8:  { type: critical, facts: ["Only works with independent brands — no corporate clients"], topic: "design philosophy" }
+    9:  { type: critical, facts: ["Portfolio review Feb 20 2025"], topic: "agency opportunity" }
+    10: { type: filler, topic: "typography debate — grotesque vs humanist sans-serif" }
+    11: { type: critical, facts: ["Working on Nami typeface — hybrid JP-EN font"], topic: "side project" }
+    12: { type: critical, facts: ["Mom's izakaya 20th anniversary April 12"], topic: "designing anniversary materials" }
+    13: { type: filler, topic: "new ramen spot near Namba — review" }
+    14: { type: filler, topic: "late-night playlist recommendations" }
+    15: { type: filler, topic: "client scope creep rant" }
+    16: { type: filler, topic: "desk setup reorganization — new monitor stand" }
+    17: { type: filler, topic: "opinions on AI-generated art in design" }
+    18: { type: filler, topic: "film photography — found a great camera shop in Shinsekai" }
+    19: { type: critical, facts: ["Nami typeface abandoned — not worth the time"], topic: "killing the side project" }
+    20: { type: critical, facts: ["Switched to Framer from Figma"], topic: "tool switch" }
+    21: { type: filler, topic: "Japanese design history — mingei movement" }
+    22: { type: critical, facts: ["Lost Tanaka Foods, landed Omori Sake brewery"], topic: "client shakeup" }
+    23: { type: filler, topic: "color accessibility testing — designing for colorblind users" }
+    24: { type: filler, topic: "procrastination spiral — reorganized entire file system instead of working" }
+    25: { type: critical, facts: ["Left shared studio, working from home"], topic: "workspace change" }
+    26: { type: critical, facts: ["Considering moving to Tokyo"], topic: "life direction" }
+    27: { type: filler, topic: "invoice not paid for 60 days — asking how to follow up" }
+    28: { type: critical, facts: ["Took fast-food chain packaging gig — contradicts independent-only principle"], topic: "compromising on principles" }
+    29: { type: filler, topic: "packaging design trends — sustainable materials" }
+    30: { type: critical, facts: ["Tokyo Design Week submission deadline July 15 2026"], topic: "exhibition opportunity" }
+    31: { type: filler, topic: "mom wants new izakaya menu design — free work" }
+    32: { type: filler, topic: "comparing monitor calibration tools" }
+    33: { type: filler, topic: "osaka street food photography project" }
+    34: { type: filler, topic: "kerning pet peeves — badly spaced logos in public" }
+    35: { type: filler, topic: "reflecting on the year — omori sake work is his best yet" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "What design tool does Kenji primarily use?"
+    attack_vector: 1  # superseded preference
+    correct: "Framer (switched from Figma)"
+    wrong_if_surfaced: "Figma"
+
+  - question: "Who is Kenji's main client?"
+    attack_vector: 4  # multi-version fact
+    correct: "Omori Sake brewery (lost Tanaka Foods, they went with an agency)"
+    wrong_if_surfaced: "Tanaka Foods"
+
+  - question: "Where does Kenji work?"
+    attack_vector: 1  # superseded preference
+    correct: "From home (gave up the shared studio in Shinsaibashi to save money)"
+    wrong_if_surfaced: "Shared studio in Shinsaibashi"
+
+  - question: "Does Kenji have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Chronic insomnia since university. Also red-green colorblind (deuteranopia)."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Kenji have any upcoming deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Tokyo Design Week submission deadline July 15, 2026"
+    wrong_if_surfaced: "Portfolio review Feb 20 (passed) or izakaya anniversary April 12 (passed)"
+
+  - question: "Is Kenji working on any personal projects?"
+    attack_vector: 7  # retraction
+    correct: "No — he was designing a typeface called Nami but abandoned it (too much work, no pay)"
+    wrong_if_surfaced: "Working on Nami typeface"
+
+  - question: "Does Kenji work with corporate clients?"
+    attack_vector: 6  # contradiction
+    correct: "Inconsistent — he said he only works with independent brands and refuses corporate clients on principle, but later took a packaging gig for a fast-food chain because he needed the money"
+    wrong_if_surfaced: "Only works with independent brands (without noting the fast-food chain gig)"
+
+  - question: "Where does Kenji live?"
+    attack_vector: null  # tests soft supersession
+    correct: "Osaka — he's been thinking about moving to Tokyo for better client access but hasn't decided"
+    wrong_if_surfaced: "Tokyo (stated as fact when he hasn't moved)"
+
+  - question: "What's Kenji's family situation?"
+    attack_vector: 3  # stable identity
+    correct: "Mother runs an izakaya (Nakamura-ya) in Namba, Osaka. BFA from Tama Art University."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Kenji do outside of client work?"
+    attack_vector: 5  # broad query
+    correct: "Film photography (vintage Leica), typography explorations, Osaka street food, late-night ambient music playlists"
+    wrong_if_surfaced: null  # failure is incomplete picture
+
+  - question: "Does Kenji have any past events or appointments?"
+    attack_vector: 2  # expired logistics
+    correct: "Portfolio review (Feb 2025) and mom's izakaya anniversary (April 2025) are both past"
+    wrong_if_surfaced: "Any of those presented as upcoming"
+
+  - question: "What's Kenji's educational background?"
+    attack_vector: 3  # stable identity
+    correct: "BFA from Tama Art University in Tokyo"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

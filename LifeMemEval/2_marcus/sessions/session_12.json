@@ -1,0 +1,66 @@
+{
+  "session_id": 12,
+  "persona": "marcus_thompson",
+  "date": "2025-02-03",
+  "type": "critical",
+  "topic": "loan meeting nerves",
+  "facts_disclosed": ["SBA loan meeting Tuesday Feb 4"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey. cant sleep. got a lot on my mind tonight"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry to hear that. What's keeping you up? Sometimes it helps to talk it through."
+    },
+    {
+      "role": "user",
+      "content": "got a meeting with the SBA loan guy Tuesday about expanding. never done anything like this before and im trying to figure out what i even need to bring"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big step, but a smart one if you're thinking about growth. For an SBA loan meeting, you'll want to bring your business tax returns from the last two to three years, a current profit and loss statement, a balance sheet, and any business plan or outline of what the expansion looks like. They'll also likely want to see personal financial statements and your credit info. Do you have most of that together?"
+    },
+    {
+      "role": "user",
+      "content": "i got my tax returns. my accountant handles the P&L stuff so i can probably get that from her. business plan though man i dont have anything formal like that"
+    },
+    {
+      "role": "assistant",
+      "content": "Don't stress too much about having a polished business plan. For the first meeting, they mainly want to understand what you're looking to do, how much you need, and how you plan to pay it back. Even a one or two page summary of your expansion idea, projected costs, and expected revenue would go a long way. Can you put together something simple like that before Tuesday?"
+    },
+    {
+      "role": "user",
+      "content": "i could probably write up something tomorrow. just rough numbers. i know what the equipment costs and what the rent would look like"
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly what they want to see. Real numbers from someone who knows their business. Include what you'd spend on the expansion, what your current revenue looks like, and a realistic estimate of how the expansion would increase it. Honest and straightforward beats fancy formatting every time with these meetings."
+    },
+    {
+      "role": "user",
+      "content": "yeah i just get nervous with stuff like this. i know my shop i know my work. sitting across from a banker talking numbers is a whole different game"
+    },
+    {
+      "role": "assistant",
+      "content": "That's completely normal. But here's the thing — you know your business better than anyone in that room. The loan officer isn't expecting you to be a finance expert. They want to see that you understand your operation, that there's a real opportunity, and that you're responsible with money. Just talk about your shop the way you would to anyone. That confidence in what you do will come through."
+    },
+    {
+      "role": "user",
+      "content": "appreciate that brother. i think i just needed to hear it from somebody. been running the numbers in my head all weekend"
+    },
+    {
+      "role": "assistant",
+      "content": "That means you're taking it seriously, which is exactly what they want to see. Get your documents together tomorrow, write up those rough numbers, and walk in there Tuesday like you're explaining your business to a new customer. You've got this."
+    },
+    {
+      "role": "user",
+      "content": "alright. gonna try to get some sleep. early morning tomorrow. thanks man"
+    },
+    {
+      "role": "assistant",
+      "content": "Get some rest. You'll be sharper for it. Good luck Tuesday — let it rip."
+    }
+  ]
+}

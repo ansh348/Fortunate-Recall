@@ -1,0 +1,76 @@
+{
+  "session_id": 18,
+  "persona": "amara_okafor",
+  "date": "2025-06-02",
+  "type": "critical",
+  "topic": "holiday planning",
+  "facts_disclosed": [
+    "Flying to Lagos on 20 December 2025 for Christmas with family"
+  ],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to think through some logistics and you might be useful for this. I'm trying to book flights to Lagos for December and the prices are already eye-watering."
+    },
+    {
+      "role": "assistant",
+      "content": "Lagos flights around December are notoriously expensive, especially closer to Christmas when demand spikes. When exactly are you looking to travel, and are you flexible on dates at all? Even a day or two either way can make a significant difference."
+    },
+    {
+      "role": "user",
+      "content": "I'm flying out on the 20th of December. That's fairly fixed — I need to be there for Christmas with my family and my mother will have opinions if I arrive on Christmas Eve looking half-dead from a red-eye. The return is more flexible, probably early January."
+    },
+    {
+      "role": "assistant",
+      "content": "The 20th is peak season pricing unfortunately — it's the Saturday before Christmas and that corridor is one of the most popular for the Lagos route. For the return, early January tends to be slightly cheaper, especially after the 3rd or 4th. Are you looking at direct flights? British Airways and Virgin Atlantic both do London to Lagos direct, but you can sometimes save substantially with a connection through a hub like Addis Ababa or Casablanca."
+    },
+    {
+      "role": "user",
+      "content": "Direct if at all possible. I've done the Addis Ababa connection before and the layover was grim — six hours in the transit lounge with nothing to show for it. BA from Heathrow is my preference. What sort of prices should I expect for the 20th?"
+    },
+    {
+      "role": "assistant",
+      "content": "For a BA direct flight from Heathrow to Lagos on 20 December, you're likely looking at somewhere between 800 and 1,400 pounds for economy return, depending on how early you book and what fare class is available. Business class would be considerably more — potentially 2,500 to 4,000 pounds. Booking now in early June gives you a reasonable window, but these routes do fill up and prices tend to climb steadily from September onwards. I'd recommend booking sooner rather than later if you're set on the date."
+    },
+    {
+      "role": "user",
+      "content": "I'll do economy. I'm not so grand that I need a flat bed for six hours. Though I will want an aisle seat — I refuse to be trapped by a stranger's sleeping arrangements. Can you remind me what the current baggage allowance is for BA economy to Lagos?"
+    },
+    {
+      "role": "assistant",
+      "content": "For BA long-haul economy to Lagos, the standard allowance is typically one checked bag of 23kg plus one cabin bag (56 x 45 x 25cm) and a personal item. However, this can vary depending on the fare type — the basic economy fares sometimes don't include checked luggage, so it's worth confirming when you book. If you're going for Christmas you'll presumably want room for gifts, so you might want to check whether adding a second checked bag is worth it versus shipping things separately."
+    },
+    {
+      "role": "user",
+      "content": "Good point about the gifts. My mother has a list that seems to grow every year. Last Christmas I brought half of John Lewis in my suitcase. I might need the second bag. What does BA typically charge for an additional checked bag on that route?"
+    },
+    {
+      "role": "assistant",
+      "content": "BA usually charges around 65 to 75 pounds each way for a second checked bag on long-haul routes if you add it online before check-in. It's significantly more expensive if you add it at the airport — sometimes double. Worth adding it at the time of booking if you know you'll need it. Another option is to post a parcel ahead of time via a service like DHL or ParcelForce, which can sometimes work out cheaper for heavier items, though delivery reliability to Lagos can be variable."
+    },
+    {
+      "role": "user",
+      "content": "I'll add the second bag at booking. Posting things to Lagos is an adventure I'd rather not undertake — my cousin sent a parcel last year and it took three weeks and arrived looking like it had been through a war. I'd rather just pay the baggage fee and have everything with me."
+    },
+    {
+      "role": "assistant",
+      "content": "Understandable. Having everything in hand is much more reliable. A few other things worth sorting early: check your passport validity — Nigeria requires at least six months remaining from your travel date, so your passport needs to be valid until at least June 2026. And if you need a visa or your Nigerian passport needs renewing, both can take several weeks."
+    },
+    {
+      "role": "user",
+      "content": "Passport is fine, I renewed it last year. And I travel on my Nigerian passport for Lagos so no visa needed. I just need to sort the flights and then work out how to clear my diary for two weeks without everything falling apart. December is quieter in the courts at least."
+    },
+    {
+      "role": "assistant",
+      "content": "December is generally quieter, though the Crown Court sometimes lists things in the first two weeks of the month that can overrun. If you're flying out on the 20th, you might want to block your diary from around the 15th to give yourself a buffer for any last-minute listings or slippages. Two weeks in Lagos sounds like a proper break — you'll come back recharged."
+    },
+    {
+      "role": "user",
+      "content": "That's the plan. Right, I'll book this evening before the prices climb any further. Thank you — this was more useful than I expected for what started as me complaining about airline pricing."
+    },
+    {
+      "role": "assistant",
+      "content": "Glad it helped. Book tonight if you can — December pricing to Lagos only goes one direction from here. Enjoy the trip when it comes, and if you need help with anything else in the meantime, you know where I am."
+    }
+  ]
+}

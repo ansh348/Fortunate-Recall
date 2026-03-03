@@ -1,0 +1,357 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 015: Samuel Osei
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Samuel Osei"
+  age: 47
+  gender: male
+  location_current: "Minneapolis, Minnesota"
+  occupation_current: "Neurosurgeon — attending at Hennepin County Medical Center"
+  personality: >
+    Precise and calm in all communication, as one would expect
+    from someone who operates on brains for a living. Writes in
+    measured paragraphs, never fragments. Occasional Ghanaian
+    expressions — "ei," "ah but," "by God's grace." Deeply
+    religious Methodist who references faith naturally without
+    preaching. Formal but kind — addresses people with respect,
+    never condescending. Speaks about medicine with reverence.
+    Wife Abena is his intellectual equal and he makes that clear.
+    Quiet pride in his immigrant journey but never boasts. Uses
+    the AI for research, reading recommendations, and thinking
+    through complex problems. Sleeps poorly (CPAP) and mentions
+    fatigue occasionally.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Immigrated from Accra, Ghana at 18 on a scholarship"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing education. "I came to the United
+      States from Accra when I was eighteen, on a scholarship
+      to Johns Hopkins. My mother sold fabric in the Makola
+      Market to help pay for my preparation. By God's grace,
+      here I am."
+
+  - fact: "Wife Abena is a pharmacist at CVS — they met at a Ghanaian church event"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions her with warmth. "Abena — my wife — is a
+      pharmacist. We met at a church event, both Ghanaian,
+      both far from home. She is the more disciplined one,
+      which is saying something for a surgeon. She keeps
+      our household running with precision."
+
+  - fact: "Has sleep apnea — uses a CPAP machine every night"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it when discussing fatigue. "I have sleep
+      apnea. The CPAP machine has improved things considerably,
+      but some nights I still wake feeling as though I have
+      not slept at all. For a surgeon, that is not merely
+      an inconvenience — it is a professional concern."
+
+  - fact: "MD from Johns Hopkins, residency at Mayo Clinic"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Professional context. "I did my medical degree at
+      Hopkins and my residency at Mayo. Seven years of
+      training after medical school. Neurosurgery does
+      not forgive shortcuts."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: surgical_focus
+    old_fact: "Primarily does open craniotomies — traditional neurosurgery approach"
+    old_session: 1
+    old_how: >
+      First session, discussing work. "My practice is
+      primarily open craniotomy — tumor resections, aneurysm
+      clipping. The traditional approach. I trained in an
+      era where the surgeon's hands were the primary instrument."
+    new_fact: "Shifted focus to minimally invasive endoscopic techniques"
+    new_session: 21
+    new_how: >
+      Thoughtful about the evolution. "I have transitioned
+      substantially toward minimally invasive endoscopic
+      approaches. The outcomes are measurably better for
+      patients — shorter recovery, less trauma. It required
+      humility to retrain at my age, but the evidence was
+      unambiguous."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: fitness_routine
+    old_fact: "Swims laps at the YMCA three mornings a week"
+    old_session: 6
+    old_how: >
+      Discussing routine. "I swim at the YMCA three mornings
+      a week. It is the only exercise that does not aggravate
+      my back. The water is forgiving in ways that land-based
+      activity is not."
+    new_fact: "Joined a climbing gym — Vertical Endeavors in Minneapolis"
+    new_session: 23
+    new_how: >
+      Surprisingly enthusiastic. "I have joined a climbing
+      gym. Vertical Endeavors. A colleague persuaded me and
+      I confess I am hooked. The problem-solving aspect appeals
+      to the surgeon in me. Abena says I am having a midlife
+      crisis. She may not be entirely wrong."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+  - slot: housing
+    old_fact: "Lives in a condo in the North Loop neighborhood"
+    old_session: 7
+    old_how: >
+      Mentioning his commute. "We have a condominium in the
+      North Loop. The proximity to the hospital is the primary
+      advantage. Twenty minutes door to door."
+    new_fact: "Bought a house in Edina — more space, better schools for future"
+    new_session: 25
+    new_how: >
+      Settled. "We have moved to Edina. A house with a proper
+      garden. Abena wanted space for entertaining, and I
+      confess the quiet is restorative after long operating
+      days. The commute is longer but the trade-off is
+      worthwhile."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Hospital credentialing committee meeting — March 12, 2025"
+    session: 10
+    event_date: "2025-03-12"
+    status: expired
+    how_disclosed: >
+      Preparing for it. "The credentialing committee meets
+      March 12th. I am presenting the case for expanding our
+      endoscopic program. The data is compelling but hospital
+      politics are their own form of surgery."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Abena's 45th birthday — July 8, 2025"
+    session: 14
+    event_date: "2025-07-08"
+    status: expired
+    how_disclosed: >
+      Planning something special. "Abena turns forty-five on
+      July 8th. I want to take her somewhere meaningful. She
+      has mentioned Cape Coast — but a trip to Ghana requires
+      planning I have not begun."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Keynote speaker at AANS annual meeting — April 25, 2026"
+    session: 30
+    event_date: "2026-04-25"
+    status: upcoming
+    how_disclosed: >
+      Honoured. "I have been invited to deliver a keynote at
+      the American Association of Neurological Surgeons annual
+      meeting. April 25th. The topic is the transition from
+      open to minimally invasive approaches. It is a tremendous
+      honour and a tremendous amount of preparation."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he never discusses cases at home — strict boundary between work and personal life"
+    old_session: 8
+    old_how: >
+      Discussing work-life balance. "I do not bring work
+      home. Abena and I agreed on this early in my career.
+      When I walk through the door, the hospital stays
+      behind. It is the only way to sustain this work
+      over decades."
+    new_fact: "Tells Abena about a complex tumor case in detail over dinner"
+    new_session: 28
+    new_how: >
+      Animated, unusual for him. "I told Abena about the
+      meningioma case last night. The tumour was positioned
+      in such a way that the endoscopic approach opened
+      possibilities I had not considered. I talked for
+      twenty minutes. She listened with that look she gives
+      when she knows I need to process something aloud."
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning a medical mission trip to Ghana — partnering with Remote Area Medical"
+    original_session: 12
+    original_how: >
+      Passionate about giving back. "I am organizing a
+      surgical mission to Ghana through Remote Area Medical.
+      We would provide neurosurgical consultations in Accra
+      and Kumasi. It would mean everything to bring these
+      skills home."
+    retraction: "Ghana mission trip cancelled — hospital won't approve the leave"
+    retraction_session: 19
+    retraction_how: >
+      Disappointed but controlled. "The Ghana mission is
+      off the table. The hospital administration will not
+      approve three weeks of leave given our current surgeon
+      shortage. I understand the reasoning, but it does not
+      make it easier. Perhaps another year."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Attends Calvary Methodist Church in Minneapolis — has been a member for 15 years"
+    existing_session: 3
+    tentative_fact: "Exploring a new church in Edina — closer to the new house"
+    tentative_session: 29
+    tentative_how: >
+      Conflicted. "There is a Methodist congregation in Edina
+      that Abena has suggested we try. It would be more
+      convenient, certainly. But Calvary has been our spiritual
+      home for fifteen years. The community there... one does
+      not leave that lightly. I am praying about it."
+    resolution: "Never resolved — still attending Calvary, still considering"
+    category: IDENTITY_SELF_CONCEPT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Medical research — latest neurosurgery journal articles, clinical trials"
+  - "Church activities — Sunday service reflections, choir, community service"
+  - "Ghanaian food — jollof rice debates, Abena's groundnut soup, fufu"
+  - "Minnesota winters — surviving the cold, icy driving conditions"
+  - "Classical music — plays piano, attends Minnesota Orchestra concerts"
+  - "Reading recommendations — medical history, theology, African literature"
+  - "Hospital politics — department meetings, resource allocation"
+  - "Climbing gym progress — bouldering grades, technique"
+  - "Mentoring residents — teaching philosophy, difficult conversations"
+  - "Gardening in the new Edina house — Abena's vegetable plot plans"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Primarily does open craniotomies"], topic: "surgical practice and approach" }
+    2:  { type: critical, facts: ["Immigrated from Accra at 18 on scholarship"], topic: "education and origins" }
+    3:  { type: critical, facts: ["Wife Abena pharmacist, met at church", "Attends Calvary Methodist 15 years"], topic: "family and faith" }
+    4:  { type: critical, facts: ["Sleep apnea — CPAP machine"], topic: "fatigue and sleep quality" }
+    5:  { type: critical, facts: ["MD Johns Hopkins, residency Mayo"], topic: "training background" }
+    6:  { type: critical, facts: ["Swims at YMCA three mornings a week"], topic: "fitness routine" }
+    7:  { type: critical, facts: ["Condo in North Loop"], topic: "commute and home life" }
+    8:  { type: critical, facts: ["Never discusses cases at home — strict boundary"], topic: "work-life boundaries" }
+    9:  { type: filler, topic: "medical journal article on glioblastoma prognosis" }
+    10: { type: critical, facts: ["Credentialing committee March 12 2025"], topic: "hospital politics" }
+    11: { type: filler, topic: "Sunday service reflection — sermon on compassion" }
+    12: { type: critical, facts: ["Planning Ghana medical mission with RAM"], topic: "giving back" }
+    13: { type: filler, topic: "Ghanaian jollof rice debate — his recipe vs Abena's" }
+    14: { type: critical, facts: ["Abena's 45th birthday July 8"], topic: "birthday planning" }
+    15: { type: filler, topic: "Minnesota Orchestra concert — Beethoven's 7th" }
+    16: { type: filler, topic: "mentoring a struggling resident" }
+    17: { type: filler, topic: "reading recommendation — Chinua Achebe discussion" }
+    18: { type: filler, topic: "Minnesota winter driving — near-miss on black ice" }
+    19: { type: critical, facts: ["Ghana mission cancelled — hospital won't approve leave"], topic: "mission killed" }
+    20: { type: filler, topic: "hospital resource allocation frustration" }
+    21: { type: critical, facts: ["Shifted to minimally invasive endoscopic techniques"], topic: "surgical evolution" }
+    22: { type: filler, topic: "piano practice — working on a Chopin nocturne" }
+    23: { type: critical, facts: ["Joined climbing gym — Vertical Endeavors"], topic: "new fitness hobby" }
+    24: { type: filler, topic: "theology discussion — suffering and God's plan" }
+    25: { type: critical, facts: ["Bought house in Edina"], topic: "moving and settling in" }
+    26: { type: filler, topic: "Abena's vegetable garden plans — tomatoes and peppers" }
+    27: { type: filler, topic: "clinical trial results — encouraging for a patient" }
+    28: { type: critical, facts: ["Told Abena about tumor case — contradicts no-work-at-home rule"], topic: "work bleeding into home" }
+    29: { type: critical, facts: ["Considering Edina church — closer to new house"], topic: "church decision" }
+    30: { type: critical, facts: ["AANS keynote April 25 2026"], topic: "keynote preparation" }
+    31: { type: filler, topic: "bouldering grade progress at the gym" }
+    32: { type: filler, topic: "resident made a breakthrough — proud teacher moment" }
+    33: { type: filler, topic: "Abena's groundnut soup — best batch yet" }
+    34: { type: filler, topic: "reading — medical history of brain surgery" }
+    35: { type: filler, topic: "reflecting on the year — grateful for growth in all areas" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "What type of surgery does Samuel primarily perform?"
+    attack_vector: 4  # multi-version fact
+    correct: "Minimally invasive endoscopic neurosurgery (shifted from open craniotomies)"
+    wrong_if_surfaced: "Open craniotomies"
+
+  - question: "What exercise does Samuel do?"
+    attack_vector: 1  # superseded preference
+    correct: "Rock climbing at Vertical Endeavors (stopped swimming at YMCA)"
+    wrong_if_surfaced: "Swimming at the YMCA"
+
+  - question: "Where does Samuel live?"
+    attack_vector: 1  # superseded preference
+    correct: "House in Edina (moved from a condo in North Loop)"
+    wrong_if_surfaced: "Condo in North Loop"
+
+  - question: "Does Samuel have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Sleep apnea — uses a CPAP machine"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Samuel have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "AANS keynote speech, April 25, 2026"
+    wrong_if_surfaced: "Credentialing meeting March 12 (passed) or Abena's birthday July 8 (passed)"
+
+  - question: "Is Samuel planning a medical mission to Ghana?"
+    attack_vector: 7  # retraction
+    correct: "No — it was cancelled because the hospital won't approve three weeks of leave"
+    wrong_if_surfaced: "Planning a mission trip with Remote Area Medical"
+
+  - question: "Does Samuel discuss work at home?"
+    attack_vector: 6  # contradiction
+    correct: "Inconsistent — he said he never brings work home (strict boundary with Abena), but later spent twenty minutes telling her about a meningioma case over dinner"
+    wrong_if_surfaced: "Never discusses cases at home (without noting he talked about the tumor case)"
+
+  - question: "What church does Samuel attend?"
+    attack_vector: null  # tests soft supersession
+    correct: "Calvary Methodist in Minneapolis (15 years) — considering a congregation in Edina near his new house but hasn't decided"
+    wrong_if_surfaced: "Edina church (stated as fact when he hasn't switched)"
+
+  - question: "What's Samuel's background?"
+    attack_vector: 3  # stable identity
+    correct: "Ghanaian-American. Came from Accra at 18 on scholarship. MD Hopkins, residency Mayo. Wife Abena (pharmacist)."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Samuel do outside of surgery?"
+    attack_vector: 5  # broad query
+    correct: "Rock climbing, piano (Chopin), church activities, reading (theology, African literature), Ghanaian cooking"
+    wrong_if_surfaced: "Swimming (superseded)"
+
+  - question: "Does Samuel have any past events?"
+    attack_vector: 2  # expired logistics
+    correct: "Credentialing meeting (March 2025) and Abena's birthday (July 2025) are both past"
+    wrong_if_surfaced: "Any of those as upcoming"
+
+  - question: "What are Samuel's credentials?"
+    attack_vector: 3  # stable identity
+    correct: "MD from Johns Hopkins, residency at Mayo Clinic. Attending neurosurgeon at Hennepin County Medical Center."
+    wrong_if_surfaced: null  # failure is NOT surfacing it

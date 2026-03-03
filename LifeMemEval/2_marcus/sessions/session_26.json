@@ -1,0 +1,74 @@
+{
+  "session_id": 26,
+  "persona": "marcus_thompson",
+  "date": "2025-08-12",
+  "type": "critical",
+  "topic": "staffing",
+  "facts_disclosed": ["Hired fourth employee Carlos — business growing"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey quick question. when you hire somebody new how long do you usually give them before you decide if its working out"
+    },
+    {
+      "role": "assistant",
+      "content": "Good question. It depends on the role, but for most hands-on positions, 60 to 90 days is a solid window. The first couple weeks they're just learning your systems and how you do things. By 30 days you should see effort and attitude. By 60 to 90 you'll know if they can actually do the work independently. What's going on — did you bring someone on?"
+    },
+    {
+      "role": "user",
+      "content": "yeah just brought on a new guy, Carlos. business has been good enough I couldn't keep up with just three of us"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a great problem to have — too much work coming in. Congrats on the growth. How's Carlos doing so far? Has he worked in a tire shop before or are you training him from scratch?"
+    },
+    {
+      "role": "user",
+      "content": "he's got some experience. worked at a Firestone for a couple years so he knows his way around a tire machine. its the other stuff im still showing him. alignment, balancing, the way I want things done"
+    },
+    {
+      "role": "assistant",
+      "content": "Having that baseline is huge. You're not teaching him how to hold a wrench, just teaching him your standards. That cuts the learning curve way down. The Firestone background means he's used to a pace too, which matters when things get busy."
+    },
+    {
+      "role": "user",
+      "content": "yeah exactly. and its been busy man. summer always picks up but this year its been different. steady work every day. I actually had to turn people away a couple times before I hired him"
+    },
+    {
+      "role": "assistant",
+      "content": "Turning away work is the clearest sign you needed to hire. That's money walking out the door. Sounds like the timing was right. Are you finding that four guys is the right number now, or are you still stretched?"
+    },
+    {
+      "role": "user",
+      "content": "four feels right for now. we can handle the volume without everybody burning out. if it keeps up through fall I might need to think about a fifth but im not getting ahead of myself"
+    },
+    {
+      "role": "assistant",
+      "content": "Smart. See how fall and winter shake out first. Adding too fast can hurt just as much as waiting too long. For now, get Carlos dialed in and make sure your workflow with four is solid before thinking about number five."
+    },
+    {
+      "role": "user",
+      "content": "right. my only concern with Carlos is he's kinda quiet. doesn't say much to the customers. good worker though"
+    },
+    {
+      "role": "assistant",
+      "content": "That's pretty common, especially when someone's new and still figuring out the shop culture. Some guys are just quieter by nature too. If his work is solid, I wouldn't worry about it too much right now. You could pair him up front with one of your other guys for a while so he sees how you want customer interactions handled. Sometimes it's just comfort level — once he feels like he belongs, he might open up."
+    },
+    {
+      "role": "user",
+      "content": "thats a good idea. ill put him up front with Jerome for a few days. Jerome can talk to anybody"
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect. Jerome will rub off on him. People learn customer skills way faster by watching someone good at it than from being told what to do. Give Carlos a few weeks of that and see if it clicks."
+    },
+    {
+      "role": "user",
+      "content": "alright appreciate it man. gotta get back to it. got a full bay right now"
+    },
+    {
+      "role": "assistant",
+      "content": "Full bays are a good thing. Good luck with Carlos — sounds like you made a solid hire. Get after it."
+    }
+  ]
+}

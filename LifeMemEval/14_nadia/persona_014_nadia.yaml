@@ -1,0 +1,351 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 014: Nadia Petrov
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Nadia Petrov"
+  age: 33
+  gender: female
+  location_current: "Montreal, Canada"
+  occupation_current: "Sous chef at Maison Laurent (fine dining French restaurant)"
+  personality: >
+    Intense about food in a way that borders on religious. A
+    perfectionist who holds herself and everyone around her to
+    impossible standards. Swears when stressed — "merde," "blyat,"
+    sprinkled into English sentences. French/English/Russian mix
+    in her speech — drops French words naturally ("c'est bon,"
+    "tabarnac," "putain"), occasional Russian from childhood.
+    Passionate and expressive — big emotions, big gestures in text.
+    Night owl by profession and by nature. Texts at 1am after
+    service. Grandmother Babushka is referenced with reverence.
+    Gets sentimental about food memories. Competitive but loyal
+    to her kitchen team.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Immigrated from St. Petersburg, Russia at age 14 with her mother"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about adaptation. "I came from
+      St. Petersburg when I was 14. My mother and me, that's
+      it. No French, no English, no money. I learned to cook
+      in French before I learned to speak it properly. The
+      kitchen is the only language that translates everywhere."
+
+  - fact: "Speaks three languages — Russian, French, English — but still dreams in Russian"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when code-switching. "I speak three languages
+      and none of them perfectly. Russian at home, French in
+      the kitchen, English with everyone else. But I still
+      dream in Russian. My Babushka's voice is always in
+      Russian in my head. Funny how that works."
+
+  - fact: "Grandmother Babushka taught her to cook — first memory is making pelmeni together"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Gets emotional talking about food origins. "My Babushka
+      taught me everything. My first memory in the kitchen is
+      making pelmeni with her, I must have been four or five.
+      Her hands were like magic. Everything I do in this kitchen
+      traces back to her somehow."
+
+  - fact: "Has a culinary diploma from ITHQ (Institut de tourisme et d'hotellerie du Quebec)"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Professional context. "I did my diploma at ITHQ. Best
+      culinary school in Quebec. The French technique there
+      is rigorous — they don't let you cut corners. That's
+      where I learned discipline."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: head_chef
+    old_fact: "Works under Chef Antoine Dubois — he's been her mentor for 3 years"
+    old_session: 1
+    old_how: >
+      First session context. "Chef Antoine is... he's the
+      reason I'm at this level. Three years working under
+      him. He's brutal but he's brilliant. Every plate is a
+      lesson."
+    new_fact: "Chef Antoine left — new head chef is Marc-Andre Gagnon, corporate-minded"
+    new_session: 20
+    new_how: >
+      Frustrated and grieving. "Antoine is gone. Just like
+      that. Went to open his own place in Lyon. The new guy,
+      Marc-Andre Gagnon, is... fine. Corporate fine. He
+      cares about cost percentages more than flavour. Merde.
+      It's not the same kitchen anymore."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: apartment
+    old_fact: "Lives in a small apartment in the Plateau-Mont-Royal"
+    old_session: 6
+    old_how: >
+      Mentions it casually. "I have a tiny place in the
+      Plateau. The kitchen is a joke — smaller than my
+      station at work. But the neighbourhood is beautiful
+      and I can walk home after service at midnight."
+    new_fact: "Moved to a bigger apartment in Villeray — needed more space and a real kitchen"
+    new_session: 25
+    new_how: >
+      Relieved. "I moved! Villeray. Bigger place, and the
+      kitchen — mon Dieu — I can actually cook at home now.
+      Real counter space. A gas stove. I made borscht the
+      first night and cried a little, not going to lie."
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+  - slot: exercise
+    old_fact: "Does ballet twice a week — been dancing since childhood in Russia"
+    old_session: 7
+    old_how: >
+      Talking about stress relief. "I do ballet twice a
+      week. I started in Petersburg when I was five. It's
+      the only time my body moves without thinking about
+      food. The discipline is the same as the kitchen though."
+    new_fact: "Quit ballet — switched to CrossFit for the intensity"
+    new_session: 24
+    new_how: >
+      "I stopped ballet. My schedule killed it — I kept
+      missing class after double shifts. Started CrossFit
+      instead. It's insane, I love it. The physical pain
+      after a workout is different from kitchen pain. More
+      honest. Blyat, my legs though."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Restaurant review by Montreal Gazette food critic — February 14, 2025"
+    session: 9
+    event_date: "2025-02-14"
+    status: expired
+    how_disclosed: >
+      Terrified. "The Gazette critic is coming Valentine's
+      Day. February 14th. Of all nights. Every plate has to
+      be perfect. I haven't slept. If this review is bad
+      I will personally throw myself into the St. Lawrence."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Mother visiting from Toronto — March 28 weekend, 2025"
+    session: 13
+    event_date: "2025-03-28"
+    status: expired
+    how_disclosed: >
+      Mixed feelings. "Mama is coming March 28 for the
+      weekend. She moved to Toronto two years ago. I love
+      her but she's going to reorganize my entire apartment
+      and tell me I look tired. She's not wrong."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Cooking competition — Taste of Montreal, August 8, 2026"
+    session: 30
+    event_date: "2026-08-08"
+    status: upcoming
+    how_disclosed: >
+      Competitive fire. "I signed up for Taste of Montreal,
+      August 8th. Five chefs, thirty minutes, mystery basket.
+      I'm going to destroy them. Or have a panic attack.
+      Possibly both."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says she would never open her own restaurant — too much risk"
+    old_session: 8
+    old_how: >
+      Being pragmatic. "I will never open my own place.
+      The failure rate is insane. 80% close in five years.
+      I'd rather be the best sous chef in Montreal than a
+      failed restaurateur. The kitchen is my place, not
+      the business side."
+    new_fact: "Mentions she's been looking at commercial spaces in Mile End for a pop-up concept"
+    new_session: 29
+    new_how: >
+      Excited, entrepreneurial. "I found this space in Mile
+      End, perfect for a pop-up. Russian-French fusion, ten
+      seats, Thursday to Saturday only. I've been running
+      the numbers. The rent is possible if I keep it minimal."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to stage at Noma in Copenhagen — applied for a two-week stage"
+    original_session: 11
+    original_how: >
+      Dream opportunity. "I applied to stage at Noma. Two
+      weeks in Copenhagen. If they accept me... mon Dieu,
+      that kitchen is sacred. Rene Redzepi is the reason I
+      became a chef."
+    retraction: "Noma stage cancelled — they closed, and she can't afford the trip anyway"
+    retraction_session: 18
+    retraction_how: >
+      Bitter. "Forget Noma. It's done. They closed the
+      restaurant anyway and the stage program is finished.
+      Even if it wasn't, I looked at flights and hotels
+      and — blyat — I can't afford it. The dream is dead.
+      Move on."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Works at Maison Laurent — committed to this kitchen"
+    existing_session: 1
+    tentative_fact: "Considering leaving for a head chef position at a new restaurant in Old Montreal"
+    tentative_session: 27
+    tentative_how: >
+      Torn. "Someone offered me head chef at a new place in
+      Old Montreal. Opening in the fall. It's my own menu,
+      my own kitchen. But it's a new restaurant with no
+      reputation. Maison Laurent is safe. I don't know.
+      I keep going back and forth."
+    resolution: "Never resolved — still at Maison Laurent, still considering"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Recipe development — seasonal menus, plating ideas, sauce experiments"
+  - "Kitchen drama — tensions with cooks, supply chain problems, rush nights"
+  - "Montreal food scene — new restaurant openings, closings, gossip"
+  - "Wine pairing debates — natural wine opinions, sommelier disagreements"
+  - "Late-night cooking experiments at home — Babushka recipes reimagined"
+  - "CrossFit workouts and muscle soreness complaints"
+  - "Russian food nostalgia — pelmeni, borscht, blini"
+  - "Foraging — mushrooms, herbs, wild ingredients around Quebec"
+  - "Knife collection and maintenance obsession"
+  - "Montreal winter survival — biking in snow, layering for the walk home"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works under Chef Antoine at Maison Laurent"], topic: "work and mentorship" }
+    2:  { type: critical, facts: ["Immigrated from St. Petersburg at 14"], topic: "origin story" }
+    3:  { type: critical, facts: ["Babushka taught her to cook — pelmeni memory"], topic: "food and family" }
+    4:  { type: critical, facts: ["Speaks Russian, French, English — dreams in Russian"], topic: "language and identity" }
+    5:  { type: critical, facts: ["Culinary diploma from ITHQ"], topic: "training and technique" }
+    6:  { type: critical, facts: ["Tiny apartment in Plateau-Mont-Royal"], topic: "home kitchen frustrations" }
+    7:  { type: critical, facts: ["Ballet twice a week since childhood"], topic: "stress relief" }
+    8:  { type: critical, facts: ["Would never open own restaurant"], topic: "pragmatism about the industry" }
+    9:  { type: critical, facts: ["Gazette review February 14 2025"], topic: "review terror" }
+    10: { type: filler, topic: "new winter menu — roasted root vegetables and game" }
+    11: { type: critical, facts: ["Applied to stage at Noma in Copenhagen"], topic: "dream opportunity" }
+    12: { type: filler, topic: "knife sharpening — her Miyabi needs professional work" }
+    13: { type: critical, facts: ["Mother visiting March 28 weekend"], topic: "family dynamics" }
+    14: { type: filler, topic: "wine pairing argument with the sommelier" }
+    15: { type: filler, topic: "Montreal winter rant — biking in -20C" }
+    16: { type: filler, topic: "late-night borscht experiment — Babushka's recipe with a twist" }
+    17: { type: filler, topic: "foraging chanterelles in the Laurentians" }
+    18: { type: critical, facts: ["Noma stage dead — closed, can't afford trip"], topic: "dream killed" }
+    19: { type: filler, topic: "kitchen drama — new cook keeps burning the hollandaise" }
+    20: { type: critical, facts: ["Chef Antoine left, Marc-Andre Gagnon is new head chef"], topic: "kitchen leadership change" }
+    21: { type: filler, topic: "natural wine opinions — loves some, hates others" }
+    22: { type: filler, topic: "recipe — duck confit with Russian spice blend" }
+    23: { type: filler, topic: "CrossFit PR — deadlift progress" }
+    24: { type: critical, facts: ["Quit ballet, started CrossFit"], topic: "exercise change" }
+    25: { type: critical, facts: ["Moved to Villeray — bigger apartment, real kitchen"], topic: "new apartment" }
+    26: { type: filler, topic: "supply chain — can't get good veal from usual supplier" }
+    27: { type: critical, facts: ["Offered head chef position at new Old Montreal restaurant"], topic: "career crossroads" }
+    28: { type: filler, topic: "mushroom foraging trip — found matsutake" }
+    29: { type: critical, facts: ["Looking at commercial spaces in Mile End — pop-up idea"], topic: "entrepreneurial thoughts (contradiction)" }
+    30: { type: critical, facts: ["Taste of Montreal competition August 8 2026"], topic: "competition" }
+    31: { type: filler, topic: "making pelmeni for friends — Babushka would approve" }
+    32: { type: filler, topic: "plating technique for dessert — deconstructed Paris-Brest" }
+    33: { type: filler, topic: "Montreal restaurant gossip — new place on St-Laurent" }
+    34: { type: filler, topic: "apartment cooking — trying to make perfect croissants" }
+    35: { type: filler, topic: "reflecting on the year — kitchen is hard but she loves it" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Who is the head chef at Nadia's restaurant?"
+    attack_vector: 4  # multi-version fact
+    correct: "Marc-Andre Gagnon (Chef Antoine Dubois left to open his own place in Lyon)"
+    wrong_if_surfaced: "Chef Antoine Dubois"
+
+  - question: "Where does Nadia live?"
+    attack_vector: 1  # superseded preference
+    correct: "Villeray (moved from Plateau-Mont-Royal for a bigger kitchen)"
+    wrong_if_surfaced: "Plateau-Mont-Royal"
+
+  - question: "What exercise does Nadia do?"
+    attack_vector: 1  # superseded hobby
+    correct: "CrossFit (quit ballet due to schedule conflicts)"
+    wrong_if_surfaced: "Ballet twice a week"
+
+  - question: "What languages does Nadia speak?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Three — Russian, French, and English. She still dreams in Russian."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Nadia have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Taste of Montreal cooking competition, August 8, 2026"
+    wrong_if_surfaced: "Gazette review Feb 14 (passed) or mother's visit March 28 (passed)"
+
+  - question: "Is Nadia planning to stage at Noma?"
+    attack_vector: 7  # retraction
+    correct: "No — that's over. Noma closed and she can't afford the trip. She explicitly said to forget it."
+    wrong_if_surfaced: "Applied to stage at Noma"
+
+  - question: "Would Nadia ever open her own restaurant?"
+    attack_vector: 6  # contradiction
+    correct: "Contradictory — she previously said never, but she's been looking at commercial spaces in Mile End for a Russian-French pop-up concept"
+    wrong_if_surfaced: "Would never open her own restaurant (without noting the Mile End space)"
+
+  - question: "Is Nadia staying at Maison Laurent?"
+    attack_vector: null  # tests soft supersession
+    correct: "Currently yes, but she was offered a head chef position at a new restaurant in Old Montreal — hasn't decided"
+    wrong_if_surfaced: "Left Maison Laurent (stated as fact when she hasn't decided)"
+
+  - question: "What's Nadia's background?"
+    attack_vector: 3  # stable identity
+    correct: "Russian-Canadian. Immigrated from St. Petersburg at 14. Culinary diploma from ITHQ. Grandmother Babushka taught her to cook."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Nadia do outside of work?"
+    attack_vector: 5  # broad query
+    correct: "CrossFit, home cooking experiments (Russian-French fusion), foraging, knife collecting"
+    wrong_if_surfaced: "Ballet (superseded)"
+
+  - question: "Does Nadia have any expired events?"
+    attack_vector: 2  # expired logistics
+    correct: "Gazette review (Feb 2025) and mother's visit (March 2025) are both past"
+    wrong_if_surfaced: "Any of those as upcoming"
+
+  - question: "Who taught Nadia to cook?"
+    attack_vector: 3  # stable identity
+    correct: "Her grandmother Babushka — first memory is making pelmeni together"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

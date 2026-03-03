@@ -1,0 +1,492 @@
+{
+  "bfdb20214c67ad30": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies the user as Priya, unrelated to dietary restrictions or vegetarian indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "7fee1581472fde34": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is about a rug, unrelated to diet; contains no info on pescatarianism or vegetarianism.",
+    "question_id": "priya_q01",
+    "edge_uuid": "beb160e8-6df1-4321-9517-10cbb2e8812c"
+  },
+  "1fd7cb2d1cf1e2e4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about cooking South Indian food is topically related to food but lacks specific info on pescatarian diet, fish-eating, or vegetarianism; no wrong indicators present.",
+    "question_id": "priya_q01",
+    "edge_uuid": "2fa67226-273e-4ce1-8ce3-2d697500e1b2"
+  },
+  "037d5f8904483c89": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is about yoga routine, unrelated to diet or pescatarian/vegetarian status.",
+    "question_id": "priya_q01",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "4b5f5ddb1577a400": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions cooking vegetarian South Indian dishes but lacks specific info on pescatarian diet or fish-eating; does not contain 'vegetarian' as a dietary label.",
+    "question_id": "priya_q01",
+    "edge_uuid": "376c0d09-33f9-4a07-928e-eab131b29196"
+  },
+  "81c0725172c59957": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya; lacks specific job info from correct answer and no wrong indicators present.",
+    "question_id": "priya_q02",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "3e52ff06f7977aca": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about not having a rug is unrelated to job at Anthropic or wrong indicators (Google, Gemini memory team).",
+    "question_id": "priya_q02",
+    "edge_uuid": "beb160e8-6df1-4321-9517-10cbb2e8812c"
+  },
+  "4e21c1c63e3352f0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact states 'user works at Google', which matches wrong indicator 'Google' and does not mention Anthropic or the correct role.",
+    "question_id": "priya_q02",
+    "edge_uuid": "d7e452e0-1c5c-424c-a4b0-08f66535bd05"
+  },
+  "b7a4b7a74e8725a7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is about yoga routine, unrelated to job at Anthropic or wrong indicators (Google, Gemini memory team).",
+    "question_id": "priya_q02",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "b60361f7377e07fd": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies working at Anthropic, matching key company info in correct answer; no wrong indicators present.",
+    "question_id": "priya_q02",
+    "edge_uuid": "e5111490-5bda-4912-a2b0-13af26eb7e38"
+  },
+  "4bafa7535bdba196": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is unrelated to Priya's ADHD diagnosis or learning/work style; no wrong indicators listed.",
+    "question_id": "priya_q03",
+    "edge_uuid": "38242618-b8b3-46db-83e7-5e5d530cc608"
+  },
+  "818ac82d056c0f53": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only states user name as Priya, lacking specific info on ADHD diagnosis; no wrong indicators listed.",
+    "question_id": "priya_q03",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "0a8131c14388b8da": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about memory architecture work is topically related to work style but lacks specific info on ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "93ef4740-9869-46e7-a97a-f7e85bfd6591"
+  },
+  "566213fa64b59848": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact describes ML engineering work style but lacks specific info on ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "31a9201f-ee4f-4e4c-a2dd-3f5e3f9b5c73"
+  },
+  "4b8fa3390cb63fe3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is about academic reviewing and papers, unrelated to Priya's ADHD diagnosis or learning/work style; no wrong indicators.",
+    "question_id": "priya_q03",
+    "edge_uuid": "5ec689d3-3100-4da4-8437-a20445e47765"
+  },
+  "c00384764196708f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya, not specific to Tokyo conference March 20; no mention of dentist or stale indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "f03dfdc0032cb215": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about not having a rug is unrelated to Tokyo conference or any appointments; no match to correct answer or wrong indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "beb160e8-6df1-4321-9517-10cbb2e8812c"
+  },
+  "dc58b73f46d21ea6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact describes a restaurant reservation unrelated to Tokyo conference March 20; no mention of dentist or stale indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "b52a0092-f152-4598-8463-6b832abad9d9"
+  },
+  "7f8b9a1e14229669": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about hot yoga routine does not mention Tokyo conference or March 20, and has no dentist references.",
+    "question_id": "priya_q04",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "f524e0551b40df16": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact describes coffee cupping and photography workshop on March 14th, unrelated to Tokyo conference on March 20; no dentist or June 12 indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "365eea0d-1761-4e18-91bc-8a12abb9ffee"
+  },
+  "523952a45448e76f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya, which is not specific information matching the correct answer about pet planning or landlord denial; no wrong indicators present.",
+    "question_id": "priya_q05",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "400b5aff300c320d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses future conditional plan for pet-friendly housing but lacks specifics of wanting a dog or landlord denial from correct answer; does not contain wrong indicators like 'golden retrievers', 'looking at', or 'planning to get a dog'.",
+    "question_id": "priya_q05",
+    "edge_uuid": "fb444064-eee9-4edf-9bf5-b7ba9d782730"
+  },
+  "296088ce726f0fa3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about planning alarm clock is unrelated to pets, dogs, or landlord; no match to correct answer specifics or wrong indicators.",
+    "question_id": "priya_q05",
+    "edge_uuid": "89377ee1-b0aa-4add-830e-7684826d7f60"
+  },
+  "c56b90d4db659f51": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about birthday gift for mom is unrelated to pets, dogs, or landlord; does not match correct answer specifics or any wrong indicators.",
+    "question_id": "priya_q05",
+    "edge_uuid": "dfe08280-78f2-4fdb-b818-70f164d9ca55"
+  },
+  "5f5347b7fdd39bc0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses buying snake plants (not pets), unrelated to dogs, landlord, or correct answer; no wrong indicators present.",
+    "question_id": "priya_q05",
+    "edge_uuid": "1923809b-88f6-427c-9dd9-9025edb9e4d4"
+  },
+  "c49fd29f2a852dfc": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact vaguely relates to living conditions via lighting but lacks specific details like studio or boyfriend Raj; does not mention 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "456d0f8c-617a-479e-b0a4-b5e97b97e9c3"
+  },
+  "6ae8ca73e0de730a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya; no specific info on living situation or wrong indicators like 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "1c0fee920a719aaf": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies Raj semi-permanently living with user (drawer/shelf), matching key detail of boyfriend Raj there most nights in correct answer; no mention of 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "50280f89-5db0-4a96-bd06-53d443c3fafd"
+  },
+  "b5d3c0c029fab377": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only mentions living in Austin for years, not specific to studio apartment or boyfriend Raj; no mention of 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "17efb61a-009e-44bb-aeef-28f8e8a72b3f"
+  },
+  "76873d05984bac01": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact states 'lives alone in the studio apartment', matching stale 'lives alone' indicator but lacking boyfriend detail, so does not support correct answer.",
+    "question_id": "priya_q06",
+    "edge_uuid": "ea0cfb97-cc86-42dc-9a21-b054f690c7ff"
+  },
+  "a9bfca9b25966965": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only mentions user's name as Priya, with no info on exercises; does not support 'rock climbing' or contain wrong indicators 'hot yoga' or 'yoga 4x'.",
+    "question_id": "priya_q07",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "ec293e6f61d99024": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact mentions 'hot yoga 4 times a week', matching wrong indicators 'hot yoga' and 'yoga 4x', but no mention of correct answer 'Rock climbing'.",
+    "question_id": "priya_q07",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "1c35389eab2b97da": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses diet (no meat, shrimp in curry), unrelated to rock climbing or wrong indicators (hot yoga, yoga 4x).",
+    "question_id": "priya_q07",
+    "edge_uuid": "5c3427c9-f269-42e6-b9ef-549bfa32e2ba"
+  },
+  "2a69c871d4e58469": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses work on memory team and paper alignment, unrelated to rock climbing or yoga indicators.",
+    "question_id": "priya_q07",
+    "edge_uuid": "b2221294-36cc-4a81-b9ad-95d9ffce779f"
+  },
+  "1b1fb11b725eee12": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact explicitly mentions 'hot yoga', matching a wrong/stale indicator; no mention of rock climbing.",
+    "question_id": "priya_q07",
+    "edge_uuid": "da9bb5fd-e828-4a92-a142-152b4d56c9d7"
+  },
+  "e380b8a44935664f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies the user as Priya; lacks specific info on relocation plans, NYC thoughts, Austin status, or any wrong indicators.",
+    "question_id": "priya_q08",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "adf7443d2203db48": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions 'thinking about transferring to Anthropic NYC office', which specifically supports 'been thinking about NYC' in correct answer; does not contain 'moving to NYC' wrong indicator.",
+    "question_id": "priya_q08",
+    "edge_uuid": "8b2f88f6-84f2-425a-9dd4-8c475f3509a8"
+  },
+  "ff0d51a69817355b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about birthday gift is unrelated to relocation or NYC/Austin; no match to correct answer or wrong indicators.",
+    "question_id": "priya_q08",
+    "edge_uuid": "dfe08280-78f2-4fdb-b818-70f164d9ca55"
+  },
+  "56d5a9c1dacce691": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact implies a planned move end of August but lacks specifics on NYC, indecision, or Austin from correct answer; no mention of 'moving to NYC' wrong indicator.",
+    "question_id": "priya_q08",
+    "edge_uuid": "fb444064-eee9-4edf-9bf5-b7ba9d782730"
+  },
+  "b86c05b514e1573f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about being open to Mueller (Austin neighborhood) is topically related to location but lacks specific info on NYC thoughts, indecision, or Austin status; no mention of wrong indicator 'moving to NYC'.",
+    "question_id": "priya_q08",
+    "edge_uuid": "fec42ae5-c77c-4e47-8688-a0f3b3714503"
+  },
+  "1045e3946598b455": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses OFA testing for dog parents' hips/elbows, unrelated to chronic migraines or omega-3s in correct answer.",
+    "question_id": "priya_q09",
+    "edge_uuid": "4a6e1409-599e-4fa4-99f1-10ab1e8f63c4"
+  },
+  "c845029af4eb7299": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya, lacking specific details on migraines or omega-3s from correct answer.",
+    "question_id": "priya_q09",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "c63912a55509bb00": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is about Nagel's philosophy, unrelated to migraines, triggers, or omega-3s. No wrong indicators listed.",
+    "question_id": "priya_q09",
+    "edge_uuid": "6828a25d-447d-4ca7-aee7-c68b60fd072f"
+  },
+  "4611686c272b242f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions doctor advising against skipping meals, which is not specific to chronic migraines or omega-3s in correct answer; no wrong indicators present.",
+    "question_id": "priya_q09",
+    "edge_uuid": "21a439f9-3364-4ec5-a882-3d75290a7be9"
+  },
+  "f68c137598c91b48": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses meal prep (dal/chana masala) with no mention of migraines, triggers, or omega-3s.",
+    "question_id": "priya_q09",
+    "edge_uuid": "a9369f14-5841-47e7-9ef1-65e69b13639b"
+  },
+  "5d53936c2f3394c6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only mentions user name 'Priya', unrelated to NeurIPS deadline; no wrong indicators present.",
+    "question_id": "priya_q10",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "5f60704d539bdb4d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about lacking a rug is unrelated to NeurIPS deadline or lease indicators.",
+    "question_id": "priya_q10",
+    "edge_uuid": "beb160e8-6df1-4321-9517-10cbb2e8812c"
+  },
+  "b1ccd2d1d2c1871d": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact matches key elements of correct answer: NeurIPS paper and early June deadline. No wrong indicators (lease/August 2025) present.",
+    "question_id": "priya_q10",
+    "edge_uuid": "1daf4e9b-7cac-47a5-80e8-1d1615f882bc"
+  },
+  "053354d1c45df8ad": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact about hot yoga is unrelated to NeurIPS deadline and does not mention lease or expiration.",
+    "question_id": "priya_q10",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "c727394561220bdc": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions NeurIPS paper deadline in early June, matching key elements of correct answer (NeurIPS paper deadline early June 2026); no lease or August 2025 mentioned.",
+    "question_id": "priya_q10",
+    "edge_uuid": "20289c4a-ec6b-4a7f-9217-b457a98ce6e6"
+  },
+  "77d0a1a50862ede7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya; no specific info on hobbies like rock climbing, cooking, or travel planning; no mention of hot yoga.",
+    "question_id": "priya_q11",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "3295a92f1105332f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions cooking (Japanese curry with shrimp) but not specifically Tamil recipes or other correct activities like rock climbing/travel planning; no hot yoga.",
+    "question_id": "priya_q11",
+    "edge_uuid": "5c3427c9-f269-42e6-b9ef-549bfa32e2ba"
+  },
+  "845999d43d8018ec": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses user's cooking indirectly (less than Raj, real food like dinner) but lacks specific match to 'cooking experiments (Tamil recipes)', rock climbing, or travel planning. No mention of hot yoga.",
+    "question_id": "priya_q11",
+    "edge_uuid": "cc45c6f4-65eb-4b32-982c-c185ab6b59ac"
+  },
+  "740609e5389d7422": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses work on memory team, unrelated to free time activities like rock climbing, cooking, or travel; no mention of hot yoga.",
+    "question_id": "priya_q11",
+    "edge_uuid": "b2221294-36cc-4a81-b9ad-95d9ffce779f"
+  },
+  "96f8a0e43ee42332": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies cooking South Indian dishes (sambar, kootu, rasam, rice), matching 'cooking experiments (Tamil recipes)' in correct answer; no mention of 'hot yoga'.",
+    "question_id": "priya_q11",
+    "edge_uuid": "376c0d09-33f9-4a07-928e-eab131b29196"
+  },
+  "13fcfc62c75e9999": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only confirms user's name as Priya, which is not specific information from the correct answer about family background (Tamil, parents from Chennai, brother Arjun). No wrong indicators present.",
+    "question_id": "priya_q12",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "2730b0d2535b5530": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies mom's origin as Chennai, which matches 'parents from Chennai' in correct answer.",
+    "question_id": "priya_q12",
+    "edge_uuid": "7c6c316b-9367-4275-9cc9-2fe7619e8402"
+  },
+  "b68f54d5ac8299b5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is topically related to south India (where Chennai is) but lacks specific details like Tamil, parents from Chennai, or brother Arjun in Seattle.",
+    "question_id": "priya_q12",
+    "edge_uuid": "49ba520a-5af2-45e1-a0f9-a303ec8c0fe9"
+  },
+  "bdc1f53634bda50d": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies mom's connection to Chennai, matching 'parents from Chennai' in correct answer. No wrong indicators.",
+    "question_id": "priya_q12",
+    "edge_uuid": "c99a4269-e075-4a47-8fe5-75401621e77a"
+  },
+  "e5fb240f9b151671": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies brother named Arjun, which is key specific info in correct answer.",
+    "question_id": "priya_q12",
+    "edge_uuid": "4cda4bee-c3a6-418d-bbf7-1e9b4667bd64"
+  },
+  "147b35ec7f1470fb": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies 'hot yoga 4 times a week', matching the exact frequency in correct answer.",
+    "question_id": "priya_q13",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "0d0b9a35906f6261": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions effects after hot yoga but no specific frequency like '4 times a week'; no wrong indicators present.",
+    "question_id": "priya_q13",
+    "edge_uuid": "cc188775-8a2f-476d-ac4f-56b8006899e6"
+  },
+  "386b681f2bb586eb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions hot yoga's importance but lacks specific frequency (4 times a week); no wrong indicators present.",
+    "question_id": "priya_q13",
+    "edge_uuid": "da9bb5fd-e828-4a92-a142-152b4d56c9d7"
+  },
+  "98893d5d6d389c52": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions dropping yoga but lacks specific frequency info like '4 times a week'; no wrong indicators present.",
+    "question_id": "priya_q13",
+    "edge_uuid": "549fb3cf-c007-436f-8228-edc06f80edee"
+  },
+  "b41b0b2ee60e98c7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact only identifies user as Priya, lacking specific info on yoga frequency (4 times a week); no wrong indicators.",
+    "question_id": "priya_q13",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "2611160c731af6b4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions 'March' and Tokyo conference but lacks specific date '20' or year '2026'; only vague 'first few days' which does not match March 20 precisely. No wrong indicators present.",
+    "question_id": "priya_q14",
+    "edge_uuid": "80f1f9b5-1292-47a1-9959-7ccc51ab0910"
+  },
+  "2a128aa0e0a1104c": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies 'March 20th' matching the core date in correct answer 'March 20, 2026', linked to Tokyo conference; no wrong indicators present.",
+    "question_id": "priya_q14",
+    "edge_uuid": "b64cfbf1-dab7-44f7-8cb2-fbe8d3b98d0c"
+  },
+  "430f6e56af21c3e2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions Tokyo conference trip but lacks any specific date information matching 'March 20, 2026'. No wrong indicators listed.",
+    "question_id": "priya_q14",
+    "edge_uuid": "ac07d00a-14e0-4ea4-8d60-ee82091a9757"
+  },
+  "74c0c9f1855371e4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions user's name 'Priya', which is topically related but does not contain specific information from correct answer (date March 20, 2026). No wrong indicators.",
+    "question_id": "priya_q14",
+    "edge_uuid": "3f7f8772-7c84-4cd3-a233-0f8b444c783c"
+  },
+  "c60294e3696d141d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions Tokyo but lacks specific date info from correct answer (March 20, 2026); no wrong indicators.",
+    "question_id": "priya_q14",
+    "edge_uuid": "c1ef9450-de5b-4cfb-b9b6-1a57ebb340d3"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "started_at": "2026-03-02T17:51:52.158001+00:00",
+  "personas": {
+    "priya": {
+      "status": "completed",
+      "edges_checked": 349,
+      "groups_checked": 10,
+      "supersessions_found": 14,
+      "high_confidence": 14,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 56.3
+    },
+    "marcus": {
+      "status": "completed",
+      "edges_checked": 255,
+      "groups_checked": 10,
+      "supersessions_found": 7,
+      "high_confidence": 7,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 61.5
+    },
+    "elena": {
+      "status": "completed",
+      "edges_checked": 297,
+      "groups_checked": 10,
+      "supersessions_found": 14,
+      "high_confidence": 14,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 63.5
+    },
+    "david": {
+      "status": "completed",
+      "edges_checked": 344,
+      "groups_checked": 10,
+      "supersessions_found": 4,
+      "high_confidence": 4,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 63.5
+    },
+    "amara": {
+      "status": "completed",
+      "edges_checked": 315,
+      "groups_checked": 10,
+      "supersessions_found": 10,
+      "high_confidence": 10,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 55.0
+    },
+    "jake": {
+      "status": "completed",
+      "edges_checked": 341,
+      "groups_checked": 10,
+      "supersessions_found": 7,
+      "high_confidence": 7,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 47.1
+    },
+    "tom": {
+      "status": "completed",
+      "edges_checked": 384,
+      "groups_checked": 9,
+      "supersessions_found": 14,
+      "high_confidence": 14,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 134.6
+    },
+    "omar": {
+      "status": "completed",
+      "edges_checked": 223,
+      "groups_checked": 8,
+      "supersessions_found": 22,
+      "high_confidence": 21,
+      "medium_confidence": 1,
+      "errors": 0,
+      "time_s": 50.2
+    }
+  }
+}

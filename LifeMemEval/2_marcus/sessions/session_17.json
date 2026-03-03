@@ -1,0 +1,66 @@
+{
+  "session_id": 17,
+  "persona": "marcus_thompson",
+  "date": "2025-04-02",
+  "type": "filler",
+  "topic": "help writing job posting for tire technician",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to write a job posting for a tire technician. never written one before and I dont want it to sound stupid"
+    },
+    {
+      "role": "assistant",
+      "content": "No worries, it doesn't need to be fancy. Where are you planning to post it — Craigslist, Indeed, Facebook, or somewhere else? That'll help me figure out the right length and tone."
+    },
+    {
+      "role": "user",
+      "content": "probably facebook and maybe indeed. wherever people actually look for this kind of work"
+    },
+    {
+      "role": "assistant",
+      "content": "Good choices. For both of those, you want it short and clear — nobody reads a long job post for a technician role. Let me ask a few quick things:\n\nIs this full-time or part-time? And do you need someone with experience or are you willing to train the right person?"
+    },
+    {
+      "role": "user",
+      "content": "full time. I'd prefer somebody with experience but at this point if they show up on time and arent afraid of work I can train them"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right attitude honestly — reliability beats a resume in this trade. What are you thinking on pay? You don't have to share the exact number, but a range in the posting helps a lot. Job posts with pay listed get way more applications."
+    },
+    {
+      "role": "user",
+      "content": "I was thinking 15-18 an hour depending on what they can do. is that reasonable"
+    },
+    {
+      "role": "assistant",
+      "content": "For a tire tech role that's in the ballpark for most markets. Including it will definitely filter out people who'd waste your time.\n\nHere's a draft — keep it simple and direct:\n\n---\n\n**Tire Technician — Full Time**\n\nLocal tire and auto shop hiring a full-time tire technician. Looking for someone reliable, hardworking, and ready to learn.\n\n**What you'll do:**\n- Mount, balance, and install tires\n- Tire rotations, flat repairs, and inspections\n- Keep your work area clean and organized\n\n**What we're looking for:**\n- Dependable — show up on time, every time\n- Willing to work hard and learn\n- Experience is a plus but not required — we'll train the right person\n- Valid driver's license\n\n**Pay:** $15-18/hr depending on experience\n**Schedule:** Monday-Saturday\n\nCall or message to apply.\n\n---\n\nWant me to change anything?"
+    },
+    {
+      "role": "user",
+      "content": "thats pretty solid actually. can you add something about being able to lift heavy stuff. tires aint light"
+    },
+    {
+      "role": "assistant",
+      "content": "Good call. I'll add a physical requirements line:\n\nUnder \"What we're looking for,\" add:\n- Able to lift 50+ lbs regularly (it's tires — they're heavy)\n\nThat covers you and sets expectations. The slightly casual tone fits a shop posting better than corporate language anyway. Anything else you want in there?"
+    },
+    {
+      "role": "user",
+      "content": "no I think thats good. should I put my phone number on there or is that a bad idea"
+    },
+    {
+      "role": "assistant",
+      "content": "On Facebook it's fine since you can also get messages through the platform. On Indeed, applicants usually apply through the site so you don't need to.\n\nIf you put your phone number on Facebook, just be ready for random calls and texts. Some guys prefer to use a Google Voice number so their personal line doesn't blow up. But if this is your shop number, go ahead and use it."
+    },
+    {
+      "role": "user",
+      "content": "yeah ill just put the shop number. alright man appreciate the help. gonna post this tonight"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds good. Post it in the evening — more people browsing then. And if you put it on Facebook, share it to any local job groups or community pages too. That's where a lot of trade guys are looking.\n\nHope you find a good one."
+    }
+  ]
+}

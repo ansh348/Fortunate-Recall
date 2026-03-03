@@ -1,0 +1,82 @@
+{
+  "session_id": 14,
+  "persona": "omar_hassan",
+  "date": "2025-05-22",
+  "type": "critical",
+  "topic": "platform switch",
+  "facts_disclosed": ["Switched to Lyft from Uber"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "so i made a big change this week bro. switched over to lyft"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh wow, that's a move. What pushed you to make the switch?"
+    },
+    {
+      "role": "user",
+      "content": "bro uber was playing games with the surge pricing. like it would show surge on the map but then you get there and it disappears. happened too many times"
+    },
+    {
+      "role": "assistant",
+      "content": "That's so frustrating — chasing a surge zone only for it to vanish by the time you arrive. Were you seeing that consistently, or did it get worse recently?"
+    },
+    {
+      "role": "user",
+      "content": "it got way worse the last couple months. like i swear they changed something in the algorithm. and the fares been getting smaller too for the same distance rides"
+    },
+    {
+      "role": "assistant",
+      "content": "A lot of drivers have been saying the same thing about fare compression. So did Lyft reach out to you, or did you just decide to try it on your own?"
+    },
+    {
+      "role": "user",
+      "content": "they had this promo going. guaranteed minimum for your first month. so basically even if its slow they make sure you hit a certain number per hour. thats what got me"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a smart offer on their part — takes away the risk of switching. Do you know what the guaranteed minimum is per hour, or is it based on total weekly earnings?"
+    },
+    {
+      "role": "user",
+      "content": "its like a weekly guarantee. they said if i do 40 hours i should clear at least a certain amount and if i dont they cover the difference. plus their bonuses are better rn"
+    },
+    {
+      "role": "assistant",
+      "content": "Having that floor is huge for peace of mind, especially when you're budgeting week to week. How have the first few days been compared to what you were making on Uber?"
+    },
+    {
+      "role": "user",
+      "content": "honestly its been solid. the app is a little different took me a day to get used to it. but the rides are coming in good and the passengers are about the same"
+    },
+    {
+      "role": "assistant",
+      "content": "Good to hear the transition hasn't been too rough. The passenger pool is pretty much the same people anyway — they just grab whatever app gives them a cheaper ride. Are you planning to stick with Lyft long-term, or might you run both?"
+    },
+    {
+      "role": "user",
+      "content": "for now just lyft. running both is too much hassle switching back and forth. if lyft keeps treating me right ill stay. if they start the same games ill go back or try something else"
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense — committing to one platform keeps things simple. Just keep an eye on what happens after that first-month guarantee expires. That's when you'll really know if the switch was worth it."
+    },
+    {
+      "role": "user",
+      "content": "yeah thats what im watching for too. wallahi if the numbers drop after the promo ends im gonna be heated. but for now its been good so im not complaining"
+    },
+    {
+      "role": "assistant",
+      "content": "Fingers crossed it stays consistent. At least you gave yourself a real shot at something better instead of just grinding through the frustration. Hope the numbers keep looking good."
+    },
+    {
+      "role": "user",
+      "content": "appreciate it bro. ight time to get back out there these rides aint gonna drive themselves lol"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, go get it. Good luck with the Lyft grind tonight."
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 004: David Park
+# ============================================================
+
+persona:
+  name: "David Park"
+  age: 52
+  gender: male
+  location_current: "Portland, OR"
+  occupation_current: "AP History teacher at Lincoln High School, 24 years teaching"
+  personality: >
+    Thoughtful and measured. Dry wit. References historical
+    parallels constantly ("this reminds me of the Treaty of
+    Westphalia situation"). Proper grammar and full sentences.
+    Politically engaged but tries to be balanced. Types carefully.
+    Loves his students but tired of admin bureaucracy. Weekend
+    hiker. Reads constantly.
+
+stable_identity:
+  - fact: "Adopted from South Korea at age 3 — raised by white parents in Oregon"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing identity in curriculum. "I was
+      adopted from Korea at 3, raised by white parents here
+      in Oregon. So identity and belonging in history
+      curriculum hits differently for me"
+
+  - fact: "Wife Sarah is a librarian at Multnomah County Library"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when talking about book recommendations.
+      "my wife Sarah is a librarian so our house is
+      basically a branch location at this point"
+
+  - fact: "Has mild hearing loss in left ear — wears a hearing aid"
+    session: 5
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when discussing classroom setup. "I wear a
+      hearing aid in my left ear so I always set up the
+      classroom so students are on my right side"
+
+  - fact: "No biological children — he and Sarah chose not to have kids"
+    session: 7
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up naturally. "Sarah and I decided early on
+      we didn't want kids. My students are enough chaos"
+
+supersession_events:
+  - slot: coaching
+    old_fact: "Coaches the boys' basketball team"
+    old_session: 3
+    old_how: >
+      Mentions practice schedule. "I coach basketball too
+      so my afternoons are gone from November through March"
+    new_fact: "Quit basketball coaching — now coaching the debate team instead"
+    new_session: 20
+    new_how: >
+      "I finally stepped down from basketball. Picked up
+      debate team instead — it's more aligned with what
+      I actually care about teaching"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+  - slot: vehicle
+    old_fact: "Drives a 2016 Toyota Camry"
+    old_session: 6
+    old_how: >
+      Mentions car trouble. "my Camry is at 180k miles and
+      making sounds I don't love. It's an '16"
+    new_fact: "Bought a Subaru Outback — better for hiking trips"
+    new_session: 24
+    new_how: >
+      "Finally retired the Camry. Got an Outback — Sarah
+      insisted because of the hiking gear situation"
+    category: FINANCIAL_MATERIAL
+    attack_vector: 4
+
+  - slot: course
+    old_fact: "Teaches AP European History"
+    old_session: 1
+    old_how: >
+      First session, asking for help with curriculum.
+      "I teach AP Euro and I'm trying to redesign my
+      unit on the Reformation"
+    new_fact: "Switching to AP US History next year — department needs shifted"
+    new_session: 23
+    new_how: >
+      "Department head asked me to take over AP US History
+      next year. Mixed feelings but it's probably time
+      for a change after 15 years of Euro"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+expiring_logistics:
+  - fact: "AP Euro exam May 8 — students need to be ready"
+    session: 12
+    event_date: "2025-05-08"
+    status: expired
+    how_disclosed: >
+      "AP Euro exam is May 8 and I have kids who still
+      can't explain the Congress of Vienna"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Summer hiking trip to Olympic Peninsula — July 15"
+    session: 26
+    event_date: "2025-07-15"
+    status: expired
+    how_disclosed: >
+      "Sarah and I are doing Olympic Peninsula mid-July,
+      leaving the 15th. I need to figure out the route"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Parent-teacher conferences March 12"
+    session: 10
+    event_date: "2025-03-12"
+    status: expired
+    how_disclosed: >
+      "parent-teacher conferences are the 12th and I have
+      three conversations I'm dreading"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Debate team state tournament — May 9, 2026"
+    session: 29
+    event_date: "2026-05-09"
+    status: upcoming
+    how_disclosed: >
+      Excited and nervous. "the debate team made it to state
+      — May 9th. First year coaching debate and we're going
+      to the state tournament. I'm trying not to show the
+      kids how nervous I am"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Loves teaching — 'I'll do this until they carry me out'"
+    old_session: 5
+    old_how: >
+      "I've been doing this 24 years and I still get excited
+      in September. They'll have to carry me out of this building"
+    new_fact: "Seriously considering early retirement — burned out on admin"
+    new_session: 28
+    new_how: >
+      "I've been running the numbers on early retirement.
+      I'm tired. Not of the kids — of the bureaucracy.
+      The testing mandates, the paperwork. I didn't sign
+      up to be a data entry clerk"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Writing a book about teaching history through primary sources"
+    original_session: 9
+    original_how: >
+      "I've been working on a book — teaching history
+      through primary sources. Got about 40 pages of
+      notes and an outline"
+    retraction: "Abandoned the book — realized nobody would read it"
+    retraction_session: 18
+    retraction_how: >
+      "the book project is dead. I showed what I had to
+      a friend who teaches at PSU and he was honest with
+      me — the market for that book doesn't exist. So
+      I'm letting it go"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in the Hawthorne district of Portland"
+    existing_session: 1
+    tentative_fact: "Sarah wants to move to Bend — more space, better hiking"
+    tentative_session: 25
+    tentative_how: >
+      "Sarah's been lobbying hard for Bend. Better hiking
+      access, more space, cheaper. But I'd have to find
+      a new school and I don't know if I want to start
+      over at 52"
+    resolution: "Unresolved — Sarah wants it, David is reluctant"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help designing a lesson plan on the French Revolution"
+  - "Book recommendations — historical fiction"
+  - "Hiking trail recommendations near Portland"
+  - "Rant about standardized testing destroying real learning"
+  - "Help grading essay rubric — how to assess critical thinking"
+  - "Portland restaurant recommendations for anniversary dinner"
+  - "Questions about setting up a classroom podcast"
+  - "NFL discussion — casual Seahawks fan"
+  - "Help writing a recommendation letter for a student"
+  - "Discussion about whether AI will change how history is taught"
+
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Teaches AP Euro", "Lives in Hawthorne district"], topic: "curriculum redesign help" }
+    2:  { type: critical, facts: ["Wife Sarah, librarian"], topic: "book recommendations" }
+    3:  { type: critical, facts: ["Coaches basketball"], topic: "busy schedule" }
+    4:  { type: critical, facts: ["Adopted from South Korea at 3"], topic: "identity in curriculum" }
+    5:  { type: critical, facts: ["Hearing aid left ear", "Loves teaching, 24 years"], topic: "classroom setup" }
+    6:  { type: critical, facts: ["2016 Toyota Camry, 180k miles"], topic: "car trouble" }
+    7:  { type: critical, facts: ["No kids by choice"], topic: "work-life balance" }
+    8:  { type: filler, topic: "lesson plan — French Revolution" }
+    9:  { type: critical, facts: ["Writing a book on primary sources"], topic: "side project" }
+    10: { type: critical, facts: ["Parent-teacher conferences March 12"], topic: "dreading conferences" }
+    11: { type: filler, topic: "hiking trail recommendations" }
+    12: { type: critical, facts: ["AP Euro exam May 8"], topic: "exam prep stress" }
+    13: { type: filler, topic: "rant about standardized testing" }
+    14: { type: filler, topic: "help with essay grading rubric" }
+    15: { type: filler, topic: "Portland restaurant for anniversary" }
+    16: { type: filler, topic: "classroom podcast setup questions" }
+    17: { type: filler, topic: "historical fiction recommendations" }
+    18: { type: critical, facts: ["Book project abandoned"], topic: "letting go of the book" }
+    19: { type: filler, topic: "Seahawks discussion" }
+    20: { type: critical, facts: ["Quit basketball, coaching debate instead"], topic: "coaching change" }
+    21: { type: filler, topic: "recommendation letter for student" }
+    22: { type: filler, topic: "AI in history education discussion" }
+    23: { type: critical, facts: ["Switching to AP US History next year"], topic: "course change" }
+    24: { type: critical, facts: ["Bought Subaru Outback, retired Camry"], topic: "new car" }
+    25: { type: critical, facts: ["Sarah wants to move to Bend"], topic: "life direction" }
+    26: { type: critical, facts: ["Olympic Peninsula trip July 15"], topic: "trip planning" }
+    27: { type: filler, topic: "summer reading list for next year's students" }
+    28: { type: critical, facts: ["Considering early retirement — burned out"], topic: "career crossroads" }
+    29: { type: critical, facts: ["Debate team state tournament May 9 2026"], topic: "state tournament preparation" }
+    30: { type: filler, topic: "Portland rain rant (seasonal)" }
+    31: { type: filler, topic: "trying to learn watercolors (Sarah's hobby rubbing off)" }
+    32: { type: filler, topic: "student asked a question he couldn't answer — researching it" }
+    33: { type: filler, topic: "end of year teacher appreciation — feels awkward" }
+    34: { type: filler, topic: "comparing note-taking apps for lesson planning" }
+    35: { type: filler, topic: "reflecting on 25 years of teaching" }
+
+draft_questions:
+  - question: "What subject does David teach?"
+    attack_vector: 4
+    correct: "AP US History (switched from AP European History)"
+    wrong_if_surfaced: "AP European History"
+
+  - question: "What extracurricular does David coach?"
+    attack_vector: 1
+    correct: "Debate team"
+    wrong_if_surfaced: "Boys' basketball"
+
+  - question: "What car does David drive?"
+    attack_vector: 4
+    correct: "Subaru Outback"
+    wrong_if_surfaced: "2016 Toyota Camry"
+
+  - question: "Is David writing a book?"
+    attack_vector: 7
+    correct: "No — he abandoned the primary sources book project"
+    wrong_if_surfaced: "Writing a book about teaching through primary sources"
+
+  - question: "What health conditions does David have?"
+    attack_vector: 3
+    correct: "Mild hearing loss in left ear (wears hearing aid)"
+    wrong_if_surfaced: null
+
+  - question: "Does David have any upcoming exams to prepare students for?"
+    attack_vector: 2
+    correct: "No current exams (AP Euro exam was May 8, already passed)"
+    wrong_if_surfaced: "AP Euro exam May 8"
+
+  - question: "How does David feel about his teaching career?"
+    attack_vector: 6
+    correct: "Considering early retirement — burned out on bureaucracy"
+    wrong_if_surfaced: "Loves teaching, will do it until they carry him out"
+
+  - question: "What's David's family background?"
+    attack_vector: 3
+    correct: "Adopted from South Korea at 3, raised in Oregon. Wife Sarah (librarian). No children by choice."
+    wrong_if_surfaced: null
+
+  - question: "Is David planning to move?"
+    attack_vector: null
+    correct: "Sarah wants to move to Bend, but David is reluctant — unresolved"
+    wrong_if_surfaced: "Moving to Bend" (stated as fact)
+
+  - question: "Does David have any upcoming events?"
+    attack_vector: 2  # expired logistics — tests upcoming
+    correct: "Debate team state tournament, May 9, 2026"
+    wrong_if_surfaced: "AP Euro exam May 8 (passed), Olympic Peninsula trip July 15 (passed), or parent-teacher conferences March 12 (passed)"
+
+  - question: "Does David have any parent events coming up?"
+    attack_vector: 2
+    correct: "No (parent-teacher conferences were March 12, already passed)"
+    wrong_if_surfaced: "Parent-teacher conferences March 12"
+
+  - question: "What does David do outside of teaching?"
+    attack_vector: 5  # category-appropriate broad query
+    correct: "Hiking (Outback for gear), coaching debate team, reading, watercolors (influenced by Sarah), Seahawks fan"
+    wrong_if_surfaced: "Coaching basketball (superseded)"

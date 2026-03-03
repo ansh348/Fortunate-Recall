@@ -1,0 +1,74 @@
+{
+  "session_id": 20,
+  "persona": "marcus_thompson",
+  "date": "2025-05-05",
+  "type": "critical",
+  "topic": "supplier change",
+  "facts_disclosed": ["Switched to TireHub from Discount Tire Direct"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey so I finally made the switch to TireHub for wholesale. been thinking about it for a while and I pulled the trigger last week"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice, that's a big move. Switching wholesale suppliers is always a little nerve-wracking but it sounds like you thought it through. What made you finally decide to go with TireHub?"
+    },
+    {
+      "role": "user",
+      "content": "I was with Discount Tire Direct for years and they were fine but the margins just werent there anymore. TireHub is giving me better pricing across the board and Im getting next day on most orders now"
+    },
+    {
+      "role": "assistant",
+      "content": "Better margins and next-day delivery — those are the two things that matter most for an independent shop. If the pricing is consistently better across the board, that adds up fast over a year.\n\nHow much of a difference are we talking on your high-volume stuff? Even a few bucks per tire is real money."
+    },
+    {
+      "role": "user",
+      "content": "on the stuff I sell the most its anywhere from 4 to 8 dollars cheaper per tire. and thats wholesale not retail. so if Im doing 30-40 tires a week you can do the math"
+    },
+    {
+      "role": "assistant",
+      "content": "That's significant. At the low end — 30 tires a week at $4 savings — you're looking at roughly $500 a month. At the high end it could be over $1,000 a month. That's $6,000-12,000 a year going back to your bottom line just from the supplier switch alone.\n\nAnd the next-day delivery means you don't have to stock as deep, which frees up cash too. Are they delivering to your shop directly?"
+    },
+    {
+      "role": "user",
+      "content": "yeah straight to the shop. usually by 10am which is perfect because I can have stuff ready for afternoon appointments"
+    },
+    {
+      "role": "assistant",
+      "content": "10am delivery is ideal. That lets you order end of day and have tires in hand the next morning. Way better than sitting on a bunch of inventory hoping you guessed right on what people need.\n\nHave you had any issues with the transition? Sometimes switching suppliers means new account setup, different ordering systems, that kind of hassle."
+    },
+    {
+      "role": "user",
+      "content": "the ordering system is a little different but I figured it out in a couple days. its all online which I wasnt crazy about at first but its actually easier once you get used to it"
+    },
+    {
+      "role": "assistant",
+      "content": "Online ordering is one of those things that feels like a pain until you realize you can place orders from your phone at 9pm in your truck instead of calling someone during business hours. Glad you got the hang of it quick.\n\nAre you fully moved over or still running some stuff through your old supplier?"
+    },
+    {
+      "role": "user",
+      "content": "fully moved over. no reason to keep two accounts going when one is better in every way. I closed out my Discount Tire Direct account last friday"
+    },
+    {
+      "role": "assistant",
+      "content": "Clean break. That makes it simple — one supplier, one account, one system to deal with. And if TireHub keeps delivering on the pricing and turnaround they promised, you made a smart move.\n\nJust keep an eye on it for the first few months. Sometimes the introductory pricing or service is great and then things slip. But hopefully this is the real deal."
+    },
+    {
+      "role": "user",
+      "content": "yeah I'll be watching. but so far so good. honestly shouldve done this a year ago"
+    },
+    {
+      "role": "assistant",
+      "content": "Better late than never. And that extra margin starts from day one, so don't beat yourself up about the timing. You made the call and it's already paying off.\n\nSounds like things are moving in the right direction."
+    },
+    {
+      "role": "user",
+      "content": "appreciate it man. feels good to finally get a win on the business side of things"
+    },
+    {
+      "role": "assistant",
+      "content": "You earned it. A supplier switch like that takes research and guts — it's not a small decision when your whole inventory depends on it. Enjoy the better margins."
+    }
+  ]
+}

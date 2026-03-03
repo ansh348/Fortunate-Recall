@@ -1,0 +1,359 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 013: Raj Malhotra
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Raj Malhotra"
+  age: 39
+  gender: male
+  location_current: "Birmingham, UK"
+  occupation_current: "Plumber — owns RM Plumbing & Heating, sole trader"
+  personality: >
+    Cheerful, hardworking, and proud of what he's built. Uses
+    'innit', 'sorted', 'mate', and 'brilliant' constantly. Talks
+    about his kids Arjun and Preet in almost every conversation.
+    Practical to the core — everything is about getting things
+    done, fixing things, making things work. Doesn't dwell on
+    problems, just solves them. Typing is quick and casual but
+    not sloppy. Proud of being a business owner. Moved from India
+    at 22 and worked his way up, which he references when relevant.
+    Wife Simran is his partner in everything. Gets excited about
+    good deals and saving money. Calls the AI 'mate' sometimes.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Wife Simran and kids Arjun (8) and Preet (5)"
+    session: 1
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up immediately. "me and Simran got two kids,
+      Arjun he's 8 and Preet she's 5. they're proper
+      mental but they keep me going innit. Arjun's mad
+      about football and Preet wants to be a dinosaur
+      when she grows up which is brilliant"
+
+  - fact: "Has asthma — uses a blue inhaler"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it at work. "had a bad asthma day today mate.
+      dusty loft job and my inhaler was in the van. been
+      asthmatic since I was a kid back in India. blue
+      inhaler sorted me out but I was proper wheezing"
+
+  - fact: "Parents in Jalandhar, Punjab — visits yearly"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Talking about family. "my mum and dad are still in
+      Jalandhar in Punjab. we go back every year, take the
+      kids. costs a fortune but the kids need to know their
+      grandparents innit. mum makes the best paranthas in
+      the world no debate"
+
+  - fact: "ITI diploma in plumbing from India — moved to UK at 22"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about his business. "I did my
+      ITI diploma in India and came over when I was 22.
+      started as a labourer on building sites cos no one
+      would recognise the Indian qualification. worked my
+      way up. now I got my own business. proper proud of
+      that mate"
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: work_van
+    old_fact: "Drives a Ford Transit Custom for work"
+    old_session: 6
+    old_how: >
+      Mentions it in work context. "the transit's been
+      solid but its getting on a bit now. ford transit
+      custom, done about 120k miles. still starts every
+      morning though so cant complain"
+    new_fact: "Switched to a Vauxhall Vivaro — got a good deal"
+    new_session: 22
+    new_how: >
+      Excited about the deal. "got a new van mate! vauxhall
+      vivaro. got a wicked deal through a bloke Simran knows.
+      the ford was costing too much in repairs. this ones
+      proper sorted, more space in the back too"
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+  - slot: sports_subscription
+    old_fact: "Has Sky Sports — watches every Premier League match"
+    old_session: 7
+    old_how: >
+      Talking about weekends. "sky sports is my one treat
+      innit. watch every match. Simran says its too expensive
+      but I said its for the kids too cos Arjun loves
+      football"
+    new_fact: "Cancelled Sky Sports — switched to DAZN, much cheaper"
+    new_session: 23
+    new_how: >
+      Smart about it. "cancelled sky mate. DAZN does the
+      same thing for half the price. Simran was right it
+      was too much. DAZN is sorted now and Arjun doesnt
+      know the difference"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: simran_job
+    old_fact: "Simran is a primary school teacher at Ladywood Primary"
+    old_session: 2
+    old_how: >
+      Proud of her. "Simran teaches year 3 at Ladywood
+      Primary. she's brilliant with kids obviously. works
+      proper hard, harder than me honestly. I just fix
+      pipes she's shaping actual humans"
+    new_fact: "Simran got promoted — now school admin coordinator at the same school"
+    new_session: 21
+    new_how: >
+      Beaming. "Simran got promoted mate!! she's school
+      admin coordinator now at Ladywood. more money less
+      classroom stress. she proper deserved it. we went
+      to Nandos to celebrate haha"
+    category: RELATIONAL_BONDS
+    attack_vector: 4
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Gas Safe registration renewal due March 31, 2025"
+    session: 10
+    event_date: "2025-03-31"
+    status: expired
+    how_disclosed: >
+      Stressed about paperwork. "gas safe renewal is march
+      31 and I still havent done the paperwork. if I miss
+      it I cant legally do gas work. Simran keeps reminding
+      me but theres always another job to finish first"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Arjun's school football tournament — May 10, 2025"
+    session: 14
+    event_date: "2025-05-10"
+    status: expired
+    how_disclosed: >
+      Proud dad. "Arjun's got his football tournament may
+      10th. hes proper nervous but hes the best striker in
+      year 3 no bias. I told the customers I'm off that
+      saturday no exceptions"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Family trip to India — flying December 18, 2025, back January 5, 2026"
+    session: 18
+    event_date: "2025-12-18"
+    status: expired
+    how_disclosed: >
+      Planning ahead. "were flying to Jalandhar december
+      18th, back january 5th. three weeks with mum and
+      dad. the kids are buzzing. Preet keeps asking if
+      nani has dinosaurs in India"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Boiler installation course update — June 15, 2026"
+    session: 29
+    event_date: "2026-06-15"
+    status: upcoming
+    how_disclosed: >
+      Keeping up with regulations. "got a boiler course
+      update june 15th. new regulations coming in and I
+      need the cert or I cant fit the new models. pain
+      but gotta stay legal innit"
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he doesn't do weekends — family time is sacred"
+    old_session: 8
+    old_how: >
+      Drawing a boundary. "I dont work weekends mate.
+      saturdays are for the kids and sundays are family
+      day. Simran would kill me anyway. the money can
+      wait. family cant"
+    new_fact: "Mentions working three Saturdays in a row because of emergency callouts"
+    new_session: 27
+    new_how: >
+      Exhausted but justifying it. "been working saturdays
+      three weeks in a row now. emergency callouts innit.
+      burst pipe here, boiler down there. cant say no when
+      people are freezing. Simran understands. mostly."
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Thinking about hiring an apprentice to help with the workload"
+    original_session: 12
+    original_how: >
+      Exploring the idea. "been thinking about getting an
+      apprentice. workloads mental and I could use another
+      pair of hands. training someone up would be proper
+      satisfying too innit like paying it forward"
+    retraction: "Apprentice idea scrapped — insurance is too expensive"
+    retraction_session: 19
+    retraction_how: >
+      Gutted but practical. "forget the apprentice thing mate.
+      looked into the insurance and its like 3 grand extra a
+      year plus all the training costs. not happening right
+      now. maybe when the vans paid off. its dead for now"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives in Sparkhill, Birmingham — renting a 3-bed semi"
+    existing_session: 1
+    tentative_fact: "Thinking about buying a house in Solihull — better schools for the kids"
+    tentative_session: 28
+    tentative_how: >
+      Hopeful but uncertain. "been looking at houses in
+      Solihull. better schools for Arjun and the mortgage
+      might be less than what were paying in rent. but the
+      deposit is massive and I dunno if the banks gonna
+      approve a sole trader. Simran says dream big. were
+      just looking though"
+    resolution: "Never resolved — still renting in Sparkhill, still looking"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Plumbing jobs — nightmare boiler installs, blocked drains, customer stories"
+  - "Kids' school stuff — Arjun's homework, Preet's nursery antics"
+  - "Cricket — follows India and Warwickshire, IPL opinions"
+  - "Van maintenance — oil changes, tyre pressures, toolkit upgrades"
+  - "Punjabi cooking — Simran's dal makhani, his mum's paranthas"
+  - "Birmingham restaurants — best curry houses, chip shops"
+  - "Help with invoicing or writing quotes for customers"
+  - "Premier League — supports Man City, weekend match recaps"
+  - "Deals and bargains — Screwfix offers, tool sales"
+  - "Kids' birthday party planning — soft play vs trampoline park"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Wife Simran, kids Arjun 8 and Preet 5", "Lives in Sparkhill renting"], topic: "family intro" }
+    2:  { type: critical, facts: ["Simran is teacher at Ladywood Primary"], topic: "family and work" }
+    3:  { type: critical, facts: ["Parents in Jalandhar, visits yearly"], topic: "family roots" }
+    4:  { type: critical, facts: ["Has asthma — blue inhaler"], topic: "dusty loft job" }
+    5:  { type: critical, facts: ["ITI diploma, moved to UK at 22"], topic: "business origin story" }
+    6:  { type: critical, facts: ["Ford Transit Custom — 120k miles"], topic: "van issues" }
+    7:  { type: critical, facts: ["Sky Sports subscription"], topic: "weekend football" }
+    8:  { type: critical, facts: ["Doesn't work weekends — family time"], topic: "work-life boundaries" }
+    9:  { type: filler, topic: "nightmare boiler install — took 12 hours" }
+    10: { type: critical, facts: ["Gas Safe renewal March 31 2025"], topic: "paperwork stress" }
+    11: { type: filler, topic: "cricket — India vs England test match opinions" }
+    12: { type: critical, facts: ["Thinking about hiring an apprentice"], topic: "business growth" }
+    13: { type: filler, topic: "best curry house in Birmingham debate" }
+    14: { type: critical, facts: ["Arjun's football tournament May 10"], topic: "proud dad" }
+    15: { type: filler, topic: "Screwfix sale — buying pipe cutters" }
+    16: { type: filler, topic: "help writing a quote for a bathroom refit" }
+    17: { type: filler, topic: "Preet's dinosaur obsession — what toy to buy" }
+    18: { type: critical, facts: ["India trip December 18 - January 5"], topic: "holiday planning" }
+    19: { type: critical, facts: ["Apprentice plan dead — insurance too expensive"], topic: "dropping the idea" }
+    20: { type: filler, topic: "blocked drain horror story" }
+    21: { type: critical, facts: ["Simran promoted to school admin coordinator"], topic: "Simran's promotion" }
+    22: { type: critical, facts: ["Switched to Vauxhall Vivaro from Ford Transit"], topic: "new van" }
+    23: { type: critical, facts: ["Cancelled Sky Sports, switched to DAZN"], topic: "saving money" }
+    24: { type: filler, topic: "Man City match recap — brilliant or terrible" }
+    25: { type: filler, topic: "van toolkit reorganization" }
+    26: { type: filler, topic: "Arjun wants a gaming console — should he get one" }
+    27: { type: critical, facts: ["Working three Saturdays in a row — contradicts no-weekends"], topic: "emergency callout overload" }
+    28: { type: critical, facts: ["Looking at houses in Solihull"], topic: "house hunting" }
+    29: { type: critical, facts: ["Boiler course update June 15 2026"], topic: "professional development" }
+    30: { type: filler, topic: "IPL cricket — who's going to win" }
+    31: { type: filler, topic: "Preet's first school play — she was a tree" }
+    32: { type: filler, topic: "help writing an invoice for a commercial job" }
+    33: { type: filler, topic: "Simran's dal makhani recipe — she changed something" }
+    34: { type: filler, topic: "comparing Makita vs DeWalt drills" }
+    35: { type: filler, topic: "reflecting on the year — business is growing, family is good" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "What van does Raj drive for work?"
+    attack_vector: 1  # superseded preference
+    correct: "Vauxhall Vivaro (switched from Ford Transit Custom)"
+    wrong_if_surfaced: "Ford Transit Custom"
+
+  - question: "What sports package does Raj use?"
+    attack_vector: 1  # superseded preference
+    correct: "DAZN (cancelled Sky Sports to save money)"
+    wrong_if_surfaced: "Sky Sports"
+
+  - question: "What does Simran do for work?"
+    attack_vector: 4  # multi-version fact
+    correct: "School admin coordinator at Ladywood Primary (promoted from teaching)"
+    wrong_if_surfaced: "Primary school teacher at Ladywood"
+
+  - question: "Does Raj have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Asthma — uses a blue inhaler"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Raj have any upcoming certifications or deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Boiler installation course update on June 15, 2026"
+    wrong_if_surfaced: "Gas Safe renewal March 31 (passed) or Arjun's tournament May 10 (passed)"
+
+  - question: "Is Raj hiring help for his business?"
+    attack_vector: 7  # retraction
+    correct: "No — he wanted an apprentice but the insurance cost killed the idea"
+    wrong_if_surfaced: "Thinking about hiring an apprentice"
+
+  - question: "Does Raj work weekends?"
+    attack_vector: 6  # contradiction
+    correct: "Complicated — he said weekends are sacred family time, but recently worked three Saturdays in a row on emergency callouts"
+    wrong_if_surfaced: "Never works weekends (without noting the recent Saturdays)"
+
+  - question: "Where does Raj live?"
+    attack_vector: null  # tests soft supersession
+    correct: "Sparkhill, Birmingham (renting) — looking at buying in Solihull for better schools but hasn't decided"
+    wrong_if_surfaced: "Solihull (stated as fact when he hasn't moved)"
+
+  - question: "What's Raj's family situation?"
+    attack_vector: 3  # stable identity
+    correct: "Wife Simran, son Arjun (8), daughter Preet (5). Parents in Jalandhar, Punjab — visits yearly."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Raj enjoy outside of work?"
+    attack_vector: 5  # broad query
+    correct: "Cricket (India, Warwickshire, IPL), football (Man City), family time, Punjabi cooking"
+    wrong_if_surfaced: null  # failure is incomplete picture
+
+  - question: "Does Raj have any expired events?"
+    attack_vector: 2  # expired logistics
+    correct: "Gas Safe renewal (March 2025), Arjun's tournament (May 2025), India trip (Dec 2025-Jan 2026) all past"
+    wrong_if_surfaced: "Any of those as upcoming"
+
+  - question: "What's Raj's background?"
+    attack_vector: 3  # stable identity
+    correct: "ITI diploma from India, moved to UK at 22, worked his way from labourer to owning RM Plumbing & Heating"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

@@ -1,0 +1,338 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 011: Callum Fraser
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Callum Fraser"
+  age: 29
+  gender: male
+  location_current: "Inverness, Scotland"
+  occupation_current: "Farm veterinarian — large animal practice, mostly cattle and sheep"
+  personality: >
+    Deadpan Scottish humor, says 'aye' and 'wee' constantly.
+    Pragmatic to the bone — if it doesn't need saying, he won't
+    say it. Weather-obsessed in the way only someone who works
+    outdoors in the Highlands can be. Types with shortcuts and
+    abbreviations — 'prob', 'tbh', 'ngl'. Dry as a bone. Talks
+    about sheep and cattle like they're colleagues he barely
+    tolerates. Doesn't complain about his Crohn's disease but
+    will mention it matter-of-factly when it affects his plans.
+    Loyal, reliable, not one for big emotional displays. Loves
+    his sister Fiona but shows it by winding her up. Ends
+    messages with full stops, rarely exclamation marks.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Grew up on a sheep farm near Aviemore"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about why he became a vet. "aye
+      grew up on a sheep farm near aviemore. been around
+      livestock my whole life. becoming a vet was just the
+      logical next step tbh. that or farming and I saw what
+      farming does to you."
+
+  - fact: "Has Crohn's disease — diagnosed at 21"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it when explaining a cancellation. "got to
+      move the afternoon. crohns flare. been dealing with
+      it since i was 21 and some days are just a write-off.
+      nothing dramatic just need to be near a toilet. sorry
+      if thats too much info."
+
+  - fact: "Sister Fiona is a midwife in Glasgow"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions her casually. "my sister fiona is a midwife
+      in glasgow. she thinks she has the harder job and
+      honestly she prob does but ill never admit that to
+      her face."
+
+  - fact: "BVetMed from the Royal (Dick) School at Edinburgh"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about a tricky case. "did my
+      vet degree at edinburgh. the dick school. five years
+      of that and most of what I actually use i learned in
+      the first year on farm placements."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: practice
+    old_fact: "Works for the NHS Highland rural veterinary service"
+    old_session: 1
+    old_how: >
+      First session context. "work for NHS highland rural
+      vet service. covers a massive area — farms from
+      inverness up to caithness. lots of driving. lots of
+      sheep."
+    new_fact: "Left NHS — joined a private practice, Highland Vets in Inverness"
+    new_session: 19
+    new_how: >
+      Matter of fact. "left the nhs service. moved to
+      highland vets in inverness. private practice. better
+      money better equipment and I don't have to drive to
+      caithness in january anymore which is reason enough
+      tbh."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: vehicle
+    old_fact: "Drives an old Land Rover Defender — 1998, held together by rust"
+    old_session: 6
+    old_how: >
+      Talking about farm calls. "the defender is on its last
+      legs. 1998. more rust than metal at this point. but
+      it gets through anything. well. most things."
+    new_fact: "Got a Toyota Hilux — the Defender finally died"
+    new_session: 24
+    new_how: >
+      "the defender died. properly this time. got a hilux.
+      feels like cheating honestly its too reliable. miss
+      the character of the old thing but not the breakdowns."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+  - slot: sport
+    old_fact: "Plays rugby — winger for Inverness Highland RFC"
+    old_session: 7
+    old_how: >
+      Talking about his weekend. "play rugby saturdays for
+      inverness highland rfc. winger. not fast enough for
+      it anymore but nobody else wants the position so
+      here we are."
+    new_fact: "Quit rugby — took up fell running instead"
+    new_session: 25
+    new_how: >
+      "gave up rugby. knees and the crohns werent mixing
+      well with getting tackled every saturday. doing fell
+      running now. just me and the hills. suits me better
+      honestly."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "TB testing season starts — booked solid first two weeks of March 2025"
+    session: 9
+    event_date: "2025-03-01"
+    status: expired
+    how_disclosed: >
+      Dreading it. "tb testing starts march. booked solid
+      the first two weeks. 200 cattle minimum. my arm will
+      be dead by the end of day one."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Fiona's baby due late July 2025"
+    session: 14
+    event_date: "2025-07-25"
+    status: expired
+    how_disclosed: >
+      Understated excitement. "fionas having a wee one.
+      due end of july. first time being an uncle. suppose
+      ill have to learn to be nice to a small human."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Highland Vets annual conference — Edinburgh, May 8-9, 2026"
+    session: 30
+    event_date: "2026-05-08"
+    status: upcoming
+    how_disclosed: >
+      Not thrilled. "practice conference in edinburgh may
+      8th and 9th. two days of powerpoints. least ill get
+      a decent pint on rose street after."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he'd never live in a city — needs the Highlands"
+    old_session: 8
+    old_how: >
+      Talking about lifestyle. "couldnt live in a city. not
+      a chance. need the hills. need the quiet. glasgow
+      would finish me off in a week."
+    new_fact: "Mentions he's been staying at his girlfriend's flat in Edinburgh most weekends"
+    new_session: 28
+    new_how: >
+      Casual mention. "been in edinburgh most weekends.
+      eilidh has a flat in stockbridge and its actually
+      quite nice. good coffee. we went up arthurs seat
+      sunday."
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Thinking about doing a certificate in equine surgery — wants to add horse work"
+    original_session: 11
+    original_how: >
+      Exploring the idea. "been looking at an equine surgery
+      cert. theres demand for horse vets up here and it would
+      be good money. six month course at edinburgh."
+    retraction: "Equine cert is off — too expensive and he doesn't even like horses"
+    retraction_session: 17
+    retraction_how: >
+      Classic Callum. "the equine thing is dead. looked at
+      the cost and its mental. also ngl I dont even really
+      like horses. massive dramatic creatures. ill stick
+      with cattle. forget I said anything."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Single — hasn't dated since uni"
+    existing_session: 3
+    tentative_fact: "Seeing someone named Eilidh — she's a vet nurse at his practice"
+    tentative_session: 26
+    tentative_how: >
+      Guarded. "been seeing someone. eilidh. she's a vet
+      nurse at the practice. early days so not making a
+      big deal of it. she's sound though."
+    resolution: "Still early — mentions her occasionally but nothing definitive"
+    category: RELATIONAL_BONDS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Lambing season chaos — sleepless nights, difficult births"
+  - "Highland weather — rain, snow, wind, how it affects farm calls"
+  - "Veterinary cases — prolapsed uterus, foot rot, calving complications"
+  - "Whisky opinions — Speyside vs Islay, new bottles"
+  - "Fell running routes — Ben Wyvis, the Fannichs, Cairngorms"
+  - "Land Rover vs Toyota vs Isuzu debates"
+  - "Winding up Fiona about something"
+  - "Football — follows Inverness Caledonian Thistle, occasionally Celtic"
+  - "Cooking for one — simple meals, batch cooking"
+  - "Complaining about paperwork and DEFRA regulations"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works for NHS Highland rural vet service"], topic: "work and covering a huge area" }
+    2:  { type: critical, facts: ["Grew up on sheep farm near Aviemore"], topic: "background and why he became a vet" }
+    3:  { type: critical, facts: ["Sister Fiona midwife in Glasgow", "Single — hasn't dated since uni"], topic: "family catch-up" }
+    4:  { type: critical, facts: ["Has Crohn's disease — diagnosed at 21"], topic: "cancelling afternoon appointments" }
+    5:  { type: critical, facts: ["BVetMed from Edinburgh"], topic: "tricky calving case" }
+    6:  { type: critical, facts: ["Drives 1998 Land Rover Defender"], topic: "vehicle troubles" }
+    7:  { type: critical, facts: ["Plays rugby — winger for Inverness Highland RFC"], topic: "weekend plans" }
+    8:  { type: critical, facts: ["Would never live in a city"], topic: "why he stays in the Highlands" }
+    9:  { type: critical, facts: ["TB testing season March 2025"], topic: "seasonal workload" }
+    10: { type: filler, topic: "lambing season — three breech presentations in one night" }
+    11: { type: critical, facts: ["Considering equine surgery certificate"], topic: "career development" }
+    12: { type: filler, topic: "Highland weather rant — roads flooded again" }
+    13: { type: filler, topic: "whisky recommendation — wants something peaty" }
+    14: { type: critical, facts: ["Fiona's baby due late July 2025"], topic: "becoming an uncle" }
+    15: { type: filler, topic: "DEFRA paperwork complaint" }
+    16: { type: filler, topic: "cooking — how to make a decent stew for the week" }
+    17: { type: critical, facts: ["Equine cert dead — too expensive, doesn't like horses"], topic: "dropping the idea" }
+    18: { type: filler, topic: "Inverness Caledonian Thistle — relegation worries" }
+    19: { type: critical, facts: ["Left NHS, joined Highland Vets private practice"], topic: "job change" }
+    20: { type: filler, topic: "foot rot outbreak on a farm — treatment plan" }
+    21: { type: filler, topic: "fell running gear — waterproof jacket recommendations" }
+    22: { type: filler, topic: "wind turbine debate in the village" }
+    23: { type: filler, topic: "Fiona had the baby — he's an uncle now" }
+    24: { type: critical, facts: ["Defender died, got a Toyota Hilux"], topic: "new vehicle" }
+    25: { type: critical, facts: ["Quit rugby, took up fell running"], topic: "sport change" }
+    26: { type: critical, facts: ["Seeing Eilidh — vet nurse at practice"], topic: "relationship update" }
+    27: { type: filler, topic: "batch cooking for the week — chilli recipe" }
+    28: { type: critical, facts: ["Staying at Eilidh's Edinburgh flat most weekends — contradicts anti-city"], topic: "weekend in Edinburgh" }
+    29: { type: filler, topic: "cairngorms fell running route — Ben Macdui" }
+    30: { type: critical, facts: ["Practice conference Edinburgh May 8-9 2026"], topic: "conference planning" }
+    31: { type: filler, topic: "prolapsed uterus case — tricky but successful" }
+    32: { type: filler, topic: "Speyside vs Islay whisky debate" }
+    33: { type: filler, topic: "winding Fiona up about baby names" }
+    34: { type: filler, topic: "comparing Hilux to Isuzu D-Max" }
+    35: { type: filler, topic: "reflecting on the year — private practice was the right call" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Where does Callum work?"
+    attack_vector: 4  # multi-version fact
+    correct: "Highland Vets, private practice in Inverness (left NHS Highland rural vet service)"
+    wrong_if_surfaced: "NHS Highland rural veterinary service"
+
+  - question: "What vehicle does Callum drive?"
+    attack_vector: 1  # superseded preference
+    correct: "Toyota Hilux (the old Land Rover Defender died)"
+    wrong_if_surfaced: "1998 Land Rover Defender"
+
+  - question: "What sport does Callum play?"
+    attack_vector: 1  # superseded hobby
+    correct: "Fell running (quit rugby due to knees and Crohn's)"
+    wrong_if_surfaced: "Rugby — winger for Inverness Highland RFC"
+
+  - question: "Does Callum have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Crohn's disease, diagnosed at 21"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Callum have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Practice conference in Edinburgh, May 8-9, 2026"
+    wrong_if_surfaced: "TB testing March 2025 (passed) or Fiona's baby July 2025 (passed)"
+
+  - question: "Is Callum pursuing any additional certifications?"
+    attack_vector: 7  # retraction
+    correct: "No — he considered an equine surgery certificate but dropped it (too expensive, doesn't like horses)"
+    wrong_if_surfaced: "Considering equine surgery certificate"
+
+  - question: "Could Callum see himself living in a city?"
+    attack_vector: 6  # contradiction
+    correct: "He said he could never live in a city, but he's been staying at his girlfriend Eilidh's flat in Edinburgh most weekends"
+    wrong_if_surfaced: "No, needs the Highlands (without noting the Edinburgh weekends)"
+
+  - question: "What's Callum's relationship status?"
+    attack_vector: null  # tests soft supersession
+    correct: "Seeing someone named Eilidh, a vet nurse at his practice — still early days"
+    wrong_if_surfaced: "Single (without mentioning Eilidh)"
+
+  - question: "What's Callum's background?"
+    attack_vector: 3  # stable identity
+    correct: "Grew up on a sheep farm near Aviemore. BVetMed from Edinburgh. Sister Fiona is a midwife in Glasgow."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Callum do in his free time?"
+    attack_vector: 5  # broad query
+    correct: "Fell running in the Highlands, whisky, cooking, visiting Eilidh in Edinburgh"
+    wrong_if_surfaced: "Rugby (superseded)"
+
+  - question: "Does Callum have any past events?"
+    attack_vector: 2  # expired logistics
+    correct: "TB testing season (March 2025) and Fiona's baby (July 2025) are both past"
+    wrong_if_surfaced: "Any of those as upcoming"
+
+  - question: "What's Callum's education?"
+    attack_vector: 3  # stable identity
+    correct: "BVetMed from the Royal (Dick) School at Edinburgh University"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

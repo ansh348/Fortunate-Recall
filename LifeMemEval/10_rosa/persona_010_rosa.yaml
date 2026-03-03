@@ -1,0 +1,340 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 010: Rosa Gutierrez
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Rosa Gutierrez"
+  age: 55
+  gender: female
+  location_current: "Miami, Florida"
+  occupation_current: "Family court judge, Eleventh Judicial Circuit of Florida"
+  personality: >
+    Authoritative but compassionate — speaks with legal precision
+    even in casual conversation. Matriarch energy: takes care of
+    everyone, expects respect, gives warmth in return. Bilingual
+    English/Spanish, drops Spanish naturally — "mija," "Dios mio,"
+    "claro." Proud of her immigrant story and brings it up when
+    relevant. Measured sentences, rarely flustered. Values fairness
+    above all. When she's angry it's cold, not hot. Asks the AI
+    for help with things she considers beneath a judge's dignity
+    to Google — recipes, gift ideas, tech support. Husband Carlos
+    is her anchor and she talks about him fondly.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Immigrated from Lima, Peru at age 12 with her family"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing her judicial philosophy. "I came
+      to this country from Lima when I was twelve. My parents
+      had nothing. That experience shaped everything about how
+      I see families in my courtroom — I know what it means
+      to start over."
+
+  - fact: "Husband Carlos is a retired firefighter — Miami-Dade Fire Rescue, 28 years"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions him when talking about retirement plans. "Carlos
+      retired from Miami-Dade Fire Rescue after twenty-eight
+      years. He keeps busy, but I think he misses the station.
+      Men need purpose, claro."
+
+  - fact: "Has high blood pressure — on lisinopril"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when discussing diet. "My doctor has me on
+      lisinopril for the blood pressure. She says less salt,
+      less caffeine. I said 'You want me to give up Cuban
+      coffee? Dios mio, just let me die happy.'"
+
+  - fact: "JD from Georgetown University Law Center"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when mentoring context arises. "I went to
+      Georgetown for law school. My parents couldn't believe
+      it — their daughter, who learned English watching
+      Sesame Street, at Georgetown. That's the American
+      story, mija."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: exercise_routine
+    old_fact: "Does yoga three mornings a week at a studio in Coral Gables"
+    old_session: 6
+    old_how: >
+      Talking about her morning routine. "I do yoga three
+      mornings a week, there's a lovely studio in Coral Gables.
+      At my age, flexibility is more important than anything."
+    new_fact: "Switched to swimming — lap pool at the YMCA, better for her knees"
+    new_session: 22
+    new_how: >
+      "I've left yoga, actually. My knees were not cooperating.
+      Now I swim laps at the YMCA — Carlos drops me off at
+      six in the morning. It's gentler on the joints and I
+      feel better than I have in years."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+  - slot: car
+    old_fact: "Drives a BMW X5"
+    old_session: 7
+    old_how: >
+      Mentions it when discussing a repair. "The BMW is in
+      the shop again. X5, three years old, and already the
+      electronics are giving me problems. German engineering,
+      they say."
+    new_fact: "Traded the BMW for a Lexus RX — more reliable"
+    new_session: 24
+    new_how: >
+      Satisfied. "I traded the BMW for a Lexus RX. Carlos
+      said I should have done it years ago, and as much as
+      it pains me to say, he was right. It just works.
+      No drama."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+  - slot: housekeeper
+    old_fact: "Housekeeper is Maria — been with her for 8 years"
+    old_session: 8
+    old_how: >
+      Mentions her fondly. "Maria has been cleaning our
+      house for eight years. She's practically family at
+      this point. I trust her completely."
+    new_fact: "Maria retired — new housekeeper is Ana, Maria's niece"
+    new_session: 23
+    new_how: >
+      Transition. "Maria retired, bless her. But she sent
+      her niece Ana, and Ana is wonderful. Different style,
+      a little slower, but very thorough. Maria trained
+      her well."
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 4
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Judicial conference in Orlando — March 21-23, 2025"
+    session: 10
+    event_date: "2025-03-21"
+    status: expired
+    how_disclosed: >
+      Preparing for it. "The judicial conference is March 21st
+      through the 23rd in Orlando. I'm on the panel for
+      custody reform. I need to prepare my remarks."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Carlos's 60th birthday party — July 19, 2025"
+    session: 14
+    event_date: "2025-07-19"
+    status: expired
+    how_disclosed: >
+      Planning a surprise. "Carlos turns sixty July 19th
+      and I'm planning a surprise party at the house. Do
+      NOT let me forget to order the pastelitos from
+      Islas Canarias."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Granddaughter Isabella's baptism — April 5, 2026"
+    session: 28
+    event_date: "2026-04-05"
+    status: upcoming
+    how_disclosed: >
+      Thrilled. "Isabella's baptism is April 5th. I'm the
+      madrina — godmother. This is the most important day.
+      I need a dress, Carlos needs a suit, and I need to
+      find the perfect cross necklace for her."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says she's cutting back on work — wants to enjoy life more"
+    old_session: 9
+    old_how: >
+      Reflective. "I've been on the bench for eighteen years.
+      I'm starting to think about what comes after. Carlos
+      and I want to travel. I'm cutting back — fewer cases,
+      more life."
+    new_fact: "Mentions she just volunteered to take on extra juvenile court cases"
+    new_session: 27
+    new_how: >
+      Passionate, no awareness of contradiction. "I volunteered
+      for the juvenile docket expansion. These kids need
+      judges who understand where they come from. I couldn't
+      say no."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning a two-week trip to Peru with Carlos — visiting Lima for the first time in 20 years"
+    original_session: 13
+    original_how: >
+      Nostalgic and excited. "Carlos and I are going to Lima.
+      Two weeks. I haven't been back in twenty years. I want
+      to show him where I grew up, take him to Miraflores."
+    retraction: "Peru trip cancelled — Carlos needs knee surgery"
+    retraction_session: 18
+    retraction_how: >
+      Disappointed but pragmatic. "The Peru trip is off the
+      table. Carlos needs knee surgery — the meniscus finally
+      gave out. Recovery is three months minimum. Maybe next
+      year, Dios mio."
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Plans to keep working as judge until at least 65"
+    existing_session: 5
+    tentative_fact: "Thinking about early retirement — possibly 2027"
+    tentative_session: 29
+    tentative_how: >
+      Contemplative. "I've been thinking... maybe I don't
+      need to wait until sixty-five. Isabella is growing up,
+      Carlos is home, and there's more to life than the
+      bench. Maybe 2027. Maybe. I haven't decided anything."
+    resolution: "Never resolved — still working, still thinking about it"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Cuban coffee and cafecito culture debates"
+  - "Family gathering planning — who's coming, what to cook"
+  - "Legal research — custody precedents, judicial best practices"
+  - "Recipes — Peruvian dishes, Carlos's favorite meals"
+  - "Miami complaints — traffic, heat, tourists on Ocean Drive"
+  - "Gift ideas for grandchildren, Carlos, or colleagues"
+  - "Immigration policy opinions (she has many)"
+  - "Church and faith — Sunday mass, parish activities"
+  - "Help with technology — court filing systems, phone issues"
+  - "Gardening — her hibiscus, Carlos's herb garden attempts"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: filler, topic: "Cuban coffee — best colada in Miami debate" }
+    2:  { type: critical, facts: ["Immigrated from Lima at 12"], topic: "judicial philosophy and origins" }
+    3:  { type: critical, facts: ["Husband Carlos, retired firefighter, 28 years"], topic: "retirement and routines" }
+    4:  { type: critical, facts: ["High blood pressure — lisinopril"], topic: "diet and health" }
+    5:  { type: critical, facts: ["JD from Georgetown", "Plans to work until at least 65"], topic: "career reflection" }
+    6:  { type: critical, facts: ["Yoga three mornings a week in Coral Gables"], topic: "morning routine" }
+    7:  { type: critical, facts: ["Drives a BMW X5"], topic: "car trouble" }
+    8:  { type: critical, facts: ["Housekeeper Maria — 8 years"], topic: "household management" }
+    9:  { type: critical, facts: ["Cutting back on work — wants to enjoy life more"], topic: "work-life balance" }
+    10: { type: critical, facts: ["Judicial conference Orlando March 21-23"], topic: "conference prep" }
+    11: { type: filler, topic: "recipe — trying to make aji de gallina like her mother" }
+    12: { type: filler, topic: "Miami traffic rant — construction on US-1" }
+    13: { type: critical, facts: ["Planning two-week Peru trip with Carlos"], topic: "Peru trip excitement" }
+    14: { type: critical, facts: ["Carlos's 60th birthday July 19"], topic: "surprise party planning" }
+    15: { type: filler, topic: "gift ideas for granddaughter's first birthday" }
+    16: { type: filler, topic: "parish fundraiser — she's organizing the silent auction" }
+    17: { type: filler, topic: "legal research — interstate custody jurisdiction question" }
+    18: { type: critical, facts: ["Peru trip cancelled — Carlos needs knee surgery"], topic: "trip cancelled" }
+    19: { type: filler, topic: "help setting up new court email system" }
+    20: { type: filler, topic: "immigration policy discussion — frustrated with news" }
+    21: { type: filler, topic: "hibiscus garden care — leaves turning yellow" }
+    22: { type: critical, facts: ["Switched to swimming from yoga — YMCA laps"], topic: "exercise change" }
+    23: { type: critical, facts: ["Maria retired, new housekeeper Ana (Maria's niece)"], topic: "household transition" }
+    24: { type: critical, facts: ["Traded BMW X5 for Lexus RX"], topic: "new car" }
+    25: { type: filler, topic: "Sunday mass reflection — homily about forgiveness" }
+    26: { type: filler, topic: "cooking for Easter — Carlos wants roast pork" }
+    27: { type: critical, facts: ["Volunteered for extra juvenile cases — contradicts cutting back"], topic: "taking on more work" }
+    28: { type: critical, facts: ["Granddaughter Isabella's baptism April 5 2026"], topic: "baptism planning" }
+    29: { type: critical, facts: ["Thinking about early retirement — maybe 2027"], topic: "retirement thoughts" }
+    30: { type: filler, topic: "phone is acting up — asking for troubleshooting help" }
+    31: { type: filler, topic: "Carlos trying to grow cilantro — comedic failure" }
+    32: { type: filler, topic: "family reunion planning — who's bringing what" }
+    33: { type: filler, topic: "Peruvian Independence Day reflections" }
+    34: { type: filler, topic: "custody case that's keeping her up at night (vague, no details)" }
+    35: { type: filler, topic: "reflecting on the year — grateful for family and health" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "What exercise does Rosa do?"
+    attack_vector: 1  # superseded preference
+    correct: "Swimming laps at the YMCA (switched from yoga due to knee issues)"
+    wrong_if_surfaced: "Yoga three mornings a week in Coral Gables"
+
+  - question: "What car does Rosa drive?"
+    attack_vector: 1  # superseded preference
+    correct: "Lexus RX (traded in the BMW X5)"
+    wrong_if_surfaced: "BMW X5"
+
+  - question: "Who is Rosa's housekeeper?"
+    attack_vector: 4  # multi-version fact
+    correct: "Ana (Maria's niece — Maria retired after 8 years)"
+    wrong_if_surfaced: "Maria"
+
+  - question: "Does Rosa have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "High blood pressure — takes lisinopril"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Rosa have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Granddaughter Isabella's baptism, April 5, 2026 (she's the madrina)"
+    wrong_if_surfaced: "Judicial conference March 21-23 (passed) or Carlos's 60th July 19 (passed)"
+
+  - question: "Is Rosa planning to travel to Peru?"
+    attack_vector: 7  # retraction
+    correct: "No — the trip was cancelled because Carlos needs knee surgery"
+    wrong_if_surfaced: "Planning a two-week trip to Lima"
+
+  - question: "Is Rosa planning to reduce her workload?"
+    attack_vector: 6  # contradiction
+    correct: "Unclear — she said she's cutting back, but then volunteered for extra juvenile court cases"
+    wrong_if_surfaced: "Cutting back on work (without noting the extra cases)"
+
+  - question: "When is Rosa planning to retire?"
+    attack_vector: null  # tests soft supersession
+    correct: "Originally planned to work until 65, but recently thinking about early retirement in 2027 — hasn't decided"
+    wrong_if_surfaced: "Retiring in 2027 (stated as definitive when she hasn't decided)"
+
+  - question: "What's Rosa's family background?"
+    attack_vector: 3  # stable identity
+    correct: "Peruvian immigrant — came from Lima at 12. Husband Carlos (retired firefighter). JD from Georgetown."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Rosa enjoy outside of work?"
+    attack_vector: 5  # broad query
+    correct: "Swimming, cooking (Peruvian dishes), church activities, family gatherings, gardening"
+    wrong_if_surfaced: "Yoga (superseded)"
+
+  - question: "Does Rosa have any expired commitments?"
+    attack_vector: 2  # expired logistics
+    correct: "Judicial conference (March 2025) and Carlos's birthday party (July 2025) are both past"
+    wrong_if_surfaced: "Any of those presented as upcoming"
+
+  - question: "What's Rosa's judicial background?"
+    attack_vector: 3  # stable identity
+    correct: "Family court judge, Eleventh Judicial Circuit. JD from Georgetown. Immigrated from Lima at 12."
+    wrong_if_surfaced: null  # failure is NOT surfacing it

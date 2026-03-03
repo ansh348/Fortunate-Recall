@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables / secrets
+.env
+*.env
+
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Too large for GitHub (2.9GB)
+LongMemEval/
+
+# Nested .git dirs from cloned repos
+graphiti/.git/
+locomo/.git/
+LifeMemEval/.git/

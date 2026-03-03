@@ -1,0 +1,292 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 003: Elena Vasquez
+# ============================================================
+
+persona:
+  name: "Elena Vasquez"
+  age: 28
+  gender: female
+  location_current: "Chicago, IL"
+  occupation_current: "Pediatric nurse at Lurie Children's Hospital"
+  personality: >
+    Warm and empathetic but exhausted from night shifts. Switches
+    between English and occasional Spanish expressions when emotional
+    ("ay dios mio", "mija"). Uses heart emoji sparingly. Worries
+    about her patients. Types fast, sometimes run-on sentences.
+    Gets passionate about healthcare access. Night shift life
+    means her schedule is inverted. First-gen college grad and
+    proud of it. Close to her family.
+
+stable_identity:
+  - fact: "Has generalized anxiety disorder — takes sertraline"
+    session: 3
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when discussing sleep issues. "my anxiety has
+      been wild lately, even with the sertraline. night shifts
+      don't help"
+
+  - fact: "First-generation college graduate in her family"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about career pride. "nobody in
+      my family went to college before me so this career
+      means everything"
+
+  - fact: "Has a younger sister Sofia with Down syndrome — lives with their parents"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when talking about family weekend. "going to
+      see my sister Sofia this weekend, she's been asking
+      about me. She has Down syndrome and my parents take
+      care of her but I try to be there as much as I can"
+
+  - fact: "Parents immigrated from Guadalajara when she was 4"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing food or childhood. "my mom
+      makes these tamales from scratch, the recipe from
+      back in Guadalajara. we moved here when I was 4"
+
+supersession_events:
+  - slot: hospital
+    old_fact: "Works at Lurie Children's Hospital"
+    old_session: 1
+    old_how: >
+      First session context about work schedule.
+      "I work peds at Lurie and the night shifts are killing me"
+    new_fact: "Transferred to Rush University Medical Center — better hours and pay"
+    new_session: 21
+    new_how: >
+      Excited. "so I finally made the switch to Rush. better
+      schedule and honestly the pay bump was something I
+      couldn't say no to"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: diet
+    old_fact: "Doing keto diet — lost 15 pounds"
+    old_session: 6
+    old_how: >
+      Mentions when asking about meal prep. "I've been doing
+      keto for like 3 months, down 15 pounds which is cool
+      but finding stuff to eat on night shift is hard"
+    new_fact: "Quit keto — switched to Mediterranean diet on doctor's recommendation"
+    new_session: 22
+    new_how: >
+      "so my doctor basically told me keto was messing with
+      my cholesterol so I switched to Mediterranean. honestly
+      I don't miss the bacon as much as I thought I would"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: relationship
+    old_fact: "Dating Marco — been together 8 months"
+    old_session: 7
+    old_how: >
+      Casual mention. "Marco and I are trying to find a
+      weekend we're both free which is basically impossible
+      with my schedule"
+    new_fact: "Marco proposed — she said yes"
+    new_session: 27
+    new_how: >
+      Excited. "so Marco proposed last weekend and I'm still
+      shaking honestly. we're engaged!!"
+    category: RELATIONAL_BONDS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "NCLEX-RN recertification exam March 20"
+    session: 11
+    event_date: "2025-03-20"
+    status: expired
+    how_disclosed: >
+      Stressed about studying. "I have my NCLEX recert coming
+      up March 20 and I have not started studying"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Sofia's birthday party planning for August 12"
+    session: 25
+    event_date: "2025-08-12"
+    status: expired
+    how_disclosed: >
+      Planning it. "Sofia's birthday is August 12 and I want
+      to throw her something really special this year"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Rush orientation for new trauma unit — March 16, 2026"
+    session: 31
+    event_date: "2026-03-16"
+    status: upcoming
+    how_disclosed: >
+      Nervous but excited. "so Rush is opening a new pediatric
+      trauma unit and I got picked for it!! orientation is March
+      16 and I have to do like 40 hours of extra training before
+      then. its a lot but this is a huge deal for my career"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Apartment lease renewal deadline February 28"
+    session: 10
+    event_date: "2025-02-28"
+    status: expired
+    how_disclosed: >
+      "my lease renewal is due end of February and I keep
+      putting off deciding if I want to stay here"
+    category: LOGISTICAL_CONTEXT
+
+contradictions:
+  - old_fact: "Loves working nights — prefers the quiet pace"
+    old_session: 8
+    old_how: >
+      "honestly I love nights. it's quieter, less politics,
+      and the team is tighter"
+    new_fact: "Night shifts are destroying her health — can't sleep, gaining weight"
+    new_session: 19
+    new_how: >
+      "I haven't slept more than 4 hours in like a week. the
+      night shift thing is really catching up to me. I've
+      gained back all the weight I lost and my anxiety is worse"
+    category: HEALTH_WELLBEING
+
+retractions:
+  - original_fact: "Planning to go back to school for nurse practitioner degree"
+    original_session: 9
+    original_how: >
+      "I'm looking at NP programs, I think that's my next
+      step. DePaul has a good one"
+    retraction: "Dropped the NP plan — can't afford it right now with student loans"
+    retraction_session: 17
+    retraction_how: >
+      "the NP thing is off the table for now. I still have
+      like 40k in student loans from my BSN and I can't
+      take on more debt. maybe in a few years"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Logan Square neighborhood"
+    existing_session: 1
+    tentative_fact: "Thinking about moving to the suburbs to be closer to parents"
+    tentative_session: 24
+    tentative_how: >
+      "I've been thinking about maybe moving out to Cicero
+      to be closer to my parents and Sofia. but I love
+      Logan Square so idk"
+    resolution: "Undecided"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help writing a patient care note"
+  - "Recipe ideas for night shift meal prep"
+  - "Gift ideas for Sofia"
+  - "Rant about hospital administration cutting staff"
+  - "Netflix recommendations for daytime watching (she sleeps at weird hours)"
+  - "Help with a difficult coworker situation"
+  - "Chicago winter survival tips"
+  - "Trying to learn knitting (stress relief)"
+  - "Questions about budgeting / student loan repayment strategies"
+  - "Planning a surprise for her mom's birthday"
+
+session_plan:
+  total_sessions: 35
+  time_span: "December 2024 — June 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at Lurie Children's, night shift", "Lives in Logan Square"], topic: "work schedule exhaustion" }
+    2:  { type: critical, facts: ["Sister Sofia with Down syndrome"], topic: "family weekend plans" }
+    3:  { type: critical, facts: ["Anxiety disorder, sertraline"], topic: "sleep problems" }
+    4:  { type: critical, facts: ["Parents from Guadalajara, moved at age 4"], topic: "cooking / mom's tamales" }
+    5:  { type: critical, facts: ["First-gen college graduate"], topic: "career pride / mentoring student nurse" }
+    6:  { type: critical, facts: ["Doing keto, lost 15 pounds"], topic: "meal prep on night shift" }
+    7:  { type: critical, facts: ["Dating Marco, 8 months"], topic: "scheduling date nights" }
+    8:  { type: critical, facts: ["Loves working nights"], topic: "coworker dynamics" }
+    9:  { type: critical, facts: ["Planning NP degree at DePaul"], topic: "career planning" }
+    10: { type: critical, facts: ["Lease renewal deadline Feb 28"], topic: "apartment decision" }
+    11: { type: critical, facts: ["NCLEX recert March 20"], topic: "exam stress" }
+    12: { type: filler, topic: "Netflix recs for daytime watching" }
+    13: { type: filler, topic: "knitting — trying to learn, asking for beginner help" }
+    14: { type: filler, topic: "rant about hospital admin cutting night staff" }
+    15: { type: filler, topic: "recipe ideas — slow cooker meals for shift work" }
+    16: { type: filler, topic: "Chicago polar vortex rant" }
+    17: { type: critical, facts: ["NP plan dropped — student loans too high"], topic: "financial reality" }
+    18: { type: filler, topic: "help writing note to difficult coworker" }
+    19: { type: critical, facts: ["Night shifts destroying health — can't sleep, weight gain"], topic: "health concerns" }
+    20: { type: filler, topic: "mom's birthday surprise planning" }
+    21: { type: critical, facts: ["Transferred to Rush — better hours and pay"], topic: "job change" }
+    22: { type: critical, facts: ["Quit keto, switched to Mediterranean diet"], topic: "diet change" }
+    23: { type: filler, topic: "budgeting help — student loan repayment strategies" }
+    24: { type: critical, facts: ["Thinking about moving to suburbs near parents"], topic: "life direction" }
+    25: { type: critical, facts: ["Sofia's birthday August 12 — planning party"], topic: "party planning" }
+    26: { type: filler, topic: "gift ideas for Sofia" }
+    27: { type: critical, facts: ["Marco proposed — engaged!"], topic: "engagement excitement" }
+    28: { type: filler, topic: "wedding Pinterest boards (already started)" }
+    29: { type: filler, topic: "asking about honeymoon destinations" }
+    30: { type: filler, topic: "help drafting thank-you notes for engagement gifts" }
+    31: { type: critical, facts: ["Rush orientation for new trauma unit March 16 2026"], topic: "new trauma unit opportunity" }
+    32: { type: filler, topic: "trying to meal prep with Marco (he can't cook)" }
+    33: { type: filler, topic: "asking about anxiety management techniques beyond medication" }
+    34: { type: filler, topic: "winter again — seasonal affective disorder struggle" }
+    35: { type: filler, topic: "reflecting on the year — grateful for job change and engagement" }
+
+draft_questions:
+  - question: "Where does Elena work?"
+    attack_vector: 4
+    correct: "Rush University Medical Center"
+    wrong_if_surfaced: "Lurie Children's Hospital"
+
+  - question: "What diet is Elena following?"
+    attack_vector: 1
+    correct: "Mediterranean diet"
+    wrong_if_surfaced: "Keto diet"
+
+  - question: "Is Elena planning to get a nurse practitioner degree?"
+    attack_vector: 7
+    correct: "No — she dropped that plan due to student loan debt"
+    wrong_if_surfaced: "Looking at NP programs at DePaul"
+
+  - question: "What mental health conditions does Elena have?"
+    attack_vector: 3
+    correct: "Generalized anxiety disorder (takes sertraline)"
+    wrong_if_surfaced: null
+
+  - question: "Does Elena have any upcoming exams or certifications?"
+    attack_vector: 2
+    correct: "No current exams (NCLEX recert was March 20, already passed)"
+    wrong_if_surfaced: "NCLEX recertification March 20"
+
+  - question: "What's Elena's relationship status?"
+    attack_vector: 1
+    correct: "Engaged to Marco"
+    wrong_if_surfaced: "Dating Marco (8 months)"
+
+  - question: "How does Elena feel about night shifts?"
+    attack_vector: 6
+    correct: "They're destroying her health (can't sleep, weight gain, worse anxiety)"
+    wrong_if_surfaced: "Loves working nights" (without noting the later contradiction)
+
+  - question: "What's Elena's family background?"
+    attack_vector: 3
+    correct: "Mexican-American, parents from Guadalajara, first-gen college grad. Sister Sofia has Down syndrome."
+    wrong_if_surfaced: null
+
+  - question: "Is Elena thinking about moving?"
+    attack_vector: null
+    correct: "She's considered moving to Cicero (suburbs) to be near family, but undecided — still in Logan Square"
+    wrong_if_surfaced: "Moving to Cicero" (stated as definitive)
+
+  - question: "Does Elena need to make any lease decisions?"
+    attack_vector: 2
+    correct: "No (lease renewal deadline was Feb 28, already passed)"
+    wrong_if_surfaced: "Lease renewal due February 28"
+
+  - question: "Does Elena have any upcoming events or deadlines?"
+    attack_vector: 2  # expired logistics — tests upcoming
+    correct: "Rush orientation for new pediatric trauma unit, March 16, 2026"
+    wrong_if_surfaced: "NCLEX recert March 20 (passed), Sofia's birthday Aug 12 (passed), or lease renewal Feb 28 (passed)"
+
+  - question: "What does Elena do for stress relief?"
+    attack_vector: 5
+    correct: "Learning to knit, Mediterranean diet, trying anxiety management techniques"
+    wrong_if_surfaced: "Keto diet" (superseded)

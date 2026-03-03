@@ -1,0 +1,327 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 001: Priya Sharma
+# ============================================================
+# This file is the GROUND TRUTH. Every question written later
+# must be answerable from this timeline alone.
+# ============================================================
+
+persona:
+  name: "Priya Sharma"
+  age: 34
+  gender: female
+  location_current: "Austin, Texas"
+  occupation_current: "ML engineer at Google — Gemini memory team"
+  personality: >
+    Warm, slightly neurotic about health, loves deep technical
+    discussions, tends to overshare about food experiments.
+    Uses humor when stressed — "lol" and "haha" frequently.
+    Says "okay so" to start explanations, "honestly" and
+    "literally" for emphasis, "ngl" when being candid. Types
+    in medium-length messages from her laptop, proper grammar
+    but casual tone. Uses "..." when trailing off mid-thought.
+    Occasionally vents about work, asks the AI for advice on
+    practical life stuff. No emojis except the occasional "😭"
+    for dramatic effect.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Has ADHD — diagnosed in college"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Casually, mid-conversation about productivity tools.
+      Something like "yeah my brain just doesn't do linear,
+      I got diagnosed in college and it explained a lot"
+
+  - fact: "Is Tamil — parents immigrated from Chennai"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about a recipe — "my mom makes
+      this Tamil rasam that I've been trying to replicate"
+
+  - fact: "Has a younger brother named Arjun who lives in Seattle"
+    session: 5
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions him when discussing weekend plans —
+      "my brother Arjun is visiting from Seattle next month"
+
+  - fact: "Has chronic migraines — triggered by screen time and stress"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Complains about a migraine during a work discussion —
+      "sorry if I'm scattered, migraine day. Screens are
+      the worst trigger and guess what I stare at all day"
+
+# ============================================================
+# SUPERSESSION EVENTS — old fact replaced by new fact
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: dietary_preference
+    old_fact: "Is vegetarian — has been for 5 years"
+    old_session: 3
+    old_how: >
+      Comes up naturally when discussing restaurant recs.
+      "I've been vegetarian for like 5 years now so my
+      options are always limited at steakhouses lol"
+    new_fact: "Started eating fish again — pescatarian now"
+    new_session: 22
+    new_how: >
+      Mentions it casually — "oh I actually started eating
+      fish again a few weeks ago, my doctor said I needed
+      more omega-3s for the migraines. Still no meat though"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: employer
+    old_fact: "Works at Google on the Gemini memory team"
+    old_session: 1
+    old_how: >
+      First session context — she's asking for help with
+      something work-related and mentions the team naturally
+    new_fact: "Left Google, now senior ML engineer at Anthropic"
+    new_session: 18
+    new_how: >
+      Excited about the switch — "so I finally did it,
+      put in my notice at Google. Starting at Anthropic
+      next Monday on the memory systems team"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: fitness_routine
+    old_fact: "Does hot yoga 4x a week"
+    old_session: 6
+    old_how: >
+      Talking about stress management — "hot yoga has been
+      my lifeline, I go like 4 times a week"
+    new_fact: "Switched to rock climbing, quit yoga"
+    new_session: 25
+    new_how: >
+      "I completely dropped yoga btw. Got into climbing
+      and it's so much better for my brain — the problem
+      solving aspect is like a puzzle"
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS — events with known dates
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Dentist appointment Thursday June 12 at 2pm"
+    session: 14
+    event_date: "2025-06-12T14:00:00"
+    status: expired
+    how_disclosed: >
+      Scheduling context — "I need to block off Thursday
+      afternoon, dentist at 2"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Flying to Tokyo March 20 for a conference"
+    session: 30
+    event_date: "2026-03-20"
+    status: upcoming
+    how_disclosed: >
+      Excited about it — "just booked my Tokyo flights for
+      the conference in March! March 20th departure"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Lease expires end of August 2025"
+    session: 10
+    event_date: "2025-08-31"
+    status: expired
+    how_disclosed: >
+      Stressing about apartment hunting — "my lease is up
+      end of August and I haven't even started looking"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Paper submission deadline NeurIPS June 2026"
+    session: 28
+    event_date: "2026-06-01"
+    status: upcoming
+    how_disclosed: >
+      Working on it — "trying to get this paper ready for
+      NeurIPS, deadline is early June"
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS — implicit inconsistency across sessions
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Lives alone in a studio apartment"
+    old_session: 7
+    old_how: >
+      Context about apartment size — "it's just me in this
+      tiny studio so I don't really need a dining table"
+    new_fact: "Mentions boyfriend Raj staying over most nights"
+    new_session: 20
+    new_how: >
+      Casual mention — "Raj keeps leaving his protein
+      shakes in my fridge, at this point he basically
+      lives here"
+    category: RELATIONAL_BONDS / LOGISTICAL_CONTEXT
+
+# ============================================================
+# RETRACTIONS — explicit "forget about that"
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Thinking about getting a dog — looking at golden retrievers"
+    original_session: 12
+    original_how: >
+      Enthusiastic — "I've been looking at golden retriever
+      puppies, there's a breeder in Round Rock"
+    retraction: "Actually decided against the dog, landlord said no"
+    retraction_session: 16
+    retraction_how: >
+      Disappointed — "so the dog thing is dead. Landlord
+      said absolutely no pets. Maybe after I move"
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# Tests confidence-weighted soft supersession
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives in Austin, Texas"
+    existing_session: 1
+    tentative_fact: "Thinking about moving to New York for work"
+    tentative_session: 24
+    tentative_how: >
+      Exploratory — "Anthropic has a NYC office and I've
+      been thinking... might be time for a change. Austin
+      is getting old. But idk, just a thought"
+    resolution: "Never resolved — she's still thinking about it"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS — what the noise sessions are about
+# ============================================================
+filler_topics:
+  - "Cooking experiments (Tamil recipes, meal prep, trying new cuisines)"
+  - "Movie and TV recommendations"
+  - "Weekend plans and social life"
+  - "General coding questions (Python, ML pipelines)"
+  - "Book recommendations she'll never read (ADHD)"
+  - "Travel research (not the Tokyo trip — general wanderlust)"
+  - "Apartment decor on a budget"
+  - "Gift ideas for family"
+  - "Rants about Austin traffic"
+  - "Random shower thoughts about AI consciousness"
+
+# ============================================================
+# SESSION SCHEDULE — which facts appear in which sessions
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "January 2025 — June 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at Google/Gemini memory team", "Lives in Austin"], topic: "work help" }
+    2:  { type: critical, facts: ["Has ADHD — diagnosed in college"], topic: "productivity tools" }
+    3:  { type: critical, facts: ["Tamil heritage / mom's rasam", "Vegetarian for 5 years"], topic: "cooking" }
+    4:  { type: critical, facts: ["Chronic migraines"], topic: "work stress" }
+    5:  { type: critical, facts: ["Brother Arjun in Seattle"], topic: "weekend plans" }
+    6:  { type: critical, facts: ["Hot yoga 4x/week"], topic: "stress management" }
+    7:  { type: critical, facts: ["Lives alone in studio"], topic: "apartment decor" }
+    8:  { type: filler, topic: "cooking — trying a new dal recipe" }
+    9:  { type: filler, topic: "movie rec — wants something like Arrival" }
+    10: { type: critical, facts: ["Lease expires end of August"], topic: "apartment stress" }
+    11: { type: filler, topic: "coding help — PyTorch data loader issue" }
+    12: { type: critical, facts: ["Looking at golden retrievers"], topic: "getting a dog" }
+    13: { type: filler, topic: "Austin traffic rant" }
+    14: { type: critical, facts: ["Dentist Thursday June 12 2pm"], topic: "scheduling" }
+    15: { type: filler, topic: "gift ideas for mom's birthday" }
+    16: { type: critical, facts: ["Dog plan dead — landlord said no"], topic: "disappointment" }
+    17: { type: filler, topic: "random thoughts about AI consciousness" }
+    18: { type: critical, facts: ["Left Google, joining Anthropic"], topic: "career change excitement" }
+    19: { type: filler, topic: "meal prep for the week" }
+    20: { type: critical, facts: ["Boyfriend Raj basically lives with her"], topic: "relationship update" }
+    21: { type: filler, topic: "book rec — wants nonfiction about memory/neuroscience" }
+    22: { type: critical, facts: ["Started eating fish again — pescatarian"], topic: "diet change" }
+    23: { type: filler, topic: "coding — transformer attention visualization" }
+    24: { type: critical, facts: ["Thinking about moving to NYC"], topic: "life direction" }
+    25: { type: critical, facts: ["Quit yoga, started rock climbing"], topic: "new hobby" }
+    26: { type: filler, topic: "weekend hike recommendation near Austin" }
+    27: { type: filler, topic: "rant about NeurIPS reviewer comments on a colleague's paper" }
+    28: { type: critical, facts: ["NeurIPS paper deadline June 2026"], topic: "research planning" }
+    29: { type: filler, topic: "trying to cook Japanese curry from scratch" }
+    30: { type: critical, facts: ["Tokyo conference March 20"], topic: "travel planning" }
+    31: { type: filler, topic: "apartment plants dying — help" }
+    32: { type: filler, topic: "shower thought about whether LLMs dream" }
+    33: { type: filler, topic: "coding — Neo4j Cypher query optimization" }
+    34: { type: filler, topic: "planning Arjun's birthday surprise" }
+    35: { type: filler, topic: "reflecting on the year — grateful for career change" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS — written AFTER conversations exist
+# These are DRAFT questions to guide generation. Final versions
+# written after reviewing actual generated conversations.
+# ============================================================
+draft_questions:
+  - question: "What dietary restrictions does Priya have?"
+    attack_vector: 1  # superseded preference
+    correct: "Pescatarian (was vegetarian, now eats fish)"
+    wrong_if_surfaced: "Vegetarian"
+
+  - question: "Where does Priya work?"
+    attack_vector: 4  # multi-version fact
+    correct: "Senior ML engineer at Anthropic"
+    wrong_if_surfaced: "Google / Gemini memory team"
+
+  - question: "What should I know about Priya's learning or work style?"
+    attack_vector: 3  # stable identity under noise
+    correct: "She has ADHD (diagnosed in college)"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Priya have any upcoming appointments?"
+    attack_vector: 2  # expired logistics
+    correct: "Tokyo conference March 20 (if before March 20)"
+    wrong_if_surfaced: "Dentist Thursday June 12 (already passed)"
+
+  - question: "Is Priya planning to get a pet?"
+    attack_vector: 7  # retraction
+    correct: "No — she wanted a dog but landlord said no"
+    wrong_if_surfaced: "Looking at golden retrievers"
+
+  - question: "What's Priya's living situation?"
+    attack_vector: 6  # contradiction
+    correct: "Lives in studio but boyfriend Raj is there most nights"
+    wrong_if_surfaced: "Lives alone" (without noting the update)
+
+  - question: "What exercise does Priya do?"
+    attack_vector: 1  # superseded hobby
+    correct: "Rock climbing"
+    wrong_if_surfaced: "Hot yoga 4x/week"
+
+  - question: "Is Priya planning to relocate?"
+    attack_vector: null  # tests soft supersession
+    correct: "She's been thinking about NYC but hasn't decided — still in Austin"
+    wrong_if_surfaced: "Moving to NYC" (stated as fact)
+
+  - question: "What health conditions should Priya's meal plan account for?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Chronic migraines (triggered by stress/screens). Also was told to get more omega-3s."
+    wrong_if_surfaced: null  # failure is NOT surfacing migraines
+
+  - question: "Does Priya have any deadlines coming up?"
+    attack_vector: 2  # tests expiry + anticipatory
+    correct: "NeurIPS paper deadline early June 2026"
+    wrong_if_surfaced: "Lease expires August 2025 (already passed)"
+
+  - question: "What does Priya do in her free time?"
+    attack_vector: 5  # category-appropriate broad query
+    correct: "Rock climbing, cooking experiments (Tamil recipes), travel planning"
+    wrong_if_surfaced: "Hot yoga" (superseded)
+
+  - question: "What's Priya's family background?"
+    attack_vector: 3  # stable identity
+    correct: "Tamil, parents from Chennai. Younger brother Arjun in Seattle."
+    wrong_if_surfaced: null  # failure is NOT surfacing this

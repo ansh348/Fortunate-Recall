@@ -1,0 +1,344 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 017: Omar Hassan
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Omar Hassan"
+  age: 36
+  gender: male
+  location_current: "Houston, Texas"
+  occupation_current: "Uber driver + studying for real estate license"
+  personality: >
+    Hustler mentality — always thinking about the next dollar,
+    the next move. Uses 'bro' constantly. Pragmatic about money
+    in a way that comes from real scarcity. Tired but driven —
+    texts between rides, often at red lights or in parking lots
+    waiting for pings. Short messages, no time for long paragraphs.
+    Proud but not boastful. Darfur refugee who arrived at 19 and
+    built everything from nothing. Sends money home to his mother
+    and never complains about it. Co-parents son Ismail with his
+    ex-wife. Gets philosophical sometimes late at night when the
+    rides slow down. Says 'wallahi' (I swear to God) and 'inshallah'
+    naturally. Practical questions, doesn't waste time.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Darfur refugee — arrived in the US at 19 through refugee resettlement"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about perspective. "I came from
+      Darfur bro. refugee camp then resettlement here when
+      I was 19. Houston. didn't speak English didn't know
+      anyone. everything I got I built from zero. that's
+      why I don't complain about long hours"
+
+  - fact: "Son Ismail, 7 — co-parents with ex-wife Amira"
+    session: 1
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions immediately. "my boy Ismail is 7. smartest
+      kid bro wallahi. I got him on weekends. his mom
+      Amira and me split but we make it work for him. he's
+      the reason I grind this hard"
+
+  - fact: "Sends money to his mother in Khartoum every month"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Matter of fact. "I send money to my mom in Khartoum
+      every month. $300-400 depending on what I make. she
+      raised 6 kids alone after my father was killed. I
+      don't miss a month. ever."
+
+  - fact: "Some college — started at Houston Community College but dropped out to work"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Practical about it. "I did some classes at HCC but
+      couldn't keep it up bro. working full time and trying
+      to study doesn't work when you got bills. that's why
+      I'm doing the real estate license on my own time now.
+      different approach"
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: rideshare_platform
+    old_fact: "Drives for Uber — has been for 3 years"
+    old_session: 1
+    old_how: >
+      First session context. "I drive Uber bro. 3 years now.
+      full time. some weeks good some weeks trash. but it
+      pays the bills and I can study between rides"
+    new_fact: "Switched to Lyft — better bonuses and less surge manipulation"
+    new_session: 14
+    new_how: >
+      Practical switch. "switched to Lyft bro. the bonuses
+      are better and Uber was playing games with the surge
+      pricing. Lyft guaranteed me a minimum for the first
+      month so I said lets go"
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+    # NOTE: Later switches BACK to Uber in session 26
+
+  - slot: rideshare_platform_v2
+    old_fact: "Drives for Lyft"
+    old_session: 14
+    old_how: >
+      See above — switched to Lyft for better bonuses
+    new_fact: "Back to Uber — Lyft dried up in Houston, not enough rides"
+    new_session: 26
+    new_how: >
+      Resigned. "back on Uber bro. Lyft was dead in Houston
+      the last few weeks barely any pings. Uber at least
+      keeps you busy even if they take too big a cut. gotta
+      go where the rides are"
+    category: FINANCIAL_MATERIAL
+    attack_vector: 4
+
+  - slot: apartment
+    old_fact: "Lives in a 1-bedroom in Alief — southwest Houston"
+    old_session: 6
+    old_how: >
+      Mentions when talking about Ismail visits. "I got a
+      1-bed in Alief. southwest Houston. rent is $950.
+      not great not terrible. Ismail sleeps on the couch
+      when he's here which I hate but it's what I got"
+    new_fact: "Moved to a studio in Gulfton — cheaper, saves $200/month"
+    new_session: 22
+    new_how: >
+      Pure pragmatism. "moved to a studio in Gulfton. saves
+      me $200 a month. smaller but I'm barely home anyway.
+      Ismail still comes weekends, we make it work. every
+      dollar I save goes to the RE license fund"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Real estate exam scheduled for April 5, 2025"
+    session: 9
+    event_date: "2025-04-05"
+    status: expired
+    how_disclosed: >
+      Nervous. "RE exam is april 5. been studying every
+      night after rides. if I don't pass first try I can't
+      afford to take it again for a while. $200 exam fee
+      bro that's two days of driving"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Ismail's birthday party — June 14, 2025"
+    session: 13
+    event_date: "2025-06-14"
+    status: expired
+    how_disclosed: >
+      Wanting to make it special. "Ismail turns 8 june 14.
+      told Amira I want to do a party at the park. nothing
+      crazy. pizza cake some games. he wants a soccer ball
+      and a tablet which bro I can probably do one of those"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Joining a real estate brokerage — starts April 1, 2026"
+    session: 29
+    event_date: "2026-04-01"
+    status: upcoming
+    how_disclosed: >
+      Excited and scared. "so I passed the exam and I'm
+      joining a brokerage april 1st bro. century 21 office
+      in the energy corridor. still doing Uber on the side
+      obviously but inshallah this is the start of something
+      real"
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he never spends on himself — every dollar goes to Ismail or his mother"
+    old_session: 7
+    old_how: >
+      Talking about finances. "I don't buy anything for
+      myself bro. every dollar goes to Ismail or my mom
+      or rent. I wear the same 3 shirts. hasn't bothered
+      me in years. that's not what life is about"
+    new_fact: "Mentions buying a PlayStation 5 for himself — 'needed something for the stress'"
+    new_session: 25
+    new_how: >
+      Justified. "bro I finally got a PS5. I know I know.
+      but wallahi the stress was killing me I needed
+      something to wind down after midnight. FIFA is
+      therapy bro"
+    category: FINANCIAL_MATERIAL
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to buy a used Toyota Camry for better fuel economy for driving"
+    original_session: 10
+    original_how: >
+      Making a plan. "looking at a used Camry bro. 2019
+      with low miles. my current car drinks gas and the
+      Camry gets like 35mpg. that's real money when you
+      drive 200 miles a day"
+    retraction: "Camry plan dead — the car got sold before he could get financing"
+    retraction_session: 16
+    retraction_how: >
+      Frustrated. "forget the Camry bro. gone. dude sold
+      it to someone else while I was trying to get the
+      loan approved. and now everything in that price range
+      has 150k miles. it's dead for now"
+    category: FINANCIAL_MATERIAL
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Plans to stay in Houston — this is where his network is"
+    existing_session: 4
+    tentative_fact: "Cousin in Dallas says the RE market is better there — considering a move"
+    tentative_session: 27
+    tentative_how: >
+      Thinking about it. "my cousin Khalid is in Dallas and
+      he says the real estate market there is insane bro.
+      more deals more growth. but Houston is where Ismail is
+      and I can't leave my son. maybe when he's older.
+      inshallah. just thinking"
+    resolution: "Never resolved — still in Houston, still considering"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Houston traffic — worst routes, construction, highway complaints"
+  - "Best Uber routes and strategy — airport runs vs downtown, surge timing"
+  - "Real estate market analysis — Houston neighborhoods, property values"
+  - "Sudanese food — his mother's kisra and mulah, restaurants in Houston"
+  - "Co-parenting logistics — pickup schedules, what Ismail needs"
+  - "Car maintenance — oil changes, tire rotation, keeping the car running"
+  - "FIFA gaming — late night sessions, player ratings, tournament mode"
+  - "Money management — budgeting, saving strategies, side hustles"
+  - "Houston heat — driving with broken AC, staying hydrated"
+  - "News from Sudan — Khartoum situation, family safety concerns"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Drives Uber, 3 years", "Son Ismail 7, co-parents with Amira"], topic: "work and family" }
+    2:  { type: critical, facts: ["Darfur refugee, arrived US at 19"], topic: "background and perspective" }
+    3:  { type: critical, facts: ["Sends $300-400/month to mother in Khartoum"], topic: "family obligations" }
+    4:  { type: critical, facts: ["Plans to stay in Houston"], topic: "life plans" }
+    5:  { type: critical, facts: ["Some college at HCC, dropped out to work"], topic: "education and real estate studies" }
+    6:  { type: critical, facts: ["1-bedroom in Alief, $950/month"], topic: "housing and Ismail visits" }
+    7:  { type: critical, facts: ["Never spends on himself — everything for family"], topic: "financial philosophy" }
+    8:  { type: filler, topic: "Houston traffic rant — I-610 construction" }
+    9:  { type: critical, facts: ["RE exam April 5 2025"], topic: "exam prep stress" }
+    10: { type: critical, facts: ["Looking at used Toyota Camry"], topic: "car upgrade plan" }
+    11: { type: filler, topic: "best airport routes for Uber — IAH vs Hobby" }
+    12: { type: filler, topic: "Sudanese food craving — misses mom's mulah" }
+    13: { type: critical, facts: ["Ismail's birthday June 14"], topic: "birthday party planning" }
+    14: { type: critical, facts: ["Switched to Lyft from Uber"], topic: "platform switch" }
+    15: { type: filler, topic: "real estate market analysis — Spring Branch neighborhood" }
+    16: { type: critical, facts: ["Camry plan dead — car got sold"], topic: "car plan killed" }
+    17: { type: filler, topic: "oil change and tire rotation — keeping the car alive" }
+    18: { type: filler, topic: "late night FIFA session — needed to decompress" }
+    19: { type: filler, topic: "news from Khartoum — worried about family" }
+    20: { type: filler, topic: "budgeting help — how to track expenses" }
+    21: { type: filler, topic: "surge pricing strategy — when to drive vs when to wait" }
+    22: { type: critical, facts: ["Moved to Gulfton studio — $200 cheaper"], topic: "apartment downsize" }
+    23: { type: filler, topic: "Ismail wants to play soccer — finding a league" }
+    24: { type: filler, topic: "Houston heat — driving without working AC" }
+    25: { type: critical, facts: ["Bought PS5 — contradicts never-spend-on-self"], topic: "treating himself" }
+    26: { type: critical, facts: ["Back to Uber from Lyft — not enough rides on Lyft"], topic: "platform switch back" }
+    27: { type: critical, facts: ["Cousin in Dallas says RE market is better — considering move"], topic: "Dallas possibility" }
+    28: { type: filler, topic: "co-parenting schedule change — Amira wants to swap weekends" }
+    29: { type: critical, facts: ["Joining Century 21 brokerage April 1 2026"], topic: "real estate career start" }
+    30: { type: filler, topic: "money transfer to mom — Western Union vs Remitly" }
+    31: { type: filler, topic: "real estate showing tips — what he learned at brokerage training" }
+    32: { type: filler, topic: "Ismail's school report — straight A's, so proud" }
+    33: { type: filler, topic: "car making a noise — trying to diagnose" }
+    34: { type: filler, topic: "late night philosophical moment — what is success" }
+    35: { type: filler, topic: "reflecting on the year — from Uber to real estate, alhamdulillah" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "What rideshare platform does Omar drive for?"
+    attack_vector: 4  # multi-version fact (three versions)
+    correct: "Uber (was on Uber, switched to Lyft, then back to Uber because Lyft had too few rides in Houston)"
+    wrong_if_surfaced: "Lyft"
+
+  - question: "Where does Omar live?"
+    attack_vector: 1  # superseded preference
+    correct: "Studio in Gulfton (moved from 1-bedroom in Alief to save $200/month)"
+    wrong_if_surfaced: "1-bedroom in Alief"
+
+  - question: "Does Omar have any upcoming events or deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Joining Century 21 brokerage April 1, 2026"
+    wrong_if_surfaced: "RE exam April 5 (passed) or Ismail's birthday June 14 (passed)"
+
+  - question: "What is Omar's background?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Darfur refugee, arrived in US at 19. Some college at HCC. Son Ismail (7), co-parents with ex Amira. Sends money monthly to mother in Khartoum."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Is Omar planning to buy a car?"
+    attack_vector: 7  # retraction
+    correct: "No — he wanted a used Toyota Camry but the car got sold before he could secure financing"
+    wrong_if_surfaced: "Looking at a used Camry"
+
+  - question: "Does Omar spend money on himself?"
+    attack_vector: 6  # contradiction
+    correct: "He said he never spends on himself, but he bought a PS5 for stress relief"
+    wrong_if_surfaced: "Never spends on himself (without noting the PS5)"
+
+  - question: "Is Omar planning to move?"
+    attack_vector: null  # tests soft supersession
+    correct: "He's staying in Houston for now (Ismail is here), but his cousin says the Dallas RE market is better — he's considering it for the future"
+    wrong_if_surfaced: "Moving to Dallas (stated as fact when he hasn't decided)"
+
+  - question: "What does Omar do for money?"
+    attack_vector: 5  # broad query
+    correct: "Uber driver (full-time) + starting at Century 21 real estate brokerage in April 2026"
+    wrong_if_surfaced: "Lyft driver (superseded — he switched back to Uber)"
+
+  - question: "Does Omar have family obligations?"
+    attack_vector: 3  # stable identity
+    correct: "Son Ismail (7) on weekends, sends $300-400/month to mother in Khartoum"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Omar have any past events?"
+    attack_vector: 2  # expired logistics
+    correct: "RE exam (April 2025) and Ismail's birthday (June 2025) are both past"
+    wrong_if_surfaced: "Any of those as upcoming"
+
+  - question: "What are Omar's health conditions?"
+    attack_vector: 3  # stable identity
+    correct: "None explicitly mentioned (but he's tired and stressed from overwork)"
+    wrong_if_surfaced: null
+
+  - question: "What's Omar's career plan?"
+    attack_vector: 3  # stable identity
+    correct: "Real estate — passed the exam, joining Century 21 in April 2026, still driving Uber on the side"
+    wrong_if_surfaced: null  # failure is NOT surfacing the real estate path

@@ -1,0 +1,312 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 020: Aisha Mohammed
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Aisha Mohammed"
+  age: 26
+  gender: female
+  location_current: "Manchester, UK"
+  occupation_current: "Junior accountant at PwC Manchester — audit division"
+  personality: >
+    Professional but young. Code-switches between work formality
+    and casual Gen Z energy depending on context. British slang
+    when relaxed — 'init', 'bare', 'dead' (meaning funny), 'tbh'.
+    Ambitious and slightly overwhelmed by Big 4 corporate culture.
+    Halal food is always a consideration when discussing restaurants
+    or meal planning. Close to her large Somali family, feels
+    responsible as the oldest of 6 siblings. Hijabi — mentions it
+    when relevant to clothing or workplace stuff. Sometimes texts
+    in bursts, sometimes writes longer messages when venting.
+    Uses 'loool' not 'lol'. Says 'wallah' for emphasis. Proud
+    of her LSE degree but doesn't bring it up unprompted.
+
+stable_identity:
+  - fact: "Family fled Somalia when she was 3 — grew up in Moss Side, Manchester"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing background. "we left Somalia
+      when I was 3. my parents came to Manchester with nothing
+      tbh. grew up in Moss Side. it wasn't easy but my mum
+      is the strongest person alive wallah"
+
+  - fact: "Has iron deficiency anemia — takes ferrous sulfate"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions when discussing tiredness. "I'm anemic init.
+      iron deficiency. take these massive tablets every day
+      and they still barely keep my levels normal. busy
+      season at work plus anemia is a nightmare combo"
+
+  - fact: "Oldest of 6 siblings — feels responsible for all of them"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Talking about family pressure. "I'm the oldest of 6.
+      somali families are big loool. my siblings are 24 22
+      19 16 and 12. I basically helped raise the younger
+      ones. when youre the first one to go to uni everyone
+      looks at you different"
+
+  - fact: "BSc Accounting from LSE — first in her family to go to university"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about career pressure. "I went
+      to LSE. accounting. nobody in my family had been to
+      uni before me so there was this expectation that I'd
+      come out and like fix everything financially. which
+      is a lot of pressure tbh"
+
+supersession_events:
+  - slot: team
+    old_fact: "Works in audit at PwC Manchester"
+    old_session: 1
+    old_how: >
+      First session. "I'm in audit at PwC Manchester.
+      junior level. the hours are mental during busy
+      season, like 7am to midnight sometimes. but it
+      looks good on the CV"
+    new_fact: "Moved to advisory — deals and transactions team"
+    new_session: 20
+    new_how: >
+      Excited about it. "so I moved teams. I'm in advisory
+      now, deals and transactions. way more interesting than
+      audit tbh. less repetitive, more client-facing. and
+      the hours are slightly more human"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: gym
+    old_fact: "Goes to PureGym near Piccadilly — 3x a week"
+    old_session: 6
+    old_how: >
+      Mentions when discussing routine. "I try to get to
+      PureGym 3 times a week. the one near Piccadilly.
+      usually after work but during busy season that goes
+      out the window completely"
+    new_fact: "Switched to a women-only gym in Rusholme — more comfortable"
+    new_session: 22
+    new_how: >
+      "switched gyms btw. theres a sisters-only gym in
+      Rusholme and it's so much better for me. I can
+      work out without my hijab which makes a massive
+      difference for like cardio and stuff. wish I'd
+      found it sooner"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: roommate
+    old_fact: "Lives with roommate Zara in a flat in Ancoats"
+    old_session: 7
+    old_how: >
+      Talking about home life. "I live with my mate Zara
+      in Ancoats. nice flat, split the rent. she works
+      at Deloitte so we're both in the same Big 4 grind"
+    new_fact: "Zara moved out — new roommate Priya moved in"
+    new_session: 24
+    new_how: >
+      Adjusting. "Zara moved in with her boyfriend so I
+      needed a new flatmate quick. Priya moved in, she's
+      a junior doctor at MRI. she's lovely but our
+      schedules are both insane so we barely see each
+      other loool"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "ACA professional exam — March 18, 2025"
+    session: 9
+    event_date: "2025-03-18"
+    status: expired
+    how_disclosed: >
+      Stressed. "my ACA exam is March 18 and I'm not
+      ready. like at all. busy season and exam prep at
+      the same time is actually criminal"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Sister Fatima's GCSE results day — August 21, 2025"
+    session: 15
+    event_date: "2025-08-21"
+    status: expired
+    how_disclosed: >
+      Worried about her. "Fatima gets her GCSEs August 21.
+      she's stressing and I'm trying to help her revise
+      but I barely have time. she wants to do medicine
+      wallah I hope she gets the grades"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "PwC annual review meeting — April 8, 2026"
+    session: 28
+    event_date: "2026-04-08"
+    status: upcoming
+    how_disclosed: >
+      Anxious. "annual review is April 8. first one since
+      I moved to advisory. I think it'll be good but you
+      never know with these things"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she loves PwC and wants to make manager in 3 years"
+    old_session: 5
+    old_how: >
+      Ambitious. "I want to make manager in 3 years tbh.
+      PwC is the dream. the brand, the training, the exit
+      opportunities. I'm all in"
+    new_fact: "Secretly applying to industry jobs — burned out on Big 4 hours"
+    new_session: 26
+    new_how: >
+      Confessional. "okay don't judge me but I've been
+      looking at industry jobs. the hours here are killing
+      me. I haven't had a proper weekend in 2 months. my
+      mum barely recognises me when I visit. I love the
+      work but I can't keep living like this"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to do her CIMA qualification alongside ACA"
+    original_session: 10
+    original_how: >
+      Ambitious plan. "I'm thinking about doing CIMA on
+      top of ACA. double qualified accountant looks insane
+      on a CV. PwC might even sponsor part of it"
+    retraction: "CIMA plan dropped — ACA alone is hard enough, no bandwidth"
+    retraction_session: 17
+    retraction_how: >
+      Realistic. "the CIMA thing is dead btw. I can barely
+      get through ACA and work at the same time. adding
+      another qualification on top would actually kill me.
+      forget I mentioned it"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Manchester — near family, near work"
+    existing_session: 1
+    tentative_fact: "Thinking about transferring to PwC London — bigger office, more deals"
+    tentative_session: 25
+    tentative_how: >
+      Exploring. "been thinking about requesting a transfer
+      to London. the deals team there is massive and the
+      opportunities are better. but London rent is actually
+      insane and I'd be far from my family. idk. just
+      thinking about it"
+    resolution: "Undecided — still in Manchester"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Busy season survival — staying awake during audit reviews"
+  - "Halal restaurant recommendations in Manchester"
+  - "Help with Excel formulas — VLOOKUP, pivot tables"
+  - "Eid planning — outfits, family gathering logistics"
+  - "Rant about a partner at work who takes credit for her analysis"
+  - "Hijab styling for corporate environments"
+  - "Help editing her LinkedIn profile"
+  - "Sibling drama — younger brother acting up at school"
+  - "Netflix/drama recommendations for the rare free evening"
+  - "Budgeting — London cost of living research"
+
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works in audit at PwC Manchester", "Lives in Manchester"], topic: "work introduction / busy season" }
+    2:  { type: critical, facts: ["Oldest of 6 siblings"], topic: "family pressure" }
+    3:  { type: critical, facts: ["Family fled Somalia at 3, grew up Moss Side"], topic: "background" }
+    4:  { type: critical, facts: ["Iron deficiency anemia, ferrous sulfate"], topic: "tiredness during busy season" }
+    5:  { type: critical, facts: ["LSE degree, first in family to uni", "Loves PwC, wants manager in 3 years"], topic: "career ambition" }
+    6:  { type: critical, facts: ["PureGym near Piccadilly 3x/week"], topic: "fitness routine" }
+    7:  { type: critical, facts: ["Lives with Zara in Ancoats flat"], topic: "home life" }
+    8:  { type: filler, topic: "busy season rant — 14 hour days" }
+    9:  { type: critical, facts: ["ACA exam March 18 2025"], topic: "exam stress" }
+    10: { type: critical, facts: ["Planning to do CIMA alongside ACA"], topic: "extra qualification" }
+    11: { type: filler, topic: "halal restaurant recs — Northern Quarter" }
+    12: { type: filler, topic: "Excel help — nested VLOOKUP question" }
+    13: { type: filler, topic: "Eid outfit planning" }
+    14: { type: filler, topic: "rant about partner taking credit for her work" }
+    15: { type: critical, facts: ["Sister Fatima GCSE results August 21"], topic: "helping sister revise" }
+    16: { type: filler, topic: "LinkedIn profile help — making it look professional" }
+    17: { type: critical, facts: ["CIMA plan dropped — no bandwidth"], topic: "dropping the extra qualification" }
+    18: { type: filler, topic: "younger brother Yusuf acting up at school — mum is stressed" }
+    19: { type: filler, topic: "Netflix recs — needs something light after 12 hour days" }
+    20: { type: critical, facts: ["Moved from audit to advisory (deals team)"], topic: "team change" }
+    21: { type: filler, topic: "hijab styling for a client presentation" }
+    22: { type: critical, facts: ["Switched to women-only gym in Rusholme"], topic: "gym change" }
+    23: { type: filler, topic: "budgeting research — comparing Manchester vs London rent" }
+    24: { type: critical, facts: ["Zara moved out, Priya (junior doctor) moved in"], topic: "new flatmate" }
+    25: { type: critical, facts: ["Thinking about PwC London transfer"], topic: "career direction" }
+    26: { type: critical, facts: ["Secretly looking at industry jobs — burned out"], topic: "career doubt" }
+    27: { type: filler, topic: "Eid family gathering — coordinating 6 siblings" }
+    28: { type: critical, facts: ["Annual review April 8 2026"], topic: "review prep" }
+    29: { type: filler, topic: "sibling group chat drama — somebody ate someone's food" }
+    30: { type: filler, topic: "help writing a follow-up email to a client" }
+    31: { type: filler, topic: "pivot table question — summarizing transaction data" }
+    32: { type: filler, topic: "Manchester weather rant — always raining" }
+    33: { type: filler, topic: "trying to meal prep halal meals for the week" }
+    34: { type: filler, topic: "career chat with a senior manager — advice on progression" }
+    35: { type: filler, topic: "reflecting on the year — exhausted but proud" }
+
+draft_questions:
+  - question: "What team is Aisha on at PwC?"
+    attack_vector: 4
+    correct: "Advisory — deals and transactions (moved from audit)"
+    wrong_if_surfaced: "Audit"
+
+  - question: "Which gym does Aisha go to?"
+    attack_vector: 1
+    correct: "Women-only gym in Rusholme"
+    wrong_if_surfaced: "PureGym near Piccadilly"
+
+  - question: "Who does Aisha live with?"
+    attack_vector: 1
+    correct: "Priya, a junior doctor (Zara moved out to live with her boyfriend)"
+    wrong_if_surfaced: "Zara"
+
+  - question: "Is Aisha pursuing any additional qualifications?"
+    attack_vector: 7
+    correct: "No — she considered CIMA alongside ACA but dropped it (no bandwidth)"
+    wrong_if_surfaced: "Planning to do CIMA alongside ACA"
+
+  - question: "What health conditions does Aisha have?"
+    attack_vector: 3
+    correct: "Iron deficiency anemia — takes ferrous sulfate"
+    wrong_if_surfaced: null
+
+  - question: "Does Aisha have any upcoming reviews or exams?"
+    attack_vector: 2
+    correct: "Annual review April 8, 2026"
+    wrong_if_surfaced: "ACA exam March 18 (passed) or Fatima's GCSEs August 21 (passed)"
+
+  - question: "How does Aisha feel about PwC?"
+    attack_vector: 6
+    correct: "Conflicted — she originally said she loved it and wanted to make manager, but is now secretly looking at industry jobs due to burnout"
+    wrong_if_surfaced: "Loves PwC, wants to make manager in 3 years" (without noting the later doubt)
+
+  - question: "What's Aisha's family background?"
+    attack_vector: 3
+    correct: "Somali-British, family fled Somalia when she was 3. Grew up in Moss Side, Manchester. Oldest of 6 siblings. First in family to go to university (LSE)."
+    wrong_if_surfaced: null
+
+  - question: "Is Aisha planning to move?"
+    attack_vector: null
+    correct: "She's considered transferring to PwC London for bigger opportunities, but hasn't decided — concerned about rent and distance from family"
+    wrong_if_surfaced: "Moving to London (stated as fact)"
+
+  - question: "How many siblings does Aisha have?"
+    attack_vector: 3
+    correct: "5 siblings (she's the oldest of 6 total) — ages 24, 22, 19, 16, and 12"
+    wrong_if_surfaced: null
+
+  - question: "Does Aisha have any past exams or events?"
+    attack_vector: 2
+    correct: "ACA exam (March 2025) and Fatima's GCSEs (August 2025) are both past"
+    wrong_if_surfaced: "Any presented as upcoming"
+
+  - question: "What does Aisha do outside work?"
+    attack_vector: 5
+    correct: "Gym (women-only in Rusholme), family time, helps siblings, Netflix, Eid celebrations"
+    wrong_if_surfaced: "PureGym Piccadilly (superseded)"

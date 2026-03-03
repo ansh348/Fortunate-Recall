@@ -1,0 +1,74 @@
+{
+  "session_id": 20,
+  "persona": "jake_brennan",
+  "date": "2025-07-28",
+  "type": "filler",
+  "topic": "wiring a three-way switch — job site question",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "quick question im on a job rn and I gotta wire a three way switch setup but the way this house is wired is confusin me"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I can try to help. What's the situation -- can you describe the existing wiring and what you're seeing in the boxes?"
+    },
+    {
+      "role": "user",
+      "content": "ok so the homeowner wants to control a hallway light from both ends of the hall right so I need two three way switches. the power comes into the first switch box and theres a 14 3 romex runnin between the two switch boxes and then a 14 2 goin from the second box to the light"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, that's a pretty standard three-way switch setup. With power coming into the first box, here's how it should go:\n\n**First switch box (power in):**\n- Black (hot) from the power source goes to the common terminal on switch 1\n- The red and black from the 14/3 cable go to the two traveler terminals on switch 1\n- Whites (neutrals) get wirenutted together and passed through\n\n**Second switch box:**\n- Red and black from the 14/3 go to the two traveler terminals on switch 2\n- Black from the 14/2 going to the light goes to the common terminal on switch 2\n- White from the 14/2 connects to the white from the 14/3 (neutral to the light)\n\nThe common terminal is usually a different color screw -- dark or black instead of brass."
+    },
+    {
+      "role": "user",
+      "content": "ok thats what I thought but heres the thing theres already an old switch in the first box and whoever wired it before did some weird stuff. the red wire is on the common and the black travelers are backstabbed not even on screws"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, that's a mess. Backstabbed connections are the worst -- they're technically allowed by code on 15-amp circuits but they loosen over time and cause problems. And having the red on the common instead of the hot tells me whoever did this either didn't know what they were doing or they swapped things around for some reason.\n\nI'd honestly just rip it all out and start fresh. Pull everything off, identify your wires with a voltage tester to confirm which cable has power, and wire it up clean using the screw terminals."
+    },
+    {
+      "role": "user",
+      "content": "thats exactly what im doin rn I already pulled everythin out I just wanted to make sure I had the right wiring diagram in my head before I hook it all back up. the backstabs drive me crazy bro like who does that on a switch"
+    },
+    {
+      "role": "assistant",
+      "content": "Lazy work is what that is. Backstabs save a few seconds per connection but they're so unreliable long-term. Screw terminals every time. Since you've already pulled everything out, just verify your hot with a tester at the first box and then follow the layout I described. The common terminal is the key -- hot in on one end, switch leg out on the other."
+    },
+    {
+      "role": "user",
+      "content": "yeah I already tested it the black on the 14 2 comin from the panel is hot. so that goes on the common of switch one and then the black from the 14 2 at the second box goin to the light goes on the common of switch two right"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly right. Hot from panel on common of switch 1, switch leg to the light on common of switch 2, and the red and black from the 14/3 are your travelers connecting the two switches. Doesn't matter which traveler goes on which traveler terminal, they're interchangeable. Just make sure your grounds are all connected too."
+    },
+    {
+      "role": "user",
+      "content": "sick yeah the grounds are good I pigtailed em to both switches and the box. alright im feelin good about it now gonna hook it all up and test it"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you've got it nailed down. Once you hook it up, flip the breaker on and test both switches -- the light should toggle from either position regardless of what position the other switch is in. If one position doesn't work, you've got a traveler swapped with the common somewhere."
+    },
+    {
+      "role": "user",
+      "content": "yeah and honestly the most annoyin part is im probably gonna have to redo like half the other switches in this house too cause I already peeked at a couple and theyre all backstabbed. this guy before me was a hack dude no cap"
+    },
+    {
+      "role": "assistant",
+      "content": "That's unfortunately pretty common in older work -- once you find one bad connection, there are usually more. At least the homeowner has you there now to do it right. Might be worth mentioning it to them so they know what's going on and you can get the go-ahead to fix the rest."
+    },
+    {
+      "role": "user",
+      "content": "appreciate it bro this is one of those things where I know how to do it but when the existing wirin is all jacked up it makes you second guess yourself. alright back to work"
+    },
+    {
+      "role": "assistant",
+      "content": "No doubt, bad existing wiring will make anyone second-guess themselves. You clearly know what you're doing though -- just needed to confirm the layout. Good luck with the rest of the job."
+    }
+  ]
+}

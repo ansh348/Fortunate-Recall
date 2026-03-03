@@ -1,0 +1,961 @@
+Loaded 112 questions from lifemembench_questions.json
+
+============================================================
+PERSONA: PRIYA (14 questions)
+============================================================
+
+  priya: 308 edges, t_now=2026-05-28
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 71
+    Source distribution: {'graphiti': 679, 'category_routed': 274, 'cypher_kw': 36, 'cypher_neighbor': 1}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 74 -> 74 after filter (sources: Counter({'graphiti': 50, 'category_routed': 24}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  -       | What dietary restrictions does Priya have?
+      [ 2/14] HIT  rank=  5 STALE | Where does Priya work?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | What should I know about Priya's learning or work style
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 4/14] MISS rank=  -       | Does Priya have any upcoming appointments?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  -       | Is Priya planning to get a pet?
+      [ 6/14] HIT  rank=  3       | What's Priya's living situation?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 7/14] MISS rank=  - STALE | What exercise does Priya do?
+      [ 8/14] HIT  rank=  2       | Is Priya planning to relocate?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  -       | What health conditions should Priya's meal plan account
+      [10/14] HIT  rank=  3       | Does Priya have any deadlines coming up?
+      [11/14] HIT  rank=  5       | What does Priya do in her free time?
+      [12/14] HIT  rank=  2       | What's Priya's family background?
+      [13/14] HIT  rank=  2       | How often did Priya do hot yoga before she stopped?
+      [14/14] HIT  rank=  3       | When is Priya's Tokyo conference?
+      >> Avg pool: 71 | Judge calls: 70 new, 70 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 74 -> 50 after filter (sources: Counter({'graphiti': 50}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | What dietary restrictions does Priya have?
+      [ 2/14] HIT  rank=  5 STALE | Where does Priya work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What should I know about Priya's learning or work style
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Priya have any upcoming appointments?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Is Priya planning to get a pet?
+      [ 6/14] HIT  rank=  3       | What's Priya's living situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  - STALE | What exercise does Priya do?
+      [ 8/14] HIT  rank=  2       | Is Priya planning to relocate?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What health conditions should Priya's meal plan account
+      [10/14] HIT  rank=  3       | Does Priya have any deadlines coming up?
+      [11/14] HIT  rank=  5       | What does Priya do in her free time?
+      [12/14] HIT  rank=  2       | What's Priya's family background?
+      [13/14] HIT  rank=  2       | How often did Priya do hot yoga before she stopped?
+      [14/14] HIT  rank=  3       | When is Priya's Tokyo conference?
+      >> Avg pool: 51 | Judge calls: 0 new, 70 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 74 -> 74 after filter (sources: Counter({'graphiti': 50, 'category_routed': 24}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | What dietary restrictions does Priya have?
+      [ 2/14] HIT  rank=  5 STALE | Where does Priya work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What should I know about Priya's learning or work style
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Priya have any upcoming appointments?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Is Priya planning to get a pet?
+      [ 6/14] HIT  rank=  3       | What's Priya's living situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  - STALE | What exercise does Priya do?
+      [ 8/14] HIT  rank=  2       | Is Priya planning to relocate?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What health conditions should Priya's meal plan account
+      [10/14] HIT  rank=  3       | Does Priya have any deadlines coming up?
+      [11/14] HIT  rank=  5       | What does Priya do in her free time?
+      [12/14] HIT  rank=  2       | What's Priya's family background?
+      [13/14] HIT  rank=  2       | How often did Priya do hot yoga before she stopped?
+      [14/14] HIT  rank=  3       | When is Priya's Tokyo conference?
+      >> Avg pool: 71 | Judge calls: 0 new, 70 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 74 -> 50 after filter (sources: Counter({'graphiti': 50}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | What dietary restrictions does Priya have?
+      [ 2/14] HIT  rank=  5 STALE | Where does Priya work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What should I know about Priya's learning or work style
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Priya have any upcoming appointments?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Is Priya planning to get a pet?
+      [ 6/14] HIT  rank=  3       | What's Priya's living situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  - STALE | What exercise does Priya do?
+      [ 8/14] HIT  rank=  2       | Is Priya planning to relocate?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What health conditions should Priya's meal plan account
+      [10/14] HIT  rank=  3       | Does Priya have any deadlines coming up?
+      [11/14] HIT  rank=  5       | What does Priya do in her free time?
+      [12/14] HIT  rank=  2       | What's Priya's family background?
+      [13/14] HIT  rank=  2       | How often did Priya do hot yoga before she stopped?
+      [14/14] HIT  rank=  3       | When is Priya's Tokyo conference?
+      >> Avg pool: 51 | Judge calls: 0 new, 70 total cached
+
+============================================================
+PERSONA: MARCUS (14 questions)
+============================================================
+
+  marcus: 238 edges, t_now=2026-05-10
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 64
+    Source distribution: {'graphiti': 633, 'category_routed': 229, 'cypher_neighbor': 3, 'cypher_kw': 27}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 77 -> 77 after filter (sources: Counter({'graphiti': 50, 'category_routed': 26, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  - STALE | Who is Marcus's main tire supplier?
+      [ 2/14] HIT  rank=  2       | What vehicle does Marcus drive?
+      [ 3/14] HIT  rank=  2       | Is Marcus planning to open a second shop location?
+      [ 4/14] HIT  rank=  5       | What health conditions should be considered for Marcus?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  - STALE | Does Marcus have any upcoming inspections or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  -       | What does Marcus do for fun?
+      [ 7/14] HIT  rank=  2       | What's Marcus's relationship status?
+      [ 8/14] HIT  rank=  4       | How is Marcus's business doing financially?
+      [ 9/14] HIT  rank=  1       | What's Marcus's educational background?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [10/14] MISS rank=  - STALE | Does Marcus have any equipment deliveries coming?
+      [11/14] HIT  rank=  1       | What's Marcus's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [12/14] MISS rank=  - STALE | Does Marcus need to prepare for any meetings?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [13/14] MISS rank=  - STALE | How many employees does Marcus currently have at the sh
+      [14/14] HIT  rank=  1       | How long did Marcus serve in the military?
+      >> Avg pool: 64 | Judge calls: 70 new, 140 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 77 -> 51 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | Who is Marcus's main tire supplier?
+      [ 2/14] HIT  rank=  2       | What vehicle does Marcus drive?
+      [ 3/14] HIT  rank=  2       | Is Marcus planning to open a second shop location?
+      [ 4/14] HIT  rank=  5       | What health conditions should be considered for Marcus?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  - STALE | Does Marcus have any upcoming inspections or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | What does Marcus do for fun?
+      [ 7/14] HIT  rank=  2       | What's Marcus's relationship status?
+      [ 8/14] HIT  rank=  4       | How is Marcus's business doing financially?
+      [ 9/14] HIT  rank=  1       | What's Marcus's educational background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  - STALE | Does Marcus have any equipment deliveries coming?
+      [11/14] HIT  rank=  1       | What's Marcus's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  - STALE | Does Marcus need to prepare for any meetings?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [13/14] MISS rank=  - STALE | How many employees does Marcus currently have at the sh
+      [14/14] HIT  rank=  1       | How long did Marcus serve in the military?
+      >> Avg pool: 47 | Judge calls: 0 new, 140 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 77 -> 77 after filter (sources: Counter({'graphiti': 50, 'category_routed': 26, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | Who is Marcus's main tire supplier?
+      [ 2/14] HIT  rank=  2       | What vehicle does Marcus drive?
+      [ 3/14] HIT  rank=  2       | Is Marcus planning to open a second shop location?
+      [ 4/14] HIT  rank=  5       | What health conditions should be considered for Marcus?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  - STALE | Does Marcus have any upcoming inspections or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | What does Marcus do for fun?
+      [ 7/14] HIT  rank=  2       | What's Marcus's relationship status?
+      [ 8/14] HIT  rank=  4       | How is Marcus's business doing financially?
+      [ 9/14] HIT  rank=  1       | What's Marcus's educational background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  - STALE | Does Marcus have any equipment deliveries coming?
+      [11/14] HIT  rank=  1       | What's Marcus's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  - STALE | Does Marcus need to prepare for any meetings?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [13/14] MISS rank=  - STALE | How many employees does Marcus currently have at the sh
+      [14/14] HIT  rank=  1       | How long did Marcus serve in the military?
+      >> Avg pool: 64 | Judge calls: 0 new, 140 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 77 -> 51 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | Who is Marcus's main tire supplier?
+      [ 2/14] HIT  rank=  2       | What vehicle does Marcus drive?
+      [ 3/14] HIT  rank=  2       | Is Marcus planning to open a second shop location?
+      [ 4/14] HIT  rank=  5       | What health conditions should be considered for Marcus?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  - STALE | Does Marcus have any upcoming inspections or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | What does Marcus do for fun?
+      [ 7/14] HIT  rank=  2       | What's Marcus's relationship status?
+      [ 8/14] HIT  rank=  4       | How is Marcus's business doing financially?
+      [ 9/14] HIT  rank=  1       | What's Marcus's educational background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  - STALE | Does Marcus have any equipment deliveries coming?
+      [11/14] HIT  rank=  1       | What's Marcus's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  - STALE | Does Marcus need to prepare for any meetings?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [13/14] MISS rank=  - STALE | How many employees does Marcus currently have at the sh
+      [14/14] HIT  rank=  1       | How long did Marcus serve in the military?
+      >> Avg pool: 47 | Judge calls: 0 new, 140 total cached
+
+============================================================
+PERSONA: ELENA (14 questions)
+============================================================
+
+  elena: 306 edges, t_now=2026-04-02
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 63
+    Source distribution: {'graphiti': 700, 'cypher_kw': 34, 'category_routed': 147, 'cypher_neighbor': 1}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 72 -> 72 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 13, 'category_routed': 9}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  -       | Where does Elena work?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 2/14] MISS rank=  -       | What diet is Elena following?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | Is Elena planning to get a nurse practitioner degree?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 4/14] MISS rank=  -       | What mental health conditions does Elena have?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  -       | Does Elena have any upcoming exams or certifications?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  - STALE | What's Elena's relationship status?
+      [ 7/14] HIT  rank=  5       | How does Elena feel about night shifts?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 8/14] MISS rank=  -       | What's Elena's family background?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  - STALE | Is Elena thinking about moving?
+      [10/14] HIT  rank=  1       | Does Elena need to make any lease decisions?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [11/14] MISS rank=  - STALE | Does Elena have any upcoming events or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [12/14] MISS rank=  -       | What does Elena do for stress relief?
+      [13/14] HIT  rank=  3       | How much does Elena owe in student loans?
+      [14/14] HIT  rank=  2       | How much weight did Elena lose on keto before switching
+      >> Avg pool: 63 | Judge calls: 70 new, 210 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 72 -> 63 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 13}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | Where does Elena work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What diet is Elena following?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | Is Elena planning to get a nurse practitioner degree?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | What mental health conditions does Elena have?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Elena have any upcoming exams or certifications?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  - STALE | What's Elena's relationship status?
+      [ 7/14] HIT  rank=  5       | How does Elena feel about night shifts?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What's Elena's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  - STALE | Is Elena thinking about moving?
+      [10/14] HIT  rank=  1       | Does Elena need to make any lease decisions?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  - STALE | Does Elena have any upcoming events or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What does Elena do for stress relief?
+      [13/14] HIT  rank=  3       | How much does Elena owe in student loans?
+      [14/14] HIT  rank=  2       | How much weight did Elena lose on keto before switching
+      >> Avg pool: 52 | Judge calls: 0 new, 210 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 72 -> 72 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 13, 'category_routed': 9}))
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 1/14] MISS rank=  -       | Where does Elena work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What diet is Elena following?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | Is Elena planning to get a nurse practitioner degree?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 4/14] MISS rank=  -       | What mental health conditions does Elena have?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Elena have any upcoming exams or certifications?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  - STALE | What's Elena's relationship status?
+      [ 7/14] HIT  rank=  4       | How does Elena feel about night shifts?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What's Elena's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  - STALE | Is Elena thinking about moving?
+      [10/14] HIT  rank=  1       | Does Elena need to make any lease decisions?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  - STALE | Does Elena have any upcoming events or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What does Elena do for stress relief?
+      [13/14] HIT  rank=  3       | How much does Elena owe in student loans?
+      [14/14] HIT  rank=  2       | How much weight did Elena lose on keto before switching
+      >> Avg pool: 63 | Judge calls: 3 new, 213 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 72 -> 63 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 13}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | Where does Elena work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What diet is Elena following?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | Is Elena planning to get a nurse practitioner degree?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | What mental health conditions does Elena have?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Elena have any upcoming exams or certifications?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  - STALE | What's Elena's relationship status?
+      [ 7/14] HIT  rank=  4       | How does Elena feel about night shifts?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What's Elena's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  - STALE | Is Elena thinking about moving?
+      [10/14] HIT  rank=  1       | Does Elena need to make any lease decisions?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  - STALE | Does Elena have any upcoming events or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What does Elena do for stress relief?
+      [13/14] HIT  rank=  3       | How much does Elena owe in student loans?
+      [14/14] HIT  rank=  2       | How much weight did Elena lose on keto before switching
+      >> Avg pool: 52 | Judge calls: 0 new, 213 total cached
+
+============================================================
+PERSONA: DAVID (14 questions)
+============================================================
+
+  david: 351 edges, t_now=2026-04-05
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 77
+    Source distribution: {'graphiti': 700, 'cypher_kw': 127, 'cypher_neighbor': 69, 'category_routed': 183}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 80 -> 80 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 18, 'category_routed': 7, 'cypher_neighbor': 5}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  -       | What subject does David teach?
+      [ 2/14] HIT  rank=  1       | What extracurricular does David coach?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | What car does David drive?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 4/14] MISS rank=  - STALE | Is David writing a book?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  -       | What health conditions does David have?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  -       | Does David have any upcoming exams to prepare students 
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 7/14] MISS rank=  -       | How does David feel about his teaching career?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 8/14] MISS rank=  -       | What's David's family background?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  -       | Is David planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [10/14] MISS rank=  -       | Does David have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [11/14] MISS rank=  -       | Does David have any parent events coming up?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [12/14] MISS rank=  -       | What does David do outside of teaching?
+      [13/14] HIT  rank=  4       | How many years has David been teaching?
+      [14/14] HIT  rank=  1       | How many miles were on David's old Camry when he replac
+      >> Avg pool: 77 | Judge calls: 70 new, 283 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 80 -> 73 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 18, 'cypher_neighbor': 5}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | What subject does David teach?
+      [ 2/14] HIT  rank=  1       | What extracurricular does David coach?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What car does David drive?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  - STALE | Is David writing a book?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | What health conditions does David have?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Does David have any upcoming exams to prepare students 
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | How does David feel about his teaching career?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What's David's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | Is David planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does David have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  -       | Does David have any parent events coming up?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What does David do outside of teaching?
+      [13/14] HIT  rank=  4       | How many years has David been teaching?
+      [14/14] HIT  rank=  1       | How many miles were on David's old Camry when he replac
+      >> Avg pool: 64 | Judge calls: 0 new, 283 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 80 -> 80 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 18, 'category_routed': 7, 'cypher_neighbor': 5}))
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 1/14] MISS rank=  -       | What subject does David teach?
+      [ 2/14] HIT  rank=  1       | What extracurricular does David coach?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What car does David drive?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  - STALE | Is David writing a book?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 5/14] MISS rank=  -       | What health conditions does David have?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Does David have any upcoming exams to prepare students 
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 7/14] MISS rank=  -       | How does David feel about his teaching career?
+          NO correct verdict | top5=5 judged=5 (cached=3 new=2)
+      [ 8/14] MISS rank=  -       | What's David's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | Is David planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does David have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [11/14] MISS rank=  -       | Does David have any parent events coming up?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What does David do outside of teaching?
+      [13/14] HIT  rank=  3       | How many years has David been teaching?
+      [14/14] HIT  rank=  1       | How many miles were on David's old Camry when he replac
+      >> Avg pool: 77 | Judge calls: 7 new, 290 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 80 -> 73 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 18, 'cypher_neighbor': 5}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | What subject does David teach?
+      [ 2/14] HIT  rank=  1       | What extracurricular does David coach?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What car does David drive?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  - STALE | Is David writing a book?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | What health conditions does David have?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Does David have any upcoming exams to prepare students 
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | How does David feel about his teaching career?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What's David's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | Is David planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does David have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  -       | Does David have any parent events coming up?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What does David do outside of teaching?
+      [13/14] HIT  rank=  3       | How many years has David been teaching?
+      [14/14] HIT  rank=  1       | How many miles were on David's old Camry when he replac
+      >> Avg pool: 64 | Judge calls: 0 new, 290 total cached
+
+============================================================
+PERSONA: AMARA (14 questions)
+============================================================
+
+  amara: 304 edges, t_now=2026-05-04
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 69
+    Source distribution: {'graphiti': 677, 'category_routed': 211, 'cypher_kw': 53, 'cypher_neighbor': 31}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 62 -> 62 after filter (sources: Counter({'graphiti': 50, 'category_routed': 12}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  -       | Which chambers does Amara practise at?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 2/14] MISS rank=  -       | What phone does Amara use?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | What exercise does Amara do?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 4/14] MISS rank=  -       | Does Amara have any health conditions to be aware of?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  -       | Does Amara have any upcoming commitments or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  -       | Is Amara pursuing any further education?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 7/14] MISS rank=  -       | Does Amara drink alcohol?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 8/14] MISS rank=  -       | Where does Amara live?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  -       | What's Amara's family background?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [10/14] MISS rank=  -       | Does Amara have any expired appointments or events?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [11/14] MISS rank=  -       | What does Amara do outside of work?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [12/14] MISS rank=  -       | What is Amara's educational background?
+      [13/14] HIT  rank=  1       | At what age was Amara diagnosed with endometriosis?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [14/14] MISS rank=  -       | How much would the UCL master's programme have cost Ama
+      >> Avg pool: 69 | Judge calls: 70 new, 360 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 62 -> 50 after filter (sources: Counter({'graphiti': 50}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | Which chambers does Amara practise at?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What phone does Amara use?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What exercise does Amara do?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Amara have any health conditions to be aware of?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Amara have any upcoming commitments or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Is Amara pursuing any further education?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | Does Amara drink alcohol?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Amara live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Amara's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does Amara have any expired appointments or events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  -       | What does Amara do outside of work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What is Amara's educational background?
+      [13/14] HIT  rank=  1       | At what age was Amara diagnosed with endometriosis?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [14/14] MISS rank=  -       | How much would the UCL master's programme have cost Ama
+      >> Avg pool: 54 | Judge calls: 0 new, 360 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 62 -> 62 after filter (sources: Counter({'graphiti': 50, 'category_routed': 12}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | Which chambers does Amara practise at?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 2/14] MISS rank=  -       | What phone does Amara use?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 3/14] MISS rank=  -       | What exercise does Amara do?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Amara have any health conditions to be aware of?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Amara have any upcoming commitments or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Is Amara pursuing any further education?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | Does Amara drink alcohol?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 8/14] MISS rank=  -       | Where does Amara live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Amara's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does Amara have any expired appointments or events?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [11/14] MISS rank=  -       | What does Amara do outside of work?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [12/14] MISS rank=  -       | What is Amara's educational background?
+      [13/14] HIT  rank=  1       | At what age was Amara diagnosed with endometriosis?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [14/14] MISS rank=  -       | How much would the UCL master's programme have cost Ama
+      >> Avg pool: 69 | Judge calls: 5 new, 365 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 62 -> 50 after filter (sources: Counter({'graphiti': 50}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  -       | Which chambers does Amara practise at?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What phone does Amara use?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What exercise does Amara do?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Amara have any health conditions to be aware of?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Amara have any upcoming commitments or deadlines?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Is Amara pursuing any further education?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | Does Amara drink alcohol?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Amara live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Amara's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does Amara have any expired appointments or events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  -       | What does Amara do outside of work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What is Amara's educational background?
+      [13/14] HIT  rank=  1       | At what age was Amara diagnosed with endometriosis?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [14/14] MISS rank=  -       | How much would the UCL master's programme have cost Ama
+      >> Avg pool: 54 | Judge calls: 0 new, 365 total cached
+
+============================================================
+PERSONA: JAKE (14 questions)
+============================================================
+
+  jake: 317 edges, t_now=2026-03-02
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 69
+    Source distribution: {'graphiti': 700, 'cypher_kw': 33, 'cypher_neighbor': 13, 'category_routed': 219}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 73 -> 73 after filter (sources: Counter({'graphiti': 50, 'category_routed': 22, 'cypher_neighbor': 1}))
+      [ 1/14] HIT  rank=  2 STALE | Does Jake vape?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 2/14] MISS rank=  -       | Who is Jake dating?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | What does Jake's mom do?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 4/14] MISS rank=  -       | Does Jake have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  -       | Is Jake doing any side work?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  -       | How is Jake doing with his savings?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 7/14] MISS rank=  - STALE | What does Jake drink?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 8/14] MISS rank=  -       | Where does Jake live?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  -       | What's Jake's family background?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [10/14] MISS rank=  -       | What does Jake do outside of work?
+      [11/14] HIT  rank=  4 STALE | Does Jake have any exams or certifications coming up?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [12/14] MISS rank=  -       | What's Jake's work situation?
+      [13/14] HIT  rank=  3       | How much did Jake spend on his gaming PC?
+      [14/14] HIT  rank=  2       | How long has Jake's mom worked at the Eire Pub?
+      >> Avg pool: 69 | Judge calls: 70 new, 435 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 73 -> 51 after filter (sources: Counter({'graphiti': 50, 'cypher_neighbor': 1}))
+      [ 1/14] HIT  rank=  2 STALE | Does Jake vape?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | Who is Jake dating?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What does Jake's mom do?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Jake have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Is Jake doing any side work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | How is Jake doing with his savings?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  - STALE | What does Jake drink?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Jake live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Jake's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | What does Jake do outside of work?
+      [11/14] HIT  rank=  4 STALE | Does Jake have any exams or certifications coming up?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What's Jake's work situation?
+      [13/14] HIT  rank=  3       | How much did Jake spend on his gaming PC?
+      [14/14] HIT  rank=  2       | How long has Jake's mom worked at the Eire Pub?
+      >> Avg pool: 53 | Judge calls: 0 new, 435 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 73 -> 73 after filter (sources: Counter({'graphiti': 50, 'category_routed': 22, 'cypher_neighbor': 1}))
+      [ 1/14] HIT  rank=  1       | Does Jake vape?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | Who is Jake dating?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What does Jake's mom do?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [ 4/14] MISS rank=  -       | Does Jake have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Is Jake doing any side work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | How is Jake doing with his savings?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  - STALE | What does Jake drink?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Jake live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Jake's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | What does Jake do outside of work?
+      [11/14] HIT  rank=  3 STALE | Does Jake have any exams or certifications coming up?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What's Jake's work situation?
+      [13/14] HIT  rank=  2       | How much did Jake spend on his gaming PC?
+      [14/14] HIT  rank=  2       | How long has Jake's mom worked at the Eire Pub?
+      >> Avg pool: 69 | Judge calls: 3 new, 438 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 73 -> 51 after filter (sources: Counter({'graphiti': 50, 'cypher_neighbor': 1}))
+      [ 1/14] HIT  rank=  1       | Does Jake vape?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | Who is Jake dating?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What does Jake's mom do?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Jake have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Is Jake doing any side work?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | How is Jake doing with his savings?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  - STALE | What does Jake drink?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Jake live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Jake's family background?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | What does Jake do outside of work?
+      [11/14] HIT  rank=  3 STALE | Does Jake have any exams or certifications coming up?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | What's Jake's work situation?
+      [13/14] HIT  rank=  2       | How much did Jake spend on his gaming PC?
+      [14/14] HIT  rank=  2       | How long has Jake's mom worked at the Eire Pub?
+      >> Avg pool: 53 | Judge calls: 0 new, 438 total cached
+
+============================================================
+PERSONA: TOM (14 questions)
+============================================================
+
+  tom: 373 edges, t_now=2026-03-23
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 79
+    Source distribution: {'graphiti': 695, 'cypher_kw': 169, 'category_routed': 227, 'cypher_neighbor': 18}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 85 -> 85 after filter (sources: Counter({'graphiti': 50, 'category_routed': 25, 'cypher_kw': 10}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  - STALE | Where does Tom get his honey jars?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 2/14] MISS rank=  -       | What car does Tom drive?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | What does Tom do socially?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 4/14] MISS rank=  -       | Does Tom have any health conditions?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 5/14] MISS rank=  -       | Does Tom have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  -       | Is Tom planning any building projects?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 7/14] MISS rank=  -       | Does Tom use social media?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 8/14] MISS rank=  -       | Where does Tom live?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  -       | What's Tom's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [10/14] MISS rank=  -       | What does Tom do in his free time?
+      [11/14] HIT  rank=  4       | What was Tom's career?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [12/14] MISS rank=  -       | Does Tom have any past events or appointments?
+      [13/14] HIT  rank=  1       | How much was the quote for Tom's barn conversion?
+      [14/14] HIT  rank=  3       | How many years did Tom work at Arup?
+      >> Avg pool: 79 | Judge calls: 70 new, 508 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 85 -> 60 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 10}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | Where does Tom get his honey jars?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What car does Tom drive?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What does Tom do socially?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Tom have any health conditions?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Tom have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Is Tom planning any building projects?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | Does Tom use social media?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Tom live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Tom's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | What does Tom do in his free time?
+      [11/14] HIT  rank=  4       | What was Tom's career?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | Does Tom have any past events or appointments?
+      [13/14] HIT  rank=  1       | How much was the quote for Tom's barn conversion?
+      [14/14] HIT  rank=  3       | How many years did Tom work at Arup?
+      >> Avg pool: 63 | Judge calls: 0 new, 508 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 85 -> 85 after filter (sources: Counter({'graphiti': 50, 'category_routed': 25, 'cypher_kw': 10}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | Where does Tom get his honey jars?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What car does Tom drive?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What does Tom do socially?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Tom have any health conditions?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Tom have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Is Tom planning any building projects?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | Does Tom use social media?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Tom live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Tom's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | What does Tom do in his free time?
+      [11/14] HIT  rank=  3       | What was Tom's career?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | Does Tom have any past events or appointments?
+      [13/14] HIT  rank=  1       | How much was the quote for Tom's barn conversion?
+      [14/14] HIT  rank=  2       | How many years did Tom work at Arup?
+      >> Avg pool: 79 | Judge calls: 0 new, 508 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 85 -> 60 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 10}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | Where does Tom get his honey jars?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 2/14] MISS rank=  -       | What car does Tom drive?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | What does Tom do socially?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 4/14] MISS rank=  -       | Does Tom have any health conditions?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 5/14] MISS rank=  -       | Does Tom have any upcoming events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Is Tom planning any building projects?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 7/14] MISS rank=  -       | Does Tom use social media?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | Where does Tom live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | What's Tom's family situation?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | What does Tom do in his free time?
+      [11/14] HIT  rank=  3       | What was Tom's career?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [12/14] MISS rank=  -       | Does Tom have any past events or appointments?
+      [13/14] HIT  rank=  1       | How much was the quote for Tom's barn conversion?
+      [14/14] HIT  rank=  2       | How many years did Tom work at Arup?
+      >> Avg pool: 63 | Judge calls: 0 new, 508 total cached
+
+============================================================
+PERSONA: OMAR (14 questions)
+============================================================
+
+  omar: 215 edges, t_now=2026-04-05
+    Building candidate pools for 14 questions...
+    Pools built. Avg size: 67
+    Source distribution: {'graphiti': 700, 'category_routed': 212, 'cypher_kw': 22, 'cypher_neighbor': 1}
+    Config: full (routing=ON, decay=behavioral)
+        Q0 pool: 77 -> 77 after filter (sources: Counter({'graphiti': 50, 'category_routed': 26, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 1/14] MISS rank=  - STALE | What rideshare platform does Omar drive for?
+      [ 2/14] HIT  rank=  2       | Where does Omar live?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 3/14] MISS rank=  -       | Does Omar have any upcoming events or deadlines?
+      [ 4/14] HIT  rank=  4       | What is Omar's background?
+      [ 5/14] HIT  rank=  4       | Is Omar planning to buy a car?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 6/14] MISS rank=  -       | Does Omar spend money on himself?
+      [ 7/14] HIT  rank=  3       | Is Omar planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 8/14] MISS rank=  -       | What does Omar do for money?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [ 9/14] MISS rank=  -       | Does Omar have family obligations?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [10/14] MISS rank=  -       | Does Omar have any past events?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [11/14] MISS rank=  -       | What are Omar's health conditions?
+      [12/14] HIT  rank=  1       | What's Omar's career plan?
+      [13/14] HIT  rank=  1       | How much was Omar's rent in Alief before he moved?
+          NO correct verdict | top5=5 judged=5 (cached=0 new=5)
+      [14/14] MISS rank=  -       | How much does Omar send his mother in Khartoum each mon
+      >> Avg pool: 67 | Judge calls: 70 new, 578 total cached
+    Config: no_routing (routing=OFF, decay=behavioral)
+        Q0 pool: 77 -> 51 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | What rideshare platform does Omar drive for?
+      [ 2/14] HIT  rank=  2       | Where does Omar live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | Does Omar have any upcoming events or deadlines?
+      [ 4/14] HIT  rank=  4       | What is Omar's background?
+      [ 5/14] HIT  rank=  4       | Is Omar planning to buy a car?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Does Omar spend money on himself?
+      [ 7/14] HIT  rank=  3       | Is Omar planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What does Omar do for money?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | Does Omar have family obligations?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does Omar have any past events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  -       | What are Omar's health conditions?
+      [12/14] HIT  rank=  1       | What's Omar's career plan?
+      [13/14] HIT  rank=  1       | How much was Omar's rent in Alief before he moved?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [14/14] MISS rank=  -       | How much does Omar send his mother in Khartoum each mon
+      >> Avg pool: 52 | Judge calls: 0 new, 578 total cached
+    Config: uniform (routing=ON, decay=uniform)
+        Q0 pool: 77 -> 77 after filter (sources: Counter({'graphiti': 50, 'category_routed': 26, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | What rideshare platform does Omar drive for?
+      [ 2/14] HIT  rank=  2       | Where does Omar live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | Does Omar have any upcoming events or deadlines?
+      [ 4/14] HIT  rank=  4       | What is Omar's background?
+      [ 5/14] HIT  rank=  4       | Is Omar planning to buy a car?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Does Omar spend money on himself?
+      [ 7/14] HIT  rank=  3       | Is Omar planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What does Omar do for money?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | Does Omar have family obligations?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does Omar have any past events?
+          NO correct verdict | top5=5 judged=5 (cached=4 new=1)
+      [11/14] MISS rank=  -       | What are Omar's health conditions?
+      [12/14] HIT  rank=  1       | What's Omar's career plan?
+      [13/14] HIT  rank=  1       | How much was Omar's rent in Alief before he moved?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [14/14] MISS rank=  -       | How much does Omar send his mother in Khartoum each mon
+      >> Avg pool: 67 | Judge calls: 2 new, 580 total cached
+    Config: baseline (routing=OFF, decay=uniform)
+        Q0 pool: 77 -> 51 after filter (sources: Counter({'graphiti': 50, 'cypher_kw': 1}))
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 1/14] MISS rank=  - STALE | What rideshare platform does Omar drive for?
+      [ 2/14] HIT  rank=  2       | Where does Omar live?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 3/14] MISS rank=  -       | Does Omar have any upcoming events or deadlines?
+      [ 4/14] HIT  rank=  4       | What is Omar's background?
+      [ 5/14] HIT  rank=  4       | Is Omar planning to buy a car?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 6/14] MISS rank=  -       | Does Omar spend money on himself?
+      [ 7/14] HIT  rank=  3       | Is Omar planning to move?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 8/14] MISS rank=  -       | What does Omar do for money?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [ 9/14] MISS rank=  -       | Does Omar have family obligations?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [10/14] MISS rank=  -       | Does Omar have any past events?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [11/14] MISS rank=  -       | What are Omar's health conditions?
+      [12/14] HIT  rank=  1       | What's Omar's career plan?
+      [13/14] HIT  rank=  1       | How much was Omar's rent in Alief before he moved?
+          NO correct verdict | top5=5 judged=5 (cached=5 new=0)
+      [14/14] MISS rank=  -       | How much does Omar send his mother in Khartoum each mon
+      >> Avg pool: 52 | Judge calls: 0 new, 580 total cached
+
+
+Total time: 2107s (35.1m)
+
+======================================================================
+LIFEMEMBENCH 2x2 ABLATION (alpha=0.1, 8 personas, 112 questions)
+======================================================================
+
+                     Routing ON                     Routing OFF                   
+                     ----------                     -----------                   
+Behavioral           MRR=0.531  H@1=27%  H@5=100%  Stale=14% MRR=0.531  H@1=27%  H@5=100%  Stale=14%
+Uniform              MRR=0.561  H@1=30%  H@5=100%  Stale=13% MRR=0.561  H@1=30%  H@5=100%  Stale=13%
+
+  Behavioral advantage (B-U):
+    With routing:    +-0.031 MRR
+    Without routing: +-0.031 MRR
+  Routing contribution (R-NR):
+    With behavioral: +0.000 MRR
+    With uniform:    +0.000 MRR
+
+====================================================================================================
+PER ATTACK VECTOR BREAKDOWN
+====================================================================================================
+Attack Vector                  |   Full |  No-Rt |  Unifm |   Base |   n
+------------------------------------------------------------------------
+AV1_superseded_preference      |  100% |  100% |  100% |  100% |  14
+AV2_expired_logistics          |  100% |  100% |  100% |  100% |  19
+AV3_stable_identity            |  100% |  100% |  100% |  100% |  22
+AV4_multi_version_fact         |  100% |  100% |  100% |  100% |   9
+AV5_broad_query                |  100% |  100% |  100% |  100% |   8
+AV6_cross_session_contradiction |  100% |  100% |  100% |  100% |   8
+AV7_selective_forgetting       |  100% |  100% |  100% |  100% |   8
+AV8_numeric_preservation       |  100% |  100% |  100% |  100% |  16
+AV9_soft_supersession          |  100% |  100% |  100% |  100% |   8
+OVERALL                        |  100% |  100% |  100% |  100% | 112
+
+======================================================================
+HEADLINE FINDINGS
+======================================================================
+  Overall MRR: Full=0.531 vs Baseline=0.561 (delta=+-0.031, +-5%)
+  Routing contribution:    +0.000 MRR
+  Behavioral contribution: +-0.031 MRR
+
+  Results saved to C:\Users\anshu\PycharmProjects\hugeleapforward\LifeMemEval\artifacts\lifemembench_results.json

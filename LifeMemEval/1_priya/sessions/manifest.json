@@ -1,0 +1,364 @@
+{
+  "persona": "priya_sharma",
+  "total_sessions": 35,
+  "time_span": "2025-01-08 to 2026-05-28",
+  "generated_at": "2026-02-28T10:49:56.554Z",
+  "critical_sessions": 18,
+  "filler_sessions": 17,
+  "sessions": [
+    {
+      "session_id": 1,
+      "file": "sessions/session_01.json",
+      "date": "2025-01-08",
+      "type": "critical",
+      "topic": "work help",
+      "facts_disclosed": [
+        "Works at Google/Gemini memory team",
+        "Lives in Austin"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 2,
+      "file": "sessions/session_02.json",
+      "date": "2025-01-22",
+      "type": "critical",
+      "topic": "productivity tools",
+      "facts_disclosed": [
+        "Has ADHD (diagnosed in college)"
+      ],
+      "turn_count": 9
+    },
+    {
+      "session_id": 3,
+      "file": "sessions/session_03.json",
+      "date": "2025-02-05",
+      "type": "critical",
+      "topic": "cooking",
+      "facts_disclosed": [
+        "Tamil heritage / mom's rasam recipe",
+        "Vegetarian for 5 years"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 4,
+      "file": "sessions/session_04.json",
+      "date": "2025-02-19",
+      "type": "critical",
+      "topic": "work stress",
+      "facts_disclosed": [
+        "Chronic migraines triggered by screens/stress"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 5,
+      "file": "sessions/session_05.json",
+      "date": "2025-03-03",
+      "type": "critical",
+      "topic": "weekend plans",
+      "facts_disclosed": [
+        "Younger brother Arjun lives in Seattle"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 6,
+      "file": "sessions/session_06.json",
+      "date": "2025-03-14",
+      "type": "critical",
+      "topic": "stress management",
+      "facts_disclosed": [
+        "Does hot yoga 4x/week"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 7,
+      "file": "sessions/session_07.json",
+      "date": "2025-03-27",
+      "type": "critical",
+      "topic": "apartment decor",
+      "facts_disclosed": [
+        "Lives alone in a studio apartment"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 8,
+      "file": "sessions/session_08.json",
+      "date": "2025-04-07",
+      "type": "filler",
+      "topic": "cooking — trying a new dal recipe",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 9,
+      "file": "sessions/session_09.json",
+      "date": "2025-04-18",
+      "type": "filler",
+      "topic": "movie rec — wants something like Arrival",
+      "facts_disclosed": [],
+      "turn_count": 7
+    },
+    {
+      "session_id": 10,
+      "file": "sessions/session_10.json",
+      "date": "2025-04-29",
+      "type": "critical",
+      "topic": "apartment stress",
+      "facts_disclosed": [
+        "Lease expires end of August 2025"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 11,
+      "file": "sessions/session_11.json",
+      "date": "2025-05-08",
+      "type": "filler",
+      "topic": "coding — PyTorch DataLoader issue",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 12,
+      "file": "sessions/session_12.json",
+      "date": "2025-05-19",
+      "type": "critical",
+      "topic": "getting a dog",
+      "facts_disclosed": [
+        "Looking at golden retriever puppies",
+        "Breeder in Round Rock"
+      ],
+      "turn_count": 9
+    },
+    {
+      "session_id": 13,
+      "file": "sessions/session_13.json",
+      "date": "2025-05-30",
+      "type": "filler",
+      "topic": "Austin traffic rant",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 14,
+      "file": "sessions/session_14.json",
+      "date": "2025-06-08",
+      "type": "critical",
+      "topic": "scheduling",
+      "facts_disclosed": [
+        "Dentist appointment Thursday June 12 at 2pm"
+      ],
+      "turn_count": 9
+    },
+    {
+      "session_id": 15,
+      "file": "sessions/session_15.json",
+      "date": "2025-06-21",
+      "type": "filler",
+      "topic": "gift ideas for mom's birthday",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 16,
+      "file": "sessions/session_16.json",
+      "date": "2025-06-30",
+      "type": "critical",
+      "topic": "disappointment — dog plan dead",
+      "facts_disclosed": [
+        "Dog plan is dead — landlord said absolutely no pets"
+      ],
+      "turn_count": 9
+    },
+    {
+      "session_id": 17,
+      "file": "sessions/session_17.json",
+      "date": "2025-07-10",
+      "type": "filler",
+      "topic": "AI consciousness",
+      "facts_disclosed": [],
+      "turn_count": 9
+    },
+    {
+      "session_id": 18,
+      "file": "sessions/session_18.json",
+      "date": "2025-07-24",
+      "type": "critical",
+      "topic": "career change excitement",
+      "facts_disclosed": [
+        "Left Google, starting at Anthropic next Monday on memory systems team"
+      ],
+      "turn_count": 12
+    },
+    {
+      "session_id": 19,
+      "file": "sessions/session_19.json",
+      "date": "2025-08-05",
+      "type": "filler",
+      "topic": "meal prep for the week",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 20,
+      "file": "sessions/session_20.json",
+      "date": "2025-08-19",
+      "type": "critical",
+      "topic": "apartment organization / cohabitation creep",
+      "facts_disclosed": [
+        "Boyfriend Raj basically lives with her"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 21,
+      "file": "sessions/session_21.json",
+      "date": "2025-09-02",
+      "type": "filler",
+      "topic": "book recommendations — memory and neuroscience nonfiction",
+      "facts_disclosed": [],
+      "turn_count": 7
+    },
+    {
+      "session_id": 22,
+      "file": "sessions/session_22.json",
+      "date": "2025-09-15",
+      "type": "critical",
+      "topic": "nutrition and migraine management",
+      "facts_disclosed": [
+        "Started eating fish again — pescatarian now"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 23,
+      "file": "sessions/session_23.json",
+      "date": "2025-09-29",
+      "type": "filler",
+      "topic": "transformer attention visualization — coding help",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 24,
+      "file": "sessions/session_24.json",
+      "date": "2025-10-10",
+      "type": "critical",
+      "topic": "life direction and career musings",
+      "facts_disclosed": [
+        "Thinking about moving to NYC for work — Anthropic has a NYC office, exploratory thought, not decided"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 25,
+      "file": "sessions/session_25.json",
+      "date": "2025-10-22",
+      "type": "critical",
+      "topic": "new hobby — rock climbing",
+      "facts_disclosed": [
+        "Quit hot yoga entirely, got into rock climbing instead"
+      ],
+      "turn_count": 8
+    },
+    {
+      "session_id": 26,
+      "file": "sessions/session_26.json",
+      "date": "2025-11-03",
+      "type": "filler",
+      "topic": "hiking recommendations near Austin",
+      "facts_disclosed": [],
+      "turn_count": 7
+    },
+    {
+      "session_id": 27,
+      "file": "sessions/session_27.json",
+      "date": "2025-11-17",
+      "type": "filler",
+      "topic": "rant about NeurIPS reviewer comments on a colleague's paper",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 28,
+      "file": "sessions/session_28.json",
+      "date": "2025-11-28",
+      "type": "critical",
+      "topic": "research planning",
+      "facts_disclosed": [
+        "NeurIPS paper deadline early June 2026"
+      ],
+      "turn_count": 9
+    },
+    {
+      "session_id": 29,
+      "file": "sessions/session_29.json",
+      "date": "2025-12-08",
+      "type": "filler",
+      "topic": "trying to cook Japanese curry from scratch",
+      "facts_disclosed": [],
+      "turn_count": 11
+    },
+    {
+      "session_id": 30,
+      "file": "sessions/session_30.json",
+      "date": "2025-12-19",
+      "type": "critical",
+      "topic": "travel planning for Tokyo conference",
+      "facts_disclosed": [
+        "Flying to Tokyo, departing March 20 2026, for a conference"
+      ],
+      "turn_count": 9
+    },
+    {
+      "session_id": 31,
+      "file": "sessions/session_31.json",
+      "date": "2026-01-07",
+      "type": "filler",
+      "topic": "apartment plants are dying",
+      "facts_disclosed": [],
+      "turn_count": 9
+    },
+    {
+      "session_id": 32,
+      "file": "sessions/session_32.json",
+      "date": "2026-01-21",
+      "type": "filler",
+      "topic": "shower thought — do LLMs dream",
+      "facts_disclosed": [],
+      "turn_count": 7
+    },
+    {
+      "session_id": 33,
+      "file": "sessions/session_33.json",
+      "date": "2026-02-04",
+      "type": "filler",
+      "topic": "coding — Neo4j Cypher query optimization",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 34,
+      "file": "sessions/session_34.json",
+      "date": "2026-02-18",
+      "type": "filler",
+      "topic": "planning a surprise for Arjun's birthday",
+      "facts_disclosed": [],
+      "turn_count": 8
+    },
+    {
+      "session_id": 35,
+      "file": "sessions/session_35.json",
+      "date": "2026-05-28",
+      "type": "filler",
+      "topic": "reflecting on the year — grateful for career change",
+      "facts_disclosed": [],
+      "turn_count": 10
+    }
+  ]
+}

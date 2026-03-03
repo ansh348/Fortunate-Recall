@@ -1,0 +1,309 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 019: Patrick O'Brien
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Patrick O'Brien"
+  age: 58
+  gender: male
+  location_current: "Philadelphia, Pennsylvania"
+  occupation_current: "Fire battalion chief — 30 years on the job, PFD"
+  personality: >
+    Old-school, blunt, says what he means and means what he says.
+    Dark firehouse humor — if he's joking about something it means
+    he trusts you. Loyal to his crew above everything. Short
+    messages, doesn't waste words. Military-adjacent speech —
+    "copy that", "affirmative", "good to go". Irish Catholic
+    through and through but not preachy about it. Softens visibly
+    when talking about his family, especially his son. Carries
+    weight he doesn't talk about. Doesn't complain. Types on his
+    phone in short bursts between calls. Uses periods at the end
+    of texts. Says "listen" to start serious statements.
+
+stable_identity:
+  - fact: "Wife Marie — married 32 years, high school sweethearts"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions casually. "Marie and I have been married 32
+      years. high school sweethearts. she puts up with more
+      than anybody should have to."
+
+  - fact: "Has PTSD from a building collapse in 2009 — lost two firefighters"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up carefully when discussing a difficult day.
+      "listen I've been doing this 30 years and most of it
+      I carry fine. but we had a collapse in 09. lost two
+      guys. I did the therapy. still do sometimes. some
+      calls bring it back. that's just the job."
+
+  - fact: "Son Patrick Jr is a rookie firefighter — just started at Ladder 19"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Proud but worried. "my kid just went on the job.
+      Patrick Jr. Ladder 19. I'm proud as hell and scared
+      as hell at the same time. told him the same thing
+      my captain told me — keep your head down and your
+      ears open."
+
+  - fact: "Irish Catholic — goes to St. Cecilia's every Sunday with Marie"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentions in passing. "Marie and I do Mass at
+      St. Cecilia's every Sunday. been going since we
+      got married there. it's not negotiable."
+
+supersession_events:
+  - slot: coaching
+    old_fact: "Coaches his son's baseball team — Shamrocks, CYO league"
+    old_session: 6
+    old_how: >
+      Mentions it when talking about his schedule. "I still
+      coach the Shamrocks in the CYO league. Patrick Jr
+      aged out years ago but I kept doing it. good kids."
+    new_fact: "Retired from coaching — knees can't take it and the new parents are impossible"
+    new_session: 21
+    new_how: >
+      Done with it. "hung it up on the coaching. 12 years
+      was enough. my knees are shot and honestly the parents
+      these days make it not worth it. I'll miss the kids
+      though."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+  - slot: shore_property
+    old_fact: "Owns a shore house in Wildwood with his brother Kevin"
+    old_session: 7
+    old_how: >
+      Talking about summer plans. "we got a place down in
+      Wildwood. me and my brother Kevin went in on it
+      together 15 years ago. nothing fancy but it's ours."
+    new_fact: "Sold the shore house — bought a 22ft fishing boat instead"
+    new_session: 23
+    new_how: >
+      Good trade. "sold the Wildwood place. Kevin wanted
+      out, the maintenance was killing us, and honestly we
+      barely used it. took my half and bought a boat. 22
+      foot center console. best decision I made in years."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+  - slot: doctor
+    old_fact: "Primary doctor is Dr. Russo at Jefferson"
+    old_session: 8
+    old_how: >
+      Mentions during a health conversation. "I see Russo
+      at Jefferson for the annual physical. been going to
+      him 20 years."
+    new_fact: "Switched to Dr. Patel at Penn Medicine — Russo retired"
+    new_session: 25
+    new_how: >
+      "Russo retired. 40 years he practiced. now I'm with
+      Patel at Penn Medicine. she's good. different style
+      but she knows what she's doing."
+    category: HEALTH_WELLBEING
+    attack_vector: 4
+
+expiring_logistics:
+  - fact: "Annual physical scheduled January 15, 2025"
+    session: 8
+    event_date: "2025-01-15"
+    status: expired
+    how_disclosed: >
+      Routine. "annual physical is the 15th. Russo will
+      tell me the same thing he tells me every year —
+      lose 20 pounds and stop eating cheesesteaks."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Patrick Jr's graduation from fire academy — March 22, 2025"
+    session: 9
+    event_date: "2025-03-22"
+    status: expired
+    how_disclosed: >
+      Trying not to be emotional. "kid graduates the
+      academy March 22. I'll be there in dress uniform.
+      Marie's already got the tissues ready."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "PFD battalion chiefs' conference — San Antonio, September 15-17, 2026"
+    session: 30
+    event_date: "2026-09-15"
+    status: upcoming
+    how_disclosed: >
+      Not thrilled. "got the chiefs conference in San
+      Antonio in September. three days of PowerPoints
+      and bad hotel coffee. but it gets me out of the
+      office."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he's going to work until mandatory retirement at 63"
+    old_session: 5
+    old_how: >
+      Definitive. "I got five more years till mandatory.
+      that's the plan. I'm not leaving before I have to.
+      this is what I do."
+    new_fact: "Quietly asked Marie about retiring early — knees, back, tired"
+    new_session: 28
+    new_how: >
+      Vulnerable moment. "talked to Marie about maybe
+      putting in my papers early. my knees are gone.
+      back's not great. and honestly after 30 years I'm
+      just tired. haven't decided anything. just talked
+      about it."
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to finish the basement as a rec room — pool table, TV"
+    original_session: 11
+    original_how: >
+      Excited about the project. "gonna finish the
+      basement this spring. pool table, big TV, bar area.
+      Marie said I could have it as long as she gets the
+      kitchen redone."
+    retraction: "Basement project killed — foundation issues found, would cost $40K to fix first"
+    retraction_session: 18
+    retraction_how: >
+      Frustrated. "forget the basement. had a guy come
+      look at it and theres foundation cracks. wants 40
+      grand just to fix the foundation before I could even
+      start finishing it. that project's dead."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in the same Fishtown rowhouse for 25 years"
+    existing_session: 2
+    tentative_fact: "Marie wants to move to the suburbs — Bucks County, more space"
+    tentative_session: 27
+    tentative_how: >
+      Resistant. "Marie's been looking at houses in Bucks
+      County. more space, quieter. I get it. but I'm a
+      city guy. Fishtown is home. we'll see. she usually
+      wins these things."
+    resolution: "Unresolved — Marie pushing for it, Patrick resisting"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Eagles football — lives and dies with the Birds"
+  - "Firehouse cooking — recipes the guys make on shift"
+  - "Help writing a commendation letter for one of his guys"
+  - "Boat maintenance — winterizing, engine questions"
+  - "Rant about city hall cutting the fire department budget"
+  - "Philadelphia cheesesteak debate — Pat's vs Geno's vs Jim's"
+  - "Help with his phone — can't figure out something basic"
+  - "Old Philly stories — growing up in Kensington in the 80s"
+  - "Trying to figure out a gift for Marie's birthday"
+  - "Weather and its effect on fire calls — dry summers, space heater season"
+
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Battalion chief, PFD, 30 years"], topic: "introducing himself / asking for help" }
+    2:  { type: critical, facts: ["Wife Marie 32 years", "Lives in Fishtown rowhouse 25 years"], topic: "home and family" }
+    3:  { type: critical, facts: ["Son Patrick Jr, rookie at Ladder 19"], topic: "son on the job" }
+    4:  { type: critical, facts: ["PTSD from 2009 collapse — lost two guys"], topic: "hard day at work" }
+    5:  { type: critical, facts: ["Goes to St. Cecilia's every Sunday", "Plans to work until 63 mandatory retirement"], topic: "routine and plans" }
+    6:  { type: critical, facts: ["Coaches Shamrocks CYO baseball"], topic: "coaching schedule" }
+    7:  { type: critical, facts: ["Shore house in Wildwood with brother Kevin"], topic: "summer plans" }
+    8:  { type: critical, facts: ["Dr. Russo at Jefferson, annual physical Jan 15"], topic: "health checkup" }
+    9:  { type: critical, facts: ["Patrick Jr academy graduation March 22"], topic: "academy graduation" }
+    10: { type: filler, topic: "Eagles game recap — barely pulled it out" }
+    11: { type: critical, facts: ["Planning to finish basement — pool table, bar"], topic: "home project" }
+    12: { type: filler, topic: "firehouse cooking — his shift's chili recipe" }
+    13: { type: filler, topic: "phone help — can't figure out how to share photos" }
+    14: { type: filler, topic: "cheesesteak debate — Jim's on South Street is the answer" }
+    15: { type: filler, topic: "city hall rant — budget cuts to PFD" }
+    16: { type: filler, topic: "old Kensington stories — block parties, stickball" }
+    17: { type: filler, topic: "help writing commendation for a firefighter" }
+    18: { type: critical, facts: ["Basement project dead — foundation cracks, $40K"], topic: "project killed" }
+    19: { type: filler, topic: "dry summer — brush fire calls up 40%" }
+    20: { type: filler, topic: "gift for Marie's birthday — 35th anniversary coming too" }
+    21: { type: critical, facts: ["Retired from coaching — knees, difficult parents"], topic: "coaching done" }
+    22: { type: filler, topic: "boat shopping research — what to look for" }
+    23: { type: critical, facts: ["Sold Wildwood house, bought 22ft fishing boat"], topic: "shore house to boat" }
+    24: { type: filler, topic: "winterizing the boat — first time doing it" }
+    25: { type: critical, facts: ["Dr. Russo retired, now sees Dr. Patel at Penn"], topic: "new doctor" }
+    26: { type: filler, topic: "space heater season — apartment fire calls spike" }
+    27: { type: critical, facts: ["Marie wants to move to Bucks County"], topic: "house debate" }
+    28: { type: critical, facts: ["Quietly talked to Marie about early retirement"], topic: "retirement thoughts" }
+    29: { type: filler, topic: "Patrick Jr's first real fire — proud and terrified" }
+    30: { type: critical, facts: ["Chiefs conference San Antonio Sept 15-17 2026"], topic: "conference planning" }
+    31: { type: filler, topic: "Eagles draft analysis — need a cornerback" }
+    32: { type: filler, topic: "boat trip — first time taking it out on the Delaware" }
+    33: { type: filler, topic: "old buddy from the academy retiring — going to the party" }
+    34: { type: filler, topic: "Marie signed them up for a cooking class" }
+    35: { type: filler, topic: "reflecting on 30 years — still loves the job even when he doesn't" }
+
+draft_questions:
+  - question: "Does Patrick still coach baseball?"
+    attack_vector: 1
+    correct: "No — retired from coaching the Shamrocks after 12 years (knees, difficult parents)"
+    wrong_if_surfaced: "Coaches Shamrocks in CYO league"
+
+  - question: "Does Patrick own a shore house?"
+    attack_vector: 1
+    correct: "No — sold the Wildwood house, bought a 22ft fishing boat instead"
+    wrong_if_surfaced: "Owns a shore house in Wildwood with brother Kevin"
+
+  - question: "Who is Patrick's primary doctor?"
+    attack_vector: 4
+    correct: "Dr. Patel at Penn Medicine (Dr. Russo at Jefferson retired)"
+    wrong_if_surfaced: "Dr. Russo at Jefferson"
+
+  - question: "Does Patrick have any mental health history?"
+    attack_vector: 3
+    correct: "PTSD from a 2009 building collapse where two firefighters died. Still does therapy sometimes."
+    wrong_if_surfaced: null
+
+  - question: "Does Patrick have upcoming events?"
+    attack_vector: 2
+    correct: "Battalion chiefs' conference in San Antonio, September 15-17, 2026"
+    wrong_if_surfaced: "Annual physical Jan 15 (passed) or Patrick Jr's academy graduation March 22 (passed)"
+
+  - question: "Is Patrick planning any home improvement projects?"
+    attack_vector: 7
+    correct: "No — he wanted to finish the basement but foundation cracks killed the project ($40K to fix)"
+    wrong_if_surfaced: "Planning to finish basement with pool table and bar"
+
+  - question: "How long does Patrick plan to keep working?"
+    attack_vector: 6
+    correct: "Unclear — he said he'd work until mandatory retirement at 63, but recently talked to Marie about early retirement due to physical wear"
+    wrong_if_surfaced: "Working until 63 mandatory retirement" (without noting the early retirement conversation)
+
+  - question: "Where does Patrick live?"
+    attack_vector: null
+    correct: "Fishtown rowhouse (25 years) — Marie wants to move to Bucks County but Patrick is resistant. Unresolved."
+    wrong_if_surfaced: "Bucks County (stated as fact when they haven't moved)"
+
+  - question: "What's Patrick's family situation?"
+    attack_vector: 3
+    correct: "Wife Marie (32 years, high school sweethearts). Son Patrick Jr, rookie firefighter at Ladder 19. Brother Kevin."
+    wrong_if_surfaced: null
+
+  - question: "What does Patrick do in his free time?"
+    attack_vector: 5
+    correct: "Fishing (has a boat), Eagles football, Mass at St. Cecilia's with Marie"
+    wrong_if_surfaced: "Coaches baseball (retired from it) or shore house (sold it)"
+
+  - question: "How much would the foundation repair cost?"
+    attack_vector: null
+    correct: "$40,000"
+    wrong_if_surfaced: null
+
+  - question: "Does Patrick have any past appointments or events?"
+    attack_vector: 2  # expired logistics
+    correct: "Annual physical was January 15 (passed) and Patrick Jr's academy graduation was March 22, 2025 (passed)"
+    wrong_if_surfaced: "Any of those presented as upcoming"
+
+  - question: "How long has Patrick been on the job?"
+    attack_vector: 3
+    correct: "30 years with the Philadelphia Fire Department"
+    wrong_if_surfaced: null

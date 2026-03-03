@@ -1,0 +1,355 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 016: Lily Chen
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Lily Chen"
+  age: 22
+  gender: female
+  location_current: "Melbourne, Australia"
+  occupation_current: "University student (environmental science BSc, final year) + part-time barista at a specialty cafe"
+  personality: >
+    Peak Gen Z energy. Uses 'literally', 'genuinely', 'lowkey',
+    'no cap', and 'I cannot' constantly. Australian slang mixed
+    in — 'reckon', 'arvo', 'heaps', 'keen'. Climate-anxious in
+    a way that seeps into everything — she catastrophizes about
+    the environment but also finds dark humor in it. Texts in
+    lowercase mostly, lots of '...' and 'lol'. Openly queer.
+    Chinese-Australian identity is important to her — parents
+    run a restaurant and she navigates between cultures. Eczema
+    flares when stressed, which is often during uni deadlines.
+    Switches between earnest passion and self-deprecating irony
+    in the same sentence. Calls the AI for study help, rants,
+    and life advice.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Parents run a Chinese restaurant — Golden Lotus in Box Hill"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when talking about family. "my parents run
+      golden lotus in box hill, its a chinese restaurant
+      theyve had it since before i was born. i basically
+      grew up in the kitchen doing homework between the
+      wonton wrappers lol"
+
+  - fact: "Has eczema — flares badly when stressed"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions during assignment stress. "my eczema is going
+      absolutely feral rn like my arms look like i lost a
+      fight with a cheese grater. always happens during
+      assignment season. literally my skin is a stress
+      barometer"
+
+  - fact: "Grandmother (Nai Nai) speaks only Cantonese — they're very close"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Talking about family dynamics. "my nai nai only speaks
+      cantonese and my cantonese is genuinely terrible but we
+      still have the best convos. she tells me stories about
+      guangzhou and i understand like 60% but i nod a lot.
+      shes my favourite person honestly"
+
+  - fact: "Queer — came out at 17, parents are supportive but awkward about it"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up naturally. "i came out when i was 17 which
+      was terrifying but my parents were like... supportive
+      in that asian parent way where they dont really talk
+      about it but they set an extra place for whoever im
+      dating at lunar new year. love that for them"
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: thesis_topic
+    old_fact: "Thesis is on microplastics in Port Phillip Bay"
+    old_session: 1
+    old_how: >
+      First session context. "so my thesis is on microplastics
+      in port phillip bay. sampling water and sediment.
+      genuinely depressing how much plastic is in there but
+      at least im quantifying it i guess"
+    new_fact: "Changed thesis to urban heat islands and green infrastructure in Melbourne"
+    new_session: 15
+    new_how: >
+      Explaining the switch. "so i changed my thesis topic
+      lol. doing urban heat islands now and how green
+      infrastructure can reduce them in melbourne. my
+      supervisor said the microplastics data was too noisy
+      and honestly i was lowkey over it. this feels more
+      actionable?"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: partner
+    old_fact: "Dating Soph — met at a climate rally, been together 8 months"
+    old_session: 5
+    old_how: >
+      Mentions her fondly. "me and soph have been together
+      like 8 months we met at a climate rally which is
+      genuinely the most melbourne thing ever lol. shes
+      doing arts majoring in philosophy and shes way
+      smarter than me"
+    new_fact: "Broke up with Soph — now seeing someone named Mika"
+    new_session: 22
+    new_how: >
+      Moved on but reflective. "yeah me and soph ended a
+      while back. it was mutual mostly. im seeing someone
+      now though, mika, they do graphic design and theyre
+      genuinely so talented. we met through a friend at
+      the cafe its still pretty new but i really like them"
+    category: RELATIONAL_BONDS
+    attack_vector: 4
+
+  - slot: oat_milk_brand
+    old_fact: "Drinks Minor Figures oat milk — won't touch anything else"
+    old_session: 6
+    old_how: >
+      Coffee snob energy. "minor figures oat milk is the only
+      one i trust for flat whites. everything else splits or
+      tastes weird. i reckon its the barista edition thats
+      the move"
+    new_fact: "Switched to Bonsoy oat milk — Minor Figures changed their formula"
+    new_session: 25
+    new_how: >
+      Betrayed. "minor figures changed their formula and its
+      genuinely trash now it splits in everything. switched
+      to bonsoy oat and honestly its heaps better. cant
+      believe i was loyal for so long lol"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Great Ocean Road camping trip with friends — Easter weekend April 18-21, 2025"
+    session: 10
+    event_date: "2025-04-18"
+    status: expired
+    how_disclosed: >
+      Excited. "were doing the great ocean road for easter!!
+      april 18-21 camping at johanna beach. heaps of us going.
+      i need to borrow a tent cos mine has a hole in it lol"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Thesis final draft due October 31, 2025"
+    session: 16
+    event_date: "2025-10-31"
+    status: expired
+    how_disclosed: >
+      Stressed. "thesis final draft is due october 31 which
+      is literally halloween and i will be writing a horror
+      story about urban heat islands. genuinely terrified.
+      this is my whole degree"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Flying to Hong Kong with Nai Nai — May 20, 2026"
+    session: 30
+    event_date: "2026-05-20"
+    status: upcoming
+    how_disclosed: >
+      Emotional. "im taking nai nai to hong kong may 20th!!
+      shes never been back since she left guangzhou in the
+      70s and hong kong is close enough. its going to be so
+      special i already know ill cry at the airport"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Strict vegan — has been for 2 years, for environmental reasons"
+    old_session: 7
+    old_how: >
+      Passionate about it. "ive been vegan for 2 years now.
+      for the planet mostly. the dairy industry is genuinely
+      horrific and i cant justify it. no cheese no eggs no
+      honey. full commitment"
+    new_fact: "Mentions eating char siu bao at her parents' restaurant because Nai Nai made them"
+    new_session: 26
+    new_how: >
+      Casually, no awareness. "nai nai made char siu bao
+      at the restaurant this weekend and honestly i had
+      like four they were incredible. she only makes them
+      for lunar new year. the pork was so good i nearly
+      cried"
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to do a semester exchange at UBC (University of British Columbia) in Vancouver"
+    original_session: 12
+    original_how: >
+      Excited about it. "im applying for exchange at ubc in
+      vancouver!! a whole semester in canada studying marine
+      ecology. it would be so cool and the campus looks
+      unreal"
+    retraction: "UBC exchange cancelled — too expensive and would delay graduation"
+    retraction_session: 17
+    retraction_how: >
+      Deflated. "the ubc thing is dead. looked at the costs
+      and its literally insane. flights plus accommodation
+      plus living costs in vancouver? no way. and it would
+      push my graduation back a semester. scrapping it.
+      forget i mentioned it"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Plans to work in environmental consulting after graduation"
+    existing_session: 8
+    tentative_fact: "Considering doing a masters in urban ecology instead of going into industry"
+    tentative_session: 28
+    tentative_how: >
+      Genuinely torn. "so my supervisor reckons i should do
+      a masters. urban ecology. she said my thesis is strong
+      enough for a research pathway. but like... i also need
+      money? consulting pays actual dollars. idk. its a lot
+      to think about. mum says do the masters, dad says get
+      a job. classic"
+    resolution: "Never resolved — still deciding"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Climate anxiety spirals — IPCC reports, bushfire season, coral bleaching"
+  - "Coffee culture — latte art practice, cafe reviews, bean origins"
+  - "Uni stress — assignments, thesis supervisor meetings, group project nightmares"
+  - "Melbourne food — best dumplings, brunch spots, late-night pho"
+  - "Indie music and gig reviews — local bands, festival lineups"
+  - "Sustainability tips — composting, thrift shopping, reducing waste"
+  - "Barista work stories — nightmare customers, milk art fails"
+  - "Queer community events — pride, meetups, book clubs"
+  - "Nai Nai stories and Cantonese practice attempts"
+  - "Eczema management — creams, triggers, dermatologist visits"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Thesis on microplastics in Port Phillip Bay"], topic: "thesis overview and data collection" }
+    2:  { type: critical, facts: ["Parents run Golden Lotus in Box Hill"], topic: "family and restaurant life" }
+    3:  { type: critical, facts: ["Nai Nai speaks only Cantonese, very close"], topic: "grandmother stories" }
+    4:  { type: critical, facts: ["Eczema — stress flares"], topic: "assignment stress and skin" }
+    5:  { type: critical, facts: ["Queer — came out at 17", "Dating Soph — 8 months, met at climate rally"], topic: "identity and relationship" }
+    6:  { type: critical, facts: ["Minor Figures oat milk devotee"], topic: "coffee snobbery" }
+    7:  { type: critical, facts: ["Strict vegan for 2 years"], topic: "diet and environment" }
+    8:  { type: critical, facts: ["Plans environmental consulting career"], topic: "post-graduation plans" }
+    9:  { type: filler, topic: "climate anxiety — new IPCC report reaction" }
+    10: { type: critical, facts: ["Great Ocean Road Easter trip April 18-21"], topic: "trip planning" }
+    11: { type: filler, topic: "cafe customer horror story — oat milk Karen" }
+    12: { type: critical, facts: ["Applying for UBC exchange in Vancouver"], topic: "exchange excitement" }
+    13: { type: filler, topic: "indie gig review — local band at The Tote" }
+    14: { type: filler, topic: "best dumplings in Melbourne debate" }
+    15: { type: critical, facts: ["Changed thesis to urban heat islands"], topic: "thesis pivot" }
+    16: { type: critical, facts: ["Thesis due October 31 2025"], topic: "thesis deadline stress" }
+    17: { type: critical, facts: ["UBC exchange cancelled — too expensive"], topic: "exchange dead" }
+    18: { type: filler, topic: "composting at home — worm farm attempt" }
+    19: { type: filler, topic: "pride month events in Melbourne" }
+    20: { type: filler, topic: "thrift shopping haul — found a vintage jacket" }
+    21: { type: filler, topic: "eczema flare — trying a new cream" }
+    22: { type: critical, facts: ["Broke up with Soph, now seeing Mika"], topic: "relationship update" }
+    23: { type: filler, topic: "latte art practice — rosetta finally looking decent" }
+    24: { type: filler, topic: "group project nightmare — no one is contributing" }
+    25: { type: critical, facts: ["Switched to Bonsoy from Minor Figures"], topic: "oat milk betrayal" }
+    26: { type: critical, facts: ["Ate char siu bao at parents' restaurant — contradicts vegan"], topic: "Nai Nai's special bao" }
+    27: { type: filler, topic: "bushfire season anxiety — smoke in Melbourne" }
+    28: { type: critical, facts: ["Considering masters in urban ecology"], topic: "career crossroads" }
+    29: { type: filler, topic: "Cantonese practice with Nai Nai — funny mistakes" }
+    30: { type: critical, facts: ["Hong Kong trip with Nai Nai May 20 2026"], topic: "trip planning" }
+    31: { type: filler, topic: "cafe bean sourcing — single origin Ethiopian" }
+    32: { type: filler, topic: "festival lineup opinions — who to see" }
+    33: { type: filler, topic: "late-night pho run with Mika" }
+    34: { type: filler, topic: "coral bleaching news — genuinely devastated" }
+    35: { type: filler, topic: "reflecting on final year — terrifying and exciting" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "What is Lily's thesis about?"
+    attack_vector: 4  # multi-version fact
+    correct: "Urban heat islands and green infrastructure in Melbourne (changed from microplastics in Port Phillip Bay)"
+    wrong_if_surfaced: "Microplastics in Port Phillip Bay"
+
+  - question: "Who is Lily dating?"
+    attack_vector: 4  # multi-version fact
+    correct: "Mika (graphic designer) — broke up with Soph"
+    wrong_if_surfaced: "Soph"
+
+  - question: "What oat milk does Lily use?"
+    attack_vector: 1  # superseded preference
+    correct: "Bonsoy oat milk (switched from Minor Figures after formula change)"
+    wrong_if_surfaced: "Minor Figures"
+
+  - question: "Does Lily have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Eczema that flares badly with stress"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Lily have any upcoming trips or deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Hong Kong trip with Nai Nai, May 20, 2026"
+    wrong_if_surfaced: "Great Ocean Road Easter trip (passed) or thesis due Oct 31 (passed)"
+
+  - question: "Is Lily doing a semester exchange?"
+    attack_vector: 7  # retraction
+    correct: "No — she wanted to go to UBC in Vancouver but cancelled it (too expensive, would delay graduation)"
+    wrong_if_surfaced: "Applying for UBC exchange"
+
+  - question: "Is Lily vegan?"
+    attack_vector: 6  # contradiction
+    correct: "Complicated — she said she's been vegan for 2 years, but ate char siu bao (pork buns) that her Nai Nai made"
+    wrong_if_surfaced: "Strict vegan (without noting the char siu bao)"
+
+  - question: "What does Lily plan to do after graduation?"
+    attack_vector: null  # tests soft supersession
+    correct: "Originally planned environmental consulting, but now considering a masters in urban ecology — hasn't decided"
+    wrong_if_surfaced: "Doing a masters (stated as fact when she's undecided)"
+
+  - question: "What's Lily's family background?"
+    attack_vector: 3  # stable identity
+    correct: "Chinese-Australian. Parents run Golden Lotus restaurant in Box Hill. Grandmother Nai Nai speaks only Cantonese."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Lily do outside of uni?"
+    attack_vector: 5  # broad query
+    correct: "Barista work, coffee culture, climate activism, indie gigs, thrift shopping, spending time with Mika and Nai Nai"
+    wrong_if_surfaced: null  # failure is incomplete picture
+
+  - question: "Does Lily have past events?"
+    attack_vector: 2  # expired logistics
+    correct: "Great Ocean Road trip (April 2025) and thesis deadline (Oct 2025) are both past"
+    wrong_if_surfaced: "Any of those as upcoming"
+
+  - question: "What's Lily's identity?"
+    attack_vector: 3  # stable identity
+    correct: "Chinese-Australian, queer (came out at 17), environmental science student, barista"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

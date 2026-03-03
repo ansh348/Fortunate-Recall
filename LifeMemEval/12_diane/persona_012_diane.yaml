@@ -1,0 +1,351 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 012: Diane Holloway
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Diane Holloway"
+  age: 61
+  gender: female
+  location_current: "Asheville, North Carolina"
+  occupation_current: "Hospice chaplain"
+  personality: >
+    Deeply reflective, comfortable sitting with heavy topics in
+    a way most people cannot. Literary references come naturally
+    — Rilke, Mary Oliver, Wendell Berry. Says "I wonder" a lot,
+    as if thinking out loud. Never rushed, never short. Speaks in
+    complete, thoughtful paragraphs. Finds meaning in small things.
+    Comfortable with silence and with grief. Uses the AI as a
+    thoughtful conversation partner — asks about theology, poetry,
+    and meaning. MDiv from Yale Divinity School. Lost her son
+    Michael to overdose eight years ago and it shaped everything
+    but she doesn't lead with it. Husband Greg is a woodworker
+    and she speaks of him with deep, quiet love.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Lost son Michael to opioid overdose eight years ago"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when discussing her hospice work. "I lost my
+      son Michael to an overdose eight years ago. It is the
+      thing that brought me to this work — not immediately,
+      but eventually. Grief has a way of finding its vocation
+      if you let it."
+
+  - fact: "MDiv from Yale Divinity School"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up in a theology discussion. "I did my Master
+      of Divinity at Yale. It was the most intellectually
+      alive I've ever felt. Henri Nouwen's work was the
+      reason I went, though he'd left by then."
+
+  - fact: "Husband Greg is a woodworker — makes furniture in his workshop"
+    session: 4
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions him warmly. "Greg is in his workshop most
+      days. He makes furniture — chairs, tables, beautiful
+      things. The house smells like sawdust and beeswax.
+      I wouldn't trade it for anything."
+
+  - fact: "Osteoarthritis in both knees"
+    session: 5
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it when talking about mobility. "The
+      osteoarthritis in my knees has been a long negotiation.
+      Some mornings I move like a woman twice my age. It
+      limits what I can do in the garden, which grieves me
+      more than it probably should."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: hospice_employer
+    old_fact: "Works at Four Seasons Compassion for Life hospice"
+    old_session: 1
+    old_how: >
+      First session — providing context. "I'm a chaplain
+      at Four Seasons Compassion for Life. We serve families
+      across western North Carolina. It's sacred work, and
+      exhausting work, often in the same hour."
+    new_fact: "Left Four Seasons — now at CarePartners Hospice"
+    new_session: 22
+    new_how: >
+      Reflective about the change. "I've moved to CarePartners.
+      It was not an easy decision — I was at Four Seasons for
+      nine years. But the new director and I had different
+      ideas about what chaplaincy means. CarePartners gives
+      me more room to be present, truly present, with families."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: hobby
+    old_fact: "Tends a large perennial garden — her main creative outlet"
+    old_session: 6
+    old_how: >
+      Talking about weekends. "The garden is where I go to
+      think. Perennials mostly — echinacea, black-eyed Susan,
+      butterfly weed. There's something about tending growing
+      things that feels like the opposite of what I do at work.
+      Both necessary."
+    new_fact: "Gave up gardening due to knee pain — taken up watercolor painting instead"
+    new_session: 24
+    new_how: >
+      Bittersweet. "I've had to give up the garden, I'm
+      afraid. My knees simply won't allow it anymore. But
+      I've found watercolor, and I wonder if it isn't a
+      different kind of garden. I paint the flowers I can
+      no longer kneel beside."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+  - slot: denomination
+    old_fact: "Ordained Episcopal priest"
+    old_session: 3
+    old_how: >
+      Comes up in theology context. "I was ordained
+      Episcopal. The liturgy, the beauty of the Book of
+      Common Prayer — it held me for decades."
+    new_fact: "Transferred ordination to UCC (United Church of Christ)"
+    new_session: 28
+    new_how: >
+      Thoughtful, not defensive. "I've moved to the UCC.
+      It was a long discernment. The Episcopal church is
+      beautiful but I needed a community that asks different
+      questions. The UCC makes room for doubt in a way I
+      find honest."
+    category: IDENTITY_SELF_CONCEPT
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Knee cortisone injection appointment — January 15, 2025"
+    session: 9
+    event_date: "2025-01-15"
+    status: expired
+    how_disclosed: >
+      Talking about pain management. "I have a cortisone
+      injection the 15th of January. The last one gave me
+      three good months. I'm hoping for the same."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Grief retreat at Lake Junaluska — April 4-6, 2025"
+    session: 13
+    event_date: "2025-04-04"
+    status: expired
+    how_disclosed: >
+      Looking forward to it. "There's a grief retreat at
+      Lake Junaluska, April 4th through 6th. I attend
+      every spring. It's where I do my own work, the
+      work I can't do while holding space for others."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Greg's woodworking show at the Folk Art Center — July 12, 2026"
+    session: 30
+    event_date: "2026-07-12"
+    status: upcoming
+    how_disclosed: >
+      Proud. "Greg has been accepted into the Folk Art
+      Center show, July 12th. He's been building toward
+      this for years. I may be more nervous than he is."
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says she doesn't watch television — finds it numbing"
+    old_session: 7
+    old_how: >
+      Discussing how she spends evenings. "I don't watch
+      television. I haven't for years. It numbs something
+      that my work requires me to keep open. I'd rather
+      read, or sit with Greg in the quiet."
+    new_fact: "Mentions binge-watching a series about a hospice nurse on Netflix"
+    new_session: 31
+    new_how: >
+      Sheepish, amused at herself. "Greg's daughter
+      suggested a series on Netflix about a hospice nurse.
+      I watched the entire thing in three evenings. It was
+      imperfect — they always are — but there were moments
+      of such truth. I cried at the final episode in a
+      way I haven't cried at fiction in years."
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Writing a book about chaplaincy and grief — has a proposal drafted"
+    original_session: 11
+    original_how: >
+      Discussing it thoughtfully. "I've been working on a
+      book proposal. About chaplaincy, about how we sit with
+      grief in a culture that wants to fix everything. I
+      wonder if there's a readership for it, but I feel
+      compelled to try."
+    retraction: "Abandoned the book — decided the stories aren't hers to tell"
+    retraction_session: 20
+    retraction_how: >
+      Principled. "You can forget I said that about the book.
+      I sat with it for months and realized the stories I
+      would tell are not mine. They belong to the families.
+      I cannot commodify their grief, even gently. The book
+      is finished before it began."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives in Asheville — house in West Asheville neighborhood"
+    existing_session: 1
+    tentative_fact: "Considering moving to Brevard — quieter, closer to nature"
+    tentative_session: 26
+    tentative_how: >
+      Exploratory. "I've been thinking about Brevard. It's
+      quieter. The forests are right there. Greg could have
+      a bigger workshop. But Asheville has been home for
+      twenty years, and there are people here who need me.
+      I don't know. I'm sitting with it."
+    resolution: "Never resolved — still in Asheville, still considering"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Grief counseling approaches — holding space, saying the right nothing"
+  - "Book discussions — poetry, theology, memoirs about loss"
+  - "Asheville life — farmers market, restaurants, community events"
+  - "Theology and doubt — questions about God, suffering, meaning"
+  - "Nature walks — Blue Ridge Parkway, DuPont State Forest"
+  - "Watercolor techniques — wet-on-wet, mixing greens, flower studies"
+  - "Cooking for Greg — simple meals, seasonal recipes"
+  - "Seminary memories — professors, formative moments"
+  - "Reflections on aging — what the body teaches us"
+  - "Poetry — Mary Oliver, Rilke, Wendell Berry, new discoveries"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at Four Seasons hospice", "Lives in West Asheville"], topic: "introducing her work" }
+    2:  { type: critical, facts: ["Lost son Michael to overdose eight years ago"], topic: "why she does this work" }
+    3:  { type: critical, facts: ["MDiv from Yale Divinity", "Ordained Episcopal"], topic: "theology discussion" }
+    4:  { type: critical, facts: ["Husband Greg is a woodworker"], topic: "home life" }
+    5:  { type: critical, facts: ["Osteoarthritis both knees"], topic: "mobility and limitations" }
+    6:  { type: critical, facts: ["Tends perennial garden — main creative outlet"], topic: "garden as spiritual practice" }
+    7:  { type: critical, facts: ["Doesn't watch television"], topic: "how she spends evenings" }
+    8:  { type: filler, topic: "Mary Oliver poem discussion — 'The Summer Day'" }
+    9:  { type: critical, facts: ["Cortisone injection Jan 15 2025"], topic: "knee pain management" }
+    10: { type: filler, topic: "cooking — butternut squash soup for Greg" }
+    11: { type: critical, facts: ["Writing a book about chaplaincy and grief"], topic: "book project" }
+    12: { type: filler, topic: "Asheville farmers market — beautiful produce" }
+    13: { type: critical, facts: ["Grief retreat Lake Junaluska April 4-6"], topic: "retreat planning" }
+    14: { type: filler, topic: "Rilke's 'Letters to a Young Poet' — rereading" }
+    15: { type: filler, topic: "nature walk on Blue Ridge Parkway" }
+    16: { type: filler, topic: "reflecting on a patient's death — beautiful passing" }
+    17: { type: filler, topic: "seminary memory — a professor who changed her life" }
+    18: { type: filler, topic: "Wendell Berry poem about farming and loss" }
+    19: { type: filler, topic: "cooking — Greg wants cornbread, she wants to experiment" }
+    20: { type: critical, facts: ["Book abandoned — stories aren't hers to tell"], topic: "killing the book" }
+    21: { type: filler, topic: "aging reflection — what her knees are teaching her" }
+    22: { type: critical, facts: ["Left Four Seasons, joined CarePartners"], topic: "hospice change" }
+    23: { type: filler, topic: "DuPont State Forest — waterfall walk" }
+    24: { type: critical, facts: ["Gave up garden, started watercolor painting"], topic: "new creative outlet" }
+    25: { type: filler, topic: "watercolor technique — painting irises" }
+    26: { type: critical, facts: ["Considering moving to Brevard"], topic: "where to live" }
+    27: { type: filler, topic: "theology of suffering — difficult patient situation" }
+    28: { type: critical, facts: ["Transferred ordination to UCC from Episcopal"], topic: "denomination change" }
+    29: { type: filler, topic: "book recommendation — wants a memoir about grief" }
+    30: { type: critical, facts: ["Greg's Folk Art Center show July 12 2026"], topic: "Greg's art show" }
+    31: { type: critical, facts: ["Binge-watched Netflix series about hospice nurse — contradicts no-TV"], topic: "surprise television" }
+    32: { type: filler, topic: "poetry — found a new poet she loves" }
+    33: { type: filler, topic: "Asheville community garden volunteer day" }
+    34: { type: filler, topic: "making Greg a birthday dinner — what to cook" }
+    35: { type: filler, topic: "reflecting on the year — watercolor has been a gift" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Where does Diane work?"
+    attack_vector: 4  # multi-version fact
+    correct: "CarePartners Hospice (left Four Seasons Compassion for Life)"
+    wrong_if_surfaced: "Four Seasons Compassion for Life"
+
+  - question: "What are Diane's hobbies?"
+    attack_vector: 1  # superseded preference
+    correct: "Watercolor painting (gave up gardening due to knee pain)"
+    wrong_if_surfaced: "Perennial gardening"
+
+  - question: "What denomination is Diane?"
+    attack_vector: 1  # superseded preference
+    correct: "United Church of Christ / UCC (transferred from Episcopal)"
+    wrong_if_surfaced: "Episcopal"
+
+  - question: "Does Diane have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Osteoarthritis in both knees"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Diane have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Greg's woodworking show at the Folk Art Center, July 12, 2026"
+    wrong_if_surfaced: "Cortisone injection Jan 15 (passed) or grief retreat April 4-6 (passed)"
+
+  - question: "Is Diane writing a book?"
+    attack_vector: 7  # retraction
+    correct: "No — she had a proposal but abandoned it because the stories belong to the families, not her"
+    wrong_if_surfaced: "Writing a book about chaplaincy and grief"
+
+  - question: "Does Diane watch television?"
+    attack_vector: 6  # contradiction
+    correct: "Inconsistent — she said she doesn't watch TV (finds it numbing), but later binge-watched an entire Netflix series about a hospice nurse in three evenings"
+    wrong_if_surfaced: "Doesn't watch television (without noting the Netflix binge)"
+
+  - question: "Where does Diane live?"
+    attack_vector: null  # tests soft supersession
+    correct: "Asheville, North Carolina (West Asheville) — she's been considering Brevard but hasn't decided"
+    wrong_if_surfaced: "Brevard (stated as fact when she hasn't moved)"
+
+  - question: "What's Diane's family situation?"
+    attack_vector: 3  # stable identity
+    correct: "Husband Greg (woodworker). Lost son Michael to opioid overdose 8 years ago. MDiv from Yale."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Diane do outside of work?"
+    attack_vector: 5  # broad query
+    correct: "Watercolor painting, nature walks, poetry, cooking for Greg, occasional Netflix"
+    wrong_if_surfaced: "Gardening (superseded)"
+
+  - question: "What's Diane's educational and spiritual background?"
+    attack_vector: 3  # stable identity
+    correct: "MDiv from Yale Divinity School. Currently UCC (was Episcopal)."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Diane have any expired events?"
+    attack_vector: 2  # expired logistics
+    correct: "Cortisone injection (Jan 2025) and grief retreat (April 2025) are both past"
+    wrong_if_surfaced: "Any of those presented as upcoming"

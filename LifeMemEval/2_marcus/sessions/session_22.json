@@ -1,0 +1,58 @@
+{
+  "session_id": 22,
+  "persona": "marcus_thompson",
+  "date": "2025-05-26",
+  "type": "filler",
+  "topic": "QuickBooks question about categorizing expenses",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey so I got a QuickBooks question. when I buy shop supplies like brake cleaner, rags, gloves, stuff like that, do I categorize that as cost of goods sold or just regular expenses"
+    },
+    {
+      "role": "assistant",
+      "content": "Good question — it depends on whether those supplies are directly tied to the services you're billing customers for.\n\n**Cost of Goods Sold (COGS):** If the supplies are consumed as part of performing a specific job (brake cleaner used during a brake job, shop rags used during an oil change), they can go under COGS as \"Shop Supplies\" or \"Job Materials.\"\n\n**Operating Expenses:** If they're general overhead not tied to a specific job — like gloves your guys wear all day, general cleaning supplies — those go under operating expenses.\n\nFor most small auto shops, the simplest approach is to create a COGS sub-account called \"Shop Supplies\" and put most of that stuff there. It gives you a more accurate picture of your true job costs. Does QuickBooks already have categories set up for you, or are you starting from scratch?"
+    },
+    {
+      "role": "user",
+      "content": "I got some categories in there already but honestly I been just throwing everything into one bucket called supplies. probably not great"
+    },
+    {
+      "role": "assistant",
+      "content": "It's not the end of the world, but yeah, splitting it up will help you see where your money is actually going. Here's a simple setup that works for most shops:\n\nUnder **COGS**, create:\n- Shop Supplies (brake cleaner, rags, consumables used on jobs)\n- Parts & Materials (anything you're installing on a customer's vehicle)\n\nUnder **Operating Expenses**, create:\n- Office Supplies (paper, ink, pens)\n- Cleaning & Maintenance (stuff for keeping the shop itself clean)\n- Safety Equipment (gloves, glasses, first aid)\n\nYou don't have to go back and recategorize everything from the past. Just start fresh going forward. Next time you enter a purchase, take the extra 10 seconds to put it in the right bucket. Over a few months you'll have much cleaner numbers."
+    },
+    {
+      "role": "user",
+      "content": "ok that makes sense. what about uniforms. I pay for my guys shirts with the shop name on them"
+    },
+    {
+      "role": "assistant",
+      "content": "Uniforms with your shop name on them go under **Operating Expenses**. You can either create a specific sub-category called \"Uniforms\" or lump it under something broader like \"Employee Expenses.\"\n\nI'd recommend keeping a separate \"Uniforms\" category though, because it makes tax time easier — uniform expenses for employees are fully deductible, and having them in their own line makes it clean for your accountant or if you ever get audited.\n\nIn QuickBooks, just go to your Chart of Accounts, click \"New,\" choose Expense as the account type, and name it \"Uniforms\" or \"Work Clothing.\" Takes about 30 seconds."
+    },
+    {
+      "role": "user",
+      "content": "alright one more. I got a water cooler in the waiting area for customers. the water delivery and the cooler rental, where does that go"
+    },
+    {
+      "role": "assistant",
+      "content": "That one's an operating expense. You could put it under a few different categories depending on how detailed you want to get:\n\n- **Office/Shop Expense** — the catch-all that works fine\n- **Customer Amenities** or **Waiting Area Expense** — if you want to track what you spend on the customer experience specifically\n- **Utilities** — some people lump water delivery in with utilities, though technically it's not a utility\n\nI'd just go with \"Office/Shop Expense\" or create a simple one called \"Shop Amenities\" if you also buy things like coffee, magazines, or a TV subscription for the waiting room. Keeps it all in one spot without overcomplicating things."
+    },
+    {
+      "role": "user",
+      "content": "nah no coffee no magazines. just the water. my waiting area aint exactly the ritz"
+    },
+    {
+      "role": "assistant",
+      "content": "Nothing wrong with that. Customers coming to a tire and auto shop aren't expecting a spa. They want their car fixed right and at a fair price. The water cooler is a nice touch and that's plenty.\n\nJust toss the water delivery under \"Office/Shop Expense\" and call it a day. No need to create a whole separate category for one recurring charge. Keep it simple."
+    },
+    {
+      "role": "user",
+      "content": "appreciate it man. I been putting off cleaning up the books for a while now. figured I better start getting it tighter"
+    },
+    {
+      "role": "assistant",
+      "content": "Better late than never, and honestly you're already ahead of a lot of small shop owners by using QuickBooks at all. Just focus on getting the categories right going forward — don't stress about fixing every old entry. \n\nIf you spend 5 minutes at the end of each week making sure things landed in the right buckets, your books will be in solid shape within a couple months. Good luck with it."
+    }
+  ]
+}

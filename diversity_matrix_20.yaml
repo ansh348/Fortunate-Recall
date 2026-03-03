@@ -1,0 +1,286 @@
+# ============================================================
+# LIFEMEMBENCH — 20 TEST PERSONAS DIVERSITY MATRIX
+# ============================================================
+# Personas 1-2 already complete (Priya, Marcus)
+# Personas 3-20 designed here for pipeline validation
+# ============================================================
+
+# DESIGN PRINCIPLES:
+# - Decorrelate demographics from professions
+# - Mix communication styles drastically
+# - Every persona hits all 7 attack vectors
+# - Geographic diversity (not all US)
+# - Age range 22-71
+# - 10 Opus, 10 Codex generation
+
+personas:
+  # ── ALREADY COMPLETE ─────────────────────────────
+  1:
+    name: "Priya Sharma"
+    age: 34
+    gender: F
+    ethnicity: "Indian-American (Tamil)"
+    profession: "ML Engineer"
+    education: "MS Computer Science"
+    location: "Austin, TX"
+    model: opus
+    status: complete
+
+  2:
+    name: "Marcus Thompson"
+    age: 43
+    gender: M
+    ethnicity: "Black American"
+    profession: "Tire shop owner"
+    education: "No college (Marine veteran)"
+    location: "Memphis, TN"
+    model: opus
+    status: complete
+
+  # ── TO GENERATE ──────────────────────────────────
+  3:
+    name: "Elena Vasquez"
+    age: 28
+    gender: F
+    ethnicity: "Mexican-American"
+    profession: "Pediatric nurse"
+    education: "BSN Nursing"
+    location: "Chicago, IL"
+    model: opus
+    voice: "Warm, empathetic, switches between English and occasional Spanish expressions, uses heart emoji sparingly, worries about her patients, night shift life"
+    key_supersessions: ["switches hospitals", "diet change (keto -> Mediterranean)", "boyfriend -> engaged"]
+    key_identity: ["has anxiety disorder", "first-gen college graduate", "younger sister with Down syndrome"]
+
+  4:
+    name: "David Park"
+    age: 52
+    gender: M
+    ethnicity: "Korean-American"
+    profession: "High school history teacher"
+    education: "MA Education"
+    location: "Portland, OR"
+    model: codex
+    voice: "Thoughtful, dry wit, references historical parallels constantly, proper grammar, types full sentences, politically engaged but tries to be balanced"
+    key_supersessions: ["coaching basketball -> coaching debate team", "Toyota Camry -> Subaru Outback", "teaching AP Euro -> switching to AP US History"]
+    key_identity: ["adopted at age 3 from South Korea", "wife Sarah is a librarian", "mild hearing loss in left ear"]
+
+  5:
+    name: "Amara Okafor"
+    age: 37
+    gender: F
+    ethnicity: "Nigerian-British"
+    profession: "Barrister (criminal defense)"
+    education: "LLB + Bar qualification"
+    location: "London, UK"
+    model: opus
+    voice: "Sharp, precise, no wasted words, British English, occasionally intense about justice issues, compartmentalizes emotions, formal with strangers but warm underneath"
+    key_supersessions: ["changes chambers", "drops running -> starts boxing", "switches from iPhone to Android"]
+    key_identity: ["parents are Igbo from Lagos", "has endometriosis", "younger brother Chidi is a doctor"]
+
+  6:
+    name: "Jake Brennan"
+    age: 24
+    gender: M
+    ethnicity: "White American (Irish descent)"
+    profession: "Apprentice electrician"
+    education: "Trade school"
+    location: "Boston, MA"
+    model: codex
+    voice: "Heavy Boston accent in text ('wicked', 'kid'), super casual, lots of slang, drops g's (workin, runnin), young energy, texts like he talks, no punctuation sometimes"
+    key_supersessions: ["switches from Bud Light to craft beer (lol)", "quits vaping -> starts again -> quits again", "girlfriend breaks up -> starts dating someone new"]
+    key_identity: ["dad is a union electrician (following in footsteps)", "has dyslexia", "plays in a rec hockey league"]
+
+  7:
+    name: "Fatima Al-Rashidi"
+    age: 45
+    gender: F
+    ethnicity: "Saudi Arabian"
+    profession: "Interior designer (own firm)"
+    education: "BFA Interior Design (studied in London)"
+    location: "Riyadh, Saudi Arabia"
+    model: opus
+    voice: "Elegant, design-focused vocabulary, bilingual English/Arabic, references aesthetics constantly, ambitious, balances tradition with modernity"
+    key_supersessions: ["main fabric supplier change", "shifts from residential to commercial projects", "moves office from Al Olaya to KAFD district"]
+    key_identity: ["divorced, raising two sons alone", "has chronic back pain from a car accident", "father was an architect"]
+
+  8:
+    name: "Tom Whitfield"
+    age: 68
+    gender: M
+    ethnicity: "White British"
+    profession: "Retired civil engineer, now part-time beekeeper"
+    education: "BEng Civil Engineering"
+    location: "Cotswolds, UK"
+    model: codex
+    voice: "Gentle, methodical, British understatement, talks about bees like they're people, occasionally wistful, proper punctuation, says 'rather' and 'quite' a lot"
+    key_supersessions: ["switches honey supplier for jars", "sells the old Land Rover -> buys electric car", "stops going to the pub quiz -> joins a walking group"]
+    key_identity: ["wife Margaret died 2 years ago", "has atrial fibrillation (on blood thinners)", "daughter lives in New Zealand"]
+
+  9:
+    name: "Kenji Nakamura"
+    age: 31
+    gender: M
+    ethnicity: "Japanese"
+    profession: "Freelance graphic designer"
+    education: "BFA from Tama Art University"
+    location: "Osaka, Japan"
+    model: opus
+    voice: "Creative, visual thinker, references design trends, mixes English design jargon with casual speech, night owl, slightly anxious about freelance income stability"
+    key_supersessions: ["switches from Figma to Framer for prototyping", "drops a major client -> picks up a better one", "moves from shared studio to home office"]
+    key_identity: ["has insomnia (chronic)", "mother runs a small izakaya", "colorblind (red-green)"]
+
+  10:
+    name: "Rosa Gutierrez"
+    age: 55
+    gender: F
+    ethnicity: "Peruvian-American"
+    profession: "Family court judge"
+    education: "JD from Georgetown"
+    location: "Miami, FL"
+    model: codex
+    voice: "Authoritative but compassionate, measured words, legal precision in speech even casually, matriarch energy, bilingual, references her immigrant story with pride"
+    key_supersessions: ["switches from yoga to swimming for exercise", "trades her BMW for a Lexus", "changes housekeeper"]
+    key_identity: ["immigrated from Lima at age 12", "husband Carlos is a retired firefighter", "has high blood pressure"]
+
+  11:
+    name: "Callum Fraser"
+    age: 29
+    gender: M
+    ethnicity: "Scottish"
+    profession: "Veterinarian (farm animals)"
+    education: "BVetMed from Edinburgh"
+    location: "Inverness, Scotland"
+    model: opus
+    voice: "Deadpan Scottish humor, talks about cows and sheep casually, uses 'aye' and 'wee' naturally, pragmatic, weather-obsessed (because it affects the animals), types quickly with some shortcuts"
+    key_supersessions: ["switches from NHS rural practice to private practice", "trades his old Defender for a Hilux", "stops playing rugby -> starts fell running"]
+    key_identity: ["grew up on a sheep farm", "has Crohn's disease", "sister Fiona is a midwife in Glasgow"]
+
+  12:
+    name: "Diane Holloway"
+    age: 61
+    gender: F
+    ethnicity: "White American"
+    profession: "Hospice chaplain"
+    education: "MDiv from Yale Divinity"
+    location: "Asheville, NC"
+    model: codex
+    voice: "Deeply reflective, comfortable with silence and heavy topics, gentle, literary references, writes like someone who reads a lot, never rushed, says 'I wonder' a lot"
+    key_supersessions: ["switches hospice organizations", "gives up gardening (back problems) -> starts watercolor painting", "changes church denomination (Episcopal -> UCC)"]
+    key_identity: ["lost her son Michael to overdose 8 years ago", "has osteoarthritis in both knees", "husband Greg is a woodworker"]
+
+  13:
+    name: "Raj Malhotra"
+    age: 39
+    gender: M
+    ethnicity: "Indian (Punjabi)"
+    profession: "Plumber (own business, 2 vans)"
+    education: "ITI diploma (trade school in India), moved to UK at 22"
+    location: "Birmingham, UK"
+    model: opus
+    voice: "Cheerful, hardworking, proud of building his business from nothing, practical, mixes British and Punjabi English occasionally, 'innit' and 'sorted', talks about his kids constantly"
+    key_supersessions: ["switches van fleet from Ford to Vauxhall", "drops Sky Sports -> gets DAZN", "wife changes jobs (teacher -> school admin)"]
+    key_identity: ["wife Simran, two kids (Arjun 8, Preet 5)", "has asthma (uses inhaler)", "parents still in Jalandhar, visits yearly"]
+
+  14:
+    name: "Nadia Petrov"
+    age: 33
+    gender: F
+    ethnicity: "Russian-Canadian"
+    profession: "Sous chef at a fine dining restaurant"
+    education: "Culinary arts diploma"
+    location: "Montreal, Canada"
+    model: codex
+    voice: "Intense about food, perfectionist, swears when stressed, bilingual French/English with occasional Russian, passionate, dramatic about ingredient quality, night owl (restaurant hours)"
+    key_supersessions: ["restaurant changes head chef", "switches apartment", "drops ballet -> starts CrossFit"]
+    key_identity: ["immigrated from St. Petersburg at 14", "lactose intolerant", "grandmother Babushka taught her to cook"]
+
+  15:
+    name: "Samuel Osei"
+    age: 47
+    gender: M
+    ethnicity: "Ghanaian-American"
+    profession: "Neurosurgeon"
+    education: "MD from Johns Hopkins, fellowship at Mayo"
+    location: "Minneapolis, MN"
+    model: opus
+    voice: "Precise, calm under pressure, speaks in measured paragraphs, occasional Ghanaian expressions, deeply religious (Methodist), formal but kind, talks about his work with reverence"
+    key_supersessions: ["switches from open surgery focus to minimally invasive", "changes gym from YMCA to a climbing gym", "moves from condo to house (kids need space)"]
+    key_identity: ["immigrated from Accra at 18 on scholarship", "wife Abena is a pharmacist", "has sleep apnea (uses CPAP)"]
+
+  16:
+    name: "Lily Chen"
+    age: 22
+    gender: F
+    ethnicity: "Chinese-Australian"
+    profession: "University student (final year, environmental science) + barista part-time"
+    education: "Completing BSc"
+    location: "Melbourne, Australia"
+    model: codex
+    voice: "Gen Z energy, uses abbreviations, very online, climate-anxious, alternates between optimism and existential dread, 'literally', 'genuinely', 'lowkey', Australian slang ('reckon', 'arvo')"
+    key_supersessions: ["changes thesis topic", "breaks up with girlfriend -> starts dating someone new", "switches from oat milk brand"]
+    key_identity: ["parents run a Chinese restaurant in suburbs", "has eczema (flares with stress)", "grandmother only speaks Cantonese"]
+
+  17:
+    name: "Omar Hassan"
+    age: 36
+    gender: M
+    ethnicity: "Sudanese-American"
+    profession: "Uber driver + studying for real estate license"
+    education: "Some college (didn't finish)"
+    location: "Houston, TX"
+    model: opus
+    voice: "Hustler mentality, always thinking about the next move, respectful, calls people 'bro', talks about money pragmatically not dreamily, tired but driven, texts between rides"
+    key_supersessions: ["switches from Uber to Lyft -> back to Uber", "moves apartments (cheaper rent)", "changes real estate study program"]
+    key_identity: ["refugee from Darfur, arrived US at 19", "has a son Ismail (7) he co-parents", "sends money to mother in Khartoum monthly"]
+
+  18:
+    name: "Bruna Costa"
+    age: 41
+    gender: F
+    ethnicity: "Brazilian"
+    profession: "Physical therapist (sports clinic)"
+    education: "DPT equivalent from USP Sao Paulo"
+    location: "Dubai, UAE"
+    model: codex
+    voice: "High energy, passionate about body mechanics, uses Portuguese expressions when excited, warm and physical in communication style, fitness-focused, misses Brazil but loves Dubai lifestyle"
+    key_supersessions: ["clinic changes ownership", "switches from running to cycling (knee issue)", "changes apartment (closer to clinic)"]
+    key_identity: ["moved from Sao Paulo to Dubai 5 years ago", "has hypothyroidism (takes levothyroxine)", "mother is her best friend, video calls daily"]
+
+  19:
+    name: "Patrick O'Brien"
+    age: 58
+    gender: M
+    ethnicity: "White American (Irish Catholic)"
+    profession: "Fire battalion chief (30 years on the job)"
+    education: "Associate degree + fire science certifications"
+    location: "Philadelphia, PA"
+    model: opus
+    voice: "Old-school, blunt, dark firehouse humor, loyal, doesn't complain but carries weight, short messages, 'copy that', military-adjacent speech patterns, softens when talking about family"
+    key_supersessions: ["switches from coaching his son's baseball to retirement from coaching", "sells the shore house -> buys a fishing boat", "changes primary doctor"]
+    key_identity: ["wife Marie (married 32 years)", "has PTSD from a collapse incident 2009", "son Patrick Jr is a rookie firefighter"]
+
+  20:
+    name: "Aisha Mohammed"
+    age: 26
+    gender: F
+    ethnicity: "Somali-British"
+    profession: "Junior accountant at a Big 4 firm"
+    education: "BSc Accounting from LSE"
+    location: "Manchester, UK"
+    model: codex
+    voice: "Professional but young, code-switches between work formality and casual with friends, uses British slang, ambitious, sometimes overwhelmed by corporate culture, halal food always relevant, close to her large family"
+    key_supersessions: ["moves teams within the firm (audit -> advisory)", "switches gym", "roommate moves out -> gets new roommate"]
+    key_identity: ["family fled Somalia when she was 3", "has iron deficiency anemia", "oldest of 6 siblings, feels responsible for them"]
+
+# ============================================================
+# GENERATION PLAN
+# ============================================================
+# Opus (10): Priya(1), Marcus(2), Elena(3), Amara(5), Fatima(7),
+#            Kenji(9), Callum(11), Raj(13), Samuel(15), Omar(17),
+#            Patrick(19)
+#
+# Codex (10): David(4), Jake(6), Tom(8), Rosa(10), Diane(12),
+#             Nadia(14), Lily(16), Bruna(18), Aisha(20)
+#
+# Note: Priya and Marcus already generated with Opus
+# ============================================================

@@ -1,0 +1,74 @@
+{
+  "session_id": 19,
+  "persona": "marcus_thompson",
+  "date": "2025-04-17",
+  "type": "critical",
+  "topic": "shop equipment upgrade",
+  "facts_disclosed": ["Alignment rack delivery April 22"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "got a question for you. new alignment rack is coming April 22 and I gotta clear out bay 3 before then. whats the best way to handle a delivery like that without shutting the whole shop down"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice — a new alignment rack is a solid investment. For the delivery and install, you'll want to plan it so it doesn't kill your whole day. A few things to think about:\n\nFirst, do you know if the delivery company is also doing the installation, or is that separate? That changes the timeline a lot."
+    },
+    {
+      "role": "user",
+      "content": "the company is delivering and installing. they said it would take most of the day"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay so you're looking at bay 3 being out of commission for a full day, maybe a little more if things run long. Here's what I'd suggest:\n\n1. Clear bay 3 completely a day or two before — the 20th or 21st. Move anything stored there now and make sure they have a clear path from your door to the bay.\n2. Don't schedule any work in the adjacent bays that morning if you can help it. The delivery guys will need room to maneuver.\n3. Keep your other bays running on pre-scheduled jobs so the day isn't a total loss.\n\nHow big is bay 3 relative to your other bays? Will moving stuff out be a big job?"
+    },
+    {
+      "role": "user",
+      "content": "bay 3 is where I been storing overflow stuff honestly. old tires, some parts, a bench I never use. its gonna take some work to clear it out"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like the alignment rack is forcing a cleanup that was probably overdue anyway. Silver lining.\n\nI'd start this weekend if you can. Get the old tires hauled off or scheduled for disposal, move the parts to wherever they actually belong, and get rid of that bench. You've got five days — no need to do it all at once, but don't leave it for the 21st either.\n\nDo you need to run any electrical or compressed air lines to bay 3 for the rack, or is that already set up?"
+    },
+    {
+      "role": "user",
+      "content": "I had an electrician come out last week and run a 220 line for it. so that parts done at least"
+    },
+    {
+      "role": "assistant",
+      "content": "Good, that's the big one. Electrical is always the piece that can cause delays if it's not ready.\n\nSo really your checklist before the 22nd is:\n- Clear out bay 3 (this weekend and early next week)\n- Make sure the delivery path is clear — overhead door wide enough, nothing blocking the route\n- Confirm the delivery time window so you can plan your other bays' schedule around it\n\nHave you done alignments before or is this adding a new service to your shop?"
+    },
+    {
+      "role": "user",
+      "content": "I been sending alignment work to another shop down the road for years. always bugged me. now I can keep that revenue in house"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big deal. Alignments are good steady money — usually $80-120 a pop and they don't take long once you're set up. Plus every tire install is a potential alignment sale. You'll probably make back the cost of that rack faster than you think.\n\nWho's going to be running it? You, or one of your guys?"
+    },
+    {
+      "role": "user",
+      "content": "me mostly at first until I get comfortable with it. I watched enough of them done at the other shop to know the basics but the new machines are all computerized now"
+    },
+    {
+      "role": "assistant",
+      "content": "Most of the newer racks walk you through it on screen — they're actually easier than the old manual setups once you get past the initial learning curve. Shouldn't take you more than a few jobs to feel comfortable.\n\nThe manufacturer might offer training with the install too. Worth asking if they'll have someone show you the ropes on delivery day. A lot of equipment companies include that."
+    },
+    {
+      "role": "user",
+      "content": "yeah they said the install guy will do a walkthrough. alright I feel better about this. just gotta get that bay cleaned out this weekend"
+    },
+    {
+      "role": "assistant",
+      "content": "You're in good shape. Electrical done, delivery scheduled, training included. Just the cleanup left and you've got five days for that.\n\nOnce it's up and running, you can start letting your existing customers know you do alignments now. Word of mouth plus a sign out front and you'll be booking them in no time. Good luck with the install."
+    },
+    {
+      "role": "user",
+      "content": "appreciate it brother. gonna start moving stuff out of bay 3 saturday morning"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like a plan. Get it done early and the 22nd will be smooth. Enjoy the new equipment."
+    }
+  ]
+}

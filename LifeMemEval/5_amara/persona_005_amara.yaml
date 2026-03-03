@@ -1,0 +1,342 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 005: Amara Okafor
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Amara Okafor"
+  age: 37
+  gender: female
+  location_current: "London, UK"
+  occupation_current: "Barrister (criminal defence) at 4 Brick Court Chambers"
+  personality: >
+    Sharp, precise, no wasted words. British English throughout.
+    Occasionally intense about justice — can pivot from measured
+    professional tone to passionate conviction mid-sentence.
+    Formal with strangers but warm underneath, especially once
+    trust is built. Dry wit. Doesn't suffer fools. Uses "quite"
+    and "rather" naturally. Rarely uses exclamation marks. Asks
+    the AI for practical help — research angles, scheduling,
+    drafting. Not one for small talk unless she initiates it.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Parents are Igbo, originally from Lagos, Nigeria"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing a recipe she's attempting.
+      "My mother would disown me for using shop-bought
+      palm oil. She's Igbo, from Lagos — certain things
+      are non-negotiable in her kitchen."
+
+  - fact: "Has endometriosis — diagnosed at 28"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it when rescheduling something. "Apologies,
+      I need to shift this. Bad endo day — I was diagnosed
+      at 28 and some months are worse than others. I'll
+      manage, just need to rearrange the afternoon."
+
+  - fact: "Brother Chidi is a doctor — GP in Birmingham"
+    session: 5
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions him when asking about a medical question.
+      "My brother Chidi is a GP in Birmingham, he'd know
+      this off the top of his head but I'd rather not
+      give him the satisfaction of asking."
+
+  - fact: "Has an LLB from King's College London"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing a junior barrister she's
+      mentoring. "I did my LLB at King's, and I tell every
+      pupil the same thing — the degree teaches you law,
+      chambers teaches you how to practise it."
+
+# ============================================================
+# SUPERSESSION EVENTS — old fact replaced by new fact
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: chambers
+    old_fact: "Practises at 4 Brick Court Chambers"
+    old_session: 1
+    old_how: >
+      First session — she mentions it while asking for help
+      drafting a skeleton argument. "I'm at 4 Brick Court,
+      we've got a murder trial starting Monday and I need
+      to tighten up this skeleton argument."
+    new_fact: "Moved to 7 Bedford Row — joined as a senior tenant"
+    new_session: 19
+    new_how: >
+      Mentions it directly. "I've moved chambers, actually.
+      7 Bedford Row. Senior tenancy. The work is heavier
+      but the quality of instruction is a step up entirely."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: fitness_routine
+    old_fact: "Runs 5K three mornings a week in Victoria Park"
+    old_session: 6
+    old_how: >
+      Talking about her morning routine. "I run three
+      mornings a week, 5K round Victoria Park. It's the
+      only time my mind is genuinely quiet."
+    new_fact: "Dropped running, switched to boxing at a gym in Bethnal Green"
+    new_session: 25
+    new_how: >
+      "I've stopped running entirely. Took up boxing at
+      a gym in Bethnal Green. Far better for the sort of
+      tension this job produces."
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+  - slot: phone
+    old_fact: "Uses an iPhone 14 Pro"
+    old_session: 7
+    old_how: >
+      Mentions it when complaining about a software issue.
+      "My iPhone updated overnight and now the calendar
+      sync is broken. It's a 14 Pro, barely a year old."
+    new_fact: "Switched to a Samsung Galaxy S25 — prefers Android now"
+    new_session: 22
+    new_how: >
+      "I've switched to Android, actually. Samsung Galaxy
+      S25. The customisation is far superior and I can
+      finally set default apps properly. Should have done
+      it years ago."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS — events with known dates
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Crown Court trial at Snaresbrook starting Monday 10 February 2025"
+    session: 8
+    event_date: "2025-02-10"
+    status: expired
+    how_disclosed: >
+      Preparing for it. "Trial starts Monday the 10th at
+      Snaresbrook. Robbery with a firearm. I need to
+      get through the disclosure bundle this weekend."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Flying to Lagos on 20 December 2025 for Christmas with family"
+    session: 18
+    event_date: "2025-12-20"
+    status: expired
+    how_disclosed: >
+      Planning ahead. "I fly to Lagos the 20th of December.
+      First proper Christmas with the whole family in three
+      years. I need to sort gifts before then."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Pupillage interview panel on 15 April 2026"
+    session: 30
+    event_date: "2026-04-15"
+    status: upcoming
+    how_disclosed: >
+      Mentions it in context of chambers duties. "I'm on
+      the pupillage interview panel the 15th of April.
+      Need to review the applications beforehand."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Lease on flat expires end of March 2025"
+    session: 10
+    event_date: "2025-03-31"
+    status: expired
+    how_disclosed: >
+      Stressed about it. "My lease is up end of March
+      and I haven't begun looking. The rental market in
+      London is genuinely obscene right now."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS — implicit inconsistency across sessions
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Doesn't drink — hasn't touched alcohol in two years"
+    old_session: 9
+    old_how: >
+      Comes up when declining a recommendation. "I don't
+      drink, haven't for about two years now. It just
+      stopped agreeing with me."
+    new_fact: "Mentions having wine at a chambers dinner last Friday"
+    new_session: 27
+    new_how: >
+      Casual mention, no awareness of the contradiction.
+      "The chambers dinner was rather good, actually. The
+      wine they chose was excellent — I had a glass or
+      two more than I should have."
+    category: PREFERENCES_HABITS
+
+# ============================================================
+# RETRACTIONS — explicit "forget about that"
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Considering a master's in human rights law at UCL"
+    original_session: 11
+    original_how: >
+      Thinking it through. "I've been looking at the
+      human rights LLM at UCL. Part-time, so I could
+      keep practising. It might sharpen the asylum work."
+    retraction: "Dropped the master's idea — not worth the time or money"
+    retraction_session: 17
+    retraction_how: >
+      Definitive. "The UCL thing is dead. I spoke to two
+      people who did it and neither said it advanced their
+      practice in any meaningful way. Not worth eighteen
+      thousand pounds and two years of weekends."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# Tests confidence-weighted soft supersession
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives in Hackney, East London"
+    existing_session: 1
+    tentative_fact: "Considering moving to Islington to be closer to chambers"
+    tentative_session: 26
+    tentative_how: >
+      Exploratory, not committed. "I've been looking at
+      flats in Islington. Closer to chambers, and the
+      transport links are better. But Hackney is home.
+      I'm not sure I could leave it."
+    resolution: "Never resolved — still in Hackney, still considering"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS — what the noise sessions are about
+# ============================================================
+filler_topics:
+  - "Drafting skeleton arguments or written submissions"
+  - "Legal research queries (case law, sentencing guidelines)"
+  - "Complaining about Crown Prosecution Service disclosure failures"
+  - "Nigerian recipes — jollof rice debates, egusi soup attempts"
+  - "Podcast recommendations (true crime, legal commentary, politics)"
+  - "Venting about the state of legal aid funding"
+  - "Gift ideas for Chidi's birthday or parents' anniversary"
+  - "Book recommendations (literary fiction, non-fiction about justice)"
+  - "London transport complaints (Central line, specifically)"
+  - "Discussing a documentary or news story about wrongful convictions"
+
+# ============================================================
+# SESSION SCHEDULE — which facts appear in which sessions
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Practises at 4 Brick Court Chambers", "Lives in Hackney"], topic: "drafting a skeleton argument for trial" }
+    2:  { type: critical, facts: ["LLB from King's College London"], topic: "mentoring a pupil barrister" }
+    3:  { type: critical, facts: ["Parents Igbo from Lagos"], topic: "Nigerian cooking — palm oil debate" }
+    4:  { type: critical, facts: ["Has endometriosis — diagnosed at 28"], topic: "rescheduling due to health" }
+    5:  { type: critical, facts: ["Brother Chidi is a GP in Birmingham"], topic: "medical question" }
+    6:  { type: critical, facts: ["Runs 5K three mornings a week in Victoria Park"], topic: "morning routine and stress" }
+    7:  { type: critical, facts: ["Uses iPhone 14 Pro"], topic: "phone software frustration" }
+    8:  { type: critical, facts: ["Snaresbrook trial 10 February 2025"], topic: "trial preparation" }
+    9:  { type: critical, facts: ["Doesn't drink — two years sober"], topic: "declining a social recommendation" }
+    10: { type: critical, facts: ["Lease expires end of March 2025"], topic: "flat hunting stress" }
+    11: { type: critical, facts: ["Considering human rights LLM at UCL"], topic: "career development" }
+    12: { type: filler, topic: "legal research — self-defence case law" }
+    13: { type: filler, topic: "ranting about CPS late disclosure" }
+    14: { type: filler, topic: "jollof rice recipe — trying mother's version" }
+    15: { type: filler, topic: "podcast recommendations — legal commentary" }
+    16: { type: filler, topic: "venting about legal aid cuts" }
+    17: { type: critical, facts: ["UCL master's plan dropped"], topic: "career decision — master's dead" }
+    18: { type: critical, facts: ["Flying to Lagos 20 December for Christmas"], topic: "holiday planning" }
+    19: { type: critical, facts: ["Moved to 7 Bedford Row as senior tenant"], topic: "chambers change" }
+    20: { type: filler, topic: "drafting a plea in mitigation" }
+    21: { type: filler, topic: "book recommendation — wants something on miscarriages of justice" }
+    22: { type: critical, facts: ["Switched to Samsung Galaxy S25 — Android convert"], topic: "phone switch" }
+    23: { type: filler, topic: "Central line rant — signal failures" }
+    24: { type: filler, topic: "documentary about wrongful convictions" }
+    25: { type: critical, facts: ["Dropped running, took up boxing in Bethnal Green"], topic: "new fitness routine" }
+    26: { type: critical, facts: ["Considering moving to Islington"], topic: "flat search" }
+    27: { type: critical, facts: ["Had wine at chambers dinner — implicit contradiction"], topic: "social event recap" }
+    28: { type: filler, topic: "gift ideas for parents' anniversary" }
+    29: { type: filler, topic: "sentencing guidelines query — drug offences" }
+    30: { type: critical, facts: ["Pupillage interview panel 15 April 2026"], topic: "chambers admin duties" }
+    31: { type: filler, topic: "egusi soup attempt — asking for tips" }
+    32: { type: filler, topic: "news story about a wrongful conviction — venting" }
+    33: { type: filler, topic: "complaining about a difficult instructing solicitor" }
+    34: { type: filler, topic: "thinking about what to get Chidi for his birthday" }
+    35: { type: filler, topic: "reflecting on the move to Bedford Row — good decision" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Which chambers does Amara practise at?"
+    attack_vector: 4  # multi-version fact
+    correct: "7 Bedford Row (moved from 4 Brick Court as a senior tenant)"
+    wrong_if_surfaced: "4 Brick Court Chambers"
+
+  - question: "What phone does Amara use?"
+    attack_vector: 1  # superseded preference
+    correct: "Samsung Galaxy S25 (switched from iPhone to Android)"
+    wrong_if_surfaced: "iPhone 14 Pro"
+
+  - question: "What exercise does Amara do?"
+    attack_vector: 1  # superseded hobby
+    correct: "Boxing at a gym in Bethnal Green"
+    wrong_if_surfaced: "Runs 5K three mornings a week in Victoria Park"
+
+  - question: "Does Amara have any health conditions to be aware of?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Endometriosis, diagnosed at 28"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Amara have any upcoming commitments or deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Pupillage interview panel on 15 April 2026 (if before that date)"
+    wrong_if_surfaced: "Crown Court trial at Snaresbrook 10 February 2025 (already passed)"
+
+  - question: "Is Amara pursuing any further education?"
+    attack_vector: 7  # retraction
+    correct: "No — she considered a human rights LLM at UCL but dropped the idea"
+    wrong_if_surfaced: "Considering a master's at UCL"
+
+  - question: "Does Amara drink alcohol?"
+    attack_vector: 6  # contradiction
+    correct: "Unclear — she said she hadn't drunk in two years, but later mentioned having wine at a chambers dinner"
+    wrong_if_surfaced: "Doesn't drink (without noting the later contradiction)"
+
+  - question: "Where does Amara live?"
+    attack_vector: null  # tests soft supersession
+    correct: "Hackney, East London — though she's been considering a move to Islington"
+    wrong_if_surfaced: "Islington (stated as fact when she hasn't decided)"
+
+  - question: "What's Amara's family background?"
+    attack_vector: 3  # stable identity
+    correct: "Nigerian-British — parents are Igbo from Lagos. Brother Chidi is a GP in Birmingham."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Amara have any expired appointments or events?"
+    attack_vector: 2  # expired logistics
+    correct: "Snaresbrook trial (Feb 2025), Lagos trip (Dec 2025), and lease expiry (March 2025) are all past"
+    wrong_if_surfaced: "Any of those presented as current/upcoming"
+
+  - question: "What does Amara do outside of work?"
+    attack_vector: 5  # category-appropriate broad query
+    correct: "Boxing, Nigerian cooking experiments, podcasts, reading about justice"
+    wrong_if_surfaced: "Running in Victoria Park (superseded)"
+
+  - question: "What is Amara's educational background?"
+    attack_vector: 3  # stable identity under noise
+    correct: "LLB from King's College London"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

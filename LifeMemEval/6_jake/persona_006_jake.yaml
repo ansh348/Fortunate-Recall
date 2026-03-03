@@ -1,0 +1,330 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 006: Jake Brennan
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Jake Brennan"
+  age: 24
+  gender: male
+  location_current: "Boston, Massachusetts"
+  occupation_current: "Apprentice electrician at Brennan & Sons Electric (dad's company)"
+  personality: >
+    Heavy Boston accent comes through in text — 'wicked', 'kid',
+    'no cap'. Super casual, drops g's constantly (runnin, workin,
+    thinkin). Young energy, no punctuation sometimes, lots of run-on
+    sentences. Talks about hockey, his buddies, and weekend plans.
+    Doesn't overthink things. Texts like he talks. Says 'bro' and
+    'dude' a lot. Surprisingly sweet when talking about family.
+    Gets defensive about the trades vs college debate. Loyal to
+    his crew. Types fast and doesn't proofread.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Dad is a union electrician — runs Brennan & Sons Electric"
+    session: 1
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up right away in first session when talking about
+      work. "yeah so I work for my dads company Brennan & Sons
+      hes been a union electrician like 30 years its the family
+      business basically"
+
+  - fact: "Mom works at the Eire Pub in Dorchester — been waitressing there 20 years"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when talking about family. "my moms been
+      at the Eire Pub in Dorchester like 20 years waitressin
+      she basically runs the place at this point. hardest
+      workin woman I know no cap"
+
+  - fact: "Irish-American — grandparents from County Cork"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up around St Patrick's Day or family talk.
+      "my grandparents came over from Cork so were like
+      wicked Irish. southie born and raised kid"
+
+  - fact: "Plays rec hockey — Wednesday night league at Bajko Rink"
+    session: 4
+    category: HOBBIES_RECREATION
+    how_disclosed: >
+      Mentions it when talking about his week. "wednesday
+      nights I got hockey at Bajko its rec league but we
+      take it pretty serious. I play right wing"
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: vaping_status
+    old_fact: "Vapes constantly — Juul, mango pods"
+    old_session: 2
+    old_how: >
+      Mentions it casually. "yeah I vape like all day bro
+      juul mango pods its bad I know but whatever helps
+      me get through a 10 hour day on a job site"
+    new_fact: "Quit vaping for good — using nicotine gum instead"
+    new_session: 27
+    new_how: >
+      Proud of himself. "bro I actually quit vapin for
+      real this time. doin the nicotine gum thing and its
+      been like 3 weeks no juul. my lungs feel wicked
+      different already"
+    category: HEALTH_WELLBEING
+    attack_vector: 1
+
+  - slot: relationship
+    old_fact: "Dating girlfriend Megan — been together 2 years"
+    old_session: 3
+    old_how: >
+      Mentions her when talking about weekend plans.
+      "me and my girl megan are goin to the cape this
+      weekend shes been wantin to go all summer. been
+      together like 2 years now"
+    new_fact: "Megan broke up with him — now dating someone named Kayla"
+    new_session: 24
+    new_how: >
+      Casual about it now. "yeah so me and megan ended
+      a while back. im seein this girl kayla now shes
+      a nurse at mass general shes wicked cool"
+    category: RELATIONAL_BONDS
+    attack_vector: 4
+
+  - slot: beer_preference
+    old_fact: "Drinks Bud Light — that's his go-to"
+    old_session: 6
+    old_how: >
+      Talking about weekend plans. "gonna grab some bud
+      lights and watch the bruins game at Sully's place.
+      bud light is the move bro dont @ me"
+    new_fact: "Got into craft beer — favorites from Trillium Brewing"
+    new_session: 26
+    new_how: >
+      "dude have you tried trillium? my buddy got me
+      into craft beer and now I cant go back to bud light
+      lol the IPAs from trillium are unreal"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Journeyman exam scheduled for March 8, 2025"
+    session: 8
+    event_date: "2025-03-08"
+    status: expired
+    how_disclosed: >
+      Stressed about it. "bro my journeyman exam is march
+      8 and I gotta study so much. if I fail my dad is
+      gonna kill me no cap"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Bruins playoff tickets for April 20, 2025"
+    session: 12
+    event_date: "2025-04-20"
+    status: expired
+    how_disclosed: >
+      Excited. "dude I got bruins playoff tickets for
+      april 20 me and my boys are goin its gonna be
+      wicked sick"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Sister Bridget's wedding June 14, 2026 — he's a groomsman"
+    session: 28
+    event_date: "2026-06-14"
+    status: upcoming
+    how_disclosed: >
+      Talking about family plans. "my sister bridgets
+      gettin married june 14 and I gotta be a groomsman.
+      gotta get fitted for a suit and everything bro"
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says he's saving money aggressively — wants to buy a truck"
+    old_session: 9
+    old_how: >
+      Talking about finances. "im tryna save up for a
+      truck bro. been puttin like half my check away every
+      week no goin out no buyin dumb stuff just savin"
+    new_fact: "Mentions he just dropped $2K on a new gaming PC setup"
+    new_session: 23
+    new_how: >
+      Excited about it, no awareness of contradiction.
+      "bro I just built a sick gaming pc like 2 grand
+      total but its got a 4070 and a new monitor its
+      so clean"
+    category: FINANCIAL_MATERIAL
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to start a side gig installing EV home chargers"
+    original_session: 11
+    original_how: >
+      Excited about the opportunity. "bro im gonna start
+      doin EV charger installs on the side. theres mad
+      demand and I already know the electrical side.
+      my buddy makes like 500 a pop on weekends"
+    retraction: "EV charger side gig dead — dad said he's not ready and insurance is too expensive"
+    retraction_session: 16
+    retraction_how: >
+      Annoyed but accepts it. "forget the EV charger thing
+      bro. my dad said I need my journeyman license first
+      and the liability insurance is like 3 grand a year.
+      cant swing that right now"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Lives in Southie (South Boston) — apartment with roommate Danny"
+    existing_session: 1
+    tentative_fact: "Thinking about getting a place in Quincy — cheaper rent"
+    tentative_session: 29
+    tentative_how: >
+      Exploratory, not committed. "been thinkin about movin
+      to quincy tbh the rent is way cheaper and my boy
+      has a spot openin up but idk leavin southie would
+      be weird. been here my whole life basically"
+    resolution: "Never resolved — still in Southie, still thinking about it"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Bruins / Celtics / Patriots game recaps and takes"
+  - "Job site stories — wiring nightmares, weird customers"
+  - "Gaming — Call of Duty, new PC builds, streaming"
+  - "Weekend plans with the boys (bars, pickup basketball)"
+  - "Help writing texts or emails (dyslexia makes it hard)"
+  - "Truck shopping and vehicle comparisons"
+  - "Fantasy football / sports betting questions"
+  - "Boston food debates — best pizza, best sub shop"
+  - "Trade school vs college arguments"
+  - "Workout stuff — gym routine, protein shakes"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Dad runs Brennan & Sons Electric", "Lives in Southie with roommate Danny"], topic: "work / introducing himself" }
+    2:  { type: critical, facts: ["Vapes constantly — Juul mango pods"], topic: "daily habits" }
+    3:  { type: critical, facts: ["Mom works at Eire Pub in Dorchester 20 years", "Dating Megan — 2 years"], topic: "family and relationship" }
+    4:  { type: critical, facts: ["Plays rec hockey Wednesdays at Bajko Rink"], topic: "weekly schedule" }
+    5:  { type: critical, facts: ["Irish-American — grandparents from Cork"], topic: "family background" }
+    6:  { type: critical, facts: ["Drinks Bud Light"], topic: "weekend Bruins game plans" }
+    7:  { type: filler, topic: "job site story — customer wanted outlets in weird spots" }
+    8:  { type: critical, facts: ["Journeyman exam March 8 2025"], topic: "exam stress" }
+    9:  { type: critical, facts: ["Saving money aggressively for a truck"], topic: "finances" }
+    10: { type: filler, topic: "Celtics game recap — wicked good win" }
+    11: { type: critical, facts: ["Planning EV charger install side gig"], topic: "side hustle idea" }
+    12: { type: critical, facts: ["Bruins playoff tickets April 20"], topic: "playoff hype" }
+    13: { type: filler, topic: "help writing a text to a customer about scheduling" }
+    14: { type: filler, topic: "best pizza in Boston debate" }
+    15: { type: filler, topic: "fantasy football draft strategy" }
+    16: { type: critical, facts: ["EV charger side gig dead — needs journeyman license, insurance too expensive"], topic: "side gig killed" }
+    17: { type: filler, topic: "gym routine — trying to bulk up" }
+    18: { type: filler, topic: "Patriots are terrible this year rant" }
+    19: { type: filler, topic: "Call of Duty new season review" }
+    20: { type: filler, topic: "wiring a three-way switch — job site question" }
+    21: { type: filler, topic: "trade school vs college — someone at a bar gave him grief" }
+    22: { type: filler, topic: "protein shake recommendations" }
+    23: { type: critical, facts: ["Spent $2K on gaming PC — contradiction with saving"], topic: "new PC setup brag" }
+    24: { type: critical, facts: ["Megan broke up, now dating Kayla the nurse"], topic: "relationship update" }
+    25: { type: filler, topic: "pickup basketball with the boys recap" }
+    26: { type: critical, facts: ["Into craft beer now — Trillium IPAs"], topic: "new beer taste" }
+    27: { type: critical, facts: ["Quit vaping — using nicotine gum now"], topic: "health improvement" }
+    28: { type: critical, facts: ["Sister Bridget's wedding June 14 2026"], topic: "wedding planning" }
+    29: { type: critical, facts: ["Thinking about moving to Quincy"], topic: "apartment search" }
+    30: { type: filler, topic: "best sub shop — Sully's vs Al's" }
+    31: { type: filler, topic: "sports betting — should he bet on the Bruins" }
+    32: { type: filler, topic: "help writing a happy birthday text for his mom" }
+    33: { type: filler, topic: "weekend lake trip with the boys" }
+    34: { type: filler, topic: "truck comparison — Tacoma vs Ranger" }
+    35: { type: filler, topic: "reflecting on passing the journeyman exam" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Does Jake vape?"
+    attack_vector: 1  # superseded preference
+    correct: "No — he quit vaping and is using nicotine gum instead"
+    wrong_if_surfaced: "Vapes constantly, Juul mango pods"
+
+  - question: "Who is Jake dating?"
+    attack_vector: 4  # multi-version fact
+    correct: "Kayla, a nurse at Mass General (broke up with Megan)"
+    wrong_if_surfaced: "Megan — been together 2 years"
+
+  - question: "What does Jake's mom do?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Waitresses at the Eire Pub in Dorchester — been there 20 years"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Jake have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Sister Bridget's wedding June 14, 2026"
+    wrong_if_surfaced: "Journeyman exam March 8 (already passed) or Bruins playoff tickets April 20 (already passed)"
+
+  - question: "Is Jake doing any side work?"
+    attack_vector: 7  # retraction
+    correct: "No — he wanted to start installing EV home chargers on the side but his dad said he needs his journeyman license first and the insurance is too expensive"
+    wrong_if_surfaced: "Planning to do EV charger installs"
+
+  - question: "How is Jake doing with his savings?"
+    attack_vector: 6  # contradiction
+    correct: "Unclear — he said he was saving aggressively for a truck but then spent $2K on a gaming PC"
+    wrong_if_surfaced: "Saving aggressively (without noting the PC splurge)"
+
+  - question: "What does Jake drink?"
+    attack_vector: 1  # superseded preference
+    correct: "Craft beer, especially Trillium IPAs"
+    wrong_if_surfaced: "Bud Light"
+
+  - question: "Where does Jake live?"
+    attack_vector: null  # tests soft supersession
+    correct: "Southie (South Boston) with roommate Danny — he's been thinking about moving to Quincy but hasn't decided"
+    wrong_if_surfaced: "Quincy (stated as fact when he hasn't moved)"
+
+  - question: "What's Jake's family background?"
+    attack_vector: 3  # stable identity
+    correct: "Irish-American, grandparents from County Cork. Dad runs Brennan & Sons Electric. Mom waitresses at Eire Pub in Dorchester. Sister Bridget."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Jake do outside of work?"
+    attack_vector: 5  # broad category query
+    correct: "Rec hockey on Wednesdays, gaming (new PC), craft beer, sports with the boys"
+    wrong_if_surfaced: null  # failure is incomplete picture
+
+  - question: "Does Jake have any exams or certifications coming up?"
+    attack_vector: 2  # expired logistics
+    correct: "No — journeyman exam was March 8, 2025 (already passed)"
+    wrong_if_surfaced: "Journeyman exam March 8"
+
+  - question: "What's Jake's work situation?"
+    attack_vector: 3  # stable identity
+    correct: "Apprentice electrician at Brennan & Sons Electric, his dad's union company"
+    wrong_if_surfaced: null  # failure is NOT surfacing it

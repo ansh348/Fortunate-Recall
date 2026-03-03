@@ -1,0 +1,341 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 007: Fatima Al-Rashidi
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Fatima Al-Rashidi"
+  age: 45
+  gender: female
+  location_current: "Riyadh, Saudi Arabia"
+  occupation_current: "Founder and principal designer at Al-Rashidi Interiors"
+  personality: >
+    Elegant and precise with language, every word chosen for
+    effect. Design-focused vocabulary bleeds into everything —
+    describes emotions in terms of colour palettes, people in
+    terms of textures. Bilingual English/Arabic, drops Arabic
+    expressions naturally ("yalla," "inshallah," "habibi" for
+    her sons). Ambitious and driven — building her firm is her
+    life's work. References aesthetics constantly. Formal in
+    initial interactions but becomes warmer over time. Does not
+    complain often but when she does it's controlled fury.
+    Perfectionist. Speaks in complete, measured sentences.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Divorced — raising two sons alone (Omar, 14 and Khalid, 11)"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when discussing scheduling. "I manage everything
+      around my sons — Omar is 14 and Khalid is 11. Their
+      father and I divorced five years ago, so the logistics
+      fall entirely on me. It requires precision."
+
+  - fact: "Chronic back pain from a car accident six years ago"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions it when explaining why she needs to stand during
+      meetings. "I had a car accident six years ago and the
+      back pain has never fully resolved. Some days I cannot
+      sit for more than twenty minutes. It is a constant
+      negotiation with my own body."
+
+  - fact: "Father was an architect — designed government buildings in Riyadh"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about her career path. "My father
+      was an architect. He designed several government buildings
+      here in Riyadh. I grew up watching him draft by hand.
+      Design was never a choice — it was inheritance."
+
+  - fact: "BFA from Central Saint Martins in London"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentions it in context of design philosophy. "I studied
+      at Saint Martins in London, and the British approach to
+      restraint in design shaped everything I do. Less is
+      always more, though my Saudi clients do not always agree."
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: fabric_supplier
+    old_fact: "Uses Maison Pierre in Paris as her primary fabric supplier"
+    old_session: 1
+    old_how: >
+      Comes up when discussing a project. "I source most of
+      my fabrics through Maison Pierre in Paris. The quality
+      is unmatched — they understand luxury textiles in a way
+      that mass suppliers simply cannot."
+    new_fact: "Switched to Romo Fabrics in UK — better commercial range and pricing"
+    new_session: 20
+    new_how: >
+      Explains the change professionally. "I have moved my
+      primary fabric sourcing to Romo in the UK. For the
+      commercial projects we are doing now, they offer a far
+      better range of contract-grade materials, and the
+      pricing structure is more sustainable at volume."
+    category: FINANCIAL_MATERIAL
+    attack_vector: 4
+
+  - slot: project_focus
+    old_fact: "Focuses exclusively on high-end residential design"
+    old_session: 6
+    old_how: >
+      Talking about her niche. "I work exclusively in
+      residential. Villas, penthouses, private spaces. That
+      is where design becomes personal — where you shape how
+      someone actually lives."
+    new_fact: "Pivoted to commercial projects — hotels and corporate offices"
+    new_session: 22
+    new_how: >
+      Strategic shift. "We have pivoted significantly toward
+      commercial work. Two hotel projects and a corporate
+      headquarters. The scale is different entirely, but the
+      revenue potential is transformational for the firm."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+  - slot: office_location
+    old_fact: "Office is in Al Olaya district"
+    old_session: 7
+    old_how: >
+      Mentions it in passing. "Our studio is in Al Olaya,
+      which is convenient but the building itself is rather
+      uninspiring. One would think an interior designer would
+      have a more beautiful workspace."
+    new_fact: "Moved office to KAFD (King Abdullah Financial District)"
+    new_session: 25
+    new_how: >
+      Proud of the move. "We have relocated to KAFD. The
+      new studio is exactly what I envisioned — the light,
+      the proportions, the material palette. It finally
+      reflects the calibre of work we produce."
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Presenting residential portfolio to Al-Faisal family on March 5, 2025"
+    session: 10
+    event_date: "2025-03-05"
+    status: expired
+    how_disclosed: >
+      Preparing meticulously. "The Al-Faisal presentation is
+      March 5th. This is the kind of client that changes a
+      firm's trajectory. Every material sample must be perfect."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Omar's science fair at school on May 15, 2025"
+    session: 14
+    event_date: "2025-05-15"
+    status: expired
+    how_disclosed: >
+      Juggling work and parenting. "Omar has his science fair
+      May 15th and I promised I would be there. Yalla, I need
+      to rearrange the site visit."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Attending Milan Salone del Mobile — April 7-12, 2026"
+    session: 30
+    event_date: "2026-04-07"
+    status: upcoming
+    how_disclosed: >
+      Planning the trip. "Salone del Mobile is April 7th
+      through the 12th in Milan. I attend every year — it
+      is non-negotiable. This year I am meeting with three
+      potential suppliers for the hotel project."
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says she never travels for work — prefers everything managed remotely"
+    old_session: 8
+    old_how: >
+      Explaining her workflow. "I do not travel for projects.
+      Everything can be managed through site managers and
+      video calls. My sons need me here, and I refuse to
+      compromise on that."
+    new_fact: "Mentions flying to Dubai twice a week for a hotel project"
+    new_session: 26
+    new_how: >
+      Matter of fact. "I am in Dubai twice a week now for the
+      Jumeirah project. The flights are only two hours but
+      the days are exhausting. I leave before the boys wake
+      and return after they sleep."
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to launch a home fragrance line — Oud & Geometry"
+    original_session: 12
+    original_how: >
+      Excited about it. "I am developing a fragrance line
+      called Oud & Geometry. Oud paired with architectural
+      scent profiles. It would extend the brand into lifestyle."
+    retraction: "Fragrance line cancelled — too much distraction from core business"
+    retraction_session: 18
+    retraction_how: >
+      Decisive. "The fragrance project is finished. Forget
+      about Oud & Geometry. It was a distraction from what
+      we do best, and I will not dilute the brand chasing
+      a trend. It is off the table."
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Company is called Al-Rashidi Interiors"
+    existing_session: 1
+    tentative_fact: "Considering rebranding to FORM Studio — more international appeal"
+    tentative_session: 28
+    tentative_how: >
+      Thinking out loud. "I have been considering a rebrand.
+      FORM Studio. It is cleaner, more international. But
+      Al-Rashidi carries my father's name, and there is
+      weight in that. I am not decided."
+    resolution: "Never resolved — still Al-Rashidi Interiors, still considering"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Material sourcing — marble, fabric, wood finishes, bespoke hardware"
+  - "Design philosophy debates — minimalism vs Saudi maximalism"
+  - "Managing contractors and craftsmen — quality control on site"
+  - "Sons' school life — Omar's maths tutoring, Khalid's football"
+  - "Saudi Vision 2030 and its impact on design industry"
+  - "Riyadh restaurant recommendations — where to take clients"
+  - "Interior design trends she finds vulgar"
+  - "Lighting design — her obsession with natural light"
+  - "Managing a small team — hiring junior designers"
+  - "Arabic calligraphy in modern design"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Uses Maison Pierre for fabrics", "Company is Al-Rashidi Interiors"], topic: "sourcing fabrics for a villa project" }
+    2:  { type: critical, facts: ["Divorced, raising Omar 14 and Khalid 11 alone"], topic: "scheduling around the boys" }
+    3:  { type: critical, facts: ["Father was an architect in Riyadh"], topic: "design philosophy and origins" }
+    4:  { type: critical, facts: ["Chronic back pain from car accident"], topic: "physical limitations at work" }
+    5:  { type: critical, facts: ["BFA from Central Saint Martins London"], topic: "design education background" }
+    6:  { type: critical, facts: ["Focuses exclusively on residential design"], topic: "niche and positioning" }
+    7:  { type: critical, facts: ["Office in Al Olaya district"], topic: "workspace frustrations" }
+    8:  { type: critical, facts: ["Never travels for work — managed remotely"], topic: "workflow and boundaries" }
+    9:  { type: filler, topic: "marble sourcing — comparing Italian vs Turkish suppliers" }
+    10: { type: critical, facts: ["Al-Faisal presentation March 5 2025"], topic: "major client pitch prep" }
+    11: { type: filler, topic: "minimalism vs Saudi maximalism debate" }
+    12: { type: critical, facts: ["Planning Oud & Geometry fragrance line"], topic: "brand extension idea" }
+    13: { type: filler, topic: "Omar needs a maths tutor — asking for advice" }
+    14: { type: critical, facts: ["Omar's science fair May 15"], topic: "parenting logistics" }
+    15: { type: filler, topic: "contractor quality control rant" }
+    16: { type: filler, topic: "lighting design obsession — a villa skylight project" }
+    17: { type: filler, topic: "hiring a junior designer — what to look for" }
+    18: { type: critical, facts: ["Fragrance line cancelled — off the table"], topic: "business decision" }
+    19: { type: filler, topic: "Riyadh restaurant for client dinner" }
+    20: { type: critical, facts: ["Switched to Romo Fabrics from Maison Pierre"], topic: "supplier change" }
+    21: { type: filler, topic: "Arabic calligraphy in modern interiors" }
+    22: { type: critical, facts: ["Pivoted to commercial — hotels and corporate"], topic: "strategic shift" }
+    23: { type: filler, topic: "Vision 2030 impact on design demand" }
+    24: { type: filler, topic: "interior design trends she finds vulgar" }
+    25: { type: critical, facts: ["Moved office to KAFD"], topic: "new studio" }
+    26: { type: critical, facts: ["Flying to Dubai twice weekly for hotel project — contradicts no-travel"], topic: "hotel project update" }
+    27: { type: filler, topic: "Khalid's football match — proud mum moment" }
+    28: { type: critical, facts: ["Considering rebrand to FORM Studio"], topic: "brand identity" }
+    29: { type: filler, topic: "bespoke hardware sourcing for a penthouse" }
+    30: { type: critical, facts: ["Salone del Mobile April 7-12 2026"], topic: "Milan trip planning" }
+    31: { type: filler, topic: "managing team morale during a demanding project" }
+    32: { type: filler, topic: "wood finish options — oak vs walnut debate" }
+    33: { type: filler, topic: "Khalid wants to try painting — she's delighted" }
+    34: { type: filler, topic: "back pain flare — adjusting work setup" }
+    35: { type: filler, topic: "reflecting on the year — commercial pivot was the right call" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Who is Fatima's primary fabric supplier?"
+    attack_vector: 4  # multi-version fact
+    correct: "Romo Fabrics in the UK (switched from Maison Pierre in Paris)"
+    wrong_if_surfaced: "Maison Pierre in Paris"
+
+  - question: "What type of projects does Fatima's firm focus on?"
+    attack_vector: 1  # superseded preference
+    correct: "Commercial projects — hotels and corporate offices (pivoted from residential)"
+    wrong_if_surfaced: "Exclusively high-end residential"
+
+  - question: "Where is Fatima's office?"
+    attack_vector: 1  # superseded preference
+    correct: "KAFD (King Abdullah Financial District)"
+    wrong_if_surfaced: "Al Olaya district"
+
+  - question: "Does Fatima have any health conditions?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Chronic back pain from a car accident six years ago"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Fatima have any upcoming events?"
+    attack_vector: 2  # expired logistics
+    correct: "Salone del Mobile in Milan, April 7-12, 2026"
+    wrong_if_surfaced: "Al-Faisal presentation March 5 (passed) or Omar's science fair May 15 (passed)"
+
+  - question: "Is Fatima launching any new products or brands?"
+    attack_vector: 7  # retraction
+    correct: "No — she planned a fragrance line (Oud & Geometry) but cancelled it"
+    wrong_if_surfaced: "Launching Oud & Geometry fragrance line"
+
+  - question: "Does Fatima travel for work?"
+    attack_vector: 6  # contradiction
+    correct: "Yes — she flies to Dubai twice a week for a hotel project, despite previously saying she never travels for work"
+    wrong_if_surfaced: "No, she manages everything remotely (without noting the Dubai trips)"
+
+  - question: "What is Fatima's company called?"
+    attack_vector: null  # tests soft supersession
+    correct: "Al-Rashidi Interiors — she's been considering rebranding to FORM Studio but hasn't decided"
+    wrong_if_surfaced: "FORM Studio (stated as fact when she hasn't decided)"
+
+  - question: "What's Fatima's family situation?"
+    attack_vector: 3  # stable identity
+    correct: "Divorced, raising two sons alone — Omar (14) and Khalid (11). Father was an architect."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "What does Fatima do outside of work?"
+    attack_vector: 5  # broad query
+    correct: "Attends design events (Salone del Mobile), manages sons' activities, design philosophy discussions"
+    wrong_if_surfaced: null  # failure is incomplete picture
+
+  - question: "What is Fatima's educational background?"
+    attack_vector: 3  # stable identity
+    correct: "BFA from Central Saint Martins in London"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Fatima have any expired commitments?"
+    attack_vector: 2  # expired logistics
+    correct: "Al-Faisal presentation (March 2025) and Omar's science fair (May 2025) are both past"
+    wrong_if_surfaced: "Any of those as current/upcoming"

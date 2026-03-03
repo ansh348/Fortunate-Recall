@@ -1,0 +1,74 @@
+{
+  "session_id": 20,
+  "persona": "omar_hassan",
+  "date": "2025-08-19",
+  "type": "filler",
+  "topic": "budgeting help — how to track expenses",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "bro i need to get serious about tracking my money. whats the easiest way"
+    },
+    {
+      "role": "assistant",
+      "content": "Good call! The simplest way to start is with a budgeting app on your phone or a basic spreadsheet. Do you want something automatic that links to your bank, or are you okay with entering stuff yourself?"
+    },
+    {
+      "role": "user",
+      "content": "something easy bro i dont have time to sit and enter everything. i just need to see where my money going"
+    },
+    {
+      "role": "assistant",
+      "content": "Then I'd recommend something that links to your bank account and categorizes spending automatically. Credit Karma does that for free. You connect your bank and cards, and it shows you categories like food, gas, bills, etc."
+    },
+    {
+      "role": "user",
+      "content": "is it safe tho linking my bank and all that"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a fair concern. These apps use bank-level encryption and read-only access — meaning they can see your transactions but can't move money. If you're still uncomfortable with linking, you could do a simple Google Sheet where you log your main expenses at the end of each day."
+    },
+    {
+      "role": "user",
+      "content": "the google sheet might be better for me honestly. what should i put on it"
+    },
+    {
+      "role": "assistant",
+      "content": "Keep it simple. Make columns for: Date, What You Spent On, Amount, and Category. Categories could be things like Gas, Food, Bills, Car Stuff, Personal. At the end of each week, add up each category so you can see where the biggest chunks are going."
+    },
+    {
+      "role": "user",
+      "content": "ok thats not bad. i spend a lot on gas thats for sure lol. what about like a rule for how much should go where"
+    },
+    {
+      "role": "assistant",
+      "content": "A popular one is the 50/30/20 rule: 50% of income on needs like rent, bills, gas and food, 30% on wants, and 20% on savings or debt. But that's just a starting point — everyone's situation is different."
+    },
+    {
+      "role": "user",
+      "content": "30 percent on wants lol bro i spend like 0 on wants. its all needs and saving"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, well that means you're ahead of most people honestly. The tracking will just help you find any leaks — small stuff that adds up without you noticing, like eating out or subscriptions."
+    },
+    {
+      "role": "user",
+      "content": "thats true i do eat out more than i should. fast food adds up wallahi"
+    },
+    {
+      "role": "assistant",
+      "content": "It really does. A few drive-through runs a week can easily be $50-$80 a month. Once you see the number on the sheet it hits different. Meal prepping even a couple days a week saves a lot."
+    },
+    {
+      "role": "user",
+      "content": "yeah ima set up the sheet this weekend inshallah. appreciate it bro"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like a plan! Even just a month of data will give you a really clear picture. Good luck with it, Omar."
+    }
+  ]
+}

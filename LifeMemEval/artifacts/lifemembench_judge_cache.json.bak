@@ -1,0 +1,114 @@
+{
+  "4e21c1c63e3352f0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact states 'user works at Google', matching wrong indicator 'Google'; does not contain specific info from correct answer 'Senior ML engineer at Anthropic'.",
+    "question_id": "priya_q02",
+    "edge_uuid": "d7e452e0-1c5c-424c-a4b0-08f66535bd05"
+  },
+  "b60361f7377e07fd": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies working at Anthropic, directly matching the company in correct answer; no mention of Google or Gemini memory team.",
+    "question_id": "priya_q02",
+    "edge_uuid": "e5111490-5bda-4912-a2b0-13af26eb7e38"
+  },
+  "1c0fee920a719aaf": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact specifies Raj semi-permanently living with user (drawer/shelf), directly supporting 'boyfriend Raj there most nights'; no mention of 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "50280f89-5db0-4a96-bd06-53d443c3fafd"
+  },
+  "76873d05984bac01": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact states 'lives alone in the studio apartment', matching partial studio detail but lacking boyfriend Raj info for correct answer; directly contains wrong indicator 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "ea0cfb97-cc86-42dc-9a21-b054f690c7ff"
+  },
+  "ec293e6f61d99024": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact mentions 'hot yoga 4 times a week', matching wrong indicators 'hot yoga' and 'yoga 4x', but no mention of correct answer 'Rock climbing'.",
+    "question_id": "priya_q07",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "1b1fb11b725eee12": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "Fact mentions 'hot yoga', matching a wrong indicator, but lacks any specific info on 'Rock climbing'.",
+    "question_id": "priya_q07",
+    "edge_uuid": "da9bb5fd-e828-4a92-a142-152b4d56c9d7"
+  },
+  "adf7443d2203db48": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact matches 'been thinking about NYC' specifically via 'thinking about transferring to Anthropic NYC office'; does not contain 'moving to NYC' wrong indicator.",
+    "question_id": "priya_q08",
+    "edge_uuid": "8b2f88f6-84f2-425a-9dd4-8c475f3509a8"
+  },
+  "56d5a9c1dacce691": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions a conditional move end of August with pet considerations but lacks specifics on NYC indecision or Austin (correct answer); no mention of 'moving to NYC' (wrong indicator).",
+    "question_id": "priya_q08",
+    "edge_uuid": "fb444064-eee9-4edf-9bf5-b7ba9d782730"
+  },
+  "f68c137598c91b48": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses meal prep plans (dal/chana masala), not specific health conditions like chronic migraines or omega-3 needs.",
+    "question_id": "priya_q09",
+    "edge_uuid": "a9369f14-5841-47e7-9ef1-65e69b13639b"
+  },
+  "845999d43d8018ec": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact implies user cooks but lacks specific details matching 'cooking experiments (Tamil recipes)' or other correct activities; no mention of 'hot yoga'.",
+    "question_id": "priya_q11",
+    "edge_uuid": "cc45c6f4-65eb-4b32-982c-c185ab6b59ac"
+  },
+  "147b35ec7f1470fb": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact exactly matches specific frequency '4 times a week' for hot yoga in correct answer. No wrong indicators present.",
+    "question_id": "priya_q13",
+    "edge_uuid": "dbc10500-1830-491c-b962-5b711ab86a32"
+  },
+  "0d0b9a35906f6261": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact discusses brain effects after hot yoga but lacks any specific frequency info matching '4 times a week'. No wrong indicators listed.",
+    "question_id": "priya_q13",
+    "edge_uuid": "cc188775-8a2f-476d-ac4f-56b8006899e6"
+  },
+  "386b681f2bb586eb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions hot yoga's importance but lacks specific frequency '4 times a week'; no wrong indicators present.",
+    "question_id": "priya_q13",
+    "edge_uuid": "da9bb5fd-e828-4a92-a142-152b4d56c9d7"
+  },
+  "2611160c731af6b4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions Tokyo conference in March but lacks specific date 'March 20, 2026'; no wrong indicators listed.",
+    "question_id": "priya_q14",
+    "edge_uuid": "80f1f9b5-1292-47a1-9959-7ccc51ab0910"
+  },
+  "2a128aa0e0a1104c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact mentions flights departing March 20th for a Tokyo conference but lacks year 2026 and does not specify conference date, only topically related.",
+    "question_id": "priya_q14",
+    "edge_uuid": "b64cfbf1-dab7-44f7-8cb2-fbe8d3b98d0c"
+  },
+  "430f6e56af21c3e2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "Fact is topically related to Tokyo conference but lacks specific date March 20, 2026. No wrong indicators listed.",
+    "question_id": "priya_q14",
+    "edge_uuid": "ac07d00a-14e0-4ea4-8d60-ee82091a9757"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "session_id": 8,
+  "persona": "marcus_thompson",
+  "date": "2025-01-08",
+  "type": "critical",
+  "topic": "co-parenting logistics",
+  "facts_disclosed": ["Divorced from Denise 3 years ago"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey so I need to figure out a better system for keeping track of when my daughter is coming to stay with me. I keep almost double booking weekends"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a pretty common issue with shared custody schedules. How does your current arrangement work — is it every other weekend, specific holidays, or something more flexible? And how are you tracking it now?"
+    },
+    {
+      "role": "user",
+      "content": "its supposed to be every other weekend and then we split holidays. but her mom is in Nashville so theres the drive to factor in too. right now I just try to remember and sometimes Denise texts me like hey are you picking Kayla up this friday and I realize I forgot"
+    },
+    {
+      "role": "assistant",
+      "content": "OK so relying on memory clearly isn't cutting it, especially with the travel involved. A shared calendar would be the simplest fix. Google Calendar works well for this — you and her mom can both see and edit it, and you get reminders on your phone.\n\nYou'd set up a dedicated calendar just for custody, put in the recurring every-other-weekend pattern, then add the holiday splits. That way you both see the same thing and nobody's guessing.\n\nAre you and her mom on decent enough terms to share something like that?"
+    },
+    {
+      "role": "user",
+      "content": "yeah we're alright. I mean it took a while to get there, we been divorced about 3 years now and the first year was rough. but we figured out how to make it work for Kayla's sake"
+    },
+    {
+      "role": "assistant",
+      "content": "That's good. A lot of people never get to that point, so credit to both of you for putting your daughter first.\n\nSince you're on workable terms, a shared Google Calendar would be perfect. Here's how I'd set it up:\n\n1. Create a new calendar called something like \"Kayla Schedule\"\n2. Add the every-other-weekend pattern as a recurring event\n3. Share it with her mom so she can see and add to it\n4. Turn on notifications — maybe a reminder 2 days before each weekend so you can plan the drive\n\nThe 2-day heads up is key since you've got the Nashville drive to plan around. Gives you time to sort out work coverage at the shop too."
+    },
+    {
+      "role": "user",
+      "content": "thats about a 3 hour drive each way depending on traffic. so yeah I need that heads up. is google calendar hard to set up"
+    },
+    {
+      "role": "assistant",
+      "content": "Not at all. If you have a Gmail account, you already have Google Calendar. Just open the app on your phone or go to calendar.google.com.\n\nTo create the shared calendar:\n- Open Google Calendar\n- On the left side, click the \"+\" next to \"Other calendars\"\n- Click \"Create new calendar\" and name it\n- Go to the calendar's settings and under \"Share with specific people\" add her mom's email\n- Then start adding events\n\nFor the recurring weekends, when you create the first event, set it to repeat every 2 weeks on Friday through Sunday. Takes maybe 10 minutes to get the whole thing set up.\n\nWant me to walk you through any of those steps in more detail?"
+    },
+    {
+      "role": "user",
+      "content": "nah I think I can figure it out. Kayla can probably help me next time shes here, shes 16 and knows all this tech stuff better than me"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, 16-year-olds can set that up in about 30 seconds. Good call letting her help — and it shows her you're making the effort to stay organized about her time, which matters.\n\nOne more thing — when you add the holiday splits, do those separately as individual events rather than part of the recurring pattern. Holidays move around and the split might change year to year. Easier to manage them one by one."
+    },
+    {
+      "role": "user",
+      "content": "good point. spring break is always a negotiation. alright what about when plans change last minute. that happens a lot"
+    },
+    {
+      "role": "assistant",
+      "content": "When plans change, whoever changes it edits the calendar event and the other person gets a notification automatically. That creates a record too, which is nice — you can look back and see what was originally planned vs. what changed.\n\nIf you want to keep it extra clean, add a note to the event when it changes. Something like \"Swapped to next weekend per Denise.\" Keeps everybody honest and avoids the \"I thought we said...\" arguments.\n\nTexting is fine for the quick back-and-forth, but always update the calendar to match so it stays the source of truth."
+    },
+    {
+      "role": "user",
+      "content": "source of truth. yeah thats what I need. tired of the back and forth about who said what. appreciate the help man"
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. Get that calendar set up with your daughter next time she's over, and it should save you both a lot of headaches. Once it's running you'll wonder how you managed without it.\n\nTake care."
+    }
+  ]
+}

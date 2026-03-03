@@ -1,0 +1,106 @@
+{
+  "session_id": 20,
+  "persona": "david_park",
+  "date": "2025-07-22",
+  "type": "critical",
+  "topic": "coaching change",
+  "facts_disclosed": ["Quit basketball, coaching debate instead"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I'm preparing for a new extracurricular role at school and could use some help thinking through the structure. I just agreed to take over as the debate team coach starting this fall."
+    },
+    {
+      "role": "assistant",
+      "content": "Congratulations — that sounds like a natural fit for a history teacher. There's a lot of overlap in the skills involved. Have you coached debate before, or is this a new venture?"
+    },
+    {
+      "role": "user",
+      "content": "New to debate, though not new to coaching extracurriculars in general. I actually just stepped down from coaching basketball, which I'd been doing for a while. It was time for a change. Basketball was fine, but I'd started feeling like the connection between what I was coaching and what I actually teach had gotten pretty thin. Debate is much more aligned with what I care about — argument, evidence, rhetoric, persuasion. The skills I'm trying to build in the classroom every day."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes a lot of sense. There's a real advantage to coaching something that reinforces your core teaching mission rather than running parallel to it. The skills that make someone a strong debater — constructing an argument from evidence, anticipating counterarguments, thinking on their feet — are essentially the same skills you'd want in a history student.\n\nWhat format does your school's debate team compete in? The coaching approach varies quite a bit depending on whether it's Lincoln-Douglas, Policy, Public Forum, or Congressional."
+    },
+    {
+      "role": "user",
+      "content": "The team has historically competed in Public Forum, which I think is the right format for a public school team. It's more accessible than Policy, which seems to have evolved into something requiring a small army of researchers and a budget we simply don't have. Public Forum keeps things closer to what an actual civic argument looks like — two-person teams, real-world topics, emphasis on persuasion rather than speed-reading evidence cards."
+    },
+    {
+      "role": "assistant",
+      "content": "Public Forum is a great choice. Policy debate has become extremely resource-intensive — the spread technique, the massive evidence files, the camp circuits. It often favors well-funded private school programs. PF is much more egalitarian and arguably better preparation for real-world argumentation.\n\nThe emphasis on current, real-world topics also means you can draw directly from your history teaching. PF resolutions often have deep historical roots that most students don't immediately see. That's where you could add real value as a coach. What's the current state of the team — how many students, and what's their experience level?"
+    },
+    {
+      "role": "user",
+      "content": "The previous coach left at the end of last year, so there's been a gap. About eight returning students with tournament experience and maybe six or seven newcomers who've expressed interest. Roughly fifteen total, which is manageable. The experienced students apparently did reasonably well at the district level but never advanced to state. I'd like to change that, though I'm realistic about year one."
+    },
+    {
+      "role": "assistant",
+      "content": "Fifteen is a healthy roster — that's seven or eight potential teams, giving you depth and flexibility. Having a core of experienced students is invaluable because they can mentor newcomers, which takes coaching load off you.\n\nFor year one, I'd suggest a few priorities:\n\n1. **Establish shared fundamentals**: Even experienced students may have gaps. Make sure everyone has a common foundation in argument structure — claim, warrant, impact — and basic flowing technique.\n\n2. **Pair experienced with inexperienced**: In PF's two-person format, putting a veteran with a newcomer for early-season tournaments gives new students live competition experience with a safety net.\n\n3. **Leverage your strengths**: Teach rigorous research skills and source evaluation. This is where your history background is a genuine asset that many debate coaches lack.\n\n4. **Set a realistic tournament schedule**: A few local invitationals early, district competition as the main goal, state as a stretch target."
+    },
+    {
+      "role": "user",
+      "content": "The pairing strategy is smart — I hadn't thought about deliberately mixing experience levels within teams. My instinct was to pair the strongest together, but you're right that spreading the experience builds the program more sustainably. It's the same principle as mixing ability levels in a classroom discussion, which I should have recognized immediately."
+    },
+    {
+      "role": "assistant",
+      "content": "You likely already have strong instincts for this from your classroom teaching. The best teams at the high school level aren't usually the ones with two stars — they're the ones where a strong debater elevates a developing one and both improve. You can always reconfigure teams for bigger late-season tournaments once everyone has grown.\n\nWhat about practice structure? How often will you meet, and do you have a sense of what sessions should look like?"
+    },
+    {
+      "role": "user",
+      "content": "Twice a week after school — Tuesdays and Thursdays, ninety minutes each. I don't want to overburden students juggling AP coursework. With basketball, the time commitment was enormous — daily practices, games twice a week, travel. Part of why I stepped away was that the time investment had become hard to justify when the activity wasn't reinforcing anything I cared about intellectually. Debate should be more efficient in that regard."
+    },
+    {
+      "role": "assistant",
+      "content": "Twice a week for ninety minutes is very reasonable for PF debate, and the time economics are much better — you're building skills that directly transfer to academic work, so the hours aren't competing with coursework the way a sport might.\n\nFor a ninety-minute practice, here's a structure that works well:\n\n- **First 20 minutes — Topic work**: Discuss the current resolution, share research, map key arguments and counterarguments collaboratively.\n- **Next 40 minutes — Practice rounds**: Run abbreviated rounds with shorter speech times so students get repetitions. You and experienced students can judge and give feedback.\n- **Final 30 minutes — Skills workshop**: Rotate through specific skills — crossfire technique, rebuttal construction, evidence analysis, delivery. Target whatever weaknesses you noticed during the practice rounds.\n\nThe key is balancing structure with flexibility. Some weeks the topic analysis needs more time; other weeks you run a full-length practice round."
+    },
+    {
+      "role": "user",
+      "content": "That is a clean framework. I appreciate the specificity. One thing I am wondering about is the crossfire portion — that is the direct questioning segment, correct? That seems like it could be the hardest skill to teach, because it requires thinking on your feet under pressure. In basketball, you can drill a layup a thousand times. How do you drill spontaneous argumentation?"
+    },
+    {
+      "role": "assistant",
+      "content": "Crossfire is exactly that — a direct exchange between opposing debaters, and you're right that it's one of the harder skills to develop. You can't script it, but you can build the underlying habits:\n\n1. **Question framing drills**: Give students a claim and have them generate three questions in sixty seconds that would expose a weakness in it. This builds the habit of listening for vulnerabilities rather than just waiting to talk.\n\n2. **Hot seat exercises**: One student sits in front of the group and defends a position while others take turns asking pointed questions. Rotate the hot seat so everyone gets reps on both sides.\n\n3. **Controlled sparring**: Pair students up for three-minute crossfire sessions on a simple topic. You observe and pause to coach in real time — \"You had an opening there and didn't take it. What could you have asked?\"\n\nThe goal isn't to teach them what to say. It's to train their instinct for when to push, when to pivot, and when to concede a minor point to protect a major one."
+    },
+    {
+      "role": "user",
+      "content": "The hot seat exercise is appealing. It has a Socratic quality to it — the person in the chair has to defend their position under sustained questioning, which is essentially what Socrates was doing to the Athenians, minus the hemlock. I could see that becoming a staple of practice sessions. It also serves double duty as preparation for the kind of classroom discussions I want to foster."
+    },
+    {
+      "role": "assistant",
+      "content": "The Socratic parallel is exactly right, and the dual purpose is a real benefit. Students who get comfortable defending positions under pressure in debate practice tend to bring that confidence back into the classroom. You may find that coaching debate actually improves your classes as well — the skills flow both directions.\n\nHave you thought about how you'll handle the research component? PF topics change monthly, which means there's a constant cycle of new research. That can be overwhelming for students who aren't used to it."
+    },
+    {
+      "role": "user",
+      "content": "That is actually one of the aspects I find most exciting, though I can see why students might find it daunting. Monthly topic changes mean the team is constantly engaging with new material, which keeps things fresh. My plan is to teach them a systematic research process — identifying the core question, mapping the major arguments on both sides, finding credible sources, and building an evidence file. Essentially the same process I teach for writing a research paper, compressed into a shorter cycle."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly the right approach. If you give students a repeatable process rather than doing the research for them, they become self-sufficient faster. And the compressed cycle is actually an advantage — they get twelve repetitions of the research process in a season instead of one or two. By the end of the year, building an evidence file should be second nature.\n\nOne practical tip: create a shared digital workspace — a Google Drive folder or similar — where the team pools their research. Assign different students to cover different angles of each topic so the workload is distributed. It teaches collaboration and ensures comprehensive coverage without any single student doing everything."
+    },
+    {
+      "role": "user",
+      "content": "The collaborative research model is good. It mirrors how actual scholarship works — no historian works in isolation, and teaching students to divide intellectual labor and then synthesize is a valuable skill in itself. I will set that up before the season starts."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong foundation. And the parallel to actual scholarship is worth making explicit to the students — it helps them see debate not as a competitive game but as a structured version of how knowledge is actually produced and contested in the real world.\n\nWhat about judging and tournaments? Do you have a sense of the local competitive landscape and how to get your students into early tournaments?"
+    },
+    {
+      "role": "user",
+      "content": "I am still getting oriented on that front. The previous coach left a schedule of local invitationals and the district tournament dates, so I have the logistics. My bigger concern is judging philosophy — I have watched a few rounds online and the quality of judging seems wildly inconsistent. Some judges evaluate the actual arguments, others seem to vote on delivery and confidence regardless of substance. How do I prepare students for that variability?"
+    },
+    {
+      "role": "assistant",
+      "content": "Judging inconsistency is one of the most frustrating aspects of high school debate, and it's something even experienced coaches grapple with. The honest answer is that you prepare students for it by teaching them to be adaptable:\n\n- **Read the room**: Before a round, students can sometimes get a sense of a judge's preferences during introductions. A parent volunteer judge will value clarity and relatability. A former debater will want technical precision.\n- **Win on multiple levels**: If students can be both substantively rigorous and rhetorically compelling, they're harder to vote against regardless of the judge's style.\n- **Don't chase the judge**: Teach students to present their best case clearly and let the arguments do the work. Trying to guess what a particular judge wants often leads to muddled strategy.\n\nThe broader lesson is that persuasion always happens in context — your audience matters. That's true in debate, it's true in essay writing, and it's true in democratic citizenship. The variability is frustrating but pedagogically useful."
+    },
+    {
+      "role": "user",
+      "content": "I especially like opening with collaborative topic analysis — that mirrors what I do in the classroom. Start with the big picture, then move to application. This is helpful. I was worried about the transition from a sport to an intellectual activity I'm still learning to coach, but the pedagogical principles are really quite transferable. I think I'll spend the rest of the summer reading up on Public Forum strategy and putting together a topic research guide for the students. Thank you for helping me think this through."
+    },
+    {
+      "role": "assistant",
+      "content": "The pedagogical principles absolutely are transferable. And your background gives you advantages many debate coaches don't have — you understand historical context, you know how to evaluate evidence rigorously, and you've spent decades teaching students to construct and defend arguments. The debate-specific technical knowledge is learnable. The intellectual foundation is the hard part, and you already have it.\n\nOne last suggestion: try to attend an early-season tournament purely as an observer before you coach at one. Watch the judges, watch the top teams, get a feel for the competitive rhythm. Learn the terrain before you deploy the troops, as it were.\n\nGood luck with the preparation this summer. I think this is going to be a rewarding change — coaching something that aligns with your intellectual values rather than just filling an extracurricular slot. If you have questions about PF strategy or tournament logistics as the fall approaches, feel free to come back."
+    }
+  ]
+}

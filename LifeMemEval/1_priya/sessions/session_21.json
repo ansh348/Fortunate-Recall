@@ -1,0 +1,66 @@
+{
+  "session_id": 21,
+  "persona": "priya_sharma",
+  "date": "2025-09-02",
+  "type": "filler",
+  "topic": "book recommendations — memory and neuroscience nonfiction",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need book recs. specifically nonfiction about memory and neuroscience. I work on memory systems (like for AI) and I've been wanting to read more about how human memory actually works but I never know where to start"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh this is such a good rabbit hole — and especially interesting if you're working on memory from an AI perspective, because the comparisons to biological memory are genuinely illuminating (and sometimes humbling).\n\nBefore I rec anything: what's your nonfiction reading style? Are you good with dense academic-adjacent writing, or do you prefer things written more narratively? And do you tend to finish books once you start them, or do you read the first half and then get distracted?"
+    },
+    {
+      "role": "user",
+      "content": "lmao okay real talk I have ADHD so I start books and then just... stop? like I have a graveyard of half-read books on my kindle. so probably narrative is better, dense academic stuff just doesn't hold my attention past like chapter 3"
+    },
+    {
+      "role": "assistant",
+      "content": "Totally fair and really useful to know — there's a big difference in this genre between 'written for scientists' and 'written for curious people who want to be engaged.' The good news is several of the best ones in this space are genuinely propulsive.\n\nTop rec for your situation: **\"Remember\" by Lisa Genova**. She wrote Still Alice (the Alzheimer's novel) and this is her nonfiction book about how human memory works — why we forget, why some things stick, how it gets distorted. It's narrative-first, very accessible, and chapters are short. You can read it in chunks without losing the thread. It covers encoding, consolidation, retrieval failures, the constructive nature of memory — all the stuff that's directly relevant to how you might think about memory systems differently.\n\nSecond: **\"The Memory Illusion\" by Julia Shaw**. Forensic psychologist, writes about how memory is shockingly unreliable and reconstructive rather than a recording. It's a bit mind-bending and reads more like a series of fascinating case studies than a textbook. Good for the half-book reader because each chapter kind of stands alone.\n\nDoes either of those sound appealing, or do you want something with more neuroscience depth?"
+    },
+    {
+      "role": "user",
+      "content": "both of those sound good honestly. I'm familiar with Still Alice but didn't know she did nonfiction. the reconstructive memory thing is SO relevant to my work actually — like the question of how AI memory should work vs how human memory actually works is something I think about a lot"
+    },
+    {
+      "role": "assistant",
+      "content": "Right, and the Shaw book really hammers on the point that human memory is essentially a reconstruction every time you retrieve it — not a playback. Which raises interesting design questions for AI memory systems: do you want something more like a reliable database (which human memory isn't), or something that's adaptive and contextually sensitive the way human memory is but also prone to the same failure modes? There's genuine philosophical tension there.\n\nIf you want to go deeper on the neuroscience side once you've read one of those, **\"In Search of Memory\" by Eric Kandel** is the canonical deep-dive — he's a Nobel laureate who basically mapped memory formation at the molecular level. It's memoir-plus-science which helps with the narrative pull, but it is more dense than the other two. Save it for when you're in a focusing mood.\n\nAlso worth knowing about: **\"Moonwalking with Einstein\" by Joshua Foer** — it's more about memory techniques (he trained to compete in the US Memory Championship) but it's also genuinely about how memory works, why certain encoding strategies work, what makes things memorable. Very narrative, kind of a page-turner. Might be a good first pick for you since it reads like a journey rather than chapters of information."
+    },
+    {
+      "role": "user",
+      "content": "oh I've heard of moonwalking with einstein! I think someone at work mentioned it. is it actually good or is it one of those 'sounds cool but is kind of shallow' books"
+    },
+    {
+      "role": "assistant",
+      "content": "Genuinely good, not shallow — the reason it gets mentioned a lot is because it earns it. Foer is a journalist who started covering the memory championship world as an outsider, got fascinated, then spent a year training to compete himself. So it has this built-in narrative arc where you're learning along with him rather than being lectured at.\n\nThe depth comes from the fact that to explain why memory techniques work, he has to explain the underlying mechanisms — spaced repetition, the method of loci, how episodic and semantic memory interact, why emotionally vivid or weird encoding sticks better. It doesn't stay surface level on those things. He interviews neuroscientists and memory researchers throughout.\n\nThe criticism of it is that some of the later competitive memory stuff gets a little niche, but honestly for an ADHD reader the pacing is pretty great throughout — there's always something new happening.\n\nIf you want to start somewhere with a high probability of actually finishing, I'd say Moonwalking or the Genova book. Both are genuinely readable cover to cover. The Shaw book is also good but it's slightly more 'chapter salad' — which can be fine if you're reading in bits but doesn't pull you forward the same way."
+    },
+    {
+      "role": "user",
+      "content": "okay I'm adding Moonwalking and Remember to my kindle right now. do you have any recs that are more like... cognitive science adjacent? like about how the brain processes information more broadly? I went down a rabbit hole reading about predictive processing a while ago and loved it"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh if you loved predictive processing you have great taste — that's a genuinely fascinating framework. A few directions from there:\n\n**\"Being No One\" by Thomas Metzinger** is the serious deep end — it's about consciousness and self-models. Honestly might be too dense even for a focusing day, I'll flag it but not push it.\n\nMore accessible: **\"Surfing Uncertainty\" by Andy Clark** — he's one of the main popularizers of predictive processing and this is probably the best book-length treatment of it. It's written for an intelligent general audience rather than specialists. Given that you already know the basics from your rabbit hole, you'd probably fly through the first few chapters and get to the interesting implications faster.\n\n**\"The Brain from Inside Out\" by György Buzsáki** is excellent if you want something that pushes back on the standard stimulus-response model of how brains work. He argues brains are fundamentally action-oriented rather than reactive — it's a different framing but overlaps a lot with predictive processing ideas.\n\nAnd if you want something slightly lighter: **\"Thinking, Fast and Slow\" by Kahneman** is the classic at this point (you may have already read it?) — System 1/System 2, cognitive biases, dual process theory. Not cutting-edge anymore but incredibly well written and comprehensive.\n\nHave you read Kahneman already, or would that be new territory?"
+    },
+    {
+      "role": "user",
+      "content": "I read like 60% of thinking fast and slow in college and then stopped lol. very on brand. I might actually have a kindle highlight graveyard in there somewhere"
+    },
+    {
+      "role": "assistant",
+      "content": "The 60% club is extremely real — Kahneman himself probably expects it at this point given how long that book is. And honestly the first 60% has most of the core ideas; the later chapters on economics get a bit repetitive if that's not your thing.\n\nGiven your ADHD and the kindle graveyard situation, one actual strategy that helps: instead of trying to read linearly, treat nonfiction books more like reference material. Read the intro and conclusion first, then go to whichever chapter title looks most interesting. You get the ideas that matter to you without feeling obligated to read sequentially. The Genova and Moonwalking books are better read in order, but something like Thinking Fast and Slow is honestly fine to cherry-pick.\n\nAlso — and this is maybe obvious — if you find yourself stalling on something, just stop and pick up a different book. The sunk-cost feeling that makes you feel like you 'should' finish the stalled one is exactly the thing that keeps the graveyard full. Permission to just hop around."
+    },
+    {
+      "role": "user",
+      "content": "okay the 'read the intro and conclusion first' thing is actually a game changer for me. why did no one tell me this. my whole approach to nonfiction has been wrong"
+    },
+    {
+      "role": "assistant",
+      "content": "It's one of those things that feels like cheating but is completely legitimate — nonfiction isn't a novel, the author is not going to be upset that you didn't experience the journey chronologically. The whole point is the ideas, and getting oriented first means you actually know what you're reading toward instead of absorbing chapters without a frame.\n\nFor very chapter-heavy books, reading the chapter summaries first (if they have them) or even just the first and last paragraph of each chapter gives you a map. Then you can decide which ones deserve real attention and skim the rest. It's basically how academics read papers — nobody reads a paper abstract to conclusion linearly if they can help it.\n\nYour full list now: Moonwalking with Einstein (start here), Remember by Lisa Genova, The Memory Illusion, Surfing Uncertainty once you want more predictive processing depth. That should keep you busy for a while without feeling overwhelming.\n\nLet me know how Moonwalking is — I'm genuinely curious if it holds up for someone who thinks about memory systems professionally."
+    }
+  ]
+}

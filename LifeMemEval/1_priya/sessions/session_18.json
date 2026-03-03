@@ -1,0 +1,106 @@
+{
+  "session_id": 18,
+  "persona": "priya_sharma",
+  "date": "2025-07-24",
+  "type": "critical",
+  "topic": "career change excitement",
+  "facts_disclosed": ["Left Google, starting at Anthropic next Monday on memory systems team"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay I have news and I'm kind of vibrating with excitement and anxiety at the same time"
+    },
+    {
+      "role": "assistant",
+      "content": "That particular combination is usually a sign something significant just happened. What's the news?"
+    },
+    {
+      "role": "user",
+      "content": "so I finally did it. put in my notice at Google. I'm starting at Anthropic next Monday on the memory systems team. like... I actually did the thing"
+    },
+    {
+      "role": "assistant",
+      "content": "That is enormous — congratulations! Anthropic's memory systems team is a genuinely exciting place to be doing this work right now. How long had you been thinking about this? And how does it feel now that it's real and not hypothetical?"
+    },
+    {
+      "role": "user",
+      "content": "I've been thinking about it for months honestly. maybe longer. it was the kind of thing where I'd see a job posting and close the tab and then reopen it an hour later lol. and then one day I just... applied. and now I start in six days and it feels surreal"
+    },
+    {
+      "role": "assistant",
+      "content": "The \"close the tab, reopen the tab\" cycle for a major career move is so real — that's your brain working through something big before your conscious decision-making catches up. And then there's this moment where you click submit on an application almost without ceremony and then several months later you're starting a new job in six days. How was the Google goodbye? Did you have a good run there?"
+    },
+    {
+      "role": "user",
+      "content": "I did, genuinely. I worked on the Gemini team for a few years and I learned so much and the people are great. it wasn't like a \"I need to escape\" thing, it was more like... there's a specific thing I want to do and Anthropic is where I can do it most directly. the memory systems work there is just really aligned with what I care about"
+    },
+    {
+      "role": "assistant",
+      "content": "That's actually the best kind of career move — leaving from a position of strength and genuine interest rather than running away from something bad. It means you're going in with energy and not burnout. And memory systems at Anthropic is specifically compelling right now because the questions they're working on are so foundational — not just \"how do we store more context\" but really grappling with what persistent memory means for how these systems work and how people relate to them. Do you know yet what your specific work will focus on, or is it still early enough that you'll find out when you get there?"
+    },
+    {
+      "role": "user",
+      "content": "I have a rough picture from the interviews — it's pretty squarely in what I've been doing, just on a different system with different constraints and honestly probably higher stakes. which is exciting and a little terrifying. the \"higher stakes\" part is real. like what I build will actually matter quite a bit"
+    },
+    {
+      "role": "assistant",
+      "content": "That combination of exciting and terrifying about stakes is a really healthy way to enter it — it means you understand the responsibility of the work without being paralyzed by it. The fact that what you build will matter is also exactly why you probably wanted to be there in the first place. Can I ask — what specifically made Anthropic feel like the right move over other AI companies that are doing interesting memory work? There are a few in the space."
+    },
+    {
+      "role": "user",
+      "content": "honestly it was partially the values thing. like I spent a lot of time reading their published work and thinking about how they talk about what they're building. it felt like a place where the questions I actually care about — not just \"does this work\" but \"is this the right way to do this\" — are taken seriously. that sounds maybe idealistic but it genuinely mattered to me"
+    },
+    {
+      "role": "assistant",
+      "content": "That's not idealistic, that's a real and important thing to optimize for in a job — especially in AI right now where the \"does this work\" question and the \"is this the right way to do this\" question are actively diverging in some places. Caring about both is not a luxury position. Okay, practical question: you have six days. What's your current headspace — are you in \"tie up loose ends at Google\" mode, \"prepare for Anthropic\" mode, or are you just kind of floating in the in-between?"
+    },
+    {
+      "role": "user",
+      "content": "a bit of all three honestly. I have a couple of handoff docs to finish at Google. and I want to use the weekend before to like... set up properly for the new job? I'm bad at the first-few-weeks of a new job, I tend to come in full intensity and then crash. I've done it before"
+    },
+    {
+      "role": "assistant",
+      "content": "The full-intensity-then-crash pattern is worth actively planning against since you already know it's your tendency. The first few weeks at a new job, especially one where you care a lot and feel the stakes, the instinct is to prove yourself immediately — but the most useful thing you can actually do in weeks one and two is mostly listen and map the landscape. What are the unwritten rules? Who are the people whose judgment everyone trusts? Where are the decisions actually made versus where do they appear to be made? That information is more valuable than anything you can contribute in week one, and you can only gather it if you're not running at 110% output. Do you have a sense of who your immediate team is, or are you walking in mostly cold?"
+    },
+    {
+      "role": "user",
+      "content": "I've met a couple people through the interview process so it's not totally cold. I have a sense of the manager and one potential close collaborator. but the broader team is still pretty opaque to me"
+    },
+    {
+      "role": "assistant",
+      "content": "Good starting points. For the first two weeks, I'd actively try to set up 1:1 coffee chats with as many people on the broader team as you can — even 20 minutes. Not agenda-heavy, just \"help me understand what you're working on and what you wish someone had told you when you started.\" People love being asked that second question and the answers are gold. It also accelerates the trust-building significantly. The other thing worth doing in week one: resist the urge to propose anything. Even if you see something that looks like it could be improved, hold it. Collect the observation, understand the context, and bring it up in week three or four once you understand why things are the way they are. This is hard if you're high-intensity but it almost always results in better proposals and better reception."
+    },
+    {
+      "role": "user",
+      "content": "the \"don't propose anything in week one\" advice is hard for me to hear but I know it's correct lol. like I can already feel myself wanting to come in with ideas"
+    },
+    {
+      "role": "assistant",
+      "content": "Write them down. Seriously — keep a running doc called \"ideas I'm not allowed to say yet\" and put everything in there. It scratches the itch of capturing the thought, it shows you how the ideas evolve or get invalidated as you learn more context, and if something still seems right in week four, you'll have a much more informed version of it to bring forward. The ideas aren't going anywhere. The context window for making a first impression is much shorter."
+    },
+    {
+      "role": "user",
+      "content": "\"ideas I'm not allowed to say yet\" document — that is such a good specific thing to do. I'm actually going to make that. okay what about the anxiety side of this? because it's real. I've been at Google a few years and there's a comfort in that and now I'm starting over"
+    },
+    {
+      "role": "assistant",
+      "content": "Starting over anxiety is real even when the move is completely your choice and completely the right one — the comfort of known systems and known relationships is a genuine thing you're giving up, even temporarily. A few things that tend to help: give yourself explicit permission to not know things for a while. \"I'm new\" is a full sentence and a good excuse for the first few months. New employees who ask lots of questions are not perceived as incompetent — they're perceived as engaged, and smart people at good companies know this. Also: find one person quickly who you can have honest conversations with, not just collegial ones. That person becomes the anchor of your social map at the new place. And be a little gentle with yourself outside of work for the first month — don't also try to fix your sleep schedule or start a new exercise routine during week one. Your nervous system is going to be processing a lot."
+    },
+    {
+      "role": "user",
+      "content": "lol I was literally thinking about starting a new workout thing next week. noted, I'll hold off. okay I genuinely feel better about this. I came in vibrating and now I feel like I have an actual orientation to bring into Monday"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the goal. You made a really considered, deliberate move toward work you actually care about — that foundation is solid. The nervousness is just your brain taking the stakes seriously, which is appropriate. Monday is going to be good. Go finish those handoff docs this week, make the \"ideas I'm not allowed to say yet\" doc, and walk in ready to listen more than you talk. Congratulations — genuinely. This is a big deal."
+    },
+    {
+      "role": "user",
+      "content": "thanks. it really is. I keep having to remind myself that I actually did the thing lol"
+    },
+    {
+      "role": "assistant",
+      "content": "You did the thing. It counts."
+    }
+  ]
+}

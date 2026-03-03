@@ -1,0 +1,74 @@
+{
+  "session_id": 33,
+  "persona": "amara_okafor",
+  "date": "2026-03-09",
+  "type": "filler",
+  "topic": "complaining about a difficult instructing solicitor",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "What is the appropriate professional response when an instructing solicitor has sent you the same incomplete bundle for the fourth time in a row?"
+    },
+    {
+      "role": "assistant",
+      "content": "Go ahead. What's happening?"
+    },
+    {
+      "role": "user",
+      "content": "I've been instructed on a GBH case — section 18, so serious. Trial is in three weeks. The instructing solicitor, whom I shall charitably decline to name, has been utterly impossible. I've asked for the full witness statements four times now. Four. Each time I get a partial bundle with pages missing, documents out of order, and no index."
+    },
+    {
+      "role": "assistant",
+      "content": "That's genuinely problematic, particularly for a section 18 GBH with trial three weeks out. Missing witness statements at this stage isn't just inconvenient — it could affect your ability to properly advise on plea and prepare cross-examination. Is this a pattern with this solicitor, or is it specific to this case?"
+    },
+    {
+      "role": "user",
+      "content": "A pattern. I've worked with them twice before and both times the preparation was slapdash. But they keep getting instructions because their firm has a large legal aid contract and they churn through cases. Volume over quality. The last time, I ended up essentially doing the solicitor's job as well as my own — chasing the CPS for materials, organising the bundle myself, even taking a conference with the client that should have been the solicitor's responsibility."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a significant amount of work that falls outside your brief, and it raises a real concern about the quality of representation your client is receiving at the solicitor stage. When the solicitor isn't doing their job properly, the pressure falls on you to compensate, which isn't sustainable or appropriate. Have you raised this directly with them?"
+    },
+    {
+      "role": "user",
+      "content": "I have, in the most diplomatically firm terms I could manage. The response was a breezy 'sorry about that, we're stretched thin at the moment.' Stretched thin. As though that's an excuse when someone is facing a potential life sentence. I understand firms are under pressure — legal aid rates are what they are — but at some point, if you can't service the case properly, you shouldn't be taking it on."
+    },
+    {
+      "role": "assistant",
+      "content": "You're right that resource constraints, while real, don't excuse inadequate case preparation on a charge this serious. A 'stretched thin' response to repeated failures in a section 18 case is concerning. Have you considered raising this with the client directly? They have a right to know if the quality of their solicitor's work is affecting their case preparation."
+    },
+    {
+      "role": "user",
+      "content": "That's the difficult part. The client trusts the solicitor — they've been with the firm for years, family connection or something. If I go over the solicitor's head to the client, it poisons the professional relationship and potentially destabilises the client's confidence right before trial. But if I don't, I'm compensating for someone else's inadequacy at the expense of my own preparation time for other cases. I'm rather stuck."
+    },
+    {
+      "role": "assistant",
+      "content": "It is a difficult position. You have competing duties — to this client's best interests, to your other clients whose preparation time you're sacrificing, and to the professional relationship with the instructing solicitor. A few options to consider:\n\n1. **Put it in writing.** Send a formal email to the solicitor setting out exactly what you need, with a clear deadline. Frame it as necessary for trial readiness. A paper trail protects you if things go wrong and tends to concentrate minds more effectively than phone calls.\n\n2. **Copy in the senior partner.** If the solicitor isn't responsive, escalating to the firm's senior partner or supervising solicitor is legitimate and not unreasonable three weeks before a serious trial.\n\n3. **Flag it to your clerk.** Your clerk should know that this solicitor's preparation standards are creating additional work. It helps with managing your diary and with future instruction decisions.\n\nWhich of those feels proportionate at this stage?"
+    },
+    {
+      "role": "user",
+      "content": "The paper trail is sensible. I should have been doing that from the start rather than relying on phone calls where everything evaporates. I'll send a detailed email today setting out every outstanding item with a deadline of end of this week. If I don't have a complete bundle by Friday, I'll escalate to the senior partner. Could you help me draft the email? I want it firm but not hostile — I still have to work with this person through trial."
+    },
+    {
+      "role": "assistant",
+      "content": "Of course. Here's a draft:\n\n---\n\n**Subject: Outstanding materials — R v [Client] — Trial [date]**\n\nDear [Solicitor],\n\nI am writing to follow up on the outstanding materials required for trial preparation in this matter. As you know, the trial is listed to commence on [date], and I need to have the full brief in order to prepare effectively.\n\nThe following items remain outstanding or incomplete:\n\n1. Complete set of prosecution witness statements (pages [X] and [Y] were missing from the most recent bundle)\n2. Indexed and paginated bundle of exhibits\n3. [Any other specific items — unused material schedule, defence statement confirmation, etc.]\n\nI have raised these items on several previous occasions by telephone. To ensure clarity going forward, I would be grateful if you could confirm by close of business on Friday [date] that a complete and properly indexed bundle will be provided.\n\nGiven the seriousness of the charge and the proximity of the trial date, it is essential that I have all materials in sufficient time to advise properly and prepare cross-examination. I am sure you appreciate the importance of this.\n\nPlease do not hesitate to contact me if there are any difficulties in meeting this timeline.\n\nKind regards,\nAmara\n\n---\n\nFirm, specific, and professional without being combative. Would you like to adjust the tone or add anything?"
+    },
+    {
+      "role": "user",
+      "content": "That's quite good. I'd want to add a line about the conference with the client — I need one arranged for next week at the latest, and the solicitor should be there for it. But otherwise the tone is right. Professional, clear, and with enough subtext that they know I'm serious."
+    },
+    {
+      "role": "assistant",
+      "content": "Easily added. After the numbered list, you could insert:\n\n\"I would also ask that a conference with the client be arranged for no later than [date] next week. Your attendance at the conference is necessary, as there are matters relating to the defence case that require input from both counsel and solicitor.\"\n\nThat makes clear that you expect them to be present and engaged, rather than leaving you to handle it alone again. It's a reasonable professional expectation and puts it on record."
+    },
+    {
+      "role": "user",
+      "content": "Perfect. I'll send it this afternoon. If Friday comes and goes without a proper bundle, the senior partner will be hearing from me. Thank you — I feel slightly less inclined to throw my laptop out of the window now."
+    },
+    {
+      "role": "assistant",
+      "content": "The laptop has done nothing wrong. Save the energy for the email and, if needed, for the escalation. You've got a clear plan now — paper trail, deadline, and a next step if it's not met. Good luck with the case, and I hope the solicitor takes the hint."
+    }
+  ]
+}

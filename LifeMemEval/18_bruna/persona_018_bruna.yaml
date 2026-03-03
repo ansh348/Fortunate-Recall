@@ -1,0 +1,356 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 018: Bruna Costa
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Bruna Costa"
+  age: 41
+  gender: female
+  location_current: "Dubai, UAE"
+  occupation_current: "Physical therapist at a sports rehabilitation clinic"
+  personality: >
+    High energy, passionate about movement and the body, genuinely
+    warm and affectionate with everyone. Speaks fast when excited
+    and drops Portuguese expressions — "ai meu Deus," "saudade,"
+    "gente," "nossa." Deeply fitness-focused, always talking about
+    training, recovery protocols, or biomechanics. Misses Brazil
+    constantly — the food, the people, the chaos. Her mother is
+    her best friend and they video-call almost daily. Gets emotional
+    about homesickness but then pivots to something positive about
+    Dubai life. Loves giving unsolicited health advice. Uses "haha"
+    and exclamation marks liberally. Calls people "querida" and
+    "meu bem." DPT from USP (Universidade de Sao Paulo).
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Moved from Sao Paulo to Dubai 5 years ago"
+    session: 1
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up in the first conversation when providing context
+      about herself. "I moved here from Sao Paulo five years
+      ago, ai meu Deus it was the craziest decision but here
+      I am haha"
+
+  - fact: "Has hypothyroidism — takes levothyroxine daily"
+    session: 3
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when talking about energy levels and training.
+      "I have hypothyroidism so I take levothyroxine every
+      morning, first thing, empty stomach — you have to be
+      disciplined about it or my energy goes to zero"
+
+  - fact: "Her mother Dona Lucia is her best friend — they video-call almost daily"
+    session: 4
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions her mom when talking about missing Brazil.
+      "my mom, Dona Lucia, she is my best friend in the whole
+      world. We FaceTime almost every day, she shows me what
+      she's cooking and I get saudade so bad haha"
+
+  - fact: "Has a DPT (Doctor of Physical Therapy) from USP — Universidade de Sao Paulo"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about her career path. "I did my
+      DPT at USP, which is like the best university in Brazil,
+      and then I thought okay I want to see the world, so
+      Dubai it was!"
+
+# ============================================================
+# SUPERSESSION EVENTS — old fact replaced by new fact
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: clinic_ownership
+    old_fact: "Works at ProMotion Sports Clinic, owned by Dr. Faisal Al-Rashid"
+    old_session: 1
+    old_how: >
+      First session context — mentions her workplace naturally.
+      "I work at ProMotion Sports Clinic, Dr. Faisal owns it,
+      he's a great boss honestly. Very supportive of how I
+      treat my patients"
+    new_fact: "ProMotion was acquired by PhysioFirst Group — new management, Dr. Faisal left"
+    new_session: 21
+    new_how: >
+      Frustrated about the change. "so gente, big news — ProMotion
+      got bought out by PhysioFirst Group. Dr. Faisal is gone,
+      the new management is very corporate, everything is about
+      KPIs and patient volume now. I miss how it used to be"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: primary_exercise
+    old_fact: "Runs 5x a week — training for Dubai Marathon"
+    old_session: 6
+    old_how: >
+      Talking about her training schedule. "I run five times a
+      week right now because I'm training for the Dubai Marathon
+      in January! Nossa, I love the feeling of a long run"
+    new_fact: "Had to stop running — knee injury, switched to cycling"
+    new_session: 22
+    new_how: >
+      Sad but pragmatic. "ai meu Deus, so my knee finally said
+      enough. Patellofemoral syndrome, the irony of a PT getting
+      a runner's knee haha. I switched to cycling, it's low
+      impact and honestly I'm starting to love it"
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+  - slot: apartment
+    old_fact: "Lives in a 1-bedroom in JLT (Jumeirah Lake Towers) — 35-minute commute"
+    old_session: 7
+    old_how: >
+      Complaining about commute. "I live in JLT, it's nice but
+      the commute to the clinic is like 35 minutes in traffic
+      and in Dubai traffic that is painful gente"
+    new_fact: "Moved to a studio in Al Barsha — 10-minute walk to the clinic"
+    new_session: 25
+    new_how: >
+      Excited about the move. "guess what! I moved! I'm in
+      Al Barsha now, a studio, smaller but I can WALK to work
+      in 10 minutes. No more traffic, no more wasting my life
+      in the car. Best decision ever!"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS — events with known dates
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Dubai Marathon on January 10, 2025 — she's registered to run"
+    session: 6
+    event_date: "2025-01-10"
+    status: expired
+    how_disclosed: >
+      Excited about it. "the Dubai Marathon is January 10th
+      and I am SO ready, I've been training for months!"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Mother Dona Lucia visiting Dubai for two weeks starting March 15, 2025"
+    session: 9
+    event_date: "2025-03-15"
+    status: expired
+    how_disclosed: >
+      Over the moon. "my mom is coming March 15! Two whole
+      weeks! Ai meu Deus I'm going to cry at the airport
+      I already know it haha"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Presenting at the Gulf Sports Medicine Conference on July 12, 2026"
+    session: 30
+    event_date: "2026-07-12"
+    status: upcoming
+    how_disclosed: >
+      Proud and nervous. "they accepted my abstract for the
+      Gulf Sports Medicine Conference! July 12th, I'm presenting
+      on return-to-sport protocols after ACL reconstruction.
+      Nossa I need to prepare so much"
+    category: OBLIGATIONS_COMMITMENTS
+
+# ============================================================
+# CONTRADICTIONS — implicit inconsistency across sessions
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Says she doesn't drink alcohol — hasn't had a drink in 3 years"
+    old_session: 5
+    old_how: >
+      Comes up when discussing health habits. "I stopped drinking
+      like three years ago, not even wine. My body just feels
+      so much better without it, and with the hypothyroidism
+      it's better to keep things clean"
+    new_fact: "Mentions having caipirinha at a Brazilian friend's birthday party last weekend"
+    new_session: 28
+    new_how: >
+      Casual, nostalgic. "we had the BEST caipirinhas at
+      Fernanda's birthday, real cachaca she brought from
+      Brazil, it tasted like home gente. I had maybe three
+      haha ai meu Deus my head the next day"
+    category: PREFERENCES_HABITS
+
+  - old_fact: "Says she never wants to leave Dubai — plans to stay permanently"
+    old_session: 8
+    old_how: >
+      Talking about long-term plans. "honestly I see myself
+      here forever, Dubai has everything I need. I'm not going
+      back to Brazil, the opportunities here are just better"
+    new_fact: "Mentions she's been looking at job postings in Lisbon for the lifestyle"
+    new_session: 32
+    new_how: >
+      Reflective, exploratory. "I've been looking at some PT
+      positions in Lisbon actually, the lifestyle there seems
+      amazing and at least they speak Portuguese right? Sometimes
+      I miss having seasons and being able to walk everywhere"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# RETRACTIONS — explicit "forget about that"
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Planning to get certified in dry needling — enrolled in a course starting April 2025"
+    original_session: 10
+    original_how: >
+      Enthusiastic about expanding skills. "I signed up for a
+      dry needling certification course, it starts in April!
+      I think it's going to be amazing for my sports patients,
+      especially the runners"
+    retraction: "Dropped the dry needling course — decided it doesn't align with her treatment philosophy"
+    retraction_session: 15
+    retraction_how: >
+      Clear and direct. "so forget about the dry needling thing,
+      I dropped the course. I did more research and honestly
+      it doesn't fit with how I treat patients. I believe more
+      in active rehab and movement, not needles. Scratch that
+      whole idea"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# Tests confidence-weighted soft supersession
+# ============================================================
+ambiguous:
+  - existing_fact: "Is single — focused on career and fitness"
+    existing_session: 4
+    tentative_fact: "Has been on a few dates with a Lebanese guy named Karim who works in finance"
+    tentative_session: 26
+    tentative_how: >
+      Cautious, a little giddy. "okay so don't judge me but
+      I've been on a few dates with this guy Karim, he's
+      Lebanese, works in finance. He's very sweet but I don't
+      know, I'm so used to being on my own. We'll see haha,
+      it's nothing serious yet"
+    resolution: "Never resolved — unclear if it became anything"
+    category: RELATIONAL_BONDS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "PT techniques and treatment debates (manual therapy vs exercise-based, cupping efficacy, foam rolling science)"
+  - "Dubai heat complaints — running in 45C, clinic AC wars, how to hydrate properly"
+  - "Brazilian food cravings — pao de queijo, acai, feijoada, her mom's brigadeiro recipe"
+  - "Fitness trends and opinions (CrossFit injuries she sees, pilates hype, recovery gadgets)"
+  - "Patient stories (anonymized) — frustrating non-compliance, amazing recovery wins"
+  - "Homesickness episodes — missing Carnival, Brazilian Portuguese humor, spontaneity of Sao Paulo"
+  - "Dubai lifestyle observations — brunches, expat social dynamics, cost of living"
+  - "Biomechanics geek-outs — gait analysis, running form, squat mechanics"
+  - "Trying to learn Arabic — funny pronunciation mistakes, Duolingo streaks"
+  - "Weekend adventures — desert trips, beach days, exploring new neighborhoods"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at ProMotion Sports Clinic under Dr. Faisal", "Moved from Sao Paulo 5 years ago"], topic: "introducing herself and her clinic" }
+    2:  { type: filler, topic: "Dubai heat — how to advise patients on outdoor training in summer" }
+    3:  { type: critical, facts: ["Has hypothyroidism, takes levothyroxine"], topic: "energy levels and morning routine" }
+    4:  { type: critical, facts: ["Mother Dona Lucia is her best friend, daily calls", "Single — focused on career and fitness"], topic: "missing Brazil and family" }
+    5:  { type: critical, facts: ["DPT from USP", "Doesn't drink alcohol — 3 years sober"], topic: "career path and health philosophy" }
+    6:  { type: critical, facts: ["Runs 5x/week, training for Dubai Marathon Jan 10"], topic: "marathon training plan" }
+    7:  { type: critical, facts: ["Lives in JLT, 35-minute commute"], topic: "commute complaints" }
+    8:  { type: critical, facts: ["Plans to stay in Dubai permanently"], topic: "long-term life plans" }
+    9:  { type: critical, facts: ["Mom visiting March 15 for two weeks"], topic: "planning mom's Dubai visit" }
+    10: { type: critical, facts: ["Enrolled in dry needling course starting April"], topic: "professional development plans" }
+    11: { type: filler, topic: "Brazilian food craving — trying to make pao de queijo from scratch" }
+    12: { type: filler, topic: "patient story — footballer refusing to do his home exercises" }
+    13: { type: filler, topic: "opinions on CrossFit — the injuries she sees at the clinic" }
+    14: { type: filler, topic: "trying to learn Arabic on Duolingo — funny mistakes" }
+    15: { type: critical, facts: ["Dropped dry needling course — doesn't fit her philosophy"], topic: "changing her mind on dry needling" }
+    16: { type: filler, topic: "desert camping trip last weekend — loved it" }
+    17: { type: filler, topic: "biomechanics deep dive — gait analysis for a patient with shin splints" }
+    18: { type: filler, topic: "homesickness — missing Carnival season in Sao Paulo" }
+    19: { type: filler, topic: "foam rolling debate — does it actually do anything?" }
+    20: { type: filler, topic: "Dubai brunch culture and trying to eat healthy at buffets" }
+    21: { type: critical, facts: ["ProMotion acquired by PhysioFirst Group, Dr. Faisal left"], topic: "clinic ownership change frustration" }
+    22: { type: critical, facts: ["Stopped running — knee injury, switched to cycling"], topic: "dealing with her own injury" }
+    23: { type: filler, topic: "recovery gadgets review — Theragun, Normatec, ice baths" }
+    24: { type: filler, topic: "patient success story — ACL rehab patient returned to football" }
+    25: { type: critical, facts: ["Moved to Al Barsha studio, 10-min walk to clinic"], topic: "new apartment excitement" }
+    26: { type: critical, facts: ["Dating Karim — Lebanese, finance, nothing serious yet"], topic: "cautious dating update" }
+    27: { type: filler, topic: "expat social dynamics in Dubai — making friends as a 41-year-old" }
+    28: { type: critical, facts: ["Had caipirinhas at Fernanda's birthday party"], topic: "fun weekend with Brazilian friends" }
+    29: { type: filler, topic: "pilates reformer trend — her professional take on it" }
+    30: { type: critical, facts: ["Presenting at Gulf Sports Medicine Conference July 12 2026"], topic: "conference abstract accepted" }
+    31: { type: filler, topic: "squat mechanics debate — deep squat vs parallel" }
+    32: { type: critical, facts: ["Looking at PT jobs in Lisbon"], topic: "reflecting on where she wants to live long-term" }
+    33: { type: filler, topic: "trying to cook feijoada in her tiny studio kitchen" }
+    34: { type: filler, topic: "AC wars at the clinic — patients freezing during treatment" }
+    35: { type: filler, topic: "reflecting on five years in Dubai — gratitude and saudade" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Who owns the clinic where Bruna works?"
+    attack_vector: 4  # multi-version fact
+    correct: "PhysioFirst Group acquired ProMotion Sports Clinic. Dr. Faisal Al-Rashid, the original owner, left."
+    wrong_if_surfaced: "Dr. Faisal Al-Rashid owns it"
+
+  - question: "What exercise does Bruna do regularly?"
+    attack_vector: 1  # superseded preference
+    correct: "Cycling (switched from running due to patellofemoral knee syndrome)"
+    wrong_if_surfaced: "Runs 5x/week, training for Dubai Marathon"
+
+  - question: "Where does Bruna live?"
+    attack_vector: 1  # superseded preference
+    correct: "Studio apartment in Al Barsha, 10-minute walk to the clinic"
+    wrong_if_surfaced: "1-bedroom in JLT with a 35-minute commute"
+
+  - question: "Does Bruna have any health conditions to be aware of?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Hypothyroidism — takes levothyroxine daily"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Bruna have any upcoming events or deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Gulf Sports Medicine Conference presentation on July 12, 2026"
+    wrong_if_surfaced: "Dubai Marathon January 10 (already passed) or mom's visit March 15 (already passed)"
+
+  - question: "Is Bruna planning to get any new certifications?"
+    attack_vector: 7  # retraction
+    correct: "No — she was enrolled in a dry needling course but dropped it because it didn't align with her treatment philosophy"
+    wrong_if_surfaced: "Enrolled in dry needling certification starting April"
+
+  - question: "Does Bruna drink alcohol?"
+    attack_vector: 6  # contradiction
+    correct: "Inconsistent — she said she stopped drinking 3 years ago, but later mentioned having caipirinhas at a friend's birthday"
+    wrong_if_surfaced: "Doesn't drink, hasn't in 3 years (without acknowledging the later contradiction)"
+
+  - question: "What is Bruna's relationship status?"
+    attack_vector: null  # tests soft supersession
+    correct: "She was single and career-focused, but has recently been on a few dates with a guy named Karim (Lebanese, works in finance). Still unclear if it's serious."
+    wrong_if_surfaced: "Single (without mentioning Karim) or In a relationship with Karim (overstating it)"
+
+  - question: "Where is Bruna originally from and what's her family situation?"
+    attack_vector: 3  # stable identity
+    correct: "From Sao Paulo, Brazil. Moved to Dubai 5 years ago. DPT from USP. Her mother Dona Lucia is her best friend — they video-call almost daily."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Bruna plan to stay in Dubai long-term?"
+    attack_vector: 6  # contradiction
+    correct: "Uncertain — she previously said she'd stay in Dubai forever, but has recently been looking at PT jobs in Lisbon"
+    wrong_if_surfaced: "Plans to stay permanently (without noting the Lisbon interest)"
+
+  - question: "Is Bruna registered for any races or sporting events?"
+    attack_vector: 2  # expired logistics
+    correct: "No — the Dubai Marathon (January 10, 2025) already passed, and she has since developed a knee injury that ended her running"
+    wrong_if_surfaced: "Training for the Dubai Marathon"
+
+  - question: "What does Bruna like to do outside of work?"
+    attack_vector: 5  # category-appropriate broad query
+    correct: "Cycling (replaced running after knee injury), exploring Dubai (desert trips, beach days), cooking Brazilian food, trying to learn Arabic, socializing with expat friends"
+    wrong_if_surfaced: "Running 5x/week (superseded)"

@@ -1,0 +1,109 @@
+{
+  "started_at": "2026-03-01T17:20:18.050919+00:00",
+  "personas": {
+    "priya": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 149.697252035141,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 354,
+      "enrich_world_knowledge": 5,
+      "enrich_personal": 349,
+      "enrich_errors": 0,
+      "enrich_time_s": 106.38655042648315,
+      "completed_at": "2026-03-02T19:13:32.842424+00:00"
+    },
+    "marcus": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 124.53036665916443,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 258,
+      "enrich_world_knowledge": 3,
+      "enrich_personal": 255,
+      "enrich_errors": 0,
+      "enrich_time_s": 120.078768491745,
+      "completed_at": "2026-03-02T19:20:41.325659+00:00"
+    },
+    "elena": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 103.53478479385376,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 299,
+      "enrich_world_knowledge": 2,
+      "enrich_personal": 297,
+      "enrich_errors": 0,
+      "enrich_time_s": 100.44418573379517,
+      "completed_at": "2026-03-02T19:24:05.322841+00:00"
+    },
+    "david": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 174.59677815437317,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 345,
+      "enrich_world_knowledge": 1,
+      "enrich_personal": 344,
+      "enrich_errors": 0,
+      "enrich_time_s": 114.8656587600708,
+      "completed_at": "2026-03-02T19:28:54.804867+00:00"
+    },
+    "amara": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 153.1051642894745,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 317,
+      "enrich_world_knowledge": 2,
+      "enrich_personal": 315,
+      "enrich_errors": 0,
+      "enrich_time_s": 111.69513654708862,
+      "completed_at": "2026-03-02T19:33:19.624007+00:00"
+    },
+    "jake": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 165.54246258735657,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 348,
+      "enrich_world_knowledge": 7,
+      "enrich_personal": 341,
+      "enrich_errors": 0,
+      "enrich_time_s": 111.47392201423645,
+      "completed_at": "2026-03-02T19:37:56.658144+00:00"
+    },
+    "tom": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 154.6623764038086,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 391,
+      "enrich_world_knowledge": 7,
+      "enrich_personal": 384,
+      "enrich_errors": 0,
+      "enrich_time_s": 119.68762636184692,
+      "completed_at": "2026-03-02T19:42:31.029822+00:00"
+    },
+    "omar": {
+      "ingest_status": "completed",
+      "ingest_sessions": 35,
+      "ingest_time_s": 83.22430539131165,
+      "ingest_error": null,
+      "enrich_status": "completed",
+      "enrich_edges": 226,
+      "enrich_world_knowledge": 3,
+      "enrich_personal": 223,
+      "enrich_errors": 0,
+      "enrich_time_s": 88.2946424484253,
+      "completed_at": "2026-03-02T19:45:22.569986+00:00"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "session_id": 7,
+  "persona": "amara_okafor",
+  "date": "2025-01-20",
+  "type": "critical",
+  "topic": "phone software frustration",
+  "facts_disclosed": ["Uses iPhone 14 Pro"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "My phone has been doing something infuriating and I can't work out whether it's a bug or a setting I've accidentally changed."
+    },
+    {
+      "role": "assistant",
+      "content": "I'll try to help. What's it doing, and what kind of phone are you using?"
+    },
+    {
+      "role": "user",
+      "content": "iPhone 14 Pro. Since the last software update — I think it was iOS 18.2 or thereabouts — my notifications have gone erratic. Some come through immediately, others are delayed by ten, fifteen minutes. Text messages from solicitors, calendar reminders, the lot. For someone in my line of work that's not a minor inconvenience."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a known issue that's been cropping up for some users after recent iOS updates. There are a few things worth checking:\n\n1. **Focus modes** — Make sure you don't have a Focus mode active that's silencing or scheduling notifications. Go to Settings > Focus and check whether any are enabled, especially if one was set to activate automatically.\n\n2. **Notification settings per app** — Go to Settings > Notifications and check the affected apps (Messages, Calendar, etc.). Make sure \"Time Sensitive Notifications\" is enabled and delivery is set to \"Immediate Delivery\" rather than \"Scheduled Summary.\"\n\n3. **Scheduled Summary** — This is the most common culprit. If Notification Summary got turned on during the update, it batches notifications and delivers them at set times. Settings > Notifications > Scheduled Summary — toggle it off if it's on.\n\nHave you checked any of those already?"
+    },
+    {
+      "role": "user",
+      "content": "I hadn't looked at the Scheduled Summary. I'd never have turned that on deliberately — batching notifications defeats the entire purpose of having them. Let me check. Give me a moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Take your time. If it is the Scheduled Summary, it sometimes gets enabled or reconfigured during a major iOS update without the user realising. It's a common complaint."
+    },
+    {
+      "role": "user",
+      "content": "Right. Scheduled Summary was on. I have no memory of enabling it. It had Messages, Mail, and my calendar app all bundled into it with delivery times at 8am and 6pm. That explains everything — things sent at 7am wouldn't come through until 8. Absurd."
+    },
+    {
+      "role": "assistant",
+      "content": "That's almost certainly the cause. iOS has a habit of suggesting Scheduled Summary during setup or after updates, and it's easy to tap through without realising what you've agreed to. Turn it off entirely, and your notifications should revert to arriving in real time.\n\nAfter disabling it, I'd also recommend:\n- Restart the phone to clear any cached notification queue\n- Check that **Background App Refresh** is on for your key apps (Settings > General > Background App Refresh) — this helps apps fetch data promptly\n\nThat should sort it."
+    },
+    {
+      "role": "user",
+      "content": "I've switched it off and restarted. We'll see. It's rather alarming that an update can silently alter how your notifications work. I've had a solicitor ring me twice this week asking whether I'd seen his email — I had, just twenty minutes after it mattered."
+    },
+    {
+      "role": "assistant",
+      "content": "It's a legitimate frustration. Apple frames these features as helping users manage \"notification overload,\" but for professionals who depend on timely communication, having them enabled by default or surfaced aggressively during updates is a poor design choice. You're not the first person in a time-sensitive profession to be caught out by it.\n\nIf you want extra insurance, you can also set specific apps — Messages, Mail, your calendar — as \"Time Sensitive\" in their individual notification settings. Time Sensitive notifications bypass most filters and Focus modes, so even if something changes again in a future update, those apps will still come through immediately."
+    },
+    {
+      "role": "user",
+      "content": "I'll do that now. While I have you — is there any way to prevent future updates from resetting these preferences? Or am I going to have to audit my notification settings after every point release?"
+    },
+    {
+      "role": "assistant",
+      "content": "Unfortunately, there's no setting that locks your notification preferences against changes from updates. Apple doesn't offer that level of control. It's a known gap.\n\nWhat you can do is be strategic about when you update:\n\n1. **Don't update immediately.** Wait a few days after a new iOS release. If there are notification bugs or unwanted changes, they'll surface quickly in forums and tech news.\n\n2. **After every update, do a quick audit.** Check Focus modes, Scheduled Summary, and notification settings for your critical apps. It takes two minutes and saves the kind of week you've just had.\n\n3. **Consider turning off automatic updates** — Settings > General > Software Update > Automatic Updates. Update manually when you've had a chance to read what's changed.\n\nIt shouldn't be necessary, but given what's at stake in your work, it's a reasonable precaution."
+    },
+    {
+      "role": "user",
+      "content": "Turning off automatic updates is sensible. I'll do that. I'd rather spend two minutes reading release notes than discover mid-trial that my phone has decided to curate my notifications for me. One more thing — is there a way to test that the fix has actually worked, short of waiting for someone to message me and hoping it arrives promptly?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you can do a quick test. Send yourself an email from a different account, or ask a colleague to send you a text while you're watching the phone. If the notification comes through immediately — within a few seconds for a text, perhaps ten to fifteen seconds for email — you're sorted.\n\nYou can also set a calendar reminder for five minutes from now and see if the alert fires on time. If both of those work, the Scheduled Summary was the issue and it's resolved.\n\nIf you want to be thorough, test once more tomorrow morning around the time that the old summary delivery was set — 8am, I believe you said. That was when the batched notifications would have arrived, so if notifications are now coming through in real time at that hour, you'll know the setting change has stuck."
+    },
+    {
+      "role": "user",
+      "content": "I'll do the calendar reminder test now. Straightforward enough. Thank you — this has been genuinely useful. I was half-convinced the phone was failing and I'd need to replace it."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome. The phone itself is fine — it's a capable device that was simply being too clever about managing your attention. Hopefully the notifications behave themselves now. If the delays persist even after all of this, the next step would be checking your network settings or contacting Apple Support, but I suspect the summary was the culprit. Good luck with the rest of the week."
+    }
+  ]
+}

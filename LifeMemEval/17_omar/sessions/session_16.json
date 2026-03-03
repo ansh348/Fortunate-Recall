@@ -1,0 +1,82 @@
+{
+  "session_id": 16,
+  "persona": "omar_hassan",
+  "date": "2025-06-19",
+  "type": "critical",
+  "topic": "car plan killed",
+  "facts_disclosed": ["Camry plan dead — car got sold"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "bro im heated rn"
+    },
+    {
+      "role": "assistant",
+      "content": "What's going on? Everything okay?"
+    },
+    {
+      "role": "user",
+      "content": "remember that camry i was looking at"
+    },
+    {
+      "role": "assistant",
+      "content": "A Camry? No, fill me in — what's going on with it?"
+    },
+    {
+      "role": "user",
+      "content": "i was gonna buy this used camry bro. been going back and forth with the seller for like 2 weeks trying to get my loan approved"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh okay, so you had a deal lined up. What happened with the loan?"
+    },
+    {
+      "role": "user",
+      "content": "its gone bro. dude sold it to someone else while i was waiting on the loan"
+    },
+    {
+      "role": "assistant",
+      "content": "Are you serious? While you were still working things out with him?"
+    },
+    {
+      "role": "user",
+      "content": "nah wallahi he just texted me like oh sorry someone came with cash. like bro i was working on getting approved for 2 weeks"
+    },
+    {
+      "role": "assistant",
+      "content": "That's messed up. He couldn't even give you a heads up that someone else was looking at it? That's just disrespectful of your time."
+    },
+    {
+      "role": "user",
+      "content": "exactly bro. and now i been looking at other listings and everything in that price range got like 150k miles on it. not worth it"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah at 150k+ you're basically buying someone else's problems. Especially if you're putting a lot of miles on it yourself, that's a recipe for expensive repairs."
+    },
+    {
+      "role": "user",
+      "content": "i been looking. forget about that whole thing bro its dead. the camry plan is done"
+    },
+    {
+      "role": "assistant",
+      "content": "So you're scrapping the whole idea for now?"
+    },
+    {
+      "role": "user",
+      "content": "yeah the whole camry plan is dead for now. just gonna keep what i got running and stack up more. inshallah something better comes later"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like the smart move honestly. No point rushing into a high-mileage car that's gonna cost you more in repairs. Keep stacking and when the right one shows up you'll be ready."
+    },
+    {
+      "role": "user",
+      "content": "yeah exactly. just gotta be patient wallahi"
+    },
+    {
+      "role": "assistant",
+      "content": "For real. The right deal will come when the time is right. No sense forcing it."
+    }
+  ]
+}

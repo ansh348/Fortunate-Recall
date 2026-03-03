@@ -1,0 +1,74 @@
+{
+  "session_id": 23,
+  "persona": "priya_sharma",
+  "date": "2025-09-29",
+  "type": "filler",
+  "topic": "transformer attention visualization — coding help",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay coding question. I'm trying to visualize attention maps for a transformer and I keep getting ugly outputs. like the heatmaps are either washed out or the scale is wrong and I can't see the actual pattern"
+    },
+    {
+      "role": "assistant",
+      "content": "Attention map visualization is one of those things that sounds simple and then has a hundred annoying failure modes. Let's debug it.\n\nFirst: what are you using to generate the heatmaps right now — matplotlib directly, seaborn, or something like BertViz? And what does 'washed out' look like — is most of the attention mass concentrated in one or two tokens with everything else near zero, or is it more uniformly flat across everything?"
+    },
+    {
+      "role": "user",
+      "content": "using matplotlib with imshow. and it's the first thing — like there's a few very high attention weights and everything else washes out to basically the same color. so I can tell SOMETHING is happening but I can't see the structure at all"
+    },
+    {
+      "role": "assistant",
+      "content": "Classic dynamic range problem. The attention weights are probably softmaxed (so they sum to 1 across each row), and when you have a few dominant tokens getting e.g. 0.7, 0.15 of the attention, everything else is in this tiny 0-0.15 range that your colormap can't distinguish.\n\nA few approaches depending on what you actually want to visualize:\n\n**Option 1: Log scale.** Apply `np.log1p()` to your attention matrix before plotting. This compresses the high values and expands the low-value range, so you can see the structure even in the small weights. The `1p` variant (log(1+x)) handles the zeros gracefully.\n\n```python\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nattn_log = np.log1p(attn_weights)  # attn_weights shape: (seq_len, seq_len)\nfig, ax = plt.subplots(figsize=(10, 8))\nim = ax.imshow(attn_log, cmap='viridis', aspect='auto')\nplt.colorbar(im)\n```\n\n**Option 2: Per-row normalization.** Normalize each row independently to [0, 1] so you see relative attention per query position regardless of absolute magnitude.\n\n```python\nattn_norm = attn_weights / (attn_weights.max(axis=-1, keepdims=True) + 1e-9)\n```\n\nWhich of these is more appropriate depends on whether you care about absolute vs. relative attention distribution. What are you trying to learn from the visualization?"
+    },
+    {
+      "role": "user",
+      "content": "I want to see which tokens are attending to which other tokens — like the actual pattern structure. so I care more about relative distribution I think. the per-row normalization makes sense. but also wait, should I be looking at this per-head or averaged across heads?"
+    },
+    {
+      "role": "assistant",
+      "content": "Per-head, almost certainly — averaging across heads destroys most of the interesting information. Different heads learn qualitatively different patterns: you typically get heads that do syntactic dependency tracking, positional attention (attending to adjacent tokens), heads that focus on [CLS] or separator tokens, heads that track coreference. When you average them, these distinct patterns cancel or blur into mush.\n\nThe standard approach is to plot each head separately as a grid. Something like:\n\n```python\ndef plot_attention_heads(attn_weights, tokens, layer_idx, n_heads):\n    # attn_weights shape: (n_heads, seq_len, seq_len)\n    fig, axes = plt.subplots(2, n_heads // 2, figsize=(n_heads * 2, 6))\n    axes = axes.flatten()\n    \n    for h in range(n_heads):\n        head_attn = attn_weights[h]  # (seq_len, seq_len)\n        # per-row normalization\n        head_attn = head_attn / (head_attn.max(axis=-1, keepdims=True) + 1e-9)\n        \n        im = axes[h].imshow(head_attn, cmap='Blues', aspect='auto')\n        axes[h].set_title(f'Head {h}', fontsize=8)\n        axes[h].set_xticks(range(len(tokens)))\n        axes[h].set_xticklabels(tokens, rotation=90, fontsize=6)\n        axes[h].set_yticks(range(len(tokens)))\n        axes[h].set_yticklabels(tokens, fontsize=6)\n    \n    plt.suptitle(f'Layer {layer_idx} Attention', y=1.02)\n    plt.tight_layout()\n    return fig\n```\n\nAlso: have you looked at BertViz? It does exactly this but interactively in a Jupyter notebook and is much less code. Might be worth using for exploration even if you want matplotlib for final figures."
+    },
+    {
+      "role": "user",
+      "content": "I've heard of BertViz but haven't used it — does it work with non-BERT models? I'm working with a custom transformer architecture"
+    },
+    {
+      "role": "assistant",
+      "content": "It works with anything from Hugging Face's transformers library out of the box (BERT, GPT-2, T5, etc.), but for a custom architecture you'd need to make it work with their model interface, which is a bit of extra scaffolding.\n\nFor a custom model, the most practical approach is to hook into your attention layers to extract the weights directly:\n\n```python\nattention_maps = {}\n\ndef make_hook(layer_name):\n    def hook(module, input, output):\n        # output is typically (context, attention_weights) for custom transformers\n        # adjust based on your architecture\n        if isinstance(output, tuple):\n            attention_maps[layer_name] = output[1].detach().cpu()\n        else:\n            attention_maps[layer_name] = output.detach().cpu()\n    return hook\n\n# Register hooks on your attention modules\nfor name, module in model.named_modules():\n    if isinstance(module, YourAttentionClass):  # your attention class\n        module.register_forward_hook(make_hook(name))\n\n# Run a forward pass\nwith torch.no_grad():\n    output = model(input_ids)\n\n# attention_maps now has all layer attention weights\n```\n\nThen you pass those extracted tensors to your visualization function. The key thing is knowing what shape your attention layer actually returns — some return (attn_output, attn_weights), some return just attn_output and you need to modify the layer to also return weights. What does your attention module's forward signature look like?"
+    },
+    {
+      "role": "user",
+      "content": "it returns (output, attn_weights) as a tuple so that part should be fine. my main issue now is that with longer sequences the token labels on the axes just become completely unreadable"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, once you get past ~30 tokens the axis labels are basically decorative. A few strategies depending on what you need:\n\n**For long sequences — interactive visualization:** Use Plotly instead of matplotlib. You get hover-to-see-token-name for free:\n\n```python\nimport plotly.graph_objects as go\n\ndef plot_attention_interactive(attn_matrix, tokens):\n    attn_norm = attn_matrix / (attn_matrix.max(axis=-1, keepdims=True) + 1e-9)\n    \n    fig = go.Figure(data=go.Heatmap(\n        z=attn_norm,\n        x=tokens,\n        y=tokens,\n        colorscale='Blues',\n        hovertemplate='Query: %{y}<br>Key: %{x}<br>Attention: %{z:.4f}<extra></extra>'\n    ))\n    fig.update_layout(\n        width=800, height=800,\n        xaxis={'tickangle': -45, 'tickfont': {'size': 8}},\n        yaxis={'tickfont': {'size': 8}}\n    )\n    return fig\n```\n\n**For static figures with long sequences:** Skip individual token labels, just mark positions. Use `ax.set_xticks([])` and `ax.set_yticks([])` and instead annotate specific positions of interest manually. Much cleaner for papers/slides.\n\n**For analysis rather than presentation:** Slice. Look at a window around specific positions you care about rather than the whole sequence:\n\n```python\n# Look at how position 10-20 attends to everything\nslice_attn = attn_matrix[10:20, :]\n```\n\nWhat's the use case — is this for analysis during development, or for a figure you need to present somewhere?"
+    },
+    {
+      "role": "user",
+      "content": "mostly analysis during development honestly. I'm trying to understand if my custom attention mechanism is actually doing what I think it's doing. the interactive plotly idea seems the most useful for that"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right call for exploratory analysis — being able to hover and see exactly which tokens are attending to which is way more useful than a static plot when you're doing 'wait is this actually working' investigations.\n\nOne more tip for the 'is my attention mechanism doing what I think' use case: it helps to run your visualization on deliberately constructed minimal examples before moving to real data. Like, if you have positional attention, construct a sequence where you know exactly what the right answer is (e.g., a pattern where token 5 should attend heavily to token 3), run it through, and see if the attention weights match your expectation. Way faster to validate behavior on toy inputs than trying to interpret a real sequence and wondering if the pattern is real or just noise.\n\nAlso worth checking: are you looking at attention weights after softmax or before? Pre-softmax (raw logits) are sometimes more interpretable in the 'does this make conceptual sense' direction, though post-softmax is what's actually used in computation. Depends what question you're asking.\n\nDoes your custom mechanism have any sparsity or masking going on? That can create artifacts in visualization that are easy to misread if you're not accounting for the mask."
+    },
+    {
+      "role": "user",
+      "content": "there is masking yeah — causal masking so the upper triangle is zeroed out. which means half my heatmap is always just zeros and it's kind of misleading visually"
+    },
+    {
+      "role": "assistant",
+      "content": "Right, classic causal transformer — you only want to see the lower triangle anyway. Clean fix: just mask out the upper triangle before plotting and set those values to NaN rather than zero, so they render as empty/grey rather than as the low end of your colormap:\n\n```python\nimport numpy as np\n\ndef mask_causal_attn(attn_matrix):\n    \"\"\"Set upper triangle to NaN for causal attention visualization.\"\"\"\n    seq_len = attn_matrix.shape[-1]\n    mask = np.triu(np.ones((seq_len, seq_len), dtype=bool), k=1)\n    attn_vis = attn_matrix.copy()\n    attn_vis[mask] = np.nan\n    return attn_vis\n```\n\nFor matplotlib, set `imshow` with `cmap='Blues'` and add `ax.set_facecolor('#f0f0f0')` — NaN values will show as the background color, which visually separates 'masked out' from 'low attention'.\n\nFor Plotly, NaN values are automatically rendered as empty (no color), which is actually perfect for your use case out of the box.\n\nThe result is a visualization where you're only looking at the valid lower triangle, your color scale spans the actual attention weight range, and it's immediately obvious which part of the matrix is meaningful. That should clean up a lot of the misleading visual noise you're seeing."
+    },
+    {
+      "role": "user",
+      "content": "oh the NaN trick is so obvious in retrospect lmao. okay this has been really helpful, I think I have everything I need to actually make sense of what's happening in my model"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, the NaN trick is one of those things you only learn when someone tells you — the instinct is always to put zeros or mask values, which is exactly the wrong move for visualization.\n\nTo recap what you're working with: per-row normalized attention, per-head visualization rather than averaged, causal mask upper triangle set to NaN, Plotly for interactive hover-to-see-token exploration during development. That's a solid stack for understanding what your custom attention is actually doing.\n\nGood luck with the model debugging — custom attention mechanisms are one of those things where the visualization either reassures you immediately or shows you something deeply concerning, and either way you need to see it. Hope it's the former."
+    }
+  ]
+}

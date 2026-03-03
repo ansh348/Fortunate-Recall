@@ -1,0 +1,66 @@
+{
+  "session_id": 6,
+  "persona": "marcus_thompson",
+  "date": "2024-12-15",
+  "type": "critical",
+  "topic": "truck making a noise",
+  "facts_disclosed": ["Drives 2018 Ford F-150"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey so my F-150 is making this grinding noise when I hit the brakes. its an 18 and I been putting off looking at it"
+    },
+    {
+      "role": "assistant",
+      "content": "Grinding when braking on an '18 F-150 is usually one of a few things. Most likely your brake pads are worn down to the metal backing plate and they're grinding against the rotors. Could also be a stuck caliper or debris caught between the pad and rotor.\n\nHow long has it been making the noise? And does it happen every time you brake or only at certain speeds?"
+    },
+    {
+      "role": "user",
+      "content": "started about a week ago. happens pretty much every time now, worse when im going slow like pulling into the shop parking lot"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a pretty classic sign of pads worn down to metal-on-metal. The slower speed grinding is typical because at highway speeds wind and road noise can mask it.\n\nIf it's been a week of metal-on-metal contact, there's a good chance your rotors are scored up too. You might be looking at pads and rotors on whichever axle is grinding. Front is more common.\n\nHave you been able to tell if it's coming from the front or rear?"
+    },
+    {
+      "role": "user",
+      "content": "sounds like its up front to me. I know I know, I work on cars all day and cant find the time to look at my own truck. classic"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, that's the most common thing I hear from mechanics. The cobbler's kids have no shoes, right?\n\nFront brakes on the F-150 are straightforward. If your rotors are scored but not warped, you might get away with having them resurfaced instead of replacing. But honestly, with the price of aftermarket rotors for that truck, it's often not worth the machine time.\n\nFor parts, you're looking at maybe $150-200 for a decent set of pads and rotors for the front. Ceramic pads will run a bit more but they're quieter and throw less dust."
+    },
+    {
+      "role": "user",
+      "content": "yeah I was thinking just do pads and rotors and be done with it. rather not cheap out on brakes for a truck that heavy"
+    },
+    {
+      "role": "assistant",
+      "content": "Smart call. The F-150 is a heavy vehicle, especially if you're hauling anything, so good braking material matters. I'd go with a name brand ceramic pad — Wagner, Bosch, or Power Stop all make solid kits for that truck.\n\nPower Stop actually sells a kit with drilled and slotted rotors plus ceramic pads that runs around $200-250 for the front. Good heat dissipation for a heavier vehicle.\n\nSince you've got the skills, it's maybe an hour job on a lift. Just make sure you check the caliper slides and hardware while you're in there."
+    },
+    {
+      "role": "user",
+      "content": "power stop. ok I'll look into that. I been running it stock since I bought it so probably overdue anyway. you think I should do the rears while im at it"
+    },
+    {
+      "role": "assistant",
+      "content": "If the rears aren't making noise and still have meat on the pads, I wouldn't rush it. But since you'll already have the truck up and the tools out, it's worth pulling a rear wheel and doing a visual check. If the pads are under 3-4mm, might as well knock it all out at once.\n\nWith the '18 having some years on it now, it's a good time for a full brake audit. Check your brake fluid condition too — if it's dark, a flush wouldn't hurt."
+    },
+    {
+      "role": "user",
+      "content": "good call on the fluid. alright man appreciate it. gonna try to knock this out this weekend before it gets worse"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like a plan. Don't let it go much longer — metal-on-metal will chew through those rotors fast, and then you're spending more than you need to. Should be a quick job for someone who does this for a living.\n\nGood luck with it this weekend."
+    },
+    {
+      "role": "user",
+      "content": "yeah no kidding. thanks brother"
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. Take care."
+    }
+  ]
+}

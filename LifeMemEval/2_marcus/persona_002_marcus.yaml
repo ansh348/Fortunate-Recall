@@ -1,0 +1,324 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 002: Marcus Thompson
+# ============================================================
+# Ground truth timeline. All questions validated against this.
+# ============================================================
+
+persona:
+  name: "Marcus Thompson"
+  age: 43
+  gender: male
+  location_current: "Memphis, Tennessee"
+  occupation_current: "Owner of Thompson Tires & Auto (independent shop, 3 employees)"
+  personality: >
+    Straightforward, practical, no-nonsense but surprisingly warm.
+    Talks like a small business owner — always thinking about costs,
+    customers, and keeping the shop running. Uses short sentences.
+    Not very tech-savvy but trying to learn. Dry humor. Loyal to
+    his people. Doesn't overshare but opens up when he trusts.
+    Calls things "man" and "brother." Says "appreciate it" a lot.
+    Doesn't use emojis or lol. Occasional typos from phone keyboard.
+
+# ============================================================
+# STABLE IDENTITY — mentioned early, never repeated
+# Attack Vector 3: Should persist under noise
+# ============================================================
+stable_identity:
+  - fact: "Former Marine — served 4 years after high school"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about discipline or routine.
+      "I did 4 years in the Marines out of high school,
+      that's where I learned you just do the thing"
+
+  - fact: "Has Type 2 diabetes — manages with metformin and diet"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when asking about food or energy levels.
+      "my blood sugar was all over the place this morning,
+      I got type 2 a few years back and some days the
+      metformin isn't enough"
+
+  - fact: "Has a daughter Kayla, 16, lives with his ex-wife Denise in Nashville"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions her when talking about weekend plans.
+      "driving up to Nashville Saturday to see my daughter,
+      she's 16 now and I swear she ages a year every month"
+
+  - fact: "Didn't go to college — self-taught everything about business"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when asking about accounting or business stuff.
+      "I never went to college man, everything I know about
+      running a business I learned by screwing it up first"
+
+# ============================================================
+# SUPERSESSION EVENTS
+# Attack Vector 1 (preferences) + Attack Vector 4 (multi-version)
+# ============================================================
+supersession_events:
+  - slot: main_supplier
+    old_fact: "Uses Discount Tire Direct as main wholesale supplier"
+    old_session: 1
+    old_how: >
+      Comes up when discussing business costs. "I order most
+      of my inventory through Discount Tire Direct, they
+      give me decent wholesale pricing"
+    new_fact: "Switched to TireHub — better margins and faster delivery"
+    new_session: 20
+    new_how: >
+      Mentions it when talking about business improvements.
+      "finally made the switch to TireHub for wholesale,
+      the margins are way better and I'm getting next-day
+      on most orders now"
+    category: FINANCIAL_MATERIAL
+    attack_vector: 4
+
+  - slot: truck
+    old_fact: "Drives a 2018 Ford F-150"
+    old_session: 6
+    old_how: >
+      Mentions it when talking about a truck issue.
+      "my F-150 is making this noise, it's an 18"
+    new_fact: "Bought a 2024 Ram 1500 — traded in the Ford"
+    new_session: 24
+    new_how: >
+      Excited about it. "finally pulled the trigger on a
+      new truck, got a 24 Ram 1500. traded in the Ford"
+    category: FINANCIAL_MATERIAL
+    attack_vector: 1
+
+  - slot: hobby
+    old_fact: "Plays poker every Thursday night with friends"
+    old_session: 7
+    old_how: >
+      Mentions it casually when talking about his week.
+      "Thursday's poker night so I gotta close shop on time
+      for once"
+    new_fact: "Stopped poker — started fishing on weekends instead"
+    new_session: 23
+    new_how: >
+      "I actually quit the poker game, been getting out on
+      the lake instead. fishing is better for my head"
+    category: HOBBIES_RECREATION
+    attack_vector: 1
+
+# ============================================================
+# EXPIRING LOGISTICS
+# Attack Vector 2: Should expire after event time passes
+# ============================================================
+expiring_logistics:
+  - fact: "Shop inspection scheduled for March 15"
+    session: 10
+    event_date: "2025-03-15"
+    status: expired
+    how_disclosed: >
+      Stressed about it. "got the county inspection coming
+      March 15 and I gotta get the fire extinguishers
+      recertified before then"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Kayla's graduation June 2026"
+    session: 28
+    event_date: "2026-06-15"
+    status: upcoming
+    how_disclosed: >
+      Planning for it. "Kayla graduates next June and I
+      want to do something big for her"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Meeting with SBA loan officer Tuesday Feb 4"
+    session: 12
+    event_date: "2025-02-04"
+    status: expired
+    how_disclosed: >
+      Nervous about it. "got a meeting with the SBA loan
+      guy Tuesday about expanding"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Truck delivery arriving April 22"
+    session: 19
+    event_date: "2025-04-22"
+    status: expired
+    how_disclosed: >
+      "new alignment rack is coming April 22, I gotta
+      clear out bay 3 before then"
+    category: LOGISTICAL_CONTEXT
+
+# ============================================================
+# CONTRADICTIONS
+# Attack Vector 6: System should detect the conflict
+# ============================================================
+contradictions:
+  - old_fact: "Business is tight — barely breaking even some months"
+    old_session: 5
+    old_how: >
+      Venting about finances. "some months I'm barely
+      breaking even man, the margins on tires are razor thin"
+    new_fact: "Just hired a fourth employee — business is growing"
+    new_session: 26
+    new_how: >
+      Positive update. "just brought on a new guy, Carlos.
+      business has been good enough I couldn't keep up
+      with just three of us"
+    category: FINANCIAL_MATERIAL
+
+# ============================================================
+# RETRACTIONS
+# Attack Vector 7: System should suppress the retracted fact
+# ============================================================
+retractions:
+  - original_fact: "Thinking about opening a second location in Germantown"
+    original_session: 14
+    original_how: >
+      Exploring the idea. "been looking at a spot in
+      Germantown for a second shop, the rent's not bad"
+    retraction: "Scrapped the second location — too much risk right now"
+    retraction_session: 21
+    retraction_how: >
+      "yeah the Germantown thing is off the table. ran the
+      numbers again and it doesn't make sense, not with
+      what I still owe on the equipment loan"
+    category: PROJECTS_ENDEAVORS
+
+# ============================================================
+# AMBIGUOUS SUPERSESSION — low confidence, both should survive
+# ============================================================
+ambiguous:
+  - existing_fact: "Single — divorced from Denise 3 years ago"
+    existing_session: 8
+    tentative_fact: "Been seeing someone — a woman named Lisa"
+    tentative_session: 27
+    tentative_how: >
+      Casual, guarded. "been seeing somebody, her name's
+      Lisa. it's still early so I don't want to jinx it"
+    resolution: "Still early, unclear if serious"
+    category: RELATIONAL_BONDS
+
+# ============================================================
+# FILLER TOPICS
+# ============================================================
+filler_topics:
+  - "Help writing a professional email to a difficult customer"
+  - "Questions about QuickBooks or basic accounting"
+  - "Truck maintenance tips (not his personal truck — customer questions)"
+  - "Memphis BBQ debate (dry rub vs wet)"
+  - "Football — Titans fan, follows NFL closely"
+  - "Weather affecting business (rain = no customers, ice = alignment jobs)"
+  - "Trying to figure out social media marketing for the shop"
+  - "Help writing a job posting"
+  - "Random questions about history (casual interest)"
+  - "Complaining about supply chain issues"
+
+# ============================================================
+# SESSION SCHEDULE
+# ============================================================
+session_plan:
+  total_sessions: 35
+  time_span: "November 2024 — May 2026 (18 months)"
+
+  sessions:
+    1:  { type: critical, facts: ["Uses Discount Tire Direct as supplier"], topic: "business costs / ordering inventory" }
+    2:  { type: critical, facts: ["Daughter Kayla, 16, in Nashville with ex-wife Denise"], topic: "weekend plans" }
+    3:  { type: critical, facts: ["Former Marine — 4 years after high school"], topic: "discipline / morning routine" }
+    4:  { type: critical, facts: ["Type 2 diabetes, metformin"], topic: "energy levels / food" }
+    5:  { type: critical, facts: ["Didn't go to college, self-taught business", "Business barely breaking even"], topic: "accounting help" }
+    6:  { type: critical, facts: ["Drives 2018 Ford F-150"], topic: "truck making a noise" }
+    7:  { type: critical, facts: ["Poker every Thursday night"], topic: "weekly schedule" }
+    8:  { type: critical, facts: ["Divorced from Denise 3 years ago"], topic: "co-parenting logistics" }
+    9:  { type: filler, topic: "help writing email to angry customer about warranty claim" }
+    10: { type: critical, facts: ["Shop inspection March 15"], topic: "inspection prep stress" }
+    11: { type: filler, topic: "Memphis BBQ — dry rub vs wet debate" }
+    12: { type: critical, facts: ["SBA loan meeting Tuesday Feb 4"], topic: "loan meeting nerves" }
+    13: { type: filler, topic: "Titans playoff chances / NFL talk" }
+    14: { type: critical, facts: ["Looking at second location in Germantown"], topic: "expansion planning" }
+    15: { type: filler, topic: "social media marketing for the shop" }
+    16: { type: filler, topic: "rainy week killing business — venting" }
+    17: { type: filler, topic: "help writing job posting for tire technician" }
+    18: { type: filler, topic: "supply chain rant — tires backordered 3 weeks" }
+    19: { type: critical, facts: ["Alignment rack delivery April 22"], topic: "shop equipment upgrade" }
+    20: { type: critical, facts: ["Switched to TireHub from Discount Tire Direct"], topic: "supplier change" }
+    21: { type: critical, facts: ["Germantown second location scrapped"], topic: "business decision" }
+    22: { type: filler, topic: "QuickBooks question about categorizing expenses" }
+    23: { type: critical, facts: ["Quit poker, started fishing instead"], topic: "new hobby" }
+    24: { type: critical, facts: ["Bought 2024 Ram 1500, traded Ford"], topic: "new truck excitement" }
+    25: { type: filler, topic: "ice storm — alignment jobs flooding in" }
+    26: { type: critical, facts: ["Hired fourth employee Carlos — business growing"], topic: "staffing" }
+    27: { type: critical, facts: ["Seeing someone named Lisa — early"], topic: "personal life update" }
+    28: { type: critical, facts: ["Kayla graduating June 2026"], topic: "graduation planning" }
+    29: { type: filler, topic: "random history question — Battle of Memphis" }
+    30: { type: filler, topic: "help with a Google Business profile" }
+    31: { type: filler, topic: "customer scam attempt — asking for advice" }
+    32: { type: filler, topic: "comparing truck bed liners" }
+    33: { type: filler, topic: "summer heat affecting tire blowout rates" }
+    34: { type: filler, topic: "thinking about getting shop security cameras" }
+    35: { type: filler, topic: "reflecting on the year — grateful for growth" }
+
+# ============================================================
+# GROUND TRUTH QUESTIONS
+# ============================================================
+draft_questions:
+  - question: "Who is Marcus's main tire supplier?"
+    attack_vector: 4  # multi-version
+    correct: "TireHub (switched from Discount Tire Direct)"
+    wrong_if_surfaced: "Discount Tire Direct"
+
+  - question: "What vehicle does Marcus drive?"
+    attack_vector: 1  # superseded preference
+    correct: "2024 Ram 1500"
+    wrong_if_surfaced: "2018 Ford F-150"
+
+  - question: "Is Marcus planning to open a second shop location?"
+    attack_vector: 7  # retraction
+    correct: "No — he considered Germantown but scrapped it (too much financial risk)"
+    wrong_if_surfaced: "Looking at a spot in Germantown"
+
+  - question: "What health conditions should be considered for Marcus?"
+    attack_vector: 3  # stable identity under noise
+    correct: "Type 2 diabetes, managed with metformin and diet"
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Marcus have any upcoming inspections or deadlines?"
+    attack_vector: 2  # expired logistics
+    correct: "Kayla's graduation June 2026 (if before June 2026)"
+    wrong_if_surfaced: "Shop inspection March 15 (already passed)"
+
+  - question: "What does Marcus do for fun?"
+    attack_vector: 1  # superseded hobby
+    correct: "Fishing on weekends"
+    wrong_if_surfaced: "Poker every Thursday night"
+
+  - question: "What's Marcus's relationship status?"
+    attack_vector: null  # tests soft supersession
+    correct: "Divorced, recently started seeing someone named Lisa (early/unclear)"
+    wrong_if_surfaced: "Single" (stated as definitive without Lisa context)
+
+  - question: "How is Marcus's business doing financially?"
+    attack_vector: 6  # contradiction
+    correct: "Growing — recently hired a fourth employee"
+    wrong_if_surfaced: "Barely breaking even" (without noting the improvement)
+
+  - question: "What's Marcus's educational background?"
+    attack_vector: 3  # stable identity
+    correct: "No college — self-taught. Former Marine."
+    wrong_if_surfaced: null  # failure is NOT surfacing it
+
+  - question: "Does Marcus have any equipment deliveries coming?"
+    attack_vector: 2  # expired logistics
+    correct: "No current deliveries (alignment rack arrived April 22, already past)"
+    wrong_if_surfaced: "Alignment rack arriving April 22"
+
+  - question: "What's Marcus's family situation?"
+    attack_vector: 5  # broad category query
+    correct: "Daughter Kayla (16) in Nashville with ex-wife Denise. Recently seeing Lisa."
+    wrong_if_surfaced: null  # failure is incomplete picture
+
+  - question: "Does Marcus need to prepare for any meetings?"
+    attack_vector: 2  # expired logistics
+    correct: "No upcoming meetings (SBA loan meeting was Feb 4, already passed)"
+    wrong_if_surfaced: "SBA loan meeting Tuesday Feb 4"
