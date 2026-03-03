@@ -22,7 +22,7 @@ from category_retrieval import fetch_category_edges, ensure_in_edge_cache
 class RoutingConfig:
     """Configuration for category-aware retrieval routing."""
     enable_routing: bool = True           # master toggle for A/B testing
-    per_category_limit: int = 10          # max edges per category from Cypher
+    per_category_limit: int = 50          # max edges per category from Cypher
     routing_categories_max: int = 3       # top N categories from classifier
     min_classifier_score: float = 0.3     # threshold to include a category
     include_global: bool = True           # global search always runs alongside

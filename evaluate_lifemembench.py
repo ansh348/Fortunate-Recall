@@ -218,9 +218,13 @@ STOPWORDS = {
 }
 
 
-def extract_keywords(text: str, min_len: int = 3) -> list[str]:
-    words = re.findall(r"[a-zA-Z]+", text.lower())
-    return [w for w in words if len(w) >= min_len and w not in STOPWORDS]
+def extract_keywords(text: str, min_len: int = 2) -> list[str]:
+    tokens = re.findall(r"[a-zA-Z0-9]+", text.lower())
+    keywords = [w for w in tokens if len(w) >= min_len and w not in STOPWORDS]
+    # Also extract hyphenated compounds (e.g. "parent-teacher", "first-generation")
+    compounds = re.findall(r"[a-zA-Z]+-[a-zA-Z]+", text.lower())
+    keywords.extend(compounds)
+    return list(dict.fromkeys(keywords))  # deduplicate preserving order
 
 
 def extract_numbers(text: str) -> list[str]:
@@ -233,7 +237,6 @@ CYPHER_SOURCE_BASELINES = {
     "cypher_neighbor": 0.3,
     "category_routed": 0.35,
 }
-
 
 def _to_unix_ts(value) -> float:
     """Convert Neo4j/Python datetime-ish values to unix seconds."""
@@ -362,13 +365,15 @@ async def build_candidate_pool(
     embedder=None,
 ) -> list[Candidate]:
     """Build fat candidate pool using 5 retrieval strategies."""
-    seen_uuids = set()
-    candidates = []
+    uuid_to_candidate: dict[str, Candidate] = {}
 
     def add(c: Candidate):
-        if c.uuid not in seen_uuids:
-            seen_uuids.add(c.uuid)
-            candidates.append(c)
+        existing = uuid_to_candidate.get(c.uuid)
+        if existing is None:
+            uuid_to_candidate[c.uuid] = c
+        elif c.graphiti_score > existing.graphiti_score:
+            existing.graphiti_score = c.graphiti_score
+            existing.source = c.source
 
     keywords = extract_keywords(question)
 
@@ -480,6 +485,8 @@ async def build_candidate_pool(
                 add(Candidate(uuid, fact, source, score))
         except Exception:
             pass
+
+    candidates = list(uuid_to_candidate.values())
 
     # Normalize graphiti_score to [0, 1] across the full pool
     if len(candidates) > 1:
