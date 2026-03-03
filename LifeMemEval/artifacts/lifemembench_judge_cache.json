@@ -5591,5 +5591,26 @@
     "reasoning": "The fact contains the exact mileage figure of 180,000 miles on the Camry, which matches the correct answer. The phrasing 'owns' vs 'old/replaced' is a temporal framing difference, but the numeric preservation criterion is satisfied since the key number 180,000 is present and accurate.",
     "question_id": "david_q14",
     "edge_uuid": "a9734783-7aba-4882-8191-6b2cfbebc11a"
+  },
+  "95b17d5a8660ae3e": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only states that the user owns an independent shop, which is neutral background information. It neither confirms that the second location plan was scrapped nor contains any wrong indicator about the Germantown expansion.",
+    "question_id": "marcus_q03",
+    "edge_uuid": "f03f1a38-6c73-4295-87ac-429b9c52a3be"
+  },
+  "09a00fe3c4309802": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact about estimating 15-20k for a second shop reflects an earlier planning stage before Marcus scrapped the idea due to financial risk. This is stale/superseded information that contradicts the final decision to not open a second location.",
+    "question_id": "marcus_q03",
+    "edge_uuid": "b984188e-f8e5-49fe-8b93-3357e8179a07"
+  },
+  "e7f9b9b26fd35d82": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about real estate in Spring Branch, Houston, and has no relevance to Omar's car purchase plans or the Toyota Camry situation.",
+    "question_id": "omar_q05",
+    "edge_uuid": "8f08e01c-c3fe-44c8-9d51-66bd46e17fac"
   }
 }

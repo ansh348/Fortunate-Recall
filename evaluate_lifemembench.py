@@ -310,6 +310,7 @@ async def load_edge_cache(driver, group_id: str) -> dict[str, dict]:
         WITH e,
              max(ep.valid_at) AS episode_time
         RETURN e.uuid AS uuid,
+               e.fact AS fact,
                e.fr_primary_category AS primary_category,
                e.fr_membership_weights AS membership_weights,
                e.fr_confidence AS confidence,
@@ -609,6 +610,115 @@ def _is_backward_looking(question: str) -> bool:
         r"\bdid .+ before\b",
     ]
     return any(re.search(p, q) for p in past_patterns)
+
+
+# ---------------------------------------------------------------------------
+# AV7 retraction detection helpers
+# ---------------------------------------------------------------------------
+
+def _is_retraction_query(question: str) -> bool:
+    """Detect questions asking whether a plan/intention is still active.
+
+    Returns True for "Is X still planning to Y?" style questions where
+    the answer might be "No, they retracted/cancelled."
+    """
+    q = question.lower()
+    patterns = [
+        r"\bis \w+ (?:still )?planning\b",
+        r"\bis \w+ still (?:doing|going|working|looking|pursuing)\b",
+        r"\bdoes \w+ still (?:plan|want|intend)\b",
+        r"\bis \w+ still interested in\b",
+        r"\bis \w+ (?:planning|going) to (?:buy|get|open|start|do)\b",
+    ]
+    return any(re.search(p, q) for p in patterns)
+
+
+_RETRACTION_MARKERS = [
+    "plan is dead", "is dead for now", "off the table",
+    "scrapped", "not happening", "decided against",
+    "said no", "denied", "deny ", "no longer", "cancelled",
+    "abandoned", "fell through", "didn't work out",
+    "not going to happen", "not allowed", "prohibit",
+    "gave up on",
+]
+
+_STOP_WORDS = frozenset(
+    "the a an is was were are has have had been being will would could "
+    "should can may might shall do does did to in on at by for with from "
+    "and or but not no if so of that this it its they them their he she "
+    "him her his user about after also just now still very really thing "
+    "whole actually basically".split()
+)
+
+_RETRACTION_NOISE = frozenset(
+    "plan plans dead table happening decided against said denied longer "
+    "cancelled abandoned fell through work going anymore "
+    "landlord told because too much money expensive cost "
+    "really actually absolutely totally completely".split()
+)
+
+
+def _stem_words(words: set[str]) -> set[str]:
+    """Basic stemming: strip trailing s/ies for plural matching."""
+    stemmed = set()
+    for w in words:
+        stemmed.add(w)
+        if w.endswith('ies') and len(w) > 4:
+            stemmed.add(w[:-3] + 'y')
+        elif w.endswith('s') and not w.endswith('ss') and len(w) > 3:
+            stemmed.add(w[:-1])
+    return stemmed
+
+
+def filter_retracted_candidates(
+    candidates: list[Candidate],
+    edge_cache: dict[str, dict],
+) -> tuple[list[Candidate], int]:
+    """Remove plan edges whose topic has been retracted anywhere in the persona's graph.
+
+    Strategy: scan ALL enriched edges (via edge_cache) for retraction markers,
+    extract topic keywords, and suppress candidate pool edges sharing those keywords.
+
+    This works even when the retraction-affirming edge itself isn't in the
+    candidate pool — the edge_cache covers the entire persona graph.
+
+    Returns (filtered_candidates, num_removed).
+    """
+    # Step 1: Find retraction-affirming facts across ALL persona edges
+    retraction_facts: list[str] = []
+    for attrs in edge_cache.values():
+        fact = attrs.get("fact") or ""
+        fact_low = fact.lower()
+        if any(m in fact_low for m in _RETRACTION_MARKERS):
+            retraction_facts.append(fact_low)
+
+    if not retraction_facts:
+        return candidates, 0  # No retraction signal in persona's graph
+
+    # Step 2: Extract topic words from retraction facts
+    topic_words: set[str] = set()
+    for fact_low in retraction_facts:
+        words = set(re.findall(r'\b[a-z]{3,}\b', fact_low))
+        words -= _STOP_WORDS | _RETRACTION_NOISE
+        topic_words |= _stem_words(words)
+
+    # Step 3: Filter candidates that share topic words but lack retraction language
+    filtered = []
+    removed_facts = []
+    for c in candidates:
+        fact_low = c.fact.lower()
+        has_retraction_lang = any(m in fact_low for m in _RETRACTION_MARKERS)
+        if has_retraction_lang:
+            filtered.append(c)  # Always keep retraction-affirming edges
+            continue
+        fact_words = set(re.findall(r'\b[a-z]{3,}\b', fact_low))
+        shared = _stem_words(fact_words) & topic_words
+        if shared:
+            removed_facts.append((c.fact[:80], shared))
+            continue
+        filtered.append(c)
+
+    return filtered, len(removed_facts)
 
 
 # ===========================================================================
@@ -1190,6 +1300,12 @@ async def evaluate_persona(
             if backward and apply_supersession:
                 print(f"        >> Skipped supersession filter (backward-looking): {q['id']}")
             total_superseded_removed += pre_supersession_size - len(pool)
+
+            # Filter retracted plans for retraction-type queries (AV7 support)
+            if _is_retraction_query(q["question"]):
+                pool, retraction_removed = filter_retracted_candidates(pool, edge_cache)
+                if retraction_removed:
+                    print(f"        >> Retraction filter ({q['id']}): removed {retraction_removed} candidates")
 
             total_pool_size += len(pool)
 
