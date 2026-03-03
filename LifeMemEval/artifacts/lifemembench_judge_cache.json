@@ -5584,5 +5584,12 @@
     "reasoning": "The fact confirms working at dad's company Brennan and Sons Electric, which matches the correct answer. It omits 'apprentice electrician' and 'union' details but partial matches count for AV3_stable_identity.",
     "question_id": "jake_q12",
     "edge_uuid": "f56d62f5-de7f-49cc-8980-700d1b13ad19"
+  },
+  "dbff3e5b9dd74328": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact contains the exact mileage figure of 180,000 miles on the Camry, which matches the correct answer. The phrasing 'owns' vs 'old/replaced' is a temporal framing difference, but the numeric preservation criterion is satisfied since the key number 180,000 is present and accurate.",
+    "question_id": "david_q14",
+    "edge_uuid": "a9734783-7aba-4882-8191-6b2cfbebc11a"
   }
 }

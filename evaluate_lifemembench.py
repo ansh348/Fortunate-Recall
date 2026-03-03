@@ -585,6 +585,32 @@ def filter_superseded(
     return filtered
 
 
+def _is_backward_looking(question: str) -> bool:
+    """Detect backward-looking temporal intent via keyword matching.
+
+    Returns True if the question asks about historical/past state,
+    meaning superseded edges should be preserved (not filtered out).
+    """
+    q = question.lower()
+    # Explicit past-reference phrases
+    phrases = [
+        "before switching", "before he moved", "before she stopped",
+        "before they changed", "before she moved", "before he stopped",
+        "used to", "previously", "prior to", "back when",
+        "old ", "former ", "original ",
+    ]
+    if any(p in q for p in phrases):
+        return True
+    # Past-tense question patterns
+    past_patterns = [
+        r"\bhow (?:much|often|many) (?:was|were|did)\b",
+        r"\bwhat (?:was|were|did)\b",
+        r"\bbefore (?:he|she|they|it)\b",
+        r"\bdid .+ before\b",
+    ]
+    return any(re.search(p, q) for p in past_patterns)
+
+
 # ===========================================================================
 # Section 7: LLM Judge (LifeMemBench-specific)
 # ===========================================================================
@@ -1156,9 +1182,13 @@ async def evaluate_persona(
                 pool = [c for c in pool if c.source != "category_routed"]
 
             # Filter superseded edges for behavioral configs
+            # Skip filter for backward-looking queries that need historical edges
             pre_supersession_size = len(pool)
-            if apply_supersession:
+            backward = _is_backward_looking(q["question"])
+            if apply_supersession and not backward:
                 pool = filter_superseded(pool, edge_cache)
+            if backward and apply_supersession:
+                print(f"        >> Skipped supersession filter (backward-looking): {q['id']}")
             total_superseded_removed += pre_supersession_size - len(pool)
 
             total_pool_size += len(pool)
