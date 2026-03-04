@@ -11,7 +11,7 @@
       "tom",
       "omar"
     ],
-    "timestamp": "2026-03-04T22:05:02.720196+00:00",
+    "timestamp": "2026-03-04T21:20:25.026648+00:00",
     "total_questions": 112
   },
   "summary": {
@@ -168,7 +168,7 @@
             "source": "graphiti",
             "activation": 0.3866,
             "semantic": 0.8972,
-            "blended": 0.8462,
+            "blended": 0.8461,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -218,7 +218,7 @@
             "source": "graphiti",
             "activation": 0.163,
             "semantic": 0.7944,
-            "blended": 0.7629,
+            "blended": 0.7628,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -257,7 +257,7 @@
         "av_pass": true,
         "answer_rank": 1,
         "reciprocal_rank": 1.0,
-        "pool_size": 112,
+        "pool_size": 85,
         "answerable": true,
         "top5_facts": [
           {
@@ -375,7 +375,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 127,
+        "pool_size": 140,
         "answerable": false,
         "top5_facts": [
           {
@@ -650,7 +650,7 @@
             "source": "graphiti",
             "activation": 0.134,
             "semantic": 0.7985,
-            "blended": 0.7653,
+            "blended": 0.7652,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -1083,7 +1083,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 114,
+        "pool_size": 153,
         "answerable": false,
         "top5_facts": [
           {
@@ -1172,7 +1172,7 @@
             "source": "graphiti",
             "activation": 0.6171,
             "semantic": 0.7942,
-            "blended": 0.7587,
+            "blended": 0.7588,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -1319,7 +1319,7 @@
         "av_pass": true,
         "answer_rank": 5,
         "reciprocal_rank": 0.2,
-        "pool_size": 118,
+        "pool_size": 165,
         "answerable": true,
         "top5_facts": [
           {
@@ -1358,7 +1358,7 @@
             "source": "graphiti",
             "activation": 0.4603,
             "semantic": 0.9001,
-            "blended": 0.8562,
+            "blended": 0.8561,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -1388,7 +1388,7 @@
             "source": "graphiti",
             "activation": 0.6724,
             "semantic": 0.8202,
-            "blended": 0.8055,
+            "blended": 0.8054,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -1398,7 +1398,7 @@
             "source": "graphiti",
             "activation": 0.7482,
             "semantic": 0.7603,
-            "blended": 0.7543,
+            "blended": 0.7542,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -2263,7 +2263,7 @@
         "av_pass": true,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 122,
+        "pool_size": 99,
         "answerable": false,
         "top5_facts": [
           {
@@ -2381,7 +2381,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 79,
+        "pool_size": 78,
         "answerable": false,
         "top5_facts": [
           {
@@ -2635,8 +2635,8 @@
             "fact": "Robert Chandler mentioned getting a lawyer in the voicemail to Marcus Thompson",
             "source": "graphiti",
             "activation": 0.3909,
-            "semantic": 0.9796,
-            "blended": 0.9306,
+            "semantic": 0.9787,
+            "blended": 0.9298,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2645,8 +2645,8 @@
             "fact": "user has a business account been using it for years",
             "source": "graphiti",
             "activation": 0.1125,
-            "semantic": 0.9592,
-            "blended": 0.9304,
+            "semantic": 0.9574,
+            "blended": 0.9287,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2655,8 +2655,8 @@
             "fact": "user was told they need a Google Business Profile",
             "source": "graphiti",
             "activation": 0.7732,
-            "semantic": 0.9388,
-            "blended": 0.8808,
+            "semantic": 0.9362,
+            "blended": 0.8791,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2665,8 +2665,8 @@
             "fact": "shop owner has good people working with him",
             "source": "graphiti",
             "activation": 0.9951,
-            "semantic": 0.8571,
-            "blended": 0.8709,
+            "semantic": 0.8511,
+            "blended": 0.8655,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2675,8 +2675,8 @@
             "fact": "user just brought on a new guy named Carlos because business has been good enough that user couldn't keep up with just t",
             "source": "graphiti",
             "activation": 0.3953,
-            "semantic": 0.9184,
-            "blended": 0.8661,
+            "semantic": 0.9149,
+            "blended": 0.8629,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -2685,8 +2685,8 @@
             "fact": "user will try to mess with the Google Business Profile this weekend",
             "source": "graphiti",
             "activation": 0.7773,
-            "semantic": 0.8776,
-            "blended": 0.8425,
+            "semantic": 0.8723,
+            "blended": 0.8391,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2695,8 +2695,8 @@
             "fact": "user decided the Germantown spot is off the table because the numbers don't make sense with what they still owe on the e",
             "source": "graphiti",
             "activation": 0.3449,
-            "semantic": 0.7959,
-            "blended": 0.7734,
+            "semantic": 0.7872,
+            "blended": 0.7651,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2705,8 +2705,8 @@
             "fact": "user has sales records to check from the last month",
             "source": "graphiti",
             "activation": 0.8171,
-            "semantic": 0.7347,
-            "blended": 0.7635,
+            "semantic": 0.7234,
+            "blended": 0.7562,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -2715,8 +2715,8 @@
             "fact": "Robert Chandler complained to Marcus Thompson that the brakes are squealing and wants his money back after the brake job",
             "source": "graphiti",
             "activation": 0.2673,
-            "semantic": 0.8163,
-            "blended": 0.7614,
+            "semantic": 0.8085,
+            "blended": 0.7544,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -2971,7 +2971,7 @@
         "av_pass": true,
         "answer_rank": 2,
         "reciprocal_rank": 0.5,
-        "pool_size": 52,
+        "pool_size": 64,
         "answerable": true,
         "top5_facts": [
           {
@@ -3026,6 +3026,16 @@
           },
           {
             "rank": 6,
+            "fact": "user might need to work with Kayla's mom on the guest list since user does not know half of Kayla's friends",
+            "source": "graphiti",
+            "activation": 0.6916,
+            "semantic": 0.8,
+            "blended": 0.7892,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
             "fact": "user has Kayla every other weekend and splits holidays with Denise",
             "source": "graphiti",
             "activation": 0.3289,
@@ -3035,23 +3045,13 @@
             "contains_wrong": false
           },
           {
-            "rank": 7,
+            "rank": 8,
             "fact": "user just brought on a new guy named Carlos because business has been good enough that user couldn't keep up with just t",
             "source": "graphiti",
             "activation": 0.3953,
-            "semantic": 0.8,
-            "blended": 0.7595,
-            "supports_correct": false,
-            "contains_wrong": false
-          },
-          {
-            "rank": 8,
-            "fact": "user might need to work with Kayla's mom on the guest list since user does not know half of Kayla's friends",
-            "source": "graphiti",
-            "activation": 0.6916,
             "semantic": 0.7667,
-            "blended": 0.7592,
-            "supports_correct": true,
+            "blended": 0.7295,
+            "supports_correct": false,
             "contains_wrong": false
           },
           {
@@ -3207,7 +3207,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 123,
+        "pool_size": 139,
         "answerable": false,
         "top5_facts": [
           {
@@ -3325,7 +3325,7 @@
         "av_pass": true,
         "answer_rank": 1,
         "reciprocal_rank": 1.0,
-        "pool_size": 114,
+        "pool_size": 93,
         "answerable": true,
         "top5_facts": [
           {
@@ -3353,8 +3353,8 @@
             "fact": "Robert Chandler mentioned getting a lawyer in the voicemail to Marcus Thompson",
             "source": "graphiti",
             "activation": 0.3909,
-            "semantic": 0.9598,
-            "blended": 0.9119,
+            "semantic": 0.9597,
+            "blended": 0.9117,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3363,8 +3363,8 @@
             "fact": "Robert Chandler complained to Marcus Thompson that the brakes are squealing and wants his money back after the brake job",
             "source": "graphiti",
             "activation": 0.2673,
-            "semantic": 0.9398,
-            "blended": 0.8725,
+            "semantic": 0.9396,
+            "blended": 0.8723,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3373,8 +3373,8 @@
             "fact": "user drove past a historical marker about the Battle of Memphis a hundred times probably",
             "source": "graphiti",
             "activation": 0.4473,
-            "semantic": 0.9197,
-            "blended": 0.8252,
+            "semantic": 0.9194,
+            "blended": 0.825,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3383,8 +3383,8 @@
             "fact": "Marcus Thompson's shop used quality name-brand parts for Robert Chandler's brake job",
             "source": "graphiti",
             "activation": 0.2982,
-            "semantic": 0.8795,
-            "blended": 0.8214,
+            "semantic": 0.8791,
+            "blended": 0.821,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3393,8 +3393,8 @@
             "fact": "shop owner earned business success with how he treats customers",
             "source": "graphiti",
             "activation": 0.9931,
-            "semantic": 0.7992,
-            "blended": 0.8186,
+            "semantic": 0.7985,
+            "blended": 0.818,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3403,8 +3403,8 @@
             "fact": "user had a set of all terrains take two weeks last month",
             "source": "graphiti",
             "activation": 0.3107,
-            "semantic": 0.8394,
-            "blended": 0.8129,
+            "semantic": 0.8388,
+            "blended": 0.8124,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3413,8 +3413,8 @@
             "fact": "last time user did not get home until almost 1am after visiting Kayla and was useless on Monday",
             "source": "graphiti",
             "activation": 0.2347,
-            "semantic": 0.8193,
-            "blended": 0.7608,
+            "semantic": 0.8187,
+            "blended": 0.7603,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3423,8 +3423,8 @@
             "fact": "people call around asking how much for a set of 225/65R17s and tire price stays competitive separately from mounting and",
             "source": "graphiti",
             "activation": 0.1088,
-            "semantic": 0.7791,
-            "blended": 0.7456,
+            "semantic": 0.7784,
+            "blended": 0.7449,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -3443,7 +3443,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 100,
+        "pool_size": 85,
         "answerable": false,
         "top5_facts": [
           {
@@ -3461,8 +3461,8 @@
             "fact": "Elena is little Elena from the west side.",
             "source": "graphiti",
             "activation": 0.6936,
-            "semantic": 0.9803,
-            "blended": 0.9516,
+            "semantic": 0.9792,
+            "blended": 0.9506,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3471,8 +3471,8 @@
             "fact": "Elena is the user",
             "source": "graphiti",
             "activation": 0.3099,
-            "semantic": 0.9606,
-            "blended": 0.9126,
+            "semantic": 0.9583,
+            "blended": 0.9104,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3481,8 +3481,8 @@
             "fact": "Chicago is home for Elena.",
             "source": "graphiti",
             "activation": 0.7267,
-            "semantic": 0.9213,
-            "blended": 0.9018,
+            "semantic": 0.9167,
+            "blended": 0.8977,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3491,8 +3491,8 @@
             "fact": "Elena is engaged to Marco",
             "source": "graphiti",
             "activation": 0.8267,
-            "semantic": 0.9016,
-            "blended": 0.8941,
+            "semantic": 0.8958,
+            "blended": 0.8889,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3501,28 +3501,28 @@
             "fact": "user is referred to as Elena",
             "source": "graphiti",
             "activation": 0.1582,
-            "semantic": 0.941,
-            "blended": 0.8627,
+            "semantic": 0.9375,
+            "blended": 0.8596,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 7,
-            "fact": "Elena spent $340 on DoorDash last month",
+            "fact": "Elena went to dinner at an Italian place in Pilsen.",
             "source": "graphiti",
-            "activation": 0.3487,
-            "semantic": 0.8622,
-            "blended": 0.8365,
+            "activation": 0.7843,
+            "semantic": 0.875,
+            "blended": 0.8297,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 8,
-            "fact": "Elena went to dinner at an Italian place in Pilsen.",
+            "fact": "Elena spent $340 on DoorDash last month",
             "source": "graphiti",
-            "activation": 0.7843,
-            "semantic": 0.8819,
-            "blended": 0.8331,
+            "activation": 0.3487,
+            "semantic": 0.8542,
+            "blended": 0.8289,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3531,8 +3531,8 @@
             "fact": "Elena said yes to Marco's proposal and is now engaged to him.",
             "source": "graphiti",
             "activation": 0.7264,
-            "semantic": 0.8425,
-            "blended": 0.8309,
+            "semantic": 0.8333,
+            "blended": 0.8226,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -3541,8 +3541,8 @@
             "fact": "Marco keeps calling Elena his fiancee.",
             "source": "graphiti",
             "activation": 0.741,
-            "semantic": 0.8229,
-            "blended": 0.8147,
+            "semantic": 0.8125,
+            "blended": 0.8054,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -3737,7 +3737,7 @@
             "fact": "Elena is little Elena from the west side.",
             "source": "graphiti",
             "activation": 0.6936,
-            "semantic": 0.8602,
+            "semantic": 0.8601,
             "blended": 0.8435,
             "supports_correct": false,
             "contains_wrong": false
@@ -4151,7 +4151,7 @@
         "av_pass": true,
         "answer_rank": 5,
         "reciprocal_rank": 0.2,
-        "pool_size": 128,
+        "pool_size": 114,
         "answerable": true,
         "top5_facts": [
           {
@@ -4505,7 +4505,7 @@
         "av_pass": true,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 130,
+        "pool_size": 107,
         "answerable": false,
         "top5_facts": [
           {
@@ -4623,7 +4623,7 @@
         "av_pass": true,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 106,
+        "pool_size": 122,
         "answerable": false,
         "top5_facts": [
           {
@@ -4662,7 +4662,7 @@
             "source": "graphiti",
             "activation": 0.3099,
             "semantic": 0.9592,
-            "blended": 0.9112,
+            "blended": 0.9113,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4671,8 +4671,8 @@
             "fact": "Elena's sister yelled WEDDING WEDDING WEDDING upon learning of her engagement.",
             "source": "graphiti",
             "activation": 0.7287,
-            "semantic": 0.8776,
-            "blended": 0.8627,
+            "semantic": 0.8777,
+            "blended": 0.8628,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4681,8 +4681,8 @@
             "fact": "Marco popped the question to Elena last weekend.",
             "source": "graphiti",
             "activation": 0.7513,
-            "semantic": 0.8571,
-            "blended": 0.8466,
+            "semantic": 0.8573,
+            "blended": 0.8467,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4692,7 +4692,7 @@
             "source": "graphiti",
             "activation": 0.1582,
             "semantic": 0.9184,
-            "blended": 0.8423,
+            "blended": 0.8424,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4701,7 +4701,7 @@
             "fact": "user is going to call doctor's office tomorrow to see if they have any Saturday appointments",
             "source": "graphiti",
             "activation": 0.7002,
-            "semantic": 0.898,
+            "semantic": 0.8981,
             "blended": 0.8288,
             "supports_correct": false,
             "contains_wrong": false
@@ -4711,8 +4711,8 @@
             "fact": "Chicago is home for Elena.",
             "source": "graphiti",
             "activation": 0.7267,
-            "semantic": 0.8367,
-            "blended": 0.8257,
+            "semantic": 0.8369,
+            "blended": 0.8259,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4721,8 +4721,8 @@
             "fact": "Marco keeps calling Elena his fiancee.",
             "source": "graphiti",
             "activation": 0.741,
-            "semantic": 0.8163,
-            "blended": 0.8088,
+            "semantic": 0.8165,
+            "blended": 0.8089,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -4859,7 +4859,7 @@
         "av_pass": true,
         "answer_rank": 2,
         "reciprocal_rank": 0.5,
-        "pool_size": 88,
+        "pool_size": 125,
         "answerable": true,
         "top5_facts": [
           {
@@ -4877,8 +4877,8 @@
             "fact": "user has about 42k left on student loans",
             "source": "graphiti",
             "activation": 0.4936,
-            "semantic": 0.9796,
-            "blended": 0.9553,
+            "semantic": 0.9803,
+            "blended": 0.956,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -4887,8 +4887,8 @@
             "fact": "user's student loans have interest rate around 5.5% or 6%",
             "source": "graphiti",
             "activation": 0.4936,
-            "semantic": 0.9388,
-            "blended": 0.9165,
+            "semantic": 0.9409,
+            "blended": 0.9186,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4897,8 +4897,8 @@
             "fact": "user has been paying on student loans for like 4 years",
             "source": "graphiti",
             "activation": 0.6556,
-            "semantic": 0.9184,
-            "blended": 0.9052,
+            "semantic": 0.9212,
+            "blended": 0.908,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4907,8 +4907,8 @@
             "fact": "Elena spent $340 on DoorDash last month",
             "source": "graphiti",
             "activation": 0.3487,
-            "semantic": 0.8776,
-            "blended": 0.8511,
+            "semantic": 0.8819,
+            "blended": 0.8552,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4917,8 +4917,8 @@
             "fact": "user has been on the standard 10 year plan for student loans",
             "source": "graphiti",
             "activation": 0.6133,
-            "semantic": 0.8571,
-            "blended": 0.845,
+            "semantic": 0.8622,
+            "blended": 0.8497,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4927,8 +4927,8 @@
             "fact": "user is referred to as Elena",
             "source": "graphiti",
             "activation": 0.1582,
-            "semantic": 0.898,
-            "blended": 0.824,
+            "semantic": 0.9016,
+            "blended": 0.8272,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4937,8 +4937,8 @@
             "fact": "user has loans from BSN that user is still paying off",
             "source": "graphiti",
             "activation": 0.2154,
-            "semantic": 0.8163,
-            "blended": 0.7863,
+            "semantic": 0.8228,
+            "blended": 0.7924,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -4947,18 +4947,18 @@
             "fact": "Elena is little Elena from the west side.",
             "source": "graphiti",
             "activation": 0.6936,
-            "semantic": 0.7959,
-            "blended": 0.7857,
+            "semantic": 0.8031,
+            "blended": 0.7922,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 10,
-            "fact": "Elena is the user",
+            "fact": "Elena works night shifts with her coworkers at the hospital and does 12-hour shifts",
             "source": "graphiti",
-            "activation": 0.3099,
-            "semantic": 0.8367,
-            "blended": 0.784,
+            "activation": 0.8526,
+            "semantic": 0.7834,
+            "blended": 0.7903,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -5095,7 +5095,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 127,
+        "pool_size": 138,
         "answerable": false,
         "top5_facts": [
           {
@@ -5449,7 +5449,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 129,
+        "pool_size": 124,
         "answerable": false,
         "top5_facts": [
           {
@@ -5497,13 +5497,33 @@
             "fact": "David is considering entering the March invitational.",
             "source": "graphiti",
             "activation": 0.8596,
-            "semantic": 0.8786,
-            "blended": 0.8719,
+            "semantic": 0.919,
+            "blended": 0.8982,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 6,
+            "fact": "David teaches user's student who is a junior with strong reading skills.",
+            "source": "graphiti",
+            "activation": 0.8684,
+            "semantic": 0.8786,
+            "blended": 0.8775,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "David plans to go back to user's student with a proper set of questions to consider.",
+            "source": "graphiti",
+            "activation": 0.9351,
+            "semantic": 0.8381,
+            "blended": 0.872,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
             "fact": "user is a history teacher",
             "source": "graphiti",
             "activation": 0.2609,
@@ -5513,42 +5533,22 @@
             "contains_wrong": false
           },
           {
-            "rank": 7,
-            "fact": "David teaches user's student who is a junior with strong reading skills.",
-            "source": "graphiti",
-            "activation": 0.8684,
-            "semantic": 0.8583,
-            "blended": 0.8593,
-            "supports_correct": false,
-            "contains_wrong": false
-          },
-          {
-            "rank": 8,
-            "fact": "user's wife pointed out that user has been a better teacher during the years writing the book because writing forced use",
-            "source": "graphiti",
-            "activation": 0.2148,
-            "semantic": 0.919,
-            "blended": 0.8486,
-            "supports_correct": false,
-            "contains_wrong": true
-          },
-          {
             "rank": 9,
-            "fact": "David plans to go back to user's student with a proper set of questions to consider.",
+            "fact": "Student in David's third or fourth year wrote on parallels between Reconstruction and the Civil Rights Movement by April",
             "source": "graphiti",
-            "activation": 0.9351,
+            "activation": 0.9992,
             "semantic": 0.7976,
-            "blended": 0.8457,
+            "blended": 0.8682,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 10,
-            "fact": "Student in David's third or fourth year wrote on parallels between Reconstruction and the Civil Rights Movement by April",
+            "fact": "David knows a few coaches at Portland-area schools.",
             "source": "graphiti",
-            "activation": 0.9992,
-            "semantic": 0.7166,
-            "blended": 0.8155,
+            "activation": 0.7822,
+            "semantic": 0.8583,
+            "blended": 0.8507,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -5685,7 +5685,7 @@
         "av_pass": true,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 129,
+        "pool_size": 128,
         "answerable": false,
         "top5_facts": [
           {
@@ -5773,7 +5773,7 @@
             "fact": "The students are AP History students at their core.",
             "source": "graphiti",
             "activation": 0.6599,
-            "semantic": 0.7708,
+            "semantic": 0.7707,
             "blended": 0.7597,
             "supports_correct": false,
             "contains_wrong": false
@@ -5803,7 +5803,7 @@
         "av_pass": true,
         "answer_rank": 2,
         "reciprocal_rank": 0.5,
-        "pool_size": 168,
+        "pool_size": 157,
         "answerable": true,
         "top5_facts": [
           {
@@ -5852,7 +5852,7 @@
             "source": "graphiti",
             "activation": 0.9184,
             "semantic": 0.8958,
-            "blended": 0.8981,
+            "blended": 0.898,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -5861,8 +5861,8 @@
             "fact": "Student C's father emailed the principal to complain about unfair treatment of his son by David",
             "source": "graphiti",
             "activation": 0.3806,
-            "semantic": 0.9167,
-            "blended": 0.8631,
+            "semantic": 0.9166,
+            "blended": 0.863,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -5871,8 +5871,8 @@
             "fact": "David observes that some younger teachers seem genuinely delighted by Teacher Appreciation Week",
             "source": "graphiti",
             "activation": 0.9111,
-            "semantic": 0.8125,
-            "blended": 0.8224,
+            "semantic": 0.8333,
+            "blended": 0.841,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -5881,8 +5881,8 @@
             "fact": "David plans to go back to user's student with a proper set of questions to consider.",
             "source": "graphiti",
             "activation": 0.9351,
-            "semantic": 0.75,
-            "blended": 0.8148,
+            "semantic": 0.7499,
+            "blended": 0.8147,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -5891,8 +5891,8 @@
             "fact": "colleague just announced he's stepping down from teaching to spend more time with his family, who has three young kids",
             "source": "graphiti",
             "activation": 0.3651,
-            "semantic": 0.8542,
-            "blended": 0.8053,
+            "semantic": 0.8541,
+            "blended": 0.8052,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -5901,7 +5901,7 @@
             "fact": "colleague's announcement of stepping down from teaching prompted user to reflect on his own work-life balance situation",
             "source": "graphiti",
             "activation": 0.0323,
-            "semantic": 0.875,
+            "semantic": 0.8749,
             "blended": 0.7907,
             "supports_correct": true,
             "contains_wrong": false
@@ -5921,7 +5921,7 @@
         "av_pass": true,
         "answer_rank": 3,
         "reciprocal_rank": 0.3333333333333333,
-        "pool_size": 124,
+        "pool_size": 121,
         "answerable": true,
         "top5_facts": [
           {
@@ -6039,7 +6039,7 @@
         "av_pass": true,
         "answer_rank": 5,
         "reciprocal_rank": 0.2,
-        "pool_size": 105,
+        "pool_size": 104,
         "answerable": true,
         "top5_facts": [
           {
@@ -6137,8 +6137,8 @@
             "fact": "Notion advocate is the youngest faculty member who builds elaborate systems for everything",
             "source": "graphiti",
             "activation": 0.9195,
-            "semantic": 0.7959,
-            "blended": 0.8083,
+            "semantic": 0.8163,
+            "blended": 0.8266,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -6192,21 +6192,21 @@
           },
           {
             "rank": 4,
-            "fact": "David is already dreading Teacher Appreciation Week coming up at his school",
-            "source": "graphiti",
-            "activation": 0.9505,
-            "semantic": 0.8367,
-            "blended": 0.8765,
-            "supports_correct": false,
-            "contains_wrong": false
-          },
-          {
-            "rank": 5,
             "fact": "David knows a few coaches at Portland-area schools.",
             "source": "graphiti",
             "activation": 0.7822,
             "semantic": 0.8776,
             "blended": 0.868,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "David is already dreading Teacher Appreciation Week coming up at his school",
+            "source": "graphiti",
+            "activation": 0.9505,
+            "semantic": 0.8163,
+            "blended": 0.8633,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -6393,7 +6393,7 @@
         "av_pass": true,
         "answer_rank": 4,
         "reciprocal_rank": 0.25,
-        "pool_size": 162,
+        "pool_size": 147,
         "answerable": true,
         "top5_facts": [
           {
@@ -6511,7 +6511,7 @@
         "av_pass": true,
         "answer_rank": 3,
         "reciprocal_rank": 0.3333333333333333,
-        "pool_size": 174,
+        "pool_size": 162,
         "answerable": true,
         "top5_facts": [
           {
@@ -6559,7 +6559,7 @@
             "fact": "David's student is a junior with strong reading skills.",
             "source": "graphiti",
             "activation": 0.8771,
-            "semantic": 0.857,
+            "semantic": 0.8569,
             "blended": 0.859,
             "supports_correct": false,
             "contains_wrong": false
@@ -6629,7 +6629,7 @@
         "av_pass": true,
         "answer_rank": 3,
         "reciprocal_rank": 0.3333333333333333,
-        "pool_size": 113,
+        "pool_size": 130,
         "answerable": true,
         "top5_facts": [
           {
@@ -6714,21 +6714,21 @@
           },
           {
             "rank": 9,
-            "fact": "David's student wrote a thoughtful paper on the parallels between Reconstruction and the Civil Rights Movement.",
-            "source": "graphiti",
-            "activation": 0.9939,
-            "semantic": 0.7614,
-            "blended": 0.8311,
-            "supports_correct": false,
-            "contains_wrong": false
-          },
-          {
-            "rank": 10,
             "fact": "Camry had transmission getting rough, AC intermittent, and repairs no longer worth more than the car itself",
             "source": "graphiti",
             "activation": 0.4408,
             "semantic": 0.8409,
             "blended": 0.8209,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "David's student wrote a thoughtful paper on the parallels between Reconstruction and the Civil Rights Movement.",
+            "source": "graphiti",
+            "activation": 0.9939,
+            "semantic": 0.7415,
+            "blended": 0.8172,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -6802,21 +6802,21 @@
           },
           {
             "rank": 6,
-            "fact": "Amara has worked with instructing solicitor twice before with slapdash preparation each time",
-            "source": "graphiti",
-            "activation": 0.8644,
-            "semantic": 0.8367,
-            "blended": 0.8395,
-            "supports_correct": false,
-            "contains_wrong": false
-          },
-          {
-            "rank": 7,
             "fact": "Amara's senior clerk is quite good",
             "source": "graphiti",
             "activation": 0.2231,
             "semantic": 0.898,
             "blended": 0.8305,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "Amara has worked with instructing solicitor twice before with slapdash preparation each time",
+            "source": "graphiti",
+            "activation": 0.8644,
+            "semantic": 0.8163,
+            "blended": 0.8211,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -6832,21 +6832,21 @@
           },
           {
             "rank": 9,
+            "fact": "user works at chambers in Bedford Row",
+            "source": "graphiti",
+            "activation": 0.5226,
+            "semantic": 0.8367,
+            "blended": 0.8053,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
             "fact": "Amara needs conference with client arranged for next week at the latest with instructing solicitor present",
             "source": "graphiti",
             "activation": 0.9133,
             "semantic": 0.7347,
             "blended": 0.7972,
-            "supports_correct": false,
-            "contains_wrong": false
-          },
-          {
-            "rank": 10,
-            "fact": "user does not need phone buzzing for round-robin emails about the chambers Christmas party",
-            "source": "graphiti",
-            "activation": 0.4627,
-            "semantic": 0.8776,
-            "blended": 0.7946,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -6865,7 +6865,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 168,
+        "pool_size": 166,
         "answerable": false,
         "top5_facts": [
           {
@@ -7176,21 +7176,21 @@
           },
           {
             "rank": 8,
-            "fact": "Amara likely has cubital tunnel syndrome from leaning on left elbow at desk and sleeping with arms bent",
+            "fact": "Amara will escalate to senior partner if no complete bundle by Friday",
             "source": "graphiti",
-            "activation": 0.0,
-            "semantic": 0.898,
-            "blended": 0.8082,
+            "activation": 0.9087,
+            "semantic": 0.7551,
+            "blended": 0.8089,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 9,
-            "fact": "Amara will escalate to senior partner if no complete bundle by Friday",
+            "fact": "Amara likely has cubital tunnel syndrome from leaning on left elbow at desk and sleeping with arms bent",
             "source": "graphiti",
-            "activation": 0.9087,
-            "semantic": 0.7143,
-            "blended": 0.7823,
+            "activation": 0.0,
+            "semantic": 0.898,
+            "blended": 0.8082,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -7219,7 +7219,7 @@
         "av_pass": true,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 117,
+        "pool_size": 116,
         "answerable": false,
         "top5_facts": [
           {
@@ -7337,7 +7337,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 130,
+        "pool_size": 127,
         "answerable": false,
         "top5_facts": [
           {
@@ -7651,7 +7651,7 @@
             "fact": "Amara was diagnosed with endometriosis at twenty-eight",
             "source": "graphiti",
             "activation": 0.0,
-            "semantic": 0.9011,
+            "semantic": 0.901,
             "blended": 0.8109,
             "supports_correct": false,
             "contains_wrong": false
@@ -7691,7 +7691,7 @@
         "av_pass": true,
         "answer_rank": 4,
         "reciprocal_rank": 0.25,
-        "pool_size": 76,
+        "pool_size": 94,
         "answerable": true,
         "top5_facts": [
           {
@@ -7709,8 +7709,8 @@
             "fact": "Amara is a member of the Bar.",
             "source": "graphiti",
             "activation": 0.4836,
-            "semantic": 0.9739,
-            "blended": 0.9252,
+            "semantic": 0.9733,
+            "blended": 0.9246,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -7719,8 +7719,8 @@
             "fact": "Amara works at chambers.",
             "source": "graphiti",
             "activation": 0.4745,
-            "semantic": 0.9218,
-            "blended": 0.877,
+            "semantic": 0.9198,
+            "blended": 0.8752,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -7729,8 +7729,8 @@
             "fact": "Amara's brother is Chidi who is a GP",
             "source": "graphiti",
             "activation": 0.2192,
-            "semantic": 0.9478,
-            "blended": 0.875,
+            "semantic": 0.9465,
+            "blended": 0.8738,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -7739,8 +7739,8 @@
             "fact": "most of Amara's work is Crown Court, so hearings are in person",
             "source": "graphiti",
             "activation": 0.2122,
-            "semantic": 0.8957,
-            "blended": 0.8273,
+            "semantic": 0.893,
+            "blended": 0.8249,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -7749,8 +7749,8 @@
             "fact": "Amara has a warm but professional relationship with Charles.",
             "source": "graphiti",
             "activation": 0.6642,
-            "semantic": 0.8435,
-            "blended": 0.8256,
+            "semantic": 0.8395,
+            "blended": 0.822,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -7759,39 +7759,39 @@
             "fact": "client trusts instructing solicitor and has been with the firm for years with family connection",
             "source": "graphiti",
             "activation": 0.8472,
-            "semantic": 0.7653,
-            "blended": 0.7735,
+            "semantic": 0.7861,
+            "blended": 0.7922,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 8,
-            "fact": "user will have a look at what's available from the Inns of Court this autumn",
+            "fact": "user needs to be in Lagos for Christmas with user's family and user's mother",
             "source": "graphiti",
-            "activation": 0.5197,
-            "semantic": 0.8696,
-            "blended": 0.7472,
-            "supports_correct": false,
+            "activation": 0.569,
+            "semantic": 0.8663,
+            "blended": 0.7622,
+            "supports_correct": true,
             "contains_wrong": false
           },
           {
             "rank": 9,
             "fact": "user needs to be in Lagos for Christmas with user's family and user's mother",
             "source": "graphiti",
-            "activation": 0.569,
-            "semantic": 0.8175,
-            "blended": 0.7305,
+            "activation": 0.5757,
+            "semantic": 0.8128,
+            "blended": 0.7298,
             "supports_correct": true,
             "contains_wrong": false
           },
           {
             "rank": 10,
-            "fact": "user needs to be in Lagos for Christmas with user's family and user's mother",
+            "fact": "Amara ended up chasing CPS for materials in previous case with instructing solicitor",
             "source": "graphiti",
-            "activation": 0.5757,
-            "semantic": 0.7914,
-            "blended": 0.7159,
-            "supports_correct": true,
+            "activation": 0.8941,
+            "semantic": 0.7058,
+            "blended": 0.7247,
+            "supports_correct": false,
             "contains_wrong": false
           }
         ]
@@ -7809,7 +7809,7 @@
         "av_pass": true,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 154,
+        "pool_size": 152,
         "answerable": false,
         "top5_facts": [
           {
@@ -8025,7 +8025,7 @@
             "fact": "Amara plans to send detailed email to instructing solicitor this afternoon setting out outstanding items with deadline o",
             "source": "graphiti",
             "activation": 0.9146,
-            "semantic": 0.7343,
+            "semantic": 0.7344,
             "blended": 0.7974,
             "supports_correct": false,
             "contains_wrong": false
@@ -8045,7 +8045,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 109,
+        "pool_size": 107,
         "answerable": false,
         "top5_facts": [
           {
@@ -8231,7 +8231,7 @@
             "fact": "Amara Okafor was called to the Bar in 2010 (Lincoln's Inn)",
             "source": "graphiti",
             "activation": 0.3867,
-            "semantic": 0.9199,
+            "semantic": 0.9198,
             "blended": 0.8665,
             "supports_correct": false,
             "contains_wrong": false
@@ -8281,7 +8281,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 131,
+        "pool_size": 121,
         "answerable": false,
         "top5_facts": [
           {
@@ -8289,8 +8289,8 @@
             "fact": "Amara has endometriosis",
             "source": "graphiti",
             "activation": 0.0,
-            "semantic": 0.9796,
-            "blended": 0.9306,
+            "semantic": 1.0,
+            "blended": 0.95,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -8299,88 +8299,88 @@
             "fact": "Amara is a member of the Bar.",
             "source": "graphiti",
             "activation": 0.4836,
-            "semantic": 0.9592,
-            "blended": 0.9116,
+            "semantic": 0.9587,
+            "blended": 0.9111,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 3,
-            "fact": "user found the international criminal law modules in the UCL LLM interesting",
+            "fact": "Amara works at chambers.",
             "source": "graphiti",
-            "activation": 0.0881,
-            "semantic": 0.9184,
-            "blended": 0.7938,
+            "activation": 0.4745,
+            "semantic": 0.9173,
+            "blended": 0.873,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 4,
-            "fact": "Amara works at chambers.",
+            "fact": "two barristers actually did the LLM in human rights law at UCL",
             "source": "graphiti",
-            "activation": 0.4745,
-            "semantic": 0.8163,
-            "blended": 0.7821,
+            "activation": 0.3164,
+            "semantic": 0.8553,
+            "blended": 0.8014,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 5,
-            "fact": "one solicitor-advocate completed the LLM in human rights law at UCL",
+            "fact": "user had been looking at the LLM in human rights law at UCL",
             "source": "graphiti",
-            "activation": 0.1259,
-            "semantic": 0.8367,
-            "blended": 0.7657,
+            "activation": 0.04,
+            "semantic": 0.8966,
+            "blended": 0.7682,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 6,
-            "fact": "user had been looking at the LLM in human rights law at UCL",
+            "fact": "user plans to check the application deadline for UCL's part-time LLM for a September 2025 start",
             "source": "graphiti",
-            "activation": 0.04,
-            "semantic": 0.8776,
-            "blended": 0.7519,
+            "activation": 0.4326,
+            "semantic": 0.938,
+            "blended": 0.7611,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 7,
-            "fact": "user abandoned the idea of doing the LLM in human rights law at UCL after feedback from three practitioners that it did ",
+            "fact": "solicitor-advocate actually did the LLM in human rights law at UCL",
             "source": "graphiti",
-            "activation": 0.0617,
-            "semantic": 1.0,
-            "blended": 0.75,
+            "activation": 0.1536,
+            "semantic": 0.814,
+            "blended": 0.7479,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 8,
-            "fact": "two barristers actually did the LLM in human rights law at UCL",
+            "fact": "user has been looking at doing an LLM in human rights law at UCL part-time to keep practising",
             "source": "graphiti",
-            "activation": 0.3098,
-            "semantic": 0.7959,
-            "blended": 0.7473,
+            "activation": 0.0147,
+            "semantic": 0.876,
+            "blended": 0.7468,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 9,
-            "fact": "user plans to check the application deadline for UCL's part-time LLM for a September 2025 start",
+            "fact": "user spoke to two barristers who did the LLM in human rights law at UCL",
             "source": "graphiti",
-            "activation": 0.4326,
-            "semantic": 0.898,
-            "blended": 0.7351,
+            "activation": 0.3089,
+            "semantic": 0.7933,
+            "blended": 0.7448,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 10,
-            "fact": "user has been looking at doing an LLM in human rights law at UCL part-time to keep practising",
+            "fact": "Amara needs conference with client arranged for next week at the latest with instructing solicitor present",
             "source": "graphiti",
-            "activation": 0.0147,
-            "semantic": 0.8571,
-            "blended": 0.7308,
+            "activation": 0.9133,
+            "semantic": 0.6072,
+            "blended": 0.7144,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -8468,7 +8468,7 @@
             "source": "graphiti",
             "activation": 0.258,
             "semantic": 0.8976,
-            "blended": 0.8336,
+            "blended": 0.8337,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -8477,7 +8477,7 @@
             "fact": "this dude asked user what he does and said 'oh so you didnt go to college huh' when user said he is an electrician",
             "source": "graphiti",
             "activation": 0.5179,
-            "semantic": 0.8566,
+            "semantic": 0.8567,
             "blended": 0.8228,
             "supports_correct": false,
             "contains_wrong": false
@@ -8654,7 +8654,7 @@
             "source": "graphiti",
             "activation": 0.7407,
             "semantic": 0.9591,
-            "blended": 0.9372,
+            "blended": 0.9373,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -8673,7 +8673,7 @@
             "fact": "user plans to send user's mom a birthday text tomorrow",
             "source": "graphiti",
             "activation": 0.9338,
-            "semantic": 0.8976,
+            "semantic": 0.8977,
             "blended": 0.9103,
             "supports_correct": false,
             "contains_wrong": false
@@ -8683,7 +8683,7 @@
             "fact": "user's mom is on user's case about the suit fitting every single day",
             "source": "graphiti",
             "activation": 0.8116,
-            "semantic": 0.9181,
+            "semantic": 0.9182,
             "blended": 0.9075,
             "supports_correct": false,
             "contains_wrong": false
@@ -8703,8 +8703,8 @@
             "fact": "user plans to buy user's mom a simple bouquet for $15 from the Stop and Shop by user's place in the morning before work ",
             "source": "graphiti",
             "activation": 0.9254,
-            "semantic": 0.7748,
-            "blended": 0.8501,
+            "semantic": 0.775,
+            "blended": 0.8502,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -8713,28 +8713,28 @@
             "fact": "user has a mom who is sentimental and cries at Hallmark commercials",
             "source": "graphiti",
             "activation": 0.8725,
-            "semantic": 0.8157,
-            "blended": 0.8214,
+            "semantic": 0.8364,
+            "blended": 0.84,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 9,
-            "fact": "user's dad always talks about going to Cork but never does",
+            "fact": "Danny is assigned to bring breakfast supplies (eggs, bacon, bread, coffee, butter), cooking oil, paper plates and utensi",
             "source": "graphiti",
-            "activation": 0.258,
-            "semantic": 0.8772,
-            "blended": 0.8153,
+            "activation": 0.9551,
+            "semantic": 0.7545,
+            "blended": 0.8247,
             "supports_correct": false,
             "contains_wrong": false
           },
           {
             "rank": 10,
-            "fact": "Danny is assigned to bring breakfast supplies (eggs, bacon, bread, coffee, butter), cooking oil, paper plates and utensi",
+            "fact": "user's dad always talks about going to Cork but never does",
             "source": "graphiti",
-            "activation": 0.9551,
-            "semantic": 0.7339,
-            "blended": 0.8113,
+            "activation": 0.258,
+            "semantic": 0.8773,
+            "blended": 0.8153,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -9579,7 +9579,7 @@
         "av_pass": true,
         "answer_rank": 5,
         "reciprocal_rank": 0.2,
-        "pool_size": 102,
+        "pool_size": 131,
         "answerable": true,
         "top5_facts": [
           {
@@ -9587,8 +9587,8 @@
             "fact": "user needs 2 more years of experience as a journeyman before sitting for the master exam",
             "source": "graphiti",
             "activation": 0.998,
-            "semantic": 0.898,
-            "blended": 0.928,
+            "semantic": 0.8958,
+            "blended": 0.9265,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -9597,8 +9597,8 @@
             "fact": "user is identified as Jake on the suggested birthday card for user's mom",
             "source": "graphiti",
             "activation": 0.8178,
-            "semantic": 0.9388,
-            "blended": 0.9267,
+            "semantic": 0.9375,
+            "blended": 0.9255,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -9607,8 +9607,8 @@
             "fact": "user introduced himself as Jake in the text message to Mr. Patterson",
             "source": "graphiti",
             "activation": 0.3147,
-            "semantic": 0.9592,
-            "blended": 0.9112,
+            "semantic": 0.9583,
+            "blended": 0.9104,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -9617,8 +9617,8 @@
             "fact": "user's dad has his master license and knows what to expect for the master exam",
             "source": "graphiti",
             "activation": 0.9937,
-            "semantic": 0.8571,
-            "blended": 0.8708,
+            "semantic": 0.8542,
+            "blended": 0.8681,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -9627,8 +9627,8 @@
             "fact": "user studied so hard for the journeyman exam that they were stressed out and almost cried when passing it",
             "source": "graphiti",
             "activation": 0.9939,
-            "semantic": 0.7959,
-            "blended": 0.8553,
+            "semantic": 0.7917,
+            "blended": 0.8523,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -9637,8 +9637,8 @@
             "fact": "user passed the journeyman license exam back in March",
             "source": "graphiti",
             "activation": 0.1939,
-            "semantic": 0.9184,
-            "blended": 0.8459,
+            "semantic": 0.9167,
+            "blended": 0.8444,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -9657,8 +9657,8 @@
             "fact": "user's dad always talks about going to Cork but never does",
             "source": "graphiti",
             "activation": 0.258,
-            "semantic": 0.8776,
-            "blended": 0.8156,
+            "semantic": 0.875,
+            "blended": 0.8133,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -9667,8 +9667,8 @@
             "fact": "user's roommate Danny keeps coming in the room and staring at the PC and is wicked jealous",
             "source": "graphiti",
             "activation": 0.6121,
-            "semantic": 0.8367,
-            "blended": 0.8143,
+            "semantic": 0.8333,
+            "blended": 0.8112,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -9677,8 +9677,8 @@
             "fact": "user passed the journeyman exam last year after 6 years as an apprentice",
             "source": "graphiti",
             "activation": 0.9961,
-            "semantic": 0.7755,
-            "blended": 0.7976,
+            "semantic": 0.7708,
+            "blended": 0.7934,
             "supports_correct": true,
             "contains_wrong": false
           }
@@ -9697,7 +9697,7 @@
         "av_pass": true,
         "answer_rank": 1,
         "reciprocal_rank": 1.0,
-        "pool_size": 134,
+        "pool_size": 158,
         "answerable": true,
         "top5_facts": [
           {
@@ -10051,7 +10051,7 @@
         "av_pass": true,
         "answer_rank": 1,
         "reciprocal_rank": 1.0,
-        "pool_size": 155,
+        "pool_size": 153,
         "answerable": true,
         "top5_facts": [
           {
@@ -11703,7 +11703,7 @@
         "av_pass": true,
         "answer_rank": 3,
         "reciprocal_rank": 0.3333333333333333,
-        "pool_size": 114,
+        "pool_size": 123,
         "answerable": true,
         "top5_facts": [
           {
@@ -11721,8 +11721,8 @@
             "fact": "Omar is the user",
             "source": "graphiti",
             "activation": 0.2555,
-            "semantic": 0.9592,
-            "blended": 0.9112,
+            "semantic": 0.9586,
+            "blended": 0.9107,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -11731,8 +11731,8 @@
             "fact": "Uber currently pays the bills for user",
             "source": "graphiti",
             "activation": 0.5596,
-            "semantic": 0.9184,
-            "blended": 0.9004,
+            "semantic": 0.9173,
+            "blended": 0.8994,
             "supports_correct": true,
             "contains_wrong": false
           },
@@ -11741,8 +11741,8 @@
             "fact": "assistant refers to user as Omar",
             "source": "graphiti",
             "activation": 0.3512,
-            "semantic": 0.9388,
-            "blended": 0.88,
+            "semantic": 0.938,
+            "blended": 0.8793,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -11751,8 +11751,8 @@
             "fact": "user joined Lyft promo with weekly guarantee covering difference if does not clear certain amount after 40 hours, for fi",
             "source": "graphiti",
             "activation": 0.4502,
-            "semantic": 0.8163,
-            "blended": 0.798,
+            "semantic": 0.8139,
+            "blended": 0.7957,
             "supports_correct": false,
             "contains_wrong": true
           },
@@ -11761,8 +11761,8 @@
             "fact": "couple of user's siblings send what they can to user's mom",
             "source": "graphiti",
             "activation": 0.2397,
-            "semantic": 0.8571,
-            "blended": 0.7954,
+            "semantic": 0.8552,
+            "blended": 0.7937,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -11771,8 +11771,8 @@
             "fact": "user has been going through Spring Branch on purpose between rides looking at what is being built and what is for sale",
             "source": "graphiti",
             "activation": 0.2666,
-            "semantic": 0.898,
-            "blended": 0.7717,
+            "semantic": 0.8966,
+            "blended": 0.7706,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -11781,8 +11781,8 @@
             "fact": "user switched from Uber due to issues with surge pricing disappearing and smaller fares for same distance rides",
             "source": "graphiti",
             "activation": 0.2306,
-            "semantic": 0.8776,
-            "blended": 0.7482,
+            "semantic": 0.8759,
+            "blended": 0.7468,
             "supports_correct": false,
             "contains_wrong": true
           },
@@ -11791,8 +11791,8 @@
             "fact": "user does morning rush then break then late night toggling between both apps",
             "source": "graphiti",
             "activation": 0.4292,
-            "semantic": 0.7755,
-            "blended": 0.7062,
+            "semantic": 0.7725,
+            "blended": 0.7038,
             "supports_correct": false,
             "contains_wrong": true
           },
@@ -11801,8 +11801,8 @@
             "fact": "user sometimes waits in the airport lot for 45 minutes for one ride",
             "source": "graphiti",
             "activation": 0.488,
-            "semantic": 0.7347,
-            "blended": 0.6854,
+            "semantic": 0.7311,
+            "blended": 0.6825,
             "supports_correct": false,
             "contains_wrong": false
           }
@@ -12106,7 +12106,7 @@
             "source": "graphiti",
             "activation": 0.2397,
             "semantic": 0.9003,
-            "blended": 0.8342,
+            "blended": 0.8343,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -12293,7 +12293,7 @@
         "av_pass": false,
         "answer_rank": null,
         "reciprocal_rank": 0.0,
-        "pool_size": 108,
+        "pool_size": 129,
         "answerable": false,
         "top5_facts": [
           {
@@ -12529,7 +12529,7 @@
         "av_pass": true,
         "answer_rank": 9,
         "reciprocal_rank": 0.1111111111111111,
-        "pool_size": 109,
+        "pool_size": 103,
         "answerable": true,
         "top5_facts": [
           {
@@ -13001,7 +13001,7 @@
         "av_pass": true,
         "answer_rank": 8,
         "reciprocal_rank": 0.125,
-        "pool_size": 86,
+        "pool_size": 80,
         "answerable": true,
         "top5_facts": [
           {
@@ -13178,7 +13178,7 @@
             "source": "graphiti",
             "activation": 0.2555,
             "semantic": 0.8591,
-            "blended": 0.7987,
+            "blended": 0.7988,
             "supports_correct": false,
             "contains_wrong": false
           },
@@ -13197,7 +13197,7 @@
             "fact": "every dollar user makes goes to user's son or user's mom or rent",
             "source": "graphiti",
             "activation": 0.1845,
-            "semantic": 0.8188,
+            "semantic": 0.8189,
             "blended": 0.7871,
             "supports_correct": false,
             "contains_wrong": false

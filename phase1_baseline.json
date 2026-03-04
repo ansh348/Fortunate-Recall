@@ -1,0 +1,2266 @@
+[
+  {
+    "question_id": "amara_q02",
+    "persona": "amara",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E4",
+    "correct_edges": [
+      {
+        "uuid": "fe371188-f819-46c0-a17c-7e03af42e383",
+        "fact": "user has just set up a new Samsung Galaxy S25",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479772.614573,
+        "cosine_sim": 0.3539,
+        "enriched": true,
+        "activation": 0.3127,
+        "semantic_in_pool": 0.3502,
+        "blended_in_pool": 0.3427,
+        "rank_in_pool": 64
+      },
+      {
+        "uuid": "9b7e7ba7-10af-4ca8-b098-60df9039a230",
+        "fact": "user is getting the hang of navigating the Samsung Galaxy S25 which is rather different",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479772.614638,
+        "cosine_sim": 0.3248,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 166,
+    "rank_if_found": 64,
+    "activation_if_found": 0.3127,
+    "semantic_if_found": 0.3502,
+    "blended_if_found": 0.3427,
+    "top1_fact": "Amara works at chambers.",
+    "top1_blended": 0.95,
+    "score_gap": 0.6073
+  },
+  {
+    "question_id": "amara_q03",
+    "persona": "amara",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "67498be6-80e7-4b44-a9ad-7386c99fad99",
+        "fact": "user has started boxing at a gym in Bethnal Green with classes on Monday, Wednesday, and Friday evenings at 6:30",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.036994,
+        "cosine_sim": 0.2706,
+        "enriched": true
+      },
+      {
+        "uuid": "8941b4f2-09e9-48c3-892f-6c92bc0d2c5d",
+        "fact": "gym in Bethnal Green offers boxing classes Monday, Wednesday, and Friday evenings at half six",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.037031,
+        "cosine_sim": 0.2365,
+        "enriched": true
+      },
+      {
+        "uuid": "9da0e809-e3df-45bc-83fb-213947092d66",
+        "fact": "Kofi is user's boxing trainer at the gym and is excellent, demanding but encouraging, and notices when user misses a session and messages to ask if user is coming to the next one",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479774.037067,
+        "cosine_sim": 0.3106,
+        "enriched": true
+      },
+      {
+        "uuid": "eec702c5-ac2e-4f77-8c79-523ab72964ec",
+        "fact": "gym in Bethnal Green has morning boxing sessions at seven o'clock on Tuesdays and Thursdays",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.037088,
+        "cosine_sim": 0.2468,
+        "enriched": true
+      },
+      {
+        "uuid": "e93ac55a-356b-47e0-818d-c012695d9f70",
+        "fact": "gym in Bethnal Green has open gym time until nine where user could use the bags outside of class hours",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.037045,
+        "cosine_sim": 0.227,
+        "enriched": true
+      },
+      {
+        "uuid": "72124da1-dd54-4f43-a023-7f59b9fd598b",
+        "fact": "gym in Bethnal Green is about fifteen minutes from where user lives",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479774.037057,
+        "cosine_sim": 0.2682,
+        "enriched": true,
+        "activation": 0.6943,
+        "semantic_in_pool": 0.1178,
+        "blended_in_pool": 0.406,
+        "rank_in_pool": 29
+      },
+      {
+        "uuid": "3ba3ada1-b1d4-4011-8f92-de18f2a99757",
+        "fact": "user plans to get a locker at the gym in Bethnal Green for wraps and gloves",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.037097,
+        "cosine_sim": 0.2713,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 101,
+    "rank_if_found": 29,
+    "activation_if_found": 0.6943,
+    "semantic_if_found": 0.1178,
+    "blended_if_found": 0.406,
+    "top1_fact": "Amara has endometriosis",
+    "top1_blended": 0.95,
+    "score_gap": 0.544
+  },
+  {
+    "question_id": "amara_q06",
+    "persona": "amara",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "RETRACTION",
+    "correct_edges": [],
+    "in_pool": false,
+    "pool_size": 127,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Amara is a member of the Bar.",
+    "top1_blended": 0.95,
+    "score_gap": null
+  },
+  {
+    "question_id": "amara_q07",
+    "persona": "amara",
+    "attack_vector": "AV6_cross_session_contradiction",
+    "classification": "E4",
+    "correct_edges": [
+      {
+        "uuid": "4a9b4143-e7fa-4cd2-92f5-db7de9d6f8d4",
+        "fact": "Charles hosted the chambers dinner at his house in Hampstead on Friday night.",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479786.745656,
+        "cosine_sim": 0.1753,
+        "enriched": true
+      }
+    ],
+    "in_pool": false,
+    "pool_size": 112,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Amara is a member of the Bar.",
+    "top1_blended": 0.95,
+    "score_gap": null
+  },
+  {
+    "question_id": "amara_q08",
+    "persona": "amara",
+    "attack_vector": "AV9_soft_supersession",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "c04065b6-83da-4399-a2c9-449b4d9173a6",
+        "fact": "user has an early train from Hackney Central into the Temple in the morning",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479761.388809,
+        "cosine_sim": 0.1635,
+        "enriched": true
+      },
+      {
+        "uuid": "5fa72abc-5bba-4e79-ad55-d3cdea7e34f8",
+        "fact": "user lives in Hackney and has been there for years",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479756.786146,
+        "cosine_sim": 0.2867,
+        "enriched": true,
+        "activation": 0.535,
+        "semantic_in_pool": 0.4063,
+        "blended_in_pool": 0.4192,
+        "rank_in_pool": 39
+      },
+      {
+        "uuid": "d6140214-05d6-434b-9ac5-31626345e1d7",
+        "fact": "user wants to stay in Hackney due to park, transport links, and neighbourhood",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479756.786158,
+        "cosine_sim": 0.2193,
+        "enriched": true
+      },
+      {
+        "uuid": "73be23a5-988b-41eb-bd35-52b89b2f41c0",
+        "fact": "user seeks a one-bed flat first floor or above in Hackney, Clapton, or Homerton up to 1700/month with space for working desk and book storage and reliable broadband",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479756.786238,
+        "cosine_sim": 0.173,
+        "enriched": true
+      },
+      {
+        "uuid": "b0700005-9427-4ef4-830f-c7dd4326bcae",
+        "fact": "user plans to visit Foxtons Hackney this Saturday for agency visits",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479756.786283,
+        "cosine_sim": 0.1309,
+        "enriched": true
+      },
+      {
+        "uuid": "68939c85-bbbe-479c-85c3-76ad928e9a53",
+        "fact": "user currently lives in Hackney",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479775.245146,
+        "cosine_sim": 0.2828,
+        "enriched": true
+      },
+      {
+        "uuid": "97e3a9a3-d3e7-4b29-a648-f25006b39d3c",
+        "fact": "user loves Hackney",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479775.245196,
+        "cosine_sim": 0.1849,
+        "enriched": true
+      },
+      {
+        "uuid": "b8b565de-0644-45b7-97a3-c01e76501c47",
+        "fact": "user's current commute from Hackney is about twenty-five minutes cycling when weather cooperates, otherwise closer to forty-five minutes with Overground and Tube changeover",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479775.245253,
+        "cosine_sim": 0.1197,
+        "enriched": true
+      },
+      {
+        "uuid": "5253a731-2612-4f23-97df-3bb7e3176715",
+        "fact": "user has been looking at flats in Islington, mostly around Barnsbury and Canonbury",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479775.245215,
+        "cosine_sim": 0.1842,
+        "enriched": true
+      },
+      {
+        "uuid": "d518605b-a02e-4318-9310-25f0eae14fc2",
+        "fact": "from Islington user could walk to chambers in Bedford Row in under half an hour",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479775.245245,
+        "cosine_sim": 0.1064,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 128,
+    "rank_if_found": 39,
+    "activation_if_found": 0.535,
+    "semantic_if_found": 0.4063,
+    "blended_if_found": 0.4192,
+    "top1_fact": "Amara is a member of the Bar.",
+    "top1_blended": 0.95,
+    "score_gap": 0.5308
+  },
+  {
+    "question_id": "amara_q11",
+    "persona": "amara",
+    "attack_vector": "AV5_broad_query",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "67498be6-80e7-4b44-a9ad-7386c99fad99",
+        "fact": "user has started boxing at a gym in Bethnal Green with classes on Monday, Wednesday, and Friday evenings at 6:30",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.036994,
+        "cosine_sim": 0.169,
+        "enriched": true
+      },
+      {
+        "uuid": "8941b4f2-09e9-48c3-892f-6c92bc0d2c5d",
+        "fact": "gym in Bethnal Green offers boxing classes Monday, Wednesday, and Friday evenings at half six",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.037031,
+        "cosine_sim": 0.1215,
+        "enriched": true
+      },
+      {
+        "uuid": "9da0e809-e3df-45bc-83fb-213947092d66",
+        "fact": "Kofi is user's boxing trainer at the gym and is excellent, demanding but encouraging, and notices when user misses a session and messages to ask if user is coming to the next one",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479774.037067,
+        "cosine_sim": 0.2081,
+        "enriched": true,
+        "activation": 0.643,
+        "semantic_in_pool": 0.1909,
+        "blended_in_pool": 0.2361,
+        "rank_in_pool": 62
+      },
+      {
+        "uuid": "eec702c5-ac2e-4f77-8c79-523ab72964ec",
+        "fact": "gym in Bethnal Green has morning boxing sessions at seven o'clock on Tuesdays and Thursdays",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479774.037088,
+        "cosine_sim": 0.1173,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 144,
+    "rank_if_found": 62,
+    "activation_if_found": 0.643,
+    "semantic_if_found": 0.1909,
+    "blended_if_found": 0.2361,
+    "top1_fact": "Amara is a member of the Bar.",
+    "top1_blended": 0.95,
+    "score_gap": 0.7139
+  },
+  {
+    "question_id": "amara_q12",
+    "persona": "amara",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "270471c2-2d48-451e-945e-c1f87bca94c4",
+        "fact": "user did LLB at King's",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479748.158214,
+        "cosine_sim": 0.2089,
+        "enriched": true
+      }
+    ],
+    "in_pool": false,
+    "pool_size": 107,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Amara's senior clerk is quite good",
+    "top1_blended": 0.95,
+    "score_gap": null
+  },
+  {
+    "question_id": "amara_q14",
+    "persona": "amara",
+    "attack_vector": "AV8_numeric_preservation",
+    "classification": "E2",
+    "correct_edges": [],
+    "in_pool": false,
+    "pool_size": 129,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Amara has endometriosis",
+    "top1_blended": 0.95,
+    "score_gap": null
+  },
+  {
+    "question_id": "david_q01",
+    "persona": "david",
+    "attack_vector": "AV4_multi_version_fact",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "347aa38e-c17a-4675-823a-e8d585998f95",
+        "fact": "department head pulled user aside last week to ask if user would take over the AP US History sections",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479483.656423,
+        "cosine_sim": 0.299,
+        "enriched": true
+      },
+      {
+        "uuid": "934d2194-c359-4131-81bf-0a123e03354a",
+        "fact": "user was asked by department head if user would take over the AP US History sections",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479483.656464,
+        "cosine_sim": 0.2735,
+        "enriched": true
+      },
+      {
+        "uuid": "d83925fe-60cb-486a-ba25-c54978407c8a",
+        "fact": "retiring teacher has been handling AP US History and is retiring at the end of this year",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479483.656491,
+        "cosine_sim": 0.2356,
+        "enriched": true,
+        "activation": 0.5953,
+        "semantic_in_pool": 0.2857,
+        "blended_in_pool": 0.3167,
+        "rank_in_pool": 65
+      },
+      {
+        "uuid": "99419f68-5f66-48eb-afd5-ac54d218baeb",
+        "fact": "user has more or less decided to take over AP US History sections and will tell department head yes this week",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479483.656512,
+        "cosine_sim": 0.3005,
+        "enriched": true
+      },
+      {
+        "uuid": "2e01727c-ec70-4202-81b6-2269925de151",
+        "fact": "user teaches AP US History and notes Hanseatic League is unlikely to appear in AP US History curriculum",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479493.7698,
+        "cosine_sim": 0.2362,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 138,
+    "rank_if_found": 65,
+    "activation_if_found": 0.5953,
+    "semantic_if_found": 0.2857,
+    "blended_if_found": 0.3167,
+    "top1_fact": "user is David",
+    "top1_blended": 0.9744,
+    "score_gap": 0.6577
+  },
+  {
+    "question_id": "david_q03",
+    "persona": "david",
+    "attack_vector": "AV4_multi_version_fact",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "6412b709-25b6-4536-a824-08bca5194a71",
+        "fact": "user went to the dealership on Saturday and drove home in a Subaru Outback",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479485.584647,
+        "cosine_sim": 0.3654,
+        "enriched": true
+      },
+      {
+        "uuid": "620a59a4-8f21-4531-8058-89fe62317570",
+        "fact": "user purchased the Subaru Outback in Premium trim with heated seats and better infotainment system",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479485.584721,
+        "cosine_sim": 0.3173,
+        "enriched": true
+      },
+      {
+        "uuid": "cf56c791-d122-4ba5-9f9f-f800a6a7f524",
+        "fact": "user's Subaru Outback is in Autumn Green Metallic color chosen by Sarah",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479485.584733,
+        "cosine_sim": 0.3687,
+        "enriched": true
+      },
+      {
+        "uuid": "5f262c14-0e35-42b6-8186-9c88e7f56e86",
+        "fact": "Sarah was the driving force behind choosing the Subaru Outback for handling hiking gear and getting to trailheads",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479485.584744,
+        "cosine_sim": 0.3026,
+        "enriched": true
+      },
+      {
+        "uuid": "61df6f45-95a5-47b2-8e50-8fb0beff25b2",
+        "fact": "Sarah made compelling case for Subaru Outback over another sedan due to trunk space issues and plans for remote trails",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479485.584755,
+        "cosine_sim": 0.322,
+        "enriched": true
+      },
+      {
+        "uuid": "b5d66e63-62af-41bc-abe3-174c8d4cd47d",
+        "fact": "user found the EyeSight safety system on Subaru Outback remarkable as it practically drives itself on highway after commute",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479485.584767,
+        "cosine_sim": 0.2931,
+        "enriched": true
+      },
+      {
+        "uuid": "d3ed7a90-cb71-42f8-8206-f231f3014681",
+        "fact": "Sarah chose Autumn Green Metallic for Subaru Outback replacing white Camry that looked like a rental",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479485.584807,
+        "cosine_sim": 0.3591,
+        "enriched": true
+      },
+      {
+        "uuid": "d1595327-5259-478a-b4eb-12d657f9a4e6",
+        "fact": "Sarah organized cargo area of four-days-old Subaru Outback with bins for hiking boots, first aid kit, and trail emergency bag",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479485.584817,
+        "cosine_sim": 0.1943,
+        "enriched": true
+      },
+      {
+        "uuid": "88fe9b80-7a1a-4a02-b311-37ae5929c96a",
+        "fact": "user has a Subaru Outback that should handle the forest roads",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479494.142888,
+        "cosine_sim": 0.3816,
+        "enriched": true,
+        "activation": 0.5405,
+        "semantic_in_pool": 0.6665,
+        "blended_in_pool": 0.6602,
+        "rank_in_pool": 17
+      },
+      {
+        "uuid": "8d1bbbff-2d67-4f70-b416-033a79dcad54",
+        "fact": "Sarah plans forest service roads near Mount Adams that Outback can handle per forums",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479485.584788,
+        "cosine_sim": 0.2732,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 119,
+    "rank_if_found": 17,
+    "activation_if_found": 0.5405,
+    "semantic_if_found": 0.6665,
+    "blended_if_found": 0.6602,
+    "top1_fact": "user is David",
+    "top1_blended": 0.9744,
+    "score_gap": 0.3142
+  },
+  {
+    "question_id": "david_q04",
+    "persona": "david",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "RETRACTION",
+    "correct_edges": [],
+    "in_pool": false,
+    "pool_size": 124,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "user is David",
+    "top1_blended": 0.9744,
+    "score_gap": null
+  },
+  {
+    "question_id": "david_q05",
+    "persona": "david",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "aa481679-d7b4-4c27-a398-f05775d6f59f",
+        "fact": "user wears a hearing aid due to mild hearing loss in left ear",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772479458.863281,
+        "cosine_sim": 0.1514,
+        "enriched": true,
+        "activation": 0.0,
+        "semantic_in_pool": 0.1341,
+        "blended_in_pool": 0.1207,
+        "rank_in_pool": 76
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 87,
+    "rank_if_found": 76,
+    "activation_if_found": 0.0,
+    "semantic_if_found": 0.1341,
+    "blended_if_found": 0.1207,
+    "top1_fact": "David lives in the Pacific Northwest",
+    "top1_blended": 0.9744,
+    "score_gap": 0.8537
+  },
+  {
+    "question_id": "david_q11",
+    "persona": "david",
+    "attack_vector": "AV2_expired_logistics",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "aeabd287-ff6f-45f2-9875-9ccb7efd2f30",
+        "fact": "David's principal is supportive and has offered to sit in on the parent-teacher conference for Student C and has backed the academic integrity process",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479474.330686,
+        "cosine_sim": 0.4704,
+        "enriched": true
+      },
+      {
+        "uuid": "d09ac5dd-251b-4c75-8bf8-6bb609932b60",
+        "fact": "David has a parent-teacher conference scheduled with Student C's father who is on the school board next Wednesday March 12th",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479474.330792,
+        "cosine_sim": 0.5669,
+        "enriched": true
+      },
+      {
+        "uuid": "01db1e07-ce1f-464d-9b8a-761443afe4ac",
+        "fact": "David has a parent-teacher conference scheduled with Student A's parents next Wednesday March 12th",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479474.330802,
+        "cosine_sim": 0.6128,
+        "enriched": true,
+        "activation": 0.5294,
+        "semantic_in_pool": 1.0,
+        "blended_in_pool": 0.8353,
+        "rank_in_pool": 5
+      },
+      {
+        "uuid": "4a6bd28d-f0f9-4f7d-a7e3-5f51779dd6ce",
+        "fact": "David has a parent-teacher conference scheduled with Student B's parents next Wednesday March 12th",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479474.330813,
+        "cosine_sim": 0.5968,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 121,
+    "rank_if_found": 5,
+    "activation_if_found": 0.5294,
+    "semantic_if_found": 1.0,
+    "blended_if_found": 0.8353,
+    "top1_fact": "David is already dreading Teacher Appreciation Week coming up at his school",
+    "top1_blended": 0.9691,
+    "score_gap": 0.1338
+  },
+  {
+    "question_id": "elena_q01",
+    "persona": "elena",
+    "attack_vector": "AV4_multi_version_fact",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "a894530c-7ded-496f-97cc-36a4422bc435",
+        "fact": "user is employed at Rush University Medical Center",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479267.221713,
+        "cosine_sim": 0.2865,
+        "enriched": true
+      }
+    ],
+    "in_pool": false,
+    "pool_size": 85,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Elena works night shifts with her coworkers at the hospital and does 12-hour shifts",
+    "top1_blended": 0.9853,
+    "score_gap": null
+  },
+  {
+    "question_id": "elena_q02",
+    "persona": "elena",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "768bb866-5a37-4c92-96d9-04eef68d1edd",
+        "fact": "user's doctor told user to switch to Mediterranean diet",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772479270.136794,
+        "cosine_sim": 0.4171,
+        "enriched": true,
+        "activation": 0.2758,
+        "semantic_in_pool": 0.8014,
+        "blended_in_pool": 0.7488,
+        "rank_in_pool": 11
+      },
+      {
+        "uuid": "2889f6ba-f480-4b88-9446-66a4dd9ff69c",
+        "fact": "user made the switch to Mediterranean diet about two weeks ago",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772479270.136806,
+        "cosine_sim": 0.4315,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 100,
+    "rank_if_found": 11,
+    "activation_if_found": 0.2758,
+    "semantic_if_found": 0.8014,
+    "blended_if_found": 0.7488,
+    "top1_fact": "Elena is the user",
+    "top1_blended": 0.95,
+    "score_gap": 0.2012
+  },
+  {
+    "question_id": "elena_q03",
+    "persona": "elena",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "a309a85e-c67a-4e1b-b4d9-97b785efa14a",
+        "fact": "user is looking at DePaul's DNP program with a pediatric NP track",
+        "category": "INTELLECTUAL_INTERESTS",
+        "created_at_ts": 1772479267.246309,
+        "cosine_sim": 0.4513,
+        "enriched": true
+      },
+      {
+        "uuid": "24e6a732-9a91-4b97-b280-be9cbd0d4175",
+        "fact": "user was thinking maybe fall 2025 for DePaul DNP program",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479267.246372,
+        "cosine_sim": 0.3545,
+        "enriched": true
+      },
+      {
+        "uuid": "4b53bf96-da46-4bdf-be99-506a2eb809d7",
+        "fact": "user would be Dr. Vasquez with DNP",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479267.246395,
+        "cosine_sim": 0.3573,
+        "enriched": true
+      },
+      {
+        "uuid": "3967c774-c659-49b3-b549-5a0c43b9fc17",
+        "fact": "DePaul has a DNP program that is hybrid with classes on weekends and some online",
+        "category": "INTELLECTUAL_INTERESTS",
+        "created_at_ts": 1772479267.246435,
+        "cosine_sim": 0.3897,
+        "enriched": true
+      },
+      {
+        "uuid": "28202310-d481-410c-8b4d-98acbf468845",
+        "fact": "DePaul's DNP program has a pediatric NP track",
+        "category": "INTELLECTUAL_INTERESTS",
+        "created_at_ts": 1772479267.246445,
+        "cosine_sim": 0.4599,
+        "enriched": true,
+        "activation": 0.0414,
+        "semantic_in_pool": 0.8002,
+        "blended_in_pool": 0.6864,
+        "rank_in_pool": 17
+      },
+      {
+        "uuid": "7d7098f3-c8e5-45ba-8ca5-6e4a57c75b70",
+        "fact": "user was looking at doing NP program at DePaul with tuition almost 60k",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479265.877634,
+        "cosine_sim": 0.2961,
+        "enriched": true
+      },
+      {
+        "uuid": "fb765d93-94b9-441d-8461-5075d0f83930",
+        "fact": "user looked at UIC NP program which is cheaper",
+        "category": "INTELLECTUAL_INTERESTS",
+        "created_at_ts": 1772479265.877736,
+        "cosine_sim": 0.2536,
+        "enriched": true
+      },
+      {
+        "uuid": "e9ba7fbc-b274-4c8c-ad2d-64acdb78b8ce",
+        "fact": "user killed the whole NP idea and put the dream on pause maybe in 5 years",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479265.877748,
+        "cosine_sim": 0.262,
+        "enriched": true
+      },
+      {
+        "uuid": "d4327e68-d30c-4005-9018-3d6b72c13632",
+        "fact": "user is looking at nurse practitioner programs long-term",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479267.246323,
+        "cosine_sim": 0.5438,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 88,
+    "rank_if_found": 17,
+    "activation_if_found": 0.0414,
+    "semantic_if_found": 0.8002,
+    "blended_if_found": 0.6864,
+    "top1_fact": "Jasmine stayed in nursing school because of watching nurses like Elena",
+    "top1_blended": 0.931,
+    "score_gap": 0.2446
+  },
+  {
+    "question_id": "elena_q04",
+    "persona": "elena",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "4fa8da2b-01f4-45a8-b604-130e9b7cf6ba",
+        "fact": "user is on sertraline for anxiety and it usually helps but lately can't keep up especially with night shifts",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772479251.715172,
+        "cosine_sim": 0.2854,
+        "enriched": true
+      },
+      {
+        "uuid": "ca7cf89d-15fa-4eee-a53e-19d570eee2d6",
+        "fact": "user drafted message to send about sertraline regarding sleep fragmentation for about a week and worse anxiety around shift times",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772479251.715291,
+        "cosine_sim": 0.2846,
+        "enriched": true,
+        "activation": 0.1183,
+        "semantic_in_pool": 0.2839,
+        "blended_in_pool": 0.2673,
+        "rank_in_pool": 54
+      },
+      {
+        "uuid": "87a82c6a-67e8-4113-9027-05312491362e",
+        "fact": "user plans to send MyChart message to doctor right now about sertraline",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479251.715304,
+        "cosine_sim": 0.2182,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 84,
+    "rank_if_found": 54,
+    "activation_if_found": 0.1183,
+    "semantic_if_found": 0.2839,
+    "blended_if_found": 0.2673,
+    "top1_fact": "Elena works night shifts with her coworkers at the hospital and does 12-hour shifts",
+    "top1_blended": 0.9853,
+    "score_gap": 0.718
+  },
+  {
+    "question_id": "elena_q08",
+    "persona": "elena",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-WEAK",
+    "correct_edges": [
+      {
+        "uuid": "c7eeb168-8be5-426d-9303-f02dc7d0ffcf",
+        "fact": "user wants to surprise user's mom by making tamales from her Guadalajara family recipe for the first time",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479252.234691,
+        "cosine_sim": 0.2355,
+        "enriched": true,
+        "activation": 0.2373,
+        "semantic_in_pool": 0.6531,
+        "blended_in_pool": 0.6115,
+        "rank_in_pool": 20
+      },
+      {
+        "uuid": "83563b37-ec39-43a8-ac2d-dea82ec550fc",
+        "fact": "user's mom grew up in Guadalajara where she learned her tamales recipe",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479252.23473,
+        "cosine_sim": 0.297,
+        "enriched": true
+      },
+      {
+        "uuid": "e75be23f-20ea-4995-811e-5a021025488a",
+        "fact": "user moved from Guadalajara when user was 4 years old",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772479252.234743,
+        "cosine_sim": 0.2338,
+        "enriched": true
+      },
+      {
+        "uuid": "a18f1a58-1620-47d3-8969-5275a7dfa04d",
+        "fact": "user plans to make 3-4 dozen pork in red chile sauce tamales from user's mom's Guadalajara recipe next weekend",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479252.2348,
+        "cosine_sim": 0.1461,
+        "enriched": true
+      },
+      {
+        "uuid": "693b5b27-d51e-453d-b2df-fbc1c7e77d83",
+        "fact": "Sofia is user's sister",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479258.242072,
+        "cosine_sim": 0.4248,
+        "enriched": true
+      },
+      {
+        "uuid": "0701462f-97db-4936-8ed9-8ce3905536f6",
+        "fact": "user's parents are the main caregivers for Sofia",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479258.242122,
+        "cosine_sim": 0.3793,
+        "enriched": true
+      },
+      {
+        "uuid": "412b9e4b-60cf-4ef7-9769-f4a912a0b9f9",
+        "fact": "user has not visited Sofia in like 3 weeks because of work",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479258.242138,
+        "cosine_sim": 0.219,
+        "enriched": true
+      },
+      {
+        "uuid": "ad5aced1-aeb2-4f2d-8da2-b8759941a181",
+        "fact": "user plans to spend the day with Sofia on Saturday around 11 after sleeping in from Friday night shift",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479258.24215,
+        "cosine_sim": 0.2116,
+        "enriched": true
+      },
+      {
+        "uuid": "e6f48235-30ff-4ef0-a613-24b9e79d4570",
+        "fact": "user usually stays for like 4-5 hours when visiting Sofia because she gets upset if user leaves too fast",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479258.242161,
+        "cosine_sim": 0.2026,
+        "enriched": true
+      },
+      {
+        "uuid": "c7ed9daa-8c90-408d-b67e-084eed1b3e45",
+        "fact": "user needs Christmas gifts for Sofia",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479258.242192,
+        "cosine_sim": 0.2755,
+        "enriched": true
+      },
+      {
+        "uuid": "798d35dd-648f-4b30-864d-d06bb4d1d5fd",
+        "fact": "Sofia is user's sibling who is growing up so fast that user only sees her on weekends sometimes not even that",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479273.346118,
+        "cosine_sim": 0.3758,
+        "enriched": true
+      },
+      {
+        "uuid": "17cb06d7-6287-4457-9e10-f37d4f342d54",
+        "fact": "user keeps going back and forth on whether to move to Cicero where parents and Sofia live",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479273.346169,
+        "cosine_sim": 0.2511,
+        "enriched": true
+      },
+      {
+        "uuid": "c1d6386a-fdc9-4ea3-87cc-b5d6bce43673",
+        "fact": "Sofia lives out in Cicero",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479273.34619,
+        "cosine_sim": 0.1879,
+        "enriched": true
+      },
+      {
+        "uuid": "cdf5f5b4-2824-42ce-82d5-b0313e2be8f2",
+        "fact": "Sofia is the little sister of user",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230794,
+        "cosine_sim": 0.4149,
+        "enriched": true
+      },
+      {
+        "uuid": "c875bb95-627a-4d9f-8c44-c8a2aa35ac8c",
+        "fact": "Sofia lives with my parents in Cicero",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230836,
+        "cosine_sim": 0.2584,
+        "enriched": true
+      },
+      {
+        "uuid": "e987c983-58a2-4eab-a0b4-f8c32f9200e6",
+        "fact": "Sofia lives in Cicero near parents' house",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230863,
+        "cosine_sim": 0.3155,
+        "enriched": true
+      },
+      {
+        "uuid": "2a320920-928e-455b-8eec-d7bff7ac1e35",
+        "fact": "Sofia is the child of my mom",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230873,
+        "cosine_sim": 0.3431,
+        "enriched": true
+      },
+      {
+        "uuid": "67e44f7b-6fee-4f78-9efd-f4a49faf6ad6",
+        "fact": "my mom is the mother of Sofia",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230882,
+        "cosine_sim": 0.342,
+        "enriched": true
+      },
+      {
+        "uuid": "faa67096-785c-4bcf-a45a-c3e87e49a413",
+        "fact": "user plans a DIY paint party for Sofia and 6 or 7 kids including Sofia on November 22 as a belated birthday celebration to make up for the rushed August 12 party",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479277.230891,
+        "cosine_sim": 0.2226,
+        "enriched": true
+      },
+      {
+        "uuid": "37dec9a1-6f38-48ac-bfcc-1f1ccd97a48a",
+        "fact": "Sofia is really into art right now",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.2309,
+        "cosine_sim": 0.2852,
+        "enriched": true
+      },
+      {
+        "uuid": "28350017-87fc-420c-81e3-cb589e2af973",
+        "fact": "my mom will help set up Sofia's DIY paint party",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230909,
+        "cosine_sim": 0.2195,
+        "enriched": true
+      },
+      {
+        "uuid": "ae5f7903-372e-4806-ae21-52bf780cbcc5",
+        "fact": "kids including Sofia will follow a Bob Ross video for painting at the party",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772479277.230918,
+        "cosine_sim": 0.1908,
+        "enriched": true
+      },
+      {
+        "uuid": "efb31c9b-7d23-4b3d-ae0a-ff09639b18fb",
+        "fact": "user threw a rushed birthday party for Sofia back in August with cake and decorations at my parents' house due to starting new job and orientation chaos",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479277.230928,
+        "cosine_sim": 0.2484,
+        "enriched": true
+      },
+      {
+        "uuid": "228aaffb-7ce8-410f-a923-e8a354969569",
+        "fact": "Sofia is always listening to Taylor Swift with her headphones on.",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479278.481473,
+        "cosine_sim": 0.2517,
+        "enriched": true
+      },
+      {
+        "uuid": "bafe5a80-68f2-4161-85fb-693fc3d69f74",
+        "fact": "Sofia is always listening to Olivia Rodrigo with her headphones on.",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772479278.48152,
+        "cosine_sim": 0.2822,
+        "enriched": true
+      },
+      {
+        "uuid": "717bf33e-ade4-43ed-882d-dc6a42a8d629",
+        "fact": "Sofia and mom are basically inseparable.",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479278.481535,
+        "cosine_sim": 0.3477,
+        "enriched": true
+      },
+      {
+        "uuid": "f2819a86-ec3d-4f2b-896c-5a09c148e741",
+        "fact": "user plans to gift Sofia a custom paint by number of her and mom, tabletop easel, and cute apron for Christmas.",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479278.481546,
+        "cosine_sim": 0.2623,
+        "enriched": true
+      },
+      {
+        "uuid": "e4fb2bd5-6d0d-409d-99b9-838543dfadc5",
+        "fact": "user refers to their mom in context of Sofia, indicating shared familial relation.",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479278.481579,
+        "cosine_sim": 0.3499,
+        "enriched": true
+      },
+      {
+        "uuid": "ed4d3efc-010a-436f-be57-27c1b8326901",
+        "fact": "Sofia paints at the kitchen table, leading mom to complain about paint everywhere.",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479278.481607,
+        "cosine_sim": 0.2351,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 67,
+    "rank_if_found": 20,
+    "activation_if_found": 0.2373,
+    "semantic_if_found": 0.6531,
+    "blended_if_found": 0.6115,
+    "top1_fact": "Elena's mom screamed and cried upon learning of Elena's engagement.",
+    "top1_blended": 0.9729,
+    "score_gap": 0.3614
+  },
+  {
+    "question_id": "elena_q12",
+    "persona": "elena",
+    "attack_vector": "AV5_broad_query",
+    "classification": "E4",
+    "correct_edges": [
+      {
+        "uuid": "f3a98fd8-6355-4f6f-805d-50844766d16f",
+        "fact": "user plans to watch Very Pink Knits on YouTube",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772479268.894162,
+        "cosine_sim": 0.1841,
+        "enriched": true,
+        "activation": 0.0836,
+        "semantic_in_pool": 0.1892,
+        "blended_in_pool": 0.1787,
+        "rank_in_pool": 90
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 108,
+    "rank_if_found": 90,
+    "activation_if_found": 0.0836,
+    "semantic_if_found": 0.1892,
+    "blended_if_found": 0.1787,
+    "top1_fact": "Elena works night shifts with her coworkers at the hospital and does 12-hour shifts",
+    "top1_blended": 0.9853,
+    "score_gap": 0.8066
+  },
+  {
+    "question_id": "elena_q13",
+    "persona": "elena",
+    "attack_vector": "AV8_numeric_preservation",
+    "classification": "E1",
+    "correct_edges": [
+      {
+        "uuid": "17e42d73-5d37-4e34-b504-7b08c149ea3e",
+        "fact": "user has about 42k left on student loans",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479270.092205,
+        "cosine_sim": 0.5461,
+        "enriched": true,
+        "activation": 0.4936,
+        "semantic_in_pool": 0.9803,
+        "blended_in_pool": 0.956,
+        "rank_in_pool": 2
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 125,
+    "rank_if_found": 2,
+    "activation_if_found": 0.4936,
+    "semantic_if_found": 0.9803,
+    "blended_if_found": 0.956,
+    "top1_fact": "user's student loans are all federal loans",
+    "top1_blended": 0.9747,
+    "score_gap": 0.0187
+  },
+  {
+    "question_id": "jake_q03",
+    "persona": "jake",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "b35df5fc-21e7-4a69-88b4-9efd6bfae993",
+        "fact": "user's mom has been working at the Eire Pub in Dorchester for 20 years",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480018.016187,
+        "cosine_sim": 0.3726,
+        "enriched": true,
+        "activation": 0.2314,
+        "semantic_in_pool": 0.8567,
+        "blended_in_pool": 0.7942,
+        "rank_in_pool": 11
+      },
+      {
+        "uuid": "72a13d65-f69a-42d1-9fc5-77ca87554772",
+        "fact": "Eire Pub is located in Dorchester",
+        "category": "OTHER",
+        "created_at_ts": 1772480018.016203,
+        "cosine_sim": 0.068,
+        "enriched": true
+      },
+      {
+        "uuid": "f211c184-3d03-4a2a-b58f-7d6714e1a08a",
+        "fact": "Megan's apartment is right near where user's mom works at the Eire Pub in Dorchester",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480018.016216,
+        "cosine_sim": 0.3584,
+        "enriched": true
+      },
+      {
+        "uuid": "c9c50487-2cef-43ce-827d-a3dca819dcbc",
+        "fact": "Megan lives in an apartment in Dorchester",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480018.016168,
+        "cosine_sim": 0.2622,
+        "enriched": true
+      },
+      {
+        "uuid": "96cb10a2-d7d5-48cd-9e1b-28ea11de2356",
+        "fact": "user knows the Dorchester area wicked well",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772480018.016272,
+        "cosine_sim": 0.126,
+        "enriched": true
+      },
+      {
+        "uuid": "7132820b-bcf2-45e0-94a9-3ce8beae3534",
+        "fact": "user's mom used to take user and user's sister to get ice cream at a spot in Dorchester after church every Sunday when user was a kid",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480048.825211,
+        "cosine_sim": 0.3181,
+        "enriched": true
+      },
+      {
+        "uuid": "42d674e6-a400-4971-9374-2915d3135b7f",
+        "fact": "user has a sister who went with user and user's mom to get ice cream in Dorchester after church every Sunday as kids",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480048.825227,
+        "cosine_sim": 0.3107,
+        "enriched": true
+      },
+      {
+        "uuid": "c6e9341e-7739-4442-8876-ad7ff304fbe7",
+        "fact": "user associates Dorchester with the ice cream spot where user's mom took user and user's sister after church every Sunday as a kid",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480048.825238,
+        "cosine_sim": 0.2689,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 82,
+    "rank_if_found": 11,
+    "activation_if_found": 0.2314,
+    "semantic_if_found": 0.8567,
+    "blended_if_found": 0.7942,
+    "top1_fact": "user is identified as Jake on the suggested birthday card for user's mom",
+    "top1_blended": 0.9818,
+    "score_gap": 0.1876
+  },
+  {
+    "question_id": "jake_q05",
+    "persona": "jake",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "17d41347-bfac-4d49-bb05-8d3a41a57f85",
+        "fact": "user is thinking worst case he could do EV charger installations through dads company on the side to keep it legit",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480018.884777,
+        "cosine_sim": 0.3107,
+        "enriched": true
+      },
+      {
+        "uuid": "59988836-29b5-4a3b-bd2d-7609cb4589d8",
+        "fact": "user is considering certifications or permits in Massachusetts to do EV charger installations independently",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480018.884802,
+        "cosine_sim": 0.2069,
+        "enriched": true
+      },
+      {
+        "uuid": "5739f627-828c-459f-8d5d-abca90b44863",
+        "fact": "user had a plan to start doing EV charger installs on the side at people's houses on weekends",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480032.403943,
+        "cosine_sim": 0.2701,
+        "enriched": true
+      },
+      {
+        "uuid": "e0e19bea-7794-46c4-8590-21764f568433",
+        "fact": "user's buddy was making crazy money doing EV charger installs",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480032.404,
+        "cosine_sim": 0.2558,
+        "enriched": true,
+        "activation": 0.3559,
+        "semantic_in_pool": 0.5714,
+        "blended_in_pool": 0.5499,
+        "rank_in_pool": 26
+      },
+      {
+        "uuid": "c1545234-798f-4406-9e5a-2224b6c60ff6",
+        "fact": "user brought up the EV charger install plan to user's dad this weekend",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480032.404015,
+        "cosine_sim": 0.1772,
+        "enriched": true
+      },
+      {
+        "uuid": "8d55a77b-4174-4353-bc77-238c726eb28e",
+        "fact": "user decided the EV charger thing is off the table for real",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480032.404049,
+        "cosine_sim": 0.1434,
+        "enriched": true
+      },
+      {
+        "uuid": "51539869-43c1-4d90-a104-1a1f179df1e3",
+        "fact": "user's dad said user is not ready yet for EV charger installs and when user is they will do it the right way",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480032.40406,
+        "cosine_sim": 0.1381,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 125,
+    "rank_if_found": 26,
+    "activation_if_found": 0.3559,
+    "semantic_if_found": 0.5714,
+    "blended_if_found": 0.5499,
+    "top1_fact": "user is identified as Jake on the suggested birthday card for user's mom",
+    "top1_blended": 0.9634,
+    "score_gap": 0.4135
+  },
+  {
+    "question_id": "jake_q07",
+    "persona": "jake",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "e49a6235-7923-4471-8e67-be86fe3bfc88",
+        "fact": "user was dragged to Trillium by Marcus like a month ago.",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772480049.334272,
+        "cosine_sim": 0.1605,
+        "enriched": true
+      },
+      {
+        "uuid": "257cbe5a-9ae1-4de4-8c50-21f0687078db",
+        "fact": "user is buying Trillium cans every week.",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480049.334333,
+        "cosine_sim": 0.2837,
+        "enriched": true,
+        "activation": 0.5348,
+        "semantic_in_pool": 0.6531,
+        "blended_in_pool": 0.6294,
+        "rank_in_pool": 17
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 116,
+    "rank_if_found": 17,
+    "activation_if_found": 0.5348,
+    "semantic_if_found": 0.6531,
+    "blended_if_found": 0.6294,
+    "top1_fact": "user is identified as Jake on the suggested birthday card for user's mom",
+    "top1_blended": 0.9634,
+    "score_gap": 0.334
+  },
+  {
+    "question_id": "jake_q10",
+    "persona": "jake",
+    "attack_vector": "AV5_broad_query",
+    "classification": "E3-WEAK",
+    "correct_edges": [
+      {
+        "uuid": "0a486058-a726-471d-b1be-792c200e88e2",
+        "fact": "user plays in a rec league every Wednesday night at Bajko Rink",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480013.298508,
+        "cosine_sim": 0.2867,
+        "enriched": true,
+        "activation": 0.2652,
+        "semantic_in_pool": 0.2569,
+        "blended_in_pool": 0.2586,
+        "rank_in_pool": 80
+      },
+      {
+        "uuid": "45d6a0d2-d74b-4cb3-bd53-e41a1d436ce3",
+        "fact": "user plays right wing usually at Bajko Rink but covered for center last night after injury in second period",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480013.298581,
+        "cosine_sim": 0.2455,
+        "enriched": true
+      },
+      {
+        "uuid": "117ddc91-6108-47aa-acc5-73f887cd77e7",
+        "fact": "user's hockey league at Bajko Rink goes all the way through March",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480013.298597,
+        "cosine_sim": 0.177,
+        "enriched": true
+      },
+      {
+        "uuid": "0c77d58a-890f-459c-b90a-7e8597f7ec31",
+        "fact": "this is user's second season with the team at Bajko Rink, joined last year",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480013.298612,
+        "cosine_sim": 0.2552,
+        "enriched": true
+      },
+      {
+        "uuid": "1781f4b1-c4b6-4df7-8240-ab30d38d0913",
+        "fact": "user had an insane game that went to overtime last night at Bajko Rink and was on the ice way more than usual",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480013.298643,
+        "cosine_sim": 0.2368,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 152,
+    "rank_if_found": 80,
+    "activation_if_found": 0.2652,
+    "semantic_if_found": 0.2569,
+    "blended_if_found": 0.2586,
+    "top1_fact": "user is identified as Jake on the suggested birthday card for user's mom",
+    "top1_blended": 0.963,
+    "score_gap": 0.7044
+  },
+  {
+    "question_id": "marcus_q03",
+    "persona": "marcus",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "aad7d3d6-6229-4ba5-b58d-a2475d6b234f",
+        "fact": "user has been looking at a spot in Germantown for a second shop",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479021.078054,
+        "cosine_sim": 0.5196,
+        "enriched": true
+      },
+      {
+        "uuid": "530324b8-d1e7-4522-ace3-ad4879408317",
+        "fact": "second shop is a spot in Germantown",
+        "category": "OTHER",
+        "created_at_ts": 1772479021.078068,
+        "cosine_sim": 0.4748,
+        "enriched": true
+      },
+      {
+        "uuid": "79118edf-6db1-4cd3-8021-23635d7b0191",
+        "fact": "second shop has rent of 3200 a month in Germantown",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479021.078129,
+        "cosine_sim": 0.3786,
+        "enriched": true
+      },
+      {
+        "uuid": "6b73e849-7515-48b8-9833-f108b161bbde",
+        "fact": "second shop has 3 year lease with option to renew in Germantown",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479021.078138,
+        "cosine_sim": 0.4029,
+        "enriched": true
+      },
+      {
+        "uuid": "1a42ff55-7f43-44ef-83a0-99f1e612ccb3",
+        "fact": "user had been looking at a spot in Germantown for expansion",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479024.792652,
+        "cosine_sim": 0.4025,
+        "enriched": true
+      },
+      {
+        "uuid": "5d019ca3-c5ce-4e70-918c-de1a076fa5b0",
+        "fact": "user decided the Germantown spot is off the table because the numbers don't make sense with what they still owe on the equipment loan",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772479024.792667,
+        "cosine_sim": 0.2952,
+        "enriched": true
+      },
+      {
+        "uuid": "392edc7b-dbfb-4ffc-be7f-788439246a39",
+        "fact": "small auto shop had been looking at a spot in Germantown, nice area with good traffic",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479024.792729,
+        "cosine_sim": 0.3772,
+        "enriched": true
+      }
+    ],
+    "in_pool": false,
+    "pool_size": 106,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "second shop already has 3 bays and a lift",
+    "top1_blended": 0.8758,
+    "score_gap": null
+  },
+  {
+    "question_id": "marcus_q06",
+    "persona": "marcus",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "30e1f910-3a99-476a-bf71-0e44d72796cc",
+        "fact": "user has been going to Sardis Lake mostly for fishing, which is about an hour south",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772479024.15905,
+        "cosine_sim": 0.1997,
+        "enriched": true,
+        "activation": 0.4344,
+        "semantic_in_pool": 0.1834,
+        "blended_in_pool": 0.2336,
+        "rank_in_pool": 39
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 79,
+    "rank_if_found": 39,
+    "activation_if_found": 0.4344,
+    "semantic_if_found": 0.1834,
+    "blended_if_found": 0.2336,
+    "top1_fact": "Robert Chandler mentioned getting a lawyer in the voicemail to Marcus Thompson",
+    "top1_blended": 0.95,
+    "score_gap": 0.7164
+  },
+  {
+    "question_id": "marcus_q13",
+    "persona": "marcus",
+    "attack_vector": "AV8_numeric_preservation",
+    "classification": "E4",
+    "correct_edges": [
+      {
+        "uuid": "b5672ceb-f7cf-4692-bb0a-5cfc89d010e9",
+        "fact": "user just brought on a new guy named Carlos because business has been good enough that user couldn't keep up with just three of us",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479029.201502,
+        "cosine_sim": 0.407,
+        "enriched": true,
+        "activation": 0.3953,
+        "semantic_in_pool": 0.3967,
+        "blended_in_pool": 0.3965,
+        "rank_in_pool": 34
+      },
+      {
+        "uuid": "435841c4-438b-4c4b-a468-f6d7c2af0097",
+        "fact": "Carlos worked at a Firestone for a couple years",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772479029.20154,
+        "cosine_sim": 0.335,
+        "enriched": true
+      },
+      {
+        "uuid": "892e5b82-afd3-4efc-be82-743c1a6b6c88",
+        "fact": "user employs Carlos as one of four guys who can handle the volume without everybody burning out",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772479029.201556,
+        "cosine_sim": 0.3654,
+        "enriched": true
+      },
+      {
+        "uuid": "567ce42e-1fb2-4958-b453-79def29d92d4",
+        "fact": "user plans to put Carlos up front with Jerome for a few days so Jerome can teach Carlos customer interactions",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772479029.201578,
+        "cosine_sim": 0.3363,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 139,
+    "rank_if_found": 34,
+    "activation_if_found": 0.3953,
+    "semantic_if_found": 0.3967,
+    "blended_if_found": 0.3965,
+    "top1_fact": "Marcus Thompson's shop used quality name-brand parts for Robert Chandler's brake job",
+    "top1_blended": 0.9306,
+    "score_gap": 0.5341
+  },
+  {
+    "question_id": "omar_q01",
+    "persona": "omar",
+    "attack_vector": "AV4_multi_version_fact",
+    "classification": "RANKING",
+    "correct_edges": [
+      {
+        "uuid": "49b1bde9-ad00-4919-9dea-889011db57eb",
+        "fact": "user has been doing uber full time for 3 years",
+        "category": "IDENTITY_SELF_CONCEPT",
+        "created_at_ts": 1772480562.442515,
+        "cosine_sim": 0.4789,
+        "enriched": true
+      },
+      {
+        "uuid": "22c8232e-ed12-417a-8031-2cdf1963aedd",
+        "fact": "user switched from Uber due to issues with surge pricing disappearing and smaller fares for same distance rides",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480565.278593,
+        "cosine_sim": 0.5081,
+        "enriched": true
+      },
+      {
+        "uuid": "26900567-63b8-4a65-85c2-1eb37209893a",
+        "fact": "user toggles between both Uber and Lyft apps, running both at the same time",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480573.77875,
+        "cosine_sim": 0.4949,
+        "enriched": true
+      },
+      {
+        "uuid": "5beff348-d490-4f6e-aac8-e9a2b8afbc9f",
+        "fact": "user went back to Uber from Lyft due to lack of riders in Houston",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480576.833739,
+        "cosine_sim": 0.4635,
+        "enriched": true
+      },
+      {
+        "uuid": "dc0ef1a7-1b5c-4796-a029-db8057fba884",
+        "fact": "user switched back to Uber where pings are better after low demand on Lyft",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480576.83375,
+        "cosine_sim": 0.4265,
+        "enriched": true
+      },
+      {
+        "uuid": "075721dd-d6de-48ad-aae5-eb3b468ae29e",
+        "fact": "Uber currently pays the bills for user",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772480576.83376,
+        "cosine_sim": 0.5232,
+        "enriched": true,
+        "activation": 0.5596,
+        "semantic_in_pool": 0.9173,
+        "blended_in_pool": 0.8994,
+        "rank_in_pool": 3
+      },
+      {
+        "uuid": "bb2c7857-c82b-4d43-bdfb-8fb089306c11",
+        "fact": "Uber takes a bigger cut which is why user left it in the first place",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480576.833769,
+        "cosine_sim": 0.4549,
+        "enriched": true
+      },
+      {
+        "uuid": "6d03b091-e363-4a78-9baa-2d6428718a94",
+        "fact": "Uber has the market in Houston",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772480576.833778,
+        "cosine_sim": 0.4906,
+        "enriched": true
+      },
+      {
+        "uuid": "c2465dc5-f9e3-4fb7-b128-015b502f27ba",
+        "fact": "user will keep driving Uber while building real estate career",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480582.563623,
+        "cosine_sim": 0.4955,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 123,
+    "rank_if_found": 3,
+    "activation_if_found": 0.5596,
+    "semantic_if_found": 0.9173,
+    "blended_if_found": 0.8994,
+    "top1_fact": "user is Omar",
+    "top1_blended": 0.95,
+    "score_gap": 0.0506
+  },
+  {
+    "question_id": "omar_q02",
+    "persona": "omar",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "9352112d-631d-40bf-93e0-ced1c19b252d",
+        "fact": "user just moved to Gulfton",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772480580.339734,
+        "cosine_sim": 0.344,
+        "enriched": true,
+        "activation": 0.6302,
+        "semantic_in_pool": 0.474,
+        "blended_in_pool": 0.5521,
+        "rank_in_pool": 22
+      },
+      {
+        "uuid": "e6a44e42-ce2e-4c51-bd49-c7627c15cd4e",
+        "fact": "Gulfton spot is closer to a library for user",
+        "category": "LOGISTICAL_CONTEXT",
+        "created_at_ts": 1772480580.339832,
+        "cosine_sim": 0.2718,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 91,
+    "rank_if_found": 22,
+    "activation_if_found": 0.6302,
+    "semantic_if_found": 0.474,
+    "blended_if_found": 0.5521,
+    "top1_fact": "user is Omar",
+    "top1_blended": 0.95,
+    "score_gap": 0.3979
+  },
+  {
+    "question_id": "omar_q05",
+    "persona": "omar",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "9ac071f2-c578-45fa-846e-0020b522c2b7",
+        "fact": "the whole Camry plan is dead for now",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772480572.912443,
+        "cosine_sim": 0.2845,
+        "enriched": true,
+        "activation": 0.247,
+        "semantic_in_pool": 0.2547,
+        "blended_in_pool": 0.2543,
+        "rank_in_pool": 51
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 103,
+    "rank_if_found": 51,
+    "activation_if_found": 0.247,
+    "semantic_if_found": 0.2547,
+    "blended_if_found": 0.2543,
+    "top1_fact": "user is Omar",
+    "top1_blended": 0.95,
+    "score_gap": 0.6957
+  },
+  {
+    "question_id": "omar_q06",
+    "persona": "omar",
+    "attack_vector": "AV6_cross_session_contradiction",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "4513bf8f-e64c-4210-a809-66ade03d15eb",
+        "fact": "user got PS5 off Facebook Marketplace with 2 controllers and FIFA for 350",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772480582.20297,
+        "cosine_sim": 0.1851,
+        "enriched": true,
+        "activation": 0.5256,
+        "semantic_in_pool": 0.1511,
+        "blended_in_pool": 0.1698,
+        "rank_in_pool": 86
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 108,
+    "rank_if_found": 86,
+    "activation_if_found": 0.5256,
+    "semantic_if_found": 0.1511,
+    "blended_if_found": 0.1698,
+    "top1_fact": "user is Omar",
+    "top1_blended": 0.95,
+    "score_gap": 0.7802
+  },
+  {
+    "question_id": "omar_q11",
+    "persona": "omar",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E1",
+    "correct_edges": [],
+    "in_pool": false,
+    "pool_size": 69,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "user is Omar",
+    "top1_blended": 0.9304,
+    "score_gap": null
+  },
+  {
+    "question_id": "priya_q03",
+    "persona": "priya",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "2d4598c4-7600-4264-afaf-843888b9f20e",
+        "fact": "user received ADHD diagnosis since college",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478573.502233,
+        "cosine_sim": 0.191,
+        "enriched": true
+      },
+      {
+        "uuid": "1af18e0c-afe0-4e68-8880-d73ed411adc4",
+        "fact": "user has ADHD",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478598.448374,
+        "cosine_sim": 0.2007,
+        "enriched": true
+      }
+    ],
+    "in_pool": false,
+    "pool_size": 127,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Priya works at Anthropic as referenced in conversation about her good year",
+    "top1_blended": 0.9813,
+    "score_gap": null
+  },
+  {
+    "question_id": "priya_q05",
+    "persona": "priya",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "AV7-CROSS",
+    "correct_edges": [
+      {
+        "uuid": "b48aebd3-ce50-4fdb-8b8b-323d5412c377",
+        "fact": "user has a rental relationship with landlord",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772478585.516557,
+        "cosine_sim": 0.1815,
+        "enriched": true
+      },
+      {
+        "uuid": "288b26df-8168-4b74-888e-8911ff14799b",
+        "fact": "lease has clause allowing landlord to deny pets at discretion",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772478585.516623,
+        "cosine_sim": 0.3206,
+        "enriched": true,
+        "activation": 0.3743,
+        "semantic_in_pool": 0.7783,
+        "blended_in_pool": 0.7581,
+        "rank_in_pool": 6
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 108,
+    "rank_if_found": 6,
+    "activation_if_found": 0.3743,
+    "semantic_if_found": 0.7783,
+    "blended_if_found": 0.7581,
+    "top1_fact": "Priya works at Anthropic as referenced in conversation about her good year",
+    "top1_blended": 0.9815,
+    "score_gap": 0.2234
+  },
+  {
+    "question_id": "priya_q07",
+    "persona": "priya",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E2",
+    "correct_edges": [],
+    "in_pool": false,
+    "pool_size": 128,
+    "rank_if_found": null,
+    "activation_if_found": null,
+    "semantic_if_found": null,
+    "blended_if_found": null,
+    "top1_fact": "Priya works at Anthropic as referenced in conversation about her good year",
+    "top1_blended": 0.9996,
+    "score_gap": null
+  },
+  {
+    "question_id": "priya_q09",
+    "persona": "priya",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "1ef0982c-feb3-4b48-996c-1086c4d234d6",
+        "fact": "user has chronic migraines that occur pretty regularly",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478571.82898,
+        "cosine_sim": 0.2603,
+        "enriched": true
+      },
+      {
+        "uuid": "6fbf0ba4-e645-43ab-bf72-92b2d36032fc",
+        "fact": "user's migraines are triggered by screens and stress",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478571.828996,
+        "cosine_sim": 0.2143,
+        "enriched": true
+      },
+      {
+        "uuid": "d4d29ab7-acfc-4fba-94cb-e91b9d7e13e2",
+        "fact": "user has been on a preventive medication for migraines for about a year which has reduced frequency a bit but not eliminated them",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478571.829008,
+        "cosine_sim": 0.2848,
+        "enriched": true,
+        "activation": 0.0,
+        "semantic_in_pool": 0.6089,
+        "blended_in_pool": 0.548,
+        "rank_in_pool": 19
+      },
+      {
+        "uuid": "b9ca8ad0-ba4d-46c3-b018-f57e14f82261",
+        "fact": "user has been getting more migraines again this past month",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478594.381329,
+        "cosine_sim": 0.2206,
+        "enriched": true
+      },
+      {
+        "uuid": "177410ee-53ee-4ac3-8dba-7e565caabb86",
+        "fact": "user knows screen time and monitors are a trigger for migraines",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478594.381401,
+        "cosine_sim": 0.2,
+        "enriched": true
+      },
+      {
+        "uuid": "7a520013-eaf9-41b7-b9fd-b59af9e6a2d7",
+        "fact": "user's doctor said user needed more omega-3s for the migraines",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478594.381434,
+        "cosine_sim": 0.2787,
+        "enriched": true
+      },
+      {
+        "uuid": "34e390d1-8330-48a1-8ec7-e9115695947e",
+        "fact": "user's doctor recommended more omega-3s for user's migraines due to anti-inflammatory effects",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478594.381443,
+        "cosine_sim": 0.2846,
+        "enriched": true
+      },
+      {
+        "uuid": "c569715d-7233-47db-a5ca-27dc203dd4e9",
+        "fact": "user's doctor said magnesium can help with user's migraines",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478594.381493,
+        "cosine_sim": 0.225,
+        "enriched": true
+      },
+      {
+        "uuid": "021d375c-d4b3-4017-8307-fa79fc3733d9",
+        "fact": "user is downloading Migraine Buddy right now",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772478594.381503,
+        "cosine_sim": 0.1958,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 153,
+    "rank_if_found": 19,
+    "activation_if_found": 0.0,
+    "semantic_if_found": 0.6089,
+    "blended_if_found": 0.548,
+    "top1_fact": "user's doctor has been on user about skipping meals",
+    "top1_blended": 0.9109,
+    "score_gap": 0.3629
+  },
+  {
+    "question_id": "tom_q02",
+    "persona": "tom",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "8a4f0b67-f1a2-4712-8f19-ca16691bade1",
+        "fact": "user has just bought a Hyundai Ioniq 5",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772480324.023024,
+        "cosine_sim": 0.3071,
+        "enriched": true,
+        "activation": 0.5006,
+        "semantic_in_pool": 0.2917,
+        "blended_in_pool": 0.3022,
+        "rank_in_pool": 50
+      },
+      {
+        "uuid": "dcbb8da8-1e8f-4083-a1e2-d252cbcd75ff",
+        "fact": "user drove past the hives the other day in the Hyundai Ioniq 5 and the bees did not even look up",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480324.023153,
+        "cosine_sim": 0.2483,
+        "enriched": true
+      },
+      {
+        "uuid": "3b011018-0dd6-4677-94df-5244f7e78b74",
+        "fact": "user noticed the bees did not even look up when driving past the hives in the Hyundai Ioniq 5",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480324.023168,
+        "cosine_sim": 0.2246,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 122,
+    "rank_if_found": 50,
+    "activation_if_found": 0.5006,
+    "semantic_if_found": 0.2917,
+    "blended_if_found": 0.3022,
+    "top1_fact": "user is addressed as Tom",
+    "top1_blended": 0.9996,
+    "score_gap": 0.6974
+  },
+  {
+    "question_id": "tom_q03",
+    "persona": "tom",
+    "attack_vector": "AV1_superseded_preference",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "d31a7bb5-d912-41f5-ba2d-e1fed91ab496",
+        "fact": "user has recently joined a walking group",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480321.784508,
+        "cosine_sim": 0.2514,
+        "enriched": true
+      },
+      {
+        "uuid": "12be49b2-d985-4cd4-b7ea-ed165b34e98c",
+        "fact": "walking group has about twelve members, though not everyone comes every week",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480321.784574,
+        "cosine_sim": 0.1953,
+        "enriched": true
+      },
+      {
+        "uuid": "1e1af1bc-7ecd-4989-b71d-fa6ce46e3f7d",
+        "fact": "walking group is fairly mixed with some quite fit members and others more leisurely",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480321.784584,
+        "cosine_sim": 0.1899,
+        "enriched": true
+      },
+      {
+        "uuid": "ae3b65a1-9001-49ac-87cb-69e762bd5588",
+        "fact": "walking group goes out on Wednesday mornings",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480321.784617,
+        "cosine_sim": 0.1827,
+        "enriched": true
+      },
+      {
+        "uuid": "fba653ff-eccb-4582-9d6d-c15be5494a4b",
+        "fact": "user has joined a walking group",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480342.477094,
+        "cosine_sim": 0.2433,
+        "enriched": true,
+        "activation": 0.633,
+        "semantic_in_pool": 0.2466,
+        "blended_in_pool": 0.3239,
+        "rank_in_pool": 44
+      },
+      {
+        "uuid": "f3d32293-f51b-45e1-af48-7e4a4983194a",
+        "fact": "user offered to suggest a circular walk route starting from Bourton-on-the-Water for the walking group's next outing",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480342.47714,
+        "cosine_sim": 0.1911,
+        "enriched": true
+      },
+      {
+        "uuid": "cabb43c6-ed77-4a86-bc0c-1fff6816a6a2",
+        "fact": "user's walking group is planning their next outing",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480342.477155,
+        "cosine_sim": 0.1884,
+        "enriched": true
+      },
+      {
+        "uuid": "9aa41656-5f00-40ba-85d9-461b564632b0",
+        "fact": "walking group plans a circular walk starting from Bourton-on-the-Water",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480342.47717,
+        "cosine_sim": 0.1694,
+        "enriched": true
+      },
+      {
+        "uuid": "097ac470-9b82-4ce2-a788-72fd13a035f5",
+        "fact": "walking group finds the Slaughters route ideal at about 5 miles",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480342.477189,
+        "cosine_sim": 0.1064,
+        "enriched": true
+      },
+      {
+        "uuid": "e73d1fcb-0665-4172-b601-097a5bf33f8c",
+        "fact": "walking group tends to go at a conversational pace of roughly two miles an hour",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480342.477204,
+        "cosine_sim": 0.1642,
+        "enriched": true
+      },
+      {
+        "uuid": "6fdadfd1-ba1a-40e5-ad7a-f1ba523a5448",
+        "fact": "walking group includes Bernard who has a replacement hip and finds stiles challenging",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480342.477216,
+        "cosine_sim": 0.2291,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 153,
+    "rank_if_found": 44,
+    "activation_if_found": 0.633,
+    "semantic_if_found": 0.2466,
+    "blended_if_found": 0.3239,
+    "top1_fact": "user is addressed as Tom",
+    "top1_blended": 0.9638,
+    "score_gap": 0.6399
+  },
+  {
+    "question_id": "tom_q04",
+    "persona": "tom",
+    "attack_vector": "AV3_stable_identity",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "ddaa58cf-a175-4733-8e4c-7c4c3b9b1025",
+        "fact": "user has atrial fibrillation",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772480296.445652,
+        "cosine_sim": 0.2923,
+        "enriched": true,
+        "activation": 0.0,
+        "semantic_in_pool": 0.449,
+        "blended_in_pool": 0.4041,
+        "rank_in_pool": 33
+      },
+      {
+        "uuid": "e77f4ffc-3e86-40d1-8e03-c7f04df3fbb5",
+        "fact": "user takes warfarin for atrial fibrillation",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772480296.445667,
+        "cosine_sim": 0.1923,
+        "enriched": true
+      },
+      {
+        "uuid": "2a560c8d-1a4c-4d08-8ad4-2259e8c53ce5",
+        "fact": "user takes warfarin as blood thinner causing excessive bruising from bee sting",
+        "category": "HEALTH_WELLBEING",
+        "created_at_ts": 1772480296.445734,
+        "cosine_sim": 0.2197,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 89,
+    "rank_if_found": 33,
+    "activation_if_found": 0.0,
+    "semantic_if_found": 0.449,
+    "blended_if_found": 0.4041,
+    "top1_fact": "user is addressed as Tom",
+    "top1_blended": 0.9629,
+    "score_gap": 0.5588
+  },
+  {
+    "question_id": "tom_q06",
+    "persona": "tom",
+    "attack_vector": "AV7_selective_forgetting",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "6b3b5f97-9baa-4910-a60d-797c11fb63c2",
+        "fact": "user submitted a planning application for the barn conversion which was refused",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480315.167275,
+        "cosine_sim": 0.2462,
+        "enriched": true
+      },
+      {
+        "uuid": "e6796199-6f86-4927-9507-94e4e4500631",
+        "fact": "user received a builder's estimate of forty thousand pounds for the barn conversion",
+        "category": "FINANCIAL_MATERIAL",
+        "created_at_ts": 1772480315.167316,
+        "cosine_sim": 0.283,
+        "enriched": true
+      },
+      {
+        "uuid": "c1fb0255-ca9d-48e2-8eac-a98938e8b013",
+        "fact": "local architect drew up architectural drawings including cross-sections and elevations for the user's barn conversion",
+        "category": "PROJECTS_ENDEAVORS",
+        "created_at_ts": 1772480315.167358,
+        "cosine_sim": 0.3285,
+        "enriched": true,
+        "activation": 0.0529,
+        "semantic_in_pool": 0.3147,
+        "blended_in_pool": 0.2362,
+        "rank_in_pool": 42
+      },
+      {
+        "uuid": "7baaa617-8b1b-4f79-84fa-f51c3d8b7e09",
+        "fact": "user needs to check with Cotswold District Council for planning permission to convert the stone barn due to the AONB status",
+        "category": "OBLIGATIONS",
+        "created_at_ts": 1772480303.07813,
+        "cosine_sim": 0.2984,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 95,
+    "rank_if_found": 42,
+    "activation_if_found": 0.0529,
+    "semantic_if_found": 0.3147,
+    "blended_if_found": 0.2362,
+    "top1_fact": "user is addressed as Tom",
+    "top1_blended": 0.9996,
+    "score_gap": 0.7634
+  },
+  {
+    "question_id": "tom_q07",
+    "persona": "tom",
+    "attack_vector": "AV6_cross_session_contradiction",
+    "classification": "E3-TRUE",
+    "correct_edges": [
+      {
+        "uuid": "6d9274a6-3338-46d6-a8de-e6e57a0f141b",
+        "fact": "user has no interest in Facebook or Instagram whatsoever",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480303.82715,
+        "cosine_sim": 0.3875,
+        "enriched": true
+      },
+      {
+        "uuid": "8ae005cf-b024-4356-8b45-7a37d27a8c31",
+        "fact": "user has no interest in Facebook or Instagram whatsoever",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480303.827161,
+        "cosine_sim": 0.3875,
+        "enriched": true
+      },
+      {
+        "uuid": "8bb0b2cc-6e2d-436d-a389-5edb339bd094",
+        "fact": "Sophie set up an Instagram account for the user when she was here in the summer",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480327.337979,
+        "cosine_sim": 0.3897,
+        "enriched": true,
+        "activation": 0.7717,
+        "semantic_in_pool": 0.6458,
+        "blended_in_pool": 0.6584,
+        "rank_in_pool": 18
+      },
+      {
+        "uuid": "c0a82b02-c3d5-4130-9566-c2951e9d394f",
+        "fact": "user posted a close-up photograph of one of the bees on a late-flowering ivy on Instagram last week",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480327.33801,
+        "cosine_sim": 0.2222,
+        "enriched": true
+      },
+      {
+        "uuid": "b11f76e4-20bc-4bbf-8c88-26799e698db0",
+        "fact": "user's bee photograph on Instagram has received over two hundred likes",
+        "category": "HOBBIES_RECREATION",
+        "created_at_ts": 1772480327.338033,
+        "cosine_sim": 0.187,
+        "enriched": true
+      },
+      {
+        "uuid": "0f466d86-f2fb-41c3-9df6-739e0a8eafb0",
+        "fact": "woman in Canada asked the user what species of bee it was in a comment on Instagram",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480327.338055,
+        "cosine_sim": 0.1463,
+        "enriched": true
+      },
+      {
+        "uuid": "ae0fbb6c-4f94-454f-a9be-0c0557d7e2ac",
+        "fact": "man in Devon commented that it was the best photograph he had seen all week on the user's Instagram post",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480327.338078,
+        "cosine_sim": 0.2525,
+        "enriched": true
+      },
+      {
+        "uuid": "e6f9ecbf-4a47-41ff-9fbe-db2a762a2bb0",
+        "fact": "woman in Canada said she was going to start following the user on Instagram after the user's reply",
+        "category": "RELATIONAL_BONDS",
+        "created_at_ts": 1772480327.338128,
+        "cosine_sim": 0.2631,
+        "enriched": true
+      },
+      {
+        "uuid": "52b21c71-7119-438a-a8ea-d4e7dd2268a4",
+        "fact": "Instagram hashtags relevant to user include #cotswolds",
+        "category": "PREFERENCES_HABITS",
+        "created_at_ts": 1772480327.338182,
+        "cosine_sim": 0.344,
+        "enriched": true
+      }
+    ],
+    "in_pool": true,
+    "pool_size": 133,
+    "rank_if_found": 18,
+    "activation_if_found": 0.7717,
+    "semantic_if_found": 0.6458,
+    "blended_if_found": 0.6584,
+    "top1_fact": "user is addressed as Tom",
+    "top1_blended": 0.9996,
+    "score_gap": 0.3412
+  }
+]

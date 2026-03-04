@@ -1,0 +1,262 @@
+{
+  "recovery_matrix": {
+    "amara_q02": [],
+    "amara_q03": [],
+    "amara_q06": [
+      "F"
+    ],
+    "amara_q07": [
+      "B"
+    ],
+    "amara_q08": [],
+    "amara_q11": [],
+    "amara_q12": [
+      "B"
+    ],
+    "amara_q14": [],
+    "david_q01": [],
+    "david_q03": [],
+    "david_q04": [
+      "F"
+    ],
+    "david_q05": [],
+    "david_q11": [
+      "A"
+    ],
+    "elena_q01": [
+      "B"
+    ],
+    "elena_q02": [
+      "A",
+      "E"
+    ],
+    "elena_q03": [
+      "C",
+      "E"
+    ],
+    "elena_q04": [],
+    "elena_q08": [],
+    "elena_q12": [],
+    "elena_q13": [
+      "A",
+      "H"
+    ],
+    "jake_q03": [
+      "A",
+      "E",
+      "G"
+    ],
+    "jake_q05": [],
+    "jake_q07": [],
+    "jake_q10": [],
+    "marcus_q03": [
+      "B",
+      "C"
+    ],
+    "marcus_q06": [],
+    "marcus_q13": [],
+    "omar_q01": [
+      "A"
+    ],
+    "omar_q02": [],
+    "omar_q05": [],
+    "omar_q06": [],
+    "omar_q11": [
+      "H"
+    ],
+    "priya_q03": [
+      "B"
+    ],
+    "priya_q05": [
+      "A"
+    ],
+    "priya_q07": [],
+    "priya_q09": [],
+    "tom_q02": [],
+    "tom_q03": [],
+    "tom_q04": [],
+    "tom_q06": [
+      "C"
+    ],
+    "tom_q07": []
+  },
+  "fix_results": [
+    {
+      "fix_name": "A",
+      "description": "Alpha halving (reduce category decay weights by 50%)",
+      "recovered": [
+        "david_q11",
+        "elena_q02",
+        "elena_q13",
+        "jake_q03",
+        "omar_q01",
+        "priya_q05"
+      ],
+      "regressions": [],
+      "net_gain": 6
+    },
+    {
+      "fix_name": "B",
+      "description": "Pool expansion (Graphiti top-50 \u2192 top-200)",
+      "recovered": [
+        "amara_q07",
+        "amara_q12",
+        "elena_q01",
+        "marcus_q03",
+        "priya_q03"
+      ],
+      "regressions": [],
+      "net_gain": 5
+    },
+    {
+      "fix_name": "C",
+      "description": "Cross-category retrieval (all 11 categories for AV7)",
+      "recovered": [
+        "elena_q03",
+        "marcus_q03",
+        "tom_q06"
+      ],
+      "regressions": [],
+      "net_gain": 3
+    },
+    {
+      "fix_name": "D",
+      "description": "Routing inertness verification (diagnostic only)",
+      "recovered": [],
+      "regressions": [],
+      "net_gain": 0
+    },
+    {
+      "fix_name": "E",
+      "description": "Semantic-only ranking (disable activation decay)",
+      "recovered": [
+        "elena_q02",
+        "elena_q03",
+        "jake_q03"
+      ],
+      "regressions": [
+        "jake_q11"
+      ],
+      "net_gain": 2
+    },
+    {
+      "fix_name": "F",
+      "description": "Retraction recovery (re-ingestion to extract retraction events)",
+      "recovered": [
+        "amara_q06",
+        "david_q04"
+      ],
+      "regressions": [],
+      "net_gain": 2
+    },
+    {
+      "fix_name": "G",
+      "description": "Aggressive semantic floor (threshold 0.85, floors +5%)",
+      "recovered": [
+        "jake_q03"
+      ],
+      "regressions": [],
+      "net_gain": 1
+    },
+    {
+      "fix_name": "H",
+      "description": "Benchmark correction (fix ground truth for E1 questions)",
+      "recovered": [
+        "elena_q13",
+        "omar_q11"
+      ],
+      "regressions": [],
+      "net_gain": 2
+    }
+  ],
+  "projected_scores": [
+    {
+      "fix": "A",
+      "description": "Alpha halving (reduce category decay weights by 50%)",
+      "recovered": 6,
+      "regressions": 0,
+      "net_gain": 6,
+      "new_pass_rate": 0.6875,
+      "new_pass_count": 77
+    },
+    {
+      "fix": "B",
+      "description": "Pool expansion (Graphiti top-50 \u2192 top-200)",
+      "recovered": 5,
+      "regressions": 0,
+      "net_gain": 5,
+      "new_pass_rate": 0.6786,
+      "new_pass_count": 76
+    },
+    {
+      "fix": "C",
+      "description": "Cross-category retrieval (all 11 categories for AV7)",
+      "recovered": 3,
+      "regressions": 0,
+      "net_gain": 3,
+      "new_pass_rate": 0.6607,
+      "new_pass_count": 74
+    },
+    {
+      "fix": "D",
+      "description": "Routing inertness verification (diagnostic only)",
+      "recovered": 0,
+      "regressions": 0,
+      "net_gain": 0,
+      "new_pass_rate": 0.6339,
+      "new_pass_count": 71
+    },
+    {
+      "fix": "E",
+      "description": "Semantic-only ranking (disable activation decay)",
+      "recovered": 3,
+      "regressions": 1,
+      "net_gain": 2,
+      "new_pass_rate": 0.6518,
+      "new_pass_count": 73
+    },
+    {
+      "fix": "F",
+      "description": "Retraction recovery (re-ingestion to extract retraction events)",
+      "recovered": 2,
+      "regressions": 0,
+      "net_gain": 2,
+      "new_pass_rate": 0.6518,
+      "new_pass_count": 73
+    },
+    {
+      "fix": "G",
+      "description": "Aggressive semantic floor (threshold 0.85, floors +5%)",
+      "recovered": 1,
+      "regressions": 0,
+      "net_gain": 1,
+      "new_pass_rate": 0.6429,
+      "new_pass_count": 72
+    },
+    {
+      "fix": "H",
+      "description": "Benchmark correction (fix ground truth for E1 questions)",
+      "recovered": 2,
+      "regressions": 0,
+      "net_gain": 2,
+      "new_pass_rate": 0.6518,
+      "new_pass_count": 73
+    },
+    {
+      "fix": "ALL",
+      "description": "All fixes combined (optimistic)",
+      "recovered": 16,
+      "regressions": 1,
+      "net_gain": 15,
+      "new_pass_rate": 0.7679,
+      "new_pass_count": 86
+    }
+  ],
+  "minimal_fix_set": [
+    "A",
+    "B",
+    "C",
+    "F",
+    "H"
+  ]
+}

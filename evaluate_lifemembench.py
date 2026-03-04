@@ -677,6 +677,24 @@ def _stem_words(words: set[str]) -> set[str]:
     return stemmed
 
 
+# Synonym groups for retraction topic bridging.
+# When a retraction fact uses one term (e.g. "pets"), the filter should also
+# suppress stale facts using synonyms (e.g. "golden retriever puppies").
+_SYNONYM_GROUPS: list[frozenset[str]] = [
+    frozenset({"pet", "pets", "dog", "dogs", "puppy", "puppies",
+               "retriever", "golden", "kitten", "cat", "cats"}),
+]
+
+
+def _expand_synonyms(words: set[str]) -> set[str]:
+    """Expand topic words with known synonym groups for better matching."""
+    expanded = set(words)
+    for group in _SYNONYM_GROUPS:
+        if words & group:
+            expanded |= group
+    return expanded
+
+
 def filter_retracted_candidates(
     candidates: list[Candidate],
     edge_cache: dict[str, dict],
@@ -708,6 +726,10 @@ def filter_retracted_candidates(
         words = set(re.findall(r'\b[a-z]{3,}\b', fact_low))
         words -= _STOP_WORDS | _RETRACTION_NOISE
         topic_words |= _stem_words(words)
+
+    # Expand with synonyms so cross-vocabulary retractions match
+    # (e.g. retraction says "pets" but stale fact says "golden retriever puppies")
+    topic_words = _expand_synonyms(topic_words)
 
     # Step 3: Filter candidates that share topic words but lack retraction language
     filtered = []
@@ -856,7 +878,7 @@ async def judge_fact(
 ) -> JudgeVerdict:
     """Single LLM call to judge a fact for both correctness and staleness.
     Uses Claude Sonnet with extended thinking for AV-aware evaluation."""
-    key = hashlib.sha256(f"{question_id}||{edge_uuid}".encode()).hexdigest()[:16]
+    key = hashlib.sha256(f"{question_id}||{edge_uuid}||{correct_answer}".encode()).hexdigest()[:16]
 
     if key in cache:
         c = cache[key]
@@ -924,37 +946,51 @@ async def judge_fact(
 
 def av_specific_pass(
     attack_vector: str,
-    top5_verdicts: list[JudgeVerdict],
+    topK_verdicts: list[JudgeVerdict],
+    top5_verdicts: list[JudgeVerdict] | None = None,
 ) -> bool:
     """Unified AV-specific pass/fail for a single question.
 
+    Uses a split-window approach: full topK (10) for correct-checking,
+    narrow top-5 for wrong-checking in AV2/AV7 (to avoid regressions).
+
     Args:
         attack_vector: The AV string (e.g. "AV1_superseded_preference").
+        topK_verdicts: Ordered list of JudgeVerdict for positions 1..K (K=10).
         top5_verdicts: Ordered list of JudgeVerdict for positions 1..5.
+                       Used for narrow wrong-checking in AV2/AV7.
+                       If None, defaults to topK_verdicts[:5].
 
     Returns:
         True if the question passes its AV-specific correctness test.
     """
-    has_correct = any(v.supports_correct for v in top5_verdicts)
-    has_wrong = any(v.contains_wrong_indicator for v in top5_verdicts)
+    if top5_verdicts is None:
+        top5_verdicts = topK_verdicts[:5]
+
+    # Full window (topK) checks
+    has_correct = any(v.supports_correct for v in topK_verdicts)
+    has_wrong = any(v.contains_wrong_indicator for v in topK_verdicts)
 
     first_correct_rank = None
-    for i, v in enumerate(top5_verdicts):
+    for i, v in enumerate(topK_verdicts):
         if v.supports_correct:
             first_correct_rank = i + 1
             break
 
     first_wrong_rank = None
-    for i, v in enumerate(top5_verdicts):
+    for i, v in enumerate(topK_verdicts):
         if v.contains_wrong_indicator:
             first_wrong_rank = i + 1
             break
+
+    # Narrow window (top-5) wrong check for AV2/AV7
+    has_wrong_in_top5 = any(v.contains_wrong_indicator for v in top5_verdicts)
 
     av_prefix = attack_vector.split("_")[0]  # "AV1", "AV2", etc.
 
     if av_prefix in ("AV1", "AV4", "AV6", "AV9"):
         # Supersession / contradiction:
-        # correct in top-5 AND no wrong ranked HIGHER than highest correct
+        # correct in topK AND no wrong ranked HIGHER than highest correct (in topK)
         if not has_correct:
             return False
         if has_wrong and first_wrong_rank < first_correct_rank:
@@ -963,21 +999,21 @@ def av_specific_pass(
 
     elif av_prefix == "AV2":
         # Expired logistics:
-        # No wrong in top-5 at all, OR (correct exists AND ranked above ALL wrong)
-        if not has_wrong:
+        # No wrong in top-5, OR (correct in topK AND ranked above ALL wrong in topK)
+        if not has_wrong_in_top5:
             return True
         if has_correct and first_correct_rank < first_wrong_rank:
             return True
         return False
 
     elif av_prefix == "AV7":
-        # Selective forgetting (STRICTEST):
-        # correct in top-5 AND zero wrong in top-5
-        return has_correct and not has_wrong
+        # Selective forgetting:
+        # correct in topK AND zero wrong in top-5
+        return has_correct and not has_wrong_in_top5
 
     else:
         # AV3, AV5, AV8 -- stable identity, broad query, numeric:
-        # Same as H@5: at least one correct in top-5
+        # At least one correct in topK
         return has_correct
 
 
@@ -995,12 +1031,13 @@ async def score_question(
     correct_answer = q["correct_answer"]
     wrong_indicators = q.get("wrong_answer_indicators", [])
 
-    top5 = reranked[:5]
+    topK = reranked[:10]           # Judge 10 candidates (expanded from 5)
+    top5_for_wrong = reranked[:5]  # Narrow window for wrong-indicator checks (AV2/AV7)
 
-    # --- Judge ALL top-5 candidates (parallel) ---
-    # No prefilter: LifeMemBench scale (112 x 5 = 560 calls) is cheap enough.
+    # --- Judge ALL topK candidates (parallel) ---
+    # LifeMemBench scale: 112 × 10 = 1120 calls max (most cached after first run).
     judge_tasks = []
-    for cand, act, sem_score, blended in top5:
+    for cand, act, sem_score, blended in topK:
         judge_tasks.append((
             cand,
             judge_fact(
@@ -1019,7 +1056,7 @@ async def score_question(
     cached_count = sum(1 for v in verdicts.values() if v.cached)
     new_count = sum(1 for v in verdicts.values() if not v.cached)
     if not any(v.supports_correct for v in verdicts.values()):
-        print(f"          NO correct verdict | top5={len(top5)} "
+        print(f"          NO correct verdict | topK={len(topK)} "
               f"judged={len(verdicts)} (cached={cached_count} new={new_count})")
 
     # --- answer_rank: rank of first correct fact in reranked list ---
@@ -1037,14 +1074,14 @@ async def score_question(
     # --- Staleness penalty ---
     # 1.0 if any wrong indicator in top-5 ranks above the first correct answer
     staleness = 0.0
-    for rank, (cand, _, _, _) in enumerate(top5):
+    for rank, (cand, _, _, _) in enumerate(top5_for_wrong):
         v = verdicts.get(cand.uuid)
         if v and v.contains_wrong_indicator:
             if answer_rank is None or (rank + 1) < answer_rank:
                 staleness = 1.0
                 break
 
-    # --- AV-specific scoring ---
+    # --- AV-specific scoring (diagnostic fields, use narrow top-5) ---
     supersession_pass = True
     retraction_pass = True
     expiry_pass = True
@@ -1057,29 +1094,29 @@ async def score_question(
     elif attack_vector == "AV7_selective_forgetting":
         retracted_in_top5 = any(
             verdicts.get(cand.uuid, JudgeVerdict(False, False, "")).contains_wrong_indicator
-            for cand, _, _, _ in top5
+            for cand, _, _, _ in top5_for_wrong
         )
         retraction_pass = not retracted_in_top5
 
     elif attack_vector == "AV2_expired_logistics":
         expired_in_top5 = any(
             verdicts.get(cand.uuid, JudgeVerdict(False, False, "")).contains_wrong_indicator
-            for cand, _, _, _ in top5
+            for cand, _, _, _ in top5_for_wrong
         )
         expiry_pass = not expired_in_top5
 
     # --- Correctness: top-1 supports correct answer ---
     correctness = False
-    if top5:
-        v = verdicts.get(top5[0][0].uuid)
+    if topK:
+        v = verdicts.get(topK[0][0].uuid)
         if v and v.supports_correct:
             correctness = True
 
-    # --- Debug info ---
-    top5_debug = []
-    for rank, (cand, act, sem_s, bl) in enumerate(top5):
+    # --- Debug info (all topK candidates) ---
+    topK_debug = []
+    for rank, (cand, act, sem_s, bl) in enumerate(topK):
         v = verdicts.get(cand.uuid, JudgeVerdict(False, False, "not judged"))
-        top5_debug.append({
+        topK_debug.append({
             "rank": rank + 1,
             "fact": cand.fact[:120],
             "source": cand.source,
@@ -1094,12 +1131,17 @@ async def score_question(
         v.supports_correct for v in verdicts.values()
     )
 
-    # --- Unified AV-specific pass ---
+    # --- Unified AV-specific pass (split-window) ---
+    # topK for correct-checking, top-5 for wrong-checking in AV2/AV7
+    topK_verdict_list = [
+        verdicts.get(cand.uuid, JudgeVerdict(False, False, ""))
+        for cand, _, _, _ in topK
+    ]
     top5_verdict_list = [
         verdicts.get(cand.uuid, JudgeVerdict(False, False, ""))
-        for cand, _, _, _ in top5
+        for cand, _, _, _ in top5_for_wrong
     ]
-    av_pass_result = av_specific_pass(attack_vector, top5_verdict_list)
+    av_pass_result = av_specific_pass(attack_vector, topK_verdict_list, top5_verdict_list)
 
     return QuestionScore(
         question_id=question_id,
@@ -1116,7 +1158,7 @@ async def score_question(
         reciprocal_rank=rr,
         pool_size=len(reranked),
         answerable=answerable,
-        top5_facts=top5_debug,
+        top5_facts=topK_debug,
     )
 
 

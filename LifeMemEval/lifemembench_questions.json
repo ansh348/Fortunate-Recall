@@ -484,12 +484,12 @@
     "persona": "elena",
     "group_id": "lifemembench_elena",
     "question": "How much does Elena owe in student loans?",
-    "correct_answer": "$40,000",
+    "correct_answer": "About $42,000 (approximately 42k in student loans)",
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
-    "attack_vector_description": "Numeric preservation - specific loan amount must be preserved exactly",
+    "attack_vector_description": "Numeric preservation - approximate loan amount must be preserved",
     "relevant_categories": ["FINANCIAL_MATERIAL"],
-    "temporal_notes": "Student loan amount mentioned in context of NP degree decision"
+    "temporal_notes": "Student loan amount mentioned as 'about 42k' in context of NP degree decision"
   },
   {
     "id": "elena_q14",
@@ -1300,10 +1300,10 @@
     "persona": "omar",
     "group_id": "lifemembench_omar",
     "question": "What are Omar's health conditions?",
-    "correct_answer": "None explicitly mentioned (but he's tired and stressed from overwork)",
+    "correct_answer": "No formal health conditions, but consistently tired and stressed from overwork",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
-    "attack_vector_description": "Stable identity - health status mentioned, failure is NOT surfacing fatigue/stress context",
+    "attack_vector_description": "Stable identity - tiredness and stress from overwork is a recurring health-adjacent theme",
     "relevant_categories": ["HEALTH_WELLBEING"],
     "temporal_notes": "Tiredness/stress from overwork mentioned across sessions"
   },

@@ -23,8 +23,8 @@ class RoutingConfig:
     """Configuration for category-aware retrieval routing."""
     enable_routing: bool = True           # master toggle for A/B testing
     per_category_limit: int = 50          # max edges per category from Cypher
-    routing_categories_max: int = 3       # top N categories from classifier
-    min_classifier_score: float = 0.3     # threshold to include a category
+    routing_categories_max: int = 5       # top N categories from classifier
+    min_classifier_score: float = 0.15    # threshold to include a category
     include_global: bool = True           # global search always runs alongside
     baseline_graphiti_score: float = 0.35 # score assigned to category-routed candidates
 
