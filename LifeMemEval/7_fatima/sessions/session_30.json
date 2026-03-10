@@ -1,0 +1,70 @@
+{
+  "session_id": 30,
+  "persona": "fatima_alrashidi",
+  "date": "2025-12-08",
+  "type": "critical",
+  "topic": "Milan trip planning",
+  "facts_disclosed": [
+    "Attending Salone del Mobile April 7-12, 2026 in Milan",
+    "Attends every year — it is non-negotiable",
+    "Meeting three potential suppliers for the hotel project"
+  ],
+  "turns": [
+    {
+      "role": "user",
+      "content": "It is already December and I have not begun planning Milan, which is unlike me. Normally by now I have my itinerary mapped down to the restaurant reservations. I need to start organising."
+    },
+    {
+      "role": "assistant",
+      "content": "When is the Milan trip, and what's the primary purpose this year? If you give me the framework, I can help you think through the planning."
+    },
+    {
+      "role": "user",
+      "content": "Salone del Mobile. April 7th through the 12th. I attend every single year — it is the one event in my calendar that is entirely non-negotiable. Even the year I had the back flare-up so badly I could barely stand, I went. You walk those halls and you are reminded why you chose this profession. The scale of ideas, the material innovation, the sheer ambition of it. Missing Salone would feel like missing a season."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong commitment — six days in Milan during the busiest design week of the year. Are you going primarily to see the exhibitions, or do you have specific business objectives this time?"
+    },
+    {
+      "role": "user",
+      "content": "Both, but this year the business side is more significant than usual. I have three supplier meetings lined up for the hotel project. One is a lighting manufacturer outside Milan in Brianza — they do bespoke LED integration into architectural surfaces, which is exactly what I need for the lobby ceiling. The second is a Venetian terrazzo studio that can produce custom aggregate blends. And the third is a German bathroom fittings company whose engineering is extraordinary — a concealed valve system that eliminates visible hardware entirely."
+    },
+    {
+      "role": "assistant",
+      "content": "Those three suppliers cover very different aspects of the hotel project — lighting integration, custom terrazzo, and minimal bathroom hardware. Are these meetings scheduled during the fair itself, or are you doing site visits outside the exhibition?"
+    },
+    {
+      "role": "user",
+      "content": "A mix. The lighting manufacturer is a factory visit in Brianza, confirmed for April 8th — the second day, when the fair is at its most crowded. Better to be in a quiet workshop than fighting through the aisles at Rho. The terrazzo studio I am meeting at their stand on April 10th, midday. And the German company I will see at their showroom in the Brera district during Fuorisalone, likely the 9th. That gives me the 7th as a pure exploration day when everything is freshest."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a smart structure: Day 1 for exploration, Day 2 for the Brianza factory visit, Day 3 for Brera and Fuorisalone, Day 4 for the terrazzo meeting. That leaves April 11th and 12th — are those for follow-ups?"
+    },
+    {
+      "role": "user",
+      "content": "The 11th I want to revisit anything that caught my attention on the opening day — stands I walked past too quickly, pieces I need to photograph for the team back in Riyadh. And the 12th is my personal day. I always keep the last day for myself. I walk through the Brera neighbourhood, visit the Pinacoteca, eat far too much pasta, and remind myself that design is not only a profession. It is a way of seeing the world."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a well-balanced itinerary — five days of intense professional engagement and one day to reconnect with the inspiration behind it all. On the logistics side, do you have your hotel sorted, or is that part of what needs organising?"
+    },
+    {
+      "role": "user",
+      "content": "The hotel is booked — the same small place near Corso Como I stay at every year. They know me by now. What I have not done is prepare the specification briefs for the supplier meetings. Each of the three needs a technical package — drawings, material references, performance requirements. The lighting manufacturer especially needs full architectural sections showing the ceiling build-up and the thermal constraints. I want to arrive in Brianza with a package so thorough that we spend the meeting discussing solutions, not explaining the problem."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right approach — a comprehensive technical package means the conversation immediately becomes productive. Given the complexity of the ceiling integration, you might also want to bring a physical sample of the timber screen material so they can assess thermal interaction firsthand. Four months to prepare three packages is manageable if you start now."
+    },
+    {
+      "role": "user",
+      "content": "The timber sample is an excellent suggestion — I will have one prepared. I think the shape of the trip is clear now. I simply needed to lay it out in sequence to see it properly. Four months until the 7th of April, inshallah, and every day between now and then will be preparation. Yalla — there is work to do."
+    },
+    {
+      "role": "assistant",
+      "content": "You've got a strong framework — the schedule is logical, the hotel is sorted, and you know exactly what preparation each meeting requires. You'll arrive in Milan ready to have the right conversations. Enjoy the espresso near Corso Como when the time comes."
+    }
+  ]
+}

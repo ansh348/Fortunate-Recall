@@ -1,0 +1,74 @@
+{
+  "session_id": 14,
+  "persona": "aisha_mohammed",
+  "date": "2025-06-18",
+  "type": "filler",
+  "topic": "rant about partner taking credit for her work",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to vent about something that happened at work today before I lose my mind"
+    },
+    {
+      "role": "assistant",
+      "content": "Go for it — what happened?"
+    },
+    {
+      "role": "user",
+      "content": "so I spent literally three days on this analysis right. like I built the whole thing from scratch — the data extraction, the reconciliation, the variance analysis, the commentary. THREE DAYS. stayed late two of those days to get it done properly. and today in a client meeting a senior partner presented it as his own work. didn't mention me once. not even a \"the team put this together.\" just straight up \"I've prepared this analysis\" while sharing MY slides"
+    },
+    {
+      "role": "assistant",
+      "content": "That is genuinely infuriating and I completely understand why you're angry. Three days of work and not even a passing mention — that's not just careless, it's disrespectful. Was this in front of the client only, or were other people from your firm in the meeting too?"
+    },
+    {
+      "role": "user",
+      "content": "there were like 4 of us from the firm in the meeting. the partner, a senior manager, me, and another associate. the senior manager definitely knows I did it because she reviewed my draft on Monday. but nobody said anything. everyone just let it happen. I was sitting there watching him present my work and I couldn't say anything because obviously you don't correct a partner in front of a client"
+    },
+    {
+      "role": "assistant",
+      "content": "You're right that correcting him in the meeting wasn't an option — that would've made things worse for you, not him. But the fact that the senior manager was there and knows you did the work is actually important. She's a witness to who actually did the analysis.\n\nThis is unfortunately not uncommon in professional services — senior people present junior people's work without attribution all the time and it's normalized in a way that it really shouldn't be. But that doesn't make it okay. \n\nHow do you want to handle this? You've got a few options, ranging from doing nothing to having a direct conversation."
+    },
+    {
+      "role": "user",
+      "content": "the thing is this isn't the first time. he's done it before with smaller bits of work and I just let it slide because I thought that's just how it works at this level. but this was a MAJOR piece of analysis. like the client was impressed and was asking follow-up questions and he was answering them using the insights I wrote in my commentary section. word for word. I'm actually fuming"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, a pattern of it changes things significantly. Once is annoying but arguably normal. Repeatedly taking credit for your work — especially answering questions using your exact words — is a real problem because it means you're invisible in the eyes of the client and potentially in the eyes of the firm when it comes to reviews and progression.\n\nHere's what I'd think about:\n\n**1. Talk to the senior manager privately.** She reviewed your draft. She was in the room. Frame it as seeking advice, not complaining: \"I wanted to ask you something — I noticed the analysis was presented without any attribution, and this has happened a few times. How would you suggest I handle it?\" This puts her in the position of acknowledging what happened and potentially advocating for you.\n\n**2. Start creating a paper trail.** When you send finished work products, send them via email with clear subject lines: \"Analysis for [Client] — completed by [your name].\" CC relevant people. Make it harder for your work to be anonymised.\n\n**3. Long term, build direct client relationships where you can.** The more the client knows your name and face, the harder it is for someone to erase you from the work."
+    },
+    {
+      "role": "user",
+      "content": "the paper trail thing is actually smart. I've been sending stuff through the internal shared drive and just telling him verbally \"it's done\" which obviously leaves no record. I need to start emailing finished work with my name on it. that's a good shout"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. A verbal handoff is so easy to erase — an email with your name on it is documentation that exists forever. Even better, put your initials or name in the footer of the slides/workpapers you prepare. It's standard practice in a lot of firms and it's a subtle way of saying \"I made this.\" If he presents slides with your initials in the footer, anyone who looks closely knows.\n\nAnd the verbal handoff thing — switching to email doesn't have to be dramatic. Just start doing it: \"Hi [Partner], attached is the completed variance analysis for [Client]. Let me know if you need any changes.\" Professional, normal, and now there's a record."
+    },
+    {
+      "role": "user",
+      "content": "you know what's dead is that I actually put so much effort into the commentary because I wanted it to be good for the CLIENT. like I genuinely cared about the quality. and now I'm sitting here thinking why did I bother staying late for someone else to take the credit. it makes you not want to try"
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you, and that feeling is completely valid — working hard only to have someone else take the credit is one of the most demoralizing things that can happen at work. But I'd push back on one thing: the quality of your work is still YOUR skill. That partner can present your slides but he can't replicate your ability to produce them. If you stop doing excellent work, you're punishing yourself, not him.\n\nThe real issue isn't the quality of your work — it's the visibility. You need to fix the visibility problem (paper trails, relationships with senior managers who see your work, eventually direct client interaction) without dimming the quality. The quality is your ticket out and up. The visibility is what you need to fix."
+    },
+    {
+      "role": "user",
+      "content": "okay yeah that's actually a really good way of looking at it. the quality is mine, the visibility is what's broken. I'm going to talk to the senior manager because she's actually quite supportive and I think she'd be honest with me about whether I'm overreacting or if this is genuinely a problem"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like exactly the right move. And for what it's worth — you're not overreacting. Repeated unattributed use of your work is a legitimate issue, especially in a profession where your reputation and track record directly affect your progression. A good senior manager will recognise that.\n\nGo into that conversation with a specific example (today's meeting is perfect), frame it as seeking guidance rather than complaining, and be open to hearing her perspective on how things work. She might have navigated the same thing earlier in her career."
+    },
+    {
+      "role": "user",
+      "content": "I will. thanks for letting me rant honestly I was about to text something aggressive in the team group chat which would have been a terrible idea loool"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — very glad you came here instead of the group chat. The group chat text would have felt good for about 30 seconds and then haunted you forever. Strategic moves only. Good luck with the senior manager conversation."
+    }
+  ]
+}

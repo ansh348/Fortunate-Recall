@@ -1,0 +1,66 @@
+{
+  "session_id": 8,
+  "persona": "callum_fraser",
+  "date": "2025-02-18",
+  "type": "critical",
+  "topic": "why he stays in the Highlands",
+  "facts_disclosed": ["Would never live in a city"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "got offered a job today. practice down in glasgow. decent money too. told them no before I even finished reading the email."
+    },
+    {
+      "role": "assistant",
+      "content": "That was quick. Was it a large animal practice, or something different from what you're doing now?"
+    },
+    {
+      "role": "user",
+      "content": "mixed practice but mostly small animal. dogs and cats. which is fine work but its not what I do. and its in glasgow which is the bigger problem."
+    },
+    {
+      "role": "assistant",
+      "content": "Fair enough -- that's a pretty significant shift on both fronts. What is it about Glasgow specifically that puts you off? Just the city itself, or the whole lifestyle change?"
+    },
+    {
+      "role": "user",
+      "content": "the city itself. all of it. couldnt do it. not a chance. I need the hills and the quiet. glasgow would finish me off in about a week. the noise and the traffic and the people everywhere. no thanks."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like it's not even a close call for you. Some people thrive on the energy of a city, but if you need space and quiet to function, no salary is going to make up for losing that. Do you think you'll always stay in the Highlands?"
+    },
+    {
+      "role": "user",
+      "content": "aye. cant see any reason to leave. ive got the work I want right here. the hills are right there. I can drive ten minutes and not see another person for hours. why would I give that up to look at labradoodles in a consulting room."
+    },
+    {
+      "role": "assistant",
+      "content": "Hard to argue with that logic. There's something to be said for knowing exactly where you belong. Did your sister have anything to say about it? Being in Glasgow herself, she might have tried to sell you on it."
+    },
+    {
+      "role": "user",
+      "content": "fiona texted me five minutes after I told her. said I should take it so she could see me more. I said she could always move back up here. she said absolutely not. so we are at an impasse as usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, sounds like neither of you is budging. At least the impasse is a familiar one. Was the money significantly better than what you're on now, or was it comparable?"
+    },
+    {
+      "role": "user",
+      "content": "prob about ten grand more. which is not nothing tbh. but ten grand doesnt buy you a view of ben wyvis from your kitchen window does it. and I dont have expensive tastes. I eat stew and drive a car thats older than some of my patients."
+    },
+    {
+      "role": "assistant",
+      "content": "Ben Wyvis from the kitchen window is a pretty strong counter-offer. And if your outgoings are low, the salary gap matters less. Sounds like you've got your priorities sorted -- not everyone can say that."
+    },
+    {
+      "role": "user",
+      "content": "aye well. I know what I like and what I dont like. cities are firmly in the dont like column. always have been. ill stay up here till they carry me out."
+    },
+    {
+      "role": "assistant",
+      "content": "A man who knows his own mind. Nothing wrong with that. The Highlands could do worse for a resident vet."
+    }
+  ]
+}

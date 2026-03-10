@@ -1,0 +1,82 @@
+{
+  "session_id": 5,
+  "persona": "callum_fraser",
+  "date": "2025-01-14",
+  "type": "critical",
+  "topic": "tricky calving case",
+  "facts_disclosed": ["BVetMed from Edinburgh"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "just came in from a calving that took three hours. heifer, first calf, breech presentation with one leg back. absolute nightmare. calf is alive though so thats something."
+    },
+    {
+      "role": "assistant",
+      "content": "Three hours for a breech with a retained leg -- that's a serious battle. Well done getting the calf out alive, that's a really good outcome given the presentation. How's the heifer doing?"
+    },
+    {
+      "role": "user",
+      "content": "shes up and nursing which is more than i expected honestly. gave her metacam and some calcium. shell be sore tomorrow but shell be fine. the farmer was panicking the whole time which didnt help. kept asking if we should just call it and do a section."
+    },
+    {
+      "role": "assistant",
+      "content": "Good that she's up and nursing already -- that's a positive sign. The farmer wanting to jump to a section isn't unreasonable given how it must have looked, but you clearly made the right call to persist with correction.\n\nWas the main difficulty getting the retained leg forward, or was the positioning itself the bigger problem? Breech with a leg back in a heifer is about as tight as it gets."
+    },
+    {
+      "role": "user",
+      "content": "the leg was the issue. calf was big, heifer was tight, and the leg was folded right back under the body. couldnt get enough room to cup the hoof and bring it forward without risking tearing her. ended up having to repel the calf, get some lubricant in, and work the leg round slowly. took about 45 minutes just on that part."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like textbook-perfect technique honestly -- repelling to create space, lots of lube, slow and careful correction. Rushing that is how you end up with a uterine tear. 45 minutes for a retained leg on a tight heifer is completely reasonable.\n\nDid you have someone helping with the repulsion, or were you managing that solo while trying to work the leg?"
+    },
+    {
+      "role": "user",
+      "content": "the farmer was helping but hes about 70 and not the strongest. his grandson was there too, maybe 16, never seen a calving before. so i had the old man on the rope and the boy looking like he was about to pass out. crack team."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha! A pensioner on the rope and a teenager going grey -- the elite calving support unit. At least the grandson got a baptism by fire. He'll either want to be a farmer or never go near a cow again.\n\nDid you have to use calving ropes on the calf once you got the leg corrected, or could you deliver by hand at that point?"
+    },
+    {
+      "role": "user",
+      "content": "ropes on both hind legs once they were corrected, then steady traction. she was pushing well by that point which helped. the calf came out flat, not breathing, had to clear the airway and rub it down. took about a minute to start breathing which felt like about a year."
+    },
+    {
+      "role": "assistant",
+      "content": "That minute must have been agonising, especially after three hours of work to get it out. A flat calf after a prolonged breech delivery is pretty common though -- the compression on the umbilicus during a slow delivery can do that. Did you do the cold water on the head trick, or just suction and stimulation?"
+    },
+    {
+      "role": "user",
+      "content": "bit of cold water behind the ears aye. and vigorous rubbing with a towel. worked a treat. you know its funny, i did five years at edinburgh for the bvetmed and the thing that saved that calf was basically the same technique my dad showed me when i was about 12. rub them hard with straw til they cough."
+    },
+    {
+      "role": "assistant",
+      "content": "There's something beautifully humbling about that -- five years at the Dick Vet and the critical moment comes down to straw and elbow grease that your dad taught you before you were a teenager.\n\nThat said, the Edinburgh training is what let you handle the retained leg safely and make the call to persist rather than section. The instinct to rub a calf alive might be old-school farm knowledge, but knowing when it's safe to repel and correct versus when you need to cut is what the degree gives you. Both matter."
+    },
+    {
+      "role": "user",
+      "content": "aye fair point. i do use the anatomy more than i let on. knowing exactly where that leg is and how to manipulate it without doing damage, thats not something you learn from watching your dad. the first year farm placements at edinburgh were the most useful bit though. more than any lecture."
+    },
+    {
+      "role": "assistant",
+      "content": "That tracks with what a lot of large animal vets say -- the placements are where it clicks. You can learn anatomy from a diagram, but learning how a calf actually feels when it's malpresented inside a heifer? That's hands-on or nothing.\n\nAre you going to check back on the heifer tomorrow, or is the farmer experienced enough to monitor her?"
+    },
+    {
+      "role": "user",
+      "content": "ill pop back tomorrow. want to check shes not got a retained placenta and make sure the calf is feeding properly. the farmer is experienced but he was pretty shaken tonight so id rather see it myself. plus the grandson will prob want to know if the calf has a name yet."
+    },
+    {
+      "role": "assistant",
+      "content": "Good call on the follow-up. Retained placenta after a prolonged delivery like that is definitely worth watching for. And if the grandson names that calf, he's emotionally invested -- future farmer confirmed.\n\nYou should be pleased with tonight. Breech, retained leg, tight heifer, minimal help, calf alive and nursing. That's a good night's work by any measure."
+    },
+    {
+      "role": "user",
+      "content": "aye. im covered in amniotic fluid and i cant feel my right arm but the calf is alive so ill take it. right, need a shower and about 12 hours sleep. cheers."
+    },
+    {
+      "role": "assistant",
+      "content": "You've earned both. Go thaw out and rest that arm. Well done tonight."
+    }
+  ]
+}

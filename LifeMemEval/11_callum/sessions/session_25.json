@@ -1,0 +1,66 @@
+{
+  "session_id": 25,
+  "persona": "callum_fraser",
+  "date": "2025-11-22",
+  "type": "critical",
+  "topic": "sport change",
+  "facts_disclosed": ["Quit rugby, took up fell running"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "whats a reasonable target time for a first fell race. 10k distance. about 600m of ascent."
+    },
+    {
+      "role": "assistant",
+      "content": "For a first fell race at 10k with 600m of ascent, a lot depends on your fitness base and the terrain. Some rough benchmarks:\n\n- **Competitive club runners:** 50-65 minutes\n- **Fit recreational runners:** 65-85 minutes\n- **First-timers with decent road fitness:** 80-100 minutes\n- **Newer runners / tough terrain:** 100-120 minutes\n\n600m of ascent over 10k is a solid amount of climbing -- that's a proper fell race, not a hilly road race. The descents will slow you down as much as the ascents if the ground is rough.\n\nWhat's your running background? Have you done much hill work or is this new territory?"
+    },
+    {
+      "role": "user",
+      "content": "fairly new to running specifically. been fit though. played rugby for years but packed that in recently. my body was telling me it was time to stop getting tackled every weekend basically."
+    },
+    {
+      "role": "assistant",
+      "content": "Rugby fitness is a good base for fell running -- you'll have the leg strength and the cardiovascular engine. The main things you'll need to build are:\n\n- **Sustained endurance** -- rugby is bursts of effort with recovery. Fell running is 60-90+ minutes of continuous work. Your legs can do it but your aerobic system might need time to adapt to the longer effort.\n- **Downhill confidence** -- this is where most road runners and ex-team sport players struggle. Bombing down a steep, rocky hillside at speed is a learned skill.\n- **Ankle strength and stability** -- rough ground is very different from a rugby pitch. Your ankles will complain initially.\n\nGiven your rugby fitness, I'd say aiming for 80-90 minutes on that first 10k fell race is realistic and respectable. Don't go out too hard on the first climb -- the classic beginner mistake is blowing up halfway because you attacked the first hill.\n\nHow long have you been running on the hills?"
+    },
+    {
+      "role": "user",
+      "content": "couple of months. been doing 3-4 runs a week since I stopped rugby. mostly routes around inverness. ben wyvis a couple of times. some of the wee hills closer to town for shorter runs. its a different kind of knackered to rugby. legs feel it more but I dont feel like ive been hit by a van on sunday morning which is an improvement."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, that's a significant quality-of-life upgrade. Not feeling like you've been in a car crash every Sunday is underrated.\n\nA couple of months with 3-4 runs a week is a solid start, and if you're already doing Ben Wyvis, you're getting real hill time. That's about 900m of ascent for the full round trip, so you're well equipped for a 600m race.\n\nFor the next few weeks I'd suggest:\n\n- **One longer run per week** (90+ minutes, easy pace, hilly) -- this builds the endurance engine.\n- **One shorter, faster session** -- tempo effort on a rolling route. Not intervals, just comfortably hard for 30-40 minutes.\n- **One or two easy runs** -- recovery pace, can be flat or gentle hills.\n- **Practice descending** -- find a grassy or heathery hill and run down it repeatedly. Learn to let go and trust your feet. This is where you'll gain the most time in a race.\n\nThe transition from rugby fitness to fell running fitness usually takes about 3-4 months to really click. You're in the adaptation phase -- it'll feel easier soon."
+    },
+    {
+      "role": "user",
+      "content": "the descending thing is where I feel most useless honestly. going up I can just grind. coming down I look like a baby deer on ice. everyone overtakes me on the downhills."
+    },
+    {
+      "role": "assistant",
+      "content": "That's completely normal for someone new to fell running. Descending fast is a skill, not just fitness, and it takes time to develop. A few tips:\n\n- **Lean forward slightly from the ankles, not the waist.** Keep your centre of gravity over your feet, not behind them. Leaning back is the instinct but it actually makes you more likely to slip.\n- **Short, quick steps.** Don't overstride. Your feet should land under you, not out in front.\n- **Look ahead, not down.** Pick your line 3-5 metres ahead rather than staring at your feet. Your peripheral vision handles the immediate ground.\n- **Arms out for balance.** It looks daft but it works. Think skier, not sprinter.\n- **Let gravity do the work.** You shouldn't be braking with every step. Controlled falling is the goal.\n\nPractice on grass first -- it's more forgiving than rock or heather. Find a steep grassy slope and just run down it over and over. Start conservative, gradually increase speed. After a few sessions your body figures out what to do and the baby deer phase passes.\n\nThe fact that you're getting overtaken on descents but holding your own on climbs is textbook ex-rugby-player profile. The strength is there, the technique just needs catching up."
+    },
+    {
+      "role": "user",
+      "content": "controlled falling. aye that makes sense. I think my problem is im basically braking the whole way down. every step. hammering my knees which is one of the reasons I stopped rugby in the first place so slightly counterproductive."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, constant braking is murder on the knees -- all that eccentric load on the quads and the impact going straight through the joint. It's basically doing plyometric squats all the way down the hill, which is the opposite of what you want if you're trying to look after your knees.\n\nThe good news is that once you learn to flow downhill with shorter steps and a forward lean, the impact per step drops massively. You're spreading the load across more, lighter steps instead of fewer, heavy, braking steps.\n\nA couple of extra things that might help:\n\n- **Strengthen your quads eccentrically** -- wall sits, slow negative squats, step-downs. If the muscles can handle the load, the knees take less of it.\n- **Consider shoes with more cushion for training descents** -- something like the Hoka Speedgoat has decent cushioning without losing too much ground feel.\n- **Poles for longer descents in training** -- takes 20-30% of the impact off your legs. Not for racing, but useful for building up volume without destroying your knees.\n\nWhat made you switch from rugby to running specifically? Just the knees, or was there more to it?"
+    },
+    {
+      "role": "user",
+      "content": "knees mostly. and I have crohns which doesnt mix great with contact sport. the flares were getting worse and the recovery time after matches was getting longer. felt like I was just making myself ill every weekend for a sport I wasnt even that good at anymore. fell running is better for me. its just the hills and my own legs. no one smashing into me. can stop when I need to."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes a lot of sense. Crohn's and high-impact contact sport is a tough combination -- the physical stress of rugby can absolutely aggravate flare-ups, and the recovery demands are huge on a body that's already managing an inflammatory condition.\n\nFell running is actually a much better fit health-wise:\n\n- **You control the intensity** -- you can back off or stop if you're having a rough day, no letting a team down.\n- **Lower inflammatory load** -- steady-state cardio is generally easier on the gut than repeated high-impact collisions.\n- **Flexible scheduling** -- if you're having a flare, you skip a run. In a team sport, there's pressure to show up.\n- **Mental health benefits** -- time alone on the hills is genuinely therapeutic. Lots of fell runners cite that as the main reason they do it.\n\nSounds like a smart call. You haven't given up being active, you've just found something that works with your body instead of against it. And honestly, fell running rewards exactly the kind of stubbornness that rugby players have. Just pointed uphill instead of at another human."
+    },
+    {
+      "role": "user",
+      "content": "stubbornness pointed uphill. aye thats about right. cheers for the training tips. ill work on the descending and just try to get round that first race in one piece."
+    },
+    {
+      "role": "assistant",
+      "content": "You'll get there. Give it a month of deliberate downhill practice and you'll notice a big difference. The baby deer phase doesn't last forever.\n\nFor that first race -- just enjoy it. Don't chase a time. Get round, learn what racing feels like, see where you are. You can optimise later. Good luck with it -- and with the Sunday mornings that don't feel like you've been through a washing machine."
+    }
+  ]
+}

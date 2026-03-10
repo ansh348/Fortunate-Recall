@@ -1,0 +1,74 @@
+{
+  "session_id": 17,
+  "persona": "fatima_alrashidi",
+  "date": "2025-05-28",
+  "type": "filler",
+  "topic": "hiring a junior designer — what to look for",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am in the process of hiring a junior designer and I find myself dissatisfied with every application I have reviewed. Perhaps my standards are unreasonable. Perhaps they are not. I would like to think through what actually matters in a junior hire."
+    },
+    {
+      "role": "assistant",
+      "content": "It's worth questioning whether the dissatisfaction is about the candidates themselves or about a mismatch between what you need and what the applicant pool is offering. What specifically is bothering you about the applications you've seen so far?"
+    },
+    {
+      "role": "user",
+      "content": "The portfolios are decorative. That is the only word for it. Renderings that look like Instagram posts — perfectly styled, beautiful colour grading, and absolutely no evidence of design thinking underneath. I see rooms. I do not see decisions. I want to understand why the chair is there, not just that it looks appealing in the rendering."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a really important distinction — the difference between styling and design. A portfolio full of polished renderings without visible process or rationale tells you someone knows their software but maybe not their discipline. When you say you want to see decisions, are you looking for things like concept development, space planning rationale, material selection logic — that kind of documented thinking?"
+    },
+    {
+      "role": "user",
+      "content": "Exactly. Show me the process. Show me the sketch that preceded the rendering. Show me the material samples you considered and rejected, and tell me why you rejected them. Show me the site photographs that informed your approach. Design is not the final image — design is the accumulation of a thousand small choices, each one deliberate. If a junior designer cannot articulate why they chose limestone over marble for a particular project, they are decorating, not designing."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a rigorous but fair standard. The ability to articulate the reasoning behind choices is what separates a designer from someone who has good taste. For a junior hire though, there's a tension — they may not have had opportunities to develop that depth of process in their education or early experience. Some of the best junior designers I've seen were raw in their portfolios but sharp in conversation.\n\nWould you consider a two-stage process? Portfolio review to filter for potential, then an in-person exercise or interview where you ask them to walk you through their thinking on a specific project?"
+    },
+    {
+      "role": "user",
+      "content": "That is a good suggestion. I could give them a brief — a small, defined problem — and ask them to present their approach within a week. Not a finished design, but a process. A concept board, a material direction, a spatial logic. That would reveal more than any portfolio. What should the brief look like? Something simple enough to be fair but complex enough to expose their thinking."
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a brief structure that could work well:\n\n**The scenario**: A single room — say, a private study of roughly 20 square metres in a Riyadh residence. The client is a writer who works from home, needs natural light, and has a collection of 500 books.\n\n**What you ask for** (deliverable in one week):\n1. A written design concept — no more than one page explaining their approach and why\n2. A mood board or concept board showing material and colour direction\n3. A rough spatial plan — hand-sketched is fine\n4. Three material or finish choices with a short justification for each\n\n**What you're evaluating**:\n- Can they interpret a brief rather than just decorate a room?\n- Do they consider the user's actual needs (light for reading, book storage, working posture)?\n- Do their material choices respond to the Riyadh climate and context?\n- Is there a point of view, or is it generic?\n\nThe room is small enough to be manageable in a week, but the constraints are specific enough that you'll see how they think."
+    },
+    {
+      "role": "user",
+      "content": "I like this very much. The writer's study is a contained problem with real constraints. I would add one thing — I want to see how they handle the book collection. Five hundred books is a significant volume. A junior designer who simply puts in a wall of shelving has solved the problem but not designed anything. I want to see whether they consider how books relate to the room — are they a backdrop, a feature, a material in their own right? The spines of five hundred books create their own colour palette. A thoughtful designer would recognise that."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a brilliant lens for evaluation. The books-as-material observation is exactly the kind of thinking that distinguishes a designer with genuine spatial intelligence. Someone who sees 500 books and thinks \"storage problem\" is very different from someone who sees 500 books and thinks \"this is the room's dominant visual texture.\"\n\nYou could even make that an implicit test — don't mention it in the brief. Just say \"the client has a collection of 500 books that must be accommodated.\" Then see who treats them as furniture and who treats them as a design element. That tells you a lot about instinct."
+    },
+    {
+      "role": "user",
+      "content": "Yes. Do not prompt them. Let the brief speak and see who hears the real question inside it. That is the test. Now — beyond the portfolio and the design exercise, there is the question of temperament. I run a very particular studio. The standards are exacting and the pace is demanding. I need someone who can receive criticism without crumbling and who has the discipline to revise work repeatedly until it is right. How does one assess that in an interview?"
+    },
+    {
+      "role": "assistant",
+      "content": "Temperament is harder to test directly, but there are a few approaches:\n\n1. **During the design exercise review**: When they present their brief response, push back on something — even something good. Say \"Tell me more about why you chose this\" or \"I'm not convinced by this material choice — defend it.\" Watch whether they fold immediately, get defensive, or engage thoughtfully. The best response is someone who listens, considers, and either defends with reasoning or genuinely reconsiders.\n\n2. **Ask about a failure**: \"Tell me about a project or decision that didn't work, and what you learned.\" People who can articulate their own mistakes with clarity are usually resilient enough to handle criticism.\n\n3. **Ask about revision**: \"How many iterations do you typically go through before you consider something finished?\" If the answer is one or two, that's a warning sign. If they talk about revision as a natural part of their process rather than a frustration, that's promising.\n\n4. **References from professors or previous employers**: Ask specifically about how they handle feedback. Academic references often reveal more than professional ones for junior candidates."
+    },
+    {
+      "role": "user",
+      "content": "The pushback test is excellent. I will deliberately challenge one element of their presentation — something I may actually agree with — and see whether they can hold their position with reasoning or whether they immediately capitulate. I have no use for a designer who changes their mind because someone senior disagreed. Deference is not design. I want conviction backed by logic."
+    },
+    {
+      "role": "assistant",
+      "content": "\"Deference is not design\" — that's a strong principle and one that would serve any studio well. The pushback test will reveal that very quickly. Someone who caves instantly will do the same thing with clients, and someone who gets combative won't collaborate well. What you're looking for is the person in the middle: respectful but grounded, willing to listen but not willing to abandon a considered position without a better argument.\n\nIt sounds like you now have a fairly clear hiring process: portfolio review for baseline competence, the writer's study brief for design thinking, and the interview with a pushback moment for temperament. That should surface the right person if they're in your applicant pool."
+    },
+    {
+      "role": "user",
+      "content": "It does feel clearer now. I will restructure the process along these lines and see what emerges. Inshallah, there is someone in this stack of applications who understands that design is thinking made visible. Thank you for helping me organise the approach."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome. Your standards are high, but they're not unreasonable — they're the standards of someone who takes the discipline seriously. The right junior designer will respond to that structure with energy, not anxiety. Good luck with the search."
+    }
+  ]
+}

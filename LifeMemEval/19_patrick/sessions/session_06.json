@@ -1,0 +1,82 @@
+{
+  "session_id": 6,
+  "persona": "patrick_obrien",
+  "date": "2025-01-23",
+  "type": "critical",
+  "topic": "coaching schedule",
+  "facts_disclosed": ["Coaches Shamrocks CYO baseball"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Quick question. Is there a good app for organizing a youth baseball schedule. Practices and games."
+    },
+    {
+      "role": "assistant",
+      "content": "There are a few solid options. TeamSnap is probably the most popular for youth sports -- lets you set up game schedules, practice times, and send notifications to parents. GameChanger is another good one, more focused on tracking stats during games. For something simpler, even a shared Google Calendar works well if you just need scheduling. Are you coaching a team?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah I coach a CYO team. The Shamrocks. Been doing it going on 12 years now. Used to be my son's team but he aged out a long time ago and I just kept going."
+    },
+    {
+      "role": "assistant",
+      "content": "That's great that you stuck with it -- 12 years of coaching says a lot. CYO baseball is a big deal in a lot of communities. For a team like that, I'd recommend TeamSnap. You can set up the full season schedule, mark which fields you're using, track RSVPs for practices, and it sends reminders to the parents automatically. Takes a lot of the texting and phone tag out of it."
+    },
+    {
+      "role": "user",
+      "content": "The texting is what's killing me. I got 14 kids on the roster and every parent wants to know something different. What time. What field. Is practice cancelled. I'm not a secretary I'm a coach."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you. TeamSnap would solve a lot of that headache. You post the schedule once, any changes you make push notifications to everyone automatically. Parents can check availability, see locations, all of it. No more answering the same question 14 times. There's a free version that covers basic scheduling, or the paid version adds more features like stat tracking and messaging."
+    },
+    {
+      "role": "user",
+      "content": "Free version is fine. These are 11 year olds. I don't need stat tracking. I need parents to show up on time and bring the right kid to the right field."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, fair enough. The free version of TeamSnap will handle all of that. You create the team, add the parents' emails, build out the schedule with dates, times, and field locations. When you need to cancel or change something, one update and everyone gets notified. You can also set it so parents have to confirm attendance, which helps with knowing how many kids you'll have at practice."
+    },
+    {
+      "role": "user",
+      "content": "Good. Spring season starts in March so I've got some time to set it up. CYO usually gets us the game schedule by mid February. Practices I run myself so those I can put in whenever."
+    },
+    {
+      "role": "assistant",
+      "content": "You've got plenty of time then. I'd suggest setting up the TeamSnap account now, adding your roster and parent contacts, and then plugging in the game schedule once CYO sends it in February. That way when March rolls around you're already good to go. You can add practices as you plan them."
+    },
+    {
+      "role": "user",
+      "content": "One more thing. Can the parents message me through the app or is it just notifications."
+    },
+    {
+      "role": "assistant",
+      "content": "TeamSnap has a messaging feature, but you control it. You can send messages to the whole team or individual parents, and they can reply. If you don't want it to become another texting situation, you can limit it to announcements only -- where you post updates and parents just receive them without replying through the app. That keeps it clean."
+    },
+    {
+      "role": "user",
+      "content": "Announcements only. Affirmative. Last thing I need is parents arguing about playing time in a group chat."
+    },
+    {
+      "role": "assistant",
+      "content": "Smart move. Keeping it to one-way announcements means you control the information flow and nobody starts a thread about why their kid didn't pitch. You can always talk to parents individually if something comes up, but the app stays professional."
+    },
+    {
+      "role": "user",
+      "content": "Copy that. I'll set it up this week. Appreciate it."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds good. If you run into any issues getting it set up, feel free to ask. Good luck with the Shamrocks this spring."
+    },
+    {
+      "role": "user",
+      "content": "Good kids on this year's team. Should be a decent season if the parents don't drive me crazy first."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, that's always the real challenge with youth sports -- the kids are usually the easy part. Hopefully the app cuts down on the parent chaos. Have a good one, Coach."
+    }
+  ]
+}

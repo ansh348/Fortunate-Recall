@@ -1,0 +1,82 @@
+{
+  "session_id": 18,
+  "persona": "rosa_gutierrez",
+  "date": "2025-07-22",
+  "type": "critical",
+  "topic": "trip cancelled",
+  "facts_disclosed": ["Peru trip cancelled — Carlos needs knee surgery"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Well. I need to figure out what to do with a lot of sudden free time in October. We had a trip planned and it is officially off the table."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. Cancelled trips are always disappointing, especially when you've been looking forward to them. What happened, if you don't mind me asking? And how much time are we talking about — a long weekend or a longer stretch?"
+    },
+    {
+      "role": "user",
+      "content": "About two weeks. We were going to Peru — my husband and I. It was going to be a big trip, something we had been planning for a while. But Carlos's knee finally gave out. He needs surgery."
+    },
+    {
+      "role": "assistant",
+      "content": "Oh no, I'm sorry about Carlos's knee. That's a tough combination — losing the trip and dealing with surgery. What kind of surgery is he looking at? Knee replacements and repairs have come a long way, but the recovery can be significant."
+    },
+    {
+      "role": "user",
+      "content": "Meniscus tear. The doctor says it has been degrading for a while, but he finally tore it properly playing tennis last week. He needs arthroscopic surgery and then three months minimum of recovery. There is no way he is walking through Machu Picchu like that. The Peru trip is cancelled."
+    },
+    {
+      "role": "assistant",
+      "content": "A meniscus tear is painful, but the good news is that arthroscopic surgery for a meniscus is one of the more routine orthopedic procedures. It's usually outpatient — he'll likely go home the same day. The three-month recovery timeline is standard: a few weeks on crutches, then physical therapy to rebuild strength and range of motion.\n\n**For the recovery:**\n- Ice and elevation are critical the first two weeks\n- PT usually starts within a week or two post-op\n- Most people are walking without assistance by 4-6 weeks, but full activity (tennis, hiking) takes the full three months or more\n\nI understand why Peru is not happening — Machu Picchu involves serious altitude and uneven terrain. That's not something you push through with a recovering knee.\n\nWhen is the surgery scheduled?"
+    },
+    {
+      "role": "user",
+      "content": "Early August. The surgeon wants to do it before the inflammation gets worse. Carlos is being stoic about it, as he always is, but I know he is disappointed. He was the one who wanted to go to Peru in the first place."
+    },
+    {
+      "role": "assistant",
+      "content": "That's hard — especially when it was his dream trip. Being stoic doesn't mean he's not feeling it. Early August surgery means he'd be deep in recovery through October, so the timing really does make the trip impossible.\n\nA few thoughts:\n\n**On the surgery itself:** If you want, I can help you put together a list of questions for the surgeon — things like whether they're doing a repair versus a partial meniscectomy, what the PT protocol will look like, and when he can realistically return to tennis.\n\n**On Peru:** You might be able to recover some of the costs depending on your booking. Did you book flights and hotels directly, or through a travel agency? Travel insurance, if you have it, would cover a medical cancellation.\n\n**On the free time in October:** Once the dust settles, that two-week window could become something else — not Peru, but something meaningful. A trip you can do closer to home once he's further along in recovery, maybe.\n\nOne thing at a time, though. How are you doing with all of this?"
+    },
+    {
+      "role": "user",
+      "content": "I am fine. Disappointed, claro, but these things happen. We are not twenty years old — bodies break down. I told Carlos we will go next year when his knee is strong. He said, 'If my knee is strong.' I said, 'It will be strong because you are going to do every single physical therapy session and not skip a single one.' He knows better than to argue with me on that."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — I have a feeling Carlos's PT compliance rate is going to be among the highest his therapist has ever seen, with you overseeing the process. That's honestly the best thing for his recovery. People who commit fully to PT after meniscus surgery tend to come back stronger than they were before the tear.\n\nAnd Peru will still be there next year. If anything, having more time to plan might let you add things you hadn't originally considered — the Sacred Valley, Lake Titicaca, a food tour in Lima. Sometimes a delay turns into a better trip.\n\nFor now, do you want help with the practical side? Cancellations, refunds, anything like that?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, actually. We booked flights through American Airlines directly. The hotels were through a booking site — I think Booking.com. We do not have travel insurance because Carlos said we did not need it. I will be reminding him of that."
+    },
+    {
+      "role": "assistant",
+      "content": "Carlos is going to hear about that travel insurance decision for years, I suspect.\n\nHere's what you're looking at:\n\n**American Airlines:**\n- If you bought basic economy, those tickets are generally non-refundable but you can cancel for a flight credit (valid for one year from the original booking date). You won't get cash back, but you won't lose the money entirely.\n- If you bought main cabin or above, you may have more flexibility. Check your confirmation email for the fare class.\n- Call their reservations line or manage the booking online. A medical reason may help — some agents have discretion, especially if you can provide a doctor's note.\n\n**Booking.com:**\n- This depends entirely on the cancellation policy of each hotel. Log into your Booking.com account and check each reservation. Some hotels offer free cancellation up to a certain date; others are non-refundable.\n- If the hotels are non-refundable, you can still try contacting them directly (not through Booking.com) and explaining the medical situation. Hotels sometimes waive penalties for medical cancellations, especially if you offer to rebook for next year.\n\n**General tip:** For both the airline and hotels, a brief letter from Carlos's surgeon documenting the medical necessity of cancellation can go a long way.\n\nWant me to help you draft a cancellation request letter?"
+    },
+    {
+      "role": "user",
+      "content": "That would be helpful, yes. Something I can send to the hotels. Professional but not overly formal — I do not want to sound like I am writing a legal brief."
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a draft you can adapt:\n\n---\n\nSubject: Cancellation Request — Reservation [#number], [dates]\n\nDear [Hotel Name] Team,\n\nI am writing to request cancellation of our reservation for [dates] due to an unexpected medical situation. My husband requires knee surgery in early August, and his recovery will prevent us from traveling during our planned trip.\n\nWe were very much looking forward to visiting and hope to rebook for next year. If possible, we would appreciate a full refund or a credit toward a future stay.\n\nI am happy to provide documentation from his surgeon if needed.\n\nThank you for your understanding.\n\nRosa Gutierrez\n[Phone number]\n[Email]\n\n---\n\nShort, clear, and human. You can personalize it for each hotel. If any of them push back, that's when you mention the surgeon's letter. Most hospitality businesses will work with you on a medical cancellation, especially if you signal you'll come back."
+    },
+    {
+      "role": "user",
+      "content": "That is perfect. Direct, no unnecessary detail. I will send that out this week. And I will call American Airlines — I believe we bought main cabin so hopefully there is some flexibility. Dios mio, the things you deal with when your husband thinks he is still twenty-five on the tennis court."
+    },
+    {
+      "role": "assistant",
+      "content": "The tennis court has claimed many a meniscus. At least he was doing something active — could be worse. And main cabin should give you decent options with American. When you call, have your confirmation number ready and mention the medical situation upfront. If the first agent isn't helpful, hang up and call again — you sometimes get a different answer from a different representative.\n\nI hope Carlos's surgery goes smoothly and the recovery is quick. And when you do finally get to Peru, it'll be worth the wait."
+    },
+    {
+      "role": "user",
+      "content": "It will. I have waited this long — one more year will not break me. Thank you for the help. I am going to go inform Carlos that he will be writing a letter to his surgeon requesting documentation, whether he likes it or not."
+    },
+    {
+      "role": "assistant",
+      "content": "He will comply, I'm sure. Good luck with the cancellations and with getting Carlos through surgery and recovery. Peru next year is going to be well-earned. Take care, Rosa."
+    }
+  ]
+}

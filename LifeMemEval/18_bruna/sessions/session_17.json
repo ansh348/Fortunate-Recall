@@ -1,0 +1,82 @@
+{
+  "session_id": 17,
+  "persona": "bruna_costa",
+  "date": "2025-07-08",
+  "type": "filler",
+  "topic": "biomechanics deep dive — gait analysis for a patient with shin splints",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to nerd out about biomechanics for a second, is that okay haha"
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely, go for it. What's on your mind?"
+    },
+    {
+      "role": "user",
+      "content": "So I have this patient — recreational runner, started training for a 10K a few months ago, and now has medial tibial stress syndrome. Classic shin splints. He came in thinking he just needs to stretch more and ice it. But I did a gait analysis and gente, there is SO much going on biomechanically that stretching will not fix!"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a really common misconception — people think shin splints are a simple overuse issue that rest and ice will solve. What did the gait analysis reveal? Was it more of a foot mechanics issue, a hip stability problem, or a combination?"
+    },
+    {
+      "role": "user",
+      "content": "Combination! That's what's so interesting. First — excessive pronation on the left side. His foot is collapsing inward way too much at midstance. But here's the thing, the pronation isn't just a foot problem. When I looked at his hips, his left glute med is significantly weaker than the right. So the hip is dropping, the knee is caving in, and the foot is compensating. It's a whole chain reaction!"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a textbook kinetic chain issue — the proximal weakness at the hip is cascading down through the knee and into the foot. The tibial stress is essentially the end point of a problem that starts much higher up. Did you notice any asymmetry in his cadence or stride length between sides as well?"
+    },
+    {
+      "role": "user",
+      "content": "Yes!! His stride length on the left is about 8% longer than the right. He's overstriding on that side, which means more braking force, more impact through the tibia. And his cadence is low — around 156 steps per minute. For his height and pace, he should be closer to 170-175. Low cadence plus overstriding plus hip drop equals his poor tibias absorbing way too much force every single step."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a really clear biomechanical picture. The overstriding alone increases ground reaction forces significantly — combine that with the hip weakness and the pronation, and you can almost predict exactly where the stress would show up. What's your treatment plan? Are you going after the hip strength first and letting the downstream corrections follow, or addressing multiple levels simultaneously?"
+    },
+    {
+      "role": "user",
+      "content": "Multiple levels at the same time! I can't just do hip strengthening and send him back to running with the same gait pattern, right? So the plan is — glute med strengthening obviously, clamshells, single-leg bridges, lateral band walks. But ALSO cadence retraining. I'm going to have him run with a metronome app set to 170 and practice shorter, quicker steps. And we're looking at his shoes because they are completely worn out, zero support."
+    },
+    {
+      "role": "assistant",
+      "content": "The multi-level approach makes sense. The cadence retraining is especially important because even with stronger glutes, if the motor pattern doesn't change, he'll likely default to the same overstriding habit under fatigue. Did you get any useful information from the shoe wear pattern?"
+    },
+    {
+      "role": "user",
+      "content": "Nossa, the wear pattern on the left shoe told me everything before I even watched him run haha! The medial side of the sole is completely ground down — classic overpronation wear. And the heel is worn at a weird angle that confirms the overstriding. I always tell my patients, bring your old shoes to the appointment because they're like a diary of how you move. Every step you've ever taken is written on the bottom of those shoes!"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a great analogy — shoes as a movement diary. It's amazing how much clinical information is just sitting there on the sole. Are you planning to reduce his running volume during the rehab phase, or is he taking a full break from running while you rebuild the foundation?"
+    },
+    {
+      "role": "user",
+      "content": "I'm not stopping him completely because honestly he won't listen haha — runners never do. You tell them to stop and they just go run anyway and don't tell you. So I'd rather control it. I'm cutting his volume by about 50%, having him run on softer surfaces when possible, short intervals with the metronome to practice the new cadence. Then we gradually build back up once the glute strength improves and the new pattern starts to feel natural."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a pragmatic approach — working with the patient's reality rather than giving them an instruction you know they'll ignore. The controlled volume reduction with cadence retraining is smart because he's building the new motor pattern under real running conditions, not just in isolation exercises. How long do you think before the new gait pattern starts to feel automatic for him?"
+    },
+    {
+      "role": "user",
+      "content": "Usually about 4-6 weeks of consistent practice for the new cadence to start feeling natural. The first two weeks are the hardest — patients say it feels weird, choppy, like they're shuffling. But once the neuromuscular adaptation kicks in, it clicks. And then they come back and say 'wow, running actually feels easier now.' That's my favorite moment, querida! When the biomechanics click and the patient FEELS the difference."
+    },
+    {
+      "role": "assistant",
+      "content": "That transition from 'this feels weird' to 'this feels easier' is where all the clinical reasoning pays off. It sounds like you genuinely enjoy the detective work of connecting the dots from hip to knee to foot to shoe. How often will you be reassessing his gait to track whether the corrections are sticking?"
+    },
+    {
+      "role": "user",
+      "content": "Every two weeks! I'll re-film his running and compare side by side with the initial assessment. That way he can SEE the improvement too, not just feel it. Visual feedback is so powerful for patients — when they watch themselves running and can see the hip drop getting smaller or the stride getting more symmetrical, it motivates them to keep doing the boring exercises at home. Ai meu Deus, I love this stuff. Every body tells a different story!"
+    },
+    {
+      "role": "assistant",
+      "content": "The video comparison is a great motivational tool — seeing objective progress reinforces the work in a way that words alone can't. Your patient is lucky to have someone who looks at the whole chain rather than just handing him an ice pack and saying rest. I hope the 10K training gets back on track for him."
+    }
+  ]
+}

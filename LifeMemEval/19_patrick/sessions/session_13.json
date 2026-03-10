@@ -1,0 +1,82 @@
+{
+  "session_id": 13,
+  "persona": "patrick_obrien",
+  "date": "2025-05-29",
+  "type": "filler",
+  "topic": "phone help — can't figure out how to share photos",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "How do I send a bunch of photos from my phone to somebody. Not one at a time."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure — are you on an iPhone or Android?"
+    },
+    {
+      "role": "user",
+      "content": "iPhone. Whatever the newest one is. My kid set it up for me."
+    },
+    {
+      "role": "assistant",
+      "content": "On an iPhone, open the Photos app and tap \"Select\" in the upper right corner. Then tap each photo you want to send — you'll see a blue checkmark on each one. Once you've selected them all, tap the share button in the bottom left (it's the square with an arrow pointing up). From there you can choose Messages, Mail, or AirDrop to send them all at once."
+    },
+    {
+      "role": "user",
+      "content": "I see the select button. How many can I send at once through a text."
+    },
+    {
+      "role": "assistant",
+      "content": "Through iMessage (the blue text bubbles between iPhones), you can send quite a few at once — there's no hard limit, though sending more than 20-30 at a time can be slow. If you're sending to someone who doesn't have an iPhone (green bubbles), MMS has tighter limits and the photos get compressed. If you're sending a large batch, the better option might be to create a shared album. That way you add all the photos to one album and just share a link."
+    },
+    {
+      "role": "user",
+      "content": "It's going to another iPhone. Probably 15 or 20 photos. iMessage should handle that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, 15-20 over iMessage will work fine. Just select them all, hit the share button, choose Messages, type in the contact name, and send. It might take a minute to upload them all but it'll go through."
+    },
+    {
+      "role": "user",
+      "content": "Alright doing it now. It's asking me if I want to send them as individual photos or send all. Which one."
+    },
+    {
+      "role": "assistant",
+      "content": "Choose \"Send All\" — that'll bundle them together and send in one batch. Individual sends each one as a separate message, which clutters up the conversation and takes longer."
+    },
+    {
+      "role": "user",
+      "content": "Done. They went through. That was easier than I thought. I was trying to do it one at a time for the last 20 minutes like an idiot."
+    },
+    {
+      "role": "assistant",
+      "content": "You're not the first person to do it that way. The multi-select option isn't obvious if nobody shows you. Now you know for next time."
+    },
+    {
+      "role": "user",
+      "content": "While I've got you. Is there a way to make the text on this thing bigger. I can barely read it sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes — go to Settings, then Display & Brightness, then Text Size. There's a slider you can drag to the right to make the text larger. You can also turn on Bold Text right above it, which makes everything easier to read without increasing the size as much."
+    },
+    {
+      "role": "user",
+      "content": "Found it. That's better already. Should have done this a year ago."
+    },
+    {
+      "role": "assistant",
+      "content": "Better late than never. If you ever need it even bigger, there's an option under Settings > Accessibility > Display & Text Size called Larger Accessibility Sizes that goes beyond the normal range. But the standard slider is usually enough for most people."
+    },
+    {
+      "role": "user",
+      "content": "Affirmative. Thanks for the help."
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. Glad it worked out."
+    }
+  ]
+}

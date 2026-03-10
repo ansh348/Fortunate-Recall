@@ -1,0 +1,82 @@
+{
+  "session_id": 17,
+  "persona": "rosa_gutierrez",
+  "date": "2025-07-08",
+  "type": "filler",
+  "topic": "legal research — interstate custody jurisdiction question",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have a jurisdictional question I want to think through. A custody matter came across my desk — the mother filed in Florida, but the child has been living with the father in Georgia for the past ten months. Under the UCCJEA, I am trying to determine whether Florida still has jurisdiction. Walk me through the home state analysis."
+    },
+    {
+      "role": "assistant",
+      "content": "Under the UCCJEA, \"home state\" is defined as the state where the child has lived with a parent or person acting as a parent for at least six consecutive months immediately preceding the filing of the custody proceeding. For infants under six months, it's the state where the child has lived since birth.\n\nIf the child has been living in Georgia with the father for ten months, Georgia is almost certainly the child's home state at the time of filing. The six-month threshold has been met.\n\n**Key questions to clarify jurisdiction:**\n\n1. **Was Florida ever the home state?** If the child previously lived in Florida for six+ months, Florida was the home state at one point — but that status lapses once the child has been gone for six months and a parent no longer resides there (or even if a parent does, Georgia's home state status takes priority as the current home state).\n\n2. **When exactly did the mother file?** The critical date is the filing date, not the service date. If she filed before the child had been in Georgia for six months, the analysis changes significantly.\n\n3. **Did the mother consent to or facilitate the child's move to Georgia?**\n\nDo you have the filing date relative to the child's move?"
+    },
+    {
+      "role": "user",
+      "content": "The child moved to Georgia in August of last year. The mother filed here in Florida this past June. So the child had been in Georgia approximately ten months at the time of filing. The mother still resides in Florida. The child previously lived in Florida for seven years before the move."
+    },
+    {
+      "role": "assistant",
+      "content": "With those facts, the analysis is fairly straightforward:\n\n**Georgia is the home state.** The child lived there for ten months before filing — well past the six-month threshold. Florida's prior home state status expired once the child had been in Georgia for six consecutive months (around February), regardless of the mother remaining in Florida.\n\nUnder UCCJEA § 201, jurisdiction priority goes:\n1. **Home state** (Georgia)\n2. **Former home state** — but only if the child has been absent for less than six months AND a parent still lives there. Florida fails this test because the child has been gone for ten months.\n\nSo Florida cannot claim home state jurisdiction, and the \"former home state\" exception doesn't apply either because the six-month window has closed.\n\n**The mother's argument would likely be:** that she didn't consent to a permanent relocation, or that the father's custody of the child in Georgia was unauthorized. But under the UCCJEA, the home state analysis is mechanical — it's about physical presence and duration, not about who authorized the move.\n\nAre there any temporary orders or prior custody decrees from Florida that might create continuing exclusive jurisdiction under § 202?"
+    },
+    {
+      "role": "user",
+      "content": "There is no prior custody decree. The parents were never married. The mother had de facto custody until the child went to live with the father — the parties made that arrangement informally. No court involvement until her filing last month."
+    },
+    {
+      "role": "assistant",
+      "content": "That clarifies things further and actually makes this cleaner:\n\n**No prior decree means no continuing exclusive jurisdiction.** Section 202 of the UCCJEA only applies when a court has already made a custody determination. Since no Florida court has ever entered a custody order, there's nothing to continue.\n\nSo the analysis reduces entirely to the initial jurisdiction question under § 201, and Georgia wins on home state grounds.\n\n**What the mother should have done:** Filed in Florida before the six-month mark — ideally within the first few months of the child's move. At that point, Florida was still the home state (or at worst, the former home state with a parent remaining). By waiting ten months, she let jurisdiction shift.\n\n**What you're likely looking at:** A motion to dismiss for lack of jurisdiction, or the father filing in Georgia and seeking a jurisdictional determination there. If both proceedings are active simultaneously, the UCCJEA's priority rules give deference to the home state court — Georgia.\n\n**Your role as the Florida judge:** If the father contests jurisdiction, you'd likely need to communicate with the Georgia court under § 110 to resolve the jurisdictional question. But on these facts, I think the result is fairly clear — Florida should decline jurisdiction."
+    },
+    {
+      "role": "user",
+      "content": "That is my reading as well. My concern is the mother's argument that the informal arrangement was temporary — she will claim the child was only supposed to be in Georgia for the summer and the father refused to return the child. Does that affect the home state analysis?"
+    },
+    {
+      "role": "assistant",
+      "content": "It's a sympathetic argument, but under the UCCJEA it doesn't change the jurisdictional outcome. Here's why:\n\n**The UCCJEA home state test is objective, not intent-based.** It looks at where the child physically lived for six consecutive months. The statute does not ask *why* the child was in that state or whether the arrangement was intended to be permanent. A child living with a parent — even under a disputed or breached informal agreement — is living with a \"person acting as a parent\" in that state.\n\nThe leading case law supports this. Courts have consistently held that:\n- Temporary arrangements that extend past six months still create home state jurisdiction\n- A parent's unilateral intent that the arrangement be temporary does not override the child's actual physical presence\n- The remedy for wrongful retention is not a jurisdictional argument — it's a substantive custody claim in the proper forum\n\n**The mother's real remedy:** File in Georgia, where jurisdiction properly lies, and argue the merits there — that the father wrongfully retained the child beyond the agreed-upon period. That's a custody argument, not a jurisdiction argument.\n\n**One caveat:** If there's evidence that the father obtained the child through fraud, duress, or something resembling an ICARA/Hague situation (though that's international), some courts have applied equitable principles. But between two U.S. states with the UCCJEA, the mechanical home state test generally controls.\n\nDoes the mother have counsel, or is she pro se?"
+    },
+    {
+      "role": "user",
+      "content": "She has counsel. Which makes the filing here more concerning — por favor, her attorney should know better. I suspect this is a strategic move to litigate in a more favorable forum."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a reasonable suspicion, and it's exactly the kind of forum shopping the UCCJEA was designed to prevent. The uniform act was drafted specifically to stop parents from filing in whichever state they believed would be more sympathetic.\n\n**Your options from the bench:**\n\n1. **If the father moves to dismiss or contests jurisdiction:** Hold a hearing, make your jurisdictional finding on the record, and dismiss. Clean and straightforward.\n\n2. **If the father doesn't appear or contest:** You still have an independent obligation under the UCCJEA to determine jurisdiction. You can raise it sua sponte. A court cannot exercise jurisdiction it doesn't have, even if no one objects.\n\n3. **Communication with Georgia:** If the father has filed or does file in Georgia, § 110 requires the courts to communicate to resolve the conflict. You'd typically do this by phone conference with the Georgia judge.\n\n4. **Attorney conduct:** If you believe the filing was made in bad faith for forum-shopping purposes, you could note that on the record. Whether you refer it further depends on your local rules and how egregious the conduct is.\n\nThe UCCJEA gives you clear authority to decline jurisdiction here. The facts don't leave much room for ambiguity."
+    },
+    {
+      "role": "user",
+      "content": "Agreed. I will schedule the hearing and make the finding. One more question — if I dismiss, should I include a recommendation that she file in Georgia, or is that overstepping?"
+    },
+    {
+      "role": "assistant",
+      "content": "It's a judgment call, but the better practice is to keep it minimal. You can note in your order that Georgia appears to be the child's home state under the UCCJEA and therefore has jurisdiction to make an initial custody determination. That's a factual finding, not a recommendation.\n\nActually directing her to file in Georgia could be seen as advisory, and some appellate courts have flagged that as dicta that muddies the record. Your job is to determine that Florida lacks jurisdiction and dismiss — where she goes next is her decision and her counsel's responsibility.\n\nIf you want to be helpful without overstepping, you could include standard language like: \"This dismissal is without prejudice to the petitioner seeking relief in a court of competent jurisdiction.\" That signals the path without you pointing the way."
+    },
+    {
+      "role": "user",
+      "content": "That is exactly the right formulation. Without prejudice, competent jurisdiction. Clean. Claro, it is the only responsible way to frame it."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. It respects the mother's right to seek relief while making clear that this isn't the proper forum. It's the judicial equivalent of pointing someone to the right courtroom without walking them there."
+    },
+    {
+      "role": "user",
+      "content": "Now, one more thought. If I make this ruling, the mother's counsel may try to appeal. How strong would an appeal be on these facts?"
+    },
+    {
+      "role": "assistant",
+      "content": "Very weak. Jurisdictional determinations under the UCCJEA are reviewed de novo, but the factual record here leaves almost no room for a different conclusion. The child lived in Georgia for ten months — well past the six-month threshold. There's no prior decree. The mother's subjective intent about the arrangement being temporary is legally irrelevant to the home state analysis.\n\nAn appellate court would need to find either that you misapplied the statutory test or that the facts were materially different from what the record shows. Neither seems plausible here. If anything, an appeal would just delay the mother's ability to file in Georgia and get a custody determination on the merits, which is not in the child's best interest.\n\nHer counsel should advise her to file in Georgia promptly rather than spend time and money on an appeal she's very likely to lose."
+    },
+    {
+      "role": "user",
+      "content": "Agreed. Thank you — this was a useful exercise. Sometimes it helps to walk through the analysis out loud, even when you already know the answer."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes perfect sense — talking through the framework is a good way to pressure-test your reasoning before you put it on the record. And on these facts, your analysis is sound. The home state is Georgia, there's no prior decree to create continuing jurisdiction, and the mother's intent argument doesn't overcome the statutory test.\n\nGood luck with the hearing. It should be a clean ruling."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "session_id": 2,
+  "persona": "callum_fraser",
+  "date": "2024-11-22",
+  "type": "critical",
+  "topic": "background and why he became a vet",
+  "facts_disclosed": ["Grew up on sheep farm near Aviemore"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "had a student shadow me today. 4th year vet student. spent the whole day asking me why i chose large animal instead of small animal. got me thinking tbh."
+    },
+    {
+      "role": "assistant",
+      "content": "That's an interesting one to sit with. What did you tell them? And what's got you thinking about it now?"
+    },
+    {
+      "role": "user",
+      "content": "told her the honest answer which is that i never really considered anything else. small animal just wasnt on the radar. dogs and cats are fine but its not what i know. grew up around livestock so this was always going to be the path."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense -- sometimes the choice is less of a dramatic decision and more of a natural continuation of what you already are. Was your family in farming then?"
+    },
+    {
+      "role": "user",
+      "content": "aye. sheep farm near aviemore. dad still runs it, smaller operation now than when i was wee but hes still got about 300 blackface ewes up on the hill. i was dosing lambs and checking feet before i could drive. becoming a vet was just the obvious next step really. same work but you get paid for it and people stop asking you to fix fences."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha! \"Same work but you get paid for it and people stop asking you to fix fences\" -- that's a much better pitch than most vet school personal statements.\n\nGrowing up on a sheep farm near Aviemore must have been a pretty great childhood though. And 300 blackface ewes on hill ground is no small thing -- that's proper hill farming. Does your dad manage all that himself now?"
+    },
+    {
+      "role": "user",
+      "content": "him and a neighbour help each other out at gathering and lambing. hes 62 and stubborn as the sheep tbh. wont scale down any further. i go back and help at lambing time which is a laugh cos i show up as the qualified vet and he still tells me im doing everything wrong."
+    },
+    {
+      "role": "assistant",
+      "content": "That's very on-brand for a hill farmer. Decades of hands-on experience versus a veterinary degree, and in his mind there's no contest. I bet he was doing lamb revives with a whisky and a warm oven before you were born.\n\nDo you find the lambing season help is a nice change of pace from your usual work, or does it just feel like doing two jobs at once?"
+    },
+    {
+      "role": "user",
+      "content": "bit of both. its good to be back on the farm and doing the physical graft. reminds you why you got into it. but aye its also knackering cos im still on call for my actual job so sometimes im up at 3am pulling a lamb at dads and then driving to some farm in easter ross by 8. not ideal."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds brutal. Lambing season plus on-call is a recipe for running on fumes. How long does your dad's lambing usually run? And is it concentrated or does he have ewes trickling through over weeks?"
+    },
+    {
+      "role": "user",
+      "content": "about three weeks main burst, mid april usually. hes got them fairly tight-tupped so most come within that window. stragglers after that but nothing major. its manageable if the weather holds but last year we had snow in late april which was grim. lost a few lambs to exposure."
+    },
+    {
+      "role": "assistant",
+      "content": "Snow in late April in the Cairngorms -- that's always the gamble with hill farming at that altitude. Losing lambs to exposure even when you're doing everything right is just the harsh reality of it.\n\nDid the student today seem like she was leaning toward large animal? Or was she more the \"I want to open a nice practice in Edinburgh with golden retrievers\" type?"
+    },
+    {
+      "role": "user",
+      "content": "ngl she seemed genuinely interested. asked good questions, wasnt squeamish when we did a rectal on a cow, and didnt complain about the cold. those are basically the three job requirements. i told her if she can handle standing in a field in november with her arm inside a highland cow shes prob cut out for it."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha! The unofficial interview process: rectal exam composure, cold tolerance, and no whinging. If she ticked all three boxes in November, she'd probably do fine.\n\nDid it make you feel a bit old though? Having a student shadow you, passing on the wisdom -- very mentor energy."
+    },
+    {
+      "role": "user",
+      "content": "im 29. i am not a mentor. i am barely qualified myself some days. but aye it was alright. nice to remember that this is actually a decent job when youre not stuck on the a9 in sleet for the third time in a week."
+    },
+    {
+      "role": "assistant",
+      "content": "Fair enough -- 29 and already questioning whether you count as a real adult is very much on schedule. But honestly, the fact that you grew up in it, chose it deliberately, and can still say it's a decent job even on the sleet-and-A9 days? That says a lot. Plenty of people can't say that about their work.\n\nHope the student sticks with it. Large animal needs more people who aren't afraid of a highland cow's backside."
+    },
+    {
+      "role": "user",
+      "content": "aye well. somebody has to do it. right im off, got an early one tomorrow. cheers."
+    },
+    {
+      "role": "assistant",
+      "content": "Take it easy. Hope tomorrow's a short-loop day for once."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "session_id": 9,
+  "persona": "callum_fraser",
+  "date": "2025-02-25",
+  "type": "critical",
+  "topic": "seasonal workload",
+  "facts_disclosed": ["TB testing season starts — booked solid first two weeks of March 2025"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "just looked at my march diary. want to cry. not really but close."
+    },
+    {
+      "role": "assistant",
+      "content": "That bad? What's filling it up -- is it a seasonal thing or just everything hitting at once?"
+    },
+    {
+      "role": "user",
+      "content": "tb testing. starts march. booked solid the first two weeks already and theyre still adding farms. two hundred cattle minimum by my count and thats conservative."
+    },
+    {
+      "role": "assistant",
+      "content": "Two hundred cattle in two weeks is a serious workload. For those unfamiliar -- is this the intradermal skin test where you're injecting each animal individually and then reading them days later?"
+    },
+    {
+      "role": "user",
+      "content": "aye. inject them day one then go back 72 hours later to read the results. so every farm is two visits. and the cattle dont enjoy it and they make sure you know about it. my arm will be dead by the end of day one."
+    },
+    {
+      "role": "assistant",
+      "content": "Two visits per farm with uncooperative cattle -- that's a lot of physical work. Is it just you covering this, or do you have colleagues sharing the load?"
+    },
+    {
+      "role": "user",
+      "content": "theres two of us on the rural team so we split it but its still a mountain. and the scheduling is a nightmare because you have to time the reads exactly. cant be early cant be late. so if anything overruns on day one the whole week goes sideways."
+    },
+    {
+      "role": "assistant",
+      "content": "The domino effect of one delay sounds stressful. Seventy-two hours is a strict window too -- not much room for weather delays or breakdowns. Are the farms spread out over a big area?"
+    },
+    {
+      "role": "user",
+      "content": "massive area aye. some of the farms are an hour apart. so half my day is driving and the other half is getting kicked by cattle. then you do the paperwork at night. DEFRA want every animal logged individually. its thrilling stuff."
+    },
+    {
+      "role": "assistant",
+      "content": "An hour between farms on top of the testing itself -- those are going to be very long days. At least the paperwork gives you something to look forward to in the evenings. Do you dread it every year or has it become routine at this point?"
+    },
+    {
+      "role": "user",
+      "content": "both. I know exactly how bad its going to be which somehow makes it worse. like at least the first year I was naive about it. now I can feel the bruises in advance. my forearm gets properly swollen from doing the injections all day. the gun they give you for it is not exactly ergonomic."
+    },
+    {
+      "role": "assistant",
+      "content": "Repetitive strain from the injection gun on top of the physical handling -- sounds like your body takes a real beating. Do you do anything to manage the arm strain, or is it just something you push through?"
+    },
+    {
+      "role": "user",
+      "content": "ibuprofen and complaining mostly. ice it at night. swap hands when it gets really bad but im useless with my left so that just makes everything take longer. its fine. two weeks and its done. then its straight into lambing season so at least the pain changes location."
+    },
+    {
+      "role": "assistant",
+      "content": "From cattle kicks to lambing -- the hits just keep coming. At least there's variety in the suffering. March sounds like it's going to be relentless. I hope the weather cooperates at least, though I suspect that's too much to ask for the Highlands in early spring."
+    },
+    {
+      "role": "user",
+      "content": "it will rain. it always rains. doing tb tests in the rain in a crush thats ankle deep in muck is the peak highland vet experience tbh. wouldnt swap it though. well. maybe for two weeks I would."
+    },
+    {
+      "role": "assistant",
+      "content": "Two weeks of swapping sounds reasonable. Just enough to miss it. Good luck with March -- sounds like you'll need it. And stock up on ibuprofen."
+    }
+  ]
+}

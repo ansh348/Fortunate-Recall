@@ -1,0 +1,74 @@
+{
+  "session_id": 20,
+  "persona": "callum_fraser",
+  "date": "2025-09-08",
+  "type": "filler",
+  "topic": "foot rot outbreak on a farm — treatment plan",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "got a farm with foot rot going through about 30% of the flock. 200 sheep. whats your take on the best treatment protocol for an outbreak at that scale."
+    },
+    {
+      "role": "assistant",
+      "content": "30% of a 200-head flock is a significant outbreak -- you're looking at 60-odd affected animals. At that scale, you need a systematic approach rather than treating individually. Here's what I'd recommend:\n\n**Immediate steps:**\n1. Separate affected sheep from clean ones -- two distinct groups\n2. Foot-bathe the entire flock through a 10% zinc sulphate or 3-5% formalin solution\n3. Individually treat the worst cases -- pare away loose horn, topical antibiotic spray (oxytetracycline)\n4. Systemic antibiotics for severe cases -- injectable oxytetracycline or tilmicosin\n\n**Ongoing management:**\n- Foot-bathe twice weekly for the first two weeks, then weekly\n- Move sheep off the contaminated pasture if possible -- the bacteria survive in wet soil\n- Re-examine and re-sort every 5-7 days\n\nWhat does the ground look like? Is it been particularly wet?"
+    },
+    {
+      "role": "user",
+      "content": "aye its been boggy for weeks. classic conditions for it. they were in a low field near a burn and the drainage is terrible. farmer should have moved them earlier tbh but hindsight and all that."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the story every time -- the conditions are perfect for it before anyone notices. A boggy field near running water is basically a breeding ground for *Dichelobacter nodosus*.\n\nGetting them off that field is priority one. Even if the only option is a higher, drier field with less grass, it's better than leaving them standing in the conditions that caused the problem. The bacteria can persist in wet pasture for up to two weeks, so you'd want that field rested for at least 14 days before any sheep go back on it.\n\nHas the farmer been doing any routine foot-bathing at all, or is this a farm that doesn't have that in the schedule?"
+    },
+    {
+      "role": "user",
+      "content": "no routine foot bathing. not unusual for the smaller farms up here. they just dont have the setup for it or the time. hes got a race but no proper foot bath."
+    },
+    {
+      "role": "assistant",
+      "content": "That's common but it's going to need to change if he wants to get on top of this. A temporary foot bath doesn't need to be anything fancy -- you can improvise one with:\n\n- A shallow trough or even a builder's mixing tray\n- Set it up at the end of the race so they walk through it naturally\n- Needs to be deep enough that the solution covers the hooves -- about 5-7cm\n- Zinc sulphate is easier to work with than formalin (less toxic, less corrosive to skin)\n\nThe key is making sure the sheep stand in it long enough -- ideally 10-15 minutes. Some farmers put the bath at the exit of a holding pen so the sheep queue through it rather than just splashing through in two seconds.\n\nIs the farmer on board with putting the work in, or is this going to be a battle?"
+    },
+    {
+      "role": "user",
+      "content": "hes on board now. took about 20 lame sheep to convince him but hes listening. hes asking about vaccination as well. is footvax worth it at this stage or is it too late for this outbreak."
+    },
+    {
+      "role": "assistant",
+      "content": "Good question. Footvax can help but the timing matters:\n\n- It takes **4-6 weeks** to build immunity after the first dose, and you need a **booster 4-6 weeks after that** for full protection\n- So for the current outbreak, it won't fix what's already happening -- the foot-bathing and antibiotics are doing the heavy lifting right now\n- **But** it's absolutely worth starting now for prevention going forward, especially if conditions are going to stay wet\n\nThe vaccine reduces the severity and spread, but it's not a silver bullet. It works best as part of a whole-flock programme alongside the foot-bathing, pasture management, and culling persistent cases.\n\nOne thing to note: Footvax can cause injection site reactions -- swelling at the injection site is common. Subcutaneous, high on the neck. Worth warning the farmer so he doesn't panic when he sees lumps."
+    },
+    {
+      "role": "user",
+      "content": "aye ive used it before. the reactions can be nasty on some sheep. whats your view on culling the chronically affected ones. hes got maybe 5 or 6 that have been lame on and off for months. repeat offenders."
+    },
+    {
+      "role": "assistant",
+      "content": "Cull them. Honestly, that's the most effective thing he can do for the long-term health of the flock.\n\nChronic carriers are the reservoir -- they maintain the infection in the flock even when everything else is under control. You can treat them over and over, they'll clear up for a few weeks, and then they're lame again and shedding bacteria back onto the pasture.\n\n5-6 animals out of 200 is 3% of the flock. That's an easy decision economically. The cost of repeatedly treating them, the production losses from chronic lameness, and the risk they pose to the rest of the flock -- culling is by far the better option.\n\nMark them, finish them on hard standing if possible, and get them gone. Then you're treating a flock without a constant source of reinfection."
+    },
+    {
+      "role": "user",
+      "content": "thats what I told him. he wasnt keen because some of them are good breeding ewes but I said youve got to look at it from a flock health perspective not an individual one. no point keeping a good ewe if shes making 10 others lame."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly right. It's the classic farmer attachment to individual animals versus managing the flock as a whole. A ewe might throw good lambs, but if she's chronically infected she's costing him more in treatment, reduced condition, and spread than she's worth in breeding value.\n\nIf he really can't bring himself to cull one or two of them, the absolute minimum is permanent separation -- keep them on a completely different field, different handling, no contact with the main flock. But that's impractical on most farms and just delays the inevitable."
+    },
+    {
+      "role": "user",
+      "content": "aye hes not got the fields for separation. its cull or nothing really. ill have another word with him about it. one more thing — how long before I should expect to see improvement in the ones were treating individually. like the paring and spray cases."
+    },
+    {
+      "role": "assistant",
+      "content": "For the individually treated ones, you should see noticeable improvement within 3-5 days if the paring was thorough and the antibiotic is working. The lameness score should drop -- they won't be fully sound that quickly, but they should be bearing weight more evenly.\n\nIf you're not seeing any improvement by day 7, it's worth re-examining. Either there's more diseased tissue that wasn't removed, or you might be dealing with a mixed infection -- sometimes CODD (contagious ovine digital dermatitis) gets involved alongside the foot rot, and that needs a different approach.\n\nRe-check at one week, re-treat if needed, and re-sort them back to the clean group once they've been sound for at least two weeks."
+    },
+    {
+      "role": "user",
+      "content": "right thats helpful. ill schedule a recheck for next week then. cheers for the input. ill get the foot bathing set up this week and start working through the worst cases individually."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like a solid plan. Get them off the wet ground, start the foot-bathing regime, treat the worst ones individually, and push for culling the chronics. If he starts the Footvax now he'll be in a much better position going into autumn and winter when the conditions get worse again.\n\nGood luck with it -- 30% is a big outbreak but it's manageable if you're systematic about it."
+    }
+  ]
+}

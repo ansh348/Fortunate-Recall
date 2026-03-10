@@ -1,0 +1,74 @@
+{
+  "session_id": 7,
+  "persona": "kenji_nakamura",
+  "date": "2025-01-30",
+  "type": "critical",
+  "topic": "workspace",
+  "facts_disclosed": ["Shared studio in Shinsaibashi with two other designers"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "quick question — what's the best way to set up shared wifi in a studio space so three people aren't killing each other's bandwidth"
+    },
+    {
+      "role": "assistant",
+      "content": "Good question — a shared studio setup needs a bit of thought to keep everyone happy. Before I recommend anything specific: what's the space like? How many people, what kind of work are you all doing (lots of big file uploads, video calls, etc.), and what's your current internet situation?"
+    },
+    {
+      "role": "user",
+      "content": "so there's three of us — all designers — sharing a studio in shinsaibashi. we split the rent and utilities three ways which keeps costs reasonable. right now we just have a basic router from the ISP and whoever's uploading large files basically tanks it for everyone else"
+    },
+    {
+      "role": "assistant",
+      "content": "Three designers sharing a connection with big file transfers — yeah, the basic ISP router is going to struggle with that. Here's what I'd suggest:\n\n1. **Upgrade the router** — Get a decent mid-range router with QoS (Quality of Service) settings. QoS lets you prioritize traffic types or set bandwidth limits per device, so one person's massive PSD upload doesn't starve the others. Something like the TP-Link Archer AX73 or ASUS RT-AX68U would work well and aren't too expensive split three ways.\n\n2. **Wired connections where possible** — If your desks are in fixed positions, run ethernet cables. Wi-Fi adds latency and bandwidth variability. A simple gigabit switch plus some cables is cheap and makes a huge difference for large file transfers.\n\n3. **Consider upgrading the plan** — What speed tier are you on? In Japan you can usually get fiber plans with symmetric speeds (same upload and download) which is ideal for design work. If you're on a lower tier, bumping up might solve the problem outright.\n\nDo you know what speed plan you're currently on?"
+    },
+    {
+      "role": "user",
+      "content": "honestly i have no idea what plan we're on, one of the other guys set it up when we moved in. i should probably find out huh. the wired connection idea is smart though — my desk is in the back corner so i'd need a long cable but that's fine. i mostly work there at night anyway when the other two aren't around so bandwidth isn't usually a problem for me, it's more the overlap hours that get rough"
+    },
+    {
+      "role": "assistant",
+      "content": "If you're primarily working nights when the others aren't there, you're probably fine most of the time — it's really just about managing those overlap periods. That actually makes the QoS approach even more practical since you only need it to handle the peak hours.\n\nFor the long cable run to your corner: get a flat Cat6 ethernet cable — they're easy to run along baseboards and under rugs without being a trip hazard. You can get a 10-15 meter one for very little. Cable clips or adhesive cable channels keep it tidy.\n\nDefinitely find out the plan details though. In Osaka you should be able to get NTT Flet's Hikari or similar fiber at decent speeds. If you're on a basic 100Mbps plan, upgrading to gigabit would probably solve the problem entirely for a modest increase split three ways.\n\nIs the studio space itself pretty large, or is range also an issue with the current router?"
+    },
+    {
+      "role": "user",
+      "content": "it's not huge, like maybe 40 square meters? we each have our own desk area and there's a shared meeting table in the middle. the wifi signal is fine everywhere, it's just the bandwidth bottleneck. honestly it's a nice setup — having other designers around is good for bouncing ideas around even if our styles are completely different. one guy does mostly web design and the other does illustration"
+    },
+    {
+      "role": "assistant",
+      "content": "40 square meters is compact enough that signal isn't the issue — it's purely bandwidth management then. With three different design disciplines (packaging, web, illustration), your peak usage patterns might actually be different enough that a router with QoS and a plan upgrade would handle it cleanly.\n\nThe web designer is probably doing the most upload/download with deployments and asset hosting. The illustrator might have bursts with large file saves. Your packaging work probably hits hardest when you're sending final print-ready files. If you stagger those big transfers — even informally, just a heads-up in the studio like \"about to upload something huge\" — that helps too.\n\nFor a 40sqm space, you definitely don't need a mesh system or anything fancy. A solid single router with QoS enabled, wired connections for whoever wants them, and a speed plan check should sort you out. Total investment split three ways would be pretty minimal."
+    },
+    {
+      "role": "user",
+      "content": "the informal heads-up thing is honestly how we handle it now lol. \"hey i'm about to upload\" and the other two stop streaming music for a minute. very sophisticated system. okay i'll check the plan this week and look into a better router. the QoS thing sounds like exactly what we need. any specific settings i should look for when setting that up?"
+    },
+    {
+      "role": "assistant",
+      "content": "The gentleman's agreement approach is charming but yeah, QoS would automate that for you.\n\nFor QoS setup on most routers:\n\n- **Bandwidth allocation** — Set a maximum bandwidth per device or per user. If you have 1Gbps down, you could cap each person at 300Mbps so nobody can monopolize the whole pipe.\n- **Traffic prioritization** — Most QoS interfaces let you prioritize by type. Put video calls and real-time collaboration (Figma, etc.) as high priority, bulk file transfers as normal or low. This way someone on a client call doesn't get choppy video just because another person is uploading.\n- **Upload priority matters most** — In your case, uploads are the bottleneck (sending large design files). Make sure QoS handles upload bandwidth, not just download. Some routers only do download-side QoS by default.\n\nMost modern routers have an \"easy mode\" QoS where you just drag devices into priority tiers. Start with that — you can get more granular later if needed.\n\nOnce you know your current plan speed, you'll have a much better picture of whether you need a plan upgrade, a router upgrade, or both."
+    },
+    {
+      "role": "user",
+      "content": "this is super helpful. i'm going to bring this up with the other two tomorrow — well, today technically, it's like 1:30am here. the perks of being the night shift designer i guess. thanks for breaking it down"
+    },
+    {
+      "role": "assistant",
+      "content": "1:30am studio session — dedicated. Good luck with the router upgrade, and definitely check that plan speed first before you buy anything. A quick call to the ISP might reveal you're already paying for more than the current router can handle. Have a good night."
+    },
+    {
+      "role": "user",
+      "content": "wait one more thing actually. we've been talking about getting a shared NAS for the studio too so we're not all passing files around on USB sticks like it's 2008. would that make the bandwidth situation worse or is that a separate thing"
+    },
+    {
+      "role": "assistant",
+      "content": "A NAS is a great idea for a shared studio and it's mostly a separate thing from your internet bandwidth — NAS traffic stays on the local network, so transferring files between your machines and the NAS doesn't touch your internet connection at all. It would actually help the bandwidth situation because right now if you're sharing files via cloud (Dropbox, Google Drive, etc.), those uploads and downloads are hitting your internet pipe. A local NAS keeps that traffic internal.\n\nThe key is connecting the NAS and your machines via ethernet, not Wi-Fi. A NAS over Wi-Fi defeats the purpose — you want that local gigabit speed for moving large design files around. A basic two-bay Synology like the DS223 would handle three designers comfortably and isn't expensive split three ways."
+    },
+    {
+      "role": "user",
+      "content": "oh that's actually brilliant, i didn't think about the cloud sync angle. we're all using dropbox right now which means we're uploading to the cloud and then the other person downloads from the cloud... for files that are sitting ten feet away. yeah a NAS makes way more sense. okay NOW i'm done. going to sleep before i start researching NAS units at 2am"
+    },
+    {
+      "role": "assistant",
+      "content": "The \"uploading to the cloud to share with someone across the room\" realization hits hard when you think about it. A NAS plus a decent switch and router upgrade would transform how all three of you work together. But yes — save the NAS research rabbit hole for tomorrow. That's a 2am spiral waiting to happen. Good night."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "session_id": 26,
+  "persona": "nadia_petrov",
+  "date": "2025-10-05",
+  "type": "filler",
+  "topic": "supply chain — can't get good veal from usual supplier",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "ugh I'm so frustrated I could throw something. probably a crate of garbage veal"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a rough day. What's going on with the veal?"
+    },
+    {
+      "role": "user",
+      "content": "so we have this supplier we've been using for years, Ferme Beaumont, out near Drummondville. their veal was beautiful. perfect marbling, consistent size, you could count on it every single week. and now? merde. the last three deliveries have been terrible. tough, inconsistent, one time the colour was almost grey"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big quality drop. Has anyone at the restaurant reached out to them about what changed? Sometimes suppliers switch their sourcing without telling you."
+    },
+    {
+      "role": "user",
+      "content": "Marc-Andre called them. you know what they said? they changed their feed program. to cut costs. THEY CHANGED THE FEED and didn't think to mention it to the restaurants buying their product. I can taste the difference the second I sear it. the fat renders wrong, the texture is off. it's like cooking a completely different animal"
+    },
+    {
+      "role": "assistant",
+      "content": "That's infuriating, especially when you've built dishes around the specific quality of their product. Are you looking at alternative suppliers, or is Ferme Beaumont hard to replace?"
+    },
+    {
+      "role": "user",
+      "content": "that's the problem. good veal in Quebec is not like ordering off Amazon. you can't just click a button. I've been calling around — there's a place near Saint-Hyacinthe that does milk-fed, but they're small and I don't know if they can handle our volume. we go through a lot of veal. the blanquette alone uses probably fifteen kilos a week"
+    },
+    {
+      "role": "assistant",
+      "content": "Fifteen kilos a week for one dish is serious volume. Could you trial the Saint-Hyacinthe supplier with a smaller order first to test their quality before committing? That way you'd know if it's worth the switch before you're stuck."
+    },
+    {
+      "role": "user",
+      "content": "yeah that's the plan, I asked them to send a sample. should arrive Tuesday. but in the meantime we still have to serve this week and I'm working with garbage. I had to adjust the cooking time yesterday because the meat was so tough it needed twenty extra minutes of braising. twenty minutes! my mise en place is built around precise timing and now everything is off"
+    },
+    {
+      "role": "assistant",
+      "content": "Having to adjust every time you cook with unpredictable product is exhausting. It basically turns a refined dish into improvisation every service. Is there anything you can do short-term — different cuts, a temporary menu adjustment — while you sort out the supply situation?"
+    },
+    {
+      "role": "user",
+      "content": "I was thinking about swapping the veal special for a pork shoulder dish this week. at least I know the pork is good — our pork guy is solid. but it changes the whole feel of the menu. the veal is supposed to be the elegant centrepiece and now I'm putting out cochon like a bistro. putain. fine dining problems I guess"
+    },
+    {
+      "role": "assistant",
+      "content": "A well-executed pork shoulder can absolutely hold its own on a fine dining menu if the preparation and plating elevate it. It might actually be an interesting change of pace — and honestly, guests probably care more about the dish being perfect than about which protein is on the plate. The veal situation is temporary."
+    },
+    {
+      "role": "user",
+      "content": "you're right. and I do a beautiful pork shoulder confit with mustard jus and roasted parsnips that could work. I just hate being forced into it by supply problems. this is the part of cooking nobody tells you about — half the job is logistics and suppliers and phone calls and trying to find someone who raises animals properly. the other half is actually cooking. ok. pork it is this week. if the Saint-Hyacinthe sample is good I'll push to switch permanently. tabarnac, I miss Beaumont's old product though"
+    },
+    {
+      "role": "assistant",
+      "content": "That pork confit sounds like it'll more than hold the menu together. And you're right — the behind-the-scenes sourcing battle is one of the hardest parts of the job that no one sees. Good luck with the Tuesday sample. Hopefully Saint-Hyacinthe comes through and you can stop babysitting bad veal."
+    }
+  ]
+}

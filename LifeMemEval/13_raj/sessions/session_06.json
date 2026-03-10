@@ -1,0 +1,74 @@
+{
+  "session_id": 6,
+  "persona": "raj_malhotra",
+  "date": "2025-01-20",
+  "type": "critical",
+  "topic": "van issues",
+  "facts_disclosed": ["Drives a Ford Transit Custom for work — about 120k miles"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "mate do you know anything about engine warning lights on vans? got one come on this morning and its not gone off"
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with that. An engine warning light can mean a lot of different things, from something minor like a loose fuel cap to something more serious. A few quick questions:\n\n1. What's the light look like -- is it the general engine shape (check engine), or a specific symbol like temperature or oil?\n2. Is the van running any differently? Strange noises, loss of power, rough idle?\n3. What make and model is the van?"
+    },
+    {
+      "role": "user",
+      "content": "its the engine shape one, the amber one. van seems fine tbh still drives normal. its a ford transit custom, done about 120k miles on it now so its not exactly new haha"
+    },
+    {
+      "role": "assistant",
+      "content": "Right, an amber check engine light on a Transit Custom at 120k miles -- that's fairly common and usually not an emergency. If it were red or flashing, that's a different story. Amber means the ECU has logged a fault but the van is still safe to drive for now.\n\nThe most common causes on high-mileage Transits are:\n\n- **EGR valve** -- these get clogged with carbon over time, especially on diesel Transits. Very common around the 100-120k mark.\n- **DPF (diesel particulate filter)** -- if you do a lot of short trips the DPF can need a regeneration cycle. A good 30-minute motorway run can sometimes clear it.\n- **Glow plug issue** -- especially in cold weather like now.\n- **Oxygen sensor** -- cheaper fix, sometimes just needs replacing.\n\nBest thing to do is get the fault code read. Most garages will do it for free or a tenner with an OBD2 reader. That'll tell you exactly what's triggered it. Do you have a local garage you trust, or do you do your own servicing?"
+    },
+    {
+      "role": "user",
+      "content": "I do basic stuff myself, oil changes and that. but anything engine related I take it to my mate Davo he runs a garage in Tyseley. the transit's been solid to be fair, starts every morning no complaints. just dont want it dying on me cos I need it every day innit"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right call -- Davo can plug in a diagnostic reader and tell you exactly what code it's throwing. It'll take him five minutes.\n\nThe fact that it's still starting fine and driving normally is a good sign. It's probably something like the EGR or a sensor that's on its way out rather than a catastrophic failure. At 120k miles on a Transit Custom, you're past the honeymoon period but these vans will happily do 200k+ if they're looked after.\n\nI'd say:\n1. Get the code read this week -- don't leave it too long because the light being on means the MOT will fail if it's due.\n2. Do a motorway run in the meantime -- if it's a DPF issue, a good blast at 60mph for 20-30 minutes can trigger a regen and the light might clear itself.\n3. If the light starts flashing or changes to red, pull over and don't drive it.\n\nWhen's your MOT due?"
+    },
+    {
+      "role": "user",
+      "content": "mot is in march so yeah I need it sorted before then. good shout on the motorway run actually, most of my jobs are local so its probably not getting a proper run that often. I'll take it down the M42 tomorrow maybe"
+    },
+    {
+      "role": "assistant",
+      "content": "The M42 would be perfect for that. Get it up to 60-70 and hold it there for a good 20-30 minutes. If the DPF needs to regenerate, you'll notice the engine revs staying slightly higher and the fans might kick in -- that's normal, it's burning off the soot.\n\nWith MOT in March, you've got a couple of months to sort it. But definitely get Davo to read the code sooner rather than later. If it is the EGR valve, that's usually a few hundred quid to sort on a Transit -- not cheap but not catastrophic either. And it's better to know now than to find out during the MOT.\n\nAlso worth noting: if the check engine light is on when you take it for MOT, it's an automatic fail regardless of what the actual fault is. So it needs to be cleared properly, not just reset with a code reader."
+    },
+    {
+      "role": "user",
+      "content": "yeah thats what I thought about the mot. alright I'll ring Davo in the morning. hopefully its nothing major cos I really dont want to be spending a fortune right now, January is always quiet for work"
+    },
+    {
+      "role": "assistant",
+      "content": "January is always the slow month for trades, I hear you. If it helps, even if it does turn out to be the EGR valve, you could ask Davo about cleaning it rather than replacing it outright. Some mechanics can clean and refit them for around £100-150 instead of £300-400 for a new one. It's a decent temporary fix that buys you another year or so.\n\nAnd if it does turn out to be just a sensor, you're looking at maybe £50-80 for the part plus Davo's labour. Fingers crossed it's something simple like that."
+    },
+    {
+      "role": "user",
+      "content": "cleaning it would be brilliant if he can do that. the van owes me nothing to be fair, had it for years and its never let me down. as long as its still going for another year or two I'll be happy"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like it's been a solid workhorse for you. Transit Customs are popular with tradespeople for a reason -- they're reliable and the parts are easy to source. If it's done 120k and never left you stranded, you've had a good one.\n\nGet Davo to give it a general health check while it's in -- belts, hoses, coolant levels, that sort of thing. At this mileage it's worth keeping an eye on the timing belt if it hasn't been done. Prevention is always cheaper than breakdown recovery on the hard shoulder in February."
+    },
+    {
+      "role": "user",
+      "content": "haha yeah standing on the m6 in the rain is not my idea of a good time. timing belt was done about 30k ago so should be alright on that. right cheers mate I'll ring him tomorrow and let it eat. appreciate it"
+    },
+    {
+      "role": "assistant",
+      "content": "No worries. Timing belt done 30k ago is fine -- you're good on that front for a while yet. Give Davo a ring, do the motorway run, and hopefully it's something cheap and cheerful. Good luck with it, and hope January picks up for you work-wise."
+    },
+    {
+      "role": "user",
+      "content": "yeah january always picks up eventually, people start remembering their heating doesnt work properly once the bills come in haha. honestly though if the van needs a few hundred quid spending on it thats fine, just cant be dealing with a massive bill right now. as long as Davo doesnt ring me and say the engines had it I'll be alright"
+    },
+    {
+      "role": "assistant",
+      "content": "At 120k miles with a Transit that's been well maintained and never left you stranded, the chances of Davo calling with catastrophic news are pretty slim. These engines are workhorses -- it'll almost certainly be a sensor or the EGR like we talked about. Something manageable.\n\nAnd you're right, heating season means plumbing work picks up. Plenty of boiler call-outs heading your way once the cold really bites. The van will be earning its keep soon enough. Let me know how you get on with Davo -- fingers crossed for a cheap fix."
+    }
+  ]
+}

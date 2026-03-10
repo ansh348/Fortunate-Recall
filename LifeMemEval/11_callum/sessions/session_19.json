@@ -1,0 +1,74 @@
+{
+  "session_id": 19,
+  "persona": "callum_fraser",
+  "date": "2025-08-11",
+  "type": "critical",
+  "topic": "job change",
+  "facts_disclosed": ["Left NHS, joined Highland Vets private practice"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "quick question. when you start at a new practice do you reckon its better to bring your own equipment or just use whatever theyve got."
+    },
+    {
+      "role": "assistant",
+      "content": "Depends on the type of practice and what kind of equipment you mean. For basic personal tools -- stethoscope, thermometer, calving ropes, that kind of thing -- most vets prefer their own because they know and trust them. For anything bigger or more expensive, it usually makes sense to use what the practice provides.\n\nAre you starting somewhere new?"
+    },
+    {
+      "role": "user",
+      "content": "aye. just moved to a private practice. highland vets in inverness. left the nhs service a couple weeks back."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big change. What made you make the move -- was it something specific about the new place, or more about wanting to leave the NHS side?"
+    },
+    {
+      "role": "user",
+      "content": "bit of both tbh. the money is better which obviously helps. but the equipment is miles ahead of what I was working with before. actually feels like a proper setup. and I dont have to drive to the middle of nowhere in caithness in the dead of winter anymore which is reason enough on its own."
+    },
+    {
+      "role": "assistant",
+      "content": "All three of those sound like solid reasons. The winter driving alone would be enough for most people -- Caithness roads in January are no joke. How's the new place set up in terms of caseload? Similar mix of work, or is it different from what you were doing?"
+    },
+    {
+      "role": "user",
+      "content": "similar. still mostly cattle and sheep. large animal. but the area is tighter. not covering half the highlands anymore. most farms are within 30-40 minutes which is luxury compared to what I was doing."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a huge quality of life improvement. Going from covering a massive rural area to a more contained patch means less windscreen time and more actual veterinary work. How big is the team at the new practice?"
+    },
+    {
+      "role": "user",
+      "content": "four vets including me. two vet nurses. small but its well run. everyone knows what theyre doing. less of the nhs bureaucracy as well which is nice. less paperwork more actual work."
+    },
+    {
+      "role": "assistant",
+      "content": "Small teams tend to work well in veterinary practice -- less politics, clearer communication, everyone pulls their weight. And less bureaucracy is always welcome. Are you on any kind of on-call rota, or is that structured differently from what you had before?"
+    },
+    {
+      "role": "user",
+      "content": "one in four on call which is better than what it was. used to be basically on call all the time because there werent enough of us. now its one week on three weeks off. can actually plan my life a wee bit."
+    },
+    {
+      "role": "assistant",
+      "content": "One in four is very manageable. Being permanently on call is exhausting -- it's not just the actual callouts, it's never being able to fully switch off. Having three weeks where you know your evenings are your own makes a massive difference.\n\nSounds like it was the right move all round. Any downsides so far?"
+    },
+    {
+      "role": "user",
+      "content": "nothing major. still getting used to how they do things. every practice has its own way of doing stuff and you just have to adapt. some of the farmers dont know me yet so theres a bit of trust building to do. but thats normal."
+    },
+    {
+      "role": "assistant",
+      "content": "That trust-building period with farmers is always the trickiest part of changing practices. They've got their vet they know and trust, and suddenly there's a new face turning up. But once you've handled a couple of emergencies well or sorted out a tricky case, word gets around fast in farming communities."
+    },
+    {
+      "role": "user",
+      "content": "aye exactly. one good calving and youre in. thats how it works. anyway cheers. ill prob just use their kit for now and see how it goes. no point bringing my own stuff if theirs is better."
+    },
+    {
+      "role": "assistant",
+      "content": "Makes sense. Use theirs, get settled in, and if there's anything specific you miss having, you can always bring your own later. Good luck with the new place -- sounds like a solid move."
+    }
+  ]
+}

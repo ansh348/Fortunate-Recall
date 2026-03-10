@@ -1,0 +1,74 @@
+{
+  "session_id": 7,
+  "persona": "callum_fraser",
+  "date": "2025-02-07",
+  "type": "critical",
+  "topic": "weekend plans",
+  "facts_disclosed": ["Plays rugby — winger for Inverness Highland RFC"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "right. need to figure out my saturday. got a match at two and a farm call that was meant to be in the morning but the farmer just texted saying he cant do before noon. classic."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a tight squeeze. What kind of farm call is it? Depending on how long it takes, you might be cutting it close for a 2 PM start."
+    },
+    {
+      "role": "user",
+      "content": "just a routine check on some ewes pre-lambing. shouldnt be more than an hour if nothing weird turns up. but weird always turns up. and then I need to get across to the rugby ground and changed by quarter to two which is pushing it."
+    },
+    {
+      "role": "assistant",
+      "content": "Pre-lambing checks can definitely spiral if you find something unexpected. Is there any way to push the farm call to Sunday instead, or is it time-sensitive?"
+    },
+    {
+      "role": "user",
+      "content": "nah the farmer is away sunday. ill just have to be efficient. wouldnt be the first time ive turned up to rugby smelling slightly of sheep. the lads are used to it."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, I'm sure that's a great motivator for the opposing team to keep their distance. What position do you play?"
+    },
+    {
+      "role": "user",
+      "content": "winger. play for inverness highland rfc. been there about four years now. ngl im not fast enough for it anymore but nobody else wants the position so here we are. I just try not to get injured and call it a success."
+    },
+    {
+      "role": "assistant",
+      "content": "Winger by default -- there's an honest recruitment story. Four years is a solid stint though. Is it a league match this weekend or more of a friendly?"
+    },
+    {
+      "role": "user",
+      "content": "league. caledonia division 2. were mid table which is about right for us. not good enough to go up not bad enough to go down. comfortable mediocrity. suits me fine tbh."
+    },
+    {
+      "role": "assistant",
+      "content": "Comfortable mediocrity has its perks -- no pressure, no relegation stress, just turn up and play. Who are you up against this weekend?"
+    },
+    {
+      "role": "user",
+      "content": "gordonians. theyre alright. big pack but their backs are nothing special. if our forwards can hold the scrum we should be fine. the problem is our forwards cant always hold the scrum."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like the classic club rugby experience -- the plan is perfect right up until the first scrum collapses. At least as a winger you're a safe distance from the chaos in the middle. What's the ground like up there at the moment? Must be pretty heavy this time of year."
+    },
+    {
+      "role": "user",
+      "content": "aye its a bog. proper heavy. which doesnt help my speed situation. hard to sprint through six inches of mud when youre already the slowest winger in the division. at least it slows everyone else down too."
+    },
+    {
+      "role": "assistant",
+      "content": "The great equalizer -- if nobody can run, nobody's slow. That's practically a tactical advantage. Good luck with the farm call and the match. Hopefully the ewes cooperate and you make it to the ground smelling only slightly of livestock."
+    },
+    {
+      "role": "user",
+      "content": "thats the dream. slightly of livestock rather than strongly of livestock. cheers."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha. Set the bar low and occasionally clear it -- words to live by. Enjoy the weekend, Callum."
+    }
+  ]
+}

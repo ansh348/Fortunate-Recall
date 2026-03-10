@@ -1,0 +1,74 @@
+{
+  "session_id": 12,
+  "persona": "callum_fraser",
+  "date": "2025-04-18",
+  "type": "filler",
+  "topic": "Highland weather rant -- roads flooded again",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "the A9 is flooded again. third time this month. I had four farm calls booked this morning and Ive done precisely zero of them."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds incredibly frustrating. Is the flooding bad enough that the road is fully closed, or is it more of a partial blockage situation?"
+    },
+    {
+      "role": "user",
+      "content": "fully closed between beauly and muir of ord. police turning folk back. and the B roads arent much better because all the wee burns have burst their banks. tried the back road past kilmorack and there was about a foot of standing water across it. turned round."
+    },
+    {
+      "role": "assistant",
+      "content": "A foot of standing water on the back roads is no joke, especially this time of year when you don't know what's underneath. Are your farm calls urgent, or can they be rescheduled to tomorrow?"
+    },
+    {
+      "role": "user",
+      "content": "one is a routine check. that can wait. two are hoof trims which arent urgent. the fourth is a ewe thats not eating and the farmer sounded worried on the phone. thats the one I need to get to but his farm is the other side of beauly which is exactly where the flooding is worst."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the worst scenario -- the one call that can't wait is the one that's hardest to reach. Can the farmer send you a video of the ewe so you can assess remotely? It's not ideal, but if the roads are impassable it might help you triage -- advise on immediate care over the phone and get there as soon as the water drops."
+    },
+    {
+      "role": "user",
+      "content": "aye I've already asked him to send a video. hes about seventy and his phone skills are not what youd call advanced but he said his grandson would help. the thing is if its something like a blockage or a twisted stomach then a video isnt going to tell me much. needs hands on."
+    },
+    {
+      "role": "assistant",
+      "content": "You're right -- some things you can only diagnose by touch. If the video doesn't give you enough, is there any route at all that gets you to the other side of Beauly? Even a long detour? Or is there another vet closer to his farm who could do an emergency call?"
+    },
+    {
+      "role": "user",
+      "content": "nearest other vet with large animal experience is prob dingwall and they'd have the same road problems coming from that direction. I could try going round by drumnadrochit and coming up the other side but thats adding an hour minimum and half those roads will be just as bad. honestly the highlands in april is just this. every year. you'd think the council would sort the drainage but no."
+    },
+    {
+      "role": "assistant",
+      "content": "It does seem like a recurring problem that never gets properly addressed. The Drumnadrochit route is a gamble if those roads are likely flooded too -- you could end up spending two hours driving only to get turned back again. What's the forecast looking like? Is this rain supposed to ease off today, or is it set in for a while?"
+    },
+    {
+      "role": "user",
+      "content": "met office says heavy rain until early afternoon then easing. which in highland terms means it might stop by four or it might not stop until thursday. their forecasts are about as reliable as a chocolate teapot up here."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha -- I can see why you'd be skeptical. If the rain does ease by early afternoon, the road situation might improve enough by late afternoon for you to get through. Could you plan to attempt the Beauly route around three or four, and in the meantime talk the farmer through keeping the ewe comfortable -- water access, keeping her sheltered, monitoring for bloat?"
+    },
+    {
+      "role": "user",
+      "content": "aye thats prob the plan. told him to keep her in the shed away from the others and keep an eye on her belly. if shes bloating he needs to call me straight away and ill find a way through regardless. just annoying. I should be working and instead im sat here watching the rain come down sideways."
+    },
+    {
+      "role": "assistant",
+      "content": "It's a rubbish situation but you're handling it as well as anyone could. You've triaged sensibly, given the farmer clear instructions, and you've got a plan for when the water drops. Sometimes the weather just wins the day. Hopefully the video comes through and gives you some reassurance in the meantime."
+    },
+    {
+      "role": "user",
+      "content": "aye. welcome to veterinary medicine in the scottish highlands. half the job is just getting there."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds about right. I hope the rain lets up and the ewe turns out to be something straightforward. Good luck this afternoon."
+    }
+  ]
+}

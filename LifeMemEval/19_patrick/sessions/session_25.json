@@ -1,0 +1,74 @@
+{
+  "session_id": 25,
+  "persona": "patrick_obrien",
+  "date": "2026-01-14",
+  "type": "critical",
+  "topic": "new doctor",
+  "facts_disclosed": ["Switched to Dr. Patel at Penn Medicine — Russo retired"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I got a new doctor and she wants me to do a bunch of bloodwork before my first real appointment. the lab order has about 15 things on it. can you tell me what some of these are."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I can translate the lab order. Read me the ones you don't recognize and I'll break them down."
+    },
+    {
+      "role": "user",
+      "content": "CBC, CMP, lipid panel — those I know. but she also ordered a hemoglobin A1C, a PSA, a TSH, and something called a hs-CRP."
+    },
+    {
+      "role": "assistant",
+      "content": "All standard for a thorough baseline workup, especially with a new doctor who doesn't have your history yet. Here's what each one is:\n\n**Hemoglobin A1C** — Measures your average blood sugar over the past 2–3 months. Diabetes screening tool. Normal is below 5.7%, 5.7–6.4 is prediabetes, above 6.5 is diabetes.\n\n**PSA (Prostate-Specific Antigen)** — Prostate cancer screening. Standard for men over 50. Normal is generally under 4.0 ng/mL. Routine check — doesn't mean she suspects anything.\n\n**TSH (Thyroid-Stimulating Hormone)** — Checks thyroid function. High TSH means underactive thyroid, low means overactive. A lot of doctors screen for this routinely.\n\n**hs-CRP (High-Sensitivity C-Reactive Protein)** — Measures inflammation in your body. Increasingly used as a cardiovascular risk marker. Below 1.0 is low risk, 1.0–3.0 moderate, above 3.0 higher risk.\n\nWhy the new doctor — did you switch practices?"
+    },
+    {
+      "role": "user",
+      "content": "my old doctor retired. Russo. I'd been going to him 20 years at Jefferson. the guy was old school like me. you walked in, he looked at you, told you what was wrong, and you left. 15 minutes tops. he finally hung it up after 40 years."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a hard transition. Twenty years with the same doctor — he knew your baseline, your history, what was normal for you. You didn't have to explain anything.\n\n40 years is a hell of a career. He earned the retirement.\n\nThe new doctor ordering all this bloodwork makes sense — she's building her own baseline from scratch. Is she at Jefferson too, or did you go somewhere else?"
+    },
+    {
+      "role": "user",
+      "content": "Penn Medicine. Dr. Patel. Marie's sister sees her and recommended her. she's good. different style from Russo. she asks a lot of questions — diet, sleep, stress. Russo never asked me any of that. he'd check my blood pressure and tell me to lose 20 pounds and stop eating cheesesteaks."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — sounds like Russo and you spoke the same language. Short and direct.\n\nPatel's approach is different but it's the direction medicine has gone. The lifestyle questions — diet, sleep, stress — those factors drive a lot of what shows up in bloodwork years down the road. If she's asking about stress, especially in your line of work, that's a doctor paying attention to the whole picture.\n\nPenn Medicine is a strong system, and a recommendation from family means she's already vetted. For the bloodwork — she told you to fast? And are you on any medications she should account for?"
+    },
+    {
+      "role": "user",
+      "content": "12 hours fast. I'll go early morning before shift. only medication is lisinopril for blood pressure. Russo put me on it about 5 years ago."
+    },
+    {
+      "role": "assistant",
+      "content": "Take the lisinopril as normal — the CMP includes kidney function markers, and Patel will want to see those with the lisinopril in your system since ACE inhibitors can affect kidney function. That's routine monitoring.\n\nFor the fast: water is fine, stay hydrated. No alcohol for 48 hours before the draw. Skip heavy exercise the day before — a hard workout can spike your CRP and liver enzymes. The blood draw itself takes 10 minutes. Results usually back in 2–3 business days."
+    },
+    {
+      "role": "user",
+      "content": "she wants to do the labs first, then sit down two weeks later and go through everything. Russo would've done it all same day. I just don't like starting over with somebody. 20 years of history and now I'm explaining everything from scratch."
+    },
+    {
+      "role": "assistant",
+      "content": "Patel's approach gives her time to actually review everything before you sit down together. She'll have the data analyzed, questions ready. For a first visit where she's building your whole picture, that's smarter than reading results cold in the room.\n\nAnd the starting over part — a fresh set of eyes sometimes catches things that familiarity misses. Russo knew you so well he might have stopped looking for certain things. The wide-net bloodwork she ordered might pick up something he wasn't checking anymore. Give her a couple visits."
+    },
+    {
+      "role": "user",
+      "content": "fair enough. Marie's sister swears by her and she does seem to know what she's doing. I'll get the blood drawn this week. thanks for breaking down the lab order. I don't like walking in not knowing what they're testing for."
+    },
+    {
+      "role": "assistant",
+      "content": "Nothing wrong with knowing what you're signing up for. Fast for 12, take your lisinopril, drink water, and you're good."
+    },
+    {
+      "role": "user",
+      "content": "copy that. I'll let you know if the numbers come back ugly."
+    },
+    {
+      "role": "assistant",
+      "content": "Hopefully they don't. But if you want to talk through the results after the follow-up, I'm here. Good luck with the draw."
+    }
+  ]
+}

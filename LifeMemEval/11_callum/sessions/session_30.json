@@ -1,0 +1,74 @@
+{
+  "session_id": 30,
+  "persona": "callum_fraser",
+  "date": "2026-03-05",
+  "type": "critical",
+  "topic": "conference planning",
+  "facts_disclosed": ["Practice conference Edinburgh May 8-9 2026"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "got an email today that has properly dampened my mood. practice conference. two full days of powerpoints and networking. genuinely cannot think of anything worse."
+    },
+    {
+      "role": "assistant",
+      "content": "Every profession has its version of that. When is it, and is attendance mandatory or just strongly encouraged in a way that's basically mandatory?"
+    },
+    {
+      "role": "user",
+      "content": "may 8th and 9th. edinburgh. and aye its mandatory, the practice is paying for it so they expect everyone to go. two days of sitting in a conference centre listening to people talk about things I could read in a pdf in ten minutes."
+    },
+    {
+      "role": "assistant",
+      "content": "May 8th and 9th in Edinburgh -- at least the timing is decent weather-wise. Do you know the venue yet, or just the dates so far?"
+    },
+    {
+      "role": "user",
+      "content": "think its one of those hotel conference places near haymarket. not sure exactly. the email was light on details and heavy on enthusiasm which is never a good sign."
+    },
+    {
+      "role": "assistant",
+      "content": "\"Light on details and heavy on enthusiasm\" -- that's a red flag for sure. Usually means there'll be team-building exercises or breakout sessions. Do you know what topics they're covering, or is it general practice stuff?"
+    },
+    {
+      "role": "user",
+      "content": "mixture apparently. some clinical updates which might actually be useful. parasitology, antimicrobial stewardship, that kind of thing. but theres also a whole afternoon on practice management and client communication which is code for someone telling me to smile more at farmers."
+    },
+    {
+      "role": "assistant",
+      "content": "The clinical sessions sound genuinely worthwhile at least. Parasitology and antimicrobial stewardship are things that evolve quickly enough that a refresher is valuable. The client communication session though -- yeah, those tend to be painful for anyone who already does the job competently.\n\nAre you driving down the night before, or is the practice sorting accommodation?"
+    },
+    {
+      "role": "user",
+      "content": "prob drive down the 7th aye. practice is covering hotel rooms but I might just stay at eilidhs flat since shes in stockbridge anyway. save them the money and save me from making small talk at a hotel breakfast."
+    },
+    {
+      "role": "assistant",
+      "content": "Smart move. Stockbridge to Haymarket is a short trip too -- bus or even a walk if the weather's decent. And hotel breakfasts at conference venues always come with the risk of being cornered by an overly enthusiastic colleague at 7am."
+    },
+    {
+      "role": "user",
+      "content": "exactly. at least the evenings are mine. theres a couple of decent pubs on rose street. plan is to survive the powerpoints then go get a proper pint and pretend the next day isnt happening."
+    },
+    {
+      "role": "assistant",
+      "content": "Rose Street is a solid plan -- plenty of good options along there. The first conference day pint is always the most satisfying. Two days will fly by quicker than you think, especially if the clinical stuff is decent."
+    },
+    {
+      "role": "user",
+      "content": "aye thats what I keep telling myself. at least its not three days. and edinburgh in may should be alright weather wise. could be worse, could be a conference centre in birmingham in november."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the spirit -- it could always be worse. Edinburgh in May is genuinely pleasant, and you've got good evening plans and a convenient place to stay. Frame it as two days of moderate suffering with decent pints at the end."
+    },
+    {
+      "role": "user",
+      "content": "thats going on my gravestone. two days of moderate suffering with decent pints at the end. right I need to go. got a ewe with a prolapse waiting for me. more fun than a conference."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, when a uterine prolapse is the preferable option, you know conferences aren't your thing. Good luck with the ewe."
+    }
+  ]
+}

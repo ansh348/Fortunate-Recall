@@ -1,0 +1,74 @@
+{
+  "session_id": 24,
+  "persona": "patrick_obrien",
+  "date": "2025-12-28",
+  "type": "filler",
+  "topic": "winterizing the boat — first time doing it",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to winterize an outboard motor. Yamaha F200 four stroke. never done it before. what's the process."
+    },
+    {
+      "role": "assistant",
+      "content": "Good that you're getting this done before any hard freezes. Here's the full winterization process for a Yamaha F200 four-stroke:\n\n**1. Fuel System:**\n- Fill the fuel tank completely to prevent condensation. Add marine fuel stabilizer and run the engine 10–15 minutes to circulate it through the system.\n\n**2. Engine Oil and Filter:**\n- Change the oil and filter while the engine is still warm. Warm oil drains more completely. The F200 takes about 5.3 quarts of Yamalube 4M or equivalent.\n\n**3. Lower Unit Gear Oil:**\n- Drain and replace. If the old oil comes out milky or gray, that's water intrusion — seals need attention before spring. Takes about 750ml of gear lube.\n\n**4. Flush the Cooling System:**\n- Run the engine on muffs with fresh water for 5–10 minutes.\n\n**5. Fog the Cylinders:**\n- With the engine running on muffs, spray fogging oil into the air intake until the engine stalls. This coats the cylinder walls and prevents corrosion during storage.\n\n**6. Battery:**\n- Hook up a battery tender or disconnect and store inside. A marine maintainer keeps it charged all winter without overcharging.\n\nDo you have muffs and a gear oil pump, or do you need to pick those up?"
+    },
+    {
+      "role": "user",
+      "content": "I got the muffs. don't have the gear oil pump. the fogging oil part is new to me. you spray it into the intake while it's running? that seems like it would kill the engine."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly what it does — and that's the point. You're intentionally flooding the cylinders with oil so they're coated for winter storage. The engine stalls because it can't combust the oil-air mix.\n\nThe process: engine running at idle on muffs, remove the air intake cover on top of the engine (usually two or three clips), spray fogging oil in short bursts into the throttle body. You'll hear the RPMs dip with each spray. Keep spraying until it dies — about 15–20 seconds. Don't restart it. You're done.\n\nWhen you fire it up in spring, it'll blow white smoke for a minute and then clear right out.\n\nFor the gear oil pump — pick one up at West Marine. Yamaha makes one that threads right onto the lube bottles. About $10. While you're there grab the gear lube, fogging oil, drain gaskets, and a battery tender if you don't have one."
+    },
+    {
+      "role": "user",
+      "content": "I can change oil. been doing that on trucks for 40 years. this is just unfamiliar territory. the boat's on the trailer in the driveway and it's going to sit until April. what about covering it."
+    },
+    {
+      "role": "assistant",
+      "content": "If it's sitting until April, definitely cover it. Rain, snow, and ice pooling in the cockpit all winter will cause mildew on cushions and water damage in compartments.\n\nA fitted boat cover is best, but a heavy-duty tarp with tie-downs works. Just make sure it's tight — Philly winds in January will rip a loose cover off.\n\nA few other things for long-term storage:\n\n- **Pull the drain plug** so any rain or snowmelt that gets in can drain out instead of pooling.\n- **Open compartment hatches slightly** for air circulation to prevent mildew.\n- **Hit the steering cable, tilt/trim rams, and any grease fittings** with marine grease to prevent corrosion.\n\nThat's the full checklist. Fuel stabilizer, oil change, lower unit, fog the cylinders, battery tender, cover it, pull the plug, grease the fittings. Do all of that and it'll fire right up in April."
+    },
+    {
+      "role": "user",
+      "content": "I'll hit West Marine this weekend and knock the whole job out Saturday if the weather cooperates. what order should I do everything in."
+    },
+    {
+      "role": "assistant",
+      "content": "Best order:\n\n1. **Oil change and lower unit gear oil** — do these first while the engine is cold. Get the messy stuff out of the way.\n2. **Hook up the muffs and start the engine** — let it warm up while circulating the stabilized fuel. Run it 10–15 minutes.\n3. **Fog the cylinders** — this kills the engine, so it's your last running step. Spray into the intake, let it stall, and you're done with the motor.\n4. **Battery tender** — hook it up and plug it in.\n5. **Grease fittings, pull the drain plug, cover it** — finish up the exterior stuff.\n\nTwo hours, maybe two and a half your first time. After this year you'll have the routine down and it'll take half that."
+    },
+    {
+      "role": "user",
+      "content": "two hours I can handle. what about the trailer. anything I should do to that while it sits."
+    },
+    {
+      "role": "assistant",
+      "content": "Good thinking. For the trailer: check tire pressure and inflate to the sidewall spec — tires lose pressure sitting in cold weather and can flat-spot. If the tires look dry-rotted, consider replacing them before spring. Grease the wheel bearings if you haven't already this season. And spray the coupler, jack, and any hardware with a penetrating lubricant to prevent rust and seizing. Five minutes of work but it saves headaches in April."
+    },
+    {
+      "role": "user",
+      "content": "bearings. I'll add that to the list. my buddy had a bearing blow out on the Turnpike once with his boat. wheel came off the axle. it was a disaster."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly why it matters. Bearing kits are cheap — $15-20 — and repacking them takes about 30 minutes per side. Much cheaper than a breakdown on the highway. You can add that to the Saturday job or do it separately. Either way, get it done before you tow in the spring."
+    },
+    {
+      "role": "user",
+      "content": "I'll do it all Saturday. one shot. get it done. is there anything I'm forgetting."
+    },
+    {
+      "role": "assistant",
+      "content": "One thing — rinse any saltwater rods and reels with fresh water and store them inside. Salt corrosion over the winter will seize up a reel fast. Other than that, you've got the full checklist. Oil, lower unit, fuel stabilizer, fog the cylinders, battery tender, trailer bearings, cover it, pull the drain plug. Knock all that out Saturday and you're set till April."
+    },
+    {
+      "role": "user",
+      "content": "good to go. appreciate the walkthrough."
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. First winterization is the learning curve — after this it's routine. That Yamaha will thank you for it come spring."
+    }
+  ]
+}

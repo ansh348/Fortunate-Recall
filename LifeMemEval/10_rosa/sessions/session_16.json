@@ -1,0 +1,74 @@
+{
+  "session_id": 16,
+  "persona": "rosa_gutierrez",
+  "date": "2025-06-11",
+  "type": "filler",
+  "topic": "parish fundraiser — she's organizing the silent auction",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am chairing our parish silent auction this year and I have bitten off more than I can chew. We have about forty donated items and I need a system for organizing the bidding sheets, the display, all of it. Can you help me think through the logistics?"
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely, I can help you map this out. Forty items is very manageable with a good system. Let's start with the basics:\n\n**Bidding sheets:** Each item should have its own sheet with the item name, description, donor name (if they want credit), fair market value, minimum bid, and minimum bid increment. Leave about 20-25 lines for bids — columns for bidder number, name, and bid amount.\n\n**Display layout:** Group items by category — experiences (dinners, spa packages), goods (gift baskets, artwork), services (landscaping, tutoring). This makes browsing easier and creates natural flow.\n\n**Numbering:** Number every item clearly (Item #1 through #40) and make sure the number matches the bidding sheet. Tent cards on the table with the number and item name help a lot.\n\nHow much space do you have to work with, and is this indoors or outdoors?"
+    },
+    {
+      "role": "user",
+      "content": "Indoors, in the parish hall. It is a decent space — we can set up maybe eight to ten long tables. The event is combined with a dinner, so half the room will be round tables for eating and the other half will be the auction display area."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a good setup. With five tables for auction items, you can spread things out nicely — about eight items per table. Here's how I'd organize it:\n\n**Table groupings:**\n1. Food & Dining (restaurant gift cards, wine baskets, cooking classes)\n2. Experiences & Travel (hotel stays, event tickets, tours)\n3. Home & Services (landscaping, cleaning, home goods)\n4. Health & Beauty (spa packages, fitness memberships)\n5. Art, Jewelry & Premium Items (your highest-value pieces — put these in the back so people walk past everything else first)\n\n**Pro tip:** Place your most eye-catching items at the ends of tables where they're visible from the dining area. That draws people over.\n\nFor the dinner portion, I'd suggest closing the auction about 30 minutes before dessert so you have time to tally winners and announce them during coffee.\n\nDo you have volunteers handling the checkout and tallying?"
+    },
+    {
+      "role": "user",
+      "content": "I have three volunteers for checkout and two for general help during the event. The tallying is what worries me. Forty sheets, handwritten bids, people writing illegibly — it sounds like a recipe for disaster. Last year the woman who chaired it said closing out took over an hour."
+    },
+    {
+      "role": "assistant",
+      "content": "An hour is way too long — you lose all the energy in the room. A few ways to speed it up:\n\n**Option 1: Go digital.** There are free or low-cost silent auction apps — Handbid, Silent Auction Pro, or even Google Forms with QR codes at each item. People bid from their phones. When you close the auction, the winners are instantly calculated. No handwriting issues, no tallying.\n\n**Option 2: Stay paper but streamline.** Have each of your three checkout volunteers pre-assigned to specific tables. The moment bidding closes, each person grabs their sheets and highlights the last bid. That's the winner. They bring the sheets to one central person who enters them into a simple spreadsheet. With three people working in parallel, you can close out forty items in fifteen minutes.\n\n**Option 3: Hybrid.** Use paper bidding sheets but have someone photograph each sheet with a phone the moment bidding closes. That gives you a backup while you tally.\n\nGiven your volunteer count, I'd lean toward Option 2 unless your parish community is comfortable with phones and apps."
+    },
+    {
+      "role": "user",
+      "content": "Our congregation skews older. Phones and apps would cause more confusion than they solve. I will go with Option 2 — the parallel tallying. That is smart. Now, what about the minimum bids? I do not want to insult the donors by starting too low, but I also do not want to scare people off."
+    },
+    {
+      "role": "assistant",
+      "content": "Good instinct. The standard rule of thumb for charity silent auctions:\n\n- **Minimum bid:** 30-40% of fair market value\n- **Bid increment:** 10% of fair market value, or round to the nearest $5 or $10 for simplicity\n\nSo for a $100 restaurant gift card, start at $35 with $10 increments. For a $500 spa package, start at $175 with $25 increments.\n\nA few nuances:\n- **Donated services** (someone volunteering their time for landscaping, photography, etc.) — you can set the minimum higher, around 50%, since there's no hard cost to the donor.\n- **Handmade or sentimental items** — be careful. A parishioner's hand-knitted blanket might have a low market value but high emotional value. Set the minimum modestly and let the community bid it up out of affection.\n- **Premium items** — if you have one or two big-ticket donations, consider a \"Buy It Now\" price at 80-90% of value. Some people will pay a premium just to lock it in without watching the sheet all night.\n\nDoes that framework work for your items?"
+    },
+    {
+      "role": "user",
+      "content": "It does. The Buy It Now idea is excellent — we have a weekend at a cabin in the Keys donated by one of our parishioners. That could be the centerpiece. I think setting a Buy It Now on that would generate excitement. What should I put as the starting bid on something like that? A weekend in the Keys, let us say fair market value is around twelve hundred dollars."
+    },
+    {
+      "role": "assistant",
+      "content": "For a $1,200 Keys weekend:\n\n- **Minimum bid:** $400 (about 33%)\n- **Bid increment:** $50\n- **Buy It Now:** $1,000 (about 83%)\n\nThe $400 start is low enough that multiple people will jump in early, which creates momentum. The $50 increments keep things moving without making people feel like they're making a huge leap each time. And the $1,000 Buy It Now feels like a genuine deal — someone saves $200 off value while the parish still gets a strong return.\n\n**Display tip for this one:** Put it on its own small table or easel with a nice photo of the cabin, a brief description of what's included (nights, amenities, dates available), and maybe a small tropical prop — a shell, a candle, something that evokes the Keys. Make it feel like an experience, not just a line item.\n\nYou said this is your centerpiece — put it where people see it as they walk in. First impression sets the tone for the whole auction."
+    },
+    {
+      "role": "user",
+      "content": "I have a photo of the cabin from the donor. Beautiful place right on the water. I will do exactly that — easel, photo, maybe some shells. My husband will say I am being dramatic but presentation matters. Thank you for all of this. One last question — should I send a pre-event email to parishioners listing the items? Or keep it a surprise?"
+    },
+    {
+      "role": "assistant",
+      "content": "Send the email, absolutely. Research consistently shows that previewing auction items increases both attendance and total bids. People come with specific items in mind and a budget already set — which means they bid higher and faster.\n\n**What to include in the email:**\n- A teaser list of the top 10-15 items (not all 40 — leave some for discovery)\n- The Keys cabin as the headliner, with the photo\n- Date, time, location, and that dinner is included\n- A note that all proceeds go to [whatever the parish cause is]\n- A gentle reminder to bring cash or a checkbook for checkout, or clarify if you're accepting cards\n\n**What to leave out:** Starting bids. Let people see those in person. If someone knows the minimum is $400 on the cabin, they might plan to bid exactly that. If they don't know, they'll bid based on perceived value, which is usually higher.\n\nSend it about a week before the event, and then a reminder the day before. Your husband can call it dramatic — you can call it effective. Good luck with the auction."
+    },
+    {
+      "role": "user",
+      "content": "Ha. Effective. I like that. Claro, he will show up the night of and act like he was not skeptical the entire time. That is his way. One more thing — do you have any advice on how to handle the donors? Some of them will expect a lot of attention the night of the event, and I need to manage that without ignoring the bidders."
+    },
+    {
+      "role": "assistant",
+      "content": "Donor management on the night of is all about front-loading the recognition so they feel valued early and you're free to focus on bidders later:\n\n- **Thank-you cards at their seats**: If the donors are attending the dinner, place a handwritten note at each of their place settings acknowledging their contribution. It takes thirty minutes to write forty cards, and the impact is enormous.\n- **A brief public acknowledgment**: During the dinner portion, before the auction closes, have someone read the list of donors by name. Keep it to two minutes. Don't describe every item — just the names.\n- **Visible credit on the bidding sheets**: Make sure each item's bidding sheet says \"Donated by [Name].\" That's continuous recognition all night without you having to do anything.\n\nWith those three layers, the donors feel seen without you needing to circulate and personally attend to each one during the event. Your attention should be on the floor — watching the bidding energy, directing people toward items that need more bids, and managing the close."
+    },
+    {
+      "role": "user",
+      "content": "Handwritten thank-you cards. That I can do — I am a judge, I write things by hand all day. And the public reading of names, that is important. People want to hear their name. Thank you — this has been very helpful. I feel like I actually have a plan now instead of a pile of donated items and a prayer."
+    },
+    {
+      "role": "assistant",
+      "content": "You've got a solid plan now — categorized display, parallel tallying, smart minimum bids, a showpiece with a Buy It Now, a preview email, and donor recognition baked in. That's not a prayer, that's a strategy.\n\nAnd when it all comes together beautifully, make sure your husband knows you had expert consultation. Enjoy the event — it sounds like it's going to be a great night for the parish."
+    }
+  ]
+}

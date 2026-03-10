@@ -1,0 +1,74 @@
+{
+  "session_id": 32,
+  "persona": "rosa_gutierrez",
+  "date": "2026-04-14",
+  "type": "filler",
+  "topic": "family reunion planning — who's bringing what",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am organizing a family reunion and I need a system. There are twenty-three people coming, everybody wants to bring food, and if I do not coordinate this we are going to end up with eleven trays of rice and nothing else. Help me think through this."
+    },
+    {
+      "role": "assistant",
+      "content": "Twenty-three people is a solid crowd. The best approach is to break the menu into categories and assign each family unit to a category, rather than letting everyone freestyle. That way you get variety and coverage.\n\nHere's a framework:\n\n1. **Mains** (2-3 dishes for 23 people)\n2. **Sides/starches** (3-4 dishes)\n3. **Salads/vegetables** (2-3 dishes)\n4. **Appetizers/snacks** (2-3 dishes)\n5. **Desserts** (2-3 dishes)\n6. **Drinks** (2 people — one for non-alcoholic, one for alcoholic)\n\nWho's the best cook in the family besides you? That person gets a main. How many family units are we working with — how many households are bringing something?"
+    },
+    {
+      "role": "user",
+      "content": "About eight households, if I count correctly. My sister Lourdes is the other strong cook — she will handle a main, no question. My brother-in-law Tomás always brings a pork shoulder and honestly it is very good, so I will let him keep doing that. The problem is my cousin Patricia. She volunteers to bring something every single time and it is always... let us say, not her strength."
+    },
+    {
+      "role": "assistant",
+      "content": "Every family has a Patricia. The diplomatic move is to assign her something that's hard to get wrong and still valuable. Drinks, a fruit platter, bread rolls, or ice — these are all contributions that matter and don't require cooking skill.\n\nAlternatively, if she insists on cooking, steer her toward something with a very forgiving recipe. A simple bean salad, for example — canned beans, olive oil, vinegar, cilantro, done. Even if it's mediocre, it fills a gap on the table and nobody's expecting it to be the star.\n\nWith eight households, you could assign it like this:\n- You: a main\n- Lourdes: a main\n- Tomás: pork shoulder (main #3)\n- Two households on sides\n- One on salad\n- Patricia on drinks or a simple appetizer\n- One on desserts\n\nDoes that roughly match who can do what?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, that is close. I will take the arroz con pollo — that feeds an army and I can make it in my sleep. Lourdes will do her ceviche, which everyone fights over. Tomás with the pork. My niece Sofia is actually a very good baker, so I will put her on dessert. That leaves sides and the Patricia situation."
+    },
+    {
+      "role": "assistant",
+      "content": "Strong lineup. Arroz con pollo, ceviche, and pork shoulder — that's a well-rounded trio of mains with variety in protein and preparation.\n\nFor sides, you want things that complement all three mains:\n- **Yuca frita or tostones** — always popular, someone who can handle a fryer\n- **A green salad** — simple, balances the heavier dishes\n- **Maduros** (sweet plantains) — crowd-pleaser, very easy\n- **A bean dish** — black beans or canario beans, depending on the family preference\n\nFor Patricia, I'd recommend the maduros. They're genuinely difficult to ruin — you slice ripe plantains, fry or bake them, done. They'll be eaten. And she gets to say she cooked something.\n\nWho among the remaining households is reliable enough for the yuca or the beans?"
+    },
+    {
+      "role": "user",
+      "content": "My cousin Elena can handle the black beans — she makes them well. And my nephew Diego and his wife can do tostones. They are young but they can manage frying plantains. So Patricia gets maduros. That is wise. She will feel important and nobody will go hungry. You understand family politics."
+    },
+    {
+      "role": "assistant",
+      "content": "Family politics and menu planning are basically the same discipline — allocation of resources, managing expectations, and making sure everyone feels they contributed something meaningful.\n\nSo your assignment list looks like:\n\n| Household | Dish | Category |\n|-----------|------|----------|\n| You | Arroz con pollo | Main |\n| Lourdes | Ceviche | Main |\n| Tomás | Pork shoulder | Main |\n| Elena | Black beans | Side |\n| Diego & wife | Tostones | Side |\n| Patricia | Maduros | Side |\n| Sofia | Dessert (baking) | Dessert |\n| Remaining household | Drinks + green salad | Drinks/Salad |\n\nThat covers eight households. Do you want to handle drinks yourself or assign the last household to that?"
+    },
+    {
+      "role": "user",
+      "content": "The last household is my cousin Roberto. He always brings beer anyway, so I will officially assign him drinks — beer, soda, water, juice for the children. I will make a simple salad myself. That is nothing — lettuce, tomato, avocado, lime. Done in ten minutes."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect. That's a complete, well-balanced menu with no gaps and no redundancy. You've got three proteins, multiple sides, a salad for balance, dessert, and drinks covered.\n\nA few logistics to think about:\n- **Timing**: Tell everyone the arrival window and when food should be ready to serve. Nothing worse than the pork arriving two hours after the ceviche is gone.\n- **Serving supplies**: Assign someone to bring extra serving spoons, foil trays, and ice. Or handle it yourself so it actually gets done.\n- **Labeling**: If anyone has allergies or dietary restrictions, a small card by each dish helps and prevents twenty-three people from asking \"does this have shellfish?\"\n\nDo you need help with quantities — how much arroz con pollo to make for twenty-three?"
+    },
+    {
+      "role": "user",
+      "content": "I know my arroz con pollo quantities — I have been feeding crowds since before some of these people were born. But the timing point is important. I will send a group text with assignments and a timeline. If I do not, people will show up whenever they feel like it and the food situation will be chaos."
+    },
+    {
+      "role": "assistant",
+      "content": "A group text with clear assignments and a timeline is exactly right. Something like: dishes should arrive by a specific time, serving starts at a specific time, here is what you are bringing, no substitutions without approval from the organizer. Clear, firm, fair.\n\nYou run a good operation. Twenty-three people, eight households, every dish accounted for, no duplicates, and Patricia is safely on maduros. This reunion is going to go well."
+    },
+    {
+      "role": "user",
+      "content": "Claro it will. Because I planned it. One more thing — do you think I should make a group chat or send individual messages? If I send a group text, everyone will reply all and it will be chaos. If I send individual messages, someone will feel left out."
+    },
+    {
+      "role": "assistant",
+      "content": "Group chat, but managed firmly. Create the group, send one clear message with everyone's assignment, and include a line at the end like: 'If you have questions, text me directly. This chat is for confirmations only.' That sets the expectation upfront.\n\nPeople will still reply to the group — that's inevitable. But at least you've established the norm. And honestly, a little chaos in the group chat is fine. It builds excitement. Just don't let anyone use it to renegotiate their assignment in front of everyone. Side conversations go to you privately."
+    },
+    {
+      "role": "user",
+      "content": "Confirmations only. I like that. I am going to run this like a docket — assignments posted, objections filed privately, no last-minute motions the day of. Gracias, this was exactly what I needed. Now I send the text and brace for the replies. There will be negotiations. There always are."
+    },
+    {
+      "role": "assistant",
+      "content": "Hold firm. You've made your rulings. If anyone appeals, remind them that the menu has been balanced by someone who coordinates complex proceedings for a living. Enjoy the reunion — and the arroz con pollo."
+    }
+  ]
+}

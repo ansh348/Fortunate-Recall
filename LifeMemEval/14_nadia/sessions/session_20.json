@@ -1,0 +1,82 @@
+{
+  "session_id": 20,
+  "persona": "nadia_petrov",
+  "date": "2025-07-02",
+  "type": "critical",
+  "topic": "kitchen leadership change",
+  "facts_disclosed": ["Chef Antoine left — new head chef is Marc-Andre Gagnon, corporate-minded"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "everything is different at work and I hate it"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a heavy statement. What changed?"
+    },
+    {
+      "role": "user",
+      "content": "Antoine is gone. he left. packed up and went to Lyon to open his own place. I found out two weeks ago and I'm still processing it. three years working under that man and he just... left"
+    },
+    {
+      "role": "assistant",
+      "content": "Three years is a long time to work with someone — especially in a kitchen where you're side by side every service. That must feel like losing a mentor and a collaborator at the same time. Did you have any warning, or was it sudden?"
+    },
+    {
+      "role": "user",
+      "content": "he'd been talking about Lyon for a while but I thought it was just talk. chefs always talk about opening their own place. I never thought he'd actually do it. and honestly? I'm happy for him. he deserves it. but blyat, the timing. because now we have this new guy"
+    },
+    {
+      "role": "assistant",
+      "content": "There's always a new guy. Who replaced him?"
+    },
+    {
+      "role": "user",
+      "content": "Marc-Andre Gagnon. management brought him in from some hotel restaurant downtown. he's \"experienced\" and \"business-savvy\" and all the words ownership loves to hear. you know what that means? it means he looks at food cost percentages before he tastes the sauce. it means he's already talking about \"portion optimization\" and \"waste reduction targets.\" mon Dieu"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a fundamentally different philosophy from what you're used to. A chef who leads with cost percentages is running a different kitchen than one who leads with flavour. How is that showing up day to day?"
+    },
+    {
+      "role": "user",
+      "content": "okay so yesterday — YESTERDAY — he told me we're reducing the butter in the beurre blanc by fifteen percent. fifteen percent! I said the sauce will break if we go that thin and he said \"find a way to stabilize it.\" find a way to stabilize it. putain. that's not how sauces work. you don't just subtract butter from a butter sauce and \"find a way.\" the butter IS the way"
+    },
+    {
+      "role": "assistant",
+      "content": "\"Subtract butter from a butter sauce\" is genuinely absurd when you put it that way. A beurre blanc is literally an emulsion of butter — the butter isn't an ingredient you can reduce, it IS the dish. Does he understand that, or does he just see a line item?"
+    },
+    {
+      "role": "user",
+      "content": "he sees a line item. that's exactly it. Antoine would taste something and say \"more acid\" or \"the texture is wrong\" or \"this plate tells no story.\" Marc-Andre looks at the plate and sees dollars. different brain entirely. and I get it — restaurants need to make money. I'm not naive. but we're supposed to be fine dining. the Gazette reviewed us. you don't get that reputation by skimping on butter"
+    },
+    {
+      "role": "assistant",
+      "content": "There's a real tension there — the reputation was built on Antoine's standards and philosophy, and now someone with a different set of priorities is inheriting that reputation without understanding what created it. Have you pushed back directly, or are you picking your battles?"
+    },
+    {
+      "role": "user",
+      "content": "picking my battles for now. it's been two weeks. I don't want to be the sous chef who fights the new head chef on day one. but I can feel it building. every time he talks about \"streamlining the menu\" or cutting a dish because the margin is too thin, I feel my jaw clench. this is not the kitchen I signed up for"
+    },
+    {
+      "role": "assistant",
+      "content": "That restraint is smart in the short term — you're reading the room before you commit to a position. But the jaw clenching tells you something. If the philosophy gap is this wide after two weeks, it's probably not going to narrow. At some point you'll need to decide what you can live with."
+    },
+    {
+      "role": "user",
+      "content": "I know. I know. part of me keeps hoping he'll settle in and loosen up once he sees how the kitchen actually runs. maybe once he gets through a full service and sees what our regulars expect, he'll understand that you can't cut corners here. or maybe he won't and I'll have to figure out my next move. merde. I miss Antoine. I miss someone at the pass who cared about the food first"
+    },
+    {
+      "role": "assistant",
+      "content": "Missing someone who shared your priorities is legitimate — that alignment between a chef and sous chef is what makes a kitchen run with purpose instead of just running. Give it some time to see if he adapts, but trust your instincts. You know what the food at Maison Laurent should be. Don't let that standard disappear just because the name on the jacket changed."
+    },
+    {
+      "role": "user",
+      "content": "the food at Maison Laurent should be extraordinary. that's the whole point. if I wanted to count pennies I'd work at a bistro chain. okay. I'm going to give it another month. see how he runs the summer menu. if it's all about margins and he kills the tasting menu, I'll know this isn't my kitchen anymore. but for now I cook. always I cook"
+    },
+    {
+      "role": "assistant",
+      "content": "One month is a fair timeline. You'll have enough data by then to know if this is growing pains or a permanent shift. And whatever happens, the standard lives in you — not in whoever's standing at the pass. Go cook."
+    }
+  ]
+}

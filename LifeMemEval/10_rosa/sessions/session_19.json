@@ -1,0 +1,82 @@
+{
+  "session_id": 19,
+  "persona": "rosa_gutierrez",
+  "date": "2025-08-05",
+  "type": "filler",
+  "topic": "help setting up new court email system",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Our court just migrated to a new email system and I cannot figure out how to set up my signature block. Dios mio, I feel ridiculous asking this, but the IT department sent a twelve-page instruction manual that reads like it was written by someone who has never spoken to a human being."
+    },
+    {
+      "role": "assistant",
+      "content": "You're not ridiculous — those IT guides are often written by the people who built the system, not the people who use it. What email system did the court move to? Is it Microsoft Outlook (Office 365), Google Workspace / Gmail, or something else? And are you on a desktop computer or trying to do this on your phone?"
+    },
+    {
+      "role": "user",
+      "content": "It is Microsoft Outlook. The new Office 365 version. I am on my desktop at the courthouse. I have used Outlook before, but this version looks completely different from what I had. Everything has moved."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, the newer Outlook interface reshuffled a lot of things. Here's how to set up your signature:\n\n1. Open Outlook and click **New Email** (or press Ctrl+N) to start a blank message\n2. In the compose window, look for the **Insert** tab in the ribbon at the top\n3. Click **Signature**, then select **Signatures...** from the dropdown\n4. A settings window will open. Click **+ New signature** and give it a name (e.g., \"Court Signature\")\n5. In the text box below, type your signature block — your name, title, court name, phone, email\n6. Use the formatting toolbar above the text box to adjust font, size, and make things bold as needed\n7. Under **Choose default signature**, set it for both \"New messages\" and \"Replies/forwards\" so it auto-applies\n8. Click **Save**\n\nDoes that match what you're seeing, or does your version look different?"
+    },
+    {
+      "role": "user",
+      "content": "Let me try this. I clicked New Email and I see the Insert tab. I see Signature. Good — I am in the signature settings now. It is asking me to type the signature. What should a proper judicial signature block look like? I want it to be correct."
+    },
+    {
+      "role": "assistant",
+      "content": "A standard judicial email signature is clean and formal. Here's a template:\n\n---\n\n**Hon. Rosa Gutierrez**\nCircuit Court Judge\nEleventh Judicial Circuit of Florida\n[Your division, if applicable]\n\nPhone: (305) XXX-XXXX\nEmail: [your court email]\n\n*This email may contain confidential information. If you received it in error, please notify the sender and delete.*\n\n---\n\nA few notes:\n- **\"Hon.\"** is standard for judicial correspondence, not \"Judge\" as a prefix\n- Keep it to 5-7 lines maximum. Long signature blocks look cluttered.\n- The confidentiality disclaimer is standard for court email — your court may have required language for this. Check the IT manual's last pages; they often bury the mandatory disclaimer text there.\n- Skip the inspirational quotes and decorative fonts. You're a judge, not a real estate agent.\n\nDo you know if your court requires specific disclaimer language?"
+    },
+    {
+      "role": "user",
+      "content": "Ha. No inspirational quotes, understood. Let me check the manual for the disclaimer. You are right — page eleven has mandatory confidentiality language. It is three sentences long. Do I just paste that below my name and title?"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. Structure it like this:\n\n1. Your name and title block (bold your name, regular weight for the rest)\n2. One blank line\n3. Phone and email\n4. One blank line\n5. The mandatory disclaimer in *italics* and a slightly smaller font size (8 or 9 point if your main text is 10-11 point)\n\nThe italics and smaller size visually separate the legal boilerplate from your actual contact information. It signals \"this is standard language\" without making your signature look like a legal filing.\n\nOnce you've typed it all in, make sure you:\n- Select it as the default for both new messages and replies\n- Click **Save**\n- Send yourself a test email to see how it looks\n\nThe test email is important — sometimes the formatting shifts between the editor and the actual sent message."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I have typed it in, set the defaults, saved it. Sending myself a test. One moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Take your time. Let me know how it looks when it arrives."
+    },
+    {
+      "role": "user",
+      "content": "It came through. It looks good — clean, professional. But the disclaimer text came through in a different font than the rest. The name block is in Calibri and the disclaimer is in Times New Roman. How did that happen?"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a common copy-paste issue. When you pasted the disclaimer text from the IT manual (which was probably a Word document or PDF), it brought the source formatting with it, including the font.\n\n**To fix it:**\n1. Go back into your signature settings (New Email > Insert > Signature > Signatures...)\n2. Select the disclaimer text in your signature\n3. Highlight all of it with your cursor\n4. Change the font to Calibri using the font dropdown in the formatting toolbar\n5. Adjust the size back to whatever you want (8 or 9 point)\n6. Click **Save**\n\n**Pro tip for the future:** When pasting text and you want it to match your existing formatting, use **Ctrl+Shift+V** instead of Ctrl+V. That pastes as plain text without carrying over the source formatting. It saves you this exact headache every time."
+    },
+    {
+      "role": "user",
+      "content": "Ctrl+Shift+V. Ay, I have been using computers for thirty years and I did not know that shortcut. That alone was worth this conversation. The signature looks correct now — all Calibri, properly sized."
+    },
+    {
+      "role": "assistant",
+      "content": "That shortcut is one of those hidden gems — most people never learn it because no one teaches it. Your signature looks professional now, and you won't have the font mismatch problem again."
+    },
+    {
+      "role": "user",
+      "content": "One more question — can I set it so that my signature only appears on new emails, not on replies? When I reply back and forth with the clerk's office, I do not need my full signature block appended to every message. It starts to look absurd after three rounds."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, absolutely. Go back into the signature settings — New Email > Insert > Signature > Signatures. At the bottom where it says **Choose default signature**, you'll see two dropdowns:\n\n- **New messages**: Set this to your court signature.\n- **Replies/forwards**: Set this to **(none)**.\n\nThat way your full signature block only appears on fresh emails. On replies and forwards, it's clean — just your message. If you ever need the signature on a reply, you can insert it manually from the same Insert > Signature menu.\n\nIt's a small thing, but it keeps your email threads readable, especially in those back-and-forth exchanges with chambers staff."
+    },
+    {
+      "role": "user",
+      "content": "That is exactly what I wanted. Gracias — I should not have needed help with this, but that manual was useless."
+    },
+    {
+      "role": "assistant",
+      "content": "The manual was the problem, not you. A twelve-page document for something that takes five minutes is poor communication. You're set now — professional signature, consistent formatting, smart default settings, and a new trick for pasting. If the new Outlook gives you any other trouble, you know where to find me."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "session_id": 14,
+  "persona": "rosa_gutierrez",
+  "date": "2025-05-19",
+  "type": "critical",
+  "topic": "surprise party planning",
+  "facts_disclosed": ["Carlos's 60th birthday party — July 19, 2025"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to plan something and I need to be organized about it. Carlos turns sixty on July 19th and I am throwing him a surprise party. He cannot know."
+    },
+    {
+      "role": "assistant",
+      "content": "A surprise 60th — that's a milestone worth celebrating properly. July 19th gives you exactly two months to plan, which is a comfortable window. What's your vision? Big party, intimate gathering, specific venue, at home?"
+    },
+    {
+      "role": "user",
+      "content": "At the house. Carlos is not a venue person. He would be uncomfortable at some rented hall with a DJ. He wants his people around him, good food, and a reason to laugh. So the party will be at our house — the backyard is large enough for fifty or sixty people if we set it up correctly."
+    },
+    {
+      "role": "assistant",
+      "content": "A backyard party for fifty to sixty people with good food and good company — that sounds perfect for someone who values warmth over spectacle. Let's break this into workstreams. The big categories are: guest list, food and drink, setup and rentals, the surprise element, and any special touches like music or a photo display. Where do you want to start?"
+    },
+    {
+      "role": "user",
+      "content": "Food. That is the most important element. If the food is wrong, nothing else matters. I want pastelitos from Islas Canarias — that is non-negotiable. Carlos loves their guava and cheese. But I also need a main spread. I am thinking roast pork, rice, black beans, plantains. Classic. Nothing experimental."
+    },
+    {
+      "role": "assistant",
+      "content": "Islas Canarias for the pastelitos is an excellent call — their guava and cheese are legendary for a reason. For the main spread, your instinct is right: classic Cuban comfort food for sixty people is crowd-pleasing and manageable. A few logistics to think through:\n\n- **Roast pork**: For sixty people, you're looking at roughly 35-40 pounds of raw pork (bone-in leg or shoulder). Are you planning to make it yourself or order from a restaurant that does catering-size lechon?\n- **Islas Canarias**: Call them well in advance for a large pastelito order. For sixty people, I'd estimate 120-150 pastelitos (two to three per person, people always grab extras). They can usually accommodate large orders but they need lead time.\n- **Sides**: Rice and black beans scale well. Plantains — maduros or tostones?\n- **Drinks**: Any specific plans there?\n\nWhat's your capacity for cooking versus ordering?"
+    },
+    {
+      "role": "user",
+      "content": "I will make the rice and beans myself. That is not something I outsource. The pork I will order — Sergio at the carniceria on Calle Ocho does whole roasted pigs and he is reliable. Maduros, not tostones. Carlos prefers maduros. The pastelitos I will call Islas Canarias next week. One hundred and fifty is the right number — you are correct that people take extras. For drinks, beer, wine, and I will make a big batch of mojitos."
+    },
+    {
+      "role": "assistant",
+      "content": "You have the food handled — Sergio for the pork, homemade rice and beans, maduros, Islas Canarias pastelitos, and a mojito station. That's a strong lineup. For the mojitos at that scale, you'll want to prep a large batch of the base (lime juice, sugar, mint) ahead of time and just add rum and soda water to order. Muddling sixty individual mojitos in real time would be a full-time job.\n\nNow — the surprise element. How are you planning to get Carlos to the backyard without him knowing sixty people are there? That's usually the hardest part of a surprise party."
+    },
+    {
+      "role": "user",
+      "content": "I have thought about this. His friend Miguel is going to take him out for a birthday lunch — just the two of them, something low-key. While they are out, everyone arrives and we set up. Miguel brings him home around five o'clock. Carlos walks into the backyard and there it is. Miguel is trustworthy. He will not ruin it."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a clean plan. Having Miguel handle the decoy outing means you have the whole afternoon to receive guests and do final setup without trying to hide things from Carlos. A few things to button up:\n\n- **Parking**: Sixty guests means a lot of cars. If they're all parked on your street when Carlos arrives, he'll know immediately. Can you ask guests to park a street or two over, or carpool?\n- **Timeline**: If Miguel brings him back at five, tell guests to arrive by four to four-thirty. Build in buffer.\n- **Communication**: Send a group text or email to all guests with explicit instructions — arrival time, parking instructions, and a firm reminder that it's a surprise. Someone always almost blows it.\n\nDo you want to do anything special beyond the party itself — a toast, a slideshow, a gift?"
+    },
+    {
+      "role": "user",
+      "content": "The parking is a good point. I will include that in the invitation. Arrive by four-fifteen, park on the next street. I know my people — if I do not give precise instructions, someone will park their truck right in the driveway.\n\nFor something special — I want to do a toast. Short. Meaningful. Not a roast. Carlos deserves sincerity, not jokes at his expense. And maybe a photo display — pictures of him through the years. Our kids might have some good ones on their phones."
+    },
+    {
+      "role": "assistant",
+      "content": "A sincere toast and a photo display are perfect — they honor the person without turning it into a production. For the photos:\n\n- Ask your kids to send their favorites to you digitally in the next couple of weeks. Give them a deadline or it won't happen.\n- You could print them and pin them to a board or string, or if you want something easier, set up a laptop or tablet running a slideshow loop on a table. The physical board feels more personal, though.\n- Include photos from different eras — childhood if you have them, your wedding, the kids growing up, recent ones. The arc of a life is what makes it moving.\n\nFor the toast, you'll know what to say when the moment comes. But if you want to prepare, write down three things: one thing about who Carlos was when you met him, one thing about who he is now, and one thing about what he means to the people in that backyard. Keep it under two minutes. That's all you need."
+    },
+    {
+      "role": "user",
+      "content": "Under two minutes. I am a judge — I can be concise when the occasion demands it. I like the framework. Who he was, who he is, what he means. That is elegant. I will write it out and practice it once so I do not get emotional in the moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Practicing once is wise — it lets you find the words that might catch in your throat and smooth them out beforehand. And if you do get a little emotional anyway, that's not a flaw. It's evidence.\n\nSo your checklist: call Islas Canarias next week for the pastelitos, book Sergio for the pork, coordinate with Miguel on the lunch decoy, send invitations with parking instructions and a four-fifteen arrival time, collect photos from the kids with a deadline, and write the toast. Two months is plenty of time. Shall I help with invitation wording or anything else?"
+    },
+    {
+      "role": "user",
+      "content": "Not today. You have helped me structure this and that was exactly what I needed. I operate better with a checklist. Carlos has given me thirty-two years of his life — the least I can do is give him a good party. Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "Thirty-two years earns a great party, and this one is going to be exactly that. Good luck keeping the secret — and make sure Miguel knows the parking rules too. Happy planning."
+    }
+  ]
+}
