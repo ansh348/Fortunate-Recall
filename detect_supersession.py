@@ -127,6 +127,7 @@ Examples of SUPERSESSION (should be detected):
 - "User does hot yoga 4x/week" → "User got into rock climbing instead" (hobby replaced)
 - "User considering moving to Denver" → "User decided to stay in Austin" (tentative plan resolved)
 - "User's rent is $800/month" → "User's rent increased to $950/month" (numeric update)
+- "User and wife agreed work stays at the office" → "User told wife about the surgery case at kitchen table last night" (specific event shows the general rule no longer holds)
 
 Examples of NOT supersession (should NOT be detected):
 - "User likes jazz" + "User plays piano" (different facts, both valid)
@@ -479,12 +480,22 @@ async def process_persona(
 
     # Group by category
     groups = group_edges_by_category(edges)
-    singleton_edges = len(edges) - sum(len(g) for g in groups.values())
-    print(f"    {len(edges)} edges -> {len(groups)} category groups (2+ edges), "
+
+    # Cross-category supersession pass: add a group containing ALL edges so that
+    # supersession pairs spanning different categories are evaluated.
+    if len(edges) >= 2:
+        groups["__ALL__"] = edges
+
+    singleton_edges = len(edges) - sum(
+        len(g) for cat, g in groups.items() if cat != "__ALL__"
+    )
+    cat_group_count = sum(1 for cat in groups if cat != "__ALL__")
+    print(f"    {len(edges)} edges -> {cat_group_count} category groups + cross-category pass, "
           f"{singleton_edges} singletons skipped")
 
     # Detect supersessions per category group
     all_supersessions = []
+    seen_pairs = set()  # deduplicate across category groups and __ALL__
     groups_checked = 0
     errors = 0
 
@@ -514,9 +525,16 @@ async def process_persona(
             errors += 1
             print(f"      {category}: {len(cat_edges)} edges -> ERROR: {error}")
         elif supersessions:
-            all_supersessions.extend(supersessions)
+            new_count = 0
+            for s in supersessions:
+                pair_key = (s["superseded_uuid"], s["superseding_uuid"])
+                if pair_key not in seen_pairs:
+                    seen_pairs.add(pair_key)
+                    all_supersessions.append(s)
+                    new_count += 1
             print(f"      {category}: {len(cat_edges)} edges -> "
-                  f"{len(supersessions)} supersession(s)")
+                  f"{len(supersessions)} supersession(s)"
+                  f"{f' ({len(supersessions) - new_count} duplicates skipped)' if new_count < len(supersessions) else ''}")
             for s in supersessions:
                 # Find the facts for display
                 old_fact = next((e["fact"] for e in cat_edges if e["uuid"] == s["superseded_uuid"]), "?")
