@@ -82,26 +82,9 @@ RETRACTION_SESSIONS = [
     },
 ]
 
-# Enhanced extraction instructions that append retraction-specific guidance
-RETRACTION_EXTRACTION_INSTRUCTIONS = CUSTOM_EXTRACTION_INSTRUCTIONS + """
-
-RETRACTION DETECTION (CRITICAL):
-When a user cancels, abandons, drops, or retracts a previous plan, goal, or commitment,
-extract the retraction as a distinct edge. Preserve the specific thing being retracted.
-
-Examples of retraction language:
-- "I'm done", "it's dead", "I'm letting it go", "the whole idea is dead"
-- "I've abandoned", "I've dropped", "I've given up on", "I've walked away from"
-- "not worth it", "waste of time", "no longer pursuing"
-
-For each retraction, extract an edge that:
-1. Names the specific thing being retracted (e.g., "the book project", "the UCL LLM")
-2. Captures that it was ABANDONED/DROPPED/RETRACTED (not just paused)
-3. Includes the reason if stated (e.g., "market doesn't exist", "practitioners said it was worthless")
-
-These retraction edges are essential for the memory system to know what is NO LONGER true
-about the user's plans and commitments.
-"""
+# Retraction guidance is now included in the base CUSTOM_EXTRACTION_INSTRUCTIONS.
+# Keep this alias so existing call sites (line 243) continue to work.
+RETRACTION_EXTRACTION_INSTRUCTIONS = CUSTOM_EXTRACTION_INSTRUCTIONS
 
 
 # ---------------------------------------------------------------------------

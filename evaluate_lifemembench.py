@@ -93,14 +93,26 @@ from retrieval_router import route_and_retrieve, RoutingConfig, reset_routing_st
 # ===========================================================================
 
 PERSONAS = {
-    "priya":  {"dir": "1_priya",  "group_id": "lifemembench_priya"},
-    "marcus": {"dir": "2_marcus", "group_id": "lifemembench_marcus"},
-    "elena":  {"dir": "3_elena",  "group_id": "lifemembench_elena"},
-    "david":  {"dir": "4_david",  "group_id": "lifemembench_david"},
-    "amara":  {"dir": "5_amara",  "group_id": "lifemembench_amara"},
-    "jake":   {"dir": "6_jake",   "group_id": "lifemembench_jake"},
-    "tom":    {"dir": "8_tom",    "group_id": "lifemembench_tom"},
-    "omar":   {"dir": "17_omar",  "group_id": "lifemembench_omar"},
+    "priya":   {"dir": "1_priya",   "group_id": "lifemembench_priya"},
+    "marcus":  {"dir": "2_marcus",  "group_id": "lifemembench_marcus"},
+    "elena":   {"dir": "3_elena",   "group_id": "lifemembench_elena"},
+    "david":   {"dir": "4_david",   "group_id": "lifemembench_david"},
+    "amara":   {"dir": "5_amara",   "group_id": "lifemembench_amara"},
+    "jake":    {"dir": "6_jake",    "group_id": "lifemembench_jake"},
+    "fatima":  {"dir": "7_fatima",  "group_id": "lifemembench_fatima"},
+    "tom":     {"dir": "8_tom",     "group_id": "lifemembench_tom"},
+    "kenji":   {"dir": "9_kenji",   "group_id": "lifemembench_kenji"},
+    "rosa":    {"dir": "10_rosa",   "group_id": "lifemembench_rosa"},
+    "callum":  {"dir": "11_callum", "group_id": "lifemembench_callum"},
+    "diane":   {"dir": "12_diane",  "group_id": "lifemembench_diane"},
+    "raj":     {"dir": "13_raj",    "group_id": "lifemembench_raj"},
+    "nadia":   {"dir": "14_nadia",  "group_id": "lifemembench_nadia"},
+    "samuel":  {"dir": "15_samuel", "group_id": "lifemembench_samuel"},
+    "lily":    {"dir": "16_lily",   "group_id": "lifemembench_lily"},
+    "omar":    {"dir": "17_omar",   "group_id": "lifemembench_omar"},
+    "bruna":   {"dir": "18_bruna",  "group_id": "lifemembench_bruna"},
+    "patrick": {"dir": "19_patrick","group_id": "lifemembench_patrick"},
+    "aisha":   {"dir": "20_aisha",  "group_id": "lifemembench_aisha"},
 }
 
 CONFIGS = {
@@ -413,8 +425,8 @@ async def build_candidate_pool(
                 d = rec.data() if hasattr(rec, "data") else dict(rec)
                 add(Candidate(d["uuid"], d["fact"], "cypher_kw",
                               CYPHER_SOURCE_BASELINES["cypher_kw"]))
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"    Strategy error (cypher_kw): {e}")
 
     # --- Strategy 3: Multi-keyword intersection ---
     if len(keywords) >= 2:
@@ -440,8 +452,8 @@ async def build_candidate_pool(
                         d = rec.data() if hasattr(rec, "data") else dict(rec)
                         add(Candidate(d["uuid"], d["fact"], "cypher_intersect",
                                       CYPHER_SOURCE_BASELINES["cypher_intersect"]))
-                except Exception:
-                    pass
+                except Exception as e:
+                    print(f"    Strategy error (cypher_intersect): {e}")
 
     # --- Strategy 4: Entity name match -> neighborhood edges ---
     for kw in keywords[:5]:
@@ -465,8 +477,8 @@ async def build_candidate_pool(
                 d = rec.data() if hasattr(rec, "data") else dict(rec)
                 add(Candidate(d["uuid"], d["fact"], "cypher_neighbor",
                               CYPHER_SOURCE_BASELINES["cypher_neighbor"]))
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"    Strategy error (cypher_neighbor): {e}")
 
     # --- Strategy 5: Category-aware routing ---
     if xai_client is not None and edge_cache is not None:
@@ -483,18 +495,26 @@ async def build_candidate_pool(
             )
             for uuid, fact, source, score in routed:
                 add(Candidate(uuid, fact, source, score))
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"    Strategy error (category_routed): {e}")
 
     candidates = list(uuid_to_candidate.values())
 
-    # Normalize graphiti_score to [0, 1] across the full pool
-    if len(candidates) > 1:
-        scores = [c.graphiti_score for c in candidates]
+    # Per-source score normalization: normalize each source independently
+    # to [0, 1] so that every source's best result competes equally.
+    from collections import defaultdict as _defaultdict
+    source_groups: dict[str, list[Candidate]] = _defaultdict(list)
+    for c in candidates:
+        source_groups[c.source].append(c)
+    for source, group in source_groups.items():
+        scores = [c.graphiti_score for c in group]
         s_min, s_max = min(scores), max(scores)
         if s_max > s_min:
-            for c in candidates:
+            for c in group:
                 c.graphiti_score = (c.graphiti_score - s_min) / (s_max - s_min)
+        else:
+            for c in group:
+                c.graphiti_score = 0.5
 
     return candidates
 

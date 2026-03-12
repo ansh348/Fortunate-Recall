@@ -5,10 +5,15 @@
     "group_id": "lifemembench_priya",
     "question": "What dietary restrictions does Priya have?",
     "correct_answer": "Pescatarian (was vegetarian, now eats fish)",
-    "wrong_answer_indicators": ["vegetarian"],
+    "wrong_answer_indicators": [
+      "vegetarian"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded preference - system must surface CURRENT diet (pescatarian) not OLD (vegetarian)",
-    "relevant_categories": ["PREFERENCES_HABITS", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Vegetarian mentioned early sessions, pescatarian switch in later session"
   },
   {
@@ -17,10 +22,16 @@
     "group_id": "lifemembench_priya",
     "question": "Where does Priya work?",
     "correct_answer": "Senior ML engineer at Anthropic",
-    "wrong_answer_indicators": ["Google", "Gemini memory team"],
+    "wrong_answer_indicators": [
+      "Google",
+      "Gemini memory team"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - system must surface LATEST employer (Anthropic) not previous (Google)",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Google mentioned in persona header/early sessions, Anthropic is current employer"
   },
   {
@@ -32,7 +43,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity fact mentioned once early, buried under noise - failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Mentioned casually in session 2, never repeated"
   },
   {
@@ -41,10 +55,16 @@
     "group_id": "lifemembench_priya",
     "question": "Does Priya have any upcoming appointments?",
     "correct_answer": "Tokyo conference March 20 (if before March 20)",
-    "wrong_answer_indicators": ["Dentist Thursday June 12", "dentist"],
+    "wrong_answer_indicators": [
+      "Dentist Thursday June 12",
+      "dentist"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - dentist appointment already passed, should not surface as upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Dentist June 12 already passed; Tokyo conference March 20 is future"
   },
   {
@@ -52,11 +72,18 @@
     "persona": "priya",
     "group_id": "lifemembench_priya",
     "question": "Is Priya planning to get a pet?",
-    "correct_answer": "No \u2014 she wanted a dog but landlord said no",
-    "wrong_answer_indicators": ["golden retrievers", "looking at", "planning to get a dog"],
+    "correct_answer": "No — she wanted a dog but landlord said no",
+    "wrong_answer_indicators": [
+      "golden retrievers",
+      "looking at",
+      "planning to get a dog"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - the pet plan was explicitly cancelled, retracted fact should NOT surface",
-    "relevant_categories": ["PREFERENCES_HABITS", "LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Wanted dog initially, landlord rejected it later"
   },
   {
@@ -65,10 +92,15 @@
     "group_id": "lifemembench_priya",
     "question": "What's Priya's living situation?",
     "correct_answer": "Lives in studio but boyfriend Raj is there most nights",
-    "wrong_answer_indicators": ["lives alone"],
+    "wrong_answer_indicators": [
+      "lives alone"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - earlier said lives alone, later revealed Raj stays most nights",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Lives alone mentioned early, Raj staying over revealed in later session"
   },
   {
@@ -77,10 +109,16 @@
     "group_id": "lifemembench_priya",
     "question": "What exercise does Priya do?",
     "correct_answer": "Rock climbing",
-    "wrong_answer_indicators": ["hot yoga", "yoga 4x"],
+    "wrong_answer_indicators": [
+      "hot yoga",
+      "yoga 4x"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded hobby - stopped hot yoga, now does rock climbing",
-    "relevant_categories": ["HOBBIES_RECREATION", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Hot yoga mentioned in early sessions, rock climbing is current"
   },
   {
@@ -88,11 +126,16 @@
     "persona": "priya",
     "group_id": "lifemembench_priya",
     "question": "Is Priya planning to relocate?",
-    "correct_answer": "She's been thinking about NYC but hasn't decided \u2014 still in Austin",
-    "wrong_answer_indicators": ["moving to NYC"],
+    "correct_answer": "She's been thinking about NYC but hasn't decided — still in Austin",
+    "wrong_answer_indicators": [
+      "moving to NYC"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - tentative thought about NYC should NOT be stated as definitive move",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "NYC mentioned as consideration, not a decision"
   },
   {
@@ -104,7 +147,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - chronic condition mentioned once, failure is NOT surfacing migraines",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Migraines mentioned in context of health discussion"
   },
   {
@@ -113,10 +158,16 @@
     "group_id": "lifemembench_priya",
     "question": "Does Priya have any deadlines coming up?",
     "correct_answer": "NeurIPS paper deadline early June 2026",
-    "wrong_answer_indicators": ["lease expires August 2025", "lease"],
+    "wrong_answer_indicators": [
+      "lease expires August 2025",
+      "lease"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - lease expiry August 2025 already passed, NeurIPS deadline is active",
-    "relevant_categories": ["OBLIGATIONS", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Lease expired Aug 2025 (past); NeurIPS deadline June 2026 (future)"
   },
   {
@@ -125,10 +176,15 @@
     "group_id": "lifemembench_priya",
     "question": "What does Priya do in her free time?",
     "correct_answer": "Rock climbing, cooking experiments (Tamil recipes), travel planning",
-    "wrong_answer_indicators": ["hot yoga"],
+    "wrong_answer_indicators": [
+      "hot yoga"
+    ],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies/recreation",
-    "relevant_categories": ["HOBBIES_RECREATION", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Hot yoga is superseded; current hobbies are rock climbing, cooking, travel"
   },
   {
@@ -140,7 +196,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family background mentioned once early, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Tamil heritage mentioned session 3, brother session 5"
   },
   {
@@ -152,7 +211,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - the specific frequency (4x/week) must be preserved exactly",
-    "relevant_categories": ["HOBBIES_RECREATION", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Hot yoga 4x/week mentioned in early sessions before switching to rock climbing"
   },
   {
@@ -164,7 +226,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific date must be preserved exactly",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Tokyo conference date mentioned in session planning"
   },
   {
@@ -173,10 +238,15 @@
     "group_id": "lifemembench_marcus",
     "question": "Who is Marcus's main tire supplier?",
     "correct_answer": "TireHub (switched from Discount Tire Direct)",
-    "wrong_answer_indicators": ["Discount Tire Direct"],
+    "wrong_answer_indicators": [
+      "Discount Tire Direct"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - must surface CURRENT supplier (TireHub) not old (Discount Tire Direct)",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Discount Tire Direct mentioned early, TireHub is current supplier"
   },
   {
@@ -185,10 +255,16 @@
     "group_id": "lifemembench_marcus",
     "question": "What vehicle does Marcus drive?",
     "correct_answer": "2024 Ram 1500",
-    "wrong_answer_indicators": ["2018 Ford F-150", "F-150"],
+    "wrong_answer_indicators": [
+      "2018 Ford F-150",
+      "F-150"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded preference - old vehicle (F-150) replaced by new one (Ram 1500)",
-    "relevant_categories": ["PREFERENCES_HABITS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Ford F-150 mentioned in early sessions, Ram 1500 is current"
   },
   {
@@ -196,11 +272,18 @@
     "persona": "marcus",
     "group_id": "lifemembench_marcus",
     "question": "Is Marcus planning to open a second shop location?",
-    "correct_answer": "No \u2014 he considered Germantown but scrapped it (too much financial risk)",
-    "wrong_answer_indicators": ["looking at a spot in Germantown", "Germantown location", "second location"],
+    "correct_answer": "No — he considered Germantown but scrapped it (too much financial risk)",
+    "wrong_answer_indicators": [
+      "looking at a spot in Germantown",
+      "Germantown location",
+      "second location"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - the second location plan was explicitly scrapped",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Germantown considered then abandoned due to financial risk"
   },
   {
@@ -212,7 +295,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - chronic condition mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Diabetes mentioned in health context, ongoing management"
   },
   {
@@ -221,10 +306,16 @@
     "group_id": "lifemembench_marcus",
     "question": "Does Marcus have any upcoming inspections or deadlines?",
     "correct_answer": "Kayla's graduation June 2026 (if before June 2026)",
-    "wrong_answer_indicators": ["shop inspection March 15", "inspection"],
+    "wrong_answer_indicators": [
+      "shop inspection March 15",
+      "inspection"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - shop inspection already passed, Kayla graduation is upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Shop inspection March 15 2025 passed; Kayla graduation June 2026 upcoming"
   },
   {
@@ -233,10 +324,15 @@
     "group_id": "lifemembench_marcus",
     "question": "What does Marcus do for fun?",
     "correct_answer": "Fishing on weekends",
-    "wrong_answer_indicators": ["poker every Thursday", "poker"],
+    "wrong_answer_indicators": [
+      "poker every Thursday",
+      "poker"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded hobby - poker replaced by fishing",
-    "relevant_categories": ["HOBBIES_RECREATION"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
     "temporal_notes": "Poker mentioned in early sessions, fishing is current hobby"
   },
   {
@@ -245,10 +341,15 @@
     "group_id": "lifemembench_marcus",
     "question": "What's Marcus's relationship status?",
     "correct_answer": "Divorced, recently started seeing someone named Lisa (early/unclear)",
-    "wrong_answer_indicators": ["single"],
+    "wrong_answer_indicators": [
+      "single"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Lisa relationship is early/tentative, should not state Single definitively",
-    "relevant_categories": ["RELATIONAL_BONDS", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Divorced mentioned early; Lisa relationship revealed in later sessions, still early"
   },
   {
@@ -256,11 +357,16 @@
     "persona": "marcus",
     "group_id": "lifemembench_marcus",
     "question": "How is Marcus's business doing financially?",
-    "correct_answer": "Growing \u2014 recently hired a fourth employee",
-    "wrong_answer_indicators": ["barely breaking even"],
+    "correct_answer": "Growing — recently hired a fourth employee",
+    "wrong_answer_indicators": [
+      "barely breaking even"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - earlier said barely breaking even, later hired fourth employee",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Financial struggles mentioned early; growth/hiring revealed later"
   },
   {
@@ -268,11 +374,13 @@
     "persona": "marcus",
     "group_id": "lifemembench_marcus",
     "question": "What's Marcus's educational background?",
-    "correct_answer": "No college \u2014 self-taught. Former Marine.",
+    "correct_answer": "No college — self-taught. Former Marine.",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - educational/military background mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Military service and self-taught mentioned in early identity discussions"
   },
   {
@@ -281,10 +389,16 @@
     "group_id": "lifemembench_marcus",
     "question": "Does Marcus have any equipment deliveries coming?",
     "correct_answer": "No current deliveries (alignment rack arrived April 22, already past)",
-    "wrong_answer_indicators": ["alignment rack arriving April 22", "alignment rack delivery"],
+    "wrong_answer_indicators": [
+      "alignment rack arriving April 22",
+      "alignment rack delivery"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - alignment rack delivery already completed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Alignment rack arrived April 22 2025, already past"
   },
   {
@@ -296,7 +410,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across relational bonds",
-    "relevant_categories": ["RELATIONAL_BONDS", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Family details spread across multiple sessions"
   },
   {
@@ -305,10 +422,16 @@
     "group_id": "lifemembench_marcus",
     "question": "Does Marcus need to prepare for any meetings?",
     "correct_answer": "No upcoming meetings (SBA loan meeting was Feb 4, already passed)",
-    "wrong_answer_indicators": ["SBA loan meeting Tuesday Feb 4", "SBA loan meeting"],
+    "wrong_answer_indicators": [
+      "SBA loan meeting Tuesday Feb 4",
+      "SBA loan meeting"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - SBA meeting already passed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "SBA loan meeting Feb 4 2025 already passed"
   },
   {
@@ -317,10 +440,16 @@
     "group_id": "lifemembench_marcus",
     "question": "How many employees does Marcus currently have at the shop?",
     "correct_answer": "4 (recently hired Carlos as the fourth employee)",
-    "wrong_answer_indicators": ["3 employees", "three employees"],
+    "wrong_answer_indicators": [
+      "3 employees",
+      "three employees"
+    ],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific employee count must be preserved exactly",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Started with 3, hired Carlos as fourth"
   },
   {
@@ -332,7 +461,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific duration of military service must be preserved",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Military service mentioned in stable identity section"
   },
   {
@@ -341,10 +472,16 @@
     "group_id": "lifemembench_elena",
     "question": "Where does Elena work?",
     "correct_answer": "Rush University Medical Center",
-    "wrong_answer_indicators": ["Lurie Children's Hospital", "Lurie"],
+    "wrong_answer_indicators": [
+      "Lurie Children's Hospital",
+      "Lurie"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - must surface CURRENT workplace (Rush) not previous (Lurie)",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Lurie mentioned in early sessions, Rush is current workplace"
   },
   {
@@ -353,10 +490,16 @@
     "group_id": "lifemembench_elena",
     "question": "What diet is Elena following?",
     "correct_answer": "Mediterranean diet",
-    "wrong_answer_indicators": ["keto", "keto diet"],
+    "wrong_answer_indicators": [
+      "keto",
+      "keto diet"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded preference - keto replaced by Mediterranean diet",
-    "relevant_categories": ["PREFERENCES_HABITS", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Keto mentioned early, Mediterranean is current diet"
   },
   {
@@ -364,11 +507,18 @@
     "persona": "elena",
     "group_id": "lifemembench_elena",
     "question": "Is Elena planning to get a nurse practitioner degree?",
-    "correct_answer": "No \u2014 she dropped that plan due to student loan debt",
-    "wrong_answer_indicators": ["looking at NP programs", "NP programs at DePaul", "nurse practitioner program"],
+    "correct_answer": "No — she dropped that plan due to student loan debt",
+    "wrong_answer_indicators": [
+      "looking at NP programs",
+      "NP programs at DePaul",
+      "nurse practitioner program"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - NP degree plan was explicitly dropped due to debt",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "NP considered then dropped due to $40K student loan debt"
   },
   {
@@ -380,7 +530,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - mental health condition mentioned early, failure is NOT surfacing it",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "GAD and sertraline mentioned in early sessions"
   },
   {
@@ -389,10 +541,16 @@
     "group_id": "lifemembench_elena",
     "question": "Does Elena have any upcoming exams or certifications?",
     "correct_answer": "No current exams (NCLEX recert was March 20, already passed)",
-    "wrong_answer_indicators": ["NCLEX recertification March 20", "NCLEX recert"],
+    "wrong_answer_indicators": [
+      "NCLEX recertification March 20",
+      "NCLEX recert"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - NCLEX recertification already completed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "NCLEX recert March 20 2025 already passed"
   },
   {
@@ -401,10 +559,16 @@
     "group_id": "lifemembench_elena",
     "question": "What's Elena's relationship status?",
     "correct_answer": "Engaged to Marco",
-    "wrong_answer_indicators": ["dating Marco", "8 months"],
+    "wrong_answer_indicators": [
+      "dating Marco",
+      "8 months"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded status - dating upgraded to engaged",
-    "relevant_categories": ["RELATIONAL_BONDS", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Dating 8 months mentioned early, engagement is current"
   },
   {
@@ -413,10 +577,15 @@
     "group_id": "lifemembench_elena",
     "question": "How does Elena feel about night shifts?",
     "correct_answer": "They're destroying her health (can't sleep, weight gain, worse anxiety)",
-    "wrong_answer_indicators": ["loves working nights"],
+    "wrong_answer_indicators": [
+      "loves working nights"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - initially positive about nights, later revealed health impact",
-    "relevant_categories": ["HEALTH_WELLBEING", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Earlier positive view contradicted by later health complaints"
   },
   {
@@ -428,7 +597,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family background mentioned early, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Heritage and sister Sofia mentioned in early sessions"
   },
   {
@@ -436,11 +608,16 @@
     "persona": "elena",
     "group_id": "lifemembench_elena",
     "question": "Is Elena thinking about moving?",
-    "correct_answer": "She's considered moving to Cicero (suburbs) to be near family, but undecided \u2014 still in Logan Square",
-    "wrong_answer_indicators": ["moving to Cicero"],
+    "correct_answer": "She's considered moving to Cicero (suburbs) to be near family, but undecided — still in Logan Square",
+    "wrong_answer_indicators": [
+      "moving to Cicero"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Cicero is a consideration, not a decision",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Cicero mentioned as thought, not committed"
   },
   {
@@ -449,10 +626,16 @@
     "group_id": "lifemembench_elena",
     "question": "Does Elena need to make any lease decisions?",
     "correct_answer": "No (lease renewal deadline was Feb 28, already passed)",
-    "wrong_answer_indicators": ["lease renewal due February 28", "lease renewal"],
+    "wrong_answer_indicators": [
+      "lease renewal due February 28",
+      "lease renewal"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - lease renewal deadline already passed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Lease renewal Feb 28 2025 already passed"
   },
   {
@@ -461,10 +644,17 @@
     "group_id": "lifemembench_elena",
     "question": "Does Elena have any upcoming events or deadlines?",
     "correct_answer": "Rush orientation for new pediatric trauma unit, March 16, 2026",
-    "wrong_answer_indicators": ["NCLEX recert March 20", "Sofia's birthday Aug 12", "lease renewal Feb 28"],
+    "wrong_answer_indicators": [
+      "NCLEX recert March 20",
+      "Sofia's birthday Aug 12",
+      "lease renewal Feb 28"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - multiple past events should not surface as upcoming, Rush orientation is active",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "NCLEX, Sofia birthday, lease all passed; Rush orientation March 16 2026 upcoming"
   },
   {
@@ -473,10 +663,16 @@
     "group_id": "lifemembench_elena",
     "question": "What does Elena do for stress relief?",
     "correct_answer": "Learning to knit, Mediterranean diet, trying anxiety management techniques",
-    "wrong_answer_indicators": ["keto diet", "keto"],
+    "wrong_answer_indicators": [
+      "keto diet",
+      "keto"
+    ],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across health/hobbies",
-    "relevant_categories": ["HOBBIES_RECREATION", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Keto is superseded; knitting and Mediterranean diet are current"
   },
   {
@@ -488,7 +684,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - approximate loan amount must be preserved",
-    "relevant_categories": ["FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Student loan amount mentioned as 'about 42k' in context of NP degree decision"
   },
   {
@@ -500,7 +698,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific weight loss number must be preserved",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "15 pounds lost on keto mentioned before switch to Mediterranean"
   },
   {
@@ -509,10 +709,16 @@
     "group_id": "lifemembench_david",
     "question": "What subject does David teach?",
     "correct_answer": "AP US History (switched from AP European History)",
-    "wrong_answer_indicators": ["AP European History", "AP Euro"],
+    "wrong_answer_indicators": [
+      "AP European History",
+      "AP Euro"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - must surface CURRENT subject (AP US History) not old (AP Euro)",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "AP Euro taught for 15 years, switched to AP US History"
   },
   {
@@ -521,10 +727,16 @@
     "group_id": "lifemembench_david",
     "question": "What extracurricular does David coach?",
     "correct_answer": "Debate team",
-    "wrong_answer_indicators": ["boys' basketball", "basketball"],
+    "wrong_answer_indicators": [
+      "boys' basketball",
+      "basketball"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded activity - basketball coaching replaced by debate team",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "HOBBIES_RECREATION"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "HOBBIES_RECREATION"
+    ],
     "temporal_notes": "Basketball mentioned early, debate team is current"
   },
   {
@@ -533,10 +745,16 @@
     "group_id": "lifemembench_david",
     "question": "What car does David drive?",
     "correct_answer": "Subaru Outback",
-    "wrong_answer_indicators": ["2016 Toyota Camry", "Camry"],
+    "wrong_answer_indicators": [
+      "2016 Toyota Camry",
+      "Camry"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - Camry replaced by Outback",
-    "relevant_categories": ["PREFERENCES_HABITS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Camry with 180K miles mentioned early, Outback is current"
   },
   {
@@ -544,11 +762,17 @@
     "persona": "david",
     "group_id": "lifemembench_david",
     "question": "Is David writing a book?",
-    "correct_answer": "No \u2014 he abandoned the primary sources book project",
-    "wrong_answer_indicators": ["writing a book", "book about teaching through primary sources"],
+    "correct_answer": "No — he abandoned the primary sources book project",
+    "wrong_answer_indicators": [
+      "writing a book",
+      "book about teaching through primary sources"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - book project was explicitly abandoned",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "INTELLECTUAL_INTERESTS"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "INTELLECTUAL_INTERESTS"
+    ],
     "temporal_notes": "Book project mentioned then abandoned in later session"
   },
   {
@@ -560,7 +784,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - health condition mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Hearing loss mentioned in passing"
   },
   {
@@ -569,10 +795,15 @@
     "group_id": "lifemembench_david",
     "question": "Does David have any upcoming exams to prepare students for?",
     "correct_answer": "No current exams (AP Euro exam was May 8, already passed)",
-    "wrong_answer_indicators": ["AP Euro exam May 8"],
+    "wrong_answer_indicators": [
+      "AP Euro exam May 8"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - AP Euro exam already passed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "AP Euro exam May 8 2025 already passed"
   },
   {
@@ -580,11 +811,17 @@
     "persona": "david",
     "group_id": "lifemembench_david",
     "question": "How does David feel about his teaching career?",
-    "correct_answer": "Considering early retirement \u2014 burned out on bureaucracy",
-    "wrong_answer_indicators": ["loves teaching", "will do it until they carry him out"],
+    "correct_answer": "Considering early retirement — burned out on bureaucracy",
+    "wrong_answer_indicators": [
+      "loves teaching",
+      "will do it until they carry him out"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - earlier loved teaching, later revealed burnout and retirement consideration",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Positive statements early, burnout/retirement revealed later"
   },
   {
@@ -596,7 +833,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family details mentioned once, failure is NOT surfacing them",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Adoption, wife Sarah, and child-free status mentioned in early sessions"
   },
   {
@@ -604,11 +844,16 @@
     "persona": "david",
     "group_id": "lifemembench_david",
     "question": "Is David planning to move?",
-    "correct_answer": "Sarah wants to move to Bend, but David is reluctant \u2014 unresolved",
-    "wrong_answer_indicators": ["moving to Bend"],
+    "correct_answer": "Sarah wants to move to Bend, but David is reluctant — unresolved",
+    "wrong_answer_indicators": [
+      "moving to Bend"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Bend is Sarah's preference, not a decided move",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Bend mentioned as Sarah's wish, David reluctant, unresolved"
   },
   {
@@ -617,10 +862,17 @@
     "group_id": "lifemembench_david",
     "question": "Does David have any upcoming events?",
     "correct_answer": "Debate team state tournament, May 9, 2026",
-    "wrong_answer_indicators": ["AP Euro exam May 8", "Olympic Peninsula trip July 15", "parent-teacher conferences March 12"],
+    "wrong_answer_indicators": [
+      "AP Euro exam May 8",
+      "Olympic Peninsula trip July 15",
+      "parent-teacher conferences March 12"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - multiple past events should not surface; debate tournament is upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "AP Euro, Peninsula trip, conferences all passed; debate tournament May 9 2026 upcoming"
   },
   {
@@ -629,10 +881,15 @@
     "group_id": "lifemembench_david",
     "question": "Does David have any parent events coming up?",
     "correct_answer": "No (parent-teacher conferences were March 12, already passed)",
-    "wrong_answer_indicators": ["parent-teacher conferences March 12"],
+    "wrong_answer_indicators": [
+      "parent-teacher conferences March 12"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - parent-teacher conferences already passed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Parent-teacher conferences March 12 2025 already passed"
   },
   {
@@ -641,10 +898,15 @@
     "group_id": "lifemembench_david",
     "question": "What does David do outside of teaching?",
     "correct_answer": "Hiking (Outback for gear), coaching debate team, reading, watercolors (influenced by Sarah), Seahawks fan",
-    "wrong_answer_indicators": ["coaching basketball"],
+    "wrong_answer_indicators": [
+      "coaching basketball"
+    ],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies",
-    "relevant_categories": ["HOBBIES_RECREATION", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Basketball is superseded; current activities are hiking, debate, reading, watercolors"
   },
   {
@@ -656,7 +918,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific teaching career length must be preserved",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "24 years teaching mentioned in identity section"
   },
   {
@@ -668,7 +932,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific mileage must be preserved exactly",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Camry at 180K miles mentioned before replacement with Outback"
   },
   {
@@ -677,10 +944,16 @@
     "group_id": "lifemembench_amara",
     "question": "Which chambers does Amara practise at?",
     "correct_answer": "7 Bedford Row (moved from 4 Brick Court as a senior tenant)",
-    "wrong_answer_indicators": ["4 Brick Court", "Brick Court Chambers"],
+    "wrong_answer_indicators": [
+      "4 Brick Court",
+      "Brick Court Chambers"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - must surface CURRENT chambers (7 Bedford Row) not old (4 Brick Court)",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "4 Brick Court mentioned early, 7 Bedford Row is current"
   },
   {
@@ -689,10 +962,15 @@
     "group_id": "lifemembench_amara",
     "question": "What phone does Amara use?",
     "correct_answer": "Samsung Galaxy S25 (switched from iPhone to Android)",
-    "wrong_answer_indicators": ["iPhone 14 Pro", "iPhone"],
+    "wrong_answer_indicators": [
+      "iPhone 14 Pro",
+      "iPhone"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded preference - iPhone replaced by Samsung Galaxy S25",
-    "relevant_categories": ["PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "iPhone mentioned early, Samsung Galaxy S25 is current"
   },
   {
@@ -701,10 +979,17 @@
     "group_id": "lifemembench_amara",
     "question": "What exercise does Amara do?",
     "correct_answer": "Boxing at a gym in Bethnal Green",
-    "wrong_answer_indicators": ["runs 5K", "Victoria Park", "running"],
+    "wrong_answer_indicators": [
+      "runs 5K",
+      "Victoria Park",
+      "running"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded hobby - running replaced by boxing",
-    "relevant_categories": ["HOBBIES_RECREATION", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Running 5K mentioned early, boxing in Bethnal Green is current"
   },
   {
@@ -716,7 +1001,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - health condition mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Endometriosis diagnosis at 28 mentioned in early session"
   },
   {
@@ -725,10 +1012,17 @@
     "group_id": "lifemembench_amara",
     "question": "Does Amara have any upcoming commitments or deadlines?",
     "correct_answer": "Pupillage interview panel on 15 April 2026 (if before that date)",
-    "wrong_answer_indicators": ["Crown Court trial at Snaresbrook", "Snaresbrook", "10 February 2025"],
+    "wrong_answer_indicators": [
+      "Crown Court trial at Snaresbrook",
+      "Snaresbrook",
+      "10 February 2025"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - Crown Court trial already passed, pupillage panel is upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Snaresbrook trial Feb 2025 passed; pupillage panel April 15 2026 upcoming"
   },
   {
@@ -736,11 +1030,18 @@
     "persona": "amara",
     "group_id": "lifemembench_amara",
     "question": "Is Amara pursuing any further education?",
-    "correct_answer": "No \u2014 she considered a human rights LLM at UCL but dropped the idea",
-    "wrong_answer_indicators": ["considering a master's at UCL", "master's at UCL", "LLM at UCL"],
+    "correct_answer": "No — she considered a human rights LLM at UCL but dropped the idea",
+    "wrong_answer_indicators": [
+      "considering a master's at UCL",
+      "master's at UCL",
+      "LLM at UCL"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - the UCL master's plan was explicitly dropped",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "INTELLECTUAL_INTERESTS"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "INTELLECTUAL_INTERESTS"
+    ],
     "temporal_notes": "UCL LLM considered then dropped"
   },
   {
@@ -748,11 +1049,16 @@
     "persona": "amara",
     "group_id": "lifemembench_amara",
     "question": "Does Amara drink alcohol?",
-    "correct_answer": "Unclear \u2014 she said she hadn't drunk in two years, but later mentioned having wine at a chambers dinner",
-    "wrong_answer_indicators": ["doesn't drink"],
+    "correct_answer": "Unclear — she said she hadn't drunk in two years, but later mentioned having wine at a chambers dinner",
+    "wrong_answer_indicators": [
+      "doesn't drink"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - said no alcohol for 2 years but later mentioned wine at dinner",
-    "relevant_categories": ["PREFERENCES_HABITS", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "No-alcohol claim early, chambers dinner wine later"
   },
   {
@@ -760,11 +1066,15 @@
     "persona": "amara",
     "group_id": "lifemembench_amara",
     "question": "Where does Amara live?",
-    "correct_answer": "Hackney, East London \u2014 though she's been considering a move to Islington",
-    "wrong_answer_indicators": ["Islington"],
+    "correct_answer": "Hackney, East London — though she's been considering a move to Islington",
+    "wrong_answer_indicators": [
+      "Islington"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Islington is a consideration, not a decided move",
-    "relevant_categories": ["LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Lives in Hackney, Islington mentioned as consideration"
   },
   {
@@ -772,11 +1082,14 @@
     "persona": "amara",
     "group_id": "lifemembench_amara",
     "question": "What's Amara's family background?",
-    "correct_answer": "Nigerian-British \u2014 parents are Igbo from Lagos. Brother Chidi is a GP in Birmingham.",
+    "correct_answer": "Nigerian-British — parents are Igbo from Lagos. Brother Chidi is a GP in Birmingham.",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family background mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Nigerian heritage and brother Chidi mentioned in early sessions"
   },
   {
@@ -785,10 +1098,15 @@
     "group_id": "lifemembench_amara",
     "question": "Does Amara have any expired appointments or events?",
     "correct_answer": "Snaresbrook trial (Feb 2025), Lagos trip (Dec 2025), and lease expiry (March 2025) are all past",
-    "wrong_answer_indicators": ["any of those presented as current", "upcoming"],
+    "wrong_answer_indicators": [
+      "any of those presented as current",
+      "upcoming"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - multiple past events should all be recognized as past",
-    "relevant_categories": ["LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Snaresbrook Feb 2025, Lagos Dec 2025, lease March 2025 all passed"
   },
   {
@@ -797,10 +1115,16 @@
     "group_id": "lifemembench_amara",
     "question": "What does Amara do outside of work?",
     "correct_answer": "Boxing, Nigerian cooking experiments, podcasts, reading about justice",
-    "wrong_answer_indicators": ["running in Victoria Park", "running"],
+    "wrong_answer_indicators": [
+      "running in Victoria Park",
+      "running"
+    ],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies",
-    "relevant_categories": ["HOBBIES_RECREATION", "INTELLECTUAL_INTERESTS"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "INTELLECTUAL_INTERESTS"
+    ],
     "temporal_notes": "Running superseded; boxing, cooking, podcasts, reading are current"
   },
   {
@@ -812,7 +1136,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - educational background mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "LLB from King's mentioned in identity section"
   },
   {
@@ -824,7 +1150,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific diagnosis age must be preserved exactly",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Endometriosis diagnosed at 28 mentioned in health section"
   },
   {
@@ -832,11 +1160,14 @@
     "persona": "amara",
     "group_id": "lifemembench_amara",
     "question": "How much would the UCL master's programme have cost Amara?",
-    "correct_answer": "\u00a318,000",
+    "correct_answer": "£18,000",
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific tuition cost must be preserved exactly",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "UCL LLM cost mentioned before dropping the plan"
   },
   {
@@ -844,11 +1175,18 @@
     "persona": "jake",
     "group_id": "lifemembench_jake",
     "question": "Does Jake vape?",
-    "correct_answer": "No \u2014 he quit vaping and is using nicotine gum instead",
-    "wrong_answer_indicators": ["vapes constantly", "Juul mango pods", "vapes"],
+    "correct_answer": "No — he quit vaping and is using nicotine gum instead",
+    "wrong_answer_indicators": [
+      "vapes constantly",
+      "Juul mango pods",
+      "vapes"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded habit - vaping replaced by nicotine gum",
-    "relevant_categories": ["PREFERENCES_HABITS", "HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Vaping mentioned early, quit and switched to gum"
   },
   {
@@ -857,10 +1195,15 @@
     "group_id": "lifemembench_jake",
     "question": "Who is Jake dating?",
     "correct_answer": "Kayla, a nurse at Mass General (broke up with Megan)",
-    "wrong_answer_indicators": ["Megan", "been together 2 years"],
+    "wrong_answer_indicators": [
+      "Megan",
+      "been together 2 years"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - must surface CURRENT girlfriend (Kayla) not ex (Megan)",
-    "relevant_categories": ["RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Megan mentioned early, breakup and Kayla in later sessions"
   },
   {
@@ -868,11 +1211,14 @@
     "persona": "jake",
     "group_id": "lifemembench_jake",
     "question": "What does Jake's mom do?",
-    "correct_answer": "Waitresses at the Eire Pub in Dorchester \u2014 been there 20 years",
+    "correct_answer": "Waitresses at the Eire Pub in Dorchester — been there 20 years",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - mom's job mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["RELATIONAL_BONDS", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Mom's job at Eire Pub mentioned in family context"
   },
   {
@@ -881,10 +1227,16 @@
     "group_id": "lifemembench_jake",
     "question": "Does Jake have any upcoming events?",
     "correct_answer": "Sister Bridget's wedding June 14, 2026",
-    "wrong_answer_indicators": ["journeyman exam March 8", "Bruins playoff tickets April 20"],
+    "wrong_answer_indicators": [
+      "journeyman exam March 8",
+      "Bruins playoff tickets April 20"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - exam and Bruins tickets already passed, wedding is upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Journeyman exam March 8 2025 and Bruins April 20 2025 passed; wedding June 14 2026 upcoming"
   },
   {
@@ -892,11 +1244,17 @@
     "persona": "jake",
     "group_id": "lifemembench_jake",
     "question": "Is Jake doing any side work?",
-    "correct_answer": "No \u2014 he wanted to start installing EV home chargers on the side but his dad said he needs his journeyman license first and the insurance is too expensive",
-    "wrong_answer_indicators": ["planning to do EV charger installs", "EV charger"],
+    "correct_answer": "No — he wanted to start installing EV home chargers on the side but his dad said he needs his journeyman license first and the insurance is too expensive",
+    "wrong_answer_indicators": [
+      "planning to do EV charger installs",
+      "EV charger"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - EV charger side work plan was blocked by dad/insurance",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "EV charger plan mentioned then blocked by practical constraints"
   },
   {
@@ -904,11 +1262,16 @@
     "persona": "jake",
     "group_id": "lifemembench_jake",
     "question": "How is Jake doing with his savings?",
-    "correct_answer": "Unclear \u2014 he said he was saving aggressively for a truck but then spent $2K on a gaming PC",
-    "wrong_answer_indicators": ["saving aggressively"],
+    "correct_answer": "Unclear — he said he was saving aggressively for a truck but then spent $2K on a gaming PC",
+    "wrong_answer_indicators": [
+      "saving aggressively"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - claimed saving but spent $2K on gaming PC",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Saving claims early, $2K PC purchase contradicts later"
   },
   {
@@ -917,10 +1280,14 @@
     "group_id": "lifemembench_jake",
     "question": "What does Jake drink?",
     "correct_answer": "Craft beer, especially Trillium IPAs",
-    "wrong_answer_indicators": ["Bud Light"],
+    "wrong_answer_indicators": [
+      "Bud Light"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded preference - Bud Light replaced by craft beer/Trillium IPAs",
-    "relevant_categories": ["PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Bud Light mentioned early, Trillium/craft beer is current"
   },
   {
@@ -928,11 +1295,15 @@
     "persona": "jake",
     "group_id": "lifemembench_jake",
     "question": "Where does Jake live?",
-    "correct_answer": "Southie (South Boston) with roommate Danny \u2014 he's been thinking about moving to Quincy but hasn't decided",
-    "wrong_answer_indicators": ["Quincy"],
+    "correct_answer": "Southie (South Boston) with roommate Danny — he's been thinking about moving to Quincy but hasn't decided",
+    "wrong_answer_indicators": [
+      "Quincy"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Quincy is a consideration, not a decided move",
-    "relevant_categories": ["LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Lives in Southie, Quincy mentioned as thought"
   },
   {
@@ -944,7 +1315,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family background mentioned across sessions, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Family details mentioned in early sessions"
   },
   {
@@ -956,7 +1330,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies",
-    "relevant_categories": ["HOBBIES_RECREATION", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Multiple hobbies mentioned across sessions"
   },
   {
@@ -964,11 +1341,16 @@
     "persona": "jake",
     "group_id": "lifemembench_jake",
     "question": "Does Jake have any exams or certifications coming up?",
-    "correct_answer": "No \u2014 journeyman exam was March 8, 2025 (already passed)",
-    "wrong_answer_indicators": ["journeyman exam March 8"],
+    "correct_answer": "No — journeyman exam was March 8, 2025 (already passed)",
+    "wrong_answer_indicators": [
+      "journeyman exam March 8"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - journeyman exam already passed",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Journeyman exam March 8 2025 already passed"
   },
   {
@@ -980,7 +1362,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - work situation mentioned early, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Work at Brennan & Sons mentioned in identity section"
   },
   {
@@ -992,7 +1377,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific PC cost must be preserved exactly",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "HOBBIES_RECREATION"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "HOBBIES_RECREATION"
+    ],
     "temporal_notes": "$2K gaming PC purchase mentioned in contradiction with savings"
   },
   {
@@ -1004,7 +1392,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific tenure must be preserved exactly",
-    "relevant_categories": ["RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Mom's 20-year tenure at Eire Pub mentioned in family background"
   },
   {
@@ -1012,11 +1402,17 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "Where does Tom get his honey jars?",
-    "correct_answer": "From Mary at Stow Pottery \u2014 ceramic jars (switched from Thornes Beekeeping Supplies)",
-    "wrong_answer_indicators": ["Thornes Beekeeping Supplies", "Thornes"],
+    "correct_answer": "From Mary at Stow Pottery — ceramic jars (switched from Thornes Beekeeping Supplies)",
+    "wrong_answer_indicators": [
+      "Thornes Beekeeping Supplies",
+      "Thornes"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact - must surface CURRENT supplier (Mary at Stow Pottery) not old (Thornes)",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Thornes mentioned early, Stow Pottery is current supplier"
   },
   {
@@ -1024,11 +1420,18 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "What car does Tom drive?",
-    "correct_answer": "Hyundai Ioniq 5 (electric \u2014 sold his Land Rover Defender)",
-    "wrong_answer_indicators": ["2006 Land Rover Defender", "Land Rover", "Defender"],
+    "correct_answer": "Hyundai Ioniq 5 (electric — sold his Land Rover Defender)",
+    "wrong_answer_indicators": [
+      "2006 Land Rover Defender",
+      "Land Rover",
+      "Defender"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded vehicle - Land Rover Defender replaced by Hyundai Ioniq 5",
-    "relevant_categories": ["PREFERENCES_HABITS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "2006 Defender mentioned early, Ioniq 5 is current"
   },
   {
@@ -1037,10 +1440,16 @@
     "group_id": "lifemembench_tom",
     "question": "What does Tom do socially?",
     "correct_answer": "Walking group (stopped the pub quiz after Gerald couldn't make it)",
-    "wrong_answer_indicators": ["pub quiz at The Fox", "pub quiz every Thursday"],
+    "wrong_answer_indicators": [
+      "pub quiz at The Fox",
+      "pub quiz every Thursday"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded social activity - pub quiz replaced by walking group",
-    "relevant_categories": ["HOBBIES_RECREATION", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Pub quiz mentioned early, walking group is current"
   },
   {
@@ -1048,11 +1457,13 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "Does Tom have any health conditions?",
-    "correct_answer": "Atrial fibrillation \u2014 takes warfarin (blood thinners)",
+    "correct_answer": "Atrial fibrillation — takes warfarin (blood thinners)",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - health condition mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "AF and warfarin mentioned in health context"
   },
   {
@@ -1061,10 +1472,16 @@
     "group_id": "lifemembench_tom",
     "question": "Does Tom have any upcoming events?",
     "correct_answer": "Village fete honey stall on June 20, 2026",
-    "wrong_answer_indicators": ["spring bee inspection March 22", "Sophie's visit August 10"],
+    "wrong_answer_indicators": [
+      "spring bee inspection March 22",
+      "Sophie's visit August 10"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - spring inspection and Sophie's visit already passed, village fete is upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "Spring inspection March 2025 and Sophie visit Aug 2025 passed; fete June 2026 upcoming"
   },
   {
@@ -1072,23 +1489,35 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "Is Tom planning any building projects?",
-    "correct_answer": "No \u2014 he planned to convert a barn into a honey processing room but it was scrapped (planning permission denied, too expensive)",
-    "wrong_answer_indicators": ["planning to convert the barn", "barn conversion"],
+    "correct_answer": "No — he planned to convert a barn into a honey processing room but it was scrapped (planning permission denied, too expensive)",
+    "wrong_answer_indicators": [
+      "planning to convert the barn",
+      "barn conversion"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - barn conversion was explicitly scrapped due to permission/cost",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
-    "temporal_notes": "Barn conversion planned then scrapped, \u00a340K quote mentioned"
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Barn conversion planned then scrapped, £40K quote mentioned"
   },
   {
     "id": "tom_q07",
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "Does Tom use social media?",
-    "correct_answer": "Inconsistent \u2014 he said he'd never use social media, but later posted a bee photo on Instagram that got 200 likes",
-    "wrong_answer_indicators": ["no interest in social media", "doesn't use social media"],
+    "correct_answer": "Inconsistent — he said he'd never use social media, but later posted a bee photo on Instagram that got 200 likes",
+    "wrong_answer_indicators": [
+      "no interest in social media",
+      "doesn't use social media"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - said never social media but posted on Instagram",
-    "relevant_categories": ["PREFERENCES_HABITS", "HOBBIES_RECREATION"],
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HOBBIES_RECREATION"
+    ],
     "temporal_notes": "Anti-social-media statement early, Instagram post in later session"
   },
   {
@@ -1096,11 +1525,15 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "Where does Tom live?",
-    "correct_answer": "In the Cotswolds, in the village house he shared with Margaret \u2014 he's been considering downsizing to a cottage on Church Lane but hasn't decided",
-    "wrong_answer_indicators": ["cottage on Church Lane"],
+    "correct_answer": "In the Cotswolds, in the village house he shared with Margaret — he's been considering downsizing to a cottage on Church Lane but hasn't decided",
+    "wrong_answer_indicators": [
+      "cottage on Church Lane"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Church Lane cottage is a consideration, not a decided move",
-    "relevant_categories": ["LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Cotswolds house is current; Church Lane mentioned as thought"
   },
   {
@@ -1108,11 +1541,14 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "What's Tom's family situation?",
-    "correct_answer": "Widower \u2014 wife Margaret died two years ago (cancer). Daughter Sophie in Christchurch, New Zealand.",
+    "correct_answer": "Widower — wife Margaret died two years ago (cancer). Daughter Sophie in Christchurch, New Zealand.",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family situation mentioned early, failure is NOT surfacing it",
-    "relevant_categories": ["RELATIONAL_BONDS", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Margaret's death and Sophie in NZ mentioned in early sessions"
   },
   {
@@ -1121,10 +1557,16 @@
     "group_id": "lifemembench_tom",
     "question": "What does Tom do in his free time?",
     "correct_answer": "Beekeeping, walking group, gardening (Margaret's rose garden), reading, posting on Instagram occasionally",
-    "wrong_answer_indicators": ["pub quiz at The Fox", "pub quiz"],
+    "wrong_answer_indicators": [
+      "pub quiz at The Fox",
+      "pub quiz"
+    ],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies",
-    "relevant_categories": ["HOBBIES_RECREATION", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "Pub quiz is superseded; current activities are beekeeping, walking, gardening, reading"
   },
   {
@@ -1132,11 +1574,13 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "What was Tom's career?",
-    "correct_answer": "Civil engineer \u2014 BEng, worked at Arup for 35 years",
+    "correct_answer": "Civil engineer — BEng, worked at Arup for 35 years",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - career background mentioned once, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "Civil engineering career at Arup mentioned in identity section"
   },
   {
@@ -1145,10 +1589,14 @@
     "group_id": "lifemembench_tom",
     "question": "Does Tom have any past events or appointments?",
     "correct_answer": "Spring inspection (March 2025) and Sophie's visit (August 2025) are both past",
-    "wrong_answer_indicators": ["upcoming"],
+    "wrong_answer_indicators": [
+      "upcoming"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - both events are in the past",
-    "relevant_categories": ["LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Spring inspection March 2025 and Sophie visit Aug 2025 are past"
   },
   {
@@ -1156,12 +1604,15 @@
     "persona": "tom",
     "group_id": "lifemembench_tom",
     "question": "How much was the quote for Tom's barn conversion?",
-    "correct_answer": "\u00a340,000",
+    "correct_answer": "£40,000",
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific cost quote must be preserved exactly",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "PROJECTS_ENDEAVORS"],
-    "temporal_notes": "Barn conversion \u00a340K quote mentioned before project was scrapped"
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Barn conversion £40K quote mentioned before project was scrapped"
   },
   {
     "id": "tom_q14",
@@ -1172,7 +1623,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific career duration must be preserved exactly",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "35 years at Arup mentioned in career background"
   },
   {
@@ -1181,10 +1634,15 @@
     "group_id": "lifemembench_omar",
     "question": "What rideshare platform does Omar drive for?",
     "correct_answer": "Uber (was on Uber, switched to Lyft, then back to Uber because Lyft had too few rides in Houston)",
-    "wrong_answer_indicators": ["Lyft"],
+    "wrong_answer_indicators": [
+      "Lyft"
+    ],
     "attack_vector": "AV4_multi_version_fact",
     "attack_vector_description": "Multi-version fact with three versions - must surface CURRENT platform (Uber) not intermediate (Lyft)",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Uber -> Lyft -> back to Uber, triple version"
   },
   {
@@ -1193,10 +1651,16 @@
     "group_id": "lifemembench_omar",
     "question": "Where does Omar live?",
     "correct_answer": "Studio in Gulfton (moved from 1-bedroom in Alief to save $200/month)",
-    "wrong_answer_indicators": ["1-bedroom in Alief", "Alief"],
+    "wrong_answer_indicators": [
+      "1-bedroom in Alief",
+      "Alief"
+    ],
     "attack_vector": "AV1_superseded_preference",
     "attack_vector_description": "Superseded location - Alief apartment replaced by Gulfton studio",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Alief mentioned early, Gulfton move to save money"
   },
   {
@@ -1205,10 +1669,16 @@
     "group_id": "lifemembench_omar",
     "question": "Does Omar have any upcoming events or deadlines?",
     "correct_answer": "Joining Century 21 brokerage April 1, 2026",
-    "wrong_answer_indicators": ["RE exam April 5", "Ismail's birthday June 14"],
+    "wrong_answer_indicators": [
+      "RE exam April 5",
+      "Ismail's birthday June 14"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - RE exam and Ismail's birthday already passed, Century 21 start is upcoming",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "OBLIGATIONS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
     "temporal_notes": "RE exam April 2025 and Ismail birthday June 2025 passed; Century 21 April 2026 upcoming"
   },
   {
@@ -1220,7 +1690,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - comprehensive background mentioned across sessions, failure is NOT surfacing it",
-    "relevant_categories": ["IDENTITY_SELF_CONCEPT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Background details mentioned in early sessions"
   },
   {
@@ -1228,11 +1701,17 @@
     "persona": "omar",
     "group_id": "lifemembench_omar",
     "question": "Is Omar planning to buy a car?",
-    "correct_answer": "No \u2014 he wanted a used Toyota Camry but the car got sold before he could secure financing",
-    "wrong_answer_indicators": ["looking at a used Camry", "buying a Camry"],
+    "correct_answer": "No — he wanted a used Toyota Camry but the car got sold before he could secure financing",
+    "wrong_answer_indicators": [
+      "looking at a used Camry",
+      "buying a Camry"
+    ],
     "attack_vector": "AV7_selective_forgetting",
     "attack_vector_description": "Retraction - Camry purchase plan fell through when car was sold",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "Camry plan mentioned then failed due to financing"
   },
   {
@@ -1241,10 +1720,15 @@
     "group_id": "lifemembench_omar",
     "question": "Does Omar spend money on himself?",
     "correct_answer": "He said he never spends on himself, but he bought a PS5 for stress relief",
-    "wrong_answer_indicators": ["never spends on himself"],
+    "wrong_answer_indicators": [
+      "never spends on himself"
+    ],
     "attack_vector": "AV6_cross_session_contradiction",
     "attack_vector_description": "Cross-session contradiction - claimed never self-spending but bought PS5",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "PREFERENCES_HABITS"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PREFERENCES_HABITS"
+    ],
     "temporal_notes": "No self-spending claim early, PS5 purchase later"
   },
   {
@@ -1252,11 +1736,16 @@
     "persona": "omar",
     "group_id": "lifemembench_omar",
     "question": "Is Omar planning to move?",
-    "correct_answer": "He's staying in Houston for now (Ismail is here), but his cousin says the Dallas RE market is better \u2014 he's considering it for the future",
-    "wrong_answer_indicators": ["moving to Dallas"],
+    "correct_answer": "He's staying in Houston for now (Ismail is here), but his cousin says the Dallas RE market is better — he's considering it for the future",
+    "wrong_answer_indicators": [
+      "moving to Dallas"
+    ],
     "attack_vector": "AV9_soft_supersession",
     "attack_vector_description": "Soft supersession - Dallas is a future consideration, not a decided move",
-    "relevant_categories": ["LOGISTICAL_CONTEXT", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Houston is current; Dallas mentioned as cousin's suggestion"
   },
   {
@@ -1265,10 +1754,15 @@
     "group_id": "lifemembench_omar",
     "question": "What does Omar do for money?",
     "correct_answer": "Uber driver (full-time) + starting at Century 21 real estate brokerage in April 2026",
-    "wrong_answer_indicators": ["Lyft driver"],
+    "wrong_answer_indicators": [
+      "Lyft driver"
+    ],
     "attack_vector": "AV5_broad_query",
     "attack_vector_description": "Broad query requiring retrieval across financial/career categories",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "PROJECTS_ENDEAVORS"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PROJECTS_ENDEAVORS"
+    ],
     "temporal_notes": "Lyft superseded (switched back to Uber); Century 21 is upcoming"
   },
   {
@@ -1280,7 +1774,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - family obligations mentioned across sessions, failure is NOT surfacing them",
-    "relevant_categories": ["RELATIONAL_BONDS", "FINANCIAL_MATERIAL"],
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "FINANCIAL_MATERIAL"
+    ],
     "temporal_notes": "Ismail custody and mother remittances mentioned in early sessions"
   },
   {
@@ -1289,10 +1786,14 @@
     "group_id": "lifemembench_omar",
     "question": "Does Omar have any past events?",
     "correct_answer": "RE exam (April 2025) and Ismail's birthday (June 2025) are both past",
-    "wrong_answer_indicators": ["upcoming"],
+    "wrong_answer_indicators": [
+      "upcoming"
+    ],
     "attack_vector": "AV2_expired_logistics",
     "attack_vector_description": "Expired logistics - RE exam and birthday are in the past",
-    "relevant_categories": ["LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "RE exam April 2025 and Ismail birthday June 2025 are past"
   },
   {
@@ -1304,7 +1805,9 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - tiredness and stress from overwork is a recurring health-adjacent theme",
-    "relevant_categories": ["HEALTH_WELLBEING"],
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
     "temporal_notes": "Tiredness/stress from overwork mentioned across sessions"
   },
   {
@@ -1312,11 +1815,14 @@
     "persona": "omar",
     "group_id": "lifemembench_omar",
     "question": "What's Omar's career plan?",
-    "correct_answer": "Real estate \u2014 passed the exam, joining Century 21 in April 2026, still driving Uber on the side",
+    "correct_answer": "Real estate — passed the exam, joining Century 21 in April 2026, still driving Uber on the side",
     "wrong_answer_indicators": [],
     "attack_vector": "AV3_stable_identity",
     "attack_vector_description": "Stable identity - career trajectory mentioned across sessions, failure is NOT surfacing the RE path",
-    "relevant_categories": ["PROJECTS_ENDEAVORS", "IDENTITY_SELF_CONCEPT"],
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
     "temporal_notes": "RE exam passed, Century 21 start April 2026, Uber continues"
   },
   {
@@ -1328,7 +1834,10 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific rent amount must be preserved exactly",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "LOGISTICAL_CONTEXT"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "LOGISTICAL_CONTEXT"
+    ],
     "temporal_notes": "$950/month Alief rent mentioned before move to Gulfton"
   },
   {
@@ -1340,7 +1849,2357 @@
     "wrong_answer_indicators": [],
     "attack_vector": "AV8_numeric_preservation",
     "attack_vector_description": "Numeric preservation - specific remittance amount must be preserved exactly",
-    "relevant_categories": ["FINANCIAL_MATERIAL", "RELATIONAL_BONDS"],
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "RELATIONAL_BONDS"
+    ],
     "temporal_notes": "Monthly remittances to mother mentioned in family obligations"
+  },
+  {
+    "id": "fatima_q01",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Who is Fatima's primary fabric supplier?",
+    "correct_answer": "Romo Fabrics in the UK (switched from Maison Pierre in Paris)",
+    "wrong_answer_indicators": [
+      "Maison Pierre in Paris"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT supplier Romo Fabrics not previous Maison Pierre",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Maison Pierre mentioned early, Romo Fabrics is current supplier"
+  },
+  {
+    "id": "fatima_q02",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "What type of projects does Fatima's firm focus on?",
+    "correct_answer": "Commercial projects — hotels and corporate offices (pivoted from residential)",
+    "wrong_answer_indicators": [
+      "Exclusively high-end residential"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded project focus - exclusively residential replaced by commercial hotels and corporate offices",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Residential focus stated early, commercial pivot in later sessions"
+  },
+  {
+    "id": "fatima_q03",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Where is Fatima's office?",
+    "correct_answer": "KAFD (King Abdullah Financial District)",
+    "wrong_answer_indicators": [
+      "Al Olaya district"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded office location - Al Olaya district replaced by KAFD",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Al Olaya mentioned early, KAFD move in later session"
+  },
+  {
+    "id": "fatima_q04",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Does Fatima have any health conditions?",
+    "correct_answer": "Chronic back pain from a car accident six years ago",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - chronic back pain mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Back pain disclosed early, never repeated"
+  },
+  {
+    "id": "fatima_q05",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Does Fatima have any upcoming events?",
+    "correct_answer": "Salone del Mobile in Milan, April 7-12, 2026",
+    "wrong_answer_indicators": [
+      "Al-Faisal presentation March 5",
+      "Omar's science fair May 15"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Al-Faisal presentation and Omar's science fair already passed, Salone del Mobile is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Al-Faisal March 2025 expired, Omar's fair May 2025 expired, Salone April 2026 upcoming"
+  },
+  {
+    "id": "fatima_q06",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Is Fatima launching any new products or brands?",
+    "correct_answer": "No — she planned a fragrance line (Oud & Geometry) but cancelled it",
+    "wrong_answer_indicators": [
+      "Launching Oud & Geometry fragrance line"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - Oud & Geometry fragrance line was explicitly cancelled",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Fragrance line announced then cancelled in later session"
+  },
+  {
+    "id": "fatima_q07",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Does Fatima travel for work?",
+    "correct_answer": "Yes — she flies to Dubai twice a week for a hotel project, despite previously saying she never travels for work",
+    "wrong_answer_indicators": [
+      "No, she manages everything remotely"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said she never travels for work, later revealed flying to Dubai twice weekly",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "No-travel claim early, Dubai trips revealed in later session"
+  },
+  {
+    "id": "fatima_q08",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "What is Fatima's company called?",
+    "correct_answer": "Al-Rashidi Interiors — she's been considering rebranding to FORM Studio but hasn't decided",
+    "wrong_answer_indicators": [
+      "FORM Studio"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - FORM Studio rebrand is under consideration but should NOT be stated as definitive",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Al-Rashidi Interiors established early, FORM Studio consideration never resolved"
+  },
+  {
+    "id": "fatima_q09",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "What's Fatima's family situation?",
+    "correct_answer": "Divorced, raising two sons alone — Omar (14) and Khalid (11). Father was an architect.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - family details mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Divorce and sons disclosed early, father's career mentioned once"
+  },
+  {
+    "id": "fatima_q10",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "What does Fatima do outside of work?",
+    "correct_answer": "Attends design events (Salone del Mobile), manages sons' activities, design philosophy discussions",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, parenting, and professional events",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Activities spread across multiple sessions throughout timeline"
+  },
+  {
+    "id": "fatima_q11",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "What is Fatima's educational background?",
+    "correct_answer": "BFA from Central Saint Martins in London",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - BFA from Central Saint Martins mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Education disclosed early, never repeated"
+  },
+  {
+    "id": "fatima_q12",
+    "persona": "fatima",
+    "group_id": "lifemembench_fatima",
+    "question": "Does Fatima have any expired commitments?",
+    "correct_answer": "Al-Faisal presentation (March 2025) and Omar's science fair (May 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those as current/upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Al-Faisal presentation and Omar's science fair already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Al-Faisal March 5 2025 expired, Omar's science fair May 15 2025 expired"
+  },
+  {
+    "id": "kenji_q01",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "What design tool does Kenji primarily use?",
+    "correct_answer": "Framer (switched from Figma)",
+    "wrong_answer_indicators": [
+      "Figma"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded design tool - Figma replaced by Framer",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Figma mentioned early, Framer switch in later session"
+  },
+  {
+    "id": "kenji_q02",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Who is Kenji's main client?",
+    "correct_answer": "Omori Sake brewery (lost Tanaka Foods, they went with an agency)",
+    "wrong_answer_indicators": [
+      "Tanaka Foods"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT client Omori Sake not previous Tanaka Foods",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Tanaka Foods mentioned early, lost and replaced by Omori Sake"
+  },
+  {
+    "id": "kenji_q03",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Where does Kenji work?",
+    "correct_answer": "From home (gave up the shared studio in Shinsaibashi to save money)",
+    "wrong_answer_indicators": [
+      "Shared studio in Shinsaibashi"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded workspace - shared studio in Shinsaibashi replaced by working from home",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Shared studio mentioned early, moved home in later session"
+  },
+  {
+    "id": "kenji_q04",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Does Kenji have any health conditions?",
+    "correct_answer": "Chronic insomnia since university. Also red-green colorblind (deuteranopia).",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - insomnia and colorblindness mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Insomnia and colorblindness disclosed early, never repeated"
+  },
+  {
+    "id": "kenji_q05",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Does Kenji have any upcoming deadlines?",
+    "correct_answer": "Tokyo Design Week submission deadline July 15, 2026",
+    "wrong_answer_indicators": [
+      "Portfolio review Feb 20",
+      "izakaya anniversary April 12"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - portfolio review and izakaya anniversary already passed, Tokyo Design Week is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Portfolio review Feb 2025 expired, izakaya anniversary April 2025 expired, Tokyo Design Week July 2026 upcoming"
+  },
+  {
+    "id": "kenji_q06",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Is Kenji working on any personal projects?",
+    "correct_answer": "No — he was designing a typeface called Nami but abandoned it (too much work, no pay)",
+    "wrong_answer_indicators": [
+      "Working on Nami typeface"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - Nami typeface project was explicitly abandoned",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Nami typeface announced then abandoned in later session"
+  },
+  {
+    "id": "kenji_q07",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Does Kenji work with corporate clients?",
+    "correct_answer": "Inconsistent — he said he only works with independent brands and refuses corporate clients on principle, but later took a packaging gig for a fast-food chain because he needed the money",
+    "wrong_answer_indicators": [
+      "Only works with independent brands"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said only independent brands, later revealed taking a fast-food chain gig",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Independent-only stance early, fast-food chain gig revealed later"
+  },
+  {
+    "id": "kenji_q08",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Where does Kenji live?",
+    "correct_answer": "Osaka — he's been thinking about moving to Tokyo for better client access but hasn't decided",
+    "wrong_answer_indicators": [
+      "Tokyo"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - Tokyo move is under consideration but should NOT be stated as definitive",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Osaka established early, Tokyo consideration never resolved"
+  },
+  {
+    "id": "kenji_q09",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "What's Kenji's family situation?",
+    "correct_answer": "Mother runs an izakaya (Nakamura-ya) in Namba, Osaka. BFA from Tama Art University.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - family details mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Mother's izakaya disclosed early, never repeated"
+  },
+  {
+    "id": "kenji_q10",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "What does Kenji do outside of client work?",
+    "correct_answer": "Film photography (vintage Leica), typography explorations, Osaka street food, late-night ambient music playlists",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across photography, typography, food, and music",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Activities spread across multiple filler sessions"
+  },
+  {
+    "id": "kenji_q11",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "Does Kenji have any past events or appointments?",
+    "correct_answer": "Portfolio review (Feb 2025) and mom's izakaya anniversary (April 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - portfolio review and izakaya anniversary already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Portfolio review Feb 20 2025 expired, izakaya anniversary April 12 2025 expired"
+  },
+  {
+    "id": "kenji_q12",
+    "persona": "kenji",
+    "group_id": "lifemembench_kenji",
+    "question": "What's Kenji's educational background?",
+    "correct_answer": "BFA from Tama Art University in Tokyo",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - BFA from Tama Art University mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Education disclosed early, never repeated"
+  },
+  {
+    "id": "rosa_q01",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "What exercise does Rosa do?",
+    "correct_answer": "Swimming laps at the YMCA (switched from yoga due to knee issues)",
+    "wrong_answer_indicators": [
+      "Yoga three mornings a week in Coral Gables"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded exercise routine - yoga in Coral Gables replaced by swimming laps at the YMCA",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Yoga mentioned early, swimming replaced it in later session"
+  },
+  {
+    "id": "rosa_q02",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "What car does Rosa drive?",
+    "correct_answer": "Lexus RX (traded in the BMW X5)",
+    "wrong_answer_indicators": [
+      "BMW X5"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded vehicle - BMW X5 replaced by Lexus RX",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "BMW X5 mentioned early, traded for Lexus RX in later session"
+  },
+  {
+    "id": "rosa_q03",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "Who is Rosa's housekeeper?",
+    "correct_answer": "Ana (Maria's niece — Maria retired after 8 years)",
+    "wrong_answer_indicators": [
+      "Maria"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT housekeeper Ana not previous housekeeper Maria",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Maria mentioned early, Ana replaced her after Maria retired"
+  },
+  {
+    "id": "rosa_q04",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "Does Rosa have any health conditions?",
+    "correct_answer": "High blood pressure — takes lisinopril",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - high blood pressure on lisinopril mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Disclosed early, never repeated"
+  },
+  {
+    "id": "rosa_q05",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "Does Rosa have any upcoming events?",
+    "correct_answer": "Granddaughter Isabella's baptism, April 5, 2026 (she's the madrina)",
+    "wrong_answer_indicators": [
+      "Judicial conference March 21-23",
+      "Carlos's 60th July 19"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - judicial conference and Carlos's birthday already passed; Isabella's baptism April 2026 is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Conference March 2025 expired, birthday July 2025 expired, baptism April 2026 upcoming"
+  },
+  {
+    "id": "rosa_q06",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "Is Rosa planning to travel to Peru?",
+    "correct_answer": "No — the trip was cancelled because Carlos needs knee surgery",
+    "wrong_answer_indicators": [
+      "Planning a two-week trip to Lima"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - two-week Peru trip was explicitly cancelled due to Carlos's knee surgery",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Trip planned then cancelled due to Carlos's knee surgery"
+  },
+  {
+    "id": "rosa_q07",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "Is Rosa planning to reduce her workload?",
+    "correct_answer": "Unclear — she said she's cutting back, but then volunteered for extra juvenile court cases",
+    "wrong_answer_indicators": [
+      "Cutting back on work"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said cutting back on work, later volunteered for extra juvenile court cases",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Cutting back mentioned early, extra cases volunteered later"
+  },
+  {
+    "id": "rosa_q08",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "When is Rosa planning to retire?",
+    "correct_answer": "Originally planned to work until 65, but recently thinking about early retirement in 2027 — hasn't decided",
+    "wrong_answer_indicators": [
+      "Retiring in 2027"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - early retirement in 2027 is tentative thinking, should NOT be stated as definitive",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Work until 65 mentioned early, tentative 2027 retirement mentioned later"
+  },
+  {
+    "id": "rosa_q09",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "What's Rosa's family background?",
+    "correct_answer": "Peruvian immigrant — came from Lima at 12. Husband Carlos (retired firefighter). JD from Georgetown.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - immigration, husband, and education mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Lima immigration, Carlos, and Georgetown all mentioned early"
+  },
+  {
+    "id": "rosa_q10",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "What does Rosa enjoy outside of work?",
+    "correct_answer": "Swimming, cooking (Peruvian dishes), church activities, family gatherings, gardening",
+    "wrong_answer_indicators": [
+      "Yoga"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, faith, family, and cooking",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Activities spread across sessions; yoga superseded by swimming"
+  },
+  {
+    "id": "rosa_q11",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "Does Rosa have any expired commitments?",
+    "correct_answer": "Judicial conference (March 2025) and Carlos's birthday party (July 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - judicial conference March 2025 and Carlos's birthday July 2025 already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Conference March 2025 expired, birthday July 2025 expired"
+  },
+  {
+    "id": "rosa_q12",
+    "persona": "rosa",
+    "group_id": "lifemembench_rosa",
+    "question": "What's Rosa's judicial background?",
+    "correct_answer": "Family court judge, Eleventh Judicial Circuit. JD from Georgetown. Immigrated from Lima at 12.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - judicial role, Georgetown JD, and Lima immigration mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Georgetown, Lima, and judicial role mentioned early"
+  },
+  {
+    "id": "callum_q01",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "Where does Callum work?",
+    "correct_answer": "Highland Vets, private practice in Inverness (left NHS Highland rural vet service)",
+    "wrong_answer_indicators": [
+      "NHS Highland rural veterinary service"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT employer Highland Vets not previous NHS Highland",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "NHS Highland mentioned early, Highland Vets joined in later session"
+  },
+  {
+    "id": "callum_q02",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "What vehicle does Callum drive?",
+    "correct_answer": "Toyota Hilux (the old Land Rover Defender died)",
+    "wrong_answer_indicators": [
+      "1998 Land Rover Defender"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded vehicle - 1998 Land Rover Defender replaced by Toyota Hilux",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Defender mentioned early, Hilux replaced it in later session"
+  },
+  {
+    "id": "callum_q03",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "What sport does Callum play?",
+    "correct_answer": "Fell running (quit rugby due to knees and Crohn's)",
+    "wrong_answer_indicators": [
+      "Rugby — winger for Inverness Highland RFC"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded sport - rugby for Inverness Highland RFC replaced by fell running",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Rugby mentioned early, fell running replaced it in later session"
+  },
+  {
+    "id": "callum_q04",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "Does Callum have any health conditions?",
+    "correct_answer": "Crohn's disease, diagnosed at 21",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - Crohn's disease diagnosed at 21 mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Disclosed early, never repeated"
+  },
+  {
+    "id": "callum_q05",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "Does Callum have any upcoming events?",
+    "correct_answer": "Practice conference in Edinburgh, May 8-9, 2026",
+    "wrong_answer_indicators": [
+      "TB testing March 2025",
+      "Fiona's baby July 2025"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - TB testing and Fiona's baby already passed; practice conference May 2026 is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "TB testing March 2025 expired, Fiona's baby July 2025 expired, conference May 2026 upcoming"
+  },
+  {
+    "id": "callum_q06",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "Is Callum pursuing any additional certifications?",
+    "correct_answer": "No — he considered an equine surgery certificate but dropped it (too expensive, doesn't like horses)",
+    "wrong_answer_indicators": [
+      "Considering equine surgery certificate"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - equine surgery certificate was explicitly dropped as too expensive",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Equine cert considered then retracted"
+  },
+  {
+    "id": "callum_q07",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "Could Callum see himself living in a city?",
+    "correct_answer": "He said he could never live in a city, but he's been staying at his girlfriend Eilidh's flat in Edinburgh most weekends",
+    "wrong_answer_indicators": [
+      "No, needs the Highlands"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said he could never live in a city, later revealed staying in Edinburgh most weekends",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Anti-city stance early, Edinburgh weekends revealed later"
+  },
+  {
+    "id": "callum_q08",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "What's Callum's relationship status?",
+    "correct_answer": "Seeing someone named Eilidh, a vet nurse at his practice — still early days",
+    "wrong_answer_indicators": [
+      "Single"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - relationship with Eilidh is early days and should NOT be stated as definitive",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Single mentioned early, Eilidh introduced later"
+  },
+  {
+    "id": "callum_q09",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "What's Callum's background?",
+    "correct_answer": "Grew up on a sheep farm near Aviemore. BVetMed from Edinburgh. Sister Fiona is a midwife in Glasgow.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - farm upbringing, Edinburgh degree, and sister Fiona mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Aviemore, Fiona, and Edinburgh mentioned early"
+  },
+  {
+    "id": "callum_q10",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "What does Callum do in his free time?",
+    "correct_answer": "Fell running in the Highlands, whisky, cooking, visiting Eilidh in Edinburgh",
+    "wrong_answer_indicators": [
+      "Rugby"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across sports, hobbies, relationship, and interests",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Activities spread across sessions; rugby superseded by fell running"
+  },
+  {
+    "id": "callum_q11",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "Does Callum have any past events?",
+    "correct_answer": "TB testing season (March 2025) and Fiona's baby (July 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - TB testing March 2025 and Fiona's baby July 2025 already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "TB testing March 2025 expired, Fiona's baby July 2025 expired"
+  },
+  {
+    "id": "callum_q12",
+    "persona": "callum",
+    "group_id": "lifemembench_callum",
+    "question": "What's Callum's education?",
+    "correct_answer": "BVetMed from the Royal (Dick) School at Edinburgh University",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - BVetMed from Edinburgh mentioned once early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Disclosed early, never repeated"
+  },
+  {
+    "id": "diane_q01",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Where does Diane work?",
+    "correct_answer": "CarePartners Hospice (left Four Seasons Compassion for Life)",
+    "wrong_answer_indicators": [
+      "Four Seasons Compassion for Life"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT employer CarePartners not previous Four Seasons",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Four Seasons from session 1, CarePartners from session 22"
+  },
+  {
+    "id": "diane_q02",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "What are Diane's hobbies?",
+    "correct_answer": "Watercolor painting (gave up gardening due to knee pain)",
+    "wrong_answer_indicators": [
+      "Perennial gardening"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded hobby - perennial gardening replaced by watercolor painting",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": "Gardening from session 6, watercolor from session 24"
+  },
+  {
+    "id": "diane_q03",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "What denomination is Diane?",
+    "correct_answer": "United Church of Christ / UCC (transferred from Episcopal)",
+    "wrong_answer_indicators": [
+      "Episcopal"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded denomination - Episcopal replaced by UCC",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Episcopal from session 3, UCC from session 28"
+  },
+  {
+    "id": "diane_q04",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Does Diane have any health conditions?",
+    "correct_answer": "Osteoarthritis in both knees",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - osteoarthritis mentioned once in session 5, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Disclosed in session 5, never repeated"
+  },
+  {
+    "id": "diane_q05",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Does Diane have any upcoming events?",
+    "correct_answer": "Greg's woodworking show at the Folk Art Center, July 12, 2026",
+    "wrong_answer_indicators": [
+      "Cortisone injection Jan 15",
+      "grief retreat April 4-6"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - cortisone injection and grief retreat already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Cortisone injection Jan 2025 (expired), grief retreat April 2025 (expired), Greg's show July 2026 (upcoming)"
+  },
+  {
+    "id": "diane_q06",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Is Diane writing a book?",
+    "correct_answer": "No — she had a proposal but abandoned it because the stories belong to the families, not her",
+    "wrong_answer_indicators": [
+      "Writing a book about chaplaincy and grief"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - book about chaplaincy and grief was explicitly abandoned",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Book proposal mentioned session 11, abandoned session 20"
+  },
+  {
+    "id": "diane_q07",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Does Diane watch television?",
+    "correct_answer": "Inconsistent — she said she doesn't watch TV (finds it numbing), but later binge-watched an entire Netflix series about a hospice nurse in three evenings",
+    "wrong_answer_indicators": [
+      "Doesn't watch television"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said she doesn't watch TV, later revealed she binge-watched a Netflix series",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "No-TV claim in session 7, Netflix binge in session 31"
+  },
+  {
+    "id": "diane_q08",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Where does Diane live?",
+    "correct_answer": "Asheville, North Carolina (West Asheville) — she's been considering Brevard but hasn't decided",
+    "wrong_answer_indicators": [
+      "Brevard"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - Brevard is only under consideration, should NOT be stated as definitive",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "West Asheville from session 1, Brevard consideration from session 26, never resolved"
+  },
+  {
+    "id": "diane_q09",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "What's Diane's family situation?",
+    "correct_answer": "Husband Greg (woodworker). Lost son Michael to opioid overdose 8 years ago. MDiv from Yale.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - family facts mentioned early and never repeated, failure is NOT surfacing them",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Michael's loss in session 2, Greg in session 4, MDiv in session 3"
+  },
+  {
+    "id": "diane_q10",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "What does Diane do outside of work?",
+    "correct_answer": "Watercolor painting, nature walks, poetry, cooking for Greg, occasional Netflix",
+    "wrong_answer_indicators": [
+      "Gardening"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, recreation, and preferences",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Gardening superseded in session 24; watercolor, walks, poetry, cooking spread across many sessions"
+  },
+  {
+    "id": "diane_q11",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "What's Diane's educational and spiritual background?",
+    "correct_answer": "MDiv from Yale Divinity School. Currently UCC (was Episcopal).",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - MDiv from Yale mentioned once in session 3, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "MDiv and Episcopal from session 3, UCC transfer from session 28"
+  },
+  {
+    "id": "diane_q12",
+    "persona": "diane",
+    "group_id": "lifemembench_diane",
+    "question": "Does Diane have any expired events?",
+    "correct_answer": "Cortisone injection (Jan 2025) and grief retreat (April 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - cortisone injection and grief retreat already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Cortisone injection Jan 15 2025 (session 9), grief retreat April 4-6 2025 (session 13)"
+  },
+  {
+    "id": "raj_q01",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "What van does Raj drive for work?",
+    "correct_answer": "Vauxhall Vivaro (switched from Ford Transit Custom)",
+    "wrong_answer_indicators": [
+      "Ford Transit Custom"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded work van - Ford Transit Custom replaced by Vauxhall Vivaro",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Ford Transit from session 6, Vivaro from session 22"
+  },
+  {
+    "id": "raj_q02",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "What sports package does Raj use?",
+    "correct_answer": "DAZN (cancelled Sky Sports to save money)",
+    "wrong_answer_indicators": [
+      "Sky Sports"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded sports subscription - Sky Sports replaced by DAZN",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": "Sky Sports from session 7, DAZN from session 23"
+  },
+  {
+    "id": "raj_q03",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "What does Simran do for work?",
+    "correct_answer": "School admin coordinator at Ladywood Primary (promoted from teaching)",
+    "wrong_answer_indicators": [
+      "Primary school teacher at Ladywood"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT role school admin coordinator not previous teacher",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Teacher from session 2, admin coordinator from session 21"
+  },
+  {
+    "id": "raj_q04",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "Does Raj have any health conditions?",
+    "correct_answer": "Asthma — uses a blue inhaler",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - asthma mentioned once in session 4, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Disclosed in session 4, never repeated"
+  },
+  {
+    "id": "raj_q05",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "Does Raj have any upcoming certifications or deadlines?",
+    "correct_answer": "Boiler installation course update on June 15, 2026",
+    "wrong_answer_indicators": [
+      "Gas Safe renewal March 31",
+      "Arjun's tournament May 10"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Gas Safe renewal and Arjun's tournament already passed",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Gas Safe March 2025 (expired), Arjun's tourney May 2025 (expired), boiler course June 2026 (upcoming)"
+  },
+  {
+    "id": "raj_q06",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "Is Raj hiring help for his business?",
+    "correct_answer": "No — he wanted an apprentice but the insurance cost killed the idea",
+    "wrong_answer_indicators": [
+      "Thinking about hiring an apprentice"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - apprentice hiring plan was explicitly scrapped due to insurance costs",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Apprentice idea in session 12, scrapped in session 19"
+  },
+  {
+    "id": "raj_q07",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "Does Raj work weekends?",
+    "correct_answer": "Complicated — he said weekends are sacred family time, but recently worked three Saturdays in a row on emergency callouts",
+    "wrong_answer_indicators": [
+      "Never works weekends"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said weekends are sacred family time, later revealed he worked three Saturdays in a row",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "No-weekends claim in session 8, three Saturdays in a row in session 27"
+  },
+  {
+    "id": "raj_q08",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "Where does Raj live?",
+    "correct_answer": "Sparkhill, Birmingham (renting) — looking at buying in Solihull for better schools but hasn't decided",
+    "wrong_answer_indicators": [
+      "Solihull"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - Solihull is only under consideration, should NOT be stated as definitive",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Sparkhill from session 1, Solihull consideration from session 28, never resolved"
+  },
+  {
+    "id": "raj_q09",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "What's Raj's family situation?",
+    "correct_answer": "Wife Simran, son Arjun (8), daughter Preet (5). Parents in Jalandhar, Punjab — visits yearly.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - family facts mentioned early and never repeated, failure is NOT surfacing them",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Family in session 1, parents in session 3"
+  },
+  {
+    "id": "raj_q10",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "What does Raj enjoy outside of work?",
+    "correct_answer": "Cricket (India, Warwickshire, IPL), football (Man City), family time, Punjabi cooking",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, sports, and family",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Interests spread across many sessions in filler topics"
+  },
+  {
+    "id": "raj_q11",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "Does Raj have any expired events?",
+    "correct_answer": "Gas Safe renewal (March 2025), Arjun's tournament (May 2025), India trip (Dec 2025-Jan 2026) all past",
+    "wrong_answer_indicators": [
+      "Any of those as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Gas Safe renewal, football tournament, and India trip already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Gas Safe March 2025 (session 10), tournament May 2025 (session 14), India trip Dec 2025-Jan 2026 (session 18)"
+  },
+  {
+    "id": "raj_q12",
+    "persona": "raj",
+    "group_id": "lifemembench_raj",
+    "question": "What's Raj's background?",
+    "correct_answer": "ITI diploma from India, moved to UK at 22, worked his way from labourer to owning RM Plumbing & Heating",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - ITI diploma and immigration story mentioned once in session 5, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Disclosed in session 5, never repeated"
+  },
+  {
+    "id": "nadia_q01",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Who is the head chef at Nadia's restaurant?",
+    "correct_answer": "Marc-Andre Gagnon (Chef Antoine Dubois left to open his own place in Lyon)",
+    "wrong_answer_indicators": [
+      "Chef Antoine Dubois"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT head chef Marc-Andre Gagnon not previous Chef Antoine Dubois",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Antoine mentioned early, replaced by Marc-Andre in later session"
+  },
+  {
+    "id": "nadia_q02",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Where does Nadia live?",
+    "correct_answer": "Villeray (moved from Plateau-Mont-Royal for a bigger kitchen)",
+    "wrong_answer_indicators": [
+      "Plateau-Mont-Royal"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded apartment - Plateau-Mont-Royal replaced by Villeray",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Plateau-Mont-Royal mentioned early, moved to Villeray later"
+  },
+  {
+    "id": "nadia_q03",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "What exercise does Nadia do?",
+    "correct_answer": "CrossFit (quit ballet due to schedule conflicts)",
+    "wrong_answer_indicators": [
+      "Ballet twice a week"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded exercise - ballet replaced by CrossFit",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": "Ballet mentioned early, switched to CrossFit later"
+  },
+  {
+    "id": "nadia_q04",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "What languages does Nadia speak?",
+    "correct_answer": "Three — Russian, French, and English. She still dreams in Russian.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - trilingual (Russian, French, English) mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Mentioned early, never repeated"
+  },
+  {
+    "id": "nadia_q05",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Does Nadia have any upcoming events?",
+    "correct_answer": "Taste of Montreal cooking competition, August 8, 2026",
+    "wrong_answer_indicators": [
+      "Gazette review Feb 14",
+      "mother's visit March 28"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Gazette review and mother's visit already passed, Taste of Montreal is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Gazette review Feb 2025 expired, mother visit March 2025 expired, Taste of Montreal Aug 2026 upcoming"
+  },
+  {
+    "id": "nadia_q06",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Is Nadia planning to stage at Noma?",
+    "correct_answer": "No — that's over. Noma closed and she can't afford the trip. She explicitly said to forget it.",
+    "wrong_answer_indicators": [
+      "Applied to stage at Noma"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - Noma stage was explicitly cancelled",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Applied then explicitly retracted"
+  },
+  {
+    "id": "nadia_q07",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Would Nadia ever open her own restaurant?",
+    "correct_answer": "Contradictory — she previously said never, but she's been looking at commercial spaces in Mile End for a Russian-French pop-up concept",
+    "wrong_answer_indicators": [
+      "Would never open her own restaurant"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said she would never open her own restaurant, later revealed looking at Mile End spaces",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Said never early, looking at Mile End spaces later"
+  },
+  {
+    "id": "nadia_q08",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Is Nadia staying at Maison Laurent?",
+    "correct_answer": "Currently yes, but she was offered a head chef position at a new restaurant in Old Montreal — hasn't decided",
+    "wrong_answer_indicators": [
+      "Left Maison Laurent"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - head chef offer at Old Montreal restaurant should NOT be stated as definitive",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "At Maison Laurent from start, offer mentioned later, never resolved"
+  },
+  {
+    "id": "nadia_q09",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "What's Nadia's background?",
+    "correct_answer": "Russian-Canadian. Immigrated from St. Petersburg at 14. Culinary diploma from ITHQ. Grandmother Babushka taught her to cook.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - immigration, education, and family background mentioned early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Immigration, Babushka, and ITHQ mentioned early"
+  },
+  {
+    "id": "nadia_q10",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "What does Nadia do outside of work?",
+    "correct_answer": "CrossFit, home cooking experiments (Russian-French fusion), foraging, knife collecting",
+    "wrong_answer_indicators": [
+      "Ballet"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, recreation, and preferences",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "CrossFit current, cooking/foraging/knives spread across filler sessions"
+  },
+  {
+    "id": "nadia_q11",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Does Nadia have any expired events?",
+    "correct_answer": "Gazette review (Feb 2025) and mother's visit (March 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Gazette review and mother's visit already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Gazette review Feb 14 2025 expired, mother visit March 28 2025 expired"
+  },
+  {
+    "id": "nadia_q12",
+    "persona": "nadia",
+    "group_id": "lifemembench_nadia",
+    "question": "Who taught Nadia to cook?",
+    "correct_answer": "Her grandmother Babushka — first memory is making pelmeni together",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - Babushka as cooking teacher mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Mentioned early, never repeated"
+  },
+  {
+    "id": "samuel_q01",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "What type of surgery does Samuel primarily perform?",
+    "correct_answer": "Minimally invasive endoscopic neurosurgery (shifted from open craniotomies)",
+    "wrong_answer_indicators": [
+      "Open craniotomies"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT endoscopic approach not previous open craniotomies",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Open craniotomies mentioned early, shifted to endoscopic later"
+  },
+  {
+    "id": "samuel_q02",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "What exercise does Samuel do?",
+    "correct_answer": "Rock climbing at Vertical Endeavors (stopped swimming at YMCA)",
+    "wrong_answer_indicators": [
+      "Swimming at the YMCA"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded exercise - swimming at YMCA replaced by rock climbing at Vertical Endeavors",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": "Swimming mentioned early, climbing replaced it later"
+  },
+  {
+    "id": "samuel_q03",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "Where does Samuel live?",
+    "correct_answer": "House in Edina (moved from a condo in North Loop)",
+    "wrong_answer_indicators": [
+      "Condo in North Loop"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded housing - North Loop condo replaced by Edina house",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "North Loop condo mentioned early, bought Edina house later"
+  },
+  {
+    "id": "samuel_q04",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "Does Samuel have any health conditions?",
+    "correct_answer": "Sleep apnea — uses a CPAP machine",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - sleep apnea with CPAP mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Mentioned early, never repeated"
+  },
+  {
+    "id": "samuel_q05",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "Does Samuel have any upcoming events?",
+    "correct_answer": "AANS keynote speech, April 25, 2026",
+    "wrong_answer_indicators": [
+      "Credentialing meeting March 12",
+      "Abena's birthday July 8"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - credentialing meeting and Abena's birthday already passed, AANS keynote is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Credentialing March 2025 expired, Abena birthday July 2025 expired, AANS April 2026 upcoming"
+  },
+  {
+    "id": "samuel_q06",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "Is Samuel planning a medical mission to Ghana?",
+    "correct_answer": "No — it was cancelled because the hospital won't approve three weeks of leave",
+    "wrong_answer_indicators": [
+      "Planning a mission trip with Remote Area Medical"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - Ghana mission was explicitly cancelled",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Planned then retracted due to leave denial"
+  },
+  {
+    "id": "samuel_q07",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "Does Samuel discuss work at home?",
+    "correct_answer": "Inconsistent — he said he never brings work home (strict boundary with Abena), but later spent twenty minutes telling her about a meningioma case over dinner",
+    "wrong_answer_indicators": [
+      "Never discusses cases at home"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said he never discusses cases at home, later revealed talking about a tumor case over dinner",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Strict boundary stated early, contradicted later"
+  },
+  {
+    "id": "samuel_q08",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "What church does Samuel attend?",
+    "correct_answer": "Calvary Methodist in Minneapolis (15 years) — considering a congregation in Edina near his new house but hasn't decided",
+    "wrong_answer_indicators": [
+      "Edina church"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - Edina church exploration should NOT be stated as definitive",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Calvary Methodist from early sessions, Edina church considered later, never resolved"
+  },
+  {
+    "id": "samuel_q09",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "What's Samuel's background?",
+    "correct_answer": "Ghanaian-American. Came from Accra at 18 on scholarship. MD Hopkins, residency Mayo. Wife Abena (pharmacist).",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - immigration, credentials, and family mentioned early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Immigration, Abena, and credentials mentioned early"
+  },
+  {
+    "id": "samuel_q10",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "What does Samuel do outside of surgery?",
+    "correct_answer": "Rock climbing, piano (Chopin), church activities, reading (theology, African literature), Ghanaian cooking",
+    "wrong_answer_indicators": [
+      "Swimming"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, faith, and preferences",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Climbing current, piano/church/reading/cooking spread across filler sessions"
+  },
+  {
+    "id": "samuel_q11",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "Does Samuel have any past events?",
+    "correct_answer": "Credentialing meeting (March 2025) and Abena's birthday (July 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - credentialing meeting and Abena's birthday already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Credentialing March 12 2025 expired, Abena birthday July 8 2025 expired"
+  },
+  {
+    "id": "samuel_q12",
+    "persona": "samuel",
+    "group_id": "lifemembench_samuel",
+    "question": "What are Samuel's credentials?",
+    "correct_answer": "MD from Johns Hopkins, residency at Mayo Clinic. Attending neurosurgeon at Hennepin County Medical Center.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - medical credentials mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Mentioned early, never repeated"
+  },
+  {
+    "id": "lily_q01",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "What is Lily's thesis about?",
+    "correct_answer": "Urban heat islands and green infrastructure in Melbourne (changed from microplastics in Port Phillip Bay)",
+    "wrong_answer_indicators": [
+      "Microplastics in Port Phillip Bay"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT thesis topic (urban heat islands) not previous (microplastics)",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Microplastics thesis mentioned early; changed to urban heat islands later"
+  },
+  {
+    "id": "lily_q02",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "Who is Lily dating?",
+    "correct_answer": "Mika (graphic designer) — broke up with Soph",
+    "wrong_answer_indicators": [
+      "Soph"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT partner (Mika) not previous (Soph)",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Dating Soph mentioned early; broke up and now seeing Mika"
+  },
+  {
+    "id": "lily_q03",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "What oat milk does Lily use?",
+    "correct_answer": "Bonsoy oat milk (switched from Minor Figures after formula change)",
+    "wrong_answer_indicators": [
+      "Minor Figures"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded oat milk preference - Minor Figures replaced by Bonsoy",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Minor Figures loyalty mentioned early; switched to Bonsoy later"
+  },
+  {
+    "id": "lily_q04",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "Does Lily have any health conditions?",
+    "correct_answer": "Eczema that flares badly with stress",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - eczema mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Eczema disclosed early; never repeated"
+  },
+  {
+    "id": "lily_q05",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "Does Lily have any upcoming trips or deadlines?",
+    "correct_answer": "Hong Kong trip with Nai Nai, May 20, 2026",
+    "wrong_answer_indicators": [
+      "Great Ocean Road Easter trip",
+      "thesis due Oct 31"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Great Ocean Road trip and thesis deadline already passed, Hong Kong trip is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Great Ocean Road April 2025 expired; thesis Oct 2025 expired; Hong Kong May 2026 upcoming"
+  },
+  {
+    "id": "lily_q06",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "Is Lily doing a semester exchange?",
+    "correct_answer": "No — she wanted to go to UBC in Vancouver but cancelled it (too expensive, would delay graduation)",
+    "wrong_answer_indicators": [
+      "Applying for UBC exchange"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - UBC exchange plan was explicitly cancelled",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "UBC exchange excitement then explicitly cancelled"
+  },
+  {
+    "id": "lily_q07",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "Is Lily vegan?",
+    "correct_answer": "Complicated — she said she's been vegan for 2 years, but ate char siu bao (pork buns) that her Nai Nai made",
+    "wrong_answer_indicators": [
+      "Strict vegan"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said strict vegan for 2 years, later revealed eating pork char siu bao",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Strict vegan claim early; ate char siu bao later"
+  },
+  {
+    "id": "lily_q08",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "What does Lily plan to do after graduation?",
+    "correct_answer": "Originally planned environmental consulting, but now considering a masters in urban ecology — hasn't decided",
+    "wrong_answer_indicators": [
+      "Doing a masters"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - masters in urban ecology should NOT be stated as definitive; she is still undecided",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Environmental consulting plan early; masters consideration later; never resolved"
+  },
+  {
+    "id": "lily_q09",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "What's Lily's family background?",
+    "correct_answer": "Chinese-Australian. Parents run Golden Lotus restaurant in Box Hill. Grandmother Nai Nai speaks only Cantonese.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - family background mentioned early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Parents' restaurant and Nai Nai mentioned early; never repeated"
+  },
+  {
+    "id": "lily_q10",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "What does Lily do outside of uni?",
+    "correct_answer": "Barista work, coffee culture, climate activism, indie gigs, thrift shopping, spending time with Mika and Nai Nai",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, work, relationships, and activism",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Activities spread across many sessions; requires broad retrieval"
+  },
+  {
+    "id": "lily_q11",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "Does Lily have past events?",
+    "correct_answer": "Great Ocean Road trip (April 2025) and thesis deadline (Oct 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any of those as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Great Ocean Road trip and thesis deadline already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Great Ocean Road April 2025 expired; thesis Oct 2025 expired"
+  },
+  {
+    "id": "lily_q12",
+    "persona": "lily",
+    "group_id": "lifemembench_lily",
+    "question": "What's Lily's identity?",
+    "correct_answer": "Chinese-Australian, queer (came out at 17), environmental science student, barista",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - core identity facts mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Queer identity, Chinese-Australian background, student and barista from early sessions"
+  },
+  {
+    "id": "bruna_q01",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Who owns the clinic where Bruna works?",
+    "correct_answer": "PhysioFirst Group acquired ProMotion Sports Clinic. Dr. Faisal Al-Rashid, the original owner, left.",
+    "wrong_answer_indicators": [
+      "Dr. Faisal Al-Rashid owns it"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT clinic ownership (PhysioFirst Group) not previous (Dr. Faisal Al-Rashid)",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Dr. Faisal ownership mentioned early; PhysioFirst acquisition later"
+  },
+  {
+    "id": "bruna_q02",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "What exercise does Bruna do regularly?",
+    "correct_answer": "Cycling (switched from running due to patellofemoral knee syndrome)",
+    "wrong_answer_indicators": [
+      "Runs 5x/week",
+      "training for Dubai Marathon"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded exercise - running 5x/week replaced by cycling due to knee injury",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Running 5x/week mentioned early; knee injury and switch to cycling later"
+  },
+  {
+    "id": "bruna_q03",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Where does Bruna live?",
+    "correct_answer": "Studio apartment in Al Barsha, 10-minute walk to the clinic",
+    "wrong_answer_indicators": [
+      "1-bedroom in JLT",
+      "35-minute commute"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded living situation - JLT 1-bedroom replaced by Al Barsha studio",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "JLT apartment mentioned early; moved to Al Barsha later"
+  },
+  {
+    "id": "bruna_q04",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Does Bruna have any health conditions to be aware of?",
+    "correct_answer": "Hypothyroidism — takes levothyroxine daily",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - hypothyroidism mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Hypothyroidism disclosed early; never repeated"
+  },
+  {
+    "id": "bruna_q05",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Does Bruna have any upcoming events or deadlines?",
+    "correct_answer": "Gulf Sports Medicine Conference presentation on July 12, 2026",
+    "wrong_answer_indicators": [
+      "Dubai Marathon January 10",
+      "mom's visit March 15"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Dubai Marathon and mom's visit already passed, conference is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Dubai Marathon Jan 2025 expired; mom visit March 2025 expired; conference July 2026 upcoming"
+  },
+  {
+    "id": "bruna_q06",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Is Bruna planning to get any new certifications?",
+    "correct_answer": "No — she was enrolled in a dry needling course but dropped it because it didn't align with her treatment philosophy",
+    "wrong_answer_indicators": [
+      "Enrolled in dry needling certification starting April"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - dry needling certification was explicitly cancelled",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": "Dry needling enrollment then explicitly dropped"
+  },
+  {
+    "id": "bruna_q07",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Does Bruna drink alcohol?",
+    "correct_answer": "Inconsistent — she said she stopped drinking 3 years ago, but later mentioned having caipirinhas at a friend's birthday",
+    "wrong_answer_indicators": [
+      "Doesn't drink, hasn't in 3 years"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said no alcohol for 3 years, later revealed drinking caipirinhas at a party",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "No alcohol claim early; caipirinha at party later"
+  },
+  {
+    "id": "bruna_q08",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "What is Bruna's relationship status?",
+    "correct_answer": "She was single and career-focused, but has recently been on a few dates with a guy named Karim (Lebanese, works in finance). Still unclear if it's serious.",
+    "wrong_answer_indicators": [
+      "Single",
+      "In a relationship with Karim"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - dating Karim should NOT be stated as definitive; it's still early and unclear",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Single and career-focused early; a few dates with Karim later; never resolved"
+  },
+  {
+    "id": "bruna_q09",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Where is Bruna originally from and what's her family situation?",
+    "correct_answer": "From Sao Paulo, Brazil. Moved to Dubai 5 years ago. DPT from USP. Her mother Dona Lucia is her best friend — they video-call almost daily.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - origin and family facts mentioned early, failure is NOT surfacing it",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Sao Paulo origin, Dona Lucia, and DPT from USP mentioned early; never repeated"
+  },
+  {
+    "id": "bruna_q10",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Does Bruna plan to stay in Dubai long-term?",
+    "correct_answer": "Uncertain — she previously said she'd stay in Dubai forever, but has recently been looking at PT jobs in Lisbon",
+    "wrong_answer_indicators": [
+      "Plans to stay permanently"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said staying in Dubai forever, later revealed looking at jobs in Lisbon",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Dubai permanence claim early; Lisbon job browsing later"
+  },
+  {
+    "id": "bruna_q11",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "Is Bruna registered for any races or sporting events?",
+    "correct_answer": "No — the Dubai Marathon (January 10, 2025) already passed, and she has since developed a knee injury that ended her running",
+    "wrong_answer_indicators": [
+      "Training for the Dubai Marathon"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - Dubai Marathon Jan 2025 already passed and knee injury ended running",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Dubai Marathon Jan 10 2025 expired; knee injury ended running career"
+  },
+  {
+    "id": "bruna_q12",
+    "persona": "bruna",
+    "group_id": "lifemembench_bruna",
+    "question": "What does Bruna like to do outside of work?",
+    "correct_answer": "Cycling (replaced running after knee injury), exploring Dubai (desert trips, beach days), cooking Brazilian food, trying to learn Arabic, socializing with expat friends",
+    "wrong_answer_indicators": [
+      "Running 5x/week"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across fitness, hobbies, social life, and cultural interests",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Activities spread across many sessions; running superseded by cycling"
+  },
+  {
+    "id": "patrick_q01",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Does Patrick still coach baseball?",
+    "correct_answer": "No — retired from coaching the Shamrocks after 12 years (knees, difficult parents)",
+    "wrong_answer_indicators": [
+      "Coaches Shamrocks in CYO league"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded coaching status - active CYO Shamrocks coach replaced by retired from coaching",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": "Coaching mentioned early, retirement from coaching later"
+  },
+  {
+    "id": "patrick_q02",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Does Patrick own a shore house?",
+    "correct_answer": "No — sold the Wildwood house, bought a 22ft fishing boat instead",
+    "wrong_answer_indicators": [
+      "Owns a shore house in Wildwood with brother Kevin"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded shore property - Wildwood house with Kevin replaced by sold house and bought boat",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Shore house mentioned early, sold and bought boat later"
+  },
+  {
+    "id": "patrick_q03",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Who is Patrick's primary doctor?",
+    "correct_answer": "Dr. Patel at Penn Medicine (Dr. Russo at Jefferson retired)",
+    "wrong_answer_indicators": [
+      "Dr. Russo at Jefferson"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT doctor Dr. Patel at Penn Medicine not previous Dr. Russo at Jefferson",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Dr. Russo mentioned early, switch to Dr. Patel later"
+  },
+  {
+    "id": "patrick_q04",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Does Patrick have any mental health history?",
+    "correct_answer": "PTSD from a 2009 building collapse where two firefighters died. Still does therapy sometimes.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - PTSD from 2009 collapse mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "PTSD disclosed early"
+  },
+  {
+    "id": "patrick_q05",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Does Patrick have upcoming events?",
+    "correct_answer": "Battalion chiefs' conference in San Antonio, September 15-17, 2026",
+    "wrong_answer_indicators": [
+      "Annual physical Jan 15",
+      "Patrick Jr's academy graduation March 22"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - annual physical and academy graduation already passed, conference is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Physical Jan 15 expired, graduation March 22 2025 expired, conference Sept 2026 upcoming"
+  },
+  {
+    "id": "patrick_q06",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Is Patrick planning any home improvement projects?",
+    "correct_answer": "No — he wanted to finish the basement but foundation cracks killed the project ($40K to fix)",
+    "wrong_answer_indicators": [
+      "Planning to finish basement with pool table and bar"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - basement rec room project was explicitly cancelled due to foundation cracks",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Basement plan then retracted due to foundation cracks"
+  },
+  {
+    "id": "patrick_q07",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "How long does Patrick plan to keep working?",
+    "correct_answer": "Unclear — he said he'd work until mandatory retirement at 63, but recently talked to Marie about early retirement due to physical wear",
+    "wrong_answer_indicators": [
+      "Working until 63 mandatory retirement"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said working until 63 mandatory retirement, later revealed quietly considering early retirement",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Mandatory retirement plan early, early retirement talk later"
+  },
+  {
+    "id": "patrick_q08",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Where does Patrick live?",
+    "correct_answer": "Fishtown rowhouse (25 years) — Marie wants to move to Bucks County but Patrick is resistant. Unresolved.",
+    "wrong_answer_indicators": [
+      "Bucks County"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - Bucks County move is Marie's wish, should NOT be stated as definitive",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "Fishtown rowhouse established early, Bucks County discussion later, unresolved"
+  },
+  {
+    "id": "patrick_q09",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "What's Patrick's family situation?",
+    "correct_answer": "Wife Marie (32 years, high school sweethearts). Son Patrick Jr, rookie firefighter at Ladder 19. Brother Kevin.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - core family facts mentioned across sessions, failure is NOT surfacing them",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Marie, Patrick Jr, and Kevin mentioned across early sessions"
+  },
+  {
+    "id": "patrick_q10",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "What does Patrick do in his free time?",
+    "correct_answer": "Fishing (has a boat), Eagles football, Mass at St. Cecilia's with Marie",
+    "wrong_answer_indicators": [
+      "Coaches baseball",
+      "shore house"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, preferences, and religion",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Boat from later session, Eagles and St. Cecilia's established early; coaching and shore house both superseded"
+  },
+  {
+    "id": "patrick_q11",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "How much would the foundation repair cost?",
+    "correct_answer": "$40,000",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - specific cost amount must be preserved exactly",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": "Foundation cost mentioned during retraction of basement project"
+  },
+  {
+    "id": "patrick_q12",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "Does Patrick have any past appointments or events?",
+    "correct_answer": "Annual physical was January 15 (passed) and Patrick Jr's academy graduation was March 22, 2025 (passed)",
+    "wrong_answer_indicators": [
+      "Any of those presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - annual physical Jan 15 and academy graduation March 22 2025 already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "Physical Jan 15 2025 expired, graduation March 22 2025 expired"
+  },
+  {
+    "id": "patrick_q13",
+    "persona": "patrick",
+    "group_id": "lifemembench_patrick",
+    "question": "How long has Patrick been on the job?",
+    "correct_answer": "30 years with the Philadelphia Fire Department",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - 30-year PFD tenure mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Job tenure established early"
+  },
+  {
+    "id": "aisha_q01",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "What team is Aisha on at PwC?",
+    "correct_answer": "Advisory — deals and transactions (moved from audit)",
+    "wrong_answer_indicators": [
+      "Audit"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - must surface CURRENT team advisory/deals not previous audit",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Audit from start, moved to advisory later"
+  },
+  {
+    "id": "aisha_q02",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "Which gym does Aisha go to?",
+    "correct_answer": "Women-only gym in Rusholme",
+    "wrong_answer_indicators": [
+      "PureGym near Piccadilly"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded gym preference - PureGym Piccadilly replaced by women-only gym in Rusholme",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "PureGym early, switched to Rusholme gym later"
+  },
+  {
+    "id": "aisha_q03",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "Who does Aisha live with?",
+    "correct_answer": "Priya, a junior doctor (Zara moved out to live with her boyfriend)",
+    "wrong_answer_indicators": [
+      "Zara"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded roommate - Zara replaced by Priya after Zara moved in with boyfriend",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Zara from early sessions, Priya moved in later"
+  },
+  {
+    "id": "aisha_q04",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "Is Aisha pursuing any additional qualifications?",
+    "correct_answer": "No — she considered CIMA alongside ACA but dropped it (no bandwidth)",
+    "wrong_answer_indicators": [
+      "Planning to do CIMA alongside ACA"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Retraction - CIMA qualification plan was explicitly cancelled due to no bandwidth",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "CIMA plan then retracted"
+  },
+  {
+    "id": "aisha_q05",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "What health conditions does Aisha have?",
+    "correct_answer": "Iron deficiency anemia — takes ferrous sulfate",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - iron deficiency anemia mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": "Anemia disclosed early"
+  },
+  {
+    "id": "aisha_q06",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "Does Aisha have any upcoming reviews or exams?",
+    "correct_answer": "Annual review April 8, 2026",
+    "wrong_answer_indicators": [
+      "ACA exam March 18",
+      "Fatima's GCSEs August 21"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - ACA exam and Fatima's GCSEs already passed, annual review is upcoming",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "ACA exam March 2025 expired, Fatima GCSEs Aug 2025 expired, annual review April 2026 upcoming"
+  },
+  {
+    "id": "aisha_q07",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "How does Aisha feel about PwC?",
+    "correct_answer": "Conflicted — she originally said she loved it and wanted to make manager, but is now secretly looking at industry jobs due to burnout",
+    "wrong_answer_indicators": [
+      "Loves PwC, wants to make manager in 3 years"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - earlier said loves PwC and wants manager in 3 years, later revealed secretly job searching due to burnout",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "PwC enthusiasm early, secret job search later"
+  },
+  {
+    "id": "aisha_q08",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "What's Aisha's family background?",
+    "correct_answer": "Somali-British, family fled Somalia when she was 3. Grew up in Moss Side, Manchester. Oldest of 6 siblings. First in family to go to university (LSE).",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - core family background facts mentioned across sessions, failure is NOT surfacing them",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": "Siblings, Somalia/Moss Side, and LSE mentioned early"
+  },
+  {
+    "id": "aisha_q09",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "Is Aisha planning to move?",
+    "correct_answer": "She's considered transferring to PwC London for bigger opportunities, but hasn't decided — concerned about rent and distance from family",
+    "wrong_answer_indicators": [
+      "Moving to London"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - PwC London transfer idea should NOT be stated as definitive",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": "London transfer idea mentioned later, still undecided"
+  },
+  {
+    "id": "aisha_q10",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "How many siblings does Aisha have?",
+    "correct_answer": "5 siblings (she's the oldest of 6 total) — ages 24, 22, 19, 16, and 12",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - sibling count mentioned once, failure is NOT surfacing it",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": "Siblings disclosed early"
+  },
+  {
+    "id": "aisha_q11",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "Does Aisha have any past exams or events?",
+    "correct_answer": "ACA exam (March 2025) and Fatima's GCSEs (August 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - ACA exam March 2025 and Fatima's GCSEs August 2025 already passed",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": "ACA exam March 18 2025 expired, Fatima GCSEs August 21 2025 expired"
+  },
+  {
+    "id": "aisha_q12",
+    "persona": "aisha",
+    "group_id": "lifemembench_aisha",
+    "question": "What does Aisha do outside work?",
+    "correct_answer": "Gym (women-only in Rusholme), family time, helps siblings, Netflix, Eid celebrations",
+    "wrong_answer_indicators": [
+      "PureGym Piccadilly"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query requiring category-balanced retrieval across hobbies, family, and preferences",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": "Gym switched later; family and hobbies established across early sessions"
   }
 ]

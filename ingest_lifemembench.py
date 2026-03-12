@@ -1,7 +1,7 @@
 r"""
 ingest_lifemembench.py - Ingest LifeMemBench personas into Neo4j via Graphiti.
 
-Ingests 8 POC personas (35 sessions each, 280 total) into separate group_ids
+Ingests 20 personas (35 sessions each, 700 total) into separate group_ids
 so they stay isolated from the existing LongMemEval graph (group_id=full_234).
 
 Each persona gets: group_id = lifemembench_{short_name}
@@ -16,10 +16,11 @@ Prerequisites:
     - Graphiti installed in editable mode
 
 Usage:
-    python ingest_lifemembench.py --all                 # Ingest + enrich all 8
+    python ingest_lifemembench.py --all                 # Ingest + enrich all 20
     python ingest_lifemembench.py --persona 1_priya     # Single persona
     python ingest_lifemembench.py --enrich-only         # Skip ingestion, just enrich
     python ingest_lifemembench.py --status              # Show progress table
+    python ingest_lifemembench.py --canary elena 3      # Single session canary test
 """
 
 import argparse
@@ -80,14 +81,26 @@ from neo4j import AsyncGraphDatabase
 # ---------------------------------------------------------------------------
 
 POC_PERSONAS = {
-    "1_priya":  "priya",
-    "2_marcus": "marcus",
-    "3_elena":  "elena",
-    "4_david":  "david",
-    "5_amara":  "amara",
-    "6_jake":   "jake",
-    "8_tom":    "tom",
-    "17_omar":  "omar",
+    "1_priya":    "priya",
+    "2_marcus":   "marcus",
+    "3_elena":    "elena",
+    "4_david":    "david",
+    "5_amara":    "amara",
+    "6_jake":     "jake",
+    "7_fatima":   "fatima",
+    "8_tom":      "tom",
+    "9_kenji":    "kenji",
+    "10_rosa":    "rosa",
+    "11_callum":  "callum",
+    "12_diane":   "diane",
+    "13_raj":     "raj",
+    "14_nadia":   "nadia",
+    "15_samuel":  "samuel",
+    "16_lily":    "lily",
+    "17_omar":    "omar",
+    "18_bruna":   "bruna",
+    "19_patrick": "patrick",
+    "20_aisha":   "aisha",
 }
 
 LIFEMEMEVAL_DIR = PROJECT_ROOT / "LifeMemEval"
@@ -117,10 +130,54 @@ PRIORITIZE extracting:
 - User's schedule, plans, and obligations (e.g., "dentist appointment June 12")
 - Changes in user's situation (e.g., "user left Google, joined Anthropic")
 
+HEALTH & MEDICAL (HIGH PRIORITY):
+Extract ALL health conditions, diagnoses, medications, symptoms, allergies, and medical events.
+Include the condition name, any medication names and dosages, and how long the user has had it.
+Examples: "user has generalized anxiety disorder", "user takes sertraline for anxiety",
+"user has atrial fibrillation and takes warfarin", "user has mild hearing loss in left ear
+and wears a hearing aid".
+
+PREFERENCE & SITUATION CHANGES (HIGH PRIORITY):
+When a user mentions switching, replacing, or changing from X to Y, extract BOTH:
+  (a) the new state as a current fact
+  (b) that it replaced the old state
+Use invalid_at on the old fact and valid_at on the new fact.
+Examples: "user quit poker, now goes fishing on Saturday mornings at Sardis Lake",
+"user sold Land Rover Defender, bought Hyundai Ioniq 5",
+"user moved from Alief one-bedroom to Gulfton studio apartment".
+
+RETRACTIONS & ABANDONMENTS (HIGH PRIORITY):
+When a user cancels, abandons, drops, or retracts a previous plan, goal, or commitment,
+extract the retraction as a distinct edge. Preserve the specific thing being retracted.
+Retraction language includes: "I'm done", "it's dead", "forget about it", "not happening",
+"I've abandoned", "I've dropped", "gave up on", "walked away from", "not worth it".
+Extract: (1) what was retracted, (2) that it was abandoned/cancelled, (3) the reason if stated.
+Examples: "user abandoned EV charger side gig — needs journeyman license, insurance too expensive",
+"user dropped NP degree plan at DePaul".
+
+HOBBIES, EXERCISE & LEISURE:
+Extract recreational activities, exercise routines, social activities, and sports.
+Include frequency, location, and any changes (started, stopped, switched).
+Examples: "user started boxing at gym in Bethnal Green, Mon/Wed/Fri at 6:30pm",
+"user goes fishing Saturday mornings at Sardis Lake",
+"user dropped running, switched to boxing".
+
+RESIDENCE & LOCATION:
+Extract where the user lives, any moves, and current vs previous locations.
+Include neighborhood names, apartment details, and reasons for moving.
+Examples: "user moved from Alief to Gulfton studio apartment, $200 cheaper",
+"user lives in the Cotswolds".
+
 DEPRIORITIZE (extract ONLY if directly relevant to user's life):
 - General knowledge about places, landmarks, historical facts
 - Assistant's explanations or recommendations that aren't about the user
 - Facts between two non-user entities
+
+SPECIFICITY (CRITICAL):
+Always extract the MOST SPECIFIC version of a fact. Include proper nouns, brand names,
+model numbers, medication names, neighborhood names, frequencies, and timeframes.
+NEVER summarize "Hyundai Ioniq 5" into "new car" or "sertraline" into "medication"
+or "Gulfton studio" into "new apartment" or "boxing at Bethnal Green" into "exercise".
 
 NUMERIC PRESERVATION (CRITICAL):
 When the user mentions ANY number, quantity, amount, count, time, or measurement, you MUST
@@ -738,6 +795,117 @@ def show_status():
 
 
 # ---------------------------------------------------------------------------
+# Canary mode: ingest a single session and show results
+# ---------------------------------------------------------------------------
+
+# Reverse lookup: short_name -> persona_dir
+_SHORT_TO_DIR = {v: k for k, v in POC_PERSONAS.items()}
+
+
+async def run_canary(short_name: str, session_num: int):
+    """Ingest a single session for one persona and print new edges."""
+
+    if short_name not in _SHORT_TO_DIR:
+        print(f"ERROR: Unknown persona '{short_name}'")
+        print(f"Valid names: {', '.join(sorted(_SHORT_TO_DIR.keys()))}")
+        sys.exit(1)
+
+    persona_dir = _SHORT_TO_DIR[short_name]
+    gid = group_id_for(short_name)
+    session_file = LIFEMEMEVAL_DIR / persona_dir / "sessions" / f"session_{session_num:02d}.json"
+
+    if not session_file.exists():
+        print(f"ERROR: Session file not found: {session_file}")
+        sys.exit(1)
+
+    print(f"{'=' * 60}")
+    print(f"  CANARY: {short_name} session {session_num}")
+    print(f"  Group: {gid}")
+    print(f"  File:  {session_file.name}")
+    print(f"{'=' * 60}")
+
+    with open(session_file, encoding="utf-8") as f:
+        session = json.load(f)
+
+    print(f"  Date:  {session['date']}")
+    print(f"  Topic: {session.get('topic', 'N/A')}")
+    print(f"  Turns: {len(session['turns'])}")
+
+    episodes = build_raw_episodes([session], persona_dir)
+
+    graphiti = get_graphiti_client()
+    print("  Building indices...")
+    await graphiti.build_indices_and_constraints()
+
+    neo4j_uri = os.environ.get('NEO4J_URI', 'bolt://localhost:7687')
+    neo4j_user = os.environ.get('NEO4J_USER', 'neo4j')
+    neo4j_password = os.environ.get('NEO4J_PASSWORD', 'testpassword123')
+    driver = AsyncGraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
+    xai_client = AsyncOpenAI(
+        api_key=os.environ["XAI_API_KEY"],
+        base_url="https://api.x.ai/v1",
+    )
+
+    # Count edges before
+    count_result = await driver.execute_query(
+        "MATCH ()-[e:RELATES_TO]->() WHERE e.group_id = $gid RETURN count(e) AS total",
+        gid=gid,
+    )
+    edges_before = count_result.records[0]["total"]
+    print(f"  Edges before: {edges_before}")
+
+    ingest_ts = time_module.time()
+
+    # Ingest
+    print(f"  Ingesting with enhanced extraction prompt...")
+    t0 = time_module.time()
+    await graphiti.add_episode_bulk(
+        bulk_episodes=episodes,
+        group_id=gid,
+        custom_extraction_instructions=CUSTOM_EXTRACTION_INSTRUCTIONS,
+    )
+    print(f"  Ingestion completed in {format_time(time_module.time() - t0)}")
+
+    # Count edges after
+    count_result = await driver.execute_query(
+        "MATCH ()-[e:RELATES_TO]->() WHERE e.group_id = $gid RETURN count(e) AS total",
+        gid=gid,
+    )
+    edges_after = count_result.records[0]["total"]
+    new_count = edges_after - edges_before
+    print(f"  Edges after:  {edges_after} (+{new_count} new)")
+
+    # Show new edges
+    if new_count > 0:
+        result = await driver.execute_query(
+            """
+            MATCH (src)-[e:RELATES_TO]->(tgt)
+            WHERE e.group_id = $gid AND e.created_at >= datetime({epochMillis: toInteger($ts_ms)})
+            RETURN e.uuid AS uuid, e.fact AS fact,
+                   src.name AS src_name, tgt.name AS tgt_name
+            ORDER BY e.created_at DESC
+            """,
+            gid=gid,
+            ts_ms=ingest_ts * 1000,
+        )
+        print(f"\n  New edges:")
+        for rec in result.records:
+            d = dict(rec)
+            print(f"    [{d['uuid'][:12]}] {d['src_name']} -> {d['tgt_name']}")
+            print(f"      fact: {d['fact']}")
+
+    # Enrich new edges
+    print(f"\n  Enriching edges for {short_name}...")
+    enrich_result = await enrich_persona_edges(persona_dir, driver, xai_client)
+    print(f"  Enrichment: {enrich_result['personal']} personal, "
+          f"{enrich_result['world_knowledge']} WK, {enrich_result['errors']} errors")
+
+    await graphiti.close()
+    await driver.close()
+    print(f"\n  Canary complete.")
+
+
+# ---------------------------------------------------------------------------
 # Main orchestration
 # ---------------------------------------------------------------------------
 
@@ -827,21 +995,28 @@ async def run_pipeline(personas: list[str], enrich_only: bool):
 
 async def main():
     parser = argparse.ArgumentParser(
-        description="LifeMemBench ingestion pipeline — 8 POC personas into Neo4j/Graphiti"
+        description="LifeMemBench ingestion pipeline — 20 personas into Neo4j/Graphiti"
     )
     parser.add_argument("--all", action="store_true",
-                        help="Ingest all 8 POC personas")
+                        help="Ingest all 20 personas")
     parser.add_argument("--persona", type=str, metavar="DIR_NAME",
                         help="Single persona directory name (e.g., 1_priya)")
     parser.add_argument("--enrich-only", action="store_true",
                         help="Skip ingestion, run edge enrichment only")
     parser.add_argument("--status", action="store_true",
                         help="Show progress for all personas")
+    parser.add_argument("--canary", nargs=2, metavar=("NAME", "SESSION"),
+                        help="Ingest one session for one persona (e.g., --canary elena 3)")
 
     args = parser.parse_args()
 
     if args.status:
         show_status()
+        return
+
+    if args.canary:
+        name, sess = args.canary
+        await run_canary(name, int(sess))
         return
 
     if args.persona:

@@ -30,6 +30,11 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Fix Windows console encoding for Unicode characters in LLM output
+if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 PROJECT_ROOT = Path(__file__).parent
 
 
@@ -54,14 +59,26 @@ from neo4j import AsyncGraphDatabase
 # ---------------------------------------------------------------------------
 
 POC_PERSONAS = {
-    "1_priya":  "priya",
-    "2_marcus": "marcus",
-    "3_elena":  "elena",
-    "4_david":  "david",
-    "5_amara":  "amara",
-    "6_jake":   "jake",
-    "8_tom":    "tom",
-    "17_omar":  "omar",
+    "1_priya":    "priya",
+    "2_marcus":   "marcus",
+    "3_elena":    "elena",
+    "4_david":    "david",
+    "5_amara":    "amara",
+    "6_jake":     "jake",
+    "7_fatima":   "fatima",
+    "8_tom":      "tom",
+    "9_kenji":    "kenji",
+    "10_rosa":    "rosa",
+    "11_callum":  "callum",
+    "12_diane":   "diane",
+    "13_raj":     "raj",
+    "14_nadia":   "nadia",
+    "15_samuel":  "samuel",
+    "16_lily":    "lily",
+    "17_omar":    "omar",
+    "18_bruna":   "bruna",
+    "19_patrick": "patrick",
+    "20_aisha":   "aisha",
 }
 
 ARTIFACTS_DIR = PROJECT_ROOT / "LifeMemEval" / "artifacts"
