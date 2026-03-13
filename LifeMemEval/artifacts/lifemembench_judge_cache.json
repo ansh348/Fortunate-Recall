@@ -44560,5 +44560,271 @@
     "reasoning": "The fact describes a social/perceptual phenomenon in meetings with European suppliers regarding the company name Al-Rashidi Interiors. It does not address whether Fatima travels for work, nor does it contain any information about her flying to Dubai or managing things remotely.",
     "question_id": "fatima_q07",
     "edge_uuid": "8c1da8e3-7b58-4c4d-8869-e9d498d0d078"
+  },
+  "083e37bd8dfe6bcb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a custody arrangement and has no relevance to Omar's work or income sources.",
+    "question_id": "omar_q08",
+    "edge_uuid": "e64f3cb2-0163-419b-8be1-34e9d9c94d33"
+  },
+  "49bab9221f651c5c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Tanaka Foods dropping the user as a client is unrelated to any upcoming deadlines. It does not reference the Tokyo Design Week submission deadline, nor does it contain the stale indicators (portfolio review Feb 20 or izakaya anniversary April 12).",
+    "question_id": "kenji_q05",
+    "edge_uuid": "d2b46936-03ab-4930-a8f8-37745785b968"
+  },
+  "9ceaf8ad455bbc2e": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about knowing 200 kanji is completely unrelated to any deadlines or upcoming events.",
+    "question_id": "kenji_q05",
+    "edge_uuid": "4dd3cc0a-ed90-4879-a639-b4bbb9aecae9"
+  },
+  "4c68eb2427b065ba": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about David knowing coaches at Portland-area schools is unrelated to parent events or parent-teacher conferences. It neither supports the correct answer nor contains the wrong/stale indicator.",
+    "question_id": "david_q11",
+    "edge_uuid": "380bd5e4-c530-4bae-a707-73c5d785eb77"
+  },
+  "74832a1e2856c118": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions David planning to return to a student with questions, but does not reference parent-teacher conferences, March 12, or any parent events. It neither supports the correct answer nor contains the wrong/stale indicator.",
+    "question_id": "david_q11",
+    "edge_uuid": "bcf9fe7e-9caa-4166-8a35-4b3d4db76844"
+  },
+  "b90c85e5b07d3f23": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's contribution to a group report and has no relevance to Lily's upcoming trips or deadlines.",
+    "question_id": "lily_q05",
+    "edge_uuid": "7e9e292c-d832-411f-b529-f2bdfef96b4e"
+  },
+  "9deea3fb0040e6ac": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about considering a masters degree is about academic/future plans, not about what Lily does outside of uni. It doesn't cover any of the relevant activities like barista work, coffee culture, climate activism, indie gigs, thrift shopping, or spending time with Mika and Nai Nai.",
+    "question_id": "lily_q10",
+    "edge_uuid": "b0ac59ec-1f38-44e9-939e-b248401283b4"
+  },
+  "43f9093d0aa69997": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only mentions that Simran knows someone from a school who has a contact at a car dealership. It provides no information about Simran's job role or title, neither confirming the current admin coordinator role nor indicating the outdated teacher role.",
+    "question_id": "raj_q03",
+    "edge_uuid": "a8d7e3c0-c55e-40eb-b38d-4a4be8068871"
+  },
+  "43ab683b1394eaf5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "This fact is about Anya (a friend) and pelmeni folding. It contains no information about Nadia's Gazette review or mother's visit, so it neither supports the correct answer nor contains wrong/stale indicators.",
+    "question_id": "nadia_q11",
+    "edge_uuid": "bc3d01f7-bc09-4e89-9db9-9c9845e8b148"
+  },
+  "5ab90c7dffcd3c2d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a Tokyo trip of about 10 days but does not contain the specific date (March 20, 2026) needed to answer when the conference is. AV8 requires numeric preservation, and the key date is absent.",
+    "question_id": "priya_q14",
+    "edge_uuid": "988d47cb-c749-4b2d-85e6-9803bdcad500"
+  },
+  "fbf26a92c9740a00": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Sofia being the user's niece is completely unrelated to Rosa's retirement plans.",
+    "question_id": "rosa_q08",
+    "edge_uuid": "81daf14e-699b-40ad-8888-0a004bc4eba4"
+  },
+  "e1bfb51ddada17ef": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Rosa organizing a Peruvian Independence Day event and assigning Carlos a role. It contains no information about Rosa's judicial background, education, or immigration history.",
+    "question_id": "rosa_q12",
+    "edge_uuid": "6b92087c-e560-4cb0-b39b-b8081d622314"
+  },
+  "82c23e6bae6e1827": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cleaning products and has no relevance to Rosa's judicial background, education, or immigration history.",
+    "question_id": "rosa_q12",
+    "edge_uuid": "350a38ee-5330-43da-8560-454b52ade23c"
+  },
+  "32ee82dfb51032f1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Rosa's cultural/cooking plans for Peruvian Independence Day and contains no information about her judicial background, education, or immigration history.",
+    "question_id": "rosa_q12",
+    "edge_uuid": "e84a3b41-4c92-4df8-8d23-084c24a296c7"
+  },
+  "0960f36ae0493bd3": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references Peruvian Independence Day and traditional Peruvian dishes (aji sauce, leche de tigre for ceviche), which supports Rosa's Peruvian background. It's a partial match confirming her cultural/ethnic identity as Peruvian.",
+    "question_id": "rosa_q09",
+    "edge_uuid": "e84a3b41-4c92-4df8-8d23-084c24a296c7"
+  },
+  "7fdbf7316d3b5aba": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Roberto bringing drinks to a family reunion and contains no information about Rosa's family background, immigration history, husband, or education.",
+    "question_id": "rosa_q09",
+    "edge_uuid": "936168bf-128c-4cc3-a7bd-d8baa321d1e2"
+  },
+  "8d7c8b40f6c94200": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a 'young Latina attorney' and a mentorship program through the bar association, but contains none of the specific judicial background details in the correct answer \u2014 no mention of family court judge, Eleventh Judicial Circuit, Georgetown JD, or immigration from Lima. It is unrelated to Rosa's judicial background.",
+    "question_id": "rosa_q12",
+    "edge_uuid": "9a693dd3-4eaf-4ca8-8371-2ccf438454ff"
+  },
+  "0c86cb479ca5d31b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "ERROR: Extra data: line 2 column 1 (char 372)",
+    "question_id": "jake_q04",
+    "edge_uuid": "045480c9-9305-4fb2-bfe9-b3e90b23f3e8"
+  },
+  "e158cea4313a7201": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes sales volume (30-40 tires a week) but does not address the financial health of the business, growth status, or hiring of a fourth employee. It neither supports the correct answer nor contains the wrong/stale indicator about barely breaking even.",
+    "question_id": "marcus_q08",
+    "edge_uuid": "e24688ac-1f32-444c-94c1-def7889cfa4d"
+  },
+  "cb5facc0f8e662e7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references all-terrain tires delivered last month, which is a different item than the alignment rack. It neither confirms nor contradicts the correct answer about no current alignment rack deliveries, and does not contain the specific wrong indicator about the April 22 alignment rack delivery.",
+    "question_id": "marcus_q10",
+    "edge_uuid": "38af3f15-7a7f-40c7-b031-7e71d341eed2"
+  },
+  "767b923539503333": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only describes the shop's back door area as an inventory storage location. It contains no information about deliveries, the alignment rack, or any delivery dates. It neither supports the correct answer nor contains any wrong/stale indicators.",
+    "question_id": "marcus_q10",
+    "edge_uuid": "d97b319f-3de1-4347-b015-ace8d88e0334"
+  },
+  "65ded51d47d865cd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about the shop having four bays is completely unrelated to equipment deliveries or the alignment rack. It neither supports the correct answer nor contains any wrong indicators.",
+    "question_id": "marcus_q10",
+    "edge_uuid": "10a5be89-44cc-4287-9f3d-894c087d07ec"
+  },
+  "2d37fc1fb8191203": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is entirely unrelated to Aisha or her qualifications. It concerns a different person (Yusuf) and a different topic (behavioural issues at school).",
+    "question_id": "aisha_q04",
+    "edge_uuid": "cd9fdc22-c705-415e-a82e-e5100ff14868"
+  },
+  "de3d2a179d728427": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions the shop owner expects to be busy with summer coming up, which is a positive but vague indicator. It does not specifically support the correct answer about growing revenue or hiring a fourth employee, nor does it contain the wrong indicator about barely breaking even.",
+    "question_id": "marcus_q08",
+    "edge_uuid": "70111440-7013-458b-bb08-e10f8a402116"
+  },
+  "cf02ca41018333a5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a client presentation on Thursday, which is unrelated to reviews or exams. It doesn't support the correct answer (Annual review April 8, 2026) and doesn't match any of the wrong/stale indicators.",
+    "question_id": "aisha_q06",
+    "edge_uuid": "34850680-1738-4a51-9205-057e95f11811"
+  },
+  "fae243638079633d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about texting Priya for dinner plans and is completely irrelevant to the question about upcoming reviews or exams.",
+    "question_id": "aisha_q06",
+    "edge_uuid": "ca40b3d2-d3dd-4f03-bec5-d2cd71aa8462"
+  },
+  "d0614fcaefc63ecb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Hassan, the user's sibling, and has no information about who Aisha lives with. It neither supports the correct answer (Priya) nor contains the wrong indicator (Zara).",
+    "question_id": "aisha_q03",
+    "edge_uuid": "5d0ca7ce-3af8-493d-8a5a-6d048f5858e9"
+  },
+  "0effa95be1bd0783": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a different person (Amina, not Aisha) and contains no information about qualifications, CIMA, or ACA. It is entirely irrelevant to the question.",
+    "question_id": "aisha_q04",
+    "edge_uuid": "7d9b69c1-e520-404d-942f-b60b778716e0"
+  },
+  "5c6ef8bf7d0f9748": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about doing leg press contains no information about health conditions, iron deficiency anemia, or ferrous sulfate supplementation.",
+    "question_id": "aisha_q05",
+    "edge_uuid": "7bbf17a9-0598-4da0-9db0-813a4c42963d"
+  },
+  "cf0e46887c02eca0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Romo Fabrics as a textile supplier and has no relevance to the question about launching new products or brands (specifically the Oud & Geometry fragrance line).",
+    "question_id": "fatima_q06",
+    "edge_uuid": "a1dfb8ed-0ffd-48d5-8294-7223e27ce1fc"
+  },
+  "608dc4025d75e00b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Hassan relocating to Riyadh and has no relevance to Fatima's company name.",
+    "question_id": "fatima_q08",
+    "edge_uuid": "e0d70663-28a3-4206-8bc0-cc17fc10261c"
+  },
+  "1846a84258b13328": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about setting up Fatima on Seneca for AQA sciences revision, which is loosely related to Fatima's GCSEs but doesn't mention any specific dates or Aisha's own upcoming reviews/exams. It neither supports the correct answer (annual review April 8, 2026) nor explicitly contains the wrong/stale indicators (ACA exam March 18 or Fatima's GCSEs August 21 date).",
+    "question_id": "aisha_q06",
+    "edge_uuid": "13b94189-1d4f-41e8-954f-26875b2c9e28"
+  },
+  "9f4b1d02975bc59a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a comment from a senior designer at Al-Rashidi Interiors regarding the studio's reflection of Fatima's work identity. It contains no logistical event information and doesn't reference Salone del Mobile, the Al-Faisal presentation, or Omar's science fair.",
+    "question_id": "fatima_q05",
+    "edge_uuid": "5104a126-492d-4186-b1b5-bdd0f89820f5"
+  },
+  "cc4b1d0c0006c144": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only mentions that PwC pays for the user's ACA qualification \u2014 a neutral employment benefit. It neither reflects Aisha's conflicted feelings/burnout/industry job search (correct answer) nor explicitly states she loves PwC or wants to make manager (wrong indicators).",
+    "question_id": "aisha_q07",
+    "edge_uuid": "e864099f-b15a-4368-b628-77a19ebe62bb"
+  },
+  "52c51e7397013353": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions siblings exist but provides no count or specific information about how many siblings Aisha has. The gathering size of 25-30 people includes many other family members, so it cannot be used to infer the number of siblings. The fact is related but does not support the correct answer.",
+    "question_id": "aisha_q10",
+    "edge_uuid": "61d7d34a-17cc-49d9-99e7-1c291612d1bd"
+  },
+  "fa5e4ff7c9d19e4f": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact provides the father's name (Al-Rashidi), which is a related family detail. Under AV3_stable_identity, partial/related matches count, and this contributes to understanding Fatima's family background. No wrong indicators are present.",
+    "question_id": "fatima_q09",
+    "edge_uuid": "020487f1-3168-48e9-8dd5-56628a1230d0"
+  },
+  "7be7ddb8eb6160a1": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references an Eid gathering, which partially supports the 'Eid celebrations' component of the correct answer. Under AV5 rules, partial coverage counts.",
+    "question_id": "aisha_q12",
+    "edge_uuid": "2db021fc-7533-44a1-84fc-14e0a3bd23e8"
+  },
+  "7f7dbda94a19e65d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Yusuf's form tutor and has no relevance to Aisha or her siblings.",
+    "question_id": "aisha_q10",
+    "edge_uuid": "7e66f9c5-df8f-4ac2-be2a-7a34daa6d747"
   }
 }

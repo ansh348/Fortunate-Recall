@@ -288,6 +288,142 @@ def _edge_attrs_to_fact_node(attrs: dict, edge_uuid: str) -> FactNode:
 
 
 # ===========================================================================
+# Section 3b: Text-based date extraction for expired-logistics filtering
+# ===========================================================================
+
+_MONTH_NAMES = (
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+)
+_MONTH_RE = "|".join(_MONTH_NAMES)
+_ORD = r"(?:st|nd|rd|th)?"
+
+# Priority-ordered date extraction patterns (first match wins).
+_DATE_PATTERNS: list[tuple[re.Pattern, str]] = [
+    # 1. ISO: 2025-09-03
+    (re.compile(r"\b(\d{4})-(\d{2})-(\d{2})\b"), "iso"),
+    # 2. Month Day, Year: "March 22, 2025"
+    (re.compile(
+        rf"\b({_MONTH_RE})\s+(\d{{1,2}}){_ORD},?\s+(\d{{4}})\b", re.I,
+    ), "mdy_full"),
+    # 3. Day Month Year (British): "10 February 2025"
+    (re.compile(
+        rf"\b(\d{{1,2}}){_ORD}\s+({_MONTH_RE}),?\s+(\d{{4}})\b", re.I,
+    ), "dmy_full"),
+    # 4. Month + Day (no year): "March 20", "August 12"
+    (re.compile(rf"\b({_MONTH_RE})\s+(\d{{1,2}}){_ORD}\b", re.I), "month_day"),
+    # 5. Day + Month (no year, British): "12th March"
+    (re.compile(rf"\b(\d{{1,2}}){_ORD}\s+({_MONTH_RE})\b", re.I), "day_month"),
+    # 6. "back in August" / "last March" / "this past June"
+    (re.compile(
+        rf"\b(?:back\s+in|last|this\s+past)\s+({_MONTH_RE})\b", re.I,
+    ), "contextual_month"),
+]
+
+# 7. Relative: "two weeks later", "a couple months from now"
+_RELATIVE_PATTERN = re.compile(
+    r"\b(a\s+couple(?:\s+of)?|a\s+few|several|\d+|a|one|two|three|four|five|six)"
+    r"\s+(day|week|month)s?"
+    r"\s+(later|from\s+now|out|away|after(?:\s+that)?)\b",
+    re.I,
+)
+
+_WORD_TO_NUM: dict[str, int] = {
+    "a": 1, "one": 1, "two": 2, "three": 3, "four": 4,
+    "five": 5, "six": 6, "several": 4,
+}
+_UNIT_TO_DAYS: dict[str, int] = {"day": 1, "week": 7, "month": 30}
+
+
+def _resolve_year(month: int, day: int, created_at_ts: float, t_now: float) -> int:
+    """Pick the most likely year for a month-day pair without an explicit year.
+
+    Heuristic: the event most likely falls within ~6 months after the fact's
+    creation date (facts describe upcoming events at time of writing).
+    If the resulting date is >6 months *before* created_at, bump year +1.
+    """
+    created_dt = datetime.fromtimestamp(created_at_ts, tz=timezone.utc) if created_at_ts > 0 else \
+        datetime.fromtimestamp(t_now, tz=timezone.utc)
+    year = created_dt.year
+    try:
+        candidate = datetime(year, month, min(day, 28), tzinfo=timezone.utc)
+    except ValueError:
+        return year
+    if (candidate - created_dt).days < -180:
+        year += 1
+    return year
+
+
+def _extract_event_date(
+    fact_text: str,
+    created_at_ts: float,
+    t_now: float,
+) -> datetime | None:
+    """Extract the most likely event/deadline date from fact text.
+
+    Returns a UTC datetime if a date signal is found, else None.
+    Searches in priority order: ISO > full date > month+day > contextual > relative.
+    """
+    fact_lower = fact_text.lower()
+
+    for pattern, kind in _DATE_PATTERNS:
+        m = pattern.search(fact_lower)
+        if not m:
+            continue
+        try:
+            if kind == "iso":
+                return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                                tzinfo=timezone.utc)
+            if kind == "mdy_full":
+                mo = _MONTH_NAMES.index(m.group(1).lower()) + 1
+                return datetime(int(m.group(3)), mo, int(m.group(2)),
+                                tzinfo=timezone.utc)
+            if kind == "dmy_full":
+                mo = _MONTH_NAMES.index(m.group(2).lower()) + 1
+                return datetime(int(m.group(3)), mo, int(m.group(1)),
+                                tzinfo=timezone.utc)
+            if kind == "month_day":
+                mo = _MONTH_NAMES.index(m.group(1).lower()) + 1
+                day = int(m.group(2))
+                yr = _resolve_year(mo, day, created_at_ts, t_now)
+                return datetime(yr, mo, min(day, 28), tzinfo=timezone.utc)
+            if kind == "day_month":
+                mo = _MONTH_NAMES.index(m.group(2).lower()) + 1
+                day = int(m.group(1))
+                yr = _resolve_year(mo, day, created_at_ts, t_now)
+                return datetime(yr, mo, min(day, 28), tzinfo=timezone.utc)
+            if kind == "contextual_month":
+                mo = _MONTH_NAMES.index(m.group(1).lower()) + 1
+                day = 15  # mid-month default
+                # "back in <month>" is explicitly past relative to creation
+                if "back in" in fact_lower:
+                    c_dt = datetime.fromtimestamp(
+                        created_at_ts if created_at_ts > 0 else t_now, tz=timezone.utc)
+                    yr = c_dt.year if mo < c_dt.month else c_dt.year - 1
+                else:
+                    yr = _resolve_year(mo, day, created_at_ts, t_now)
+                return datetime(yr, mo, day, tzinfo=timezone.utc)
+        except (ValueError, IndexError):
+            continue
+
+    # Fallback: relative temporal markers ("two weeks later")
+    m = _RELATIVE_PATTERN.search(fact_lower)
+    if m and created_at_ts > 0:
+        qty_raw = m.group(1).lower().strip()
+        unit = m.group(2).lower()
+        # Normalise quantity
+        cleaned = qty_raw.replace("a couple of", "2").replace("a couple", "2").replace("a few", "3")
+        try:
+            n = int(cleaned)
+        except ValueError:
+            n = _WORD_TO_NUM.get(cleaned, _WORD_TO_NUM.get(cleaned.split()[0], 2))
+        offset_secs = n * _UNIT_TO_DAYS.get(unit, 7) * 86400
+        return datetime.fromtimestamp(created_at_ts + offset_secs, tz=timezone.utc)
+
+    return None
+
+
+# ===========================================================================
 # Section 4: Neo4j setup + per-persona loading
 # ===========================================================================
 
@@ -768,6 +904,73 @@ def filter_retracted_candidates(
         filtered.append(c)
 
     return filtered, len(removed_facts)
+
+
+# ---------------------------------------------------------------------------
+# Expired-logistics pre-filter (AV2 support)
+# ---------------------------------------------------------------------------
+
+# Categories eligible for date-based expiry filtering.
+# Only ephemeral/time-bound categories — protects identity, relational,
+# financial, preferences, and other stable categories from accidental removal.
+# HEALTH_WELLBEING is included because medical *appointments* (labs, physicals)
+# are logistical despite being health-related; chronic conditions are safe
+# because they lack parseable event dates.
+_EXPIRY_ELIGIBLE_CATEGORIES = frozenset({
+    "LOGISTICAL_CONTEXT",
+    "OBLIGATIONS",
+    "HEALTH_WELLBEING",
+})
+
+
+def filter_expired_candidates(
+    candidates: list[Candidate],
+    edge_cache: dict[str, dict],
+    t_now: float,
+    buffer_days: int = 7,
+) -> tuple[list[Candidate], int]:
+    """Remove candidates whose fact text contains a date that has already passed.
+
+    Only targets LOGISTICAL_CONTEXT, OBLIGATIONS, and HEALTH_WELLBEING
+    categories. The regex-based date extraction acts as a second guard,
+    so facts without parseable dates (e.g. chronic conditions) are never
+    touched.
+
+    Args:
+        candidates: Pre-rerank candidate pool.
+        edge_cache: Full persona edge cache with enriched attributes.
+        t_now: Unix timestamp of evaluation reference time.
+        buffer_days: Grace period — fact is expired only if its extracted
+            event date is more than *buffer_days* before t_now.
+
+    Returns:
+        (filtered_candidates, num_removed)
+    """
+    cutoff = datetime.fromtimestamp(t_now - buffer_days * 86400, tz=timezone.utc)
+
+    filtered: list[Candidate] = []
+    removed = 0
+    for c in candidates:
+        attrs = edge_cache.get(c.uuid)
+        if attrs is None:
+            filtered.append(c)
+            continue
+
+        cat = attrs.get("primary_category", "")
+        if cat not in _EXPIRY_ELIGIBLE_CATEGORIES:
+            filtered.append(c)
+            continue
+
+        created_at_ts = attrs.get("created_at_ts", 0.0) or 0.0
+        event_date = _extract_event_date(c.fact, created_at_ts, t_now)
+
+        if event_date is not None and event_date < cutoff:
+            removed += 1
+            continue  # expired — drop from pool
+
+        filtered.append(c)
+
+    return filtered, removed
 
 
 # ===========================================================================
@@ -1384,6 +1587,12 @@ async def evaluate_persona(
                 pool, retraction_removed = filter_retracted_candidates(pool, edge_cache)
                 if retraction_removed and verbose:
                     print(f"        >> Retraction filter ({q['id']}): removed {retraction_removed} candidates")
+
+            # Filter expired logistics/obligations before reranking (AV2 support)
+            if apply_supersession:
+                pool, expiry_removed = filter_expired_candidates(pool, edge_cache, t_now)
+                if expiry_removed and verbose:
+                    print(f"        >> Expiry filter ({q['id']}): removed {expiry_removed} candidates")
 
             total_pool_size += len(pool)
 
