@@ -1,0 +1,74 @@
+{
+  "session_id": 33,
+  "persona": "aroha_tane",
+  "date": "2026-04-10",
+  "type": "filler",
+  "topic": "help editing conference presentation slides",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay i need your help with something completely different from what i usually come to you for. i've got a presentation to give at a conference and my slides are a mess. i'm a midwife not a designer and it shows"
+    },
+    {
+      "role": "assistant",
+      "content": "Happy to help with that! Presentation design is more about clarity than design skill, so we can definitely sort it out. What's the presentation about, and what stage are your slides at — do you have a draft with too much on it, or are you starting from scratch?"
+    },
+    {
+      "role": "user",
+      "content": "i've got a draft and the problem is exactly what you said — too much on every slide. i basically wrote my whole talk on the slides and now each one has like three paragraphs of text and it looks awful. the content is good though, it's about integrating cultural practices into maternity care and i know the material inside out. i just don't know how to make it look like a proper presentation instead of an essay on a screen eh"
+    },
+    {
+      "role": "assistant",
+      "content": "That's actually the most common presentation mistake and the good news is it's easy to fix because the hard part — having good content — is already done. You just need to restructure what's there.\n\nThe core principle is: **slides support your voice, they don't replace it.** If everything you're going to say is written on the slide, the audience reads ahead and stops listening to you. Your slides should be signposts, not scripts.\n\nHere's the approach:\n\n1. **One idea per slide.** If a slide has three paragraphs, it's probably three slides.\n2. **Maximum 6 lines of text per slide, maximum 6 words per line.** This is called the 6x6 rule and it's a good guardrail.\n3. **Use your speaker notes** for the detail. Everything you took off the slides goes into the notes section so you have it as a reference without putting it on screen.\n4. **Visual anchors help.** A relevant image, a simple diagram, or even just a key quote pulled out in large text gives the audience something to look at while they listen to you.\n\nHow many slides do you have right now, and how long is the talk?"
+    },
+    {
+      "role": "user",
+      "content": "twenty-two slides for a twenty-minute talk. so roughly one a minute which i thought was about right but they're all so dense that i'm spending two or three minutes on each one and either rushing at the end or running over time when i practice"
+    },
+    {
+      "role": "assistant",
+      "content": "Twenty-two slides for twenty minutes is actually a good number — the problem isn't quantity, it's that each slide is trying to do too much and that slows you down as you try to cover everything on screen.\n\nHere's what I'd suggest for the restructure:\n\n**Step 1: Identify your key messages.** For a twenty-minute talk you can realistically land 3-5 main points. What are the big things you want the audience to walk away remembering?\n\n**Step 2: Group your slides under those messages.** Each group of slides should build toward one key point.\n\n**Step 3: Strip each slide back.** For every slide, ask: \"What's the ONE thing this slide says?\" Write that as a short headline or key phrase. Move the rest to speaker notes.\n\n**Step 4: Add breathing room.** Include a title slide, an outline slide at the start, transition slides between sections, and a closing slide. These don't have content — they give the audience (and you) a moment to reset.\n\nCan you tell me your 3-5 main points? I can help you build a structure from there."
+    },
+    {
+      "role": "user",
+      "content": "okay so the main points are — one, cultural practices in maternity care aren't optional extras, they're central to wellbeing for māmā and pēpi. two, the current system often treats cultural needs as something to accommodate rather than something to build care around. three, practical examples of how practitioners can integrate tikanga into their everyday practice without needing to be cultural experts. four, the outcomes when we get it right — better engagement, better trust, better health results. and five, what needs to change at a system level to make this the norm not the exception"
+    },
+    {
+      "role": "assistant",
+      "content": "Those five points tell a clear and compelling story. You've got a natural arc:\n\n1. **Why it matters** — cultural practices are central, not peripheral\n2. **What's going wrong** — the system treats culture as accommodation\n3. **How to do it** — practical integration examples\n4. **The evidence** — outcomes when it's done well\n5. **The call to action** — systemic change needed\n\nThat's a powerful progression: importance → problem → solution → proof → change. An audience can follow that without getting lost.\n\nHere's a rough slide structure for 20 minutes:\n\n- **Slide 1:** Title slide (your name, talk title, conference name)\n- **Slide 2:** Opening question or statement that hooks the audience\n- **Slides 3-5:** Point 1 — why cultural practices are central (2-3 slides)\n- **Slide 6:** Transition — \"So if it matters this much, why isn't it happening?\"\n- **Slides 7-9:** Point 2 — current system failures (2-3 slides)\n- **Slide 10:** Transition — \"What does it look like when we do it differently?\"\n- **Slides 11-15:** Point 3 — practical examples (this is your biggest section, give it space)\n- **Slides 16-18:** Point 4 — outcomes and evidence (2-3 slides)\n- **Slides 19-21:** Point 5 — system-level changes needed\n- **Slide 22:** Closing slide — final statement or whakatauki, your contact details\n\nThat's 22 slides, same as you have now, but distributed intentionally. Does that structure feel right, or does one section need more or less space?"
+    },
+    {
+      "role": "user",
+      "content": "that structure is so much better than what i've got. the practical examples section definitely needs the most space because that's where the real value is for the audience — they're practitioners, they want to know what they can actually do differently on monday morning. i think five slides for that section is right. the outcomes section could probably be tighter, maybe two slides with clear data points rather than three slides of waffle"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly right. Practitioners want actionable takeaways, so the practical section is where you earn their attention. Five slides there gives you room to show real examples — maybe one example per slide with a brief description and a photo or diagram if you have one.\n\nFor the outcomes section, two tight slides works well:\n- **Slide 1:** The quantitative evidence — key statistics or study findings, presented as 2-3 bullet points with numbers. Clean, credible, visual if you can use a simple chart.\n- **Slide 2:** The qualitative evidence — a quote from a māmā or whānau member about their experience, or a brief story that illustrates the impact. Something that hits emotionally after the data hits intellectually.\n\nData then story is a powerful one-two punch in a presentation.\n\nNow for the practical work of stripping your current slides: do you want to work through a specific slide together so you can see the process, and then apply it to the rest yourself?"
+    },
+    {
+      "role": "user",
+      "content": "yes please. okay so one of my slides for the practical examples section currently says — and i'm reading it off the screen here — \"When a whānau requests karakia before or during birth, practitioners should create space for this by pausing non-urgent clinical tasks, dimming lights if appropriate, and allowing the whānau to lead. This does not require the practitioner to participate in or understand the karakia, only to respect the space. In practice this means communicating with your team beforehand that there may be moments of pause during the birth, and ensuring that the birth plan includes specific cultural practices so they are anticipated rather than reacted to.\" that's all on one slide"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, that's great content but it's doing three things at once: the practice itself, the practitioner's role, and the preparation. Let's turn it into one clean slide with the detail in your speaker notes.\n\n**On the slide:**\n\nHeading: *Creating space for karakia*\n\nThree short bullet points:\n- Pause non-urgent tasks, let whānau lead\n- You don't need to participate — just respect the space\n- Plan for it: include cultural practices in the birth plan\n\n**In your speaker notes:**\nThe full paragraph you just read. That's what you *say* while the audience looks at those three short prompts.\n\nSee the difference? The slide gives them the skeleton. Your voice gives them the meaning. When they look at the slide, they get three clear ideas in two seconds. When they listen to you, they get the nuance and the context.\n\nThe audience remembers what they hear from a passionate speaker far better than what they read off a screen. And you clearly know this material — you don't need to read it, you just need a prompt."
+    },
+    {
+      "role": "user",
+      "content": "oh that's so much better. i can see exactly how to do this now — pull out the key action, strip it down to a few words, and then talk around it instead of reading it. i'm going to go through every slide tonight and do this. it's going to take ages but the presentation will be so much stronger for it. one last question — the closing slide. i want to end with something that stays with people, not just a generic thank you slide. any ideas?"
+    },
+    {
+      "role": "assistant",
+      "content": "A strong closing slide is the last impression you leave, so it's worth getting right. A few options that work well for this kind of talk:\n\n**Option 1: A whakatauki (proverb) that captures your message.** If there's one that speaks to the heart of what you're saying about cultural care, put it up in te reo with the English translation underneath. It lands differently than a generic closing — it embodies the very thing you're advocating for.\n\n**Option 2: A single powerful sentence.** Your own words, not a quote. Something that distils the whole talk into one line the audience takes with them. Think about what you'd say to a colleague in one sentence if you could only say one thing.\n\n**Option 3: A question.** End with something that makes them think rather than something that wraps things up neatly. \"What would your practice look like if cultural care was the starting point, not an afterthought?\" Something like that puts the ball in their court.\n\nWhichever you choose, put your name and contact details at the bottom so people can find you afterwards. Which of those feels most like you?"
+    },
+    {
+      "role": "user",
+      "content": "the whakatauki for sure. i've got one that my nan used to say that fits perfectly and it would mean a lot to me to share it in that context. i'll put it on the closing slide with the translation and my details underneath. okay i feel so much better about this whole thing now. i went from dreading the slides to actually being excited about getting them right tonight. thanks for walking me through it, i needed someone to show me the approach and now i can see how to do every slide"
+    },
+    {
+      "role": "assistant",
+      "content": "Using your nan's whakatauki as the closing — that's going to be the most powerful slide in the whole presentation and you didn't even need a designer for it. Just her words on the screen and yours in the room. The audience will feel the difference between a talk that's performed and one that's lived, and yours is lived through and through. Strip those slides back tonight, trust your voice to carry the rest, and practice it once or twice out loud so you hear yourself telling the story instead of reading it. You've got a really important kōrero to share with that room. The content was always strong — now the delivery will match it. Kia kaha with the editing tonight."
+    }
+  ]
+}

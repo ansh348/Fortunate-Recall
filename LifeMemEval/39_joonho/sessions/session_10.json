@@ -1,0 +1,58 @@
+{
+  "session_id": 10,
+  "persona": "park_joonho",
+  "date": "2025-02-12",
+  "type": "filler",
+  "topic": "go problem from a Lee Sedol game — analyzing a tesuji",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have been replaying a game and I encountered a move that I cannot fully understand. It is from Lee Sedol's game against Gu Li at the 2014 Samsung Cup final — game three, I believe. In the middle game, Lee played a shoulder hit that appeared to sacrifice influence for what seemed like very little. But the position collapsed in his favor within fifteen moves. Could you help me understand the logic of that exchange?"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a fascinating game to study. Lee Sedol and Gu Li had one of the great rivalries in modern go, and their Samsung Cup encounters were particularly intense.\n\nThe shoulder hit you're describing — if it's the move I'm thinking of — is a classic Lee Sedol technique. He was famous for plays that looked small or even passive but contained deep tactical purpose. The key to understanding these moves is usually not what they gain directly, but what they *deny* the opponent.\n\nA shoulder hit typically does several things simultaneously:\n1. It reduces the opponent's potential for expansion in that area\n2. It creates aji (latent possibilities) for future use\n3. It forces the opponent to respond in a specific way, limiting their choices\n\nCould you describe the surrounding position? Specifically, where was Gu Li's thickness, and what was Lee trying to neutralize? That context would help me explain why the sacrifice of influence was actually an exchange in Lee's favor."
+    },
+    {
+      "role": "user",
+      "content": "Gu Li had built substantial thickness on the upper side — a wall of five or six stones facing the center. The conventional wisdom would be to stay away from such thickness and play elsewhere. But Lee approached directly with the shoulder hit at what I estimate was around the 10-4 point, pressing low against the wall. It seemed to violate the proverb: do not approach thickness. Yet within the sequence that followed, Gu Li's wall became overconcentrated and Lee's thin stones connected underneath to live, turning the wall into wasted potential."
+    },
+    {
+      "role": "assistant",
+      "content": "This is a perfect example of why Lee Sedol was so difficult to play against. What he did violates the surface reading of \"do not approach thickness,\" but actually follows a deeper principle: **thick stones that cannot be used efficiently are a liability, not an asset.**\n\nHere's the logic:\n\n1. **Gu Li's wall was facing the center**, which means its value depended on being able to attack something in the center or convert that influence into territory. Without a target, a wall just sits there.\n\n2. **By playing the shoulder hit at 10-4**, Lee wasn't trying to fight the wall — he was deliberately giving Gu Li the illusion of attacking opportunities. If Gu Li chases Lee's stones, the wall's influence gets \"used up\" in the chase, but the stones being chased are thin and flexible.\n\n3. **Lee's sabaki**: His thin stones weren't trying to build territory or fight. They were designed to live light — make a small base, connect underneath, and survive. By living inside Gu Li's sphere of influence, he proved the wall was hollow.\n\n4. **Overconcentration**: When Gu Li responded to contain Lee's intrusion, his own stones stacked too closely together. Five stones that were a \"wall\" became five stones that controlled only 15 points of territory — far less than their potential if Lee had played elsewhere.\n\nThe proverb should really read: \"Do not approach thickness *unless you can live inside it and make it useless.*\" Lee Sedol could read deeply enough to see that survival was possible, which transforms the approach from reckless into devastating."
+    },
+    {
+      "role": "user",
+      "content": "Yes, that is the reading I was converging toward, but you have stated it more clearly than I managed. The overconcentration is the key. It reminds me of a principle I try to teach — that a strong position becomes weak when it has nothing to attack. Strength without function is waste. Gu Li's wall was strong in the abstract, but Lee made it strong in a context where strength was irrelevant."
+    },
+    {
+      "role": "assistant",
+      "content": "\"Strength without function is waste\" — that's an excellent teaching principle, and it captures one of the deepest ideas in go. It also explains why professional games can look so different from amateur games. Amateurs tend to build walls and feel satisfied. Professionals ask: what is this wall for? If the answer is nothing, the wall was a strategic error, regardless of how solid it looks.\n\nThis is also why Lee Sedol's style was so unsettling for opponents. He didn't just avoid thick positions — he actively *targeted* them, treating the opponent's strength as a vulnerability. Psychologically, it's devastating: you build something you're proud of, and your opponent walks right into it and proves it doesn't matter.\n\nWas there a specific tesuji in the sequence where Lee's stones connected underneath? That connection move is usually the moment when the opponent realizes the approach has succeeded."
+    },
+    {
+      "role": "user",
+      "content": "There was a beautiful descent — a sagari — that created miai for two different connection paths. Gu Li could block one but not both, so Lee was guaranteed a link to his stones on the lower side. It was the kind of move that looks simple after you see it but is very difficult to find in advance. The calculation required is not just reading the local sequence but understanding that both paths lead to life. The move works because of the global structure, not just the local shape."
+    },
+    {
+      "role": "assistant",
+      "content": "A sagari creating miai for connection — that's a tesuji that perfectly embodies Lee's style. The descent is typically a quiet move, not flashy at all. But its power comes from the fact that it poses two threats simultaneously, and the opponent can only answer one.\n\nThe distinction you're drawing between local and global reading is crucial:\n\n- **Locally**, the sagari is just a one-point descent. Any dan player can see that it threatens to connect on the next move.\n- **Globally**, the reason it works is that Lee had already positioned stones on the lower side that created the second connection path. The sagari doesn't create two options by itself — it activates a relationship between distant stones that was latent in the position all along.\n\nThis is what separates professional-level reading from strong amateur play. A 5-dan amateur might find the sagari by reading the local sequence. Lee found it because he saw the whole board as an interconnected system and recognized that this one move was the keystone.\n\nDo you use this kind of position in your teaching?"
+    },
+    {
+      "role": "user",
+      "content": "I do, though I simplify it considerably. The full position requires reading that is beyond my students at their current level. But I extract the principle — the miai connection, the idea that one move with two purposes is worth more than two moves with one purpose each. In baduk, efficiency is elegance. I show them smaller positions where a single stone creates two threats and ask them to find it. When they do, there is a moment of recognition — they see that the board is not a collection of separate battles but a connected system. That is the most important lesson in go, and I think it applies far beyond the board."
+    },
+    {
+      "role": "assistant",
+      "content": "\"One move with two purposes is worth more than two moves with one purpose each\" — that's a principle worth putting on a wall. It's the go equivalent of mathematical elegance: a single proof that resolves two conjectures is more beautiful than two separate proofs.\n\nYour approach of extracting the principle and simplifying the position for your students is excellent pedagogy. The lesson isn't the specific tesuji — it's the habit of looking for dual-purpose moves. Once a student starts thinking that way, their game transforms. They stop playing moves that do one thing and start asking: what else does this accomplish?\n\nThe philosophical extension is real, too. The most effective decisions in life — like in go — are the ones that serve multiple purposes simultaneously."
+    },
+    {
+      "role": "user",
+      "content": "Precisely. Lee Sedol understood this better than almost anyone. It is a shame that his professional career ended, though I understand his reasons. He said that AI had made the game unwinnable for humans, and I think mathematically he is correct — the search space advantage of a machine is simply too great. But the beauty of his games remains. AlphaGo can compute the optimal move, but it cannot appreciate why a sagari is beautiful. Appreciation requires a mind that understands the difficulty of what has been achieved. I think that is something machines will never possess, and I take some comfort in that. Thank you for helping me think through this position. It has been a pleasant conversation. Good evening."
+    },
+    {
+      "role": "assistant",
+      "content": "The distinction between computing a move and appreciating its beauty is one that will keep human go alive long after AI has surpassed us in playing strength. Lee Sedol's resignation from professional play was poignant, but his games remain — and as you say, they require a human mind to fully appreciate.\n\nThank you for walking me through the position. The shoulder hit, the sabaki, the sagari creating miai — it's a sequence worth replaying slowly and savoring. Enjoy the rest of your evening, and the goban."
+    }
+  ]
+}

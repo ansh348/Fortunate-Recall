@@ -1,0 +1,50 @@
+{
+  "session_id": 24,
+  "persona": "saga_lindqvist",
+  "date": "2025-10-15",
+  "type": "filler",
+  "topic": "gluten-free baking experiment — disastrous kanelbullar attempt",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "i tried to bake gluten-free kanelbullar yesterday and the result was objectively terrible. i need to figure out what went wrong before i attempt it again."
+    },
+    {
+      "role": "assistant",
+      "content": "Gluten-free baking is notoriously tricky, especially with enriched doughs like kanelbullar. What happened — texture, taste, shape, or all three?"
+    },
+    {
+      "role": "user",
+      "content": "all three. the texture was somewhere between cement and a kitchen sponge, which should be physically impossible and yet i achieved it. the shape collapsed entirely during proofing. the taste was acceptable but the mouthfeel made it irrelevant. i would rate the overall result a 2 out of 10."
+    },
+    {
+      "role": "assistant",
+      "content": "A 2 out of 10 is a clear baseline for improvement. What flour blend did you use? That's usually the biggest variable in gluten-free baking."
+    },
+    {
+      "role": "user",
+      "content": "a commercial all-purpose gluten-free blend, rice flour based with some tapioca starch. i followed a recipe from a Swedish food blog that claimed to produce kanelbullar 'just like regular ones' which was either a lie or a different definition of 'just like.' the recipe had no ratings and only two comments, both of which said 'looks great, will try soon' which is not actual validation data."
+    },
+    {
+      "role": "assistant",
+      "content": "\"Looks great, will try soon\" has zero information content. A few likely culprits:\n\n1. **No binder** — generic rice flour blends lack binding power. Did you add xanthan gum or psyllium husk?\n2. **Over-proofing** — gluten-free doughs can't hold gas the same way. Standard proofing times are too long.\n3. **Hydration mismatch** — gluten-free flours absorb water differently.\n\nDid you add any binder?"
+    },
+    {
+      "role": "user",
+      "content": "i did not. the recipe did not mention it. i should have applied more scrutiny to the source. for the next attempt, i am thinking psyllium husk, oat flour base since i tolerate certified gluten-free oats, and reduced proofing time. i was so focused on replicating the exact wheat recipe with a direct substitution that i did not consider redesigning the recipe from fundamentals."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the key insight — gluten-free baking is a redesign problem, not a substitution problem. Your plan is solid: psyllium husk for binding (about 2 tablespoons per 300g flour), oat flour for better flavour and texture, and 30-40% less proofing time. Also increase the butter slightly — fat compensates for the missing gluten structure.\n\nLook for recipes specifically designed gluten-free from the start, preferably from Scandinavian bakers who use oat flour as a base."
+    },
+    {
+      "role": "user",
+      "content": "i will find a better-vetted recipe, one with actual reviews containing useful information. and i will document the next attempt properly. controlled variables, measured outcomes. if i am going to fail again, i want to fail in a way that generates usable data for attempt three."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right approach. One variable at a time, same rating scale so you can track improvement. A 2 out of 10 is just your baseline. Good luck with the next batch."
+    }
+  ]
+}

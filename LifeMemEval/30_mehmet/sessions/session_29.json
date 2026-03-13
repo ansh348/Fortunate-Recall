@@ -1,0 +1,66 @@
+{
+  "session_id": 29,
+  "persona": "mehmet_yilmaz",
+  "date": "2026-01-10",
+  "type": "critical",
+  "topic": "barber guild planning",
+  "facts_disclosed": ["Guild meeting September 12 2026, on committee"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "can you help me think through something... I have to prepare for a meeting and I do not know where to start"
+    },
+    {
+      "role": "assistant",
+      "content": "Of course. What kind of meeting is it, and what do you need to prepare?"
+    },
+    {
+      "role": "user",
+      "content": "the barber trade guild... we have the annual meeting coming up, September 12. and this year they put me on the committee. I said yes because... somebody has to do it. but now I actually have to prepare something"
+    },
+    {
+      "role": "assistant",
+      "content": "Being on the committee is a big responsibility but also a chance to shape things. September 12 gives you good lead time. What topics is the committee handling?"
+    },
+    {
+      "role": "user",
+      "content": "the main thing is licensing... licensing standards for new barbers. this makes my blood boil, I will tell you. too many people opening shops with no real training. 3 months watching YouTube, they buy a chair and some clippers, and suddenly they are a barber. it is not right"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a serious issue. There's a real difference between years of apprenticeship learning and self-teaching from videos. Are the current standards too loose, or is it that they're not being enforced?"
+    },
+    {
+      "role": "user",
+      "content": "both... the standards exist on paper but nobody checks. you are supposed to have training hours, a master barber signing off... but people get around it. they find someone to sign the paper, they open the shop, and the customer does not know the difference until the razor slips"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a public safety issue as well as a professional standards issue. A straight razor in untrained hands is genuinely dangerous. What would you want to propose — stricter requirements, better enforcement, or both?"
+    },
+    {
+      "role": "user",
+      "content": "a real apprenticeship requirement. you work under a master for at least 2 years before you can open your own shop. and the master certifies you can handle every tool... scissors, razor, clippers, everything. with real customers, not mannequin heads. in Germany they take this seriously... the Meisterbrief, the master craftsman certificate. when I worked in Berlin I saw how they do it. years of training, a real examination. here... anyone can call themselves usta"
+    },
+    {
+      "role": "assistant",
+      "content": "The Meisterbrief system is a great model to reference — it has international credibility. You could propose something inspired by it, adapted for Turkish barber traditions. A rough framework could include a minimum 2-year apprenticeship, a logbook of 3,000+ supervised hours, competency demonstrations with each tool, and a practical exam before a guild committee. Does that direction feel right?"
+    },
+    {
+      "role": "user",
+      "content": "3,000 hours... yes, that sounds right. 2 years, 6 days a week, that is about 3,000. and the practical examination is important... you sit in front of a real person, the committee watches, and you show what you can do. no shortcuts. some on the committee will say it is too strict but I say... good. if you are not willing to train for 2 years, maybe this is not the profession for you. 'acele işe şeytan karışır'... the devil gets involved in rushed work"
+    },
+    {
+      "role": "assistant",
+      "content": "That proverb lands perfectly here. And you can frame it not as gatekeeping but as protecting the craft, protecting customers, and helping young barbers build a stronger foundation. Someone who trains 2 years will have a more sustainable career than someone who burns out in 6 months. Would you like help writing up a formal version of this proposal before September?"
+    },
+    {
+      "role": "user",
+      "content": "yes... but not today. today I just wanted to think out loud. I have until September, there is time. but I feel better now that the ideas have shape. maybe Deniz can help me type the notes on the computer... the boy is good with these things. thank you my friend. someone has to protect the craft"
+    },
+    {
+      "role": "assistant",
+      "content": "You've got a clear vision and a strong argument. Take your time getting it on paper — September is months away. When you're ready to formalize it, come back and we'll shape it into something polished. Good luck, Mehmet."
+    }
+  ]
+}

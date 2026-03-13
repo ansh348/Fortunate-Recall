@@ -1,0 +1,74 @@
+{
+  "session_id": 16,
+  "persona": "mirri_yunupingu",
+  "date": "2025-06-20",
+  "type": "filler",
+  "topic": "bore pump repair at the ranger station",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Quick question. Do you know much about bore pumps. The one at the ranger station has stopped pulling water and I need to work out if it is the pump or the pipe."
+    },
+    {
+      "role": "assistant",
+      "content": "I can help you work through some troubleshooting. A few things to check first: when you turn it on, does the motor run at all? And if it runs, does it sound normal or different from usual -- louder, grinding, or running but with no resistance?"
+    },
+    {
+      "role": "user",
+      "content": "Motor runs fine. Sounds normal. Just no water coming through. It was working two days ago, came in this morning and the tank is empty and the pump is running dry."
+    },
+    {
+      "role": "assistant",
+      "content": "If the motor sounds normal but no water is coming through, a few common causes:\n\n1. **Air lock in the line** -- if the pump lost prime, it can spin without actually pulling water. Some pumps have a priming plug you can open to bleed the air out and refill with water.\n2. **Foot valve stuck or failed** -- the foot valve at the bottom of the drop pipe keeps water in the line. If it fails, water drains back down and the pump can't draw.\n3. **Split or cracked pipe** -- a crack in the rising main lets air in, same result as a failed foot valve.\n\nDo you know if it's a submersible pump or a surface pump?"
+    },
+    {
+      "role": "user",
+      "content": "Surface pump. It sits in the pump shed about 10 metres from the bore hole. There is a long pipe going down. I think the foot valve might be the problem because last time we had trouble it was the foot valve too."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a good lead then. If it's happened before with the foot valve, it's likely again -- they wear out, especially if there's any sediment or grit in the water.\n\nTo confirm: try priming the pump manually. Pour water into the priming port and see if it holds or drains straight back down. If it drains quickly, the foot valve isn't sealing and you'll need to pull the drop pipe to replace it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah I tried pouring water in and it drained out. So the foot valve then. The pipe is about 15 metres of poly pipe going down. Last time the maintenance bloke came out from Jabiru but that took 3 weeks. I am thinking I can pull it myself."
+    },
+    {
+      "role": "assistant",
+      "content": "15 metres of poly pipe is manageable with two people. The pipe itself isn't too heavy but it gets awkward with the length and the water weight inside. Here's the basic process:\n\n1. Disconnect the pipe from the pump\n2. Pull the pipe up hand over hand -- coil it as you go so it doesn't kink\n3. The foot valve will be on the bottom end. It's usually a brass or plastic check valve, threaded or clamped on\n4. Replace with the same size, make sure to use thread tape if it's threaded\n5. Lower it all back down carefully\n\nDo you have someone who can help you pull the pipe? And do you have a spare foot valve or would you need to get one from town?"
+    },
+    {
+      "role": "user",
+      "content": "I can get one of the other rangers to help with the pulling. Might have a spare valve in the shed, there is a box of fittings in there from years of repairs. If not I will have to get one sent from Jabiru. 15 metres is not too bad. I have pulled longer runs of poly before just not down a bore."
+    },
+    {
+      "role": "assistant",
+      "content": "If you've handled poly pipe before you'll be fine. The only difference with a bore is working vertically and making sure you don't drop anything down the hole. A good tip: tie a safety rope to the foot valve end before you lower it back in. If a fitting slips, you don't lose it down the bore.\n\nAlso worth checking the poly pipe for cracks or splits while you've got it out. If there's a hairline crack partway along, you might fix the foot valve and still have the same problem."
+    },
+    {
+      "role": "user",
+      "content": "Good idea about the rope. And checking the pipe while it is up. How long do foot valves usually last out here. Feels like we replace this one every couple of years."
+    },
+    {
+      "role": "assistant",
+      "content": "Every couple of years is actually fairly common for bore foot valves, especially in areas with gritty or mineral-heavy water. The sediment wears down the sealing surfaces. A brass foot valve tends to last longer than plastic in those conditions. If you've been using plastic ones, switching to brass might buy you more time between replacements."
+    },
+    {
+      "role": "user",
+      "content": "I think the current one is plastic. Might be worth going brass if I can get one the right size. The water out here has a lot of iron in it, comes out orange if you let it sit. Probably does not help the fittings."
+    },
+    {
+      "role": "assistant",
+      "content": "High iron content will definitely accelerate wear on the valve. Brass handles that much better than plastic. The standard sizes are usually 25mm or 32mm for station bores -- check the pipe diameter and match to that. If you're ordering from Jabiru anyway, worth getting a brass one and a spare to keep in the shed for next time."
+    },
+    {
+      "role": "user",
+      "content": "Two spares is smart. Alright, I will have a look in the shed first and if nothing fits I will order brass from town. We need that water, it is the only bore for the station. Thanks for talking me through it."
+    },
+    {
+      "role": "assistant",
+      "content": "No worries. Hope you get it sorted quickly. If the pipe checks out and the new valve holds, you should be back in business once you prime it properly. Good luck with it."
+    }
+  ]
+}

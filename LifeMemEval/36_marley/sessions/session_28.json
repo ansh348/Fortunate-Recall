@@ -1,0 +1,58 @@
+{
+  "session_id": 28,
+  "persona": "marcus_marley_williams",
+  "date": "2026-01-20",
+  "type": "critical",
+  "topic": "dissertation crunch",
+  "facts_disclosed": ["Dissertation due April 30, ACL rehab topic, 8,000 of 12,000 words"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "alright i need some advice because im proper stressed and i cant let myself spiral about this"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, I'm listening. What's going on?"
+    },
+    {
+      "role": "user",
+      "content": "dissertation. its due April 30 and it feels like its creeping up way faster than i expected. ive written about 8,000 words out of 12,000 so its not like ive done nothing but the 4,000 left is the hard bit. discussion chapter and the stats section are both half done and thats where i always get stuck"
+    },
+    {
+      "role": "assistant",
+      "content": "Having two thirds done is actually a solid position -- you're further along than most people at this stage. What's your topic? Understanding what the discussion needs to cover might help break it down."
+    },
+    {
+      "role": "user",
+      "content": "ACL rehab outcomes comparing community settings to private settings. so whether someone who does their rehab through NHS community physio gets the same results as someone who goes private. ive got retrospective data from both types of clinic here in Bristol. return to activity timelines patient reported outcomes number of sessions attended. plus a satisfaction survey"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong topic with a solid dataset. You've got quantitative outcomes plus qualitative satisfaction data, which gives you a lot to work with. What's tripping you up most -- and what are the key findings looking like? Sometimes talking through what the data tells you unlocks how to write about it."
+    },
+    {
+      "role": "user",
+      "content": "the stats interpretation is the killer tbh. i can run t-tests and chi-squared on SPSS but writing up what the numbers actually MEAN is where i freeze. but ngl the findings are interesting. return to activity times are way longer in the community group, that came back p less than 0.01 which even i know is proper significant. but then patient satisfaction scores are actually similar between both groups which i did NOT expect. the community patients rated their physios really highly even though outcomes were worse on paper"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a genuinely interesting finding and it gives your discussion a powerful structure. The community patients had worse objective outcomes but were still satisfied -- that suggests the issue isn't clinician quality, it's the system. You can build your discussion around three points: the outcome gap and systemic reasons behind it, the satisfaction paradox, and the policy implications for how community physio is resourced. That's your discussion chapter right there. And for the writing, get it down messy first -- write it how you'd say it, then translate it into academic language after."
+    },
+    {
+      "role": "user",
+      "content": "thats literally what my supervisor keeps saying. just get it down and well clean it up. and breaking it into those three chunks makes it feel bare more manageable instead of this massive wall i have to climb. because the data is actually telling a really important story init. the community physios are doing incredible work with nothing and the patients appreciate them but the system is failing both sides"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly -- and that's a powerful narrative. You clearly understand the story your data is telling, you just need to get it on the page. A focused weekend could knock out the bulk of the discussion. Then when you hit the stats write-up, come back and we'll work through the interpretation together. You've done the hard work already with data collection and analysis. You're on the home stretch."
+    },
+    {
+      "role": "user",
+      "content": "alright im blocking out this weekend to smash the discussion. write it how i talk first then fix it up. and yeah i will definitely be back for the stats stuff because thats still going to be a headache. but this has proper cleared my head. went from panicking to feeling like i can actually do it. cheers bruv. dissertation weekend incoming"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the spirit. 14 weeks with 4,000 words to go and a clear plan is very manageable. You've got strong findings that tell an important story -- now you just need to finish writing it. Good luck this weekend and don't forget to take breaks. You've got this."
+    }
+  ]
+}

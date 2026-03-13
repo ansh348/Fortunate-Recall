@@ -1,0 +1,66 @@
+{
+  "session_id": 29,
+  "persona": "saga_lindqvist",
+  "date": "2026-02-05",
+  "type": "filler",
+  "topic": "help structuring conference talk slides",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am working on slides for a conference presentation and I could use a second opinion on the visual structure. The content is solid but I suspect the slides themselves are too dense."
+    },
+    {
+      "role": "assistant",
+      "content": "Happy to help with that. Slide density is one of the most common issues in technical presentations — the instinct is to put everything you know on the slide, which overwhelms the audience. Can you describe what a typical slide looks like right now? How much text, how many figures, that kind of thing."
+    },
+    {
+      "role": "user",
+      "content": "The average slide currently has 4.2 bullet points and 1.3 figures. Some slides have both a figure and a table. The text is complete sentences, which I know is not best practice but I find it difficult to reduce my own arguments to fragments. Fragments feel imprecise."
+    },
+    {
+      "role": "assistant",
+      "content": "Your instinct about precision is understandable, but here's the tension: complete sentences on slides compete with your spoken words. When an audience reads a full sentence, they stop listening to you. And if the slide says exactly what you're saying, one of you is redundant.\n\nA good rule of thumb: slides should contain what you *can't* say — figures, data, visual structure. Your voice carries the argument. The slides support it.\n\nFor your current slides, try this exercise: for each bullet point, ask yourself \"Is this something I'm going to say out loud?\" If yes, remove it from the slide and replace it with a 3-5 word phrase that acts as a signpost, not a statement."
+    },
+    {
+      "role": "user",
+      "content": "That distinction is useful. The slide carries what I cannot say, the voice carries the argument. I can apply that. My methodology slides are the worst offenders. I have one slide that explains an estimation technique with 6 bullet points, a formula, and a results table. It is essentially a paper abstract compressed onto one screen."
+    },
+    {
+      "role": "assistant",
+      "content": "That slide is doing three jobs at once — explanation, formalization, and evidence. It needs to be split into at least two, possibly three slides:\n\n1. **The intuition slide** — A clean visual or diagram showing *what* the technique does conceptually. No formula. Maybe one sentence framing the problem it solves.\n\n2. **The formal slide** — The formula, with minimal surrounding text. Let the notation speak for itself. You explain the terms verbally.\n\n3. **The evidence slide** — The results table, with a clear takeaway highlighted. One key number should jump out visually.\n\nThis takes you from one overloaded slide to three focused ones. It feels like more slides, but it actually gives the audience time to absorb each piece. Does the rest of the presentation have similar overloaded slides?"
+    },
+    {
+      "role": "user",
+      "content": "There are 3 methodology slides that have this problem and 2 results slides that are also too dense. The rest are lagom. The introduction and framing slides are clean because those are conceptual and I naturally used larger visuals for them. It is only when I get into the analytical content that I start cramming."
+    },
+    {
+      "role": "assistant",
+      "content": "That pattern makes complete sense — you're comfortable letting visuals breathe in the conceptual sections but your instinct with analytical content is to present all the evidence. It's a trust issue with the audience: you want them to see the rigour, so you show everything.\n\nHere's the reframe: showing everything *undermines* rigour in a presentation context. A clean, focused slide signals confidence. A cluttered slide signals anxiety.\n\nFor your 5 problem slides, I'd suggest:\n- Split the 3 methodology slides into 2 each (intuition + evidence), giving you 6\n- Split the 2 dense results slides into 2 each (key finding + supporting detail), giving you 4\n\nThat adds 5 slides total. What's your current slide count?"
+    },
+    {
+      "role": "user",
+      "content": "Currently 22 slides for a 30-minute talk. If I add 5 that puts me at 27, which is approximately 1.1 minutes per slide. That feels fast. My concern is that I will rush through the material."
+    },
+    {
+      "role": "assistant",
+      "content": "1.1 minutes per slide is actually fine for a technical talk where some slides are quick transitions and others are discussion points. Not every slide needs equal time. Your conceptual slides might get 30 seconds each while a key results slide might get 2-3 minutes.\n\nThink of it this way: the split slides you're adding are *simpler* than the originals. An intuition diagram might only need 30 seconds because it's a visual the audience processes while you talk. The dense original slide would have taken 2 minutes because the audience was reading instead of listening.\n\nA better metric than slides-per-minute is: can you articulate what the audience should take away from each slide in one sentence? If yes, the pacing will be fine."
+    },
+    {
+      "role": "user",
+      "content": "That is a better metric, I agree. I will go through each slide and write a one-sentence takeaway. If I cannot write one, the slide is trying to do too much. If I can write one but it does not connect to the next slide's takeaway, the narrative has a gap. This is essentially a unit test for presentations."
+    },
+    {
+      "role": "assistant",
+      "content": "A unit test for presentations is an excellent analogy. Each slide passes if it has a clear, singular takeaway. The integration test is whether the takeaways chain together into a coherent argument. And the end-to-end test is whether someone who missed half the slides could still follow the story from the ones they caught.\n\nIf you write out those one-sentence takeaways in sequence, you'll also have a script outline — which makes rehearsal much easier because you're practising a narrative rather than memorising slides."
+    },
+    {
+      "role": "user",
+      "content": "I am going to do this tonight. Write the takeaway for each slide, check the chain, identify the gaps, then split the 5 overloaded slides. I expect the revision to take approximately 3 hours. I will also apply a consistent colour palette while I am at it because the current slides use 7 different colours with no systematic meaning. That is embarrassing for someone who works in data visualization."
+    },
+    {
+      "role": "assistant",
+      "content": "Seven colours with no systematic meaning is a fixable problem. For a technical presentation, I'd suggest limiting yourself to 3-4 colours with clear roles: one for emphasis or key findings, one for supporting information, one for background or context, and optionally one for caution or limitations. Assign meaning once and use it consistently throughout.\n\nYour 3-hour estimate sounds realistic for the scope of work — takeaway audit, slide splits, and colour standardization. It's a good evening's work and the presentation will be significantly stronger after. Good luck with the revision."
+    }
+  ]
+}

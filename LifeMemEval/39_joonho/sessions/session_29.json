@@ -1,0 +1,58 @@
+{
+  "session_id": 29,
+  "persona": "park_joonho",
+  "date": "2026-01-28",
+  "type": "filler",
+  "topic": "Tygem rating confusion — asking how the system works",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have a question about online go ratings that I find confusing. I play on a server — Tygem — and the rating system behaves in ways I do not understand. I was hoping you could explain the mechanics of it. I am accustomed to the traditional kyu and dan rankings, which are relatively stable. But the numerical rating on the server fluctuates in a manner that seems almost arbitrary."
+    },
+    {
+      "role": "assistant",
+      "content": "Happy to help explain. Online go servers like Tygem use a rating system based on the Elo system (originally designed for chess), though each server has its own modifications. The key difference from traditional kyu/dan rankings is that Elo-based ratings are dynamic — they go up and down with every game.\n\nHere's the basic mechanics:\n\n- Every player has a numerical rating (e.g., 1800, 2100)\n- When you win, your rating goes up; when you lose, it goes down\n- The amount it changes depends on the rating difference between you and your opponent\n- Beat someone rated much higher than you → big gain. Lose to someone rated much lower → big loss.\n\nWhat specifically has been confusing you? The size of the fluctuations, or how the number maps to kyu/dan ranks?"
+    },
+    {
+      "role": "user",
+      "content": "Both, I think. Yesterday I won two games and lost one, yet my rating decreased. The net result of a winning record was a loss of points. This seems mathematically perverse. In any reasonable system, winning more games than you lose should produce a positive outcome."
+    },
+    {
+      "role": "assistant",
+      "content": "It does seem counterintuitive, but it's actually mathematically consistent. Here's why it happened:\n\nThe system weights each game by the expected outcome based on rating difference. If you beat two players rated significantly below you, the system says, \"You were expected to win those — small reward.\" But if you lost to a player also rated below you, or even near your level, the system says, \"You weren't expected to lose that — significant penalty.\"\n\nSo the arithmetic might look like:\n- Win vs. player 200 points below you: +5\n- Win vs. player 150 points below you: +7\n- Loss vs. player 50 points below you: -18\n- Net: -6\n\nThe system isn't counting wins and losses equally. It's asking: \"Did this player perform better or worse than their rating predicted?\" Two expected wins and one unexpected loss means you underperformed your rating.\n\nDoes that logic make sense, even if it feels unfair?"
+    },
+    {
+      "role": "user",
+      "content": "It makes mathematical sense when you explain it that way. The system is evaluating performance against expectation, not simply counting outcomes. I think I was applying the wrong model — I was thinking of it as a ledger, when it is actually a probability estimate being continuously updated. Like a Bayesian prior that adjusts with each new data point."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly right, and the Bayesian analogy is very apt. The rating is the system's current best estimate of your true playing strength, and each game is a new piece of evidence that updates that estimate. Winning an expected game is weak evidence (it confirms the prior), while losing an unexpected game is strong evidence (it contradicts the prior).\n\nIn formal terms, the Elo system assumes your performance in each game is drawn from a distribution centered on your true strength, and the rating is the system's running estimate of that center. The K-factor (how much each game affects your rating) determines how responsive the system is to new evidence.\n\nSo your instinct to treat it as a ledger was natural — most competitive systems in traditional go work that way. But the online system is more like a statistical model that's constantly recalibrating."
+    },
+    {
+      "role": "user",
+      "content": "That raises another question. On the server, I notice that some opponents have very high ratings but play in ways that seem inconsistent with their level. They make strong moves in the opening and then play quite poorly later. Is there an explanation for this? I wonder whether the ratings are reliable indicators of actual strength."
+    },
+    {
+      "role": "assistant",
+      "content": "There are several explanations for what you're seeing:\n\n1. **Rating inflation or deflation**: Some servers, including Tygem, are known to have ratings that don't correspond neatly to real-world dan/kyu levels. A 5-dan on Tygem may play like a 3-dan in an over-the-board tournament, or vice versa.\n\n2. **AI-assisted play**: Unfortunately, some players use AI programs (like KataGo or Leela Zero) for the opening — where AI influence is hardest to detect — and then play on their own in the middle and endgame. This creates exactly the pattern you described: strong, almost perfect opening moves followed by a noticeable drop in quality.\n\n3. **Multiple users on one account**: Sometimes an account is shared. A stronger player handles some games, a weaker player handles others.\n\n4. **Inconsistency**: Some players are genuinely inconsistent — strong in the fuseki but weak in fighting, or they lose concentration as the game goes on.\n\nThe AI-assisted issue is a real problem on most online go servers. Did the inconsistency feel like a sudden drop, as if a different person took over?"
+    },
+    {
+      "role": "user",
+      "content": "In one or two cases, yes, it felt precisely like that — as if the player changed hands partway through the game. The opening was unusually precise, almost mechanical, and then the middle game was full of reading errors. I find that troubling. The go board has always been a place of honesty for me. In a face-to-face game, you see your opponent's eyes, their hands, their hesitations. The board does not lie. But if the online space permits this kind of deception, I think it diminishes the value of the interaction."
+    },
+    {
+      "role": "assistant",
+      "content": "Your concern is shared by many serious players, and it's one of the genuine downsides of online play. The anonymity that makes it possible to find opponents at any hour from anywhere in the world also makes it possible to cheat without social consequences.\n\nMost servers do have detection systems — Tygem included — that flag accounts with statistical patterns consistent with AI use (unusually high correlation with top engine moves, sudden rating jumps, etc.). But detection is imperfect, and determined cheaters can evade it by using AI selectively.\n\nSome practical approaches:\n- **Play in rated pools with identity verification** if the server offers them\n- **Focus on your own play**: If you played well, the game was valuable regardless of whether the opponent was honest\n- **Watch for the pattern**: If an opponent's opening feels mechanical and their middle game drops off, you can choose not to rematch them\n\nThe philosophical point you raise is important, though. The integrity of the game depends on both players being fully present and fully themselves. A board between two honest players is a conversation. A board where one side is ventriloquized by a machine is something else entirely."
+    },
+    {
+      "role": "user",
+      "content": "I think you have put it well. A conversation — that is what a good game of go should be. Two minds speaking through stones. I will continue playing online, because the convenience of finding a worthy opponent at any hour is genuinely valuable. But I will carry your advice about focusing on my own play. The quality of my moves is within my control, even if the quality of my opponent's honesty is not. Thank you for explaining the rating system. The Bayesian framing has resolved my confusion. Good afternoon."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome. The Bayesian frame should make the fluctuations feel less arbitrary — they're just the system updating its estimate of you, one game at a time. And your approach is the right one: play honestly, focus on your own stones, and let the rating converge toward your true strength over time.\n\nGood afternoon. Enjoy your next game."
+    }
+  ]
+}

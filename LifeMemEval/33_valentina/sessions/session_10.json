@@ -1,0 +1,74 @@
+{
+  "session_id": 10,
+  "persona": "valentina_herrera",
+  "date": "2025-02-10",
+  "type": "critical",
+  "topic": "source prep anxiety",
+  "facts_disclosed": ["Source meeting February 14 for mining investigation"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay I need help thinking through something. operational security for a sensitive meeting. what are the basics"
+    },
+    {
+      "role": "assistant",
+      "content": "Operational security for a sensitive meeting — here are the fundamentals:\n\n**Before the meeting:**\n- Choose a location that's neutral and not associated with either party. Avoid places with security cameras if possible\n- Don't discuss the meeting over regular phone calls or unencrypted messaging\n- Use Signal or another end-to-end encrypted app for all communications about logistics\n- Agree on a cover story for why you're both at that location, in case anyone asks\n- Leave your regular phone behind or put it in airplane mode — phones can be tracked\n- Tell one trusted person where you're going and when you expect to be back\n\n**At the meeting:**\n- Arrive separately\n- Be aware of your surroundings — note exits, other people, anything unusual\n- Don't take notes on your phone if there's any chance it could be compromised. Use a paper notebook\n- If recording, get explicit consent and discuss how the recording will be stored and protected\n\n**After the meeting:**\n- Don't go directly to your office or home\n- Store any notes or recordings in an encrypted location immediately\n- Don't discuss what was said over unencrypted channels\n\nCan you tell me more about the context? The level of security needed depends a lot on who you're meeting and what the risks are."
+    },
+    {
+      "role": "user",
+      "content": "can't go into too many details obviously. but this person is inside an industry that doesn't want scrutiny. mining sector. they're risking a lot to talk to me and if anyone finds out they're my source their career is over at minimum and I don't even want to think about worse than that"
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. Mining sector, insider source, high personal risk for them — that's serious. In Colombia especially, the mining industry intersects with some very dangerous interests, so you're right to be thorough about this.\n\nGiven the stakes, I'd add these layers beyond the basics:\n\n**Source protection:**\n- **Never store their real name** anywhere digital. Use a code name in all your notes, files, and communications\n- **Minimize the number of people who know** this meeting is happening. Ideally, only you and one trusted person (editor, lawyer, partner — someone who would know to raise an alarm)\n- **Establish a communication protocol** going forward — agree on how they'll contact you if they need to, and how you'll contact them. Preferably through a method that leaves no metadata trail\n- **Discuss their digital footprint** — have they searched for your name, your publication, or topics related to what they're sharing? If so, on a work device? They should clear that\n\n**Location considerations for Colombia specifically:**\n- Avoid meeting anywhere in the mining region itself\n- Public places with lots of foot traffic are paradoxically safer — a crowded café is less conspicuous than a private room\n- Avoid anywhere that requires ID or registration to enter\n\n**Legal preparation:**\n- Know your rights as a journalist regarding source protection under Colombian law\n- Have a lawyer's number ready — not just for you, but for your source if things go wrong\n\nWhen is this meeting happening? How much time do you have to prepare?"
+    },
+    {
+      "role": "user",
+      "content": "february 14. four days. yes I know, valentine's day, the irony is not lost on me. lucía already made dinner reservations that I'm going to have to cancel and she's going to understand but she's not going to be happy about it"
+    },
+    {
+      "role": "assistant",
+      "content": "February 14 — four days is enough time to prepare properly, though it's tight. And yeah, canceling Valentine's dinner for a source meeting is a very specific kind of occupational hazard. Lucía will understand because she gets the world you work in, but you should probably make it up to her later.\n\nFour-day prep timeline:\n\n**Today (Day 1):**\n- Finalize the meeting location. Scout it if possible — go there, sit down, note the exits, the camera positions, how busy it is at the time you'll meet\n- Confirm with the source through your encrypted channel. Keep the message minimal: time, place, and a confirmation protocol (like a specific word they reply with so you know it's really them)\n\n**Day 2:**\n- Prepare your questions. You may only get one shot at this, so prioritize ruthlessly. What do you absolutely need from this person?\n- Think about what documents or evidence they might be able to provide. If you're going to ask them to bring something, they need time to get it safely\n- Brief your trusted person (just the when and where, not the who)\n\n**Day 3:**\n- Review everything you already know about the mining investigation. Go in with enough knowledge that they see you've done your homework — sources trust you more when you're not starting from zero\n- Prepare your secure storage: encrypted folder, code name system, secure backup location for any documents\n\n**Day 4 (Feb 14):**\n- Leave your personal phone at home or with Lucía\n- Bring a clean device or paper notebook only\n- Arrive early, check the space\n- After the meeting, go somewhere neutral before heading home\n\nHow are you feeling about the meeting itself — the conversation, not the logistics?"
+    },
+    {
+      "role": "user",
+      "content": "terrified honestly. not for me, for them. this person reached out to me through three layers of intermediaries. they spent months deciding whether to talk. if I screw this up, if I say the wrong thing or push too hard or make them feel unsafe, they disappear and I lose the best lead I've had on this story. and more importantly THEY could face consequences for even having made contact"
+    },
+    {
+      "role": "assistant",
+      "content": "That fear is appropriate and it's also what will keep you sharp. The fact that they went through three layers of intermediaries tells you two things: they're serious about wanting to talk, and they're scared. Both of those work in your favor if you handle it right.\n\nFor the conversation itself:\n\n**Setting the tone:**\n- Let them lead at first. They've been rehearsing this in their head for months. Give them space to say what they came to say before you start directing\n- Acknowledge what they're doing. Not dramatically, but sincerely. Something like \"I understand what this costs you and I don't take it lightly.\" They need to hear that\n- Don't record the first meeting unless they bring it up. The first meeting is about trust, not evidence. Evidence comes later\n\n**During the conversation:**\n- Ask open-ended questions early: \"What do you want people to know?\" Let them frame it in their own terms\n- Don't show surprise at anything they tell you, even if it's bigger than you expected. Surprise can make a nervous source clam up because they think they've said too much\n- Mirror their energy — if they're calm, be calm. If they're emotional, let that breathe. Don't rush past it\n- When you need specifics, ask gently: \"Can you help me understand the timeline?\" rather than \"When exactly did this happen?\"\n\n**What NOT to do:**\n- Don't promise outcomes. Don't say \"this will be published\" or \"this will change things.\" You can't guarantee that\n- Don't push for more than they're ready to give in one sitting. Leave them wanting to talk to you again\n- Don't make them feel like a transaction. They're a person making a dangerous choice, not a data source\n\nYou've been preparing for this for weeks. You know this story, you know the stakes, and the fact that you're worried about their safety more than the scoop tells me you'll handle it with the care it requires."
+    },
+    {
+      "role": "user",
+      "content": "the part about not showing surprise is good. because I think what they have is big. from what the intermediaries have hinted at, this goes higher than I thought. I need to be ready to hear things that could change the entire scope of the investigation and just nod like it's what I expected"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. The poker face is crucial. If they see you react with shock or excitement, two things can happen:\n\n1. They panic — \"I said too much, this is bigger than I realized, I need to stop\"\n2. They start self-censoring — they'll filter what they tell you based on your reactions, giving you less\n\nPractice the neutral nod. The thoughtful \"mm-hmm.\" The calm follow-up question. Even if they're telling you something that rewires your entire understanding of the story, your face says: \"Go on, I'm listening.\"\n\nIf it really is as big as the intermediaries suggest and it goes higher than you expected, you also need to think about:\n\n- **Scope management** — a bigger story means more powerful people who don't want it told. Your security protocols may need to escalate after this meeting\n- **Corroboration** — whatever they tell you, you'll need independent verification before publishing. Start thinking now about where else you could confirm the information\n- **Your editor** — at some point you'll need editorial support, legal review, and institutional backing. How much do you trust your editor with something this sensitive?\n- **Personal safety** — if this goes where you think it might, you may need to loop in your publication's security protocols, if they have them\n\nBut that's all post-meeting. For February 14, the only job is: show up, listen, protect them, and earn a second meeting."
+    },
+    {
+      "role": "user",
+      "content": "earn a second meeting. yes. that's exactly the right frame. this isn't the meeting where I get the story, this is the meeting where I earn the right to eventually get the story. okay that actually calms me down a little"
+    },
+    {
+      "role": "assistant",
+      "content": "Good. Taking the pressure off \"I have to get everything in one meeting\" changes the entire dynamic. You're not there to extract — you're there to connect. If the first meeting goes well, the second one is where they really open up. And the third is where you get the documents.\n\nThink of February 14 as planting a seed, not harvesting. Your job that day:\n\n1. Make them feel safe\n2. Show them you understand the material\n3. Let them tell you what they need to tell you\n4. Agree on how you'll communicate going forward\n5. Leave them feeling like they made the right decision\n\nThat's it. Everything else follows from those five things.\n\nOne last practical note: after the meeting, write down everything you remember as soon as you're somewhere private. Every detail — not just what they said, but how they said it, what they seemed reluctant about, what they seemed eager to share. Your memory of the first hour after a meeting is sharper than you think, and it fades fast."
+    },
+    {
+      "role": "user",
+      "content": "I'll bring a notebook and write everything on the bus home. paper not digital, like you said. old school. god I can't believe this is happening on valentine's day of all days. lucía is going to give me that look. the one that says I support you completely but also I'm going to eat that fancy dinner reservation alone out of spite jaja"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, honestly, let her take the reservation. She deserves a fancy dinner and you deserve the guilt motivation to make it up to her later.\n\nPaper notebook on the bus is perfect. Write fast, write messy, get everything down. You can organize it later. And when you get home, put those notes somewhere physically secure — not lying around.\n\nYou've got four days. You're prepared, you know the stakes, and your instincts are right. The source chose you for a reason — three layers of intermediaries and months of deliberation, and they picked you. Trust that.\n\nGo prepare your questions, scout your location, and buy Lucía some flowers for the 15th. You've got this."
+    },
+    {
+      "role": "user",
+      "content": "flowers on the 15th jaja that's actually a good move. okay parce thank you. I needed this. I've been spinning in my head for days and just talking through it helped me think straight. four days. I've got this."
+    },
+    {
+      "role": "assistant",
+      "content": "You absolutely do. Four days, clear plan, right mindset. Go make that source feel like talking to you was the best decision they ever made.\n\nAnd seriously — flowers on the 15th. She'll appreciate the gesture even if she pretends to still be mad. Good luck, Valentina. This is what you do."
+    }
+  ]
+}

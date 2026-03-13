@@ -1,0 +1,74 @@
+{
+  "session_id": 7,
+  "persona": "mirri_yunupingu",
+  "date": "2025-02-03",
+  "type": "filler",
+  "topic": "crocodile monitoring — big saltie spotted near boat ramp",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "What is the best practice for signage when you have a large saltwater crocodile hanging around a public boat ramp. I want to make sure I am covering everything."
+    },
+    {
+      "role": "assistant",
+      "content": "For a large saltwater crocodile near a public access point, best practice signage should include:\n\n- Clear warning signs at every entry point to the ramp area, at eye level\n- Specific language -- \"Dangerous crocodile recently sighted in this area\" rather than a generic crocodile warning\n- Date of most recent sighting so visitors can judge how current the information is\n- Temporary closure signs if the animal is actively using the ramp area\n\nIs this for an active situation or are you putting together a general protocol?"
+    },
+    {
+      "role": "user",
+      "content": "Active situation. This one has been sitting near the ramp for about 3 days now. Big animal, maybe 4 and a half metres. He is not shy. Was on the bank this morning about 20 metres from the ramp, proper relaxed."
+    },
+    {
+      "role": "assistant",
+      "content": "A 4.5-metre saltie that close for three days straight is a serious concern. For the signage I'd recommend being very specific:\n\n\"WARNING: Large crocodile (approx. 4.5m) actively present in this area. Last sighted [date]. Do not enter water. Do not approach water's edge.\"\n\nBeing specific about the size gets people's attention. Have you considered a temporary ramp closure given how persistent this animal is?"
+    },
+    {
+      "role": "user",
+      "content": "We are talking about that. Some of the visitors get angry when you close things. They have driven a long way and they want to launch their boats. But you cannot argue with a croc that size."
+    },
+    {
+      "role": "assistant",
+      "content": "Visitor frustration is understandable but manageable. A closure notice with clear reasoning helps: \"Boat ramp temporarily closed due to dangerous crocodile activity within 20m of ramp. For alternative launch locations, contact [details].\" Is there another ramp they can use?"
+    },
+    {
+      "role": "user",
+      "content": "There is one further upstream but the access road is rough. That is always the problem. People want the easy option. But I have been doing croc monitoring here a long time and this animal has worked out that the boat ramp means fish scraps and people cleaning their catch. He is comfortable around humans. That is when they are most dangerous."
+    },
+    {
+      "role": "assistant",
+      "content": "A habituated crocodile near a high-traffic area is the worst combination. That feeding association with the ramp means he's unlikely to leave voluntarily. Is there a croc management team that handles relocations, or do you manage that internally?"
+    },
+    {
+      "role": "user",
+      "content": "We report it up to the croc management team. They decide if he needs trapping and relocating. But with the big ones, relocation does not always stick. They can travel hundreds of kilometres and come back to the same spot. Sometimes managing the people is more effective than managing the croc."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a practical reality. For the people management side, beyond signage you could have the visitor centre staff briefed to explain the situation. When people understand the size and behaviour of the animal, most will accept the closure. A printed fact sheet about crocodile behaviour can help too."
+    },
+    {
+      "role": "user",
+      "content": "Good idea. I will put something together for the visitor centre team. Give them the facts so when someone comes in angry about the ramp being closed they can explain it properly. Most people come around once you tell them 4.5 metres."
+    },
+    {
+      "role": "assistant",
+      "content": "That size tends to change the conversation. Would you like help drafting the fact sheet or the closure notice wording?"
+    },
+    {
+      "role": "user",
+      "content": "Not right now. I have a fair idea of what to write. I just wanted to check I was not missing anything with the signage. You have been helpful. I will get the signs updated today and talk to the visitor centre staff."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you've got it covered. Stay safe out there with that animal around."
+    },
+    {
+      "role": "user",
+      "content": "He is not going anywhere in a hurry. But neither am I. We will sort it out. Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome. Good luck with the ramp situation."
+    }
+  ]
+}

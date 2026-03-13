@@ -1,0 +1,90 @@
+{
+  "session_id": 23,
+  "persona": "marcus_marley_williams",
+  "date": "2025-10-08",
+  "type": "critical",
+  "topic": "burnout admission",
+  "facts_disclosed": ["4 hours sleep, last essay 58%, workload unsustainable"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "you up? i cant sleep again and ive got placement at 7am so thats jokes"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm here. What's keeping you up -- is it stress, or just can't switch off?"
+    },
+    {
+      "role": "user",
+      "content": "bit of both tbh. my brain just doesnt stop at night. ive been getting like 4 hours most nights recently and its catching up with me ngl"
+    },
+    {
+      "role": "assistant",
+      "content": "Four hours consistently is really rough -- that's not sustainable for anyone, especially if you've got early starts. How long has this been going on?"
+    },
+    {
+      "role": "user",
+      "content": "few weeks now probably. its just theres so much going on you know. placement is full time so thats 9 to 5 monday to friday. then i coach tuesday and thursday evenings. then i still have uni assignments on top of all that. and i sit down at night to do the academic stuff and before i know it its 2am"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a punishing schedule. Full-time placement, coaching two evenings a week, and academic work on top -- there's barely any breathing room in there. Something has to absorb the pressure and right now it sounds like it's your sleep.\n\nAre you managing to keep up with the assignments at least?"
+    },
+    {
+      "role": "user",
+      "content": "thats the thing man. my last essay came back at 58. fifty eight. like thats bare low for me i usually sit around 65 to 70. i know 58 is still a pass but it proper stung you know because i know i can do better i just didnt have the time to do it properly"
+    },
+    {
+      "role": "assistant",
+      "content": "A 58 when you're used to high 60s is frustrating -- you know the quality you're capable of and you couldn't reach it because you're spread too thin. That's not a knowledge gap, that's a capacity issue.\n\nHave you spoken to anyone at uni about the workload? Your personal tutor or the placement coordinator? Third year placements combined with academic work are notoriously heavy and there might be support available."
+    },
+    {
+      "role": "user",
+      "content": "nah i havent said anything. i dont really like making a thing of it you know. everyone else seems to be handling it fine so i just get on with it. but icl something has to give and i dont know what because i cant drop placement thats mandatory and i cant stop coaching because the lads are relying on me"
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you, but I'd push back gently on the idea that everyone else is handling it fine -- you'd be surprised how many of your cohort are probably struggling quietly in the same way. People don't tend to broadcast it.\n\nAnd you're right that placement is non-negotiable. But there might be options you haven't considered:\n\n- Could you get an extension on assignments? Most unis have extenuating circumstances processes.\n- Could someone else cover one coaching session per week temporarily?\n- Even small things like batch-prepping meals or cutting commute time can free up an hour.\n\nYou don't have to drop anything entirely, but could you reduce something slightly?"
+    },
+    {
+      "role": "user",
+      "content": "maybe coaching. i could ask one of the other coaches to cover thursdays for a bit. i hate the idea of it though because ive only just taken over the team and i dont want them thinking im not committed you know. but thursdays session and then coming home at 9pm and trying to write an essay until 2am is killing me"
+    },
+    {
+      "role": "assistant",
+      "content": "Taking a temporary step back from Thursday sessions isn't a lack of commitment -- it's actually responsible management of yourself. You can't coach well, study well, or treat patients well if you're running on empty. The lads would rather have you properly present on Tuesdays than half-asleep both nights.\n\nAnd framing it as temporary matters. You're not leaving, you're adjusting for a few weeks during your heaviest academic period. That's sensible, not weak."
+    },
+    {
+      "role": "user",
+      "content": "yeah when you put it like that it makes more sense. its just hard init because i feel like i should be able to handle all of it. like other people work full time and study and have kids and all sorts. but right now i feel like im doing everything at 60% instead of anything at 100%"
+    },
+    {
+      "role": "assistant",
+      "content": "Comparing yourself to hypothetical people who seem to manage everything is a trap. You don't know what their support systems look like, what their specific demands are, or what they're sacrificing that you can't see.\n\nAnd you've nailed the real problem: doing everything at 60% means nothing gets your best. Your patients don't get your best clinical thinking when you're exhausted. Your essays don't get your best analysis. Your players don't get your best coaching.\n\nChoosing to focus so you can perform at a higher level isn't giving up. It's the opposite."
+    },
+    {
+      "role": "user",
+      "content": "i needed to hear that tbh. like genuinely. i think im going to speak to the other coach tomorrow about covering thursdays for the next month. and maybe ill talk to my personal tutor about the workload thing. not asking for special treatment just letting them know whats going on"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a really solid plan. Talking to your tutor isn't asking for special treatment -- it's exactly what they're there for. They'd rather know you're struggling now than find out after your grades have dropped further or you've burned out completely.\n\nOne more thing -- try to get off screens by midnight if you can. Even if the essay isn't finished, the work you produce on 6 hours of sleep will be better than what you'd write between 1 and 3am on a fried brain."
+    },
+    {
+      "role": "user",
+      "content": "haha yeah i know youre right. the irony is i literally tell my patients about sleep hygiene and recovery and then completely ignore it myself. physio heal thyself and all that. alright im going to try and get a few hours before the alarm goes. thanks for this man seriously. sometimes you just need someone to tell you its okay to not be superhuman"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, classic case of not following your own advice. But recognising it is the first step.\n\nGet some sleep. You've got a plan now -- Thursday cover, tutor chat, screens off by midnight. Small changes that should add up. You're not falling apart, you're just overloaded. There's a difference.\n\nGood luck tomorrow. Get some rest."
+    },
+    {
+      "role": "user",
+      "content": "safe man. appreciate it. night"
+    },
+    {
+      "role": "assistant",
+      "content": "Night. Look after yourself."
+    }
+  ]
+}

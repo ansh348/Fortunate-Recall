@@ -1,0 +1,82 @@
+{
+  "session_id": 6,
+  "persona": "billy_kootook",
+  "date": "2025-01-28",
+  "type": "critical",
+  "topic": "equipment maintenance",
+  "facts_disclosed": ["Ski-Doo Expedition 900 ACE, 14,000 km"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "need some advice on drive belt tension. getting a shudder at low RPM."
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with that. A shudder at low RPM is often related to the drive belt, but it could be a few things. What snowmobile are you working with? The belt specs and adjustment process vary quite a bit by model."
+    },
+    {
+      "role": "user",
+      "content": "Ski-Doo. Expedition. 900 ACE motor. she's a 2018."
+    },
+    {
+      "role": "assistant",
+      "content": "Good machine — the 900 ACE Expedition is a solid workhorse. For the low-RPM shudder, here are the most common causes on that model:\n\n1. **Drive belt wear** — if the belt is worn or glazed, it can slip at low RPM before grabbing at higher speeds. Check the belt width — factory spec is typically around 34.5mm. If it's worn below 33mm, it's time for a replacement.\n\n2. **Clutch alignment** — the primary and secondary clutches need to be properly aligned. Misalignment causes uneven belt engagement.\n\n3. **Clutch spring tension** — a weakened spring in the primary clutch can cause inconsistent engagement at low RPM.\n\nHow many kilometers are on the machine? That'll help me gauge what kind of wear we're looking at."
+    },
+    {
+      "role": "user",
+      "content": "about 14,000 km. she's been reliable. I use her hard though. out on the land most days when conditions allow."
+    },
+    {
+      "role": "assistant",
+      "content": "14,000 km with daily hard use — yeah, that's getting into the range where the drive belt and clutch components start showing their age. Especially if you're doing a lot of low-speed work in deep snow or hauling loads, that puts extra stress on the belt and clutch.\n\nAt that mileage on a 2018, I'd recommend:\n\n1. **Check the belt first** — measure the width and look for glazing, cracks, or fraying on the edges. If it's the original belt, it's probably due for replacement regardless.\n\n2. **Inspect the clutch sheaves** — look for scoring or wear marks on the faces of both the primary and secondary clutch. Run your fingernail across the surface — if you can feel grooves, they need resurfacing or replacement.\n\n3. **Check the rollers and bushings in the secondary clutch** — at 14K these can develop flat spots.\n\nHave you replaced the belt before, or is this the original?"
+    },
+    {
+      "role": "user",
+      "content": "replaced it once. maybe at 8,000 km. so this one has 6,000 on it. I checked width and it looks ok. 34mm or so. no cracks I can see."
+    },
+    {
+      "role": "assistant",
+      "content": "34mm is still within acceptable range, and no visible cracks is good. So the belt is probably not the primary issue here.\n\nThat points more toward the clutch side. With 14,000 km total:\n\n- **Primary clutch weights and springs** — these wear over time and can cause erratic engagement. The springs lose tension gradually, so you might not notice until the shudder starts.\n\n- **Secondary clutch helix and spring** — a worn helix can cause inconsistent shift-out at low RPM, which feels like a shudder.\n\nHere's a quick test: with the machine off, try spinning the secondary clutch by hand. It should move smoothly without any catching or rough spots. Any roughness means the rollers or bushings need attention.\n\nAlso — and this is easy to overlook — check the **engine mounts**. On the 900 ACE, worn engine mounts can transfer vibration into the drivetrain and feel exactly like a belt/clutch problem. At 14K and 7 years, the rubber could be deteriorating."
+    },
+    {
+      "role": "user",
+      "content": "engine mounts. hadn't thought of that. makes sense. it's been minus 35 to minus 45 most of January. that rubber takes a beating eh."
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely. At minus 35 to minus 45, rubber compounds get brittle and lose their damping ability. Over years of those temperature cycles — summer heat to deep winter cold — the mounts crack and harden. Once they can't absorb the engine vibration properly, that energy transfers straight into the drivetrain.\n\nTo check them:\n1. Look for visible cracks or separation between the rubber and the metal mounting brackets\n2. Try to shift the engine slightly by hand — there should be a small amount of give but not excessive movement\n3. If the rubber looks dry, cracked, or squished flat, they need replacing\n\nThe good news is engine mounts for the Expedition are relatively cheap — usually around $30-50 CAD each, and there are typically 3-4 depending on the mounting configuration. The install is straightforward if you have a jack to support the engine.\n\nAre you able to get parts shipped up to you easily, or is sourcing parts a challenge where you are?"
+    },
+    {
+      "role": "user",
+      "content": "parts come to Inuvik. I go there every couple weeks anyway. or I order online and they ship to the post office. takes a while but it gets there eventually."
+    },
+    {
+      "role": "assistant",
+      "content": "Makes sense. For the engine mounts, I'd suggest ordering OEM Ski-Doo parts rather than aftermarket — the rubber compound on the OEM ones tends to hold up better in extreme cold. The part numbers for the 2018 Expedition 900 ACE engine mounts should be in the BRP parts catalog online.\n\nWhile you're ordering, it might be worth picking up:\n- A spare drive belt (always good to carry one)\n- Clutch roller kit if you want to do a full inspection\n\nFor the immediate shudder issue, here's a workaround until parts arrive: let the machine idle and warm up for a solid 5-10 minutes before putting load on it. If the shudder is worse when cold and improves as the engine warms, that confirms the mounts — the rubber softens slightly as it warms up and dampens better.\n\nDo you notice the shudder gets better after running for a while?"
+    },
+    {
+      "role": "user",
+      "content": "now you mention it. yes. worse first thing in the morning. better after 20 minutes or so. I warm her up anyway but maybe not long enough."
+    },
+    {
+      "role": "assistant",
+      "content": "That pretty much confirms it — the mounts are your culprit. When it's minus 40 and the rubber is rock hard, the vibration passes straight through. Once the engine heat softens them up a bit, they start doing their job again.\n\nFor now:\n- Give her a full 10-15 minutes warm-up before riding hard\n- Order the OEM mounts when you can\n- The swap itself is maybe a 2-hour job in a heated space\n\nAnd when you do the swap, inspect the clutch components while you're in there — at 14,000 km it's worth a look even if the mounts fix the shudder. Preventive maintenance is cheaper than a breakdown on the land."
+    },
+    {
+      "role": "user",
+      "content": "good advice. a breakdown out there in January is a real problem. I'll order the mounts. thanks."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome. At those temperatures, a breakdown isn't just an inconvenience — it's a safety issue. Smart to deal with it now.\n\nWhen you get the mounts installed, if the shudder is still there, circle back and we can dig into the clutch components. But I'd bet the mounts will sort it out. Stay warm out there."
+    },
+    {
+      "role": "user",
+      "content": "warm is relative eh. take care."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — fair point. Take care, and good luck with the repair."
+    }
+  ]
+}

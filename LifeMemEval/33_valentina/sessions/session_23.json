@@ -1,0 +1,58 @@
+{
+  "session_id": 23,
+  "persona": "valentina_herrera",
+  "date": "2025-11-04",
+  "type": "filler",
+  "topic": "spreadsheet help — tracking deforestation by municipality",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay I need your help with something boring but important. spreadsheets. I'm tracking deforestation data across municipalities and my spreadsheet is a disaster"
+    },
+    {
+      "role": "assistant",
+      "content": "I can definitely help with that. What kind of data are you working with, and what's the main problem — is it organization, formulas, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "so I have columns for municipality name, department, hectares deforested per year (2020-2025), whether there's an active mining concession, and whether there have been environmental complaints filed. the problem is I downloaded data from three different government sources and the municipality names don't match between them. some use accents some don't, some use abbreviations, some include the department name in the municipality column"
+    },
+    {
+      "role": "assistant",
+      "content": "Classic government data problem. You need to normalize the municipality names before you can merge the datasets. Here's what I'd suggest:\n\n1. **Create a master lookup table** — one clean sheet with every municipality spelled correctly, with its department, and its DANE code (the numeric code the Colombian statistics office assigns). DANE codes never vary between sources, so they're your best key for matching.\n\n2. **Use VLOOKUP or INDEX/MATCH** against the DANE code instead of the name.\n\n3. For the sources that don't include DANE codes, you can clean the names with formulas:\n   - `=SUBSTITUTE()` to remove accents or fix abbreviations\n   - `=TRIM()` to kill extra spaces\n   - `=PROPER()` to standardize capitalization\n\nDo your sources include DANE codes, or are you working with names only?"
+    },
+    {
+      "role": "user",
+      "content": "one of the three sources has DANE codes. the other two only have names. and one of them literally writes 'Sta. Marta' instead of Santa Marta and 'Bventura' instead of Buenaventura. I want to throw my laptop out the window"
+    },
+    {
+      "role": "assistant",
+      "content": "That's infuriating but fixable. Here's the approach:\n\n1. Start with the source that has DANE codes — that's your anchor dataset.\n2. For the other two, create a \"translation column\" next to the messy names. Use a combination of:\n   - `=SUBSTITUTE(A2,\"Sta.\",\"Santa\")` for known abbreviations\n   - `=SUBSTITUTE(A2,\"Bventura\",\"Buenaventura\")` for specific fixes\n   - You can nest these: `=SUBSTITUTE(SUBSTITUTE(A2,\"Sta.\",\"Santa\"),\"Bventura\",\"Buenaventura\")`\n3. Once cleaned, use `=VLOOKUP()` against your master list to pull in the DANE code.\n4. Any names that don't match will return `#N/A` — those are the ones you need to fix manually.\n\nHow many municipalities are you tracking? If it's under 100, the manual cleanup is annoying but doable in an afternoon."
+    },
+    {
+      "role": "user",
+      "content": "142 municipalities across 8 departments. it's a lot but most of the messy ones are concentrated in like 30 entries from that one terrible source. okay the nested SUBSTITUTE thing is smart. what about the accents issue? some write Quibdó with the accent and some write Quibdo without"
+    },
+    {
+      "role": "assistant",
+      "content": "For the accent issue, the cleanest approach is to strip all accents and compare lowercase versions. You can do this with a helper column:\n\n```\n=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(LOWER(A2),\"á\",\"a\"),\"é\",\"e\"),\"í\",\"i\"),\"ó\",\"o\"),\"ú\",\"u\")\n```\n\nThat converts everything to lowercase and replaces all five accented vowels with their plain versions. Do the same to your master list in a helper column, then match on the stripped versions.\n\nFor 142 municipalities across 8 departments, this is very manageable. The workflow would be:\n\n1. Master sheet with DANE codes, clean names, and stripped-name helper column\n2. Each source gets a stripped-name helper column\n3. Match on stripped names to pull DANE codes into every dataset\n4. Manually fix the ~10-15 that still won't match (abbreviations, typos)\n5. Once everything has DANE codes, merge with confidence\n\nWant me to walk you through the VLOOKUP formula for the merge step?"
+    },
+    {
+      "role": "user",
+      "content": "yes please. and also — once I have everything merged, I want to create a column that flags municipalities where deforestation increased more than 20% year-over-year AND there's an active mining concession. because that's the pattern I'm looking for"
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect. For the merge, assuming your master list is on a sheet called \"Master\" with DANE codes in column A and clean names in column B, and your data sheet has the stripped name in column C:\n\n```\n=VLOOKUP(C2,Master!$D$2:$A$500,MATCH(\"DANE\",Master!$A$1:$D$1,0)-MATCH(C2,Master!$D$2:$D$500,0)+1,FALSE)\n```\n\nActually, simpler with INDEX/MATCH:\n\n```\n=INDEX(Master!$A$2:$A$500,MATCH(C2,Master!$D$2:$D$500,0))\n```\n\nWhere column A is DANE codes and column D is the stripped names on the master sheet.\n\nFor the flag column, once your data is merged, say hectares for 2024 is in column F and 2025 in column G, and mining concession (Y/N) is in column H:\n\n```\n=IF(AND((G2-F2)/F2>0.2, H2=\"Y\"), \"FLAG\", \"\")\n```\n\nThat will mark \"FLAG\" on any municipality where deforestation jumped more than 20% and there's an active mining concession. You can also add a percentage column:\n\n```\n=IF(F2>0, (G2-F2)/F2, \"NO DATA\")\n```\n\nThat gives you the exact year-over-year change rate."
+    },
+    {
+      "role": "user",
+      "content": "this is exactly what I needed. the AND formula for the flag column is perfect, that's the core of what I'm trying to show — the overlap between concessions and deforestation spikes. okay I'm going to build this out tonight. gracias parce, you just saved me from a meltdown over government data formatting"
+    },
+    {
+      "role": "assistant",
+      "content": "De nada! One last tip — save a copy of the raw data before you start cleaning. Always good to have the original in case you need to verify something later. Good luck with the 142 municipalities. The pattern you're looking for is going to be powerful once the data is clean."
+    }
+  ]
+}

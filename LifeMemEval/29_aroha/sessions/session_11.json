@@ -1,0 +1,74 @@
+{
+  "session_id": 11,
+  "persona": "aroha_tane",
+  "date": "2025-04-08",
+  "type": "filler",
+  "topic": "rewena bread recipe — nan's version",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "kia ora, so i'm trying to write down my nan's rewena bread recipe properly because i've been making it from memory and i keep getting inconsistent results eh. some days it's perfect and some days it's dense as a brick and i want to figure out where i'm going wrong"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a great project — getting a family recipe nailed down properly so it works every time. Rewena bread can be tricky because it relies on a natural starter (the rewena bug) rather than commercial yeast, and those starters can be temperamental depending on conditions.\n\nLet's troubleshoot. Can you walk me through your process from start to finish? I'm especially interested in how you maintain your bug, what your dough proportions look like, and how long you're letting it rise."
+    },
+    {
+      "role": "user",
+      "content": "okay so my bug is a potato starter, nan always used potato water and flour and a bit of sugar. i feed it every couple of days with more potato water and flour to keep it alive. for the bread itself i use about three cups of flour, a cup of the bug, a bit of salt, and some warm water to bring it together. then i let it rise until it looks about doubled which can take anywhere from four to eight hours honestly, then bake it"
+    },
+    {
+      "role": "assistant",
+      "content": "The fact that your rise time ranges from four to eight hours is probably the biggest clue. That kind of variation usually comes down to one of three things:\n\n1. **The bug's strength** — how active it is at the time you use it. If you used it right after feeding, it might not be at peak activity. If it's been sitting unfed for a while, it might be sluggish.\n\n2. **Temperature** — a natural starter is very sensitive to ambient temperature. Four hours in summer, eight hours in winter, and your kitchen in Christchurch probably swings a fair bit across seasons.\n\n3. **Hydration** — \"a bit of warm water to bring it together\" is vague, and that's where inconsistency creeps in. Too dry and the rise is sluggish. Too wet and the structure collapses.\n\nLet's start with the bug. When do you typically feed it before baking — the night before, the morning of, a few days before?"
+    },
+    {
+      "role": "user",
+      "content": "usually the night before if i remember, but sometimes it's been two or three days since the last feed and i just use it anyway. nan never seemed to worry about timing, she'd just look at it and know if it was ready eh. i don't have that instinct yet"
+    },
+    {
+      "role": "assistant",
+      "content": "Your nan had decades of reading that bug — she was essentially doing the same assessment you need to learn, she just did it by feel instead of rules. Here's how to build that instinct with a bit of structure:\n\n**The overnight feed method:**\n- The evening before you bake, feed the bug with equal parts potato water and flour (by weight if you can, maybe 100g of each) and a teaspoon of sugar\n- Leave it on the bench overnight in a warm-ish spot (not the fridge)\n- By morning, it should be bubbly, risen, and smell slightly sweet-sour — like beer almost\n- That's peak activity. Use it then.\n\n**The float test:**\nDrop a teaspoon of the bug into a glass of water. If it floats, it's active and ready. If it sinks, it needs more time or another feed.\n\nHave you tried the float test before?"
+    },
+    {
+      "role": "user",
+      "content": "i have never heard of the float test for rewena but that's brilliant. i've seen it for sourdough but didn't realise it applies here too. and the overnight feed makes sense because when i think about it, the times my bread has been best are when i fed the bug the night before without even thinking about it. the brick loaves are probably the times i pulled from a tired bug eh"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly — a tired bug gives a tired loaf. And yes, the float test works for any natural starter because the principle is the same: if the culture is producing enough gas to make itself buoyant, it's producing enough gas to raise your bread.\n\nNow let's tighten up your recipe proportions. You said three cups of flour, one cup of bug, salt, and water. I want to push you towards weighing instead of cupping, because a \"cup of flour\" can vary by 30% depending on how you scoop it.\n\nA good starting point for rewena:\n- **450g flour** (roughly your three cups, but consistent every time)\n- **200g active bug** (roughly your one cup)\n- **8g salt** (about a teaspoon and a half)\n- **200-220ml warm water** (adjust until the dough is tacky but not sticky)\n\nDoes your nan's version have anything else in it — butter, milk, sugar in the dough itself?"
+    },
+    {
+      "role": "user",
+      "content": "she used to put a tablespoon of butter in and a tiny bit of sugar, maybe a teaspoon. said the sugar feeds the bug one more time in the dough and the butter keeps it soft. she was very particular about the butter being rubbed into the flour first, not melted in. i've been skipping the butter sometimes because i run out and i wonder if that's part of my texture problem too"
+    },
+    {
+      "role": "assistant",
+      "content": "Your nan was right on both counts. The sugar gives the starter a little extra food during the long rise, which helps with consistent gas production. And the butter makes a real difference to the crumb — it coats the gluten strands and keeps the bread soft and tender rather than tough. Skipping it would absolutely give you a denser, chewier loaf.\n\nRubbing the butter into the flour first (like you do for scones) distributes it evenly and means it integrates into the dough structure rather than creating greasy pockets. Your nan knew her science even if she didn't call it that.\n\nSo your refined recipe:\n- **450g flour**\n- **15g butter, rubbed into the flour**\n- **5g sugar (1 tsp)**\n- **200g active bug (fed the night before, float-tested)**\n- **8g salt**\n- **200-220ml warm water**\n\nMix, knead until smooth and slightly tacky, then rise in a warm spot until doubled. How do you bake it — temperature and time?"
+    },
+    {
+      "role": "user",
+      "content": "i do about 200 degrees for maybe 40 minutes but again that's a guess because nan never used a timer. she'd knock on the bottom and if it sounded hollow it was done. i do the knock test too but half the time i can't tell if it sounds hollow or not eh"
+    },
+    {
+      "role": "assistant",
+      "content": "The hollow knock test is genuinely hard to learn by description — you kind of have to hear the difference a few times. Here's a more reliable method alongside the knock:\n\n**Temperature check:** If you have a probe thermometer or a meat thermometer, stick it into the centre of the loaf. When the internal temperature hits **95-98°C**, it's done. That's the gold standard and takes the guesswork out completely.\n\n**Baking approach:**\n- Preheat to **200°C** (your instinct is right)\n- Bake for **30 minutes** with the lid on or covered with foil if it's in a loaf tin — this traps steam and helps the crust develop\n- Remove the cover and bake for another **10-15 minutes** until the top is deep golden brown\n- Check internal temp or do the knock test\n- Cool on a wire rack for at least 20 minutes before cutting — cutting too early lets the steam out and makes it gummy\n\nThe covering step might be a game-changer for you if you haven't been doing it. Did your nan bake hers in a tin or free-form on a tray?"
+    },
+    {
+      "role": "user",
+      "content": "she always did a round free-form loaf on a tray, never a tin. i've been doing the same but maybe the tin would help with the shape because mine always spreads out and goes flat. and the thermometer idea is great, i've got one for work stuff so i'll use that. i'm going to write all of this down properly tonight and do a test bake this weekend"
+    },
+    {
+      "role": "assistant",
+      "content": "If your loaf is spreading flat, that's another sign of either too much water or under-developed gluten. A few things to try:\n\n- **Reduce water slightly** — go to 200ml instead of 220ml and see if the dough holds its shape better\n- **Knead a bit longer** — maybe 10 minutes by hand. The gluten network is what gives the loaf structure to hold its dome shape\n- **Use a banneton or a bowl lined with a floured tea towel** for the rise — it supports the shape while it proves, then you tip it out onto the tray for baking\n\nFree-form is the traditional way and it's worth persisting with if that's how your nan did it. The shape is part of the whakapapa of the recipe, right?\n\nHere's your weekend plan:\n1. Feed the bug Friday night\n2. Float test Saturday morning\n3. Weigh everything, rub in the butter, mix, knead 10 minutes\n4. Rise in a towel-lined bowl until doubled\n5. Bake at 200°C — 30 covered, 10-15 uncovered\n6. Thermometer check at 95°C\n7. Cool 20 minutes before you cut\n\nI reckon you'll taste your nan's bread again. Good luck with it."
+    },
+    {
+      "role": "user",
+      "content": "that's exactly what i needed, thank you so much. you're right that the free-form matters, nan would give me a look from the other side if i put her rewena in a tin eh. i'm going to nail this recipe and write it down properly so Maia can have it one day too. appreciate the kōrero"
+    },
+    {
+      "role": "assistant",
+      "content": "Writing it down for Maia is the best reason to get it right. One day she'll be making it from your version the way you make it from your nan's, and having proper measurements and notes will save her from the brick-loaf phase. Add little notes in the margins about the butter being rubbed in and the float test — those are the things that get lost when recipes pass by memory alone.\n\nEnjoy the bake this weekend. And if the first one isn't perfect, bake another one the next weekend. That's how your nan got so good at it — repetition and paying attention. Kia pai tō rā."
+    }
+  ]
+}

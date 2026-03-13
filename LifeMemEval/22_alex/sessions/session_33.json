@@ -1,0 +1,74 @@
+{
+  "session_id": 33,
+  "persona": "alex_richter",
+  "date": "2026-03-15",
+  "type": "filler",
+  "topic": "new mechanical keyboard arrived — build log",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "my keychron q1 pro just arrived and i am unreasonably excited. this is the most serotonin i've had all week"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice choice! The Q1 Pro is a solid board. Are you going with the stock setup or do you have switches and keycaps picked out already?"
+    },
+    {
+      "role": "user",
+      "content": "i ordered it barebones because i have gateron oil kings waiting. lubed them last weekend — 70 switches, hand-lubed with krytox 205g0. my fingers still feel slightly greasy. it was meditative though, very zen. like rosary beads but for nerds"
+    },
+    {
+      "role": "assistant",
+      "content": "Hand-lubing 70 switches is definitely a commitment — but Krytox 205g0 on Oil Kings should give you an incredibly smooth linear feel. Did you film them too, or just lube?"
+    },
+    {
+      "role": "user",
+      "content": "filmed with deskeys films. i know some people say oil kings don't need films because the housing is already tight but i tried a few without and the ones with films have slightly less wobble on the stem. placebo? maybe. but this is a hobby built entirely on placebo and confirmation bias so i'm leaning in"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha, that's an honest take on the hobby. If you can feel a difference, it matters — and stem wobble on linears can affect the sound profile even if the typing feel difference is marginal. What keycaps are you going with?"
+    },
+    {
+      "role": "user",
+      "content": "gmk olivia clones. yes i know, clones. i'm not paying 250 euros for abs plastic that ships in 18 months from a group buy that may or may not actually fulfill. the clones are pbt, they cost 40 euros, and they look 95% the same. i will die on this hill"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a perfectly rational hill to die on. The GMK group buy model has been frustrating a lot of people — multi-year waits and premium prices for keycaps that yellow over time because they're ABS. PBT clones that look nearly identical and arrive in a week are hard to argue against. How's the assembly going so far?"
+    },
+    {
+      "role": "user",
+      "content": "putting in the switches now. the hotswap sockets on the q1 pro are solid — satisfying click when they seat. i've only bent one pin so far which is a personal record. usually i'm at three or four by this point. oh wait — kernel just jumped on the desk and is actively batting a loose switch across the table. hold on"
+    },
+    {
+      "role": "assistant",
+      "content": "Switch hockey — a classic cat contribution to the build process. Hopefully she doesn't knock it under the desk where it'll join the graveyard of lost screws and keycap pullers. Take your time getting the board back under your control."
+    },
+    {
+      "role": "user",
+      "content": "recovered the switch. she's now sitting in the box the keyboard came in because of course she is. the box is more interesting than the 200 euro keyboard that was inside it. anyway, switches are all in. about to put on keycaps and do the first test type"
+    },
+    {
+      "role": "assistant",
+      "content": "The classic cat-in-box situation. Enjoy the first type test — that moment when all the switches are in and you hit the first few keys with your chosen keycaps is the payoff for all the lubing and filming. Let me know how it sounds."
+    },
+    {
+      "role": "user",
+      "content": "ok. first impression. this thing sounds like typing on a cloud made of butter. the oil kings with krytox are absurdly smooth, zero scratchiness. the gasket mount on the q1 pro gives it a nice soft bottom-out instead of that harsh clack you get on tray mounts. i'm just sitting here typing random words into a blank document like an absolute weirdo and i don't care"
+    },
+    {
+      "role": "assistant",
+      "content": "\"Typing on a cloud made of butter\" is exactly the feel you want from well-lubed linears on a gasket mount. That soft bottom-out is what makes the Q1 Pro a favorite for that price range — you get the flex and dampening of boards that cost twice as much. Have you tried a sound test yet? Sometimes recording a quick typing sample reveals things your ears miss in the moment."
+    },
+    {
+      "role": "user",
+      "content": "good idea, i should do a sound test. although i just realized i need to remap some keys because the default layout has caps lock where i want escape and the function row is wrong. i'll flash via qmk later tonight. you know it's a good keyboard day when the firmware customization is the part you're looking forward to. i need to go write actual code at some point but honestly this was better than any productivity i would have had today"
+    },
+    {
+      "role": "assistant",
+      "content": "Remapping caps lock to escape is the correct move — anyone who actually uses caps lock in 2026 is sending an unhinged energy. QMK flashing is its own kind of satisfying too. And honestly, a good keyboard build day is productive in its own way — you're setting up your primary tool for the next year or two of coding. Enjoy the rest of the build and the inevitable hour of just typing nonsense because it feels good."
+    }
+  ]
+}

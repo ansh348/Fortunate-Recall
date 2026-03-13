@@ -1,0 +1,74 @@
+{
+  "session_id": 13,
+  "persona": "aroha_tane",
+  "date": "2025-05-14",
+  "type": "filler",
+  "topic": "te reo Māori course — struggling with passive constructions",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay i need some help with my te reo homework because the passive voice is doing my head in and i have class tomorrow night"
+    },
+    {
+      "role": "assistant",
+      "content": "Happy to help! The passive is one of those areas in te reo Māori that trips a lot of learners up because it works quite differently from English. What level are you at, and can you show me what you're working on? A specific sentence or exercise would help me see where you're getting stuck."
+    },
+    {
+      "role": "user",
+      "content": "i'm intermediate level, been learning on and off for a few years but this year i committed to a proper course because my conversational reo is okay for everyday stuff but my grammar is patchy eh. so the passive, my kaiako explained it but i think i understand it in class and then i get home and look at the exercises and my brain goes blank. like i know that in english the passive is 'the ball was kicked' instead of 'he kicked the ball' but in te reo it seems like the passive is used way more often and in places where english wouldn't use it at all"
+    },
+    {
+      "role": "assistant",
+      "content": "You've actually identified the core issue perfectly — in te reo Māori, the passive is far more common than in English. In English, we default to active voice and use passive only in specific situations. In te reo, the passive is often the *preferred* or even the *required* construction, especially for transitive verbs (verbs that have an object).\n\nHere's the key concept:\n\nIn te reo, when someone does something *to* something, you very often use the passive form of the verb. The thing being acted on becomes the subject.\n\n**Active (agent-emphatic):**\nNā Hemi i kiki te pōro. (It was Hemi who kicked the ball.)\n\n**Passive (the default/neutral way to say it):**\nI kikina te pōro e Hemi. (The ball was kicked by Hemi.)\n\nThe passive version is actually the more natural, everyday way to express this in te reo. The active version emphasises *who* did it.\n\nDoes that distinction make sense so far?"
+    },
+    {
+      "role": "user",
+      "content": "okay yes that helps because i keep trying to construct sentences the english way and it sounds wrong but i didn't understand why. so in te reo the default is to put the action and the object first and then tag the person doing it on at the end with 'e'? that feels backwards to my english brain but i can see the logic"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly right. The structure is:\n\n**Tense marker + passive verb + te [object/patient] + e + [agent]**\n\nSo: I kikina te pōro e Hemi.\n- I = past tense\n- kikina = kicked (passive form of kiki)\n- te pōro = the ball\n- e Hemi = by Hemi\n\nIt does feel backwards from English, but once it clicks, you'll notice it actually makes a lot of sense — the focus is on *what happened* and *to whom/what*, which is usually the important information. Who did it is secondary.\n\nNow, the tricky part for most learners is the verb endings. The passive is formed by adding a suffix to the verb, but the suffix varies: **-tia, -a, -hia, -ina, -kia, -mia, -na, -ngia, -ria, -whia** — and there's no simple rule for which verb gets which suffix. You mostly have to learn them.\n\nIs the suffix part what's tripping you up in the exercises, or is it more the sentence structure?"
+    },
+    {
+      "role": "user",
+      "content": "both honestly but the suffixes are the worst part. like how do i know if it's -tia or -hia or -ina? my kaiako said you just have to learn them with each verb and i believe her but that's a lot of memorising eh. are there any patterns at all or is it truly random"
+    },
+    {
+      "role": "assistant",
+      "content": "It's not completely random — there are some tendencies, though your kaiako is right that ultimately you need to learn them. Here are some loose patterns that might help:\n\n**-tia** is very common and is the most \"default\" suffix. If you're guessing, this is often the safest bet:\n- aru → arutia (followed)\n- whakaaro → whakaarotia (thought about)\n\n**-hia** tends to appear with verbs ending in a vowel, especially -a or -e:\n- mōhio → mōhiotia (but also seen as mōhio + hia in some dialects)\n- kite → kitea (found/seen) — this one drops to just -a\n\n**-ina** often appears with verbs ending in -ki or -mi:\n- kiki → kikina (kicked)\n- tuku → tukuna (released/sent)\n\n**-ngia** often with verbs ending in a long vowel:\n- whakarongo → whakarongona / whakarongohia (heard/listened to) — though this one varies by dialect\n\n**-a** (just a bare -a) for some common short verbs:\n- kai → kainga (eaten)\n- kite → kitea (seen)\n\nBut honestly, the patterns have as many exceptions as rules. The best strategy is: every time you learn a new verb, learn its passive form at the same time. Write them in pairs. Don't learn 'inu' (drink), learn 'inu / inumia.'\n\nWant to try some of your actual homework exercises and we can work through them?"
+    },
+    {
+      "role": "user",
+      "content": "yes please. okay so the first one says to change this active sentence to passive: 'ka hanga te whare e Mere' — and i thought it was already passive because of the 'e Mere' at the end but my kaiako marked it wrong so now i'm really confused"
+    },
+    {
+      "role": "assistant",
+      "content": "Great question, and I can see exactly where the confusion is. You're right that 'e Mere' marks the agent, which looks passive. But look at the verb: **hanga**. That's the base form of the verb, not the passive form.\n\nThe sentence 'Ka hanga te whare e Mere' is actually an unusual construction — it uses the base verb with an agent marker, which can happen in certain sentence patterns. But for a standard passive construction, you need the passive form of the verb.\n\nThe passive of **hanga** (to build) is **hangaia**.\n\nSo the passive sentence would be:\n**Ka hangaia te whare e Mere.** (The house will be built by Mere.)\n\nThe difference is subtle but important:\n- hanga = base/active form\n- hangaia = passive form (-ia suffix)\n\nYour kaiako probably wants you to recognise that the *verb form itself* needs to change, not just the sentence structure. Does that clear it up?"
+    },
+    {
+      "role": "user",
+      "content": "ohhh okay so it's not enough to have the 'e' agent marker, the verb itself has to be in its passive form too. that's what i was missing. i was just rearranging the words without changing the verb. okay that actually makes a lot of things click eh. let me try the next one — 'i horoi ngā rīhi e ia' — so horoi is to wash, and i need to make it passive so it would be... horoinga? horoitia?"
+    },
+    {
+      "role": "assistant",
+      "content": "Good instinct working through it! The passive of **horoi** (to wash) is **horoitia**.\n\nSo the sentence becomes:\n**I horoitia ngā rīhi e ia.** (The dishes were washed by him/her.)\n\nLet's break it down:\n- I = past tense\n- horoitia = washed (passive of horoi, with -tia suffix)\n- ngā rīhi = the dishes\n- e ia = by him/her\n\nNotice that **horoi** takes the **-tia** suffix, which is one of the most common ones. You were torn between -nga and -tia — here's a tip: the **-nga/-ngia** suffix is less common and tends to attach to specific verbs. When in doubt with a verb ending in a vowel like -oi, try -tia first.\n\nYou're getting the hang of this. Want to try another one?"
+    },
+    {
+      "role": "user",
+      "content": "yeah this is actually starting to make sense now that i know the verb has to change not just the word order. i've got three more to do but i think i can work through them on my own now that the penny has dropped. i might look up the passive forms in the dictionary before i guess them wrong though eh"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the smart approach — checking the dictionary for the passive form is not cheating, it's learning. Most good te reo dictionaries (Te Aka is excellent if you're not already using it) list the passive form right next to the base verb. Over time you'll start remembering them without looking.\n\nA couple of study tips for locking them in:\n\n1. **Flashcards in pairs**: front of card has the base verb, back has both the meaning and the passive form. So: \"horoi\" on the front, \"to wash / horoitia\" on the back.\n\n2. **Use them in sentences**: don't just memorise the suffix in isolation. Write a quick sentence with each passive form — your brain remembers context better than lists.\n\n3. **Listen for them**: when you hear te reo spoken — on Māori Television, waiata, your kaiako — start noticing the passive verbs. Once you know what to listen for, you'll hear them everywhere.\n\nYou've got this. The hardest part was understanding *why* the verb needs to change, and you've cracked that. The rest is just practice and repetition. Good luck in class tomorrow night."
+    },
+    {
+      "role": "user",
+      "content": "thank you so much, this has been more helpful than three weeks of me staring at my notes going around in circles. i'm going to use Te Aka tonight and get these exercises done properly. my kaiako is going to be impressed for once eh. ka kite"
+    },
+    {
+      "role": "assistant",
+      "content": "Ka kite! You'll smash it. And don't be too hard on yourself for the three weeks of circles — the passive is genuinely one of the trickiest parts of te reo grammar. The fact that you kept at it instead of giving up says a lot. Your kaiako will see the difference. Enjoy the class tomorrow."
+    }
+  ]
+}

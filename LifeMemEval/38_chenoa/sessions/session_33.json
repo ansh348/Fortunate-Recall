@@ -1,0 +1,66 @@
+{
+  "session_id": 33,
+  "persona": "chenoa_begay",
+  "date": "2026-03-28",
+  "type": "filler",
+  "topic": "rant about pharmacy supply chain delays",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am going to lose my mind. the pharmacy has been waiting on a shipment for 11 days now. 11 days"
+    },
+    {
+      "role": "assistant",
+      "content": "Eleven days is a long time to wait on medication supplies. What's being held up -- is it a specific drug or a broader shipment?"
+    },
+    {
+      "role": "user",
+      "content": "metformin, lisinopril, and two of the inhalers. the basics, you know. not specialty drugs. not anything exotic. the bread and butter medications that half my patients need every single day. and the distributor keeps saying next week, next week. next week was last week"
+    },
+    {
+      "role": "assistant",
+      "content": "Those are frontline medications for diabetes, hypertension, and respiratory issues -- the exact conditions that are most prevalent in underserved communities. Being without them for almost two weeks is a genuine patient safety issue. Are your patients running out of their current supplies, or do most of them have enough to bridge the gap?"
+    },
+    {
+      "role": "user",
+      "content": "some do. some do not. I had a woman come in yesterday and she has been splitting her blood pressure pills in half to make them last. splitting them. because she cannot get a refill and she cannot drive to Flagstaff to fill it somewhere else. I told her do not do that and she looked at me like well what am I supposed to do then"
+    },
+    {
+      "role": "assistant",
+      "content": "She's right to ask that question -- if the medication isn't available locally and she can't travel to get it, she's stuck making impossible choices. Splitting blood pressure meds can be dangerous depending on the formulation, especially extended-release tablets. Have you been able to reach the distributor's supervisor or escalate beyond the usual contact?"
+    },
+    {
+      "role": "user",
+      "content": "I have called three times. the pharmacist has called twice. we get the same person who reads off a script about supply chain disruptions and unforeseen delays. I asked to speak to a supervisor and got put on hold for 40 minutes and then disconnected. you know what that tells me. it tells me we are not a priority"
+    },
+    {
+      "role": "assistant",
+      "content": "Being disconnected after 40 minutes on hold sends a pretty clear message about where your clinic falls on their priority list. Is there an alternative distributor you could use for emergency supplies, or is your clinic locked into a single contract?"
+    },
+    {
+      "role": "user",
+      "content": "we are locked in. that is the system. we do not get to shop around like a private pharmacy does. we take what we get when we get it. and when we do not get it we just wait. meanwhile people are splitting pills and skipping doses and I get to watch their numbers climb"
+    },
+    {
+      "role": "assistant",
+      "content": "Being locked into a single distributor with no backup option is a structural problem that sets you up for exactly this situation. When patients start rationing, you lose the clinical ground you worked to gain -- A1C levels rise, blood pressure drifts up, and you're playing catch-up once the meds finally arrive. Is there anyone at the regional level who has the authority to authorize an emergency procurement from a different source?"
+    },
+    {
+      "role": "user",
+      "content": "I sent an email to the area director on Monday. have not heard back. I will send another one today with the patient numbers. maybe if I put it in writing that we have 47 patients affected and two of them ended up in the ER this week someone will pay attention. maybe"
+    },
+    {
+      "role": "assistant",
+      "content": "Putting specific numbers in writing is the right move -- 47 affected patients and two ER visits directly attributable to the supply gap is concrete and hard to ignore. If you can document the ER costs too, that helps frame it as a financial problem for the system, not just a clinical one. Administrators sometimes respond faster to dollar signs than patient counts."
+    },
+    {
+      "role": "user",
+      "content": "that is a sad truth. but I will use whatever works. I am tired of being polite about it. these are people, you know. not numbers on a spreadsheet. but if they want numbers I will give them numbers. ahéhee' for letting me vent. I need to go write that email before I lose the fire"
+    },
+    {
+      "role": "assistant",
+      "content": "Go write it while you're fired up -- that's when the best emails get written. Include the patient count, the ER visits, the cost, and the number of days you've been waiting. Make it impossible to put in a pile for later. Good luck, and I hope those meds show up soon."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "session_id": 26,
+  "persona": "alex_richter",
+  "date": "2025-11-10",
+  "type": "critical",
+  "topic": "career and relationship decisions",
+  "facts_disclosed": ["Negotiating for more equity after traction", "Marius suggested moving in together — undecided"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "alright so i have two completely different things bouncing around my head and i can't focus on either. classic"
+    },
+    {
+      "role": "assistant",
+      "content": "Let's try to untangle them one at a time. What's the first thing on your mind?"
+    },
+    {
+      "role": "user",
+      "content": "work stuff. so the lending platform is actually doing well. like genuinely well, not \"startup well\" where everyone pretends metrics are good. we've got 3 banks that want to integrate with us. real contracts on the table"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big deal — bank partnerships usually mean the product has cleared a serious credibility threshold. Are you feeling good about the direction, or is the success creating new pressures?"
+    },
+    {
+      "role": "user",
+      "content": "both. i'm feeling good about the tech, the platform is solid, my team built something real. but it's also making me think about compensation. i'm pushing for a bigger equity package in the next funding round. with this kind of traction the shares could actually turn into real money. i've been talking to a lawyer about the vesting terms to make sure i don't get screwed on a cliff or some accelerator clause Quatsch"
+    },
+    {
+      "role": "assistant",
+      "content": "Smart to get a lawyer involved early. Vesting terms are where a lot of engineers get burned — especially around things like single vs. double trigger acceleration if there's an acquisition. A few things worth making sure the lawyer covers:\n\n1. **Cliff period** — standard is 1 year but some startups try to stretch it\n2. **Acceleration on exit** — does your vesting accelerate if the company gets acquired?\n3. **Exercise window** — if you leave, how long do you have to exercise? 90 days is standard but brutal if the strike price is high\n\nDo you know what kind of equity structure it is — stock options, restricted stock, virtual shares?"
+    },
+    {
+      "role": "user",
+      "content": "virtual shares with a conversion clause on liquidity events, which is pretty standard for german startups since the tax situation with real esops here is a nightmare. the lawyer said the terms are actually reasonable but she wants to negotiate the exercise window from 90 days to 12 months. which yeah, makes sense. if i ever leave i don't want to scramble for cash to exercise"
+    },
+    {
+      "role": "assistant",
+      "content": "Your lawyer is right on the money with the exercise window extension. 90 days forces people to either stay at a company they want to leave or forfeit equity they earned — it's one of the worst mechanisms in startup compensation. 12 months gives you real flexibility.\n\nVirtual shares (VSOPs) are standard in Germany, yeah. The upside is no tax event until conversion. The downside is you're dependent on the company actually having a liquidity event. But with 3 banks coming on board, that trajectory looks a lot more concrete than most startup equity. What kind of stake are you pushing for?"
+    },
+    {
+      "role": "user",
+      "content": "i want to go from 0.3% to 0.8%. which sounds tiny but if we hit the revenue targets for next year and raise a series b at a reasonable valuation... yeah. it's meaningful. anyway enough spreadsheet fantasies. the other thing eating my brain is marius"
+    },
+    {
+      "role": "assistant",
+      "content": "Ah, switching gears entirely. What's going on with Marius?"
+    },
+    {
+      "role": "user",
+      "content": "he brought up moving in together. again. and i mean, we've been together about 8 months now which feels... soon? i don't know. part of me gets it because berlin rent is what it is, we could split a bigger place and both save money. my lease is up in june so the timing would work. but also. i really like having my own space"
+    },
+    {
+      "role": "assistant",
+      "content": "8 months is one of those timelines that's totally reasonable for some people and way too early for others — there's no universal answer. But the fact that you keep coming back to \"I like having my own space\" is worth paying attention to.\n\nA few things to think about:\n\n- Is the financial argument the main driver for him, or does he genuinely want to share a living space as a relationship step?\n- Could you find a middle ground — like a place with enough separation that you still have a room that's yours?\n- What's the actual financial math? How much would you each save?"
+    },
+    {
+      "role": "user",
+      "content": "for him it's both i think. he wants the relationship thing but the money is definitely part of it. we looked briefly at 3-room places in kreuzberg and friedrichshain and splitting one would save each of us like 200-300 a month versus living solo. which is real money. but then there's kernel"
+    },
+    {
+      "role": "assistant",
+      "content": "What's the Kernel factor here?"
+    },
+    {
+      "role": "user",
+      "content": "she is extremely territorial. she took about 3 months to stop hissing at marius when he came over. she's fine with him now but that's as a visitor. a permanent human intruder in her kingdom is a different scenario. also honestly beyond the cat stuff i just... i've lived alone for a while and i'm productive this way. my adhd thrives on having total control over my environment. if someone else is making noise or cooking or existing in the next room when i'm trying to lock into a flow state at midnight it's gonna be a problem"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a really valid concern, especially the ADHD angle. Environmental control is huge for maintaining focus, and sharing space means constant low-level negotiation about noise, timing, shared areas. It's not just about liking someone enough to live with them — it's about whether your brains are compatible in the same physical space.\n\nHave you told Marius this directly? Not as a rejection but as a \"here's what I need to figure out before I can say yes\"?"
+    },
+    {
+      "role": "user",
+      "content": "sort of. he's understanding about it but i can tell he's a bit hurt that i'm not just immediately excited. which i get. but i also can't make a housing decision based on someone else's feelings when i'm the one who has to live there and be functional. idk. i told him i need to think about it until at least january"
+    },
+    {
+      "role": "assistant",
+      "content": "Giving yourself until January is smart — that's enough time to sit with it without the pressure of making a snap decision. And the lease being up in June means you don't actually have to decide right now anyway.\n\nOne thing worth considering: you could frame a trial run before committing. Like spending a full week or two at each other's places to see how the daily logistics actually feel. The theoretical version of living together is always different from the reality of who leaves dishes in the sink and whose 2am keyboard clicking is too loud.\n\nBut honestly, the fact that you're being thoughtful about it instead of just doing it for the rent savings shows good judgment. Some decisions deserve slow thinking."
+    },
+    {
+      "role": "user",
+      "content": "yeah the trial run idea is good actually. i'll pitch that to him. anyway kernel just jumped on my desk and is staring at me like i just discussed giving away her territory. she definitely understands german"
+    },
+    {
+      "role": "assistant",
+      "content": "Cats always know when they're being discussed. Kernel's vote is clearly noted for the record. Good luck with both the equity negotiation and the Marius situation — sounds like you've got solid instincts on both. Take your time where you can."
+    }
+  ]
+}

@@ -139,7 +139,7 @@ CATEGORY_DECAY = {
     "PROJECTS_ENDEAVORS":     0.30,
     "OBLIGATIONS":            0.35,
     "EMOTIONAL_EPISODES":     0.40,
-    "LOGISTICAL_CONTEXT":     0.50,
+    "LOGISTICAL_CONTEXT":     0.40,  # reduced from 0.50 for AV8 numeric preservation
 }
 
 # Semantic floor per category: blended = max(blended, floor * semantic).
@@ -155,7 +155,7 @@ SEMANTIC_FLOOR = {
     "RELATIONAL_BONDS":       0.95,  # alpha=0.10, (1-a)=0.90
     "INTELLECTUAL_INTERESTS": 0.90,  # alpha=0.15, (1-a)=0.85
     "PREFERENCES_HABITS":     0.85,  # alpha=0.20, (1-a)=0.80
-    "HOBBIES_RECREATION":     0.85,  # alpha=0.20, (1-a)=0.80
+    "HOBBIES_RECREATION":     0.92,  # alpha=0.20, (1-a)=0.80 — raised for AV8 numeric rescue
     "PROJECTS_ENDEAVORS":     0.75,  # alpha=0.30, (1-a)=0.70
     "OBLIGATIONS":            0.70,  # alpha=0.35, (1-a)=0.65
     "EMOTIONAL_EPISODES":     0.00,  # no floor — episodic, should decay
@@ -1270,6 +1270,10 @@ async def evaluate_persona(
     configs: list[str] | None = None,
     no_supersession_filter: bool = False,
     uniform_alpha: bool = False,
+    judge_cache: dict | None = None,
+    pool_sem: asyncio.Semaphore | None = None,
+    judge_sem: asyncio.Semaphore | None = None,
+    verbose: bool = True,
 ) -> dict[str, ConfigResult]:
     """Evaluate all configurations for a single persona."""
     group_id = PERSONAS[persona_name]["group_id"]
@@ -1289,15 +1293,17 @@ async def evaluate_persona(
     )
 
     # Build pools once (with routing ON) for reuse across configs
-    reset_routing_state()
+    if pool_sem is None:  # sequential mode — caller handles in parallel mode
+        reset_routing_state()
     routing_config = RoutingConfig(enable_routing=True)
 
-    print(f"    Building candidate pools for {len(questions)} questions...")
+    if verbose:
+        print(f"    Building candidate pools for {len(questions)} questions...")
     pools: dict[str, list[Candidate]] = {}
-    pool_sem = asyncio.Semaphore(POOL_CONCURRENCY)
+    _pool_sem = pool_sem or asyncio.Semaphore(POOL_CONCURRENCY)
 
     async def _build_one(q):
-        async with pool_sem:
+        async with _pool_sem:
             pool = await build_candidate_pool(
                 q["question"], driver, graphiti, group_id,
                 xai_client=xai_client, edge_cache=edge_cache,
@@ -1311,18 +1317,20 @@ async def evaluate_persona(
         qid, pool = await coro
         pools[qid] = pool
 
-    print(f"    Pools built. Avg size: {sum(len(p) for p in pools.values()) / max(len(pools), 1):.0f}")
+    if verbose:
+        print(f"    Pools built. Avg size: {sum(len(p) for p in pools.values()) / max(len(pools), 1):.0f}")
 
     # DIAGNOSTIC: Source distribution across all pools
-    source_counts = Counter()
-    for p in pools.values():
-        for c in p:
-            source_counts[c.source] += 1
-    print(f"    Source distribution: {dict(source_counts)}")
+    if verbose:
+        source_counts = Counter()
+        for p in pools.values():
+            for c in p:
+                source_counts[c.source] += 1
+        print(f"    Source distribution: {dict(source_counts)}")
 
     # Load / share judge cache across configs
-    judge_cache = _load_judge_cache()
-    judge_sem = asyncio.Semaphore(JUDGE_CONCURRENCY)
+    _judge_cache = judge_cache if judge_cache is not None else _load_judge_cache()
+    _judge_sem = judge_sem or asyncio.Semaphore(JUDGE_CONCURRENCY)
 
     configs_to_run = configs or CONFIG_NAMES
     results = {}
@@ -1345,11 +1353,12 @@ async def evaluate_persona(
         else:
             decay_label = f"uniform({alpha})"
 
-        print(f"    Config: {config_name} (routing={'ON' if routing_enabled else 'OFF'}, "
-              f"decay={decay_label}, supersession={'ON' if apply_supersession else 'OFF'})")
+        if verbose:
+            print(f"    Config: {config_name} (routing={'ON' if routing_enabled else 'OFF'}, "
+                  f"decay={decay_label}, supersession={'ON' if apply_supersession else 'OFF'})")
 
         config_scores = []
-        cache_size_before = len(judge_cache)
+        cache_size_before = len(_judge_cache)
         total_pool_size = 0
         total_superseded_removed = 0
 
@@ -1366,20 +1375,20 @@ async def evaluate_persona(
             backward = _is_backward_looking(q["question"])
             if apply_supersession and not backward:
                 pool = filter_superseded(pool, edge_cache)
-            if backward and apply_supersession:
+            if backward and apply_supersession and verbose:
                 print(f"        >> Skipped supersession filter (backward-looking): {q['id']}")
             total_superseded_removed += pre_supersession_size - len(pool)
 
             # Filter retracted plans for retraction-type queries (AV7 support)
             if _is_retraction_query(q["question"]):
                 pool, retraction_removed = filter_retracted_candidates(pool, edge_cache)
-                if retraction_removed:
+                if retraction_removed and verbose:
                     print(f"        >> Retraction filter ({q['id']}): removed {retraction_removed} candidates")
 
             total_pool_size += len(pool)
 
             # DIAGNOSTIC: Pool details for first question per config
-            if qi == 0:
+            if qi == 0 and verbose:
                 print(f"        Q0 pool: {orig_pool_size} -> {len(pool)} after filter "
                       f"(sources: {Counter(c.source for c in pool)})")
 
@@ -1387,22 +1396,24 @@ async def evaluate_persona(
             reranked = rerank_candidates(pool, ctx, engine, edge_cache, alpha=alpha, category_decay=cat_decay)
 
             # Score
-            score = await score_question(q, reranked, anthropic_client, judge_cache, judge_sem)
+            score = await score_question(q, reranked, anthropic_client, _judge_cache, _judge_sem)
             config_scores.append(score)
 
-            status = "HIT" if score.hit_at_5 else "MISS"
-            stale = "STALE" if score.staleness_penalty > 0 else ""
-            rank_str = str(score.answer_rank) if score.answer_rank else "-"
-            print(f"      [{qi+1:2d}/{len(questions)}] {status:4s} rank={rank_str:>3s} "
-                  f"{stale:5s} | {q['question'][:55]}")
+            if verbose:
+                status = "HIT" if score.hit_at_5 else "MISS"
+                stale = "STALE" if score.staleness_penalty > 0 else ""
+                rank_str = str(score.answer_rank) if score.answer_rank else "-"
+                print(f"      [{qi+1:2d}/{len(questions)}] {status:4s} rank={rank_str:>3s} "
+                      f"{stale:5s} | {q['question'][:55]}")
 
         # DIAGNOSTIC: Per-config summary
-        cache_size_after = len(judge_cache)
-        new_judge_calls = cache_size_after - cache_size_before
-        supersession_msg = f" | Superseded removed: {total_superseded_removed}" if apply_supersession else ""
-        print(f"      >> Avg pool: {total_pool_size / max(len(questions), 1):.0f} | "
-              f"Judge calls: {new_judge_calls} new, {cache_size_after} total cached"
-              f"{supersession_msg}")
+        if verbose:
+            cache_size_after = len(_judge_cache)
+            new_judge_calls = cache_size_after - cache_size_before
+            supersession_msg = f" | Superseded removed: {total_superseded_removed}" if apply_supersession else ""
+            print(f"      >> Avg pool: {total_pool_size / max(len(questions), 1):.0f} | "
+                  f"Judge calls: {new_judge_calls} new, {cache_size_after} total cached"
+                  f"{supersession_msg}")
 
         results[config_name] = ConfigResult(
             config_name=config_name,
@@ -1412,8 +1423,9 @@ async def evaluate_persona(
             scores=config_scores,
         )
 
-    # Save judge cache after each persona
-    _save_judge_cache(judge_cache)
+    # Save judge cache after each persona (only in sequential mode)
+    if judge_cache is None:
+        _save_judge_cache(_judge_cache)
 
     return results
 
@@ -1689,6 +1701,8 @@ async def main():
                         help="Disable supersession filtering for ablation")
     parser.add_argument("--uniform-alpha", action="store_true",
                         help="Force behavioral configs to use global alpha instead of category-specific rates")
+    parser.add_argument("--parallel", type=int, default=1, metavar="N",
+                        help="Number of personas to evaluate concurrently (default: 1)")
 
     args = parser.parse_args()
 
@@ -1729,29 +1743,99 @@ async def main():
 
     t_start = time_module.time()
 
+    parallel = max(1, args.parallel)
+
     try:
         all_results: dict[str, dict[str, ConfigResult]] = {}
 
-        for persona_name in persona_list:
-            persona_questions = [q for q in questions if q["persona"] == persona_name]
-            if not persona_questions:
-                print(f"WARNING: No questions for persona {persona_name}")
-                continue
+        if parallel <= 1:
+            # --- Sequential mode (original behavior) ---
+            for persona_name in persona_list:
+                persona_questions = [q for q in questions if q["persona"] == persona_name]
+                if not persona_questions:
+                    print(f"WARNING: No questions for persona {persona_name}")
+                    continue
 
-            print(f"\n{'='*60}")
-            print(f"PERSONA: {persona_name.upper()} ({len(persona_questions)} questions)")
-            print(f"{'='*60}")
+                print(f"\n{'='*60}")
+                print(f"PERSONA: {persona_name.upper()} ({len(persona_questions)} questions)")
+                print(f"{'='*60}")
 
-            results = await evaluate_persona(
-                persona_name, persona_questions,
-                graphiti, driver, xai_client,
-                anthropic_client,
-                alpha=args.alpha,
-                configs=config_list,
-                no_supersession_filter=args.no_supersession_filter,
-                uniform_alpha=args.uniform_alpha,
-            )
-            all_results[persona_name] = results
+                results = await evaluate_persona(
+                    persona_name, persona_questions,
+                    graphiti, driver, xai_client,
+                    anthropic_client,
+                    alpha=args.alpha,
+                    configs=config_list,
+                    no_supersession_filter=args.no_supersession_filter,
+                    uniform_alpha=args.uniform_alpha,
+                )
+                all_results[persona_name] = results
+        else:
+            # --- Parallel mode ---
+            print(f"\nParallel mode: up to {parallel} personas concurrently")
+
+            # Shared judge cache (loaded once, saved once at end)
+            shared_judge_cache = _load_judge_cache()
+            print(f"Judge cache loaded: {len(shared_judge_cache)} entries")
+
+            # Global semaphores (total concurrency, not per-persona)
+            global_pool_sem = asyncio.Semaphore(POOL_CONCURRENCY)
+            global_judge_sem = asyncio.Semaphore(JUDGE_CONCURRENCY)
+
+            # Clear routing state once before all personas
+            reset_routing_state()
+
+            # Persona-level concurrency limiter
+            persona_sem = asyncio.Semaphore(parallel)
+
+            async def _eval_one(p_name, p_questions):
+                async with persona_sem:
+                    print(f"\n[START] {p_name} ({len(p_questions)} questions)")
+                    t0 = time_module.time()
+                    result = await evaluate_persona(
+                        p_name, p_questions,
+                        graphiti, driver, xai_client,
+                        anthropic_client,
+                        alpha=args.alpha,
+                        configs=config_list,
+                        no_supersession_filter=args.no_supersession_filter,
+                        uniform_alpha=args.uniform_alpha,
+                        judge_cache=shared_judge_cache,
+                        pool_sem=global_pool_sem,
+                        judge_sem=global_judge_sem,
+                        verbose=False,
+                    )
+                    dt = time_module.time() - t0
+                    # Print persona summary on completion
+                    full_cfg = result.get("full") or next(iter(result.values()), None)
+                    if full_cfg:
+                        hits = sum(1 for s in full_cfg.scores if s.hit_at_5)
+                        total = len(full_cfg.scores)
+                        print(f"[DONE]  {p_name} in {dt:.0f}s — "
+                              f"{full_cfg.config_name}: {hits}/{total} "
+                              f"({100*hits/max(total,1):.0f}%)")
+                    else:
+                        print(f"[DONE]  {p_name} in {dt:.0f}s")
+                    return p_name, result
+
+            # Build work items
+            work = []
+            for persona_name in persona_list:
+                pq = [q for q in questions if q["persona"] == persona_name]
+                if not pq:
+                    print(f"WARNING: No questions for persona {persona_name}")
+                    continue
+                work.append((persona_name, pq))
+
+            # Launch all concurrently (semaphore limits to N at a time)
+            tasks = [_eval_one(name, qs) for name, qs in work]
+            for coro in asyncio.as_completed(tasks):
+                name, result = await coro
+                all_results[name] = result
+
+            # Save shared judge cache once at end
+            _save_judge_cache(shared_judge_cache)
+            print(f"\nJudge cache saved: {len(shared_judge_cache)} entries")
 
         # Aggregate and print
         elapsed = time_module.time() - t_start

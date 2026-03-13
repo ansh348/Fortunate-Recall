@@ -1,0 +1,66 @@
+{
+  "session_id": 9,
+  "persona": "saga_lindqvist",
+  "date": "2025-03-01",
+  "type": "filler",
+  "topic": "A/B testing rant — product managers misinterpreting p-values",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to vent about something before I write a diplomatic email about it. A product manager at work just declared an A/B test a success based on a p-value of 0.08 and I am trying to decide whether to intervene or let natural consequences teach the lesson."
+    },
+    {
+      "role": "assistant",
+      "content": "Oh no. A p-value of 0.08 declared as a success — that's a classic case of p-hacking by wishful thinking. I understand the frustration.\n\nBefore you decide on the diplomatic vs. natural consequences route, a few questions:\n\n1. How consequential is the decision they're about to make? If it's a minor UI tweak, maybe the stakes are low enough to let it go. If it's a major feature rollout, intervening is important.\n2. What sample size are we talking about?\n3. Did they set a significance threshold before the test, or is this a post-hoc \"well, 0.08 is close enough\" situation?"
+    },
+    {
+      "role": "user",
+      "content": "It is a post-hoc rationalization, which is exactly the problem. There was no pre-registered alpha. The test ran for 10 days, they looked at the numbers, saw p equals 0.08, and the product manager wrote in the decision document: \"statistically significant improvement in conversion.\" I actually felt my blood pressure increase when I read that sentence. 0.08 is not significant at any conventional threshold. It is not even close to significant. It is the statistical equivalent of saying \"almost pregnant.\""
+    },
+    {
+      "role": "assistant",
+      "content": "\"Almost pregnant\" — that's perfect, and honestly you should consider using that analogy in the diplomatic email because it communicates the problem instantly.\n\nYou're right on every count:\n- No pre-registered alpha means they're choosing their threshold after seeing the data, which is textbook p-hacking\n- p = 0.08 doesn't meet the 0.05 standard, let alone more conservative thresholds\n- Calling it \"statistically significant\" in a decision document is factually incorrect\n\nThe deeper issue is that this creates a precedent. If 0.08 is acceptable this time, next time someone will push for 0.12. The threshold drifts.\n\nFor your email, I'd suggest framing it around **process** rather than **this specific result**. Something like:\n\n- \"We should align on our A/B testing standards before making decisions based on results\"\n- Propose that all tests have a pre-registered significance threshold (typically 0.05 or lower)\n- Recommend a minimum sample size calculation before launching tests\n\nThis way you're not attacking the PM's conclusion directly — you're advocating for a framework that would prevent this kind of error systematically. Does that approach work for your situation?"
+    },
+    {
+      "role": "user",
+      "content": "The process framing is the right approach. But the frustrating part is that I have already proposed an A/B testing framework. Twice. I wrote a 6-page document in November outlining pre-registration protocols, minimum detectable effect sizes, and stopping rules. It was acknowledged in a meeting, and then nothing changed. The problem is cultural, not informational. People know what statistical significance means in theory. They just prefer to ignore it when the data does not support the conclusion they already wanted."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a much harder problem to solve. When you've already provided the framework and it was acknowledged but not adopted, you're dealing with an incentive problem, not a knowledge gap.\n\nThe uncomfortable truth is:\n- PMs are incentivized to ship features and show impact\n- A test that comes back \"not significant\" means the feature might not launch, which looks like wasted effort\n- So there's a strong motivation to interpret ambiguous results favorably\n\nA few strategies for the cultural problem:\n\n**1. Make the cost of bad decisions visible**\nIf you can find a past case where a feature was shipped based on weak evidence and later showed no impact (or negative impact) in long-term metrics — that's your strongest argument. One concrete failure story outweighs ten process documents.\n\n**2. Get leadership buy-in**\nIf your direct manager or a data science lead agrees with your framework, have them champion it. A mandate from above changes behavior faster than a peer recommendation.\n\n**3. Change the defaults**\nInstead of asking people to follow a process, build it into the tooling. If your A/B testing platform can require a pre-registered hypothesis and sample size before the test launches, people can't skip it. Can you influence the testing infrastructure at all?\n\n**4. Reframe \"not significant\" as a win**\nHelp the org see that \"we learned this feature doesn't move the needle\" is a valuable outcome, not a failure. It saves resources that would have been spent building and maintaining something with no impact.\n\nWhich of these feels most feasible in your environment?"
+    },
+    {
+      "role": "user",
+      "content": "Option 3 is the most appealing because it removes human judgment from the process. But I do not control the testing infrastructure. Option 1 is feasible though. I can actually pull data on 3 features that were shipped last year based on tests with p-values between 0.05 and 0.15. I tracked their long-term metrics and at least 2 of them showed no sustained effect at the 90-day mark. The initial lift was noise."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly the evidence you need. A case study showing \"we shipped 3 features based on weak significance, and 2 of them had zero sustained impact at 90 days\" is far more persuasive than any methodological argument.\n\nHere's how I'd structure it:\n\n**The analysis:**\n- Feature A: p = [value], shipped, 90-day sustained effect = none\n- Feature B: p = [value], shipped, 90-day sustained effect = none\n- Feature C: p = [value], shipped, 90-day sustained effect = [whatever it showed]\n\n**The cost calculation:**\n- Engineering hours spent building and maintaining features A and B\n- Opportunity cost of what could have been built instead\n- If you can put a rough number on this (even an estimate), it becomes very tangible\n\n**The recommendation:**\n- \"If we had applied a stricter threshold, we would have avoided shipping features A and B, saved X engineering hours, and allocated those resources to higher-impact work\"\n\nThis turns your argument from \"we should follow statistical best practices because they're correct\" into \"following statistical best practices would have saved us money and time.\" The second version gets executive attention.\n\nWould you like help structuring the analysis or the presentation?"
+    },
+    {
+      "role": "user",
+      "content": "I think I can handle the analysis. I already have the data. What I need help with is the tone. I do not want to come across as the person who says \"I told you so\" even though that is literally what I am saying. The 6-page document from November already made the argument. I need to present this as forward-looking, not as an indictment."
+    },
+    {
+      "role": "assistant",
+      "content": "The tone challenge is real. Here's a framing that positions you as solving a shared problem rather than assigning blame:\n\n**Opening:** \"As we scale our experimentation practice, I wanted to share some learnings from our recent tests that could help us ship higher-impact features faster.\"\n\nNotice: \"learnings\" not \"failures.\" \"Scale our practice\" not \"fix our mistakes.\" \"Ship higher-impact features\" frames better standards as a path to more impact, not less shipping.\n\n**The data section:** Present the 3 features as case studies, not cautionary tales. \"Feature A showed a promising early signal but did not sustain at 90 days. This is a normal and expected pattern when initial effect sizes are small relative to noise.\"\n\nThe phrase \"normal and expected\" is key — it normalizes the outcome and removes blame from whoever made the call.\n\n**The proposal:** \"Based on these patterns, I think we can improve our hit rate by [specific recommendations]. This would help us allocate engineering resources to features with the strongest evidence of sustained impact.\"\n\n\"Hit rate\" is PM language. \"Strongest evidence\" is softer than \"statistically significant.\" \"Allocate resources\" speaks to everyone's interests.\n\n**What to explicitly avoid:**\n- Referencing the November document (even though you want to)\n- Using the word \"wrong\" or \"incorrect\"\n- Mentioning the current p = 0.08 test directly in the same communication\n\nAddress the 0.08 situation separately and privately with that PM. The broader presentation should feel like a proactive improvement, not a reaction to a specific incident.\n\nDoes that framing feel right?"
+    },
+    {
+      "role": "user",
+      "content": "It does. Especially the advice about not referencing the November document. My instinct was to open with \"as I outlined in November\" which would have been satisfying for approximately 2 seconds and counterproductive for the remaining duration of my career at this company."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. \"As I outlined in November\" is the professional equivalent of \"per my last email\" — everyone knows what it really means, and it immediately puts people on the defensive.\n\nThe 2-second satisfaction versus long-term counterproductivity trade-off is a good way to think about it. Your future credibility as the person who improves processes is worth far more than the momentary vindication.\n\nOne more tactical suggestion: when you present the case studies, invite collaboration. Something like \"I'd love input from the PM team on what threshold feels right for our context.\" Even if you already know the answer is 0.05, letting people participate in arriving at the standard makes them more likely to follow it. People support what they help create.\n\nGood luck with the email and the broader presentation. Your org is lucky to have someone who cares enough about statistical rigor to fight this fight diplomatically."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. I will draft the case study analysis this weekend and present it as a \"learnings review\" rather than a tribunal. The collaborative threshold-setting idea is actually smart. If they pick 0.05 themselves, they cannot argue against it later. I appreciate the help with tone. The statistics I can handle. The politics require external consultation."
+    },
+    {
+      "role": "assistant",
+      "content": "\"The statistics I can handle, the politics require external consultation\" — that's a very honest self-assessment and probably true for most analysts.\n\nYour plan is solid: case study format, forward-looking framing, collaborative standard-setting. If the PMs end up choosing 0.05 themselves, you've achieved exactly what the November document proposed but with buy-in this time.\n\nGood luck with the draft. And regarding the current p = 0.08 test — maybe a quiet one-on-one with that PM before the broader presentation, framed as \"hey, I noticed the test result is borderline, want to look at it together before we commit to the decision?\" Gives them a graceful exit.\n\nHave a good weekend."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "session_id": 11,
+  "persona": "billy_kootook",
+  "date": "2025-04-15",
+  "type": "filler",
+  "topic": "bird identification question — unusual sighting",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "saw a bird today I can't place. out on the tundra east of town. need help figuring out what it is."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd be happy to help you figure it out. Can you describe what you saw? Size, color, beak shape, behavior — any details will help narrow it down."
+    },
+    {
+      "role": "user",
+      "content": "medium size. bigger than a ptarmigan but smaller than a raven. dark back, lighter belly. had a hooked beak. was sitting on a rock just watching me. didn't spook easy."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like it could be a raptor of some kind. The hooked beak and the bold behavior — sitting and watching without flushing — point in that direction. A few possibilities for your area:\n\n- **Rough-legged Hawk** — dark back, lighter underside, common in tundra habitat. They're returning north around this time of year.\n- **Peregrine Falcon** — hooked beak, dark upperparts, lighter chest. Very bold and not easily spooked.\n- **Gyrfalcon** — would be larger, but comes in a dark morph. Very calm around people.\n\nDid it have any barring or streaking on the chest? And how about the tail — banded or solid?"
+    },
+    {
+      "role": "user",
+      "content": "streaking on the chest. yes. pale legs too. feathered right down to the toes. that's the part that caught my eye. it's early for a lot of the hawks up here."
+    },
+    {
+      "role": "assistant",
+      "content": "Feathered legs all the way to the toes is a strong identifier — that's a **Rough-legged Hawk** (*Buteo lagopus*). They're one of the only hawks with fully feathered tarsi, which is an adaptation for cold environments. The streaking on the chest fits too.\n\nYou're right that it's early. They typically arrive on the Arctic tundra in late April to May to breed. Mid-April is on the early side, but not unheard of if conditions are mild. They come ahead of the main nesting season to scout territory.\n\nWas it just the one? They're usually solitary when they first arrive, pairing up later."
+    },
+    {
+      "role": "user",
+      "content": "just the one. sitting there like it owned the place. rough-legged hawk makes sense. I know them but this one looked darker than the ones I usually see. almost all brown on the back."
+    },
+    {
+      "role": "assistant",
+      "content": "Rough-legged Hawks have quite a bit of plumage variation. There's a light morph and a dark morph, and everything in between. What you're describing — very dark brown back with a lighter streaked belly — sounds like an intermediate or dark morph individual. They're less common than the light morph but definitely occur.\n\nThe dark morphs can look almost uniformly chocolate brown from above, which might be why it didn't match what you're used to seeing. Same species though. If it's holding that perch, it may be scouting a nest site — they typically use cliff ledges or rocky outcrops. Worth checking back in a couple weeks."
+    },
+    {
+      "role": "user",
+      "content": "good. dark morph. haven't seen one up here in a few years. I'll watch that spot. thanks eh."
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. Hope it sticks around."
+    }
+  ]
+}

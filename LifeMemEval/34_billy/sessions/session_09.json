@@ -1,0 +1,82 @@
+{
+  "session_id": 9,
+  "persona": "billy_kootook",
+  "date": "2025-03-14",
+  "type": "critical",
+  "topic": "paperwork season",
+  "facts_disclosed": ["Collar data deadline March 1 2025, 27 collars"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to clean up a large GPS dataset. csv files. lots of bad fixes and duplicates. what's the fastest way to process that in Excel or should I use something else."
+    },
+    {
+      "role": "assistant",
+      "content": "It depends on the size of the dataset and what kind of cleaning you need to do. A few questions:\n\n- How many rows are we talking about? Thousands? Hundreds of thousands?\n- What does \"bad fixes\" mean in your context — GPS points with poor accuracy (high HDOP/PDOP), impossible locations, or something else?\n- Are the duplicates exact duplicates (same timestamp, same coordinates) or near-duplicates?\n\nExcel can handle moderate datasets (up to maybe 100,000 rows) but it gets slow and clumsy with large GPS files. If your dataset is bigger than that, Python or R would be significantly faster. But if Excel is what you know, we can make it work for a lot of tasks."
+    },
+    {
+      "role": "user",
+      "content": "27 GPS collars. each one logging every 4 hours for about 10 months. so a lot of rows. the bad fixes are ones with high DOP or coordinates that are obviously wrong. like a point 500 km from the study area. animals don't move that fast."
+    },
+    {
+      "role": "assistant",
+      "content": "OK, let's do the math. 27 collars, logging every 4 hours, over 10 months — that's roughly:\n- 6 fixes/day x 300 days x 27 collars = about 48,600 rows\n\nThat's manageable in Excel but would be much more efficient in R or Python. Given you're working with wildlife collar data, I'd actually recommend **R with the `movebank` or `adehabitatLT` packages** — they're built specifically for this kind of GPS collar data cleaning.\n\nBut if Excel is your tool, here's a cleaning workflow:\n\n**Step 1: Filter bad DOP values**\n- Sort by HDOP or PDOP column\n- Flag or delete anything above your threshold (HDOP > 5 or 10 is common for wildlife studies)\n\n**Step 2: Remove impossible locations**\n- Define your study area bounding box (min/max lat and lon)\n- Use conditional formatting or a filter to flag any point outside that box\n- Formula: `=IF(OR(A2<min_lat, A2>max_lat, B2<min_lon, B2>max_lon), \"BAD\", \"OK\")`\n\n**Step 3: Speed filter**\n- Calculate distance and time between consecutive fixes for each animal\n- If the speed between two points exceeds what the animal can physically do, the fix is bad\n- For caribou, anything above about 10-15 km/h sustained over a 4-hour interval is suspicious\n\n**Step 4: Remove duplicates**\n- Sort by collar ID + timestamp\n- Use Excel's Remove Duplicates function\n\nIs this data going into a report, or do you need to analyze it further after cleaning?"
+    },
+    {
+      "role": "user",
+      "content": "it goes to the territorial government. GNWT. collar data submission. the deadline was March 1 actually. I'm late. took me two weeks just to pull the data off the collars and organize it. cleaning it up properly is another two weeks at least."
+    },
+    {
+      "role": "assistant",
+      "content": "Two weeks past deadline — that's not ideal, but government data submissions often have some flex, especially when the data quality is good when it does arrive. Better to submit clean data late than garbage data on time.\n\nHave you notified GNWT that it's going to be late? A quick email to your contact explaining the volume — 27 collars, 10 months of data — and a realistic delivery date will go a long way. Most government biologists understand the work involved.\n\nTo speed up the cleaning process:\n\n**Batch processing approach:**\n1. Combine all 27 collar files into one master spreadsheet with a collar ID column\n2. Apply the DOP filter across the whole dataset at once rather than file by file\n3. Apply the bounding box filter in one pass\n4. Sort by collar ID then timestamp, run the speed filter per animal\n5. Export cleaned data\n\nThis is where R really shines — you could write a script that processes all 27 files in minutes instead of doing it manually collar by collar. If you've used R before, I can give you a basic script.\n\nHave you done this submission before, or is this the first year?"
+    },
+    {
+      "role": "user",
+      "content": "I do it every year. always takes longer than I plan for. I use R for the analysis but the cleaning I've been doing by hand in Excel because I don't trust automated filters to catch everything. some of the bad fixes look reasonable if you don't know the terrain."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a legitimate concern. Automated filters catch the obvious outliers — high DOP, impossible speeds, out-of-bounds coordinates — but they miss the ones that are technically plausible but wrong if you know the landscape. A point on the wrong side of a river that the animal wouldn't cross in winter, for example. That kind of knowledge-based filtering is hard to automate.\n\nHere's a middle approach that could save you time:\n\n**Use R for the first-pass automated cleaning:**\n- DOP filter (remove HDOP > threshold)\n- Bounding box filter\n- Speed filter (flag, don't delete)\n- Duplicate removal\n\nThis could cut out 80-90% of the bad fixes automatically in minutes.\n\n**Then do your manual review on what's left:**\n- Export the flagged-but-not-deleted speed anomalies\n- Review questionable points in a GIS viewer or even Google Earth\n- Apply your terrain knowledge to the borderline cases\n\nThat way you're only hand-checking the edge cases instead of every single point. For 27 collars, that could cut your cleaning time from two weeks to maybe 4-5 days.\n\nDo you want me to help you write an R script for that first-pass filter?"
+    },
+    {
+      "role": "user",
+      "content": "yes. that would help. the csv format is collar_id, timestamp, latitude, longitude, altitude, hdop, temperature, voltage. standard Lotek format."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect, that's a clean format to work with. Here's an R script for the first-pass cleaning:\n\n```r\nlibrary(dplyr)\nlibrary(readr)\nlibrary(geosphere)\n\n# Read all CSV files from a folder\ndata_dir <- \"path/to/collar_csvs/\"\nfiles <- list.files(data_dir, pattern = \"*.csv\", full.names = TRUE)\ndf <- bind_rows(lapply(files, read_csv))\n\n# Standardize column names (adjust if yours differ)\ncolnames(df) <- c(\"collar_id\", \"timestamp\", \"lat\", \"lon\", \"alt\", \"hdop\", \"temp\", \"voltage\")\n\n# Parse timestamp\ndf$timestamp <- as.POSIXct(df$timestamp, format = \"%Y-%m-%d %H:%M:%S\", tz = \"UTC\")\n\n# --- FILTER 1: Remove high HDOP ---\nhdop_threshold <- 5  # adjust as needed\ndf$flag_hdop <- df$hdop > hdop_threshold\n\n# --- FILTER 2: Bounding box (adjust to your study area) ---\nmin_lat <- 68.0; max_lat <- 70.5\nmin_lon <- -138.0; max_lon <- -132.0\ndf$flag_bounds <- df$lat < min_lat | df$lat > max_lat | df$lon < min_lon | df$lon > max_lon\n\n# --- FILTER 3: Speed filter per animal ---\ndf <- df %>%\n  arrange(collar_id, timestamp) %>%\n  group_by(collar_id) %>%\n  mutate(\n    dist_m = c(NA, distHaversine(cbind(lon[-n()], lat[-n()]), cbind(lon[-1], lat[-1]))),\n    time_diff_h = c(NA, as.numeric(diff(timestamp), units = \"hours\")),\n    speed_kmh = (dist_m / 1000) / time_diff_h\n  ) %>%\n  ungroup()\n\nspeed_threshold <- 15  # km/h — adjust for caribou\ndf$flag_speed <- !is.na(df$speed_kmh) & df$speed_kmh > speed_threshold\n\n# --- FILTER 4: Duplicates ---\ndf$flag_dup <- duplicated(df[, c(\"collar_id\", \"timestamp\")])\n\n# --- Summary ---\ndf$flag_any <- df$flag_hdop | df$flag_bounds | df$flag_speed | df$flag_dup\ncat(\"Total fixes:\", nrow(df), \"\\n\")\ncat(\"Flagged:\", sum(df$flag_any), \"(\", round(100*sum(df$flag_any)/nrow(df),1), \"%)\\n\")\ncat(\"  HDOP:\", sum(df$flag_hdop), \"\\n\")\ncat(\"  Out of bounds:\", sum(df$flag_bounds), \"\\n\")\ncat(\"  Speed:\", sum(df$flag_speed), \"\\n\")\ncat(\"  Duplicate:\", sum(df$flag_dup), \"\\n\")\n\n# --- Output ---\nclean <- df %>% filter(!flag_any)\nreview <- df %>% filter(flag_speed & !flag_hdop & !flag_bounds)  # edge cases for manual review\n\nwrite_csv(clean, \"collar_data_clean.csv\")\nwrite_csv(review, \"collar_data_review.csv\")\nwrite_csv(df, \"collar_data_all_flagged.csv\")\n```\n\nYou'll need to adjust:\n- `data_dir` — path to your folder of CSVs\n- Bounding box coordinates for your study area\n- HDOP threshold (5 is conservative, 10 is more permissive)\n- Speed threshold for caribou\n\nThe script outputs three files:\n- **clean** — everything that passed all filters\n- **review** — speed-flagged but otherwise OK points for your manual check\n- **all_flagged** — the full dataset with flag columns so you can see what was removed and why\n\nDoes that format work for your Lotek output?"
+    },
+    {
+      "role": "user",
+      "content": "that's good. the bounding box needs adjusting. study area is bigger than that. the herd ranges from the Yukon coast to the Mackenzie Delta. I'll sort the coordinates. the speed threshold of 15 is about right for caribou in winter."
+    },
+    {
+      "role": "assistant",
+      "content": "Right — if the herd ranges that wide, you'll want to open up the bounding box significantly. Something like lat 66-70, lon -141 to -130 maybe, depending on how far west they go into Yukon. You know the range better than I do. Set it generous — the bounding box is just catching the obviously impossible fixes, not defining the study area.\n\nA few more tips for speeding up your review:\n\n- **Sort the review file by speed** — the highest speeds are the most obviously wrong. You might be able to bulk-delete everything above 30 km/h without even looking at it, and only manually check the 15-30 range.\n\n- **Plot the flagged points on a map** — in R you can do a quick plot:\n  ```r\n  library(ggplot2)\n  ggplot(review, aes(x=lon, y=lat, color=collar_id)) + geom_point(alpha=0.5)\n  ```\n  This lets you visually spot clusters of bad fixes versus isolated outliers.\n\n- **Check voltage** — low battery voltage often correlates with bad fixes. If a collar's voltage drops below a certain threshold, the GPS receiver gets unreliable. You could add a voltage filter too.\n\nHow's your R environment set up? Do you have these packages installed already?"
+    },
+    {
+      "role": "user",
+      "content": "I have R and most of the packages. need to install geosphere. the voltage filter is a good idea. some of the older collars are dropping below 3.2v by month 8."
+    },
+    {
+      "role": "assistant",
+      "content": "3.2V is definitely in the danger zone for GPS accuracy. You can add a voltage filter easily — just add this line after the other filters:\n\n```r\nvoltage_threshold <- 3.2\ndf$flag_voltage <- df$voltage < voltage_threshold\n```\n\nAnd update the `flag_any` line to include it:\n\n```r\ndf$flag_any <- df$flag_hdop | df$flag_bounds | df$flag_speed | df$flag_dup | df$flag_voltage\n```\n\nThat'll catch fixes from collars running on fumes. The late-season data from those collars is probably where a lot of your manual cleaning time goes.\n\nTo install geosphere:\n```r\ninstall.packages(\"geosphere\")\n```\n\nOnce you run the script, you should have your clean dataset and a much smaller review file. If the first pass catches even 80% of the bad data, you're looking at a few days of manual review instead of two weeks.\n\nWhen you submit to GNWT, do they want the clean data only, or do they want the raw data plus your cleaning methodology?"
+    },
+    {
+      "role": "user",
+      "content": "they want clean data plus a methods section describing what I filtered and why. which is good because it keeps me honest about what I removed. I'll run the script tonight. should save me a lot of time. thanks."
+    },
+    {
+      "role": "assistant",
+      "content": "Good — the flagged output file will help you write that methods section. You can report exact numbers: how many fixes removed by each filter, percentage of total, thresholds used. That's solid documentation.\n\nSomething like:\n- Total fixes collected: X\n- Removed (HDOP > 5): X\n- Removed (out of bounds): X\n- Removed (speed > 15 km/h): X\n- Removed (voltage < 3.2V): X\n- Removed (duplicates): X\n- Manually reviewed and removed: X\n- Final clean dataset: X fixes across 27 collars\n\nGNWT will appreciate the transparency. Good luck with it tonight. Let me know if you hit any issues running the script."
+    },
+    {
+      "role": "user",
+      "content": "will do. should have this done and submitted by end of next week. better late than sloppy."
+    },
+    {
+      "role": "assistant",
+      "content": "Better late than sloppy. That's the right call. Good luck with it."
+    }
+  ]
+}

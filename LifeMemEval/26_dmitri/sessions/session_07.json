@@ -1,0 +1,76 @@
+{
+  "session_id": 7,
+  "persona": "dmitri_volkov",
+  "date": "2025-02-03",
+  "type": "critical",
+  "topic": "home office setup",
+  "facts_disclosed": [
+    "3rd-floor apartment in Florentin"
+  ],
+  "turns": [
+    {
+      "role": "user",
+      "content": "thinking about adding a physical whiteboard to my home office for mapping attack surfaces. or maybe a digital one. what do you recommend for someone who thinks visually during engagements"
+    },
+    {
+      "role": "assistant",
+      "content": "Both have their place. Depends on your security requirements and how you work.\n\n**Physical whiteboard:**\n- Zero digital footprint — nothing to exfiltrate\n- Faster for brainstorming, no UI friction\n- Take a photo when done, encrypt it, wipe the board\n- Downsides: limited space, can't version control, anyone in the room can see it\n\n**Digital whiteboard:**\n- **Excalidraw** (self-hosted) — lightweight, shareable, stores locally\n- **Miro** — collaborative, but cloud-based (data leaves your machine)\n- **draw.io / diagrams.net** — offline mode, saves to local files, good for network diagrams\n- **Obsidian Canvas** — if you already use Obsidian for notes, this keeps everything in one encrypted vault\n\nFor attack surface mapping specifically:\n- **Physical** is better for initial brainstorming sessions where you're thinking fast and loose\n- **Digital** is better for maintaining and updating the map over an engagement lifecycle\n\nHow's your office space — do you have wall room for a decent-sized board?"
+    },
+    {
+      "role": "user",
+      "content": "the office is the second bedroom. not large. daria took the living room for her practice space which is fair. her cello needs the acoustics more than i need the square meters. so i am working with maybe 12 square meters"
+    },
+    {
+      "role": "assistant",
+      "content": "12 square meters with a full desk setup doesn't leave much wall space for a traditional whiteboard. But there are options.\n\n**Space-efficient physical options:**\n- **Whiteboard paint** on one wall — turns the entire wall into a writing surface without taking floor space. Costs about $50-80 for a kit\n- **Folding or rolling whiteboard** — can be stored when not in use\n- **Glass board** mounted above or beside your desk — doubles as a transparent overlay if you mount it over a window\n\n**For 12 sqm, I'd honestly lean digital:**\n- Excalidraw self-hosted + your ultrawide monitor gives you effectively unlimited canvas\n- No physical clutter in a small room\n- Everything encrypted and version-controlled\n\nIs the apartment a permanent setup, or are you considering a dedicated office space at some point?"
+    },
+    {
+      "role": "user",
+      "content": "permanent for now. we are in florentin. 3rd floor. the rent is reasonable and i am not moving my equipment again. last time i moved i had to degauss three drives and physically destroy two others. not doing that every year"
+    },
+    {
+      "role": "assistant",
+      "content": "Florentin is a good neighborhood for it — central enough for anything you need in Tel Aviv, and the rent hasn't gone completely insane yet compared to Rothschild or the north side.\n\n3rd floor is decent for physical security. High enough that casual access from ground level is impractical, low enough that you're not dependent on an elevator during a power outage. Middle ground.\n\nThe equipment destruction concern is real. Every move is a data security event for someone in your line of work. Degaussing and physical destruction is the right protocol, but it's expensive and time-consuming.\n\n**For making the current space work long-term:**\n- Whiteboard paint on the wall behind your desk — minimal disruption, maximum surface\n- Cable management to keep the room functional (in 12 sqm every centimeter matters)\n- Acoustic treatment on shared walls if Daria's cello bleeds through to your calls\n- Small UPS under the desk for the 3rd floor — if you're not on a generator building, power outages kill your uptime\n\nDo you have a dedicated network setup in the office, or are you running everything through a single router?"
+    },
+    {
+      "role": "user",
+      "content": "dedicated. segmented. work vlan. iot vlan. personal vlan. the router is a pfsense box i built myself. nothing consumer grade touches my network. the building wifi from the landlord is disabled at my unit"
+    },
+    {
+      "role": "assistant",
+      "content": "pfSense on custom hardware with VLAN segmentation — that's the right approach. Consumer routers are a liability, especially in an apartment building where you're sharing physical infrastructure.\n\nDisabling the building WiFi is smart. Shared building networks are an open invitation — ARP spoofing, rogue APs, lateral movement from a compromised neighbor. You don't want that anywhere near your work.\n\n**Some suggestions for the apartment network:**\n- **Separate WAN uplink** if you don't already have one — your own ISP line, not shared building internet\n- **IDS/IPS on pfSense** — Suricata or Snort package. Minimal overhead, good visibility\n- **Automated pfBlockerNG** for DNS filtering on all VLANs\n- **VPN server on pfSense** for when you need to reach your home lab from outside\n- **Log export** to a separate syslog server (even a Raspberry Pi running rsyslog) — if pfSense is compromised, logs should survive on a different box\n\nFor the IoT VLAN — what are you isolating there? Smart home devices?"
+    },
+    {
+      "role": "user",
+      "content": "daria's smart speaker. a thermostat. two ip cameras at the entrance. nothing i trust. they are on their own vlan with no route to anything else and outbound traffic filtered. the cameras record to local storage only. no cloud"
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect segmentation. IoT devices are essentially hostile endpoints you've chosen to tolerate — treating them as untrusted with no lateral access is the only sane approach.\n\nLocal-only recording for the cameras is the right call. Cloud-connected cameras are surveillance infrastructure you don't control.\n\n**A few refinements:**\n- **IP cameras**: if they support RTSP, pull the feed into a local NVR (like Frigate or ZoneMinder on a dedicated box) rather than using the cameras' built-in recording. Camera firmware is notoriously bad — the less it does, the smaller the attack surface\n- **Thermostat and smart speaker**: restrict their DNS to only the domains they need. Most phone-home to 15+ analytics domains that have nothing to do with functionality\n- **Outbound filtering**: if you're not already, log all denied outbound from the IoT VLAN. Useful to see what those devices are trying to reach\n\nThe entrance cameras on the 3rd floor — are those covering your apartment door, or the building entrance?"
+    },
+    {
+      "role": "user",
+      "content": "apartment door. i do not control the building entrance. which is a problem. anyone can walk into the lobby. the main door lock is a joke. i have mentioned it to the building committee three times. nichego. they do not care"
+    },
+    {
+      "role": "assistant",
+      "content": "An unsecured building entrance is a real weakness in your physical security model. All your network segmentation and drive encryption doesn't matter if someone can walk up to your apartment door unchallenged.\n\n**What you can control:**\n- Your apartment door cameras are good — make sure they have tamper alerts and enough local storage for at least 30 days\n- Upgrade the apartment door lock if you haven't — Abloy Protec2 or ASSA Twin are high-security mechanical locks that resist picking and bumping. Avoid smart locks (more attack surface)\n- Door reinforcement kit — strike plate upgrade, longer screws, hinge bolts. A strong lock on a weak frame is theater\n- Consider a door sensor tied to a local alarm — even a simple contact sensor that alerts your phone\n\n**What you can't easily control:**\n- Building entrance. Three requests ignored by the committee is typical. The only leverage is liability — if you can frame it as an insurance issue, that sometimes moves committees\n- Alternatively, propose splitting the cost of an intercom system. If they won't invest in security, make it about convenience\n\nHave you considered this a factor in any future housing decisions, or is the Florentin location worth the tradeoff?"
+    },
+    {
+      "role": "user",
+      "content": "it is a factor. but moving is a last resort for the reasons i said. for now the apartment door is hardened. multi-point locking. steel frame. the cameras give me visibility. it is not perfect but the real threats to my work are digital not physical. probably"
+    },
+    {
+      "role": "assistant",
+      "content": "The \"probably\" is doing a lot of work in that sentence. But you're right that for an independent consultant, the digital attack surface is larger and more actively targeted than the physical one.\n\nMulti-point locking with a steel frame is solid. That plus cameras plus 3rd floor means someone would need real intent and capability to breach the physical perimeter. The building entrance is an annoyance, not a critical vulnerability — it just means your defense starts at your own door rather than the lobby.\n\nYour setup is well-structured for the space you have. Go with the whiteboard paint on the wall — keep the digital workflow for persistent maps, use the wall for the fast thinking. In 12 square meters you need every surface working for you.\n\nOne more thought — have you considered a motion-activated camera in the stairwell outside your door? Your landlord can't stop you from monitoring your own floor."
+    },
+    {
+      "role": "user",
+      "content": "the stairwell camera is a good idea. i considered it. the problem is power. there is no outlet in the hallway. battery cameras exist but the battery life is poor and i do not want to maintain it. for now the door cameras are enough. i know when someone is at my door. that is the critical event"
+    },
+    {
+      "role": "assistant",
+      "content": "Fair. A battery camera that dies is worse than no camera — it creates a false sense of coverage. Your door cameras covering the critical perimeter is the right priority. If you ever get a power outlet installed in the hallway, revisit it then.\n\nLet me know if you want to revisit the network setup or the office layout."
+    }
+  ]
+}

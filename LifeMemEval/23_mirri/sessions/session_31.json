@@ -1,0 +1,74 @@
+{
+  "session_id": 31,
+  "persona": "mirri_yunupingu",
+  "date": "2026-03-02",
+  "type": "filler",
+  "topic": "fixing fence around the ranger house — buffalo damage",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Buffalo came through the fence again. Third time this dry season. They pushed right through the north side where it faces the floodplain, bent the star pickets flat, trampled the garden bed. I need to fix it properly this time so they do not keep doing this."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a lot of repeat damage. Before we work out the fix, can you describe what the current fencing is — wire type, post material, height, and spacing? That way I can suggest something that actually holds up to buffalo pressure."
+    },
+    {
+      "role": "user",
+      "content": "Standard rural stuff. Four strand barbed wire on steel star pickets. About 1.2 metres high, posts maybe 3 metres apart. It was only ever meant to mark the yard and keep wallabies out of the garden. Never built for buffalo. But the floodplain is drying out this year and the buffalo are coming in closer looking for green pick."
+    },
+    {
+      "role": "assistant",
+      "content": "A 1.2-metre barbed wire fence on star pickets won't even slow a buffalo down. For the section they keep hitting, you'd want to upgrade to heavier posts — steel pipe or solid timber — and use ringlock or hinge-joint mesh as the main barrier instead of just wire strands. Bringing it up to about 1.5 metres with a couple of barbed wire strands on top would help too. How much of the fence line are we talking about?"
+    },
+    {
+      "role": "user",
+      "content": "It is just the north run, maybe 30 metres. The other sides have the shed and the driveway blocking them so the buffalo do not come from those directions. There are some old pipe posts at the depot in Jabiru from the campground upgrade last year. And ringlock mesh there too. I could use those instead of buying new."
+    },
+    {
+      "role": "assistant",
+      "content": "Using those pipe posts is a good call — they're heavy enough to take the pressure and saves you the cost. For 30 metres at 2-metre spacing, you'd need about 16 posts. One important detail: mount the ringlock mesh on the buffalo-facing side of the posts, not the yard side. That way when they push into it, the mesh presses against the posts rather than pulling away from them."
+    },
+    {
+      "role": "user",
+      "content": "I would not have thought of that. Mesh on the outside. That makes sense. What about the corners. Last time someone put star pickets on the corners and they just pulled over. That is where the whole thing fails."
+    },
+    {
+      "role": "assistant",
+      "content": "Corners are critical. Star pickets will always fail there because that's where all the tension concentrates. Use your heaviest pipe posts for corners and set them in concrete — even a dry mix poured in the hole with water added will set hard enough. If you can add a diagonal brace or stay wire from each corner post, even better. That's what takes the strain when the mesh is tensioned."
+    },
+    {
+      "role": "user",
+      "content": "I have bags of concrete at the station from another job. I will set the corner posts in concrete and brace them. There is also wattle scrub growing right up against the fence on that north side. The buffalo probably walk through it and just lean into the fence without even trying. I should clear that too."
+    },
+    {
+      "role": "assistant",
+      "content": "Clearing that scrub is important. If buffalo can approach under cover, they'll push against the fence casually while browsing. An open approach makes them more cautious — they don't like exposed ground near structures. Clear back at least 3 or 4 metres from the fence line if you can."
+    },
+    {
+      "role": "user",
+      "content": "Alright. Clear the wattle back, pipe posts in concrete on the corners, ringlock on the outside, barbed wire on top. I will get the materials from Jabiru this week and do the work over the weekend when it is cooler in the mornings. Should be able to knock it over in a day if I start early."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a solid plan. Starting early makes sense — heavy post work in the midday heat isn't ideal. If you can get the corner posts in and set the day before, the concrete will have time to cure overnight before you tension the mesh. That gives everything more stability from the start."
+    },
+    {
+      "role": "user",
+      "content": "Good thinking. Set the corners first and let them cure. I will do it that way. Two trips to the depot then but that is alright. I am tired of fixing the same fence every few weeks. One proper job now saves a lot of trouble later."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly — investing the time now to do it once means you're not out there every few weeks patching it. Hopefully the buffalo find somewhere else to browse after they hit the new fence a couple of times. Good luck with the build."
+    },
+    {
+      "role": "user",
+      "content": "Thanks for the help. I will let the buffalo sort themselves out. They have the whole park, they do not need my garden bed."
+    },
+    {
+      "role": "assistant",
+      "content": "They've got plenty of country out there. Once the fence is solid, they'll move on. Hope it goes smoothly this weekend."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "session_id": 28,
+  "persona": "aroha_tane",
+  "date": "2026-02-18",
+  "type": "critical",
+  "topic": "conference prep",
+  "facts_disclosed": ["Homebirth conference Wellington July 18 2026, presenting on tikanga"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay i need to start getting serious about something i've been quietly working on for a while. i've got a big professional thing coming up and i'm at the point where i need to actually structure my thoughts instead of just scribbling notes on the back of patient files"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a good sign — moving from scattered notes to structure means you've already done a lot of the thinking, you just need to organise it. What's the professional thing, and what stage are you at with it?"
+    },
+    {
+      "role": "user",
+      "content": "so there's a national homebirth midwifery hui happening in Wellington on July 18 and i've been accepted to present a kōrero on weaving tikanga Māori into birth planning. i've been developing my thinking on this for months now, especially since i started using that tikanga birth plan template with my mamas. but going from something i do in my practice to standing up in front of midwives from all over the country and making a case for it nationally is a different thing entirely eh"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a significant opportunity. Presenting at a national level means you're not just sharing what works for your practice — you're making an argument for why it should work across the profession. That's a bigger ask and it requires a different kind of preparation than just talking about your own experience.\n\nBut you have something a lot of presenters don't: you've actually been doing this work. You're not theorising, you're presenting from practice. That's powerful.\n\nLet's start with the basics. How long is your presentation slot, and what format — a keynote, a workshop, a panel?"
+    },
+    {
+      "role": "user",
+      "content": "it's a 30-minute presentation with 10 minutes for questions afterwards. so 30 minutes of me talking, then 10 minutes of people asking things. it's not a workshop, just a straight presentation. and the audience will be a mix — midwives, some obstetricians, student midwives, maybe some policy people from the Midwifery Council. so i need to speak to all of those levels"
+    },
+    {
+      "role": "assistant",
+      "content": "Thirty minutes is a good amount of time — enough to go deep but not so long that you have to pad. And that mixed audience is actually helpful because it means you need to keep it accessible rather than getting lost in jargon.\n\nHere's a structure that works well for a practice-based presentation to a mixed professional audience:\n\n**Opening (3-4 minutes):** Start with a story, not a thesis statement. A specific birth where tikanga made a tangible difference to the outcome or the experience. Ground the audience in the human reality before you make the argument.\n\n**The problem (5-6 minutes):** What's missing from standard birth planning in Aotearoa? Why do current frameworks not serve Māori mamas and whānau? Be specific — what gets lost, what gets ignored, what gets overridden.\n\n**Your approach (10-12 minutes):** Walk through your tikanga birth plan framework. Explain the sections, why each matters, and how it works in practice. Use real examples (de-identified, obviously) from your mamas.\n\n**The evidence (5-6 minutes):** What have you seen change since implementing this? Outcomes, feedback from mamas, feedback from whānau, any pushback and how you handled it.\n\n**The call to action (3-4 minutes):** What do you want this audience to do differently? What would it look like if tikanga-informed birth planning became standard practice, not an add-on?\n\nDoes that kind of arc feel right for what you want to say?"
+    },
+    {
+      "role": "user",
+      "content": "that feels really right actually. i think the opening story is key because i want people to feel it before they hear the theory. i have a birth from last year that would be perfect — the mama had a whenua burial plan and a karakia sequence mapped out and when things got complicated and we had to transfer, we were able to carry every single one of those wishes into the hospital because it was written down and communicated clearly. the hospital staff actually thanked us afterwards for making it easy for them to respect her wishes. that's the whole argument in one story eh"
+    },
+    {
+      "role": "assistant",
+      "content": "That's an exceptional opening story because it does three things at once: it shows tikanga being honoured, it shows the plan surviving a complication, and it shows hospital staff responding positively rather than resisting. That last part is crucial for the obstetricians and policy people in your audience — it addresses their potential objection before they even raise it. \"This doesn't create conflict with the clinical team, it actually makes their job easier.\"\n\nWhen you tell that story, keep it tight — two to three minutes maximum. Enough detail to make it real, not so much that you're giving a case study. You want the audience leaning in, not taking clinical notes.\n\nFor the problem section — what do you see as the biggest gap in how birth planning currently works for Māori whānau?"
+    },
+    {
+      "role": "user",
+      "content": "the biggest gap is that most birth plan templates treat cultural wishes as an afterthought. there's usually one line at the bottom that says something like 'any cultural or spiritual preferences' and you're supposed to fit your entire worldview into that one line. tikanga isn't a preference, it's a framework for how birth should be approached. it's not an add-on to the clinical plan, it should shape the clinical plan. that's the shift i want to argue for"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong, clear argument and it's the kind of reframing that stays with people. \"Tikanga isn't a preference, it's a framework\" — that's your thesis statement right there. If the audience remembers one sentence from your presentation, make it that one.\n\nFor the problem section, you could actually show a standard birth plan template on screen — the kind with that single cultural preferences line — and let the audience see how inadequate it is. Then contrast it with your tikanga birth plan framework. The visual comparison makes the argument instantly without you having to over-explain it.\n\nHave you started thinking about slides, or are you more of a notes-and-talk person?"
+    },
+    {
+      "role": "user",
+      "content": "i'm definitely more of a talk person, i don't want to be reading off slides. but i think some visual support would help, especially that comparison you just mentioned. maybe minimal slides — an image or a key phrase on each one, not walls of text. i've seen too many conference presentations where people just read their slides and everyone zones out. i want this to feel like a kōrero not a lecture eh"
+    },
+    {
+      "role": "assistant",
+      "content": "Minimal slides with a kōrero delivery is the best approach for this kind of presentation. Here's a rough slide plan that supports your talk without replacing it:\n\n- **Slide 1:** Title and your name. Simple.\n- **Slide 2:** A photo or image that sets the tone for your opening story (something evocative — moana, whenua, something connected to birth or place). You talk over it.\n- **Slide 3:** The standard birth plan template with that one cultural line highlighted. Let the audience react.\n- **Slide 4:** Your tikanga birth plan framework — the section headings only, not the full content. This is your \"here's what it could look like instead\" moment.\n- **Slides 5-7:** One key phrase per slide for your main points. Things like \"Tikanga is a framework, not a preference\" — just that line on the screen while you expand on it verbally.\n- **Slide 8:** Your outcomes or feedback — a few short quotes from mamas if you have them (de-identified).\n- **Slide 9:** Your call to action — what you want the audience to take away.\n- **Slide 10:** Your contact details and a way for people to access the template if they want it.\n\nTen slides for thirty minutes means each one sits for about three minutes, which feels spacious and calm — matching your natural delivery style.\n\nWhat's your timeline for getting this prepared?"
+    },
+    {
+      "role": "user",
+      "content": "the hui is July 18 so i've got about five months. i want to have a solid draft of my talk done by april so i can practice it and get feedback from a couple of colleagues. the slides can come later, those are the easy part. the hard part is figuring out exactly what i want to say and making sure it lands with that mixed audience without watering down the kaupapa"
+    },
+    {
+      "role": "assistant",
+      "content": "Five months with a draft-by-April goal is a solid timeline. That gives you April to practice, May to refine based on feedback, and June for the slides and final polish. You won't be scrambling.\n\nFor the next step, I'd suggest writing a rough script — not something you'll read from, but a full written version of your talk in your own voice. Write it the way you'd say it. That forces you to make decisions about what's in and what's out, and it gives you something concrete to share with colleagues for feedback.\n\nThe risk with a kōrero-style delivery is that without a script draft, you might under-prepare the middle sections and over-rely on your confidence with the topic. You know this material deeply, but \"knowing it\" and \"presenting it in thirty minutes to a national audience\" are different skills.\n\nWant to work on the opening section now, or do you want to go away and draft it yourself first?"
+    },
+    {
+      "role": "user",
+      "content": "i'll draft it myself i think. i want it to come from my voice not from a template. but this structure is exactly what i needed to get started, i've been going in circles in my head for weeks trying to figure out where to begin and now i know. opening story, the problem, my approach, the evidence, the call to action. ten slides. draft by april. i can do that"
+    },
+    {
+      "role": "assistant",
+      "content": "You can absolutely do that. And your instinct to draft it in your own voice is right — this needs to sound like you, not like a conference abstract. The structure is just scaffolding; your kōrero is what fills it.\n\nOne last thought: when you draft the opening story, write it first and write it before anything else. If you get that right, the rest of the talk will flow from it because everything you're arguing for is contained in that one example. Start there.\n\nThis could genuinely shift how people think about birth planning at a national level. That's worth the five months of work. Kia kaha with it."
+    },
+    {
+      "role": "user",
+      "content": "i really feel like it could too. this is the kind of kōrero that's been missing from the profession for a long time and if i can present it well enough to make even a few midwives rethink how they approach birth planning for Māori whānau then it's worth every minute of preparation. thanks for helping me see the shape of it, that's been the hardest part. now i just have to write the thing eh. ka pai"
+    },
+    {
+      "role": "assistant",
+      "content": "The shape was already in your head — you just needed someone to help you see it laid out. You've got the story, you've got the argument, you've got the practice to back it up. Now it's just the writing, and you've got five months and a clear plan. Wellington won't know what hit it. Ka pai, and come back when you've got that draft if you want a sounding board."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "session_id": 15,
+  "persona": "kofi_mensah",
+  "date": "2025-07-11",
+  "type": "filler",
+  "topic": "mobile money help \u2014 sending payment to Kumasi",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "my friend I need to send money to a supplier in Kumasi. mobile money. but the transaction keeps failing. it says insufficient balance but I have the money in there. what is wrong"
+    },
+    {
+      "role": "assistant",
+      "content": "That's frustrating. A few common reasons this happens even when you have the balance:\n\n1. **Transaction fees.** The system adds a fee on top of the amount you're sending. If your balance is exactly the amount or just slightly above, it won't go through because the fee pushes it over. Check that you have enough to cover the transfer amount PLUS the fee (usually 0.75-1% of the amount).\n\n2. **Daily or transaction limit.** Mobile money accounts have limits based on your registration level. If you haven't done a full KYC registration with your ID, your limit might be lower than the amount you're trying to send.\n\n3. **Network issue.** Sometimes it shows the wrong error message when the network is slow.\n\nHow much are you trying to send, and which mobile money service are you using?"
+    },
+    {
+      "role": "user",
+      "content": "MTN MoMo. I am sending 850 cedis. my balance is 910 cedis. so the fee is the problem maybe"
+    },
+    {
+      "role": "assistant",
+      "content": "That's very likely the issue. For MTN MoMo, the transfer fee on 850 cedis would be around 8-10 cedis. So you need approximately 860 cedis minimum, which you have.\n\nBut wait \u2014 check if there's also an **e-levy** charge. The government e-levy is 1% on transfers above 100 cedis. That would be about 8.50 cedis on top of the MoMo fee.\n\nSo the total could be:\n- Transfer: 850 cedis\n- MoMo fee: ~9 cedis\n- E-levy: ~8.50 cedis\n- **Total: ~867.50 cedis**\n\nWith 910 cedis you should still have enough. Try this:\n\n1. Dial *170# and check your **actual available balance** first (not the last notification balance \u2014 sometimes there's a pending transaction holding some funds).\n2. If the balance is correct, try sending again. Sometimes it's just a network glitch and works on the second attempt."
+    },
+    {
+      "role": "user",
+      "content": "okay I checked. balance is 910. I tried again and same error. maybe the network. but my friend I need this money to reach Kumasi today. the supplier is waiting. he will give my order to someone else"
+    },
+    {
+      "role": "assistant",
+      "content": "If it's urgent and the app keeps failing, try these alternatives:\n\n1. **Use the USSD code instead of the app.** Dial *170# > Send Money > MoMo User > enter the number and amount. USSD sometimes works when the app doesn't.\n\n2. **Go to an MTN MoMo agent** in your area. They can process the transfer from their system. You may pay a small agent fee but at least it goes through today.\n\n3. **Try splitting the transaction.** Send 500 cedis first, then 350 cedis. Sometimes smaller amounts go through when larger ones don't. It costs a bit more in fees but it gets the money there.\n\n4. **Call MTN customer service:** 100 from your MTN line. They can check if there's a hold or block on your account.\n\nWhich of these can you do right now?"
+    },
+    {
+      "role": "user",
+      "content": "I used USSD not the app. there is no agent in my village. the nearest is 6 km. let me try splitting it. 500 first"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, try the 500 first. If that goes through, wait for the confirmation SMS, then send the 350.\n\nYou may want to call your supplier and let him know you're sending in two parts so he doesn't get confused when only 500 arrives first. Just a quick call or text: \"sending in two parts, second one coming in 5 minutes.\"\n\nTry it now and tell me what happens."
+    },
+    {
+      "role": "user",
+      "content": "the 500 went through! medaase. okay I am sending 350 now"
+    },
+    {
+      "role": "assistant",
+      "content": "Good! That confirms it was likely a transaction limit issue on single transfers, not a balance problem. Some accounts have a per-transaction cap depending on your KYC level.\n\nOnce the 350 goes through, you might want to **upgrade your MoMo account** when you next visit town. Take your Ghana Card to an MTN office and they can raise your limits. It's free and takes about 10 minutes. That way you won't have this problem again with larger payments."
+    },
+    {
+      "role": "user",
+      "content": "350 also went through. the supplier has confirmed. Nyame is good. my friend you saved me today. if that order was lost I would wait 3 weeks for the next delivery. I will go to MTN office and upgrade the account"
+    },
+    {
+      "role": "assistant",
+      "content": "Glad it worked out. 3 weeks is too long to wait \u2014 you made the right call pushing to solve it today.\n\nWhen you go to the MTN office, ask them what your current transaction limit is and what it will be after the upgrade. That way you know exactly how much you can send in one go next time. Usually the upgraded limit is 5,000-10,000 cedis per transaction, which should cover any supplier payment."
+    },
+    {
+      "role": "user",
+      "content": "do I need my Ghana Card for that"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, take your Ghana Card. That is the main document they need for the KYC upgrade. Without it they cannot process the change. If for any reason you don't have your Ghana Card, a valid passport or voter's ID can sometimes work, but the Ghana Card is the easiest and fastest.\n\nThe upgrade itself takes about 10 minutes. No charge."
+    },
+    {
+      "role": "user",
+      "content": "I will do it next market day when I go to town. medaase my friend. the world is moving to phones and money on phones and we must keep up. obi nnim what tomorrow brings but today the payment went. good night"
+    },
+    {
+      "role": "assistant",
+      "content": "You are keeping up just fine. Solving problems is what matters, not how. Good night, Kofi. Hope the delivery comes on time."
+    }
+  ]
+}

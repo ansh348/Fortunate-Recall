@@ -1,0 +1,50 @@
+{
+  "session_id": 30,
+  "persona": "marcus_marley_williams",
+  "date": "2026-02-22",
+  "type": "filler",
+  "topic": "help with dissertation statistics — confused about p-values",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "ok so i need proper help with statistics because im writing up results for my dissertation and i keep second guessing everything"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, happy to help. Where are you getting stuck specifically?"
+    },
+    {
+      "role": "user",
+      "content": "p-values. i know p less than 0.05 means significant but thats about where my understanding ends tbh. i dont actually know what its telling me in plain english. and i need to explain it properly in my write-up not just copy numbers from SPSS"
+    },
+    {
+      "role": "assistant",
+      "content": "Totally fair, p-values trip everyone up. Here's the plain English version:\n\nA p-value tells you the probability that the results you're seeing could have happened purely by chance, assuming there's actually no real difference between your groups. So if p = 0.03, there's only a 3% chance your results are a fluke. Since that's below 5%, you call it statistically significant.\n\nBut here's the important part most people miss: a significant p-value tells you a difference is real, but it doesn't tell you how BIG the difference is. That's where effect size comes in. Are you using effect sizes too?"
+    },
+    {
+      "role": "user",
+      "content": "yeah my supervisor told me to include Cohen's d. i calculated it and got d = 0.74 for one comparison and wrote 'medium to large effect size' because thats what the textbook said. but if someone asked me why 0.74 counts as medium to large i couldnt tell them"
+    },
+    {
+      "role": "assistant",
+      "content": "Fair enough. Cohen's d measures the size of the difference between two groups in standard deviations. The benchmarks are: d = 0.2 is small, d = 0.5 is medium, d = 0.8 is large. Your 0.74 sits between medium and large, meaning the difference isn't just statistically real (p-value told you that), it's also practically meaningful -- there's a clear, substantial gap between your groups.\n\nThink of it this way: the p-value answers \"is this real?\" and the effect size answers \"is this important?\" When you report results, you give both: the test statistic, the p-value, and the effect size. Something like: \"There was a statistically significant difference (t(48) = 3.12, p = .003, d = 0.74), indicating a medium-to-large effect.\""
+    },
+    {
+      "role": "user",
+      "content": "the is this real vs is this important thing is actually genius. im writing that down. ok one more thing -- i have some results where p is like 0.08 or 0.11. not significant technically. but the differences in the means still look pretty big to me. what do i do with those? can i just ignore them"
+    },
+    {
+      "role": "assistant",
+      "content": "Don't ignore them. Report them as not reaching significance but discuss WHY in your discussion section. The most common reason is small sample size -- if you don't have many participants, even real differences might not show as significant because you lack statistical power. You can call these \"trends\" or say they \"approached significance\" and argue that a larger study might find significance there. Put that in your limitations section too. Markers love it because it shows you understand the stats rather than just accepting or rejecting numbers blindly."
+    },
+    {
+      "role": "user",
+      "content": "yeah my sample IS pretty small so that could genuinely explain it. ok this makes so much more sense now. i feel like i actually understand what im writing instead of just copying outputs and hoping for the best. safe for the help bruv im going to rewrite the results section tonight while this is all fresh"
+    },
+    {
+      "role": "assistant",
+      "content": "No problem at all. You've clearly got the data and the findings -- you just needed the stats explained in a way that clicked. Go get that section sorted and come back if you hit any more walls. Good luck tonight!"
+    }
+  ]
+}

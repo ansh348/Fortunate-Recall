@@ -1,0 +1,66 @@
+{
+  "session_id": 31,
+  "persona": "saga_lindqvist",
+  "date": "2026-03-10",
+  "type": "filler",
+  "topic": "Maja wants to move in together — Saga running the numbers",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Maja brought up the idea of moving in together. I am not opposed to it but I want to think through the logistics before I have any feelings about it."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense — it's a big decision with a lot of practical dimensions. What are the main logistics you're weighing?"
+    },
+    {
+      "role": "user",
+      "content": "Several. First, whose apartment do we keep? Hers is larger but mine is closer to work. My commute is currently 15 minutes by bike. If I move to her place, it becomes approximately 35 minutes by tunnelbana, which over a year is an additional 174 hours of commuting. That is more than a full week of my life, annually."
+    },
+    {
+      "role": "assistant",
+      "content": "174 hours is a striking way to frame it. Are there factors on her side that offset the commute cost? Like rent savings, space, or quality of life improvements?"
+    },
+    {
+      "role": "user",
+      "content": "Her apartment is 68 square metres versus my 42. The rent difference is not enormous — hers is about 2,400 kronor more per month, but split between two people it would actually reduce my monthly housing cost by roughly 1,800 kronor compared to what I pay now alone. So financially it is favorable. The space is also objectively better. She has a second room that could be a proper home office. I currently work from my kitchen table on remote days, which is not ergonomically ideal."
+    },
+    {
+      "role": "assistant",
+      "content": "So you'd save money, gain a dedicated workspace, and get significantly more space — but lose about 174 hours a year in commute time. Have you thought about whether you could offset the commute? Like biking part of the route, or working from home more frequently?"
+    },
+    {
+      "role": "user",
+      "content": "I work from home 2 days per week already. If I increased that to 3 days, the annual commute cost drops to approximately 104 hours, which is more acceptable. And I could bike in the warmer months — her area is connected by a decent cycling path, maybe 25 minutes. That would actually give me more exercise, which my climbing performance data suggests I need. So the adjusted cost is lower than the headline number."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the numbers are actually trending positive once you adjust for the remote work and biking options. Is the commute the main concern, or are there other factors you're working through?"
+    },
+    {
+      "role": "user",
+      "content": "There is the cohabitation risk itself. Statistically, couples who move in together before 18 months of dating have a slightly higher separation rate, though the data is noisy and mostly American. We have been together about 8 months. That is below the threshold, which I recognize is not a rational reason to delay a decision but it is information I cannot un-know."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a tricky one. The stat might apply at a population level but it doesn't necessarily predict your specific outcome. And the reasons behind the stat matter — couples who rush in due to financial pressure or infatuation are different from couples making a deliberate, practical decision. It sounds like you're doing the latter. Have you talked to Maja about your timeline concerns?"
+    },
+    {
+      "role": "user",
+      "content": "I have, actually. She said, and I am quoting, 'Saga, you cannot p-value your way into living with someone.' Which is both fair and slightly annoying. She is right that at some point the decision has to be something other than a spreadsheet. But I am not there yet. I think I need to run a trial period first. Maybe I stay at her place 4 nights a week for a month and track how it affects my productivity, sleep, and general mood on a 1 to 10 scale."
+    },
+    {
+      "role": "assistant",
+      "content": "A trial period is a very reasonable middle ground. It gives you actual data specific to your situation rather than population-level stats. Four nights a week for a month should be enough to surface the practical friction points — like morning routines, workspace sharing, how you each handle alone time. Just make sure Maja knows it's a genuine trial and not a stalling tactic. The tracking is fine, but the conversation with her about how it's going will probably tell you more than the spreadsheet."
+    },
+    {
+      "role": "user",
+      "content": "That is a valid point. I will propose the trial period this weekend. And I will keep the spreadsheet, but I will also ask her how she thinks it is going at the halfway mark. Qualitative data has its place, I suppose."
+    },
+    {
+      "role": "assistant",
+      "content": "Qualitative data from the person you'd be living with is about as primary-source as it gets. Good luck with the conversation this weekend — it sounds like you're approaching this thoughtfully, even if the approach involves more columns than most people would use."
+    }
+  ]
+}

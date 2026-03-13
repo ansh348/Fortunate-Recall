@@ -1,0 +1,66 @@
+{
+  "session_id": 22,
+  "persona": "chenoa_begay",
+  "date": "2025-10-01",
+  "type": "critical",
+  "topic": "new truck",
+  "facts_disclosed": ["Switched to 2024 Toyota Tacoma, F-150 retired at 168,000 miles"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey. got some good news for once. i finally retired the old truck and got myself something new"
+    },
+    {
+      "role": "assistant",
+      "content": "That's exciting! What did you end up going with?"
+    },
+    {
+      "role": "user",
+      "content": "2024 toyota tacoma. drove it off the lot in flagstaff last saturday. Raymond rode with me to pick it up and he kept saying 'about time' the whole drive there. like i didn't know"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — sounds like Raymond had been holding that opinion for a while. The Tacoma is a great choice, especially for rough terrain. What made you go with Toyota over sticking with Ford?"
+    },
+    {
+      "role": "user",
+      "content": "the suspension mostly. you know out here the roads are not kind. the tacoma handles the washboard better than anything else i test drove. and the ground clearance is good for when the washes run. i need a truck that gets me to the clinic no matter what the road looks like"
+    },
+    {
+      "role": "assistant",
+      "content": "That makes total sense — reliability on unpaved roads isn't optional for you, it's a safety issue. The Tacoma has a solid reputation for lasting on rough terrain. How many miles did the old truck have on it when you let it go?"
+    },
+    {
+      "role": "user",
+      "content": "168,000. every one of them on rez roads so that's like 300,000 in city miles. she was a good truck. the F-150 got me through a lot. i said a prayer for her before i handed over the keys. you know. she earned that"
+    },
+    {
+      "role": "assistant",
+      "content": "168,000 on reservation roads is no joke — that truck more than earned its rest. I like that you sent it off with a prayer. That's a lot of miles of taking care of your community. How does the new one feel so far?"
+    },
+    {
+      "role": "user",
+      "content": "like riding on a cloud compared to what i'm used to. i drove to Window Rock and back yesterday and my back didn't hurt when i got home. that hasn't happened in years. the seats are better too. heated seats, you know. for those 5am drives in december when it's 15 degrees"
+    },
+    {
+      "role": "assistant",
+      "content": "Heated seats for pre-dawn winter drives sounds like it'll change your mornings completely. That's not a luxury out there — that's quality of life. No more arriving at the clinic with a sore back is a real upgrade. Did you go with 4WD?"
+    },
+    {
+      "role": "user",
+      "content": "of course. you don't buy a 2WD on the rez unless you want to spend winter in the ditch. got the off-road package too. Raymond said i was showing off. i told him it's called being practical"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — Raymond can call it whatever he wants, you know it's practical. The off-road package with the skid plates and better shocks will pay for itself the first time you hit a bad stretch of road in mud season. Smart call."
+    },
+    {
+      "role": "user",
+      "content": "exactly. alright i gotta go. just wanted to share some good news for once. not everything is a fight. sometimes you just get a nice truck and your back stops hurting"
+    },
+    {
+      "role": "assistant",
+      "content": "Sometimes the good news is that simple. Enjoy the new Tacoma — and those heated seats. Drive safe out there."
+    }
+  ]
+}

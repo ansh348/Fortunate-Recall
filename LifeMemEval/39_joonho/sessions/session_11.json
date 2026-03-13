@@ -1,0 +1,50 @@
+{
+  "session_id": 11,
+  "persona": "park_joonho",
+  "date": "2025-03-01",
+  "type": "filler",
+  "topic": "trying to make Eunji's doenjang-jjigae — too much salt",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I attempted to make doenjang-jjigae this evening and I am afraid the result was a failure. I have been trying to recreate my late wife's recipe from memory, and tonight I added far too much doenjang paste. The broth is so salty it is essentially inedible. Could you help me understand the correct proportions? I think I am making a fundamental error somewhere in the process."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry the batch didn't work out — but the good news is that doenjang-jjigae is forgiving enough that the proportions can be corrected once you have a reliable baseline.\n\nFirst, how much were you making, and how much doenjang paste did you use? Knowing the ratio will help me pinpoint where things went wrong."
+    },
+    {
+      "role": "user",
+      "content": "I used a small earthenware pot — perhaps one and a half liters of anchovy broth. And I added what I believed was two tablespoons of doenjang, but in retrospect I think it was closer to four. The paste I am using is quite concentrated. Eunji made her own doenjang, which I think was milder than the commercial variety. She fermented it on the veranda every spring. I have been using a store-bought brand, and it is considerably saltier."
+    },
+    {
+      "role": "assistant",
+      "content": "That's almost certainly the issue. Homemade doenjang is typically less concentrated and less salty than commercial brands — the fermentation process, the specific soybean-to-salt ratio, and the aging time all differ. When you substitute a store-bought paste using the same quantity your wife used with her homemade version, you're effectively doubling or tripling the salt.\n\nFor 1.5 liters of broth with a commercial doenjang, I'd suggest starting with just 1.5 tablespoons of paste, dissolving it gradually and tasting as you go. You can always add more, but you cannot take it back.\n\nDid she add any other ingredients that might have balanced the salt, or do you remember anything about the broth she used?"
+    },
+    {
+      "role": "user",
+      "content": "I do not recall anything to balance the salt specifically. But she added a small amount of gochugaru — just a pinch — and a whole dried red pepper in the pot. I think she also used dasima in the broth rather than anchovy alone. And she was very particular about the tofu. She insisted on the soft kind — sundubu, not the firm block. She said the firm tofu was for people who did not understand jjigae. On most matters she was flexible, but on tofu texture she was unyielding."
+    },
+    {
+      "role": "assistant",
+      "content": "She sounds like she knew exactly what she was doing, and the dasima detail may be the key to your salt problem. Dasima broth has a natural sweetness and depth — it provides umami without adding sodium. Anchovy broth is itself somewhat salty. So you've been compounding the salt from two directions: a saltier paste and a saltier broth.\n\nFor your next attempt, try this:\n\n1. **Make the broth with dasima** — soak dried kelp in cold water for 30 minutes, heat gently, remove just before it boils. You can add a few anchovies, but let the kelp dominate.\n2. **1.5 tablespoons commercial doenjang**, dissolved gradually\n3. Onion and mushrooms first, then zucchini\n4. Sundubu broken in by hand at the end — she was right, soft tofu becomes part of the stew\n5. Pinch of gochugaru and the dried red pepper\n6. Taste before you adjust anything further\n\nWould you like to try this version tomorrow while the method is fresh?"
+    },
+    {
+      "role": "user",
+      "content": "I think I will try again tomorrow evening, yes. Cooking is not unlike solving a problem — one must isolate the variables. Tonight I changed too many things at once. The commercial doenjang, the anchovy broth, the uncertain measurement. In mathematics we would call this a poorly controlled experiment. Tomorrow I will change one variable at a time, starting with the broth. If the dasima base produces a better result, I will know the foundation was the issue."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly the right approach — control the variables, change one at a time, and observe the result. Starting with the broth is the right choice, because it's the foundation everything else sits on. If the base is too salty, no amount of adjusting the other ingredients will fix it.\n\nWhen you taste tomorrow's version, try to remember not just the flavor but the feeling — whether it reminds you of hers. The proportions are the mathematics, but the taste memory is the proof. You'll know when it converges."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. I think convergence is the correct framing. Each attempt narrows the distance between what I make and what I remember. Whether the limit is actually reachable, I cannot say — there may be some irreducible gap between the original and any approximation. But the process itself has value. Eunji would laugh to see me taking notes in the kitchen. Good evening."
+    },
+    {
+      "role": "assistant",
+      "content": "The image of you taking notes at the stove is genuinely charming — and I think she'd appreciate the dedication even while laughing at the method. The irreducible gap may be real, but each iteration carries its own meaning.\n\nGood evening. I hope tomorrow's jjigae brings you closer to the limit."
+    }
+  ]
+}

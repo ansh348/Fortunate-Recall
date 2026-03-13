@@ -1,0 +1,114 @@
+{
+  "session_id": 28,
+  "persona": "billy_kootook",
+  "date": "2026-01-22",
+  "type": "critical",
+  "topic": "survey planning",
+  "facts_disclosed": ["Muskox aerial survey June 4 2026, helicopter from Inuvik"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "need to put together a survey protocol document for an aerial wildlife count. the territorial government wants everything on paper before they approve the helicopter time."
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with that. Aerial survey protocols generally follow a standard structure. Before I start drafting, a few questions:\n\n- What species are you surveying?\n- What count method — total count, strip transect, distance sampling?\n- What's the survey area?\n- When is it scheduled?"
+    },
+    {
+      "role": "user",
+      "content": "muskox. total count via strip transects. we fly the transects and count everything we see. survey area is the coastal plain and foothills east of Tuk out toward the Richardson Mountains."
+    },
+    {
+      "role": "assistant",
+      "content": "Good — muskox total count by strip transects is a well-established method. What's the survey date? And what aircraft are you using?"
+    },
+    {
+      "role": "user",
+      "content": "June 4. we fly a Bell 206 from the Inuvik base."
+    },
+    {
+      "role": "assistant",
+      "content": "Got it. Here's a draft structure for the protocol:\n\n**1. Objective**\nTotal population count of muskox (*Ovibos moschatus*) in the coastal plain and foothill range east of Tuktoyaktuk to the Richardson Mountains.\n\n**2. Date**\nJune 4, 2026\n\n**3. Aircraft**\nBell 206 helicopter, based out of Inuvik\n\n**4. Survey Design**\n- Systematic strip transects\n- Transect spacing and orientation: [need from you]\n- Flight altitude: [need from you]\n- Observers: [how many, where seated]\n\n**5. Data Collection**\n- GPS coordinates per sighting, group size, composition\n\n**6. Weather Minimums**\n- Ceiling, visibility, wind limits\n\n**7. Safety**\n- Flight plan, emergency equipment, comms\n\n**8. Analysis and Reporting**\n\nCan you fill in the transect details — spacing, orientation, altitude, and observer setup?"
+    },
+    {
+      "role": "user",
+      "content": "north-south transects. 2 km spacing. we fly at 150 metres. two observers plus the pilot. I sit front left, second observer rear left."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect. Here's the survey design section fleshed out:\n\n**Survey Design:**\n- Systematic strip transects, north-south orientation\n- Transect spacing: 2 km\n- Flight altitude: 150 m AGL\n- Speed: approximately 100-120 km/h (standard for muskox surveys — confirm your typical speed)\n- Primary observer: front left seat\n- Secondary observer: rear left seat\n- Pilot: flight safety, may assist with initial spotting\n- GPS track log recorded continuously\n\n**Weather minimums** — typical for open-terrain aerial surveys:\n- Ceiling: minimum 300 m\n- Visibility: minimum 5 km\n- Wind: maximum 30 km/h\n- No active precipitation\n\nDo those weather limits match what you've used in past surveys?"
+    },
+    {
+      "role": "user",
+      "content": "those are about right. we won't fly in fog or anything above 30 for wind. the government is also asking for a section on how we account for animals we miss. they want a detection probability estimate."
+    },
+    {
+      "role": "assistant",
+      "content": "That's becoming standard. Here's how to frame it:\n\n**Detection Probability:**\n\n- **Double-observer method:** Both observers independently record sightings. Post-flight comparison identifies groups seen by one but not the other, allowing calculation of detection probability using a mark-recapture framework.\n- **Factors affecting detection:** Group size (larger groups easier to spot), terrain (animals in draws or broken ground harder to see), snow/ground contrast, light conditions.\n- **Correction factor:** Applied to raw count. Results reported as both raw count and corrected estimate with confidence intervals.\n\nHave you done double-observer on muskox surveys before?"
+    },
+    {
+      "role": "user",
+      "content": "yes. last time we did it. detection probability came out around 0.85 in open terrain. lower in the foothills where the ground is broken up. the numbers from the last count were not good though. 340 muskox where the models said there should be about 500."
+    },
+    {
+      "role": "assistant",
+      "content": "340 against an expected 500 is a significant shortfall, even after detection correction. That kind of gap definitely justifies continued monitoring.\n\nFor the protocol, I'd include a rationale section referencing the previous survey:\n\n**Context and Rationale:**\n- Previous aerial survey recorded 340 muskox against a projected population of approximately 500\n- This survey will assess whether the population is continuing to decline, stabilizing, or recovering\n- Results will be compared directly with previous survey data using consistent methodology\n\nDo you want me to also include an analysis plan section? Things like calf:adult ratio, distribution mapping, trend comparison?"
+    },
+    {
+      "role": "user",
+      "content": "yeah. calf ratio is important. if recruitment is low that tells us a lot. distribution mapping too. we want to see if the range is contracting or if they're shifting."
+    },
+    {
+      "role": "assistant",
+      "content": "Good. Here's the analysis section:\n\n**Analysis Plan:**\n- Raw count and detection-corrected population estimate with 95% confidence intervals\n- Calf:adult ratio as indicator of recruitment\n- Sex ratio where distinguishable from the air\n- Group size distribution\n- Distribution mapping — comparison with previous survey to identify range shifts or contraction\n- Trend assessment — comparison of corrected estimates across survey years\n\nShould I also add an alternate date in case weather scrubs June 4?"
+    },
+    {
+      "role": "user",
+      "content": "June 5 as the backup. weather is always a question up here. could add June 6 as a second backup if they'll give us the window."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd include both. Shows the government you've planned for contingencies, and it protects your helicopter booking.\n\n**Survey Date:** June 4, 2026\n**Contingency dates:** June 5 and June 6 (weather backup)\n\nWant me to pull the whole protocol into a single clean document you can submit?"
+    },
+    {
+      "role": "user",
+      "content": "yeah. straightforward. the government reviewers need to check boxes, they don't need a novel."
+    },
+    {
+      "role": "assistant",
+      "content": "Here's the full protocol:\n\n---\n\n**Muskox Aerial Survey Protocol — June 2026**\n\n**1. Objective**\nTotal population count of muskox (*Ovibos moschatus*) across the coastal plain and foothill range, east of Tuktoyaktuk to the Richardson Mountains, NWT.\n\n**2. Rationale**\nPrevious survey counted 340 muskox against a projected population of ~500. This survey will assess current status and population trend.\n\n**3. Dates**\nPrimary: June 4, 2026. Contingency: June 5 and June 6.\n\n**4. Aircraft and Crew**\n- Aircraft: Bell 206 helicopter, Inuvik\n- Pilot: [TBD]\n- Primary observer: front left seat\n- Secondary observer: rear left seat\n\n**5. Survey Design**\n- Systematic strip transects, north-south orientation\n- Transect spacing: 2 km\n- Flight altitude: 150 m AGL\n- Speed: 100-120 km/h\n- GPS track log recorded continuously\n\n**6. Data Collection**\nEach sighting: GPS coordinates, group size, composition (adults, calves, sex where identifiable), habitat type, behaviour. Photo documentation where feasible.\n\n**7. Detection Probability**\n- Double-observer protocol: independent recording by both observers\n- Post-flight comparison for detection probability calculation (mark-recapture framework)\n- Previous survey detection: ~0.85 open terrain, lower in broken foothill terrain\n- Results reported as raw count and corrected estimate with confidence intervals\n\n**8. Weather Minimums**\n- Ceiling: 300 m minimum\n- Visibility: 5 km minimum\n- Wind: 30 km/h maximum\n- No active precipitation\n- Survey deferred to contingency date if not met\n\n**9. Safety**\n- Pre-flight briefing\n- Emergency locator transmitter on board\n- Satellite communication device\n- Flight plan filed with Inuvik flight services\n\n**10. Analysis**\n- Raw and corrected population estimate (95% CI)\n- Calf:adult ratio\n- Group size distribution\n- Distribution mapping and range comparison\n- Trend assessment against previous surveys\n\n**11. Reporting**\nResults submitted to GNWT within 60 days of survey completion.\n\n---\n\nFill in the pilot name and any other blanks. Should be ready to submit."
+    },
+    {
+      "role": "user",
+      "content": "that's good. one thing I should add. we want to compare this count to the one from two years ago. same transects. the government cares about trend more than a single number."
+    },
+    {
+      "role": "assistant",
+      "content": "Good point — consistency is key for trend analysis. I'd add a line in the Survey Design section:\n\n*\"Transect lines replicate those used in the [year] survey to ensure direct comparability. Any deviations due to weather or safety will be documented.\"*\n\nAnd in the Analysis section, you could explicitly state that you'll use the same detection correction methodology. If either method changed between surveys, the comparison gets weaker.\n\nDo you have the transect coordinates from the previous survey? Including them as an appendix would strengthen the protocol."
+    },
+    {
+      "role": "user",
+      "content": "I have the GPS tracks from last time. I'll attach them. same lines, same altitude, same observer method. the only thing that should change is the count."
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect. Attach those GPS tracks as an appendix and reference them in the Survey Design section. That makes it airtight — the reviewers can see it's a direct replication.\n\nAdd a line like:\n\n*\"Appendix A: GPS transect lines from previous survey, to be replicated in the June 2026 survey.\"*\n\nThat should satisfy even the most box-checking reviewer."
+    },
+    {
+      "role": "user",
+      "content": "good. I'll put the tracks in and submit it. need to get it in so they lock down the helicopter. those slots fill up fast once summer field season gets close eh."
+    },
+    {
+      "role": "assistant",
+      "content": "Smart to get it in early. Helicopter availability in the summer is always competitive up north. Submitting now gives you the best chance of holding the June 4 slot.\n\nGood luck with the protocol and the survey. Hope the count shows something better than 340 this time."
+    },
+    {
+      "role": "user",
+      "content": "we'll see what the land tells us. thanks."
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. Good luck out there."
+    }
+  ]
+}

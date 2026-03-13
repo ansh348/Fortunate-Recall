@@ -1,0 +1,82 @@
+{
+  "session_id": 32,
+  "persona": "billy_kootook",
+  "date": "2026-03-31",
+  "type": "filler",
+  "topic": "help ordering parts for Polaris online",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "need to order some parts for my Polaris online and the website is giving me trouble. not great with this stuff."
+    },
+    {
+      "role": "assistant",
+      "content": "I can help you figure it out. What parts are you looking for, and which website are you trying to order from — the official Polaris parts site, or a third-party dealer?"
+    },
+    {
+      "role": "user",
+      "content": "I tried parts.polaris.com. need new hyfax rails and a windshield. the windshield cracked. cold does that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, cold will crack a windshield — the plastic gets brittle. Both parts should be available on the Polaris site. Here's how to navigate it:\n\n1. Go to **parts.polaris.com**\n2. Select your machine — there should be a \"Find Parts\" or \"Select Vehicle\" option. Choose **Snowmobile**, then your model year and model name.\n3. From there it'll show parts diagrams or you can search by part name.\n\nWhat model and year is your Polaris? That'll help me point you in the right direction."
+    },
+    {
+      "role": "user",
+      "content": "Voyageur 155. I got to the vehicle selection but there's too many options and the trim names don't mean anything to me. the screen on my phone doesn't help either."
+    },
+    {
+      "role": "assistant",
+      "content": "The Voyageur 155 usually comes in one or two configurations, so it shouldn't be too complicated. A couple of options:\n\n- Under the model list, look for **Voyageur 155** — it might say something like \"550 Voyageur 155\" or \"600 Voyageur 155\" depending on the engine size. Do you know the engine?\n- Easier method: if you have the **VIN number** — usually on a plate near the tunnel or on the frame — you can enter that directly and it pulls up your exact machine. That skips all the menu guessing.\n\nThe VIN is the fastest way if the menus are fighting you."
+    },
+    {
+      "role": "user",
+      "content": "hold on. let me go look. ok found the VIN plate. put it in. it pulled up the machine. now there's diagrams of every system on the sled. a lot of diagrams."
+    },
+    {
+      "role": "assistant",
+      "content": "Good, the VIN makes everything easier. Now for the hyfax:\n\n- Look for a category called **Suspension** or **Rear Suspension** in the diagram list. The hyfax are part of the rear suspension assembly.\n- Click into that section and you should see an exploded diagram. The hyfax are the long plastic slide rails — they'll be labeled something like \"Slide,\" \"Hyfax,\" or \"Wear Strip.\"\n- There are usually two — left and right — listed as a pair or individually.\n\nFor the windshield, look for **Body/Hood** or **Windshield** in the main list. That one should be straightforward."
+    },
+    {
+      "role": "user",
+      "content": "found the hyfax under rear suspension. slide shoe rail. $47 each. need two. windshield is under body. $189. the shipping is what kills you though. $65 to get it to my post office."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, shipping to remote locations is always the painful part. $65 is actually not terrible for parts going that far north. A few ways to save:\n\n- **Combine orders** — if there's anything else you might need in the next few months, order it all at once so you only pay shipping once.\n- **Check the dealer in Inuvik** — some northern dealers keep common wear items like hyfax in stock. You might be able to pick them up on your next trip.\n- **Third-party sites** like Dennis Kirk sometimes have free shipping over a certain dollar amount and carry OEM Polaris parts.\n\nDo you want to order direct, or check pricing elsewhere first?"
+    },
+    {
+      "role": "user",
+      "content": "I'll check Inuvik first. if they don't have it I'll come back and order from here. might as well add spare plugs and a belt to the order if I'm paying that shipping anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "Smart. A spare belt is always worth having — if one goes on you out on the land, you don't want to be waiting two weeks for a parts shipment. Spark plugs are light and cheap so they won't add much to the total.\n\nIf you end up ordering online, the belt should be under **Drive Train** or **Clutch** in the diagrams. The plugs will be under **Engine.** Same VIN lookup so it should pull right up."
+    },
+    {
+      "role": "user",
+      "content": "one more thing. do you know if the hyfax come with the mounting hardware or do I need to order that separate."
+    },
+    {
+      "role": "assistant",
+      "content": "It depends on the specific part listing. On the Polaris site, the exploded diagram should show the mounting hardware as separate line items if they're sold separately. Look at the diagram and see if there are clips, bolts, or retainers shown alongside the slide rail — if they have their own part numbers, they're sold separately.\n\nGenerally, Polaris hyfax use plastic clips or rivets to secure them to the rail. If yours are in decent shape, you can reuse the old hardware. But if the clips are cracked or brittle from the cold, it's worth adding them to the order. They're usually only a few dollars each."
+    },
+    {
+      "role": "user",
+      "content": "I'll grab the clips too. everything up here gets brittle eventually eh. thanks for walking me through this."
+    },
+    {
+      "role": "assistant",
+      "content": "No problem. Once you have the VIN saved the site should remember your machine for next time, so it gets easier. Good luck with the parts — hope the windshield holds together until the replacement arrives."
+    },
+    {
+      "role": "user",
+      "content": "I taped it. it'll hold. tape fixes most things up here. take care."
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — tape and patience. Take care, and come back if you need help finding anything else on the site."
+    }
+  ]
+}

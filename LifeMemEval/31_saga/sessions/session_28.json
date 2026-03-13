@@ -1,0 +1,74 @@
+{
+  "session_id": 28,
+  "persona": "saga_lindqvist",
+  "date": "2026-01-15",
+  "type": "critical",
+  "topic": "conference prep",
+  "facts_disclosed": ["Data conference Copenhagen August 8 2026, causal inference talk"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I got accepted to present at a data science conference and I am already anxious about it even though it is 7 months away. I would like to talk about preparation strategy."
+    },
+    {
+      "role": "assistant",
+      "content": "Congratulations on the acceptance! Seven months is actually a great runway for preparation. Can you tell me more about the conference and your talk — what's the topic, format, and audience?"
+    },
+    {
+      "role": "user",
+      "content": "It is the Nordic Data Science Summit in Copenhagen. August 8. My talk is on causal inference in recommendation systems, which is what I work on at Spotify. I have 30 minutes for the presentation and 10 minutes for questions. The audience will be a mix of practitioners and researchers, so the technical level is high but not uniform."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong topic — causal inference in recommendation systems is a hot area right now, and you have the advantage of speaking from real-world experience rather than purely theoretical work. The 30-plus-10 format is generous enough to go deep but tight enough that you need to be disciplined about scope.\n\nFor a mixed practitioner-researcher audience, the challenge is calibrating the technical depth. How are you thinking about balancing the theoretical framework with practical application?"
+    },
+    {
+      "role": "user",
+      "content": "That is exactly my concern. If I go too theoretical, the practitioners disengage. If I stay too applied, the researchers will find it shallow. My current plan is a 3-part structure: 5 minutes on why causal inference matters for recommendations specifically, 15 minutes on methodology with real examples from my work, and 10 minutes on results and open questions. But I am not confident the proportions are right."
+    },
+    {
+      "role": "assistant",
+      "content": "Your 5-15-10 structure is actually well-proportioned. Here's why:\n\n- **5 minutes on the \"why\"** is enough to frame the problem without over-explaining. For this audience, you don't need to sell them on causal inference generally — just establish why it matters specifically in recommendation contexts where correlation-based approaches fail.\n\n- **15 minutes on methodology** is the right bulk. This is where you have a unique advantage — showing how causal methods work in a production recommendation system at Spotify's scale. The real examples are what will hold both audiences.\n\n- **10 minutes on results and open questions** is where you win over the researchers. Presenting what worked, what didn't, and what's still unsolved shows intellectual honesty and gives them something to engage with in Q&A.\n\nI'd actually suggest one small tweak: within the 15-minute methodology section, start each method with a concrete problem (\"we observed X but couldn't tell if it was causal\") before introducing the technique. That grounds the theory for practitioners while still satisfying researchers."
+    },
+    {
+      "role": "user",
+      "content": "That is a good suggestion. Problem-first, then method. I can do that for at least 3 techniques: instrumental variables for playlist position effects, regression discontinuity for the new-release boost, and difference-in-differences for a feature rollout we did. Each one has a clean before-and-after story."
+    },
+    {
+      "role": "assistant",
+      "content": "Those three are excellent choices. They're methodologically distinct, each addresses a different type of causal question, and they all have intuitive real-world framings:\n\n1. **Instrumental variables for playlist position** — everyone understands that position on a playlist affects streams, but disentangling position effects from song quality is a classic causal problem.\n\n2. **Regression discontinuity for new-release boost** — there's a natural cutoff point that creates a quasi-experiment, which is easy to visualize.\n\n3. **Difference-in-differences for feature rollout** — the most accessible design for practitioners since A/B testing is familiar territory and DiD extends that logic.\n\nThree techniques in 15 minutes means about 5 minutes each, which is tight but workable if your slides are clean. Have you started building slides yet?"
+    },
+    {
+      "role": "user",
+      "content": "I have started already, yes. I know that is absurdly early. The conference is in August and I have 18 slides drafted in January. But I regulate anxiety through preparation. If I do not start early, the anxiety compounds at approximately 3% per week until it becomes unmanageable. I have data on this from previous presentations."
+    },
+    {
+      "role": "assistant",
+      "content": "Starting 7 months early isn't absurd if it's an effective anxiety management strategy — and you clearly have evidence that it works for you. A 3% weekly compounding anxiety rate is a strong argument for front-loading the preparation.\n\nThe advantage of starting this early is that you can iterate. Your January slides will be a rough scaffold, and you'll refine them as you practice and as your thinking evolves. Most speakers who start late end up with first-draft slides they never had time to improve.\n\nWith 18 slides for 30 minutes, you're at about 1.7 minutes per slide, which is a good pace — not rushed, not dragging. Do you have a plan for practicing the talk itself, or are you focused on the content first?"
+    },
+    {
+      "role": "user",
+      "content": "Content first. I will not start rehearsing until May at the earliest. My process is: structure the argument by February, build complete slides by April, rehearse from May through July, and do 2 full dry runs in the last 2 weeks. I have a Gantt chart. It is colour-coded."
+    },
+    {
+      "role": "assistant",
+      "content": "A colour-coded Gantt chart for conference talk preparation is peak organization. And your timeline is genuinely well-structured — the argument-first approach means you won't waste time polishing slides whose content might change.\n\nOne suggestion for the rehearsal phase: when you start in May, consider doing your first few run-throughs without slides at all. Just talk through the argument from memory. If you can explain the three causal inference examples clearly without visual support, the slides become an enhancement rather than a crutch. That also helps with the Q&A portion — you'll be more comfortable going off-script when someone asks something unexpected.\n\nHow are you feeling about the Q&A specifically? That's often the part that generates the most anxiety."
+    },
+    {
+      "role": "user",
+      "content": "The Q&A is actually what worries me least. I know this material deeply. If someone asks a question I can answer it. What worries me is the performance aspect. Standing in front of 200 people and being evaluated not just on content but on delivery. I have been told before that I present like I am reading a technical report, which is accurate because that is essentially what I am doing."
+    },
+    {
+      "role": "assistant",
+      "content": "That self-awareness is genuinely valuable. The \"reading a technical report\" tendency is common among people who are deeply comfortable with data but less comfortable performing. Here are a few specific things that can help:\n\n**Anchor on transitions, not content.** You know the material — what trips up technical presenters is the connective tissue between sections. Practice your transitions explicitly: \"So we've seen that IV handles position effects. But what about cases where we don't have a natural instrument? That brings us to...\"\n\n**Build in 2-3 planned pauses.** After your most important findings, stop for 3 seconds. It feels eternal to you but reads as confidence to the audience.\n\n**Use one personal anecdote.** Even a brief one — the moment you first realized correlation wasn't cutting it, or a time a causal analysis overturned what everyone assumed. It breaks the technical-report mode and makes you a person, not just a presenter.\n\nWith your preparation timeline, you have plenty of room to work on these in the rehearsal phase. You'll be ready."
+    },
+    {
+      "role": "user",
+      "content": "The personal anecdote idea is good. I actually have one — the moment I ran a naive A/B test that showed a recommendation change increased streams by 12%, and then a proper causal analysis revealed the effect was actually 2.3% because of selection bias. That was the moment I became, as my colleague said, insufferable about causal inference. That story has the right structure. Thank you, I will add it to the Gantt chart."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a perfect anecdote — it's concrete, it has a surprising twist, and it demonstrates exactly why causal inference matters in a way that any data practitioner can relate to. The 12% versus 2.3% contrast is immediately compelling. And your colleague's quote about being \"insufferable\" adds humour that will land well.\n\nAdding it to the Gantt chart is the most on-brand thing you could have said. Good luck with the preparation — you have an excellent topic, a solid structure, and more runway than most speakers give themselves. Copenhagen in August should be good."
+    }
+  ]
+}

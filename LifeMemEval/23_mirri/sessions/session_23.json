@@ -1,0 +1,106 @@
+{
+  "session_id": 23,
+  "persona": "mirri_yunupingu",
+  "date": "2025-10-20",
+  "type": "critical",
+  "topic": "program change",
+  "facts_disclosed": ["Stopped tourist tours, runs school education programs, 3 groups per term"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am trying to put together some lesson plans for outdoor education. Not classroom stuff. Hands-on, on country learning. Do you have any experience with structuring something like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Outdoor education is a great area. The key is balancing structure with flexibility -- you need a framework but you also need to let the environment guide the learning. What age group are you working with, and what kind of environment?"
+    },
+    {
+      "role": "user",
+      "content": "Primary and early secondary. The environment is bush, proper bush. Floodplains, escarpment, woodland. I run school education programs at my work. Kids come out from Darwin and Katherine. Most of them have never been in the bush before."
+    },
+    {
+      "role": "assistant",
+      "content": "Working with kids who have no bush experience gives you a great opportunity -- everything is new to them. How often do you run these programs, and how long is each visit?"
+    },
+    {
+      "role": "user",
+      "content": "I get 3 groups each term. Full day visits. The schools arrange the bus, I do the rest. It has been going about six months now and I am still working out what is the best structure. Some things work and some things I need to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Six months and three groups per term is a decent amount of experience to draw from. What's been working well so far, and what feels like it needs adjusting?"
+    },
+    {
+      "role": "user",
+      "content": "The morning works well. I take them walking. We go slow. I do not talk the whole time. I stop and ask them what they see, what they hear, what they smell. City kids do not know how to be still at first. They fidget, they talk. But after an hour most of them settle. They start noticing things on their own. Insects, bird calls, tracks in the mud. That part works proper good."
+    },
+    {
+      "role": "assistant",
+      "content": "That observation-first approach is really effective. You're letting them build a connection to the place before layering on content. The fact that they settle into stillness after an hour shows it's working. What about the afternoon -- is that where things need adjusting?"
+    },
+    {
+      "role": "user",
+      "content": "The afternoon is more structured. I teach them about fire management, how we burn country at certain times and why. How the old people have been doing it for thousands of years. Then plant identification, tracking, reading the signs in the landscape. The content is good but I lose some of them after lunch. The younger ones especially. Their energy drops and they stop listening."
+    },
+    {
+      "role": "assistant",
+      "content": "Post-lunch energy drop is a common challenge, especially with younger students outdoors. A few things that can help: start the afternoon with something physical rather than talk-based -- have them do the tracking activity first, actually walking and looking for signs, before moving into the fire management discussion. You could also break the afternoon into shorter blocks with movement between each one. How long are your afternoon segments currently?"
+    },
+    {
+      "role": "user",
+      "content": "Too long probably. I do about 45 minutes on fire management and then an hour on plants and tracking. I think you are right, I should flip it. Get them moving first after lunch. Let them do the tracking, use their eyes and their bodies. Then sit them down for the fire talk when they have burned off some energy."
+    },
+    {
+      "role": "assistant",
+      "content": "That would work well. You could also connect the two -- if they find certain plants or animal signs during the tracking session, you can reference those when you talk about fire management and how burning affects habitat. It makes the fire talk feel like it's building on something they've already discovered rather than a separate lesson."
+    },
+    {
+      "role": "user",
+      "content": "That is a proper good idea. Connect the two. I can show them the difference between country that has been burned right and country that has not. Walk them through both and let them see it. Then the fire management talk has a picture they can remember."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. If they've seen the difference with their own eyes, the explanation has context. Visual comparison is one of the strongest teaching tools in outdoor education. How did you end up running these school programs? Was it always part of your role?"
+    },
+    {
+      "role": "user",
+      "content": "No. I used to do tours for tourists. Two a week in the dry season. Visitors who come through the park. But I stopped that. Switched to the school programs instead."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a significant change. What made you decide to shift away from the tourist tours?"
+    },
+    {
+      "role": "user",
+      "content": "The kids are worth it. They listen. They actually want to learn about this wanga. Tourists, a lot of them just want a photo and a story for dinner. Some were respectful but too many treated it like entertainment. Walk through country, tick a box, move on. The school kids are different. They take it in. You can see it in their faces when something clicks. One boy from Katherine stood still for five minutes watching a goanna and did not say a word. That does not happen with tourists."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a meaningful distinction -- the difference between consuming an experience and genuinely engaging with it. Kids at that age are still forming their understanding of the world, so what you teach them has a chance to shape how they see country long-term. Do the schools follow up after the visits?"
+    },
+    {
+      "role": "user",
+      "content": "Some do. The good teachers send me the kids' work afterwards. Drawings, reports. One class from Katherine sent me letters. Every kid wrote about something different they remembered. One wrote about the fire scars on the trees. One wrote about the way the water moves through the floodplain. They are all carrying different pieces of it."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong indicator that your teaching is working. When every student takes away something different, it means they each connected individually rather than just memorising a script. Those letters and drawings are also useful evidence if you ever need to demonstrate the program's value for funding or expansion."
+    },
+    {
+      "role": "user",
+      "content": "I keep them all. Every letter, every drawing. Some of them go on the wall in my office. It reminds me why I made the change. The tourist money was consistent but this is the work that matters. Teaching kids to read country, to understand djalkiri, the foundations of how this place works. That is something they carry with them."
+    },
+    {
+      "role": "assistant",
+      "content": "You've clearly found the right fit. The structure adjustments for the afternoon should help with engagement, and the foundation you've built in six months is solid. Would you like help mapping out a revised full-day schedule with the shorter afternoon blocks?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I will think about the timing and come back to you. I want to try the new order next term. Tracking first after lunch, then fire management with the visual comparison. I think that will hold them better."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a strong plan. Come back with your timing and we can map it out. Three groups per term gives you a good chance to test and refine it."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "session_id": 27,
+  "persona": "billy_kootook",
+  "date": "2026-01-04",
+  "type": "filler",
+  "topic": "fixing a broken GPS collar — parts question",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "got a GPS collar on the bench with a busted antenna connector. Lotek LiteTrack 420. need to find a replacement SMA connector that'll hold up in cold. any idea where to source one."
+    },
+    {
+      "role": "assistant",
+      "content": "For a Lotek LiteTrack 420, the antenna connector is typically a standard SMA female bulkhead mount. A few sourcing options:\n\n1. **Lotek directly** — they sell replacement parts and it's the safest bet for an exact match. Contact their support with the collar serial number.\n2. **Digikey or Mouser** — search for \"SMA female bulkhead connector\" with an extended temperature range. Look for -40°C to +85°C rated. Amphenol and TE Connectivity both make cold-rated versions.\n3. **Pasternack** (pasternack.com) — RF connector specialty supplier with mil-spec SMA connectors rated for extreme environments.\n\nThe key spec is the temperature rating. Standard commercial SMA connectors are usually rated to -20°C which won't cut it for Arctic use. You need at least -40°C.\n\nIs the connector housing cracked, or is it the solder joint that failed?"
+    },
+    {
+      "role": "user",
+      "content": "the housing is cracked. thermal cycling did it. been on an animal for 14 months. the solder underneath looks fine."
+    },
+    {
+      "role": "assistant",
+      "content": "14 months of Arctic thermal cycling will do that — the repeated expansion and contraction cracks the housing. If the solder joint is intact, that simplifies the repair. Just swap the connector body.\n\nA few things to match:\n\n- **Impedance:** The LiteTrack uses 50-ohm SMA. Make sure the replacement is 50-ohm, not 75-ohm.\n- **Body material:** Get stainless steel rather than brass. Stainless holds up much better in cold and corrosive conditions.\n- **Type:** Crimp-style handles thermal cycling better than solder-only because there's mechanical grip, not just a bond that can fatigue.\n\nDo you have the tools to do the swap yourself?"
+    },
+    {
+      "role": "user",
+      "content": "yeah. soldering station and heat gun. done this repair before on other units. sending it south to Lotek takes 6 weeks minimum and I need it back in the field."
+    },
+    {
+      "role": "assistant",
+      "content": "Makes sense — 6 weeks turnaround isn't practical. If you've done it before you know the drill.\n\nFor a specific part, try:\n- **Amphenol 132291** — stainless SMA female, rated -65°C to +165°C, 50-ohm. That's your best bet for Arctic conditions.\n- **TE Connectivity 1050170-1** — similar spec, slightly cheaper.\n\nBoth are available on Digikey and should ship in a few days.\n\nOne tip on the reseal: when you close the collar housing after the repair, what are you using for potting compound?"
+    },
+    {
+      "role": "user",
+      "content": "I usually use silicone sealant around the connector base. works alright."
+    },
+    {
+      "role": "assistant",
+      "content": "Silicone works in moderate conditions but it gets brittle and cracks below about -30°C. For Arctic use, you'd get better longevity from a proper potting compound:\n\n- **MG Chemicals 832** — stays flexible to -55°C\n- **3M Scotchcast** — similar cold rating\n- **Loctite EA 9460** — epoxy that stays somewhat flexible, rated to -55°C. Easier to find at industrial supply stores.\n\nAny of those will outlast silicone in your conditions. The connector will probably crack again before the seal does."
+    },
+    {
+      "role": "user",
+      "content": "that's good to know. the silicone does get brittle. I've had to redo seals in spring after every cold season. the MG Chemicals 832. is that easy to work with."
+    },
+    {
+      "role": "assistant",
+      "content": "Pretty straightforward. It's a two-part mix — resin and hardener. You mix them, apply around the connector base, and it cures at room temperature in about 24 hours. At colder shop temperatures it takes longer, maybe 36-48 hours.\n\nIt's thicker than silicone so it won't run into places you don't want it. You can shape it with a popsicle stick or spatula before it sets. Once cured it's firm but flexible — handles vibration and thermal cycling well.\n\nThe only thing to watch is shelf life. Once you open the hardener, use it within about 6 months. So order a small kit rather than a large one unless you're doing a lot of collar repairs."
+    },
+    {
+      "role": "user",
+      "content": "I go through enough collars that a bigger kit makes sense. I'll order the Amphenol connectors and the MG Chemicals. get a few extra connectors while I'm at it. they crack every season eh."
+    },
+    {
+      "role": "assistant",
+      "content": "Smart move stocking up. If you're going through connectors regularly, buying a pack of 5 or 10 from Digikey is cheaper per unit and saves you from waiting on shipping every time.\n\nFor the Amphenol 132291, double-check that the center pin diameter matches your existing cable. Lotek sometimes uses a slightly non-standard cable gauge. Measure the old one before you solder the new one."
+    },
+    {
+      "role": "user",
+      "content": "good call. I'll measure it. one more thing. the antenna itself is fine. but should I test it before I put the collar back on an animal. don't want to go through the repair and find out it's not transmitting."
+    },
+    {
+      "role": "assistant",
+      "content": "Definitely test before redeployment. A few ways to verify:\n\n1. **Basic continuity test** — check the center pin to shield resistance with a multimeter. Should read open circuit (megaohms). If it's short, the connector is bad.\n2. **SWR test** — if you have access to an SWR meter or a NanoVNA, you can check the antenna's standing wave ratio at the operating frequency. Should be below 2:1.\n3. **Functional test** — power up the collar indoors and see if it acquires a GPS fix and sends a test transmission. Lotek collars usually have a test mode you can trigger with a magnet.\n\nThe magnet test is the simplest if you don't have RF test equipment. It should show you a GPS fix and an attempted satellite upload within a few minutes."
+    },
+    {
+      "role": "user",
+      "content": "I've got a NanoVNA somewhere. haven't used it in a while. I'll check the SWR and then run the magnet test. belt and suspenders."
+    },
+    {
+      "role": "assistant",
+      "content": "Belt and suspenders is the right approach when the alternative is recovering a dead collar from an animal in the field. The NanoVNA will tell you immediately if the connector swap introduced any impedance mismatch. If the SWR looks good and the magnet test gets a fix, you're solid.\n\nGood luck with it."
+    }
+  ]
+}

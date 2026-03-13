@@ -1,0 +1,66 @@
+{
+  "session_id": 32,
+  "persona": "valentina_herrera",
+  "date": "2026-03-24",
+  "type": "filler",
+  "topic": "ranting about a colleague who burned a source",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to vent because if I don't say this somewhere I'm going to explode and I can't say it to anyone at work because it would make things worse"
+    },
+    {
+      "role": "assistant",
+      "content": "Go ahead — I'm here to listen. Say whatever you need to."
+    },
+    {
+      "role": "user",
+      "content": "a colleague burned a source. and I don't mean accidentally, I mean through sheer laziness and arrogance. he published details that made it possible to identify someone who spoke to him in confidence. didn't use a pseudonym in his notes which he kept on google drive, didn't scrub identifying details from the piece, and when the editor flagged it he said it was 'fine because nobody reads our stuff in that region anyway' like that's a DEFENSE"
+    },
+    {
+      "role": "assistant",
+      "content": "That's infuriating, and it should be. \"Nobody reads it there\" is not a security protocol — it's a gamble with someone else's safety. The source took the risk, not him, and he just decided unilaterally that the risk was acceptable.\n\nA few things here:\n\n- Notes on Google Drive with real identities is a basic, fundamental failure. That's not an oversight, that's not understanding what source protection means at a structural level.\n- Not scrubbing identifying details from the published piece means either he didn't think about it, or he thought about it and decided it didn't matter. Both are disqualifying.\n- The editor flagged it and he pushed back? That's the part that worries me most, because it means he doesn't see the problem even when someone points it out.\n\nIs the source in immediate danger, or is this more of a potential exposure situation?"
+    },
+    {
+      "role": "user",
+      "content": "the piece is already published. the source contacted ME, not him, because apparently I'm the person people call when they're scared and I don't even know this source personally, they just knew I work at the same place. they're terrified. I spent two hours on the phone trying to figure out whether they need to relocate and the answer might be yes"
+    },
+    {
+      "role": "assistant",
+      "content": "That is devastating. The source reaching out to you instead of the journalist who actually burned them tells you everything about who they trust and who they don't.\n\nRight now, the priority is the source's safety. Some immediate steps:\n\n1. **Threat assessment** — what kind of people did the source provide information about? If it's organized crime, paramilitary, or state actors, relocation isn't an overreaction.\n2. **Digital cleanup** — is the piece still live? Can it be edited or taken down to remove the identifying details? Even after publication, reducing the footprint helps.\n3. **Protection organizations** — depending on the threat level, organizations like the Committee to Protect Journalists (CPJ), Reporters Without Borders, or FLIP in Colombia can help assess risk and sometimes assist with relocation.\n4. **Documentation** — have the source document everything they're experiencing right now. If threats escalate, that timeline matters.\n\nHave you talked to your editor about this, separate from the colleague?"
+    },
+    {
+      "role": "user",
+      "content": "I talked to my editor. they're going to modify the piece online but the print version is already out there, you can't un-print a newspaper. and I contacted flip already, they know the situation. what kills me is this is not my source, not my story, not my mistake, and I'm the one spending my night trying to protect someone because my colleague couldn't be bothered to follow protocols that exist for a REASON, that people DIED to establish"
+    },
+    {
+      "role": "assistant",
+      "content": "You're right to be furious. Those protocols exist because journalists learned the cost of not having them — often by losing sources, or worse. The fact that you're carrying the weight of someone else's negligence is profoundly unfair, and the fact that you're doing it anyway says everything about you.\n\nBut I want to flag something: you're absorbing someone else's crisis right now, and that takes a toll. You didn't cause this. You're choosing to help because you understand the stakes, but you should also recognize that this is extra weight on your shoulders that shouldn't be there.\n\nA few things going forward:\n\n- **The colleague needs consequences.** Not just a talking-to — a formal review. If there's no institutional consequence, the message to every journalist in that newsroom is that source protection is optional.\n- **The newsroom needs a protocol review.** If notes on Google Drive is even possible, the systems aren't set up to prevent this. It shouldn't be up to individual judgment — there should be infrastructure.\n- **You need a boundary.** You can help this source right now, but you cannot become the permanent safety net for other people's failures. That's not sustainable.\n\nIs there anyone above your editor who can make the colleague face real accountability?"
+    },
+    {
+      "role": "user",
+      "content": "there's the editorial director. and yes I'm going to push for this to have consequences because if it doesn't then what are we even doing here. but parcero, you know what's really eating me? this guy has been at the paper for 8 years. EIGHT YEARS. this isn't a rookie mistake, this is someone who should know better and chose not to care because the source was from a rural area and in his head those people are expendable. that's what it comes down to. he wouldn't have been this careless if the source was a senator"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the ugliest part of this, and you're probably right. There's a hierarchy of whose safety gets treated seriously in Colombian journalism — and in journalism everywhere — and rural sources, indigenous sources, campesino sources are at the bottom. Their risk is higher and the institutional care given to protecting them is lower. It's a structural bias and your colleague just made it visible.\n\nThe fact that he's been there 8 years makes it worse, not better. A rookie might not know. He knows. He just didn't think it mattered enough.\n\nWhen you take this to the editorial director, I'd frame it not just as \"this colleague made a mistake\" but as:\n\n- **A source was endangered** — concrete, specific, potentially requiring relocation\n- **Protocols were violated** — notes stored insecurely, identifying details published, editor's flag dismissed\n- **This is a liability for the entire institution** — if this source is harmed, the paper's name is attached to that failure. Other sources will hear about it. People will stop talking to ALL of you, not just him.\n\nThat last point is the one that tends to move institutional leadership. The reputational and operational risk to the paper as a whole.\n\nAre you going to be okay tonight? Two hours on the phone with a terrified source and then this anger — that's a lot to carry."
+    },
+    {
+      "role": "user",
+      "content": "I'll be fine. or I won't be fine but I'll function which is basically the same thing in this profession. I'm going to write up everything tomorrow and take it to the editorial director. the framing you just described is exactly right, it's not personal it's institutional, because if I make it personal he'll dismiss it as a conflict between colleagues"
+    },
+    {
+      "role": "assistant",
+      "content": "That's smart. Keep it institutional, keep it documented, keep it about the source's safety and the paper's integrity. If he tries to make it personal, redirect to the facts: protocols violated, source endangered, print edition irrecoverable.\n\nSome practical tips for the write-up:\n- Timeline of events: when the piece was published, when the source contacted you, what steps were taken\n- Specific protocol violations: what should have been done vs. what was done\n- Current status of the source: are they safe, what measures are being taken\n- Recommendation: what you think should happen going forward, both for this case and to prevent it from happening again\n\nKeep it factual and short. One page. Let the facts do the work.\n\nAnd the distinction between \"fine\" and \"functioning\" — I hear you. But when this is resolved, give yourself space to be angry without having to channel it into something productive. You're allowed to just be furious.\n\nGood luck tomorrow."
+    },
+    {
+      "role": "user",
+      "content": "one page. facts. institutional framing. got it. gracias parcero, I needed to say all of this out loud to someone who wasn't going to tell me to calm down or that I'm overreacting"
+    },
+    {
+      "role": "assistant",
+      "content": "You're not overreacting. Someone's safety was compromised through negligence, and you stepped in when you didn't have to. That's not overreacting — that's doing the job the way it should be done.\n\nGo write that document. Be precise, be cold, be devastating. You know how to do that better than anyone.\n\nAnd if the source needs anything else — more calls, more coordination with FLIP — take care of that first. The institutional fight can wait a day. The person can't.\n\nBuena suerte mañana."
+    }
+  ]
+}

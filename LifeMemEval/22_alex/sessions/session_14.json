@@ -1,0 +1,106 @@
+{
+  "session_id": 14,
+  "persona": "alex_richter",
+  "date": "2025-05-05",
+  "type": "critical",
+  "topic": "conference talk prep",
+  "facts_disclosed": ["KotlinConf Munich talk October 15 2025"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "i need help structuring a conference talk and i'm already overthinking it"
+    },
+    {
+      "role": "assistant",
+      "content": "Happy to help you work through it. What's the talk about, and what conference?"
+    },
+    {
+      "role": "user",
+      "content": "so i got accepted to speak at kotlinconf in munich. it's on october 15. i submitted a proposal about testing patterns for coroutine-heavy backend services and somehow they actually said yes"
+    },
+    {
+      "role": "assistant",
+      "content": "Congrats — that's a great conference to speak at. Coroutine testing is a topic a lot of Kotlin developers struggle with, so there should be strong audience interest. What's the format — how much time do you have?"
+    },
+    {
+      "role": "user",
+      "content": "30 minutes for the talk plus 10 for questions. i have a rough idea of the content but it's still kind of a formless blob. the core thesis is that most teams test coroutine code wrong — they end up testing the coroutine mechanics instead of the business logic and get tests that are both brittle and useless"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a strong thesis with a clear villain — brittle tests that verify mechanics instead of behavior. For 30 minutes, I'd suggest a three-act structure:\n\n1. **The Problem** (~8 min) — Show a typical \"bad\" coroutine test everyone writes. Walk through why it's brittle.\n2. **The Patterns** (~15 min) — Your approach to doing it right, with concrete code examples.\n3. **The Payoff** (~7 min) — Before/after comparison, maybe some metrics on test reliability.\n\nDoes that roughly match what you had in mind?"
+    },
+    {
+      "role": "user",
+      "content": "yeah that structure makes sense. the problem section basically writes itself — i have dozens of examples from work where tests mock runBlocking and then assert on nothing useful. the patterns section is where i'm struggling because i don't want it to just be \"here's my opinion\", i want people to walk away with stuff they can use monday morning"
+    },
+    {
+      "role": "assistant",
+      "content": "Concrete steal-able patterns is exactly what conference audiences want. You could structure the middle section around 3-4 named patterns — a mini catalog. Something like:\n\n- Pattern 1: \"Test the suspending function, not the dispatcher\"\n- Pattern 2: \"Use TestCoroutineScheduler for deterministic time\"\n- Pattern 3: \"Structured concurrency boundaries as test boundaries\"\n- Pattern 4: \"Property-based testing for concurrent invariants\"\n\nNamed patterns stick in people's heads better than a stream of code slides."
+    },
+    {
+      "role": "user",
+      "content": "oh the named patterns idea is way better than what i had, which was basically just a wall of code samples with me narrating. making each pattern a discrete named thing gives people vocabulary to take back to their teams. like \"hey we should apply pattern 3 here\" is actionable in a way that a general talk isn't"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly — you're giving people a shared language, not just information. For each pattern, I'd suggest the same slide template: Name, one-sentence description, before code (the bad way), after code (the pattern applied), and one key insight. Consistent structure helps the audience follow along and makes the patterns feel like a real framework."
+    },
+    {
+      "role": "user",
+      "content": "genau. consistent template is good, reduces cognitive load. i could also do a companion github repo with all the patterns as runnable test files. that way people can clone it and actually execute the examples instead of squinting at slides"
+    },
+    {
+      "role": "assistant",
+      "content": "A companion repo is gold for a technical talk. Set it up as a Gradle project with each pattern as a separate test file — self-contained, runnable, well-commented. You could put a QR code on your closing slide that links to it. People always scan those, and it gives your talk a longer shelf life."
+    },
+    {
+      "role": "user",
+      "content": "qr code on the last slide, noted. okay so the structure is solid. my other anxiety is that it's munich and i did my degree there so there's a nonzero chance that old professors or classmates show up and judge me. irrational but real"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a surprisingly common anxiety for speakers presenting in cities where they have history. But it actually works in your favor — you're not an academic giving a theoretical talk. You're an engineer presenting battle-tested patterns from real production systems. That's what conference audiences value. Your old professors would probably be impressed you're up there at all."
+    },
+    {
+      "role": "user",
+      "content": "true. the target audience is people in the trenches writing kotlin services who are tired of flaky coroutine tests. not academics. okay timeline — i have about 5 months. what milestones would you suggest so i don't procrastinate this into a panic situation"
+    },
+    {
+      "role": "assistant",
+      "content": "Five months is plenty if you set checkpoints:\n\n- **End of May:** Outline locked, pattern list finalized, companion repo scaffolded\n- **End of July:** First complete slide draft, all code examples written and tested\n- **Mid-September:** Dry run with someone who'll give honest feedback\n- **Oct 1-14:** Polish slides, practice timing, memorize transitions\n\nThe dry run is the most important milestone. It always reveals which sections drag and where transitions are awkward."
+    },
+    {
+      "role": "user",
+      "content": "aggressive but doable. i have a couple people at work who are deep enough into kotlin that they'd give useful feedback on a dry run instead of just nodding. one of them will definitely argue with my pattern choices which is exactly what i need"
+    },
+    {
+      "role": "assistant",
+      "content": "Someone who pushes back on your pattern choices is the perfect dry-run audience. If they're convinced by the end, you know the talk works. If they're not, you'll find the weak spots before 300 people do. Have them specifically watch for pacing too — it's easy to rush through code slides when you're nervous."
+    },
+    {
+      "role": "user",
+      "content": "good point on pacing. i tend to speed up when i'm excited about something and coroutine internals is exactly the kind of thing i could talk about for 3 hours without realizing. i need to actively slow down and let the audience absorb each pattern before moving on"
+    },
+    {
+      "role": "assistant",
+      "content": "A simple trick for pacing: after each pattern, have one \"breathing\" slide — maybe a summary graphic or a one-liner that captures the key insight. It forces you to pause, lets the audience catch up, and creates natural section breaks. Also helps if you're running long — you can see at a glance how many patterns you've covered vs. how much time is left."
+    },
+    {
+      "role": "user",
+      "content": "breathing slides, that's a good trick. oh another thing — should i do live coding or keep everything in static slides? live coding is more impressive when it works but it's also how you end up staring at a compilation error in front of 300 people"
+    },
+    {
+      "role": "assistant",
+      "content": "For a 30-minute talk with multiple patterns to cover, I'd strongly recommend pre-recorded code demos or animated slide transitions that simulate typing. Live coding eats time unpredictably and the risk-reward ratio is bad for this format. If you really want the live feel, you could have IntelliJ open with everything pre-written and just step through it — running the tests to show green/red. That's live enough without the danger of typos derailing your flow."
+    },
+    {
+      "role": "user",
+      "content": "the pre-written code with live test execution thing is smart. best of both worlds — it looks live but you've already debugged everything. plus watching tests go from red to green is weirdly satisfying for an audience. okay i feel way less anxious about this now. i'm going to start the outline this weekend and get the companion repo scaffolded"
+    },
+    {
+      "role": "assistant",
+      "content": "The blob is now a structured plan with clear milestones — that's the hardest part done. Congrats again on the acceptance, and good luck with the outline this weekend. A talk on coroutine testing patterns is something a lot of Kotlin developers genuinely need to hear. Feel free to bounce ideas off me as you iterate on the slides."
+    }
+  ]
+}

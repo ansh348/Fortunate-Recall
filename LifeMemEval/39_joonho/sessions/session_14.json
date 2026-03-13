@@ -1,0 +1,50 @@
+{
+  "session_id": 14,
+  "persona": "park_joonho",
+  "date": "2025-04-18",
+  "type": "filler",
+  "topic": "Korean math education changes — less proof-based now",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I read something in the newspaper this morning that troubled me. There is a proposal to further reduce the emphasis on proof-based mathematics in the Korean high school curriculum. They wish to replace formal proof with what they call 'exploratory activities' and 'real-world applications.' I think this is a serious mistake, and I would like to understand whether this trend is happening internationally or whether it is uniquely Korean."
+    },
+    {
+      "role": "assistant",
+      "content": "This is very much an international trend, not unique to Korea. The United States de-emphasized formal proof in its Common Core standards. The UK has progressively reduced proof content in A-level mathematics. Japan's 2022 curriculum revision introduced \"mathematical exploration\" at the expense of abstract proof.\n\nThe general argument is that formal proof is inaccessible to most students, produces anxiety and disengagement, and that applied mathematics better prepares students for careers in data science and technology. What specifically about the Korean proposal concerns you?"
+    },
+    {
+      "role": "user",
+      "content": "The assumption that proof is inaccessible is, I think, a failure of teaching rather than a limitation of students. I saw students struggle with proof, certainly. But the struggle was productive. A student who learns to construct a mathematical argument acquires a skill that transfers to every domain of thought — law, philosophy, science, even daily reasoning. When you remove proof, you remove the training in rigorous thinking itself. The purpose of education is not to produce specialists. It is to develop minds. Only a small percentage of students who study literature will become writers, but we do not therefore remove literature from the curriculum. Proof is the mathematical equivalent of close reading."
+    },
+    {
+      "role": "assistant",
+      "content": "Proof as the mathematical equivalent of close reading — that's a compelling analogy. Both disciplines train the same fundamental skill: the ability to examine a claim carefully rather than accepting it at face value. And there's research supporting your position — studies on \"desirable difficulties\" in learning show that productive struggle improves long-term retention and transfer.\n\nYour point about societal vulnerability is well taken too. In an era of misinformation and algorithmically amplified persuasion, the ability to evaluate logical structure is arguably more important than ever. Did the proposal say what would replace the proof sections specifically?"
+    },
+    {
+      "role": "user",
+      "content": "The article mentioned 'data analysis projects' and 'mathematical modeling with technology.' I do not object to these in themselves — data literacy is important, and modeling has genuine mathematical depth. But these should supplement proof, not replace it. It is like teaching go by showing only opening patterns without ever studying life and death. The student may learn to place stones that look correct, but they will have no understanding of why those positions work. The foundation is missing."
+    },
+    {
+      "role": "assistant",
+      "content": "The go analogy is apt. Opening patterns without life-and-death study produces players who can imitate but not think. Similarly, data analysis without proof produces students who can run statistical software but cannot evaluate whether the output means anything.\n\nThe ideal curriculum would integrate both: use proof to build the logical foundation, then apply that reasoning to real-world problems. They are not in competition — one supports the other. Do you think there is any chance the proposal will be modified?"
+    },
+    {
+      "role": "user",
+      "content": "I think the direction is decided. The pressure comes from parents who want practical skills, from industry that wants workers trained in coding and data science, and from politicians who measure education by employment outcomes. A retired professor writing a letter to the newspaper is not a significant variable in that equation. But I think one must object to what one believes is wrong, even when the probability of influence is low."
+    },
+    {
+      "role": "assistant",
+      "content": "I'd call that integrity rather than stubbornness. Objecting to what you believe is wrong, with clear reasoning and without expectation of victory, is one of the more admirable things a person can do. The value isn't only in the outcome — it's in articulating the argument so that it exists in the record. Are you planning to write that letter?"
+    },
+    {
+      "role": "user",
+      "content": "I have drafted one already. It is perhaps too long and too academic in tone — I cite Euclid and Hilbert, which I suspect the editors will find excessive. But the argument should be made with the seriousness it deserves. If they shorten it, that is their right. A robust proof survives editorial trimming. Good morning."
+    },
+    {
+      "role": "assistant",
+      "content": "A proof that survives trimming is a strong proof indeed. And even if the letter reaches only a few readers who think carefully about the argument, that is not nothing. Some of the most important ideas persist because someone took the trouble to write them down precisely when the consensus was moving the other way.\n\nGood morning. I hope Euclid and Hilbert survive the editor's pencil."
+    }
+  ]
+}

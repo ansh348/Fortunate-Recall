@@ -1,0 +1,106 @@
+{
+  "session_id": 16,
+  "persona": "billy_kootook",
+  "date": "2025-07-08",
+  "type": "critical",
+  "topic": "camp cancellation",
+  "facts_disclosed": ["Husky Lakes camp dead — permafrost slumped 2 metres"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "so that camp idea I had. out at Husky Lakes. it's done."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. What happened?"
+    },
+    {
+      "role": "user",
+      "content": "the ground moved. the spot I chose slumped about 2 metres since last year. permafrost underneath is thawing and the surface just drops. you can see it from the air now. the whole bank is caving in."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a significant amount of ground loss in just a year. Was this a site you had already started preparing, or were you still in the planning stages?"
+    },
+    {
+      "role": "user",
+      "content": "still planning. thank god. hadn't put anything down yet. but I scouted it last summer and it looked solid. walked it. checked the drainage. it was good ground. now it's not."
+    },
+    {
+      "role": "assistant",
+      "content": "At least you caught it before investing materials and labor into it. Is the thaw affecting a wide area around Husky Lakes, or was this particular spot more vulnerable?"
+    },
+    {
+      "role": "user",
+      "content": "it's widespread. the whole shoreline is changing shape. you can see the slump scars from the water. but this spot was supposed to be on higher ground. stable. guess nothing is stable anymore eh."
+    },
+    {
+      "role": "assistant",
+      "content": "That's concerning. When even the higher ground starts shifting, it really speaks to the scale of what's happening. Are you considering any alternative sites, or is the whole area too risky now?"
+    },
+    {
+      "role": "user",
+      "content": "forget about it. the whole plan is dead. you can't put a building on ground that won't stay put. doesn't matter how good the location is if it's going to slide into the lake in five years."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense. There's no point putting time and resources into something when the foundation itself isn't reliable. It must be frustrating to lose a plan you'd put thought into, though."
+    },
+    {
+      "role": "user",
+      "content": "I was looking forward to it. good location. close to the water. out of the wind. would have been a solid base for summer work. but the land said no."
+    },
+    {
+      "role": "assistant",
+      "content": "Sometimes that's the final word. It sounds like you'd done real due diligence on the site too — the fact that it changed so dramatically between scouting trips says a lot about the pace of what's going on."
+    },
+    {
+      "role": "user",
+      "content": "it is what it is. I've watched the land change my whole life. this is faster than anything I've seen though. 2 metres in one year. that's not gradual. that's collapse."
+    },
+    {
+      "role": "assistant",
+      "content": "You're right — that rate of change is in a different category. Two metres of subsidence in a single year sounds like active thermokarst development rather than slow seasonal thaw. Have you been documenting what you're seeing out there?"
+    },
+    {
+      "role": "user",
+      "content": "I take photos when I'm out. GPS coordinates. dates. nothing formal. maybe I should be more systematic about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Even informal documentation like that has real value, especially with GPS and dates attached. If you wanted to make it more systematic, a simple log with photo, coordinates, date, and a short description of what you see would be very useful. Repeat visits to the same spots over time would show the progression clearly."
+    },
+    {
+      "role": "user",
+      "content": "how would I set that up. just a spreadsheet or something."
+    },
+    {
+      "role": "assistant",
+      "content": "A spreadsheet would work well. Columns for date, GPS coordinates, site name, a brief description of what you observed, and a reference to the photo file. You could also add a column for measurements if you ever take any — distance from a fixed marker to the slump edge, for example. Keep it simple so you'll actually use it in the field."
+    },
+    {
+      "role": "user",
+      "content": "that's practical. I can do that on the laptop at night. take notes during the day. type them up later. don't want to be fussing with a computer when I should be watching the land."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right approach. Paper notes in the field, then transfer to the spreadsheet when you're back at camp. Quick and doesn't interfere with your actual work. Over a few seasons you'd build a really valuable record."
+    },
+    {
+      "role": "user",
+      "content": "yeah. I'll start doing that. the data matters even if nobody reads it right away. somebody will need it eventually."
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely. Consistent ground-level observations from someone who knows the land are irreplaceable. Satellite imagery can show the broad picture but not the details you'd capture. I'm sorry about the camp plan, but this documentation work could end up being just as valuable."
+    },
+    {
+      "role": "user",
+      "content": "maybe. the camp would have been good though. it's gone now. the land tells the story and right now the story isn't great."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you. It's hard to watch a place you know deeply go through changes like that, especially at this speed. But the fact that you're paying attention and documenting it matters."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "session_id": 21,
+  "persona": "ingrid_solberg",
+  "date": "2025-07-14",
+  "type": "filler",
+  "topic": "apartment maintenance while away on fieldwork",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I will be away from my apartment for approximately three weeks. The building is from the 1970s, concrete construction, and I need to prepare it for an unoccupied period during the summer. The main concerns are moisture, plumbing, and whether to leave the heating system active. The indoor temperature here rarely exceeds 22 degrees in July, but humidity can be a problem. What is the standard protocol."
+    },
+    {
+      "role": "assistant",
+      "content": "Three weeks is long enough that a few precautions are worth taking, but short enough that you don't need to do anything drastic. Here's a practical checklist:\n\n**Moisture and ventilation:**\n- Leave interior doors open so air circulates between rooms.\n- If you have a bathroom exhaust fan with a humidity sensor, leave it enabled. If it's manual, consider a plug-in timer set to run 15-20 minutes every few hours.\n- Don't fully close all windows -- if you have tilt-and-turn windows, leave one or two on the tilt (ventilation) setting, ideally on opposite sides of the apartment for cross-ventilation.\n\n**Plumbing:**\n- For three weeks in summer, you don't need to drain the pipes. But run water briefly in all sinks, tubs, and floor drains before you leave so the P-traps are full. Dry traps can let sewer gas in.\n- Turn off the water supply to the washing machine if it has an isolation valve.\n\n**Heating:**\n- At 22 degrees ambient you can leave the heating off entirely. No freeze risk in July.\n\n**Other:**\n- Unplug non-essential electronics (saves power, eliminates fire risk from standby faults).\n- Empty and clean the refrigerator, or at minimum clear perishables and set it to a moderate temperature.\n- Take out all garbage and recycling.\n\nAnything specific about the building that concerns you -- old plumbing, known moisture issues?"
+    },
+    {
+      "role": "user",
+      "content": "The bathroom has had condensation issues in previous years. The exhaust fan is mechanical, no humidity sensor, and it is connected to a shared duct with other units in the building. The housing cooperative has discussed upgrading the ventilation system but nothing has been approved. The fan is either on or off, no timer function built in."
+    },
+    {
+      "role": "assistant",
+      "content": "Shared duct systems in 1970s Norwegian blocks are notoriously underspecified for modern moisture loads. A few targeted solutions:\n\n**For the three-week absence:**\n- Get a simple plug-in timer (available at Clas Ohlson or Biltema for under 100 kroner) and connect the fan to it. Set it to run for 20 minutes every 3-4 hours. This maintains airflow without running the fan continuously.\n- Leave the bathroom door open so the rest of the apartment's air volume helps buffer humidity.\n- If you have a portable dehumidifier, set it in the bathroom on a continuous drain mode (hose to the shower drain). Even a small unit rated for 10-15 litres per day would keep the space dry.\n\n**Longer term:**\n- A humidity-controlled fan replacement is a relatively inexpensive upgrade -- around 800-1500 kroner for the unit, and it connects to the same duct. You could propose this to the housing cooperative as a per-unit upgrade that each owner handles independently.\n- If condensation has been recurrent, check whether the cold-water pipes running through the bathroom are insulated. Uninsulated pipes in a humid room are a persistent condensation source.\n\nDo you know whether the shared duct has a central roof fan, or does each unit's fan push air independently?"
+    },
+    {
+      "role": "user",
+      "content": "Each unit pushes independently. There is no central fan. The duct is passive when the individual fans are off. I have noticed that when the neighbour below runs their fan at high speed, it can actually push air back into my unit through the duct. This is a known design flaw that the cooperative has acknowledged but not resolved."
+    },
+    {
+      "role": "assistant",
+      "content": "Backflow through shared passive ducts is a classic problem in that era of Norwegian apartment construction. The fix is straightforward:\n\n**Immediate solution:**\n- Install a backdraft damper (tilbakeslagsventil) on your duct connection. These are simple flap valves that allow air to flow out when your fan runs but close when pressure reverses. They cost about 150-250 kroner and fit standard Norwegian duct diameters (usually 100 mm or 125 mm). You can install one yourself -- it slots into the duct between the fan and the wall connection.\n\n**For the absence period:**\n- The backdraft damper is especially important while you're away. Without your fan running continuously, the neighbour's fan could push humid air from the shared duct into your bathroom for three weeks. That's a recipe for mould.\n- With the damper installed and your fan on a timer, you get controlled exhaust cycles with no backflow between them.\n\n**What to measure:**\n- Check your duct diameter before buying the damper. Remove the fan cover and measure the duct opening. Norwegian standard is typically 100 mm for bathrooms, but some 1970s buildings used 125 mm.\n\nThis is worth doing before you leave. The damper plus a timer would cost you under 400 kroner and solve both the absence problem and the ongoing backflow issue. Would you like guidance on the installation steps?"
+    },
+    {
+      "role": "user",
+      "content": "The duct is 125 mm. I will get the damper. The installation seems manageable. My other concern is the kitchen. I have a gas stove, which is unusual for Norway but the building was originally fitted with town gas and some units retained gas connections when they were converted to propane in the 1990s. Should I shut off the gas supply valve before leaving."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, shut off the gas supply valve. This is not optional for a three-week absence -- it's standard safety practice.\n\n**Specifics:**\n- Close the valve at the point where the gas line enters your apartment, not just the knobs on the stove. The apartment isolation valve is typically a ball valve with a quarter-turn handle, located near where the pipe comes through the wall or floor.\n- After closing the valve, turn on one of the stove burners briefly to bleed the remaining gas from the line between the valve and the stove. Once the flame dies, turn the burner knob back to off.\n- If your propane supply has a regulator visible in your unit, note the pressure setting so you can verify it hasn't changed when you return.\n\n**Additional notes:**\n- Gas stoves in Norwegian apartments are increasingly uncommon and some insurance policies have specific requirements about gas installations. It may be worth confirming with your building insurance that your gas connection is documented and compliant.\n- If you smell gas at any point, the emergency number for gas leaks in Norway is 110 (same as fire).\n\nWith the gas off, the backdraft damper installed, and the bathroom fan on a timer, your apartment should be in good shape for three weeks. Anything else you want to address before you leave?"
+    },
+    {
+      "role": "user",
+      "content": "One more item. The balcony faces north and gets no direct sun. I have several potted plants there, mostly hardy species -- sedum, thyme, and a small birch sapling. I will not be able to water them. Three weeks without water in July. Options."
+    },
+    {
+      "role": "assistant",
+      "content": "North-facing balcony helps -- lower evaporation rates than a south exposure. And your species selection is favourable. Sedum is essentially drought-adapted, and thyme tolerates dry conditions well. The birch sapling is the most vulnerable.\n\n**Options:**\n- **Self-watering spikes or globes**: Glass or ceramic watering globes inserted into the soil release water slowly as the soil dries. For a three-week period, you'd want the larger sizes (around 250-300 ml capacity). Available at Plantasjen or garden centres. One per pot for the thyme and birch, the sedum probably doesn't need one.\n- **Drip irrigation kit**: A gravity-fed drip system connected to a large water reservoir (a 20-litre bucket works). Adjustable drip nozzles for each pot. Costs around 200-300 kroner for a basic kit. This is more reliable than watering globes for three weeks.\n- **Capillary matting**: Place the pots on capillary matting with one end submerged in a tray of water. The matting wicks water up into the pot through the drainage holes. Simple and effective for smaller pots.\n- **Neighbour**: The most reliable irrigation system. If you have a neighbour willing to water once a week, that covers three weeks easily.\n\nFor the birch sapling specifically, I'd recommend the drip system or a neighbour. Birch in a pot has limited soil volume and three weeks without water in July could stress it significantly, even on a north-facing balcony. How large is the pot?"
+    },
+    {
+      "role": "user",
+      "content": "The birch is in a 40-litre pot. I will ask the neighbour. She has a key for emergencies already. The drip system is a good backup. I think this covers the preparation. Efficient use of 10 minutes. Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "A 40-litre pot gives the birch reasonable soil moisture buffer, but a weekly watering from the neighbour will keep it safe. Good that she already has a key.\n\nYour checklist:\n1. Install 125 mm backdraft damper on bathroom duct.\n2. Connect bathroom fan to plug-in timer (20 min every 3-4 hours).\n3. Leave interior doors open, one or two windows on tilt.\n4. Fill all P-traps, close washing machine water supply.\n5. Shut off gas at apartment isolation valve, bleed the line.\n6. Clear perishables, take out rubbish.\n7. Unplug non-essential electronics.\n8. Ask neighbour to water the birch and thyme weekly.\n9. Drip system as backup if she is unavailable.\n\nStraightforward. The apartment will be fine."
+    }
+  ]
+}

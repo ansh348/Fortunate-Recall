@@ -1,0 +1,74 @@
+{
+  "session_id": 14,
+  "persona": "dmitri_volkov",
+  "date": "2025-05-19",
+  "type": "filler",
+  "topic": "mechanical keyboard comparison — Cherry MX blues",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "considering switching keyboards. i have been using cherry mx blues for about two years. the click is satisfying but i am starting to wonder if there is something better for long coding sessions. what are the current options worth looking at"
+    },
+    {
+      "role": "assistant",
+      "content": "Cherry MX Blues are a classic choice — the tactile click is distinctive. But for long coding sessions, the fatigue factor is real. Blues have a relatively high actuation force (50g) and the audible click mechanism adds resistance on the return stroke.\n\nHere's what's worth considering:\n\n**If you want to stay tactile but reduce fatigue:**\n- **Cherry MX Browns** — tactile bump without the click. Lighter feel, quieter. The default \"programmer switch\" for a reason\n- **Gateron Brown** — smoother than Cherry Browns, slightly less scratchy. Drop-in replacement if your board is hot-swappable\n- **Zealios V2 (62g or 67g)** — premium tactile. Sharper bump than Browns, very clean feel. Expensive but noticeably better\n\n**If you want to try linear (no bump, no click):**\n- **Cherry MX Red** — light, smooth, fast. Good for long sessions because there's zero resistance beyond the spring\n- **Gateron Yellow** — community favorite linear. Smooth, medium weight, very affordable\n- **Cherry MX Black** — heavier linear. Prevents accidental keypresses if you have a heavy hand\n\n**If you want the click but less fatigue:**\n- **Kailh Box White** — click mechanism is different from Cherry. Crisper, less mushy bottom-out. Some people find it less fatiguing\n- **Cherry MX Blue with lighter springs** — you can spring-swap if you're comfortable opening switches\n\nWhat's your primary complaint — the noise, the finger fatigue, or both?"
+    },
+    {
+      "role": "user",
+      "content": "fatigue mostly. i type a lot. reports. code. terminal commands. sometimes ten or twelve hours straight. the click was fun at first but now my fingers feel it by hour six. noise is not a concern. i work alone"
+    },
+    {
+      "role": "assistant",
+      "content": "10-12 hour sessions — that's where switch choice actually matters for your hands.\n\nBlues at that volume of typing are working against you. The click jacket mechanism forces a double resistance point on every keystroke — you press through the tactile bump, then through the click, then bottom out. Multiply that by thousands of keystrokes per hour and your fingers are doing unnecessary work.\n\n**My recommendation for your use case:**\n\n**Primary pick: Gateron Yellow or Cherry MX Red (linear)**\n- No bump, no click, just smooth travel and return\n- Actuation force is 45g vs your current 50g — sounds small but over 12 hours the cumulative difference is significant\n- Linear switches reward a lighter touch. You'll naturally start bottoming out less, which reduces impact on your fingertips\n- Terminal work especially benefits — fast repeated keystrokes feel effortless on linears\n\n**Alternative: Zealios V2 62g (tactile)**\n- If you truly cannot give up the tactile feedback, these are the best option\n- The bump is pronounced enough that you know you've actuated without bottoming out\n- More expensive — about $1/switch — but for a tool you use 12 hours a day, the cost per hour is negligible\n\n**Board recommendation:**\n- If your current board is hot-swappable, just buy new switches and swap them. No need to replace the whole keyboard\n- If it's soldered — consider a **Keychron Q-series** or **GMMK Pro**. Both are hot-swap, aluminum frame, programmable\n\nIs your current board hot-swappable or soldered?"
+    },
+    {
+      "role": "user",
+      "content": "soldered. it is a leopold fc750r. good board but no hot swap. i would rather not desolder 87 switches if i can avoid it"
+    },
+    {
+      "role": "assistant",
+      "content": "The Leopold FC750R is a solid board — great build quality and stock stabilizers. But you're right, desoldering 87 switches is tedious and risks damaging the PCB if you're not experienced with it.\n\n**Better to get a new hot-swap board and keep the Leopold as a backup.**\n\nFor your profile — long sessions, coding and terminal work, no interest in RGB nonsense:\n\n**Top picks (TKL / 75% layout to match your Leopold):**\n\n1. **Keychron Q1 Pro** (~$200)\n   - 75% layout, aluminum case, gasket mount\n   - Hot-swap, QMK/VIA programmable\n   - Bluetooth + wired. Good Linux support\n   - Get it barebones (no switches) and add your own\n\n2. **Keychron V1** (~$80 barebones)\n   - Same layout, plastic case, less premium feel\n   - Hot-swap, QMK/VIA\n   - If you care about the switches more than the case, this saves money\n\n3. **Leopold FC750RBT** (if you want to stay in the family)\n   - Bluetooth version of what you have\n   - But it's still soldered, so you'd need to commit to a switch choice upfront\n\n**My suggestion:** Keychron Q1 Pro barebones + Gateron Yellow switches. Total cost under $250. You get the hot-swap flexibility to experiment with different switches later without buying another board.\n\nKeep the Leopold with Blues for when you want the click. Some days you might miss it."
+    },
+    {
+      "role": "user",
+      "content": "the q1 pro is the right answer. i looked at it before but did not pull the trigger. barebones with gateron yellows. i can always swap to zealios later if linear does not work for me. that is the advantage of hot swap"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. Hot-swap means the switch decision is reversible, which is the whole point. Buy the Gaterons now for $25, try them for a month. If linear isn't for you, the Zealios are waiting.\n\n**When you set it up:**\n- Lube the stabilizers out of the box. Keychron stabs are acceptable but not great stock. Krytox 205g0 on the stabs will eliminate any rattle\n- Gateron Yellows benefit from lubing too, but it's optional. They're reasonably smooth stock\n- Use VIA to remap the layout to match your Leopold muscle memory exactly. Export the config and back it up\n- If you're on Linux, QMK firmware flashing is straightforward. The Q1 Pro has good community support\n\nOne less source of fatigue during those 12-hour days. Your fingers will notice the difference within a week."
+    },
+    {
+      "role": "user",
+      "content": "one more question. keycaps. the q1 pro comes barebones which means no keycaps. i need a set. i do not care about aesthetics. i care about legends that do not wear off and a profile that does not cause finger strain after ten hours"
+    },
+    {
+      "role": "assistant",
+      "content": "For durability and long-session comfort, your options come down to two things: material and profile.\n\n**Material:**\n- **PBT (polybutylene terephthalate)** — this is what you want. Textured surface that doesn't get shiny or greasy. Legends are either dye-sublimated or doubleshot, both permanent. Will outlast the keyboard\n- **ABS (acrylonitrile butadiene styrene)** — cheaper, smoother, gets shiny within months. Pad-printed legends wear off. Avoid\n\n**Profile (the shape of the keycap):**\n- **Cherry profile** — low, sculpted, comfortable for long sessions. Each row is a different height. Keeps your fingers close to the board, less wrist extension\n- **OEM profile** — taller than Cherry, what most stock keyboards use. Fine but not optimized for extended typing\n- **SA profile** — very tall, retro look, sculpted. Feels satisfying but adds finger travel distance. Not ideal for 12-hour days\n- **DSA/XDA** — flat, uniform height across all rows. Some people find this reduces fatigue because there's no row-specific angle to learn\n\n**My recommendation:** PBT doubleshot in Cherry profile. Durable legends, low fatigue, proven for long sessions.\n\nSpecific set: look at the GMK Clone sets from various vendors if you want Cherry profile PBT at a reasonable price. Or Akko keycaps — very good PBT doubleshot for about $30-40."
+    },
+    {
+      "role": "user",
+      "content": "cherry profile pbt. simple decision. i will get a plain dark set. no rgb legends. no decorative nonsense. black or dark grey with white legends. functional. the keyboard is a tool not a decoration"
+    },
+    {
+      "role": "assistant",
+      "content": "Correct philosophy. The keyboard community has a tendency to turn a typing instrument into a display piece. For your purposes — plain dark PBT, readable legends, nothing else.\n\nAkko makes a black-on-dark-grey Cherry profile PBT set that's exactly what you described. Under $40. Doubleshot legends that will never fade.\n\nAlternatively, any of the generic \"black PBT Cherry profile\" sets on Amazon or AliExpress will work. At this spec level there's minimal difference between brands. PBT is PBT."
+    },
+    {
+      "role": "user",
+      "content": "good. board ordered. switches ordered. keycaps next. the entire setup for under 300 dollars. cheaper than the leopold was. and if the yellows do not work i swap them in five minutes instead of desoldering 87 switches. this is the correct approach"
+    },
+    {
+      "role": "assistant",
+      "content": "Under $300 for a fully modular setup that you can reconfigure at will. The Leopold was a good board for its time but the hot-swap flexibility changes the economics entirely.\n\nAssemble it, lube the stabilizers, type on it for a week before you judge the yellows. The transition from clicky to linear takes a few days for your muscle memory to adjust. After that, the fatigue reduction will be obvious."
+    },
+    {
+      "role": "user",
+      "content": "one week. noted. i will resist the urge to switch back to the blues on day two when my fingers miss the click. discipline. like everything else"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. Day two is when everyone reaches for the old keyboard. Push through it. By day five your fingers will have forgotten what the click felt like, and by day seven you'll wonder why you typed on Blues for two years.\n\nGood luck with the build."
+    }
+  ]
+}

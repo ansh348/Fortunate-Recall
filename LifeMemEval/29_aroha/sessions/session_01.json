@@ -1,0 +1,74 @@
+{
+  "session_id": 1,
+  "persona": "aroha_tane",
+  "date": "2024-11-12",
+  "type": "critical",
+  "topic": "introduction — midwifery kaupapa",
+  "facts_disclosed": ["Ngāi Tahu iwi, Banks Peninsula whakapapa", "Works primarily in hospital births at Christchurch Women's, ~45 births/year", "Lives in Christchurch"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "hey i'm looking for advice on how to advocate for more cultural safety in a hospital birthing environment. i work in maternity care and i feel like institutional systems just steamroll over what families actually need"
+    },
+    {
+      "role": "assistant",
+      "content": "That's such an important area to focus on. Cultural safety in maternity settings has been getting more attention, but there's still a huge gap between policy and what actually happens in the room during a birth. Can you tell me a bit about your specific context? What kind of facility, what populations you're working with, and what you're seeing that concerns you?"
+    },
+    {
+      "role": "user",
+      "content": "sure so i'm a community midwife based in christchurch and most of my mamas birth at christchurch women's hospital eh. i do about 45 births a year through there. the hospital has its own kaupapa around cultural safety but honestly it's mostly on paper. i try to bring tikanga into the space but the system pushes back in a hundred small ways"
+    },
+    {
+      "role": "assistant",
+      "content": "45 births a year is a solid caseload, and doing that in a hospital system while trying to maintain tikanga is genuinely hard work. The \"hundred small ways\" you describe is really common — it's not one big barrier, it's the accumulation of small frictions.\n\nCan you give me some examples of what that pushback looks like? Is it scheduling constraints, staff attitudes, physical space limitations, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "all of those things honestly. like wanting to do karakia before a birth and the staff rushing in to do their obs. or whānau being told there's too many people in the room when actually having your people around you is the whole point eh. and then simple things like keeping the whenua, the placenta, and the systems aren't set up for that. every time it's like starting from scratch explaining why these things matter"
+    },
+    {
+      "role": "assistant",
+      "content": "That exhaustion of constantly re-explaining is a real burden, and it shouldn't fall on you or the families. A few strategies that have worked in other hospital settings:\n\n1. **Written tikanga guidelines** — work with your charge midwife manager to create a simple one-page guide that goes in the birth plan notes. Things like karakia time, whānau presence expectations, placenta protocols. If it's in the notes, staff can read it before they walk in the room.\n\n2. **Placenta policy** — push for a formal hospital protocol for placenta retention. Some hospitals in NZ already have this. If Christchurch Women's doesn't have a clear one, that's a concrete policy gap you can advocate to close.\n\n3. **Staff education** — not a one-off training but something embedded in orientation for new staff. If you can get even 15 minutes in their induction, it plants a seed.\n\nHave you had any conversations with hospital leadership about this, or are you mostly navigating it one birth at a time?"
+    },
+    {
+      "role": "user",
+      "content": "mostly one birth at a time if i'm being honest. i've raised things in team meetings but it kind of gets nodded at and then nothing changes. the written tikanga guide is a good idea though, something that sits in the notes so i'm not the one saying it every time. i could work on that"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a classic response — lots of nodding, very little action. Having something written gives you a tool that does the work even when you're not in the room. And it shifts the responsibility: instead of you being the one who \"always brings this up,\" it becomes part of the documented care plan.\n\nFor the guide itself, I'd suggest keeping it simple and practical:\n- What to expect (karakia, whānau presence, specific requests)\n- What staff should do (wait, ask, not interrupt)\n- Placenta instructions\n- Any other specific cultural needs\n\nFraming it as \"supporting the birth plan\" rather than \"cultural accommodation\" can help too — it's not an extra thing, it's core care. Would you want help drafting something like that?"
+    },
+    {
+      "role": "user",
+      "content": "yeah i'd love that actually. and it's not just for māori whānau either eh, i've got mamas from all kinds of backgrounds who have their own practices around birth. but for me personally it comes from my own whakapapa. i'm ngāi tahu, through my māmā's side, banks peninsula. that whenua is in my bones and everything i bring to my midwifery practice traces back to that connection to place and tūpuna"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a powerful foundation for the work you're doing. When the advocacy comes from your own whakapapa and lived connection to place, it carries a different weight than someone just implementing a policy. And you're right that it extends beyond Māori whānau — every family has cultural needs around birth, and a system that honours those is better for everyone.\n\nLet's start sketching out a framework for the guide. I'm thinking three sections:\n\n**Section 1: Before birth**\n- Space for whānau to note cultural, spiritual, or personal practices\n- Karakia/prayer/blessing time — when and who\n- Who will be present and why\n\n**Section 2: During birth**\n- What staff should pause for or not interrupt\n- Specific requests (e.g., lights, music, quiet)\n- Who cuts the cord, any cord practices\n\n**Section 3: After birth**\n- Placenta — retain, bury, other\n- First visitors, order of holding baby\n- Naming or blessing practices\n\nDoes that structure work, or would you rearrange things?"
+    },
+    {
+      "role": "user",
+      "content": "that's really solid actually. i'd add something in the during birth section about skin to skin not being interrupted for weighing and measuring eh, because that's a massive one. staff come in with the scales two minutes after the pēpi arrives and it breaks that first connection. and in the after birth section maybe something about who does the first bath and when because that's culturally significant for a lot of people"
+    },
+    {
+      "role": "assistant",
+      "content": "Both excellent additions. Uninterrupted skin-to-skin is evidence-based best practice anyway, so framing it that way gives it clinical backing as well as cultural significance. And the first bath question is huge — many cultures have specific practices around when and who, and the default hospital routine just overrides all of that.\n\nUpdated structure:\n\n**During birth:**\n- Uninterrupted skin-to-skin — no weighing/measuring until whānau are ready\n- What staff should pause for\n- Specific environment requests\n- Cord practices\n\n**After birth:**\n- Placenta wishes\n- First bath — who, when, any specific practices\n- First visitors and holding\n- Naming or blessing\n\nI'd suggest making it a fillable PDF or a simple printed form that you can include in the maternity notes. Something the mama fills in at one of her antenatal visits with you, so it's ready well before labour. Would you like me to help draft the actual wording for each section?"
+    },
+    {
+      "role": "user",
+      "content": "yes please. and honestly this conversation has fired me up a bit. sometimes you just need someone to kōrero with about this stuff and suddenly it feels doable instead of overwhelming. i'm going to bring this to my next team meeting but this time with something concrete on paper"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the way to do it — showing up with a draft changes the whole dynamic of the conversation. It moves from \"Aroha's raising this again\" to \"here's a tool we can pilot.\"\n\nHere's a starting draft for the wording. Adjust the tone to match how you'd speak to your mamas:\n\n---\n\n**Birth Culture & Tikanga Plan**\n\n*To be completed during antenatal care and included in maternity notes.*\n\n**Before labour begins:**\n- Are there prayers, blessings, or karakia you'd like space for before or during birth? (Details: ___)\n- Who do you want present during labour and birth? (Names & relationship: ___)\n- Is there anything staff should know about your cultural or spiritual practices? (___)\n\n**During labour and birth:**\n- Skin-to-skin: We request uninterrupted skin-to-skin contact. Routine weighing and measuring to wait until family is ready. (Yes / Discuss)\n- Are there specific environment needs? (Lighting, sound, quiet, music: ___)\n- Cord cutting — who will cut? Any practices around the cord? (___)\n\n**After birth:**\n- Placenta: We wish to (retain / bury / other: ___)\n- First bath: Who will bathe baby? When? Any specific practices? (___)\n- First holding / visitors: Any specific order or preferences? (___)\n- Naming or blessing: Any practices to honour? (___)\n\n---\n\nTake this, reshape it in your voice, and bring it to that meeting. Going in with a prototype is ten times more effective than going in with a complaint. Kia kaha with it."
+    },
+    {
+      "role": "user",
+      "content": "this is amazing thank you so much. i'm going to rework the language a bit so it sits right for our community and then print some copies off. really appreciate this kōrero, it's given me a clear path forward eh"
+    },
+    {
+      "role": "assistant",
+      "content": "You're so welcome. The fact that you're already thinking about the language and how it'll land with your community tells me it's going to be a great tool. Make it yours — you know your mamas and their whānau better than anyone.\n\nA few last tips for the team meeting:\n- Bring printed copies so people can hold it and read it\n- Frame it as a pilot — \"let's try this for three months and see how it goes\" is less threatening than \"we need to change everything\"\n- Ask for one ally on the ward who'll champion it when you're not there\n\nGood luck with it. I hope it makes those hundred small pushbacks a little less heavy."
+    }
+  ]
+}

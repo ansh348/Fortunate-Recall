@@ -1,0 +1,74 @@
+{
+  "session_id": 2,
+  "persona": "alex_richter",
+  "date": "2024-11-22",
+  "type": "critical",
+  "topic": "remote work with cat",
+  "facts_disclosed": ["Cat Kernel, adopted from Tierheim 2 years ago"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "quick question — do you know if there's a way to set up a git hook that runs only on specific file paths? i want pre-commit checks on our api contracts directory but not on the whole repo because it takes forever"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, you can do this. In your pre-commit hook (or if you're using a framework like `pre-commit`), you filter by changed files matching a path pattern.\n\nIf you're using the `pre-commit` framework, you can set the `files` key in `.pre-commit-config.yaml`:\n\n```yaml\n- repo: local\n  hooks:\n    - id: api-contract-check\n      name: Validate API contracts\n      entry: ./scripts/validate-contracts.sh\n      language: script\n      files: ^api-contracts/\n```\n\nThis only triggers when files under `api-contracts/` are staged.\n\nIf you're writing a raw git hook instead, you can filter in the shell script:\n\n```bash\nchanged_files=$(git diff --cached --name-only --diff-filter=ACM | grep '^api-contracts/')\nif [ -n \"$changed_files\" ]; then\n  # run your checks\nfi\n```\n\nWhich approach are you using — the pre-commit framework or raw hooks?"
+    },
+    {
+      "role": "user",
+      "content": "pre-commit framework. nice, the files regex is exactly what i needed. our full lint suite takes like 90 seconds on the whole repo and it's killing the flow when i'm just touching a readme or something"
+    },
+    {
+      "role": "assistant",
+      "content": "90 seconds on every commit is brutal — that's enough time to lose your train of thought completely. The `files` key should fix that for the contract checks.\n\nYou can also use `types` and `types_or` to filter by file type instead of path, which is handy for language-specific linters:\n\n```yaml\n- id: kotlin-lint\n  files: ^src/\n  types: [kotlin]\n```\n\nAnd if you want the nuclear option for speed: `stages: [manual]` lets you keep a hook defined but only run it when explicitly called with `pre-commit run --hook-stage manual`. Useful for the heavy stuff you want in CI but not on every commit.\n\nHave you considered splitting your hooks into \"fast\" (always run) and \"thorough\" (CI only)?"
+    },
+    {
+      "role": "user",
+      "content": "that's a good split actually. the fast ones can be formatting and the contract schema check, the thorough ones can be the full integration lint and the openapi validation. gonna set that up today while i'm wfh and actually have some focus"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a solid split. Formatting + schema checks are usually sub-5 seconds, so your commit flow stays fast. Save the heavy OpenAPI validation and integration linting for CI where the time doesn't matter.\n\nFor the fast hooks, make sure they're actually fast by testing them in isolation:\n\n```bash\ntime pre-commit run contract-check --files api-contracts/some-file.yaml\n```\n\nIf anything in the \"fast\" bucket takes more than 10 seconds, it belongs in the CI bucket.\n\nWFH focus days are great for this kind of dev tooling work — no one scheduling meetings about meetings. Enjoy the productivity."
+    },
+    {
+      "role": "user",
+      "content": "lol yeah except my coworker just tried to mass-approve a bunch of pull requests. and by coworker i mean kernel, who walked across my keyboard while i was getting coffee. she managed to navigate to github and click something before i grabbed her"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha! The classic cat-on-keyboard PR approval. That's a genuine security incident in the funniest possible way. I hope none of those actually merged.\n\nYou might want to lock your screen when you walk away — `Win+L` on Windows, a hot corner on Mac, whatever's fastest. Cats are remarkably efficient at finding the worst possible key combination.\n\nIs Kernel a regular keyboard invader, or was this a special occasion?"
+    },
+    {
+      "role": "user",
+      "content": "she's a serial offender. adopted her from the tierheim about 2 years ago and she's been contributing unauthorized code ever since. her commit messages would be interesting though, probably just keysmashes. honestly better than some i've reviewed"
+    },
+    {
+      "role": "assistant",
+      "content": "Two years of unauthorized commits — at this point she's basically a senior engineer by tenure. Tierheim cats come with that built-in chaotic energy.\n\nYou could always set up a keyboard lock shortcut that's easy to hit on your way up. On Linux/Mac, something like a single key mapped to lock screen. Faster than `Ctrl+L` or whatever your OS default is.\n\nOr lean into it — set up a git alias: `git blame-kernel` that filters for commits made between your coffee break timestamps.\n\nDoes she have a preferred spot, or is the keyboard just the worst possible landing zone she can find?"
+    },
+    {
+      "role": "user",
+      "content": "she specifically targets the warmest thing in the room, which is always the laptop. i've considered getting a decoy warm surface but at this point it's part of the wfh experience. sometimes she just sits behind the monitor and stares at me while i code. very judgmental energy"
+    },
+    {
+      "role": "assistant",
+      "content": "The judgmental stare from behind the monitor is peak cat code review. She's just waiting for you to write a race condition so she can pounce.\n\nThe decoy warm surface actually works — a heated pad or even a small heating blanket next to your desk. A lot of remote workers with cats swear by it. Put it at the same height as your desk and she'll probably prefer it since it's consistently warm vs. a laptop that goes hot and cold.\n\nCheap experiment: a cardboard box with a heating pad in it. Cats are physically incapable of resisting a warm box. Cost: maybe 15 euros. ROI: fewer accidental PR approvals."
+    },
+    {
+      "role": "user",
+      "content": "the warm box idea is actually genius. i have a heating pad somewhere from when my back was messed up. gonna try it. the investment in cat infrastructure at this point is probably worth more than any ci/cd improvement i could make"
+    },
+    {
+      "role": "assistant",
+      "content": "Cat infrastructure as a productivity multiplier — that's an underrated section of the WFH optimization literature. If the heating pad works, you've essentially built a load balancer for cat attention: redirect warm-seeking traffic away from production hardware to a dedicated cat-sink.\n\nAnd honestly, for the cost of a heating pad and a box, if it prevents even one accidental force-push, it's paid for itself."
+    },
+    {
+      "role": "user",
+      "content": "\"cat-sink\" is going in my vocabulary permanently. alright, back to the pre-commit config before she comes back for round two. thanks for the git hook stuff and the cat management advice, truly the range of problems i need solved on a friday"
+    },
+    {
+      "role": "assistant",
+      "content": "Git hooks and cat mitigation — a full-stack Friday. Good luck with the pre-commit split and the decoy heating station. Let me know if Kernel approves of the new arrangement or stages a protest.\n\nHave a good weekend."
+    }
+  ]
+}

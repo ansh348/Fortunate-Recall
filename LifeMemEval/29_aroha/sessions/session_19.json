@@ -1,0 +1,82 @@
+{
+  "session_id": 19,
+  "persona": "aroha_tane",
+  "date": "2025-09-15",
+  "type": "critical",
+  "topic": "practice shift to home births",
+  "facts_disclosed": ["Shifted to home birth focus, only 5-6 hospital births/year"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "can you help me update my professional bio for my website? it's been the same for like two years and it doesn't reflect how my practice actually looks anymore"
+    },
+    {
+      "role": "assistant",
+      "content": "Of course — a bio that actually matches your current practice is important, especially if potential clients are finding you online. Can you tell me what the current bio says and what's changed? What does your practice look like now?"
+    },
+    {
+      "role": "user",
+      "content": "the current one talks about me being a community midwife providing continuity of care across pregnancy, birth and postnatal, which is still true. but the emphasis is all wrong. it makes it sound like i'm a general caseload midwife doing hospital births and that's just not where i'm at anymore eh. my practice has shifted massively over the last year"
+    },
+    {
+      "role": "assistant",
+      "content": "That kind of drift between your actual practice and how you present it is really common — the work evolves faster than the website does. Tell me about the shift. What does your practice look like now compared to when you wrote that bio?"
+    },
+    {
+      "role": "user",
+      "content": "so i've moved almost completely to home births now. i take maybe five or six hospital births a year, only for the ones where there's a genuine clinical reason to be in the hospital — twins, breech, pre-existing conditions. everything else happens at home. the mamas are more relaxed in their own space, the pēpi arrive calmer, and honestly i can practice the way my tūpuna intended. it's been the best decision i've made for my practice"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a significant shift and it sounds like it's been really positive for you and your mamas. Moving from a general caseload to being primarily a home birth midwife is a clear identity for your practice and your bio should lead with that.\n\nBefore I start drafting, a few questions:\n- What geographical area do you cover for home births? Just Christchurch city, or wider Canterbury?\n- Do you want the bio to mention your tikanga Māori approach, or is that something you communicate differently?\n- What tone are you going for — warm and personal, or more professional and clinical?"
+    },
+    {
+      "role": "user",
+      "content": "i cover christchurch and wider canterbury, i've been out to rangiora and the smaller towns too. and yes absolutely mention the tikanga approach, that's central to everything i do. it's not a side note it's the foundation. tone wise i want it warm but professional, like how i'd actually talk to a mama at her first appointment. not stiff, not corporate, just real"
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect — warm, grounded, tikanga at the centre, not an add-on. Here's a first draft:\n\n---\n\n**Aroha Tāne — Community Midwife**\n\nKia ora, I'm Aroha. I'm a community midwife based in Ōtautahi (Christchurch), specialising in home birth care across Canterbury.\n\nMy practice is built on the belief that birth is a natural, powerful event — and that it happens best when a mama feels safe, supported, and in control of her own experience. For most of my clients, that means birthing at home, surrounded by their whānau, in a space that belongs to them.\n\nTikanga Māori is the foundation of my midwifery kaupapa. I integrate cultural practices — karakia, acknowledgment of the whenua (placenta), and whānau-centred care — into every birth I attend. Whether you're Māori or not, I bring the same respect for your beliefs, your body, and your mana to your experience.\n\nI provide full continuity of care from early pregnancy through to six weeks postnatal. I'm your midwife at every appointment, at the birth, and in the weeks after — one face, one relationship, the whole way through.\n\nFor families with complex needs, I also attend hospital births at Christchurch Women's, working alongside the obstetric team to ensure your birth plan is respected in the clinical setting.\n\n---\n\nHow does that feel? Too long, too short, anything that doesn't sit right?"
+    },
+    {
+      "role": "user",
+      "content": "oh that's really close. i love the opening and the tikanga paragraph is exactly right, it's not tokenistic it's real. a couple of things — can you take out the word 'specialising' because that implies a formal specialisation and i don't want to overstate it. and the hospital bit at the end feels too prominent, like it's getting equal weight to the home birth focus. in reality i only do five or six hospital ones a year so it's a very small part of what i do"
+    },
+    {
+      "role": "assistant",
+      "content": "Good catches on both. Here's the revised version:\n\n---\n\n**Aroha Tāne — Community Midwife**\n\nKia ora, I'm Aroha. I'm a community midwife based in Ōtautahi (Christchurch), focused on home birth care across Canterbury.\n\nMy practice is built on the belief that birth is a natural, powerful event — and that it happens best when a mama feels safe, supported, and in control of her own experience. For most of my clients, that means birthing at home, surrounded by their whānau, in a space that belongs to them.\n\nTikanga Māori is the foundation of my midwifery kaupapa. I integrate cultural practices — karakia, acknowledgment of the whenua (placenta), and whānau-centred care — into every birth I attend. Whether you're Māori or not, I bring the same respect for your beliefs, your body, and your mana to your experience.\n\nI provide full continuity of care from early pregnancy through to six weeks postnatal. I'm your midwife at every appointment, at the birth, and in the weeks after — one face, one relationship, the whole way through.\n\nIn a small number of cases where hospital-based care is clinically needed, I continue as your midwife at Christchurch Women's, ensuring your wishes and birth plan are carried through into that environment.\n\n---\n\nThe hospital mention is now clearly secondary — a footnote rather than a feature. Does that balance feel better?"
+    },
+    {
+      "role": "user",
+      "content": "that's much better. the hospital line reads as a reassurance now rather than a selling point which is exactly what it should be. one more thing, can you add something about the postnatal home visits specifically because that's something mamas really value and a lot of them don't know they get that with a community midwife"
+    },
+    {
+      "role": "assistant",
+      "content": "Great idea — postnatal home visits are a real strength of the community model and worth highlighting. Here's the continuity paragraph expanded:\n\n---\n\nI provide full continuity of care from early pregnancy through to six weeks postnatal. I'm your midwife at every appointment, at the birth, and in the weeks after. In those early days and weeks with your new pēpi, I come to you — home visits to check on you and baby, support with feeding, answer the 2am questions, and make sure you're recovering well. One face, one relationship, the whole way through.\n\n---\n\nThat slots into the same spot. The \"I come to you\" and \"2am questions\" give it a tangible, human feel rather than just listing services. Want me to put the whole bio together with this update so you can see the final version?"
+    },
+    {
+      "role": "user",
+      "content": "yes please, let me see the full thing together"
+    },
+    {
+      "role": "assistant",
+      "content": "Here it is as one piece:\n\n---\n\n**Aroha Tāne — Community Midwife**\n\nKia ora, I'm Aroha. I'm a community midwife based in Ōtautahi (Christchurch), focused on home birth care across Canterbury.\n\nMy practice is built on the belief that birth is a natural, powerful event — and that it happens best when a mama feels safe, supported, and in control of her own experience. For most of my clients, that means birthing at home, surrounded by their whānau, in a space that belongs to them.\n\nTikanga Māori is the foundation of my midwifery kaupapa. I integrate cultural practices — karakia, acknowledgment of the whenua (placenta), and whānau-centred care — into every birth I attend. Whether you're Māori or not, I bring the same respect for your beliefs, your body, and your mana to your experience.\n\nI provide full continuity of care from early pregnancy through to six weeks postnatal. I'm your midwife at every appointment, at the birth, and in the weeks after. In those early days and weeks with your new pēpi, I come to you — home visits to check on you and baby, support with feeding, answer the 2am questions, and make sure you're recovering well. One face, one relationship, the whole way through.\n\nIn a small number of cases where hospital-based care is clinically needed, I continue as your midwife at Christchurch Women's, ensuring your wishes and birth plan are carried through into that environment.\n\n---\n\nClean, warm, tikanga-centred, and clearly a home birth practice. How does that read?"
+    },
+    {
+      "role": "user",
+      "content": "i love it. it actually sounds like me for the first time. the old bio was so generic it could have been any midwife in the country and this one is mine. i'm going to get this on the website this weekend. might tweak a word or two but the bones are exactly right"
+    },
+    {
+      "role": "assistant",
+      "content": "That's the goal — a bio that sounds like you and attracts the mamas who are looking for exactly what you offer. The ones searching for a home birth midwife in Canterbury with a tikanga-centred practice will read this and know they've found their person.\n\nA couple of small suggestions for the website update:\n- Add a professional photo if you don't have one already. Something warm and natural, not a clinical headshot.\n- Make sure your contact details and catchment area are easy to find on the same page.\n- If you have any testimonials from mamas (with their permission), a couple of short quotes near the bio are really powerful.\n\nMake it yours and get it up there. Your practice has changed for the better and the world should know about it."
+    },
+    {
+      "role": "user",
+      "content": "the testimonial idea is great, i've got a couple of mamas who've offered to write something and i've never followed up. this is the push i needed to actually ask them. right i'm off to clinic but this has been really productive, i feel good about where my practice is sitting now. it took a while to get here but it's right eh. appreciate the help"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the practice shift has been a really grounding change for you, and now the outside matches the inside. Follow up with those mamas about the testimonials — they offered because they want other women to have the same experience they had, and there's no better endorsement than that.\n\nEnjoy your clinic. Kia kaha."
+    }
+  ]
+}

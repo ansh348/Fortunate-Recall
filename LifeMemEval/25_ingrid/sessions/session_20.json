@@ -1,0 +1,66 @@
+{
+  "session_id": 20,
+  "persona": "ingrid_solberg",
+  "date": "2025-06-26",
+  "type": "filler",
+  "topic": "frustration with new university data management system",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "The university has migrated to a new data management system and it is, to use a technical term, terrible."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a common experience with institutional software migrations. What's the specific system, and what's making it terrible?"
+    },
+    {
+      "role": "user",
+      "content": "It is called ResearchData360. The previous system was simple. Upload files, tag with metadata, assign to project. Functional, if inelegant. The new system requires 14 fields of metadata per upload, including fields that are irrelevant to natural sciences. There is a mandatory \"societal impact narrative\" for every dataset. I measure ocean pH. The societal impact is that the ocean is acidifying. I should not need to write a paragraph about this for every CSV file."
+    },
+    {
+      "role": "assistant",
+      "content": "Fourteen metadata fields per upload is genuinely excessive for routine data. The \"societal impact narrative\" requirement sounds like it was designed for social sciences or humanities where that framing makes more sense, and then applied universally without adaptation.\n\nA few questions: Is there a way to create templates so you can auto-fill the repetitive fields? And are you uploading frequently enough that this is a daily friction, or more of a periodic annoyance?"
+    },
+    {
+      "role": "user",
+      "content": "I upload data weekly from our monitoring stations. So this is not periodic. It is chronic. The template function exists in theory but fails to populate correctly approximately 40% of the time. I have reported this to IT. Their response was a 6-page PDF explaining the system's \"philosophy of data stewardship.\" I did not find it illuminating."
+    },
+    {
+      "role": "assistant",
+      "content": "A philosophy document in response to a bug report is impressively unhelpful. The 40% template failure rate is a real problem that should be escalated beyond the help desk.\n\nSome practical options:\n\n1. **Batch upload script** — If the system has an API, you could write a script that auto-populates all 14 fields and uploads your CSVs in bulk. This bypasses the web interface entirely.\n2. **Department-level complaint** — If multiple researchers in your department are experiencing the same friction, a collective request to the IT steering committee carries more weight than individual tickets.\n3. **Boilerplate societal impact** — Write one generic impact statement and paste it into every upload. \"This dataset contributes to long-term monitoring of ocean chemistry relevant to climate change adaptation.\" Done. They want a paragraph, they get a paragraph. The same paragraph, every time."
+    },
+    {
+      "role": "user",
+      "content": "The boilerplate approach has a certain elegance in its passive resistance. I will adopt it immediately.\n\nRegarding the API, I checked. There is no documented API. The system was apparently designed with the assumption that researchers enjoy interacting with web forms. This assumption is incorrect."
+    },
+    {
+      "role": "assistant",
+      "content": "No API is a serious limitation for a research data platform in 2025. That alone is worth flagging to whoever made the procurement decision.\n\nIf there's no API, another workaround: some browser automation tools like Selenium or browser extensions can auto-fill web forms. You'd essentially create a script that opens the upload page, fills in your 14 fields from a local config file, and submits. It takes an afternoon to set up but saves you the weekly tedium.\n\nWould that kind of approach be feasible for you, or is this more of a situation where you want the university to fix their system rather than work around it?"
+    },
+    {
+      "role": "user",
+      "content": "Both. I want the university to fix it AND I want a workaround for the interim, because based on institutional timescales, \"interim\" likely means 18 to 24 months. I have used Python for data analysis but not browser automation. Is Selenium difficult to implement for someone who is competent in Python but not a software developer?"
+    },
+    {
+      "role": "assistant",
+      "content": "If you're competent in Python, Selenium is very approachable. The basic workflow would be:\n\n1. Install selenium and a browser driver (usually Chrome)\n2. Write a script that navigates to the upload page, finds each form field by its HTML element ID, and fills it\n3. Attach your file and submit\n\nThe hardest part is usually identifying the HTML element IDs for each field, but your browser's \"Inspect Element\" feature makes that straightforward. For 14 fields, the script would be maybe 50-80 lines of code.\n\nAlternatively, if you want something even simpler, a browser extension like \"Autofill\" or \"Form Filler\" can remember your entries for each field and fill them with one click. No coding required. Less flexible than Selenium but much faster to set up."
+    },
+    {
+      "role": "user",
+      "content": "The browser extension is the pragmatic first step. I will try that and reserve the Selenium approach for when the extension inevitably fails on some poorly implemented form element.\n\nIt is remarkable that I can design a monitoring array across 800 kilometres of Arctic coastline but I cannot upload a CSV file without a 15-minute ordeal."
+    },
+    {
+      "role": "assistant",
+      "content": "The inverse relationship between the importance of work and the usability of the tools required to document it is one of academia's most consistent findings. Start with the browser extension, use the boilerplate impact statement, and save your energy for the actual science."
+    },
+    {
+      "role": "user",
+      "content": "Sound advice. I will also draft a concise email to the faculty IT committee documenting the specific failures. Not a complaint. An observation report with data points, reproducible steps, and a recommendation. They may ignore a frustrated email. They cannot as easily ignore a methodology."
+    },
+    {
+      "role": "assistant",
+      "content": "Writing a bug report like a methods section is the right approach. Reproducible steps, expected vs. actual behaviour, frequency of failure, time cost per upload. If you quantify the total researcher-hours being lost across the department, that's the number that moves committees. Good luck with the report and the workaround."
+    }
+  ]
+}

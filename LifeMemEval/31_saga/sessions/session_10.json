@@ -1,0 +1,66 @@
+{
+  "session_id": 10,
+  "persona": "saga_lindqvist",
+  "date": "2025-03-08",
+  "type": "critical",
+  "topic": "review prep",
+  "facts_disclosed": ["Performance review March 14 2025, 12-slide deck prepared"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am preparing for my performance review and I want to stress-test my approach. I have a deck ready but I am not sure if the structure is optimal for the conversation format. Can I walk you through it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely, I'd be happy to help you stress-test it. Walk me through the structure and I'll give you feedback on flow, emphasis, and anything that might not land well in a review conversation. When is the review?"
+    },
+    {
+      "role": "user",
+      "content": "March 14. So I have 6 days. The deck is 12 slides. The structure is: slide 1 is a summary of key achievements, slides 2 through 7 cover individual projects with quantified impact metrics, slide 8 covers cross-team contributions, slides 9 and 10 are skills development, slide 11 is areas for growth that I am identifying proactively, and slide 12 is goals for next review period."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a thorough and well-organized structure. Twelve slides for a performance review is substantial — which shows preparation, but also raises a question: how long is the review meeting, and how much of it is you presenting versus discussion?\n\nThe risk with 12 slides is that you end up in presentation mode rather than conversation mode, and the reviewer spends more time listening than engaging. Most performance reviews work best as dialogues.\n\nHere's my initial read on the structure:\n\n**Strong:**\n- Leading with a summary (slide 1) is smart — it frames everything that follows\n- Quantified impact metrics on project slides will stand out. Most people don't do this\n- Proactively identifying growth areas (slide 11) shows self-awareness and takes away the reviewer's \"gotcha\" moment\n\n**Worth reconsidering:**\n- Six project slides (2-7) might be too many to go through in detail. Could you consolidate to your top 3-4 highest-impact projects?\n- Two slides on skills development might overlap with the project slides if the skills were demonstrated through those projects\n\nWhat format does the review typically take? Is it a formal presentation, or more of a guided conversation?"
+    },
+    {
+      "role": "user",
+      "content": "It is a guided conversation. My manager has a template she fills in beforehand and we discuss it. The deck is my own initiative. I bring it because I do not trust the conversation to cover everything I want to highlight. Last year I got \"exceeds expectations\" and I attribute at least part of that to the fact that I had data to support every claim."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a smart strategy. If the deck helped you get \"exceeds expectations\" last year, the approach clearly works. The deck isn't a presentation — it's your evidence file. That changes my advice.\n\nIn that case, you don't need to consolidate the project slides. You need them available as backup, not necessarily to present sequentially. Think of the deck as:\n\n- **Slides you lead with** (1, maybe 2-3 key projects, 11, 12) — the narrative arc\n- **Slides you pull up if needed** (remaining projects, skills, cross-team) — evidence on demand\n\nThis way the conversation flows naturally, but when your manager brings up a topic or asks for specifics, you can say \"actually, I have the numbers on that\" and pull up the relevant slide.\n\n**For your narrative arc, I'd suggest:**\n1. Open with the summary slide — \"Here is what I think my biggest impact areas were this period\"\n2. Go to your 2-3 strongest project slides\n3. Jump to growth areas (shows you're not just advocating, you're self-aware)\n4. Close with goals for next period (forward-looking, collaborative)\n\nKeep the other slides in your back pocket. What are the 2-3 projects you consider your strongest impact stories?"
+    },
+    {
+      "role": "user",
+      "content": "The strongest three are: a churn prediction model that improved early detection by 18%, a dashboard I built that reduced weekly reporting time for the team by approximately 6 hours, and a cross-functional analysis I led that informed a pricing experiment. The pricing one is hard to quantify directly but the experiment it informed showed a 3.2% revenue uplift in the test group."
+    },
+    {
+      "role": "assistant",
+      "content": "Those are three very different types of impact, which is excellent:\n\n1. **Churn prediction (18% improvement)** — direct model improvement, technical depth\n2. **Dashboard (6 hours/week saved)** — operational efficiency, team-wide impact\n3. **Pricing analysis (3.2% revenue uplift)** — business impact, cross-functional leadership\n\nThis covers the three things most reviewers look for: technical excellence, efficiency contribution, and business value.\n\nFor each of these, make sure you have:\n- **The baseline:** What existed before you did this?\n- **Your specific contribution:** What did you do that no one else would have done the same way?\n- **The quantified outcome:** You already have this\n- **The ongoing value:** Is this a one-time win or does it compound?\n\nThe pricing one is actually your strongest story even though it's the hardest to quantify. A 3.2% revenue uplift, even if you can't claim full credit, shows you're operating above your role level — influencing business decisions, not just delivering analyses.\n\nFor that slide specifically, I'd frame it as: \"My analysis identified the pricing opportunity. The experiment validated it with a 3.2% uplift. The decision to run the experiment was directly informed by my work.\" You don't need to claim the uplift — you claim the insight that led to it.\n\nHow are you feeling about the review overall? Confident, anxious, somewhere in between?"
+    },
+    {
+      "role": "user",
+      "content": "I would estimate a 78% probability of getting \"exceeds expectations\" again. The remaining 22% accounts for the possibility that organizational factors outside my control affect the rating. Budget constraints sometimes compress ratings regardless of performance. I have seen it happen to colleagues. But in terms of the work itself, I am confident. The data supports it."
+    },
+    {
+      "role": "assistant",
+      "content": "A 78% confidence estimate is both honest and well-reasoned. You're right that rating compression is a real risk — it's one of the few things that strong performers can't control.\n\nTo hedge against that risk, a few things you can do in the review itself:\n\n**1. Ask directly about rating constraints early**\nSomething like: \"Before we dive in, is there anything I should know about the review process this cycle? Any changes to the rating framework?\" This gives your manager an opening to flag if there are budget or calibration pressures. If she does, you can adjust your expectations in real time rather than being surprised.\n\n**2. Separate the rating from the feedback**\nIf the rating does come in lower than expected, you can say: \"I understand the constraints. Can we discuss the specific feedback on my work independently of the rating?\" This protects your ability to get meaningful developmental input even if the rating is compressed.\n\n**3. Document the conversation**\nAfter the review, send a follow-up email summarizing what was discussed, the feedback received, and your goals for next period. This creates a written record that can be referenced in future reviews, especially if this cycle's rating doesn't reflect the work.\n\nThe 78% estimate also suggests you've thought about what the remaining 22% looks like. Are you prepared for that scenario emotionally, or would a lower rating feel like a significant setback?"
+    },
+    {
+      "role": "user",
+      "content": "I would be disappointed but not destabilized. A lower rating would be a data point, not an identity event. I would want to understand the reasoning and then adjust my strategy accordingly. The follow-up email idea is good. I will add that to my post-review checklist. I actually have a literal checklist for before, during, and after the review."
+    },
+    {
+      "role": "assistant",
+      "content": "\"A data point, not an identity event\" is a remarkably healthy framing. That mindset will serve you well regardless of the outcome.\n\nAnd of course you have a checklist. That's exactly the kind of preparation that separates people who get strong reviews from people who hope for them.\n\nOne final suggestion for the review itself: leave some space for your manager to contribute. People who come in with comprehensive decks sometimes inadvertently signal that they don't need or want input. At some point during the conversation, explicitly ask: \"What do you think I should focus on more?\" or \"Is there an impact area you think I'm undervaluing?\"\n\nThis does two things — it shows you value her perspective, and it might surface information about what the organization values that you can leverage in the next cycle.\n\nYour preparation is thorough. The 12-slide deck, the quantified metrics, the proactive growth areas, the checklist — you've done the work. On March 14, just let the evidence speak. Good luck."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. That is useful feedback on leaving space for input. I will add a note to my during-review checklist to explicitly ask for her perspective at the midpoint rather than waiting until the end. The structure is lagom now. Not over-prepared, not under-prepared."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right balance. Asking at the midpoint is better than at the end — it turns the second half into a real dialogue shaped by her input rather than a monologue she responds to at the finish line.\n\nYou're well set for March 14. Let the data do the talking, leave room for conversation, and whatever the outcome, you'll have a clear record and a plan. Good luck with the review."
+    }
+  ]
+}

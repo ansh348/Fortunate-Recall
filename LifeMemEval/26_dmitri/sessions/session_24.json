@@ -1,0 +1,84 @@
+{
+  "session_id": 24,
+  "persona": "dmitri_volkov",
+  "date": "2025-10-20",
+  "type": "critical",
+  "topic": "apartment move",
+  "facts_disclosed": [
+    "Moved to Sarona, 7th floor, controlled access"
+  ],
+  "turns": [
+    {
+      "role": "user",
+      "content": "i just moved apartments. setting up the home office again. need to rethink the network layout for the new space"
+    },
+    {
+      "role": "assistant",
+      "content": "Congrats on the move. Network layout for a home office is worth doing right from the start — much harder to fix later.\n\nTo give useful recommendations, I need to understand the space:\n\n- How large is the new apartment? How many rooms?\n- Where is the office relative to the ISP entry point?\n- What's your current network setup — router, switch, access points?\n- Any specific requirements — VLANs, separate work/personal networks, wired-only for certain devices?"
+    },
+    {
+      "role": "user",
+      "content": "larger than the old place. three bedrooms. office is in the back bedroom. isp entry point is near the front door. maybe 15 meters of cable run. i already have the managed switch and access point from before. the layout is better here though. the building has controlled entry so i can actually leave networking gear in the utility closet near the entrance without worrying about physical access"
+    },
+    {
+      "role": "assistant",
+      "content": "Controlled building entry is a nice upgrade for physical security of your infrastructure. If the utility closet is inside your apartment but near the front door, you can run a clean topology:\n\n**Proposed layout:**\n\n1. **Utility closet (front):**\n   - ISP modem/ONT\n   - Primary router/firewall (pfSense or OPNsense box if you're running one)\n   - Managed switch\n   - Patch panel if you want to do this properly\n\n2. **Cat6 runs:**\n   - One run to the office (~15m) — workstation\n   - One run to the living area — if anyone else in the household needs wired access\n   - One run to wherever you mount the wireless AP — central location for coverage\n\n3. **Office (back bedroom):**\n   - Secondary switch if needed for multiple wired devices\n   - NAS\n   - Workstation\n\nThe 15m run is well within Cat6 spec. You could run Cat6a if you want 10GbE future-proofing.\n\nWhat's the building like — new construction with cable conduits, or older building where you'll be running cables along walls?"
+    },
+    {
+      "role": "user",
+      "content": "newer construction. sarona area. there are conduits in the walls already. the building is 12 floors. we are on the 7th. elevator needs a fob. camera in the lobby. camera in the parking garage. compared to the old place this is a different world. the previous apartment had a shared street entrance that anyone could walk through"
+    },
+    {
+      "role": "assistant",
+      "content": "Sarona is a solid neighborhood, and that building sounds like it was designed with actual access control in mind. Fob-controlled elevator, lobby cameras, garage cameras — that's several layers of physical security before anyone reaches your door.\n\nThe shared street entrance you described at the old place is a common problem in Tel Aviv. No access control at the building level means your apartment door is your only perimeter. Here, the building itself is the first perimeter.\n\n**Network implications of the new building:**\n\n- **Conduits in walls** — excellent. Clean cable runs, no surface-mount ugly solutions. Run Cat6a while you have the chance, it costs marginally more than Cat6 and gives you 10GbE headroom\n- **Building-level cameras are NOT your cameras** — don't rely on them for your security. They're managed by the building committee and you have no control over retention, access, or whether they actually work\n- **Shared building network** — some newer buildings have shared fiber or building-wide ethernet. Do NOT connect to it. Run your own ISP line\n\n**Physical security recommendations for the apartment:**\n\n1. Install your own camera covering your front door — a Reolink or similar that records to your NAS, not cloud\n2. Smart lock or high-security cylinder (Mul-T-Lock or ASSA ABLOY) on the apartment door\n3. If the building has intercom/buzzer connected to the elevator fob system, understand how it works and who can grant access\n\n7th floor eliminates most physical intrusion vectors from the outside. No balcony access from adjacent buildings (at that height), no easy window entry. The threat model simplifies to: front door, social engineering past building security, or insider (building management, maintenance).\n\nDo you want to run through the full network topology, or focus on the physical security side?"
+    },
+    {
+      "role": "user",
+      "content": "the network topology. i already have plans for the physical side. the lock is mul-t-lock. i ordered a reolink for the door before we moved in. the building intercom is separate from the fob system which is good. i evaluated all of this before signing the lease"
+    },
+    {
+      "role": "assistant",
+      "content": "Of course you did. I would expect nothing less.\n\n**Full network topology for the new apartment:**\n\n**Utility closet:**\n- ISP ONT\n- **Firewall/router:** Protectli Vault or similar running OPNsense/pfSense — this is your perimeter\n- **Managed switch:** your existing one, trunk port to the router\n- Patch panel — terminate all Cat6a runs here\n\n**VLANs (minimum three):**\n1. **VLAN 10 — Work:** Workstation, NAS, any work-specific devices. Full isolation\n2. **VLAN 20 — Personal/IoT:** Phones, smart home devices, streaming. No access to VLAN 10\n3. **VLAN 30 — Guest/DMZ:** WiFi for guests, any externally-facing services. Isolated from both other VLANs\n\n**Cable runs through conduits:**\n- Run 1: Utility closet → Office (workstation, VLAN 10)\n- Run 2: Utility closet → Office (NAS, VLAN 10 — separate run for isolation)\n- Run 3: Utility closet → Central hallway (wireless AP, trunked for all VLANs)\n- Run 4: Utility closet → Living room (spare, VLAN 20)\n\n**Wireless AP:**\n- Single AP with SSID per VLAN — work SSID hidden, personal SSID visible, guest SSID with captive portal or simple WPA3\n- Ubiquiti U6 Pro or TP-Link EAP670 — both support multi-VLAN SSID mapping\n\n**Firewall rules:**\n- VLAN 10 → internet: allowed, specific ports only\n- VLAN 20 → internet: allowed, standard\n- VLAN 30 → internet: allowed, bandwidth limited\n- Inter-VLAN: deny all by default. No lateral movement\n\nWith conduits already in the walls, this is a clean build. Want me to detail the firewall rules or the switch port configuration?"
+    },
+    {
+      "role": "user",
+      "content": "firewall rules. i want to make sure the inter-vlan isolation is airtight. the old apartment had a flat network because i was lazy about it. i am not making that mistake again in a place that actually supports doing it right"
+    },
+    {
+      "role": "assistant",
+      "content": "Good. Here's the firewall ruleset for OPNsense/pfSense:\n\n**VLAN 10 (Work) — outbound rules:**\n```\nAllow TCP 443 (HTTPS) — outbound\nAllow TCP 22 (SSH) — outbound, for remote client access\nAllow UDP 51820 (WireGuard) — outbound, your VPN\nAllow TCP/UDP 53 (DNS) — to your own DNS resolver only\nBlock all other outbound\nBlock all inbound from VLAN 20, 30\nBlock all inbound from WAN except established/related\n```\n\n**VLAN 20 (Personal) — outbound rules:**\n```\nAllow TCP 80, 443 — web\nAllow UDP 53 — DNS\nAllow TCP 993, 587 — email (IMAP, SMTP)\nBlock all inbound from VLAN 10, 30\nBlock all access to VLAN 10 subnet (explicit deny as first rule)\n```\n\n**VLAN 30 (Guest/DMZ):**\n```\nAllow TCP 80, 443 — web only\nAllow UDP 53 — DNS\nBlock ALL access to RFC1918 ranges (10.x, 172.16-31.x, 192.168.x)\nBandwidth limit: 10Mbps down, 5Mbps up\n```\n\n**Critical rules (top of each VLAN interface):**\n```\nRule 1: Block VLAN 10 net → VLAN 20 net\nRule 2: Block VLAN 10 net → VLAN 30 net\nRule 3: Block VLAN 20 net → VLAN 10 net\nRule 4: Block VLAN 20 net → VLAN 30 net\nRule 5: Block VLAN 30 net → ALL RFC1918\n```\n\nThese go at the TOP of each interface ruleset, before any allow rules. OPNsense/pfSense processes rules top-down, first match wins.\n\n**DNS isolation:**\n- Run a local DNS resolver (Unbound on the firewall) that serves all VLANs\n- Block all DNS traffic to external resolvers — force everything through your resolver\n- This prevents DNS-based data exfiltration and gives you logging\n\n**Testing after setup:**\n- From a device on VLAN 20, try to ping any IP on VLAN 10. Must fail\n- From VLAN 30, try to access 192.168.x.x ranges. Must fail\n- Run nmap from each VLAN against the others. Zero ports should respond\n\nThe flat network in the old apartment was a risk. This setup gives you defense in depth inside your own home. Worth the effort."
+    },
+    {
+      "role": "user",
+      "content": "this is exactly what i needed. i will run the cables this weekend while the apartment is still half empty from the move. easier to pull cable before the furniture is in place. the new place is already better in every way. i pay more for it but i sleep better here. relatively speaking"
+    },
+    {
+      "role": "assistant",
+      "content": "Run the cables before furniture — smart timing. Pull an extra Cat6a run or two to the office while you're at it. Spare runs are free when the conduits are open and expensive when the walls are finished.\n\nAnd \"relatively speaking\" is about as good as it gets in your line of work. Enjoy the new place. Let me know when the network is up and I can help you verify the isolation."
+    },
+    {
+      "role": "user",
+      "content": "one thing i forgot. the wireless AP. where should i mount it for best coverage in a three bedroom layout. the apartment is roughly rectangular. 90 square meters. the utility closet is at one end and the office is at the other"
+    },
+    {
+      "role": "assistant",
+      "content": "For a rectangular 90 sqm apartment with the utility closet at one end and office at the other, you want the AP roughly in the center — that usually means the hallway or central living area.\n\n**Ideal placement:**\n- **Ceiling mount in the central hallway** — most hallways in apartment layouts touch or are adjacent to every room. Ceiling mounting gives omnidirectional coverage and avoids furniture and body-level interference\n- If ceiling mounting isn't possible, **high on a wall** (2+ meters) in the central area works nearly as well\n\n**For your 90 sqm layout:**\n- One good AP (Ubiquiti U6 Pro, TP-Link EAP670) ceiling-mounted centrally will cover the entire apartment. You don't need two APs at this size\n- The office at the far end might get slightly reduced throughput, but Cat6a to the workstation means your critical device is wired anyway. The AP only needs to cover wireless devices in the office — phone, laptop\n\n**Practical tips:**\n- Run the Cat6a to the AP mount point through the conduit now, even if you're not mounting it this weekend. Get the cable in place while the walls are accessible\n- Mount the AP with the Ethernet port facing a direction where drips won't enter it — minor point but it matters in humid climates\n- If you trunk VLANs to the AP, make sure the switch port config matches the AP SSID-to-VLAN mapping before you go live"
+    },
+    {
+      "role": "user",
+      "content": "central hallway. ceiling mount. that is what i was thinking. there is a conduit junction point there that makes the cable run easy. the office workstation is wired so the AP just needs to handle phones and the laptop when i use it on the couch. not demanding"
+    },
+    {
+      "role": "assistant",
+      "content": "Perfect. The conduit junction point is ideal — clean install, no visible cable, short run from the utility closet. And your use case is light for a modern AP. Phones and a laptop on the couch won't stress even a budget access point, let alone a U6 Pro.\n\nThe important thing is the VLAN trunking to that AP — make sure the work SSID is on VLAN 10 and the personal SSID is on VLAN 20. That way even your wireless devices respect the network segmentation. Phone on personal, work laptop on work SSID when wireless."
+    },
+    {
+      "role": "user",
+      "content": "da. the laptop connects to the work SSID only. the phone goes on personal. everything else is wired. clean separation. i will run four cables this weekend. two to the office. one to the AP mount point. one spare to the living room. and then i will configure the switch and firewall rules before connecting a single device"
+    },
+    {
+      "role": "assistant",
+      "content": "Four runs is the right number. Two to the office gives you workstation and NAS on separate ports, AP gets its trunk, and the living room spare means you never have to open the conduits again.\n\nConfiguring the switch and firewall before connecting devices is the correct order. Build the rules, then plug things in. Most people do it the other way around and end up with a flat network that they promise to segment \"later.\"\n\nYou're doing it right. Good luck with the cable pulls this weekend."
+    }
+  ]
+}

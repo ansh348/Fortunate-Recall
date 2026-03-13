@@ -1,0 +1,74 @@
+{
+  "session_id": 5,
+  "persona": "ingrid_solberg",
+  "date": "2024-12-18",
+  "type": "critical",
+  "topic": "research background",
+  "facts_disclosed": ["PhD Bergen on cod larval mortality", "Prefers working alone"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I am reviewing a draft manuscript from a junior colleague who wants to add me as co-author. The paper concerns larval mortality in gadoids under thermal stress. The methods are adequate but the framing is wrong. She positions the work as novel when it is, in fact, a replication with a narrower geographic scope of a pattern that has been documented since the early 2000s. I want to help her without rewriting her paper. How do I provide that feedback."
+    },
+    {
+      "role": "assistant",
+      "content": "This is a common problem with junior researchers -- they often frame work as novel because they assume that's what reviewers want, when a well-executed replication in a new context is genuinely valuable on its own terms.\n\nHere's an approach that corrects the framing without taking over:\n\n1. **Name the issue directly but specifically.** Don't say \"the framing is wrong\" -- say \"the introduction currently positions this as the first demonstration of thermal effects on gadoid larval mortality, but [Author, Year] and [Author, Year] established this pattern in [location]. Your contribution is confirming it holds in [her study area], which is important because [reason].\" Give her the specific citations she's missing.\n\n2. **Rewrite one paragraph as an example, not the whole introduction.** Pick the opening paragraph, revise it to show what the correct framing looks like, and annotate why you changed what you changed. Then let her apply the same logic to the rest.\n\n3. **Explain what makes the paper publishable as-is.** She may be overselling because she's insecure about the contribution. If you can articulate why a geographically scoped replication matters -- particularly if her study area has different oceanographic conditions -- that gives her confidence to frame it honestly.\n\nWhat species and region is she working on?"
+    },
+    {
+      "role": "user",
+      "content": "Atlantic cod larvae in the southern Norwegian Sea. The thermal stress experiment uses a gradient from 4 to 12 degrees, and the mortality curve follows exactly the pattern you would expect from the existing literature. There is nothing wrong with the data. The problem is that she frames the 8-degree inflection point as a discovery when it has been well characterised. I know because I spent four years during my PhD at Bergen counting dead cod larvae across a similar thermal gradient. The inflection was clear then and it is clear now."
+    },
+    {
+      "role": "assistant",
+      "content": "If you spent four years on a PhD at Bergen doing essentially the same experiment, you're probably one of the people she should be citing. Which puts you in an interesting position as both a reviewer and a predecessor.\n\nHere's how I'd handle the feedback:\n\nBe explicit about your experience with this system. Something like: \"I did my PhD on cod larval mortality across thermal gradients at Bergen, and the 8-degree inflection point was a central finding. This is well established in the literature -- see [your thesis or publications], [Ottersen et al. or whoever else documented it], [etc.]. Your contribution is not discovering the inflection point; it is confirming that it holds in the southern Norwegian Sea under current conditions, which matters because [ocean temperatures are changing / the baseline has shifted / the southern Norwegian Sea has specific hydrographic characteristics].\"\n\nThen for the example paragraph, you could reframe her opening from:\n\n*\"We demonstrate for the first time that cod larval mortality increases sharply above 8 degrees...\"*\n\nto something like:\n\n*\"Cod larval mortality is known to increase sharply above approximately 8 degrees [citations]. Whether this threshold remains consistent across populations and under contemporary warming conditions is less well established. We tested this in the southern Norwegian Sea using [method]...\"*\n\nThat shifts her from claiming discovery to claiming confirmation in a relevant new context, which is both more honest and more publishable. Reviewers will catch the overclaim; they won't object to a well-framed replication.\n\nDoes she know about your PhD work?"
+    },
+    {
+      "role": "user",
+      "content": "She knows I did my doctorate at Bergen on cod biology. I do not think she has read the thesis. It was not published as a monograph -- the results went into two journal papers, both in the early 2000s, and citation patterns being what they are, they have drifted out of the active literature. I will point her to them. Your reframing of the opening is exactly what is needed. Discovery to confirmation. The paper becomes defensible once that shift is made."
+    },
+    {
+      "role": "assistant",
+      "content": "It's a useful case of the same phenomenon she's studying -- knowledge that was clearly established but fades from view because the original papers age out of reference lists. Part of your value as a co-author is exactly this: you can connect her work to the literature she hasn't found because it predates her citation horizon.\n\nOne suggestion: when you send her the two papers, frame it as \"here's the context your reviewers will expect you to cite\" rather than \"here's what I did twenty years ago.\" It depersonalises it and keeps the focus on the manuscript's needs rather than your CV.\n\nFor the co-authorship itself -- is your contribution going to be primarily this kind of framing and interpretation, or are you also involved in the experimental design or data collection?"
+    },
+    {
+      "role": "user",
+      "content": "Framing and interpretation only. She designed the experiment, ran it, and analysed the data. I am providing what might generously be called intellectual context. Whether that meets the threshold for authorship is a question I have been considering. I lean toward declining the authorship and appearing in the acknowledgements instead. I do not want my name on a paper where my contribution is an email with track changes."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a principled position, and it aligns with most formal authorship criteria -- ICMJE, CRediT taxonomy, and the like all require substantial contribution to conception, design, data acquisition, or analysis. Editorial feedback on framing, even if it significantly improves the paper, typically falls under acknowledgements.\n\nThat said, consider two things before you decide:\n\n1. **If your input changes the paper's argument** -- from a discovery claim to a replication-in-context claim -- that's arguably a contribution to interpretation, which does qualify under most frameworks. It's borderline, but not unreasonable.\n\n2. **For her career**, having a senior co-author on the paper may help it in review and signal to the field that the work is credible. Declining authorship is clean for you, but make sure it doesn't inadvertently disadvantage her.\n\nIf you do decline, you could offer to be listed as a corresponding reviewer in the acknowledgements with a specific note: \"I. Solberg provided critical feedback on the framing and directed the authors to relevant prior literature.\" That gives credit without overclaiming.\n\nDoes she have other senior co-authors on the paper, or would she be sole author without you?"
+    },
+    {
+      "role": "user",
+      "content": "She has her supervisor as second author. He is competent but not a specialist in gadoid larval ecology. My concern is that without someone who knows the specific literature, the framing error will recur in revision. Reviewers will send it back, she will adjust insufficiently, and the paper will cycle. I have seen this pattern. It is inefficient."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a practical concern, not an ego one. If the paper cycles because the framing keeps missing the mark, that costs her time and momentum. The question becomes whether you can prevent that cycle from outside the author list.\n\nOne option: stay off the paper but offer to review her revision before resubmission. Make it an explicit arrangement -- \"I will read the revised manuscript once before you resubmit and flag any framing issues.\" That gives her the specialist oversight without the authorship question, and it bounds your commitment to one additional read.\n\nAlternatively, if you think the paper genuinely needs a gadoid larval specialist on the author list to get through review cleanly, you could accept authorship with a clearly defined and limited role documented in the CRediT statement: \"Writing -- review and editing\" only. That's honest and transparent.\n\nWhich approach fits better with how you prefer to work?"
+    },
+    {
+      "role": "user",
+      "content": "The first option. Review before resubmission, bounded commitment, off the author list. I prefer working alone and I prefer clean boundaries. Collaboration introduces variables I cannot control -- other people's timelines, their methodological preferences, their tendency to schedule meetings about things that could be resolved in a single email. If I can help her paper without entering into a collaborative entanglement, that is the better outcome for both of us."
+    },
+    {
+      "role": "assistant",
+      "content": "That's clear and self-aware. The bounded review arrangement gives her the expertise she needs and gives you a defined exit point. One read, one set of comments, done.\n\nI'd suggest putting the terms in writing when you offer it -- something like:\n\n*\"I'd prefer to be acknowledged rather than listed as co-author, as my contribution is limited to editorial feedback. I'm happy to review one revision before resubmission to ensure the framing is consistent with the existing literature. After that, the paper is yours and [supervisor's].\"*\n\nThat sets the scope, prevents scope creep, and makes it clear this is a favour with boundaries, not an open-ended commitment. She gets a specialist review. You get to help without being entangled in someone else's revision timeline."
+    },
+    {
+      "role": "user",
+      "content": "That is precisely the message I will send. Boundaries stated clearly at the outset prevent the slow accumulation of obligation that turns a simple favour into a project. I have learned this through repeated experience."
+    },
+    {
+      "role": "assistant",
+      "content": "The slow accumulation of obligation is one of the most reliable phenomena in academic collaboration -- more reproducible than most experimental results. Setting the terms up front is the only effective intervention.\n\nSend the email, attach the track changes and your two Bergen papers, and the framing problem is solved. She gets a better paper, you get a line in the acknowledgements and your evenings back."
+    },
+    {
+      "role": "user",
+      "content": "Agreed. Thank you. This was more useful than the three meetings my department scheduled this week about the new shared calendar system, all of which could have been a single email."
+    },
+    {
+      "role": "assistant",
+      "content": "Three meetings about a calendar system is a strong empirical case for working alone. I hope the calendar, at least, is now shared. Good luck with the review."
+    }
+  ]
+}

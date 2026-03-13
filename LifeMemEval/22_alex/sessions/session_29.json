@@ -1,0 +1,74 @@
+{
+  "session_id": 29,
+  "persona": "alex_richter",
+  "date": "2026-01-08",
+  "type": "filler",
+  "topic": "trying to set up a Rust CI pipeline",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "i have spent 6 hours today fighting github actions and i need someone to tell me it's not me. it's the yaml"
+    },
+    {
+      "role": "assistant",
+      "content": "It's not you. It's always the YAML. What's the pipeline doing (or refusing to do)?"
+    },
+    {
+      "role": "user",
+      "content": "trying to set up a proper ci pipeline for our rust codebase. sounds simple right? cargo test, cargo clippy, maybe cargo fmt --check. three commands. but then you add caching and it becomes a 200 line yaml file and half the runs still rebuild the entire dependency tree from scratch"
+    },
+    {
+      "role": "assistant",
+      "content": "Rust CI caching is one of those things that looks straightforward until you actually do it. The target directory is huge and cache invalidation is tricky. What caching approach are you using? The `actions/cache` with a key based on `Cargo.lock`?"
+    },
+    {
+      "role": "user",
+      "content": "yeah exactly. cache key is hash of Cargo.lock + the rust toolchain version. restore on partial match. and in theory it works — the cache uploads fine, the next run downloads it. but then cargo decides it needs to recompile 80% of the dependencies anyway because some metadata changed or the moon is in the wrong phase"
+    },
+    {
+      "role": "assistant",
+      "content": "Classic Rust caching pain. A few things that cause false cache misses:\n\n1. **Different compiler flags** between CI and what generated the cache — make sure `RUSTFLAGS` is consistent\n2. **Caching the wrong directories** — you want `~/.cargo/registry`, `~/.cargo/git`, and `./target`, but specifically the `target/debug/deps` and `target/debug/.fingerprint` directories are key\n3. **The `__CARGO_DEFAULT_LIB_METADATA` issue** — cargo uses the rustc version, target triple, and various env vars to fingerprint builds. If anything differs between runs, it rebuilds.\n\nA popular alternative is `Swatinem/rust-cache` which handles most of these gotchas automatically. Have you tried that?"
+    },
+    {
+      "role": "user",
+      "content": "i literally switched to Swatinem/rust-cache an hour ago and the build time dropped from 18 minutes to 6. which is great. but now clippy is failing because one of my colleagues used #[allow(clippy::too_many_arguments)] on a function with 11 parameters and i have strong feelings about that"
+    },
+    {
+      "role": "assistant",
+      "content": "11 parameters is not a function, it's a cry for help. That lint exists for a reason.\n\nBut pipeline-wise, you have a decision: do you want clippy to be a hard gate (fail the build) or advisory (warn but don't block)? For a team CI pipeline, I'd suggest:\n\n- `cargo clippy -- -D warnings` as a hard gate, so all warnings are errors\n- But configure allowed lints in `clippy.toml` or `.cargo/config.toml` at the project level, not with inline `#[allow]` on individual functions\n- That way the team agrees on which lints matter and nobody can silently suppress them per-function\n\nAs for the 11-parameter function: introduce a struct. That's not even a style opinion, that's self-preservation."
+    },
+    {
+      "role": "user",
+      "content": "genau, the struct approach is obvious. i already told him but he said \"it works\" and i died a little inside. anyway. the other fun thing is running tests in parallel. we have integration tests that need a database and running them concurrently causes test pollution. any good patterns for that in ci?"
+    },
+    {
+      "role": "assistant",
+      "content": "Test database isolation in CI is always fun. A few approaches:\n\n1. **Per-test databases** — each test creates its own database (or schema) with a unique name, runs against it, drops it after. Works well but slow if you have many tests.\n2. **Transactions that rollback** — wrap each test in a transaction that rolls back at the end. Fast but doesn't work if your code commits transactions internally.\n3. **Serialized integration tests** — run unit tests in parallel but integration tests sequentially. In Rust you can use `cargo test -- --test-threads=1` for specific test targets.\n4. **Docker containers per test suite** — spin up a fresh Postgres container for integration tests. Testcontainers-rs supports this.\n\nWhat does your test setup look like currently?"
+    },
+    {
+      "role": "user",
+      "content": "we're doing the transaction rollback thing locally which works fine. but in ci it's flaky because the github actions runners are slower and sometimes the connections time out before the rollback happens. i think i'll go with testcontainers actually, spin up a fresh postgres per test suite. the overhead is worth the isolation. plus it means our ci actually tests against real postgres instead of hoping the local setup matches"
+    },
+    {
+      "role": "assistant",
+      "content": "Testcontainers is the right call. The startup overhead for a Postgres container is maybe 5-10 seconds, which is nothing compared to debugging flaky tests. And you get the bonus of testing against the exact Postgres version you run in production.\n\nMake sure to:\n- Pin the Postgres Docker image version (don't use `latest`)\n- Set `POSTGRES_HOST_AUTH_METHOD=trust` in the container for CI so you don't have to deal with password management\n- Use `testcontainers-rs` with the `postgres` module — the API is pretty clean\n\nThat should give you a solid pipeline: Swatinem cache, parallel unit tests, isolated integration tests with testcontainers, clippy gate. Clean setup."
+    },
+    {
+      "role": "user",
+      "content": "oh one more thing — do you think it's worth splitting the pipeline into separate jobs? like one for fmt check, one for clippy, one for tests? or just run them sequentially in one job"
+    },
+    {
+      "role": "assistant",
+      "content": "Separate jobs are worth it for a few reasons:\n\n- **Faster feedback** — if formatting fails, you know in 30 seconds instead of waiting 6 minutes for everything else to run first\n- **Parallel execution** — fmt and clippy can run concurrently since they don't depend on each other. Tests can run in a separate job with its own testcontainers setup.\n- **Clearer failure signals** — the PR check shows exactly which job failed instead of making you scroll through a single log\n\nThe downside is each job pays the cache restoration cost separately, but with Swatinem/rust-cache that's pretty fast. For a team pipeline, the clarity is worth the few extra seconds."
+    },
+    {
+      "role": "user",
+      "content": "thanks. my yaml file has gone from 200 lines of sadness to about 120 lines of cautious optimism. that's progress. i'm going to go tell my colleague about the struct thing one more time and if he doesn't listen i'm putting it in the clippy config as a hard fail. passive aggressive ci enforcement is a valid management strategy"
+    },
+    {
+      "role": "assistant",
+      "content": "Linting as governance — the most effective form of code review. If the CI says no, it's not personal, it's policy. Good luck with the pipeline and the diplomatic function-parameter intervention."
+    }
+  ]
+}

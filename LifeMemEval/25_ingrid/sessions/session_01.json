@@ -1,0 +1,58 @@
+{
+  "session_id": 1,
+  "persona": "ingrid_solberg",
+  "date": "2024-11-05",
+  "type": "critical",
+  "topic": "introduction — current research",
+  "facts_disclosed": ["Marine biologist at Arctic research station", "Research focus Arctic cod population dynamics", "Lives in Tromsoe"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need to generate a defensible interpolation method for sparse bathymetric data across 14 sampling stations. The stations are distributed along a transect in the Barents Sea, spaced roughly 40 to 60 kilometres apart, and I am trying to produce continuous bottom-temperature maps for a population dynamics model. Kriging seems the obvious choice, but the spatial autocorrelation structure is not stationary across the transect. Thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "You're right to be cautious about ordinary kriging if the autocorrelation structure shifts along the transect. A few approaches worth considering:\n\n1. **Universal kriging** with a trend model that accounts for the spatial non-stationarity -- if the non-stationarity follows a predictable gradient (like depth or distance from the continental shelf break), you can model that as a drift term.\n\n2. **Moving-window kriging**, where you fit local variograms using subsets of your stations. With 14 stations this gets tight on data, but if you have repeat measurements over time you could pool temporal replicates within each window.\n\n3. **Regression kriging**, where you first model bottom temperature as a function of covariates (bathymetry, distance from shore, sea-ice cover) and then krige the residuals. This often handles non-stationarity better because the covariate model absorbs much of the spatial trend.\n\nWhat covariates do you have available at the station locations, and how many temporal replicates per station?"
+    },
+    {
+      "role": "user",
+      "content": "Covariates are adequate. Bathymetry from GEBCO at 15 arc-second resolution, sea-ice concentration from NSIDC passive microwave, and salinity profiles from CTD casts at each station. Temporal replicates depend on the station. Some have been sampled every quarter for two years, others only three times total. The uneven sampling is a consequence of weather and vessel scheduling. I work at the Arctic research station here in Tromsoe, and our vessel time is shared across six projects, which means I take what I can get."
+    },
+    {
+      "role": "assistant",
+      "content": "Those covariates are strong -- bathymetry and salinity especially should capture a good chunk of the bottom-temperature variation. The uneven temporal coverage is common in Arctic fieldwork, so you're not alone there.\n\nGiven the imbalance, I'd lean toward regression kriging. Here's a practical workflow:\n\n1. Fit a regression model (GAM or random forest) of bottom temperature against bathymetry, salinity, and sea-ice concentration across all station-time combinations.\n2. Extract the residuals.\n3. Fit a variogram to the residuals -- these should be closer to stationary once the covariates have done their work.\n4. Krige the residuals onto your target grid and add back the regression predictions.\n\nFor the stations with fewer replicates, you could use a mixed-effects framework to partially pool information across stations. What software are you working in -- R, Python, something else?"
+    },
+    {
+      "role": "user",
+      "content": "R, primarily. The gstat and mgcv packages. I have also used INLA for some spatial modelling, though setting up the mesh is never pleasant. The regression kriging approach is sensible. My concern is whether the residual variogram will be robust with effectively 14 spatial locations, even if I pool temporal replicates. Fourteen is not a generous sample for fitting a variogram model."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a legitimate concern. Fourteen spatial locations is thin for variogram fitting -- you'd have at most 91 unique point pairs, and with irregular spacing the lag bins won't be evenly populated.\n\nA few options to strengthen it:\n\n- **Pool across time explicitly**: treat each station-time observation as a separate spatial data point (with a temporal covariate in the regression step). This gives you more pairs for the residual variogram, though you'd need to account for temporal autocorrelation.\n- **Use a parametric variogram with informative constraints**: fix the nugget-to-sill ratio based on published values for similar Arctic shelf environments, and only fit the range parameter. This reduces the degrees of freedom in the variogram fit.\n- **Switch to INLA-SPDE**: I know the mesh setup is unpleasant, but the SPDE approach handles sparse irregular data better than classical variogram fitting because it's estimating a continuous spatial field rather than binning point pairs. With R-INLA you could specify a Matern covariance and let the model estimate range and variance jointly with the regression coefficients.\n\nGiven that you already have INLA experience, that might actually be your cleanest path despite the mesh annoyance. Would the population dynamics model downstream accept prediction uncertainty from the INLA posterior, or does it need deterministic temperature inputs?"
+    },
+    {
+      "role": "user",
+      "content": "It can accept uncertainty. The population model is Bayesian as well, so passing posterior distributions through is actually preferable. You may have convinced me to endure the mesh. The model is for Arctic cod -- Boreogadus saida -- and the temperature inputs feed directly into a growth submodel. Getting the spatial temperature field wrong propagates into biased growth estimates, which then distort the population trajectory. The stakes are not trivial. We are seeing roughly 8 percent year-over-year decline in the population across our study area, and separating the temperature signal from the fishing pressure signal requires the temperature field to be credible."
+    },
+    {
+      "role": "assistant",
+      "content": "An 8 percent annual decline is substantial -- over a decade that compounds to roughly a 57 percent reduction, so getting the attribution right between temperature and fishing pressure really matters. If your temperature field is biased, you could end up misallocating the decline to the wrong driver, which has direct implications for management recommendations.\n\nSince the downstream model is Bayesian, the INLA-SPDE approach becomes clearly the right choice. You can propagate the full posterior of the spatial temperature field into the growth submodel without collapsing uncertainty at the interpolation stage. Some practical notes for the mesh:\n\n- Set the outer boundary extension to at least 1.5 times your study domain extent to avoid boundary effects.\n- Use `max.edge` values that give you finer resolution near your stations and coarser resolution in the outer extension -- something like `max.edge = c(15, 60)` in km units.\n- For 14 stations in the Barents Sea, you probably want the mesh to respect the coastline. INLA has tools for incorporating barrier models if any of your transect runs near islands or the coast.\n\nAre you publishing this as part of the cod population study, or is the temperature interpolation a methods piece on its own?"
+    },
+    {
+      "role": "user",
+      "content": "Part of the cod study. The temperature interpolation is a means, not an end. The paper will be on the population dynamics -- the three-year monitoring programme, the decline estimate, and the relative contributions of thermal stress versus harvest. The methods section will describe the spatial model but only enough to be reproducible. I am not interested in writing a geostatistics paper. I want the ecology to be correct."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the right priority. In that case, the INLA-SPDE temperature model just needs to be defensible in review, not novel. A few sentences in the methods establishing the Matern covariance structure, the covariates, and the mesh specification, with the actual mesh and model code in a supplementary repository, should satisfy reviewers.\n\nFor the paper itself, the stronger methodological contribution is the joint attribution framework -- separating thermal stress from harvest in driving that 8 percent decline. That's where reviewers will focus. If you can show that the temperature field uncertainty propagates cleanly through the growth submodel and the population estimates are robust to reasonable variation in the spatial interpolation, that's a much stronger result than a precise temperature map with no uncertainty.\n\nWould it help to sketch out the coupling between the INLA temperature model and the Bayesian population model -- how you'd pass the posterior samples through?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, that would be useful. But not tonight. It is already 22:30 here and I have a 06:00 start. The Arctic light at this latitude disappears quickly in November, and I find my cognition follows it. I will return to this. The mesh can wait until I have had coffee and daylight."
+    },
+    {
+      "role": "assistant",
+      "content": "Entirely reasonable. The mesh will not improve by staring at it in the dark. When you're ready to pick this up, we can work through the posterior coupling step by step -- how to sample from the INLA temperature field and feed those draws into the population model's growth submodel.\n\nGet some rest. The cod will still be declining in the morning."
+    }
+  ]
+}

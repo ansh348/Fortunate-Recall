@@ -1,0 +1,66 @@
+{
+  "session_id": 25,
+  "persona": "ingrid_solberg",
+  "date": "2025-10-09",
+  "type": "critical",
+  "topic": "breakup",
+  "facts_disclosed": ["Erik moved out — relationship ended"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need practical advice on restructuring a household budget after transitioning from a two-income to a single-income arrangement. The apartment is mine -- I owned it before and I keep it. But the shared expenses were split roughly 55/45, with the other person covering more of the groceries and utilities because his income was somewhat higher. He moved out three weeks ago. I need to recalibrate."
+    },
+    {
+      "role": "assistant",
+      "content": "Straightforward problem. The core task is identifying the gap between what you were paying and what you'll now pay, then adjusting spending or income to close it.\n\n**Step 1: Map the actual gap.**\nList every shared expense and what each person was paying:\n- Rent/mortgage (if applicable -- you own, so this may be a fellesgjeld or housing cooperative fee)\n- Utilities (electricity, internet, insurance)\n- Groceries\n- Shared subscriptions or services\n\nSince you owned the apartment before, your housing cost likely hasn't changed. The gap is mainly in the variable costs he was covering at that 45% share.\n\n**Step 2: Identify immediate reductions.**\nSome expenses decrease naturally with one person instead of two:\n- Grocery costs typically drop 30-40% when going from two adults to one.\n- Electricity may decrease modestly (less cooking, less hot water, less laundry).\n- Any subscriptions or services that were primarily for his use can be cancelled.\n\n**Step 3: Fixed costs that don't change.**\n- Housing cooperative fees (fellesutgifter)\n- Internet\n- Home insurance\n- These stay the same, and you now cover 100% instead of 55%.\n\nCan you give me approximate monthly numbers for the main categories? That will let me calculate the actual gap rather than working in percentages."
+    },
+    {
+      "role": "user",
+      "content": "The housing cooperative fee is 4,800 kroner per month. I was paying all of it, as the apartment is in my name. Electricity averages 1,200 kroner in summer, 2,800 in winter. We split that equally. Internet is 599 kroner, we split equally. Home insurance is 380 kroner, I paid all of it. Groceries were roughly 5,000 kroner per month for two people, and Erik covered about 60 percent of that because he did most of the shopping. Streaming services were 350 kroner, he paid those. I do not need them."
+    },
+    {
+      "role": "assistant",
+      "content": "Let me calculate your monthly change. I'll use winter electricity since that's the higher-impact scenario.\n\n**What you were paying (winter month):**\n- Housing cooperative: 4,800 kr (100% yours)\n- Electricity: 1,400 kr (50% of 2,800)\n- Internet: 300 kr (50% of 599)\n- Insurance: 380 kr (100% yours)\n- Groceries: 2,000 kr (40% of 5,000)\n- Streaming: 0 kr\n- **Total: 8,880 kr**\n\n**What you'll now pay (winter month):**\n- Housing cooperative: 4,800 kr\n- Electricity: ~2,200 kr (single person uses less, estimate 20% reduction from 2,800)\n- Internet: 599 kr\n- Insurance: 380 kr\n- Groceries: ~3,200 kr (single person, roughly 35% less than two-person total)\n- Streaming: 0 kr\n- **Total: 11,179 kr**\n\n**Monthly gap: approximately 2,300 kr in winter.**\n\nIn summer the gap narrows because electricity is lower. Summer estimate: about 1,700 kr additional per month.\n\n**Annualized: roughly 24,000 kr per year, or 2,000 kr per month averaged.**\n\nThat's a manageable gap. It's not trivial, but for a single professional income it's unlikely to require major lifestyle changes. Does that align with your sense of the impact, or are there other shared costs I'm missing?"
+    },
+    {
+      "role": "user",
+      "content": "There is a parking space in the building garage. 650 kroner per month. Erik paid for that because he had the car. I do not drive. So that expense disappears entirely. And my grocery estimate may be high for one person. I eat simply -- fish, bread, root vegetables, coffee. I suspect 2,500 kroner is more realistic."
+    },
+    {
+      "role": "assistant",
+      "content": "Good. Let me revise.\n\n**Revised single-income winter month:**\n- Housing cooperative: 4,800 kr\n- Electricity: 2,200 kr\n- Internet: 599 kr\n- Insurance: 380 kr\n- Groceries: 2,500 kr\n- Parking: 0 kr\n- **Total: 10,479 kr**\n\n**Compared to your previous share: 8,880 kr**\n\n**Actual gap: approximately 1,600 kr per month in winter, less in summer.**\n\nAnnualized, that's roughly 16,000-18,000 kr per year. For context, that's about 1,300-1,500 kr per month averaged over the year.\n\nWith a diet of fish, bread, and root vegetables, 2,500 kr is realistic. Especially if you buy fish directly from the harbour or through a subscription from a local fisherman, which tends to be cheaper than supermarket prices in northern Norway.\n\n**The net picture:**\nYou're looking at absorbing roughly 1,300-1,600 kr per month in additional costs. Against a full-time research salary at the university, this is well within normal budget adjustment range. No structural changes needed -- just awareness of the shift.\n\nIs there anything else in the shared financial arrangement that needs untangling, or was it clean?"
+    },
+    {
+      "role": "user",
+      "content": "It was clean. We kept finances separate from the beginning, which in retrospect was a practical decision. The only shared accounts were a joint grocery fund, which we have already closed. Erik was rational about the separation. We both were. The fundamental issue was a disagreement about life direction that was not going to resolve, so we resolved the situation instead."
+    },
+    {
+      "role": "assistant",
+      "content": "Keeping finances separate from the start made this significantly simpler. No joint debt, no shared assets beyond the grocery fund, no complex disentangling. That's a clean break.\n\nThe budget adjustment is minor enough that it doesn't require active management beyond the first two or three months of recalibration. Once you've settled into the actual grocery and utility costs for one person, your spending pattern will stabilize on its own.\n\n**One thing to consider:**\n- Review your home insurance policy. If Erik was listed as a co-resident or had personal property covered under your policy, update it. This may slightly reduce your premium, or at minimum ensure the coverage accurately reflects who lives there now.\n\nBeyond that, the financial side of this transition is essentially complete. Anything else you need to sort through?"
+    },
+    {
+      "role": "user",
+      "content": "The insurance is a good point. I will update it. He was listed as a household member. I should also update my emergency contact at the university. Small administrative details that accumulate. I have a list. It is not long."
+    },
+    {
+      "role": "assistant",
+      "content": "Administrative details after a separation tend to surface gradually rather than all at once. A systematic pass is worth doing now so they don't appear at inconvenient times -- like discovering an outdated emergency contact during an actual emergency.\n\n**Common items people forget to update:**\n- Emergency contact at employer (you've noted this)\n- Home insurance co-resident listing\n- Any shared logins or accounts (streaming is gone, but check others -- utilities, building management portal)\n- Spare keys -- if he still has one, decide whether to retrieve it or change the lock\n- Mail forwarding or redirection for any of his post that still arrives at your address\n- Beneficiary designations on pension or life insurance, if applicable\n- Travel insurance, if you have a policy that covered both of you\n\nMost of these take five minutes each. An afternoon's worth of administration to close out the logistics cleanly."
+    },
+    {
+      "role": "user",
+      "content": "He returned the keys when he moved out. We had already discussed the list of practical items. As I said, rational. The mail forwarding is the one I had not thought of. I will set that up through Posten. The beneficiary question is relevant -- I should check my pension designation. It may still list him."
+    },
+    {
+      "role": "assistant",
+      "content": "Posten's mail forwarding service is simple -- you can set it up online at posten.no, and it runs for up to 12 months, which should be sufficient for any residual post to redirect.\n\nFor the pension beneficiary, contact your HR department or the pension fund directly (likely Statens pensjonskasse if you're at a public university). Updating the beneficiary designation is a form and a signature. If you don't have a preferred alternative beneficiary, you can designate your estate, which defaults to the standard inheritance rules.\n\n**One last financial note:**\nYour tax filing next spring will reflect the change in household composition. If you were claiming any deductions related to a two-person household, those will need adjustment. Norwegian tax on a single income with no dependents is straightforward, but it's worth reviewing when the pre-filled tax return arrives in March or April to make sure nothing carries over incorrectly.\n\nThat should cover the practical side comprehensively. You seem to have this well in hand."
+    },
+    {
+      "role": "user",
+      "content": "I do. The financial adjustment is modest and the administrative list is finite. Both are manageable. The apartment is quieter now, which I find I do not mind. I work better in silence. Thank you for the structured approach to the budget. It is easier to absorb a change when it is quantified."
+    },
+    {
+      "role": "assistant",
+      "content": "Quantifying removes ambiguity, and ambiguity is what makes transitions feel larger than they are. A 1,300 kroner monthly adjustment is a number you can plan around. The rest is administration with a deadline.\n\nSilence has its uses. It sounds like you know that already."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "session_id": 21,
+  "persona": "mirri_yunupingu",
+  "date": "2025-09-15",
+  "type": "critical",
+  "topic": "new patrol vehicle",
+  "facts_disclosed": ["Got new Ford Ranger, Hilux retired at 203,000 km"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I need some advice about adjusting to a new vehicle on rough tracks. Tyre pressure, suspension settings, that sort of thing."
+    },
+    {
+      "role": "assistant",
+      "content": "Happy to help with that. What kind of vehicle and what kind of terrain are you dealing with?"
+    },
+    {
+      "role": "user",
+      "content": "Ford Ranger. Brand new. Only had it a week. The terrain is everything. Sand, corrugated dirt, clay after rain, rock crossings, water crossings. All in one patrol run sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a real variety of surfaces. The Ranger handles them all reasonably well, but each surface has different ideal tyre pressure. Are you coming from a different vehicle, or is this your first time doing these kinds of tracks?"
+    },
+    {
+      "role": "user",
+      "content": "I had a Hilux before this. Drove it for years. Knew every sound that thing made. Could tell you what the track surface was just from how the steering wheel felt. She went to the depot last week with 203,000 km on the clock. Parks finally gave me a new vehicle."
+    },
+    {
+      "role": "assistant",
+      "content": "203,000 km is a serious life for any vehicle, especially on those kinds of tracks. You would have built up a really detailed feel for how the Hilux responded. The Ranger is a different beast -- wider track width, different suspension geometry, sits a bit higher. What pressures were you running in the Hilux?"
+    },
+    {
+      "role": "user",
+      "content": "22 psi on the sand. 28 on corrugations. If I was doing a mixed run I would just set it at 25 and leave it. But the Ranger feels different. Higher, like you said. The centre of gravity is not the same. On the soft sections yesterday I could feel it wanting to push instead of float."
+    },
+    {
+      "role": "assistant",
+      "content": "That pushing feeling on sand usually means the tyres aren't spreading the load enough. The Ranger's wider track should help with stability, which means you might actually be able to go a bit lower on pressure without the sidewall flex risk you'd get in a narrower vehicle. Try 20-21 psi on pure sand and see if it starts to float better. On the corrugations, 28-30 should work. For your mixed runs, 24-25 is probably still the sweet spot."
+    },
+    {
+      "role": "user",
+      "content": "I will try 20 on the sand next patrol. The other thing I am noticing is the steering response on rock crossings. The Hilux had a tighter turning circle. The Ranger feels wider through narrow sections along the river tracks. I had a couple of close calls with the side panels already."
+    },
+    {
+      "role": "assistant",
+      "content": "The Ranger does have a larger turning circle than the Hilux -- about a metre more. On narrow tracks that makes a real difference. You might need to adjust your line through tight spots, taking a wider entry to set up for corners you could have cut tighter in the Hilux. Have you checked whether the mirrors are adjustable enough to see the rear wheels on tight lines?"
+    },
+    {
+      "role": "user",
+      "content": "I have not adjusted the mirrors for that yet. Good idea. I have been doing these tracks for years so I take them without thinking. But my body memory is for the Hilux. I need to relearn where the edges of the vehicle are. It is a strange thing, driving tracks you know by heart but in a body that is different."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a good way to describe it. Your track knowledge is still there, but the physical relationship between you and the vehicle has changed. Give it a few weeks and you'll start building the same instinctive feel for the Ranger. Setting the mirrors to show the rear wheel arches will speed that up, especially on the narrow stuff."
+    },
+    {
+      "role": "user",
+      "content": "The one thing I am not complaining about is the aircon. It works. The Hilux aircon died about two years ago and Parks never fixed it. When it is 42 degrees out here and you are driving three hours on patrol, that is not a comfort thing, it is a safety thing. I came close to getting crook a few times in that old car."
+    },
+    {
+      "role": "assistant",
+      "content": "Driving for three hours in 42 degrees without air conditioning is genuinely dangerous. Heat exhaustion can affect your concentration and reaction time well before you realise it. That's not something that should have been left unfixed for two years. I'm glad the new vehicle has a working system. Make sure you keep the cabin filter clean -- the dust on those tracks will clog it faster than in normal driving."
+    },
+    {
+      "role": "user",
+      "content": "I will keep an eye on that. Dust gets into everything out here. The old Hilux had red dust in places I did not know a vehicle had places. So the cabin filter, how often should I check it on tracks like mine."
+    },
+    {
+      "role": "assistant",
+      "content": "For the amount of dust you're dealing with, I'd check the cabin filter every month and replace it every two to three months. The engine air filter too -- dusty conditions can halve the normal service interval. The Ranger should have an easily accessible cabin filter behind the glove box. It takes about two minutes to pull out and inspect."
+    },
+    {
+      "role": "user",
+      "content": "Every month. I can do that. I do not want the aircon dying on this one like the Hilux. I will look after this vehicle properly. The Hilux earned her rest at 203,000 but she was tired for the last year of it. Rattling, leaking oil, aircon gone. I do not want to get to that point with the Ranger."
+    },
+    {
+      "role": "assistant",
+      "content": "Staying on top of maintenance from the start is the best approach. Keep a log of when you check things -- filters, tyre wear, fluid levels. The Ranger's onboard computer will flag some things but it's not calibrated for the kind of extreme use you're putting it through. Your own observations matter more than the dashboard warnings out there."
+    },
+    {
+      "role": "user",
+      "content": "That is proper good advice. I will start a log. And I will try the 20 psi on sand and adjust the mirrors this week. Takes time to learn a new vehicle on this country but it will come. At least I will be cool while I am learning."
+    },
+    {
+      "role": "assistant",
+      "content": "It will come. You've got years of track knowledge that just needs translating to the new vehicle. Let me know how the lower pressures go on the sand sections. And enjoy the air conditioning -- you've earned it."
+    },
+    {
+      "role": "user",
+      "content": "Will do. Thanks for the help."
+    },
+    {
+      "role": "assistant",
+      "content": "Any time. Good luck getting to know the Ranger. It'll feel like second nature before long."
+    }
+  ]
+}

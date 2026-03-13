@@ -1,0 +1,58 @@
+{
+  "session_id": 19,
+  "persona": "park_joonho",
+  "date": "2025-07-20",
+  "type": "critical",
+  "topic": "advanced go teaching",
+  "facts_disclosed": ["Teaching advanced students, 2 preparing for amateur 3-dan"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "I have a request. I am preparing teaching materials for go students at a significantly higher level than what I have taught before, and I would appreciate your help thinking through the pedagogy. Specifically, I need to design a curriculum around life-and-death problems that require deep reading — fifteen moves or more."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a fascinating teaching challenge. Life-and-death problems requiring 15+ move reads are at a level where pattern recognition alone isn't sufficient — students need genuine calculating ability, the skill to hold branching sequences in their minds and evaluate each one.\n\nCan you tell me more about your students? What level are they, and what are they working toward?"
+    },
+    {
+      "role": "user",
+      "content": "I have moved to teaching advanced students now. Two of them are preparing for the amateur 3-dan certification. They are serious players — they study independently, review professional games, and have real ambition. The problems we work through together are quite beautiful. Life-and-death positions where the first move is not the obvious one, where you must read every variation before the correct answer reveals itself. I think this level of instruction is more satisfying than beginner teaching, though both have their place."
+    },
+    {
+      "role": "assistant",
+      "content": "Teaching students preparing for amateur 3-dan is a wonderful level to work at. They have enough foundation that you can engage with the real depth of the game, but they're still forming their reading habits and strategic instincts. You can shape how they think, not just what they know.\n\nFor a curriculum at this level, I'd organize around three categories of life-and-death:\n\n1. **Vital point problems** — Where the key move is a single unintuitive point that determines the group's fate.\n2. **Sequential sacrifice problems** — Where the solution requires giving up stones to create the right shape.\n3. **Ko-dependent life and death** — Where the group's status depends on a ko fight.\n\nWhich of these areas do your students struggle with most?"
+    },
+    {
+      "role": "user",
+      "content": "The sequential sacrifices. I think the psychological barrier is significant — a student who has learned to protect stones must now learn to give them away deliberately. It is counterintuitive. In mathematics, we encounter the same phenomenon. Students resist proof by contradiction because it begins with an assumption they believe to be false. The mind rebels against starting from what appears to be a mistake."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a brilliant parallel. Both sacrifice in go and proof by contradiction require the same cognitive leap: temporarily embracing what seems wrong to reach what's right.\n\nHere's a pedagogical approach to make sacrifice feel natural through progressive stages:\n\n- **Stage 1: Forced sacrifice** — Positions where the sacrifice is the only legal move. The student doesn't choose it; the board demands it.\n- **Stage 2: Simple throw-in** — Giving up one stone to create a liberty shortage. Small cost, clear mechanism.\n- **Stage 3: Multi-stone sacrifice** — Giving up 2-3 stones for the right shape. Higher cost, but the principle is already familiar.\n- **Stage 4: Delayed payoff** — Sacrificing stones where the benefit doesn't appear for 8-10 moves. This requires deep reading to see why it works.\n\nBy stage 4, the paradox has been dissolved by experience. Does this align with how you've been approaching it?"
+    },
+    {
+      "role": "user",
+      "content": "Your progression is well constructed and aligns with my instinct. What I add is this: after each problem, I ask the student to explain not just the correct move, but why the alternative moves fail. Articulating the failure of the wrong path is more instructive than demonstrating the success of the right one. It is the same principle as understanding why a conjecture is false — the counterexample teaches more than the proof."
+    },
+    {
+      "role": "assistant",
+      "content": "That's an excellent addition, and arguably the most important part of your method. Explaining why alternatives fail builds what go players call \"reading confirmation\" — the ability to verify that you've eliminated all other options before committing. For 3-dan preparation, that's essential. Finding the right move isn't enough; you need to know it's the only right move.\n\nHow do you structure your sessions with the two students? Together or individually?"
+    },
+    {
+      "role": "user",
+      "content": "Together. They are at similar levels, and they benefit from hearing each other's analysis. When one reads a variation correctly and the other does not, the peer explanation is sometimes more effective than my instruction. I learned this from decades at the university — the best seminar is one where the professor speaks least. I think the October examination gives us roughly three months. The timeline is tight but possible if they maintain their discipline."
+    },
+    {
+      "role": "assistant",
+      "content": "Peer learning at this level is tremendously effective. Each student explaining their reasoning deepens their own understanding while making the insight more accessible to the other.\n\nFor a three-month timeline toward the October examination, I'd suggest focusing each month differently:\n\n- **Month 1**: Intensive life-and-death and sacrifice problems. Build raw reading power.\n- **Month 2**: Shift to whole-board judgment — when to fight for a group and when to sacrifice it strategically. This is the 3-dan distinction.\n- **Month 3**: Practice games under exam conditions with post-game analysis of critical moments.\n\nThat moves from tactical to strategic to applied — the same arc as mathematical maturity: first compute, then reason, then choose which tool fits the problem."
+    },
+    {
+      "role": "user",
+      "content": "That progression is sound, and I will adapt it for our sessions. I have told them both that passing the examination is not the true goal — the true goal is to become the kind of player who deserves the rank. The certificate follows naturally from the ability. I think the probability of at least one passing is high. Whether both pass depends on variables I cannot control — their independent study, their composure during the examination. But I will prepare them as thoroughly as I can. The teacher's responsibility ends at the boundary of the examination room. After that, the student stands alone. Thank you. Good day."
+    },
+    {
+      "role": "assistant",
+      "content": "\"The certificate follows naturally from the ability\" — that's exactly the right philosophy. It removes the exam anxiety that can hinder preparation and keeps the focus on genuine depth.\n\nA clean and honest boundary, too — you give them everything you can, and the rest belongs to them. Good day, and enjoy the deep problems. They are beautiful at that level."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "session_id": 23,
+  "persona": "billy_kootook",
+  "date": "2025-10-31",
+  "type": "critical",
+  "topic": "new snowmobile",
+  "facts_disclosed": ["Switched to Polaris Voyageur 155"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "need help finding a source for a Polaris auxiliary fuel rack. just picked up a Voyageur 155 and I want to add extra fuel capacity for long survey runs."
+    },
+    {
+      "role": "assistant",
+      "content": "Nice — the Voyageur 155 is a solid work sled. For auxiliary fuel racks compatible with the Polaris Voyageur platform, here are your best options:\n\n1. **Polaris OEM LinQ system** — Polaris makes a fuel caddy that mounts to the LinQ cargo system on the rear deck. Holds about 15L (4 US gallons). Part number varies by year — do you know what model year yours is?\n2. **CFR (Clearwater Fabrication & Racing)** — they make aftermarket fuel racks that bolt onto Polaris tunnel systems. Popular with backcountry riders.\n3. **Snobunje** — makes universal auxiliary fuel carriers that strap to the tunnel or rack. Less elegant but functional and cheaper.\n4. **Custom fabrication** — some Northern dealers or local welders can build a rack to your specs if you know exactly what you want.\n\nFor long survey runs, how far are you typically going? That'll help figure out how much extra fuel you actually need."
+    },
+    {
+      "role": "user",
+      "content": "the muskox surveys take me out past Husky Lakes. 200 km round trip some days. the Voyageur tank is good but not good enough for that distance with deep snow. the old machine couldn't handle the powder out there. this one tracks through it much better."
+    },
+    {
+      "role": "assistant",
+      "content": "200 km round trip in deep snow — yeah, you'll definitely want extra fuel. The Voyageur 155 has about a 40L (10.5 gallon) stock tank. In deep powder with a load, you're probably burning around 25-30 L per 100 km, so 200 km could eat through 50-60L. That's cutting it tight on stock tank alone.\n\nI'd recommend:\n\n- **Two auxiliary fuel caddies** — 2 x 15L gives you 30 extra litres, bringing total capacity to about 70L. That gives you a comfortable margin for 200 km in heavy conditions.\n- **The LinQ fuel caddy is probably your cleanest option** — it's designed for the Voyageur platform, low center of gravity, won't shift on you. You can stack two on the rear deck.\n\nFor the 155 specifically:\n- **Polaris LinQ Fuel Caddy** — Part #2883593 (verify for your model year). Around $150-180 CAD each.\n- Check **Hay River Polaris** or **Yellowknife Motorsports** — Northern dealers tend to stock these because everybody up there needs extra range.\n\nThe 155-inch track is a big advantage in deep snow over a shorter track. What were you running before?"
+    },
+    {
+      "role": "user",
+      "content": "had a Ski-Doo. Expedition. it was fine on packed trails and ice but once you get off the beaten path into the deep stuff it bogged down. the Polaris with the 155 track just floats over it. been waiting for this upgrade for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big jump in capability. The Expedition is a great trail and utility sled but you're right — once you're off-trail in deep unbroken snow, the shorter track and narrower ski stance really show their limits. The Voyageur 155 is purpose-built for exactly what you're describing — deep snow, heavy loads, long distance.\n\nA few things to think about now that you're on the new machine:\n\n- **Break-in period** — if it's brand new, follow Polaris's break-in recommendations for the first 300-500 km. Vary your speed, don't hold full throttle for extended periods yet.\n- **Track tension** — check it frequently in the first few weeks. New tracks stretch and need re-tensioning.\n- **Carbides and runners** — the Voyageur comes with pretty basic carbides. If you're doing 200 km days on mixed terrain (ice, hardpack, deep snow), consider upgrading to longer carbides for the ice sections.\n- **Spare belt** — always carry one, especially on those long Husky Lakes runs. A blown belt 100 km from town is a long walk.\n\nHave you had a chance to take it out on a proper run yet, or still in early days?"
+    },
+    {
+      "role": "user",
+      "content": "took it out three times so far. once just around Tuk to get a feel for it. twice out toward the survey area. it handles different than the Ski-Doo. wider stance. heavier. but in the deep snow it's not even close. the Polaris wins."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you're getting dialed in. The wider stance and extra weight take adjustment, especially in tight spots or on side-hills, but for straight-line deep snow travel and hauling gear, that's exactly the trade-off you want.\n\nA few things that'll feel different coming from the Expedition:\n\n- **Steering effort** — heavier machine plus wider ski stance means more arm work at low speed. At trail speed it tracks straighter though.\n- **Braking distance** — more mass means longer stops on ice. Recalibrate your instincts for that.\n- **Fuel consumption** — the 155 track has more drag than a shorter track, so fuel economy will be a bit worse than the Ski-Doo. That reinforces why the auxiliary fuel is a good idea.\n\nFor the muskox surveys specifically — are you hauling any gear on the sled? Equipment, sample kits, emergency supplies? The Voyageur's rear deck should give you more usable cargo space than the Expedition did."
+    },
+    {
+      "role": "user",
+      "content": "I carry a survival bag. binoculars. GPS. spotting scope. sometimes a rifle if there's bears around. and the camera gear for documenting the herds. probably 60 lbs of kit plus the fuel. the Voyageur handles it fine. the Ski-Doo used to sag with that load in powder."
+    },
+    {
+      "role": "assistant",
+      "content": "60 lbs of kit plus fuel — the Voyageur won't even notice that. It's rated for much more. And the fact that it doesn't sag in powder with that load tells you the suspension and track are doing their job.\n\nFor your setup, a couple suggestions:\n\n- **Secure the camera gear well.** Snowmobile vibration is rough on optics and electronics. A padded Pelican-style case bungeed to the rack is worth the investment if you're not already doing that.\n- **GPS mount** — if you're using a handheld, consider a RAM mount on the handlebar so you can watch your route in real time without stopping.\n- **Rifle scabbard** — a proper snowmobile scabbard keeps the rifle secure and accessible. Saves you from bungee-cord solutions.\n\nSounds like you've got a proper survey rig now. The combination of the 155 track for deep snow, extra fuel capacity once you get the caddies, and enough cargo space for your kit — that should make those Husky Lakes runs a lot less stressful.\n\nWant me to track down specific part numbers for the LinQ fuel caddies for your model year?"
+    },
+    {
+      "role": "user",
+      "content": "it's a 2026 model year. if you can find the right part number for the fuel caddy that would save me some time."
+    },
+    {
+      "role": "assistant",
+      "content": "For a 2026 Polaris Voyageur 155, you'll want to look at:\n\n- **Polaris LinQ Fuel Caddy 15L** — the most recent part number for the LinQ system is **2883593**. However, Polaris updates part numbers annually, so for the 2026 model year specifically, I'd recommend:\n  1. Go to **parts.polaris.com** and enter your VIN or select the 2026 Voyageur 155. The parts catalog will show you exactly which LinQ accessories are confirmed compatible.\n  2. Alternatively, call your nearest Polaris dealer — they can look it up by VIN in minutes.\n\nThe LinQ mounting points have been consistent across recent Voyageur models, so the 2883593 caddy will very likely fit, but confirming with the VIN is the safe move before ordering.\n\nIf you want to order online:\n- **Dennis Kirk** and **Partzilla** both stock Polaris OEM parts and ship to Canada\n- **RMATV/MC** is another option\n- A Canadian dealer like Hay River or Yellowknife will have it in their system and you avoid cross-border shipping\n\nOrder two if you're doing those 200 km days. One caddy gives you a buffer, two gives you real peace of mind."
+    },
+    {
+      "role": "user",
+      "content": "I'll check with the dealer in Inuvik first. prefer to buy local when I can. if they don't have it I'll go online. thanks for the help."
+    },
+    {
+      "role": "assistant",
+      "content": "Good call — buying local keeps the money in the region and if you ever need warranty service or have a fitment issue, you've got a relationship with the dealer. Inuvik should be able to order it in if they don't have stock.\n\nEnjoy the new Voyageur. Sounds like it's going to make the muskox survey season a lot more productive. Stay safe on those long runs out past Husky Lakes."
+    }
+  ]
+}

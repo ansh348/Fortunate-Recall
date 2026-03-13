@@ -1,0 +1,50 @@
+{
+  "session_id": 12,
+  "persona": "saga_lindqvist",
+  "date": "2025-04-05",
+  "type": "filler",
+  "topic": "gluten-free restaurant recs — new place in Södermalm",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "Do you know anything about gluten-free dining options in Södermalm? I need to find a good restaurant for dinner next week and I need somewhere that actually takes gluten-free seriously, not just removes the bread and calls it done."
+    },
+    {
+      "role": "assistant",
+      "content": "Södermalm has some decent options. A few places that are known for taking gluten-free seriously:\n\n- **Babajan** on Ringvägen — a café and bistro with a strong gluten-free and allergen-aware menu. They label everything clearly.\n- **Hermans** on Fjällgatan has a vegetarian buffet with clearly marked gluten-free dishes.\n\nAre you looking for a specific cuisine, or is the priority just finding somewhere reliable?"
+    },
+    {
+      "role": "user",
+      "content": "Reliability is the priority, actually. I have been to Hermans, it is lagom. Fine but not exciting. I heard there is a newer place on Hornsgatan that someone described as Mediterranean with a separate gluten-free kitchen area. Does that ring any bells?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure of the exact place on Hornsgatan — new restaurants pop up in Södermalm constantly. But a separate gluten-free kitchen area is a great sign. That kind of setup means they're serious about cross-contamination, which is rare. Do you remember the name, or was it just a word-of-mouth recommendation?"
+    },
+    {
+      "role": "user",
+      "content": "Word of mouth only. A colleague mentioned it but could not remember the name either, which is statistically unhelpful. She said the menu changes weekly and they have a tasting menu option on Fridays. I will have to walk down Hornsgatan and look for it, which feels inefficient but might be the only option."
+    },
+    {
+      "role": "assistant",
+      "content": "You could try narrowing it down with Google Maps and filtering for recent openings on Hornsgatan, then checking reviews for mentions of gluten-free. Instagram is also surprisingly useful for Stockholm restaurant discovery — search location tags for Hornsgatan and filter for allergen-friendly posts. Might save you some walking."
+    },
+    {
+      "role": "user",
+      "content": "That is a more efficient approach, yes. My success rate with finding good restaurants through social media is actually around 60 percent, which is better than random selection but worse than personal recommendations. I will also ask in a Stockholm celiac group I am in — they tend to have the most reliable data on which places are genuinely safe versus performatively gluten-free. There is a meaningful distinction between those two categories."
+    },
+    {
+      "role": "assistant",
+      "content": "That community is probably your best source. People who actually need strict gluten-free will have tested these places firsthand and can tell you about real experiences, not just menu claims. Between that group and the Instagram search, you should be able to track down the mystery Hornsgatan place."
+    },
+    {
+      "role": "user",
+      "content": "I will report back with a rating on at least 5 dimensions. Thank you for the search strategy suggestions. It is appreciated."
+    },
+    {
+      "role": "assistant",
+      "content": "A 5-dimension rating — I'd expect nothing less. Good luck with the search, and enjoy the dinner!"
+    }
+  ]
+}

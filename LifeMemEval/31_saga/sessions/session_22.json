@@ -1,0 +1,52 @@
+{
+  "session_id": 22,
+  "persona": "saga_lindqvist",
+  "date": "2025-09-10",
+  "type": "critical",
+  "topic": "gym change",
+  "facts_disclosed": [
+    "Switched to Karbin gym Södermalm, 12 min walk, 50 kr more"
+  ],
+  "turns": [
+    {
+      "role": "user",
+      "content": "i recently switched climbing gyms and i want to talk through whether it was the right call. i have been going back and forth on it."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I can help you think through that. What gym did you switch to, and what prompted the change?"
+    },
+    {
+      "role": "user",
+      "content": "i moved to Karbin in Södermalm. my old gym required taking the tunnelbana, about 25 minutes each way. Karbin is 12 minutes walk from my apartment. the route-setting is arguably better and the monthly cost is only 50 kronor more. so by most metrics it is an upgrade."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a significant commute improvement — from 50 minutes round-trip to 24 minutes of walking. How often do you climb? That determines how much the time savings compound."
+    },
+    {
+      "role": "user",
+      "content": "twice a week, consistently. so the math is 26 minutes saved times 2 sessions times roughly 4.3 weeks per month. that is approximately 3.5 hours per month i am recovering. i have already calculated this, as you might expect."
+    },
+    {
+      "role": "assistant",
+      "content": "3.5 hours per month is substantial — essentially a full extra climbing session's worth of time. Better routes, closer location, marginal cost increase. What's making you second-guess it?"
+    },
+    {
+      "role": "user",
+      "content": "i left a gym where i knew all the regulars and had a consistent climbing partner. at Karbin i am the new person. my partner stayed at the old gym, though we were not perfectly matched anyway. she climbs 5c and i am projecting 6b+, so we could warm up together but not really push each other. statistically it is better to climb with someone at or slightly above your level for improvement."
+    },
+    {
+      "role": "assistant",
+      "content": "So the trade-off is structural advantages (commute, routes, potential for a better-matched partner) versus a temporary social cost. The social familiarity fades as a disadvantage — give it a month of regular sessions and you'll start recognizing people. Everything else about the switch is a persistent gain.\n\nIt sounds like the decision was already correct on paper. Is there something else making it feel unresolved?"
+    },
+    {
+      "role": "user",
+      "content": "i think it is the guilt of leaving. which is not rational. the gym does not have feelings. but there is something about breaking a routine that feels like a small betrayal, even when the data clearly supports the change. i just needed to hear someone confirm that the data is sufficient justification. lagom reassuring, thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "The data is more than sufficient. And the 12-minute walk is a better warm-up than sitting on the tunnelbana anyway. Give it 8 sessions — if you're still unsettled after that, revisit. But I suspect you won't be."
+    }
+  ]
+}

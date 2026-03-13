@@ -1,0 +1,74 @@
+{
+  "session_id": 20,
+  "persona": "alex_richter",
+  "date": "2025-08-08",
+  "type": "critical",
+  "topic": "dropping side project",
+  "facts_disclosed": ["Kotlin OSS project scrapped - no time, wrong language now"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "you know that thing where you have a project on your todo list for months and you keep telling yourself you'll get to it and then one day you just accept it's never going to happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, that's a pretty universal experience. There's something almost liberating about finally letting go though. What project are you pulling the plug on?"
+    },
+    {
+      "role": "user",
+      "content": "i had this plan to build an open source kotlin testing framework. had a name and everything — KoroutineCheck. specifically for testing coroutine-heavy code because the existing tools are terrible at it. it's dead now. scrapped"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like it would have filled a real gap - coroutine testing is genuinely painful with existing tools. What killed it? Lost interest, or did circumstances change?"
+    },
+    {
+      "role": "user",
+      "content": "both kind of. the pivot at work ate all my free time, i've been pulling long hours and by Feierabend i have zero brain capacity left. but also — i write rust now. building a kotlin framework when i'm not even writing kotlin professionally anymore makes zero sense. it's not happening"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a really pragmatic assessment. No time AND no longer in the ecosystem is a clear kill signal. It's hard to maintain an open source project in a language you're not using daily. Do you feel bad about it, or is it more of a relief?"
+    },
+    {
+      "role": "user",
+      "content": "relief mostly. it was sitting in the back of my head taking up mental ram. like a background process you forgot about that's eating 15% cpu. now it's killed. dead. i can reclaim those cycles. genau"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a perfect metaphor. Zombie projects you haven't officially killed consume way more mental energy than people realize. The guilt of \"I should be working on that\" takes up cognitive space even when you're not actively thinking about it. Sometimes the most productive thing is to explicitly kill something."
+    },
+    {
+      "role": "user",
+      "content": "the idea was solid though. the kotlin coroutine testing space still sucks. someone should build it, it's just not going to be me. if some kotlin dev wants to steal the name KoroutineCheck, it's free intellectual property at this point. maybe i'll build something similar in rust eventually but honestly i barely have time to feed kernel let alone maintain oss"
+    },
+    {
+      "role": "assistant",
+      "content": "Open sourcing the idea itself is generous. Don't make new promises while your bandwidth is maxed out though - the Rust idea isn't going anywhere, and you'll be in a better position once the work crunch settles.\n\nHow is Kernel handling the long hours, by the way? Cats have opinions about schedule changes."
+    },
+    {
+      "role": "user",
+      "content": "she's started sitting directly on my keyboard around 10pm as a form of protest. very effective. she's basically enforcing work-life boundaries that i won't enforce myself. a furry scrum master. items destroyed per sprint is consistently high"
+    },
+    {
+      "role": "assistant",
+      "content": "Kernel's standup would be legendary: \"yesterday I knocked things off the desk, today I'm blocking the keyboard, blockers: the human won't stop typing.\" At least someone in your household has healthy boundaries."
+    },
+    {
+      "role": "user",
+      "content": "okay i feel better about killing KoroutineCheck. it was the right call to just end it definitively instead of letting it haunt me. clean kill. i'm not coming back to it either. it's not 'on pause' or 'someday maybe'. KoroutineCheck is permanently dead and buried. i deleted the repo skeleton and everything"
+    },
+    {
+      "role": "assistant",
+      "content": "Deleting the repo skeleton is the right move - no half-measures. When you leave a project \"on pause\" it stays in your mental queue forever. You made a clear, permanent decision based on real constraints. That's not giving up, that's just good prioritization."
+    },
+    {
+      "role": "user",
+      "content": "genau. no zombie repos. if it's dead, delete it. the kotlin coroutine testing world will have to survive without me. i have enough on my plate. thanks for the sanity check"
+    },
+    {
+      "role": "assistant",
+      "content": "Anytime. Clean kills are better than slow deaths when it comes to projects. Go enjoy your reclaimed mental bandwidth - and maybe let Kernel enforce that 10pm shutdown tonight."
+    }
+  ]
+}

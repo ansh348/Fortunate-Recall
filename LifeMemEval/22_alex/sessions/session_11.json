@@ -1,0 +1,114 @@
+{
+  "session_id": 11,
+  "persona": "alex_richter",
+  "date": "2025-03-20",
+  "type": "critical",
+  "topic": "side project plans",
+  "facts_disclosed": ["Planning Kotlin testing framework OSS project — KoroutineCheck"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "okay so i have a thing i need to talk through before i actually commit to it"
+    },
+    {
+      "role": "assistant",
+      "content": "Sure, I'm all ears. What's on your mind?"
+    },
+    {
+      "role": "user",
+      "content": "i've been thinking about starting an open source project. like a proper one, not a weekend hack that dies after 3 commits and a sad abandoned readme"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice — what kind of project? And what makes you feel like this one would have more staying power than the usual weekend hack?"
+    },
+    {
+      "role": "user",
+      "content": "so i write a lot of kotlin at work right, and the testing story for coroutine-heavy code is genuinely terrible. like you either use mockk which half-works with suspend functions or you end up rolling your own test harnesses every single time. it's Quatsch"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a real pain point — coroutine testing in Kotlin definitely has some rough edges. Are you thinking of building a testing framework specifically designed around coroutines?"
+    },
+    {
+      "role": "user",
+      "content": "genau. property-based testing but coroutine-aware from the ground up. think something like hypothesis for python but it actually understands structured concurrency, cancellation semantics, the whole dispatcher situation"
+    },
+    {
+      "role": "assistant",
+      "content": "That would fill a genuine gap. Property-based testing that understands structured concurrency is pretty much nonexistent in the Kotlin ecosystem right now. Have you thought about what the core API would look like?"
+    },
+    {
+      "role": "user",
+      "content": "yeah i've been sketching it out. already have a name picked out too — KoroutineCheck. with a K obviously because kotlin naming conventions demand it"
+    },
+    {
+      "role": "assistant",
+      "content": "KoroutineCheck — solid name, immediately tells you what it does. The K-for-Kotlin convention is practically a legal requirement at this point. What's the basic usage pattern you're envisioning?"
+    },
+    {
+      "role": "user",
+      "content": "the idea is you define properties as suspend functions and the framework generates random inputs while also fuzzing the dispatcher scheduling. so you catch bugs that only manifest under specific interleaving patterns. which is like 90% of the concurrency bugs i see at work"
+    },
+    {
+      "role": "assistant",
+      "content": "Dispatcher fuzzing is a killer feature. Those interleaving-dependent bugs are the ones that pass in tests 99% of the time and then blow up in production at 3am. How would you handle the deterministic replay side? If it finds a failing interleaving, can you reproduce it?"
+    },
+    {
+      "role": "user",
+      "content": "that's the hard part. i want to do schedule shrinking — record the scheduling decisions and then replay with subsets removed until you get the minimal failing schedule. similar to how lincheck does it for java but more kotlin-idiomatic and not requiring bytecode instrumentation"
+    },
+    {
+      "role": "assistant",
+      "content": "Lincheck is a great reference point. Avoiding bytecode instrumentation would be a significant advantage — that's one of lincheck's biggest friction points for adoption. Schedule shrinking is hard to implement but it's the feature that would make people actually use this in their CI pipelines vs. just starring the repo."
+    },
+    {
+      "role": "user",
+      "content": "exactly. the shrinking is v0.2 territory though. for the first version i just want the core property testing with basic dispatcher control — intercept the scheduler, run permutations, report failures with the full schedule trace"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a smart scoping decision. Get the foundation right first — if the core property testing and dispatcher interception works well, people will immediately see the value. What's your timeline for getting that first version out?"
+    },
+    {
+      "role": "user",
+      "content": "gonna start this month. i want a basic proof of concept within 4-6 weeks, something i can show people and get feedback on before i invest more time. if nobody cares i'll know early"
+    },
+    {
+      "role": "assistant",
+      "content": "Starting this month is great timing — spring energy and all that. The 4-6 week POC approach is smart. Are you planning to publish to Maven Central from the start, or keep it lighter initially?"
+    },
+    {
+      "role": "user",
+      "content": "github first, maybe jitpack so people can pull it easily. maven central publishing is its own bureaucratic nightmare and i've had enough Bürgeramt energy in my life. i'll deal with that once the api stabilizes"
+    },
+    {
+      "role": "assistant",
+      "content": "JitPack is perfect for early-stage — low ceremony, anyone can grab it with a GitHub tag. Maven Central can wait until you've iterated on the API. You might want to put together a README with a few annotated examples early on though. For testing libraries especially, people need to see what writing a test looks like before they invest time trying it."
+    },
+    {
+      "role": "user",
+      "content": "yeah that's the plan. 3 solid examples covering the main use cases — basic property test, dispatcher fuzzing, and maybe one showing how to test a channel-based producer-consumer pattern. oh and kernel just sat on my laptop and typed semicolons into my notes so she clearly has opinions on the api design"
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like Kernel is lobbying for a more Java-style syntax with all those semicolons. Three focused examples is the right number — enough to show range without overwhelming people. The channel-based producer-consumer one is especially good because that's a pattern everyone uses and everyone tests badly."
+    },
+    {
+      "role": "user",
+      "content": "honestly i'm weirdly excited about this. i haven't been this motivated about a side thing in ages. probably because it scratches my own itch directly instead of being some theoretical project nobody needs. okay wait i should also think about the gradle plugin angle early — if people have to do a bunch of manual setup to use it nobody will bother"
+    },
+    {
+      "role": "assistant",
+      "content": "The Gradle plugin angle is important — good instinct. A simple plugin that auto-configures the test runtime and maybe adds a `koroutineCheck` task would lower the adoption barrier significantly. Even if v0.1 is just a library dependency, designing the API with plugin support in mind from the start will save you from painful refactors later."
+    },
+    {
+      "role": "user",
+      "content": "genau. okay i think i have a solid plan. github repo this weekend, basic project structure, ci with github actions, then start on the core scheduler interception. i'll probably be back to complain about kotlinx.coroutines internals within a week"
+    },
+    {
+      "role": "assistant",
+      "content": "The coroutines internals rabbit hole is deep and full of surprises — I look forward to hearing about it. Sounds like you have a clear plan and genuine motivation, which is honestly the main thing most side projects lack. Good luck this weekend, and feel free to bounce API design decisions off me anytime."
+    }
+  ]
+}

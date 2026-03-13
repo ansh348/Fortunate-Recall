@@ -1,0 +1,114 @@
+{
+  "session_id": 20,
+  "persona": "billy_kootook",
+  "date": "2025-09-14",
+  "type": "critical",
+  "topic": "research change",
+  "facts_disclosed": ["Shifted to muskox research, 340 counted where 500 expected"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "been a busy couple months. my research work has changed direction."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like a significant shift. What's changed?"
+    },
+    {
+      "role": "user",
+      "content": "I was doing caribou work for years. tracking herds. collaring animals. good work but it was time to hand it off. gave it to a younger guy. Natan. I trained him. he's good."
+    },
+    {
+      "role": "assistant",
+      "content": "It's good to have someone you trust to take that over. What are you moving into?"
+    },
+    {
+      "role": "user",
+      "content": "muskox. the numbers aren't adding up and nobody is looking at it closely enough. we ran an aerial survey recently. counted 340 animals in an area where the models predicted around 500."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big discrepancy — roughly a third fewer than expected. Is this the first survey that's come in that low, or has there been a trend?"
+    },
+    {
+      "role": "user",
+      "content": "there were lower counts in recent years but nothing this sharp. you expect some variation survey to survey. weather affects visibility. animals move. but 340 versus 500 is outside normal variation. something is wrong out there."
+    },
+    {
+      "role": "assistant",
+      "content": "Agreed — that gap is too large to attribute to survey variability alone. What are the leading theories? Disease, predation, habitat change, range shift?"
+    },
+    {
+      "role": "user",
+      "content": "could be any of those. could be all of them together. the vegetation is changing fast up here. what they eat and where they find it is shifting. grizzly numbers are up and they take calves. but losing 160 animals from one count area. you need data not guessing."
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely. That's a complex enough problem that it needs systematic investigation. Are you planning to collar muskox the way you did with caribou, or is the methodology different?"
+    },
+    {
+      "role": "user",
+      "content": "different approach. muskox don't migrate like caribou. they stay in smaller ranges. so it's more about population monitoring. body condition scoring. calf survival through winter. we'll collar some but the main work is repeated counts and direct observation."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes sense for a more sedentary species. Repeated counts will show you the trajectory, and body condition data will help you figure out whether it's a survival issue or a reproduction issue. Are you seeing signs of poor condition in the animals you've observed so far?"
+    },
+    {
+      "role": "user",
+      "content": "hard to say yet. I need two full seasons minimum before I'll have anything useful. fall condition going into winter. then spring condition coming out. that's the cycle that matters. that's why I made the switch now. didn't want to lose another year."
+    },
+    {
+      "role": "assistant",
+      "content": "Smart timing. Getting your baseline established this fall means you'll have a complete winter cycle in your data by spring. The overwinter survival and condition change will tell you a lot. Is this funded through the territorial government?"
+    },
+    {
+      "role": "user",
+      "content": "partly territorial. some federal money through the wildlife management board. it's enough to start. not enough to do everything I'd want. but that's always the case eh."
+    },
+    {
+      "role": "assistant",
+      "content": "That's the reality of wildlife research everywhere, unfortunately. At least the funding is there to begin. Your years of experience designing field studies should translate well — you know what works on the ground versus what looks good on paper."
+    },
+    {
+      "role": "user",
+      "content": "that's the idea. Natan takes care of the caribou. I focus on the muskox. between us we cover more ground."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a solid arrangement — two researchers who know the area covering two critical species. And if the caribou and muskox data end up showing related patterns, the overlap could be really valuable."
+    },
+    {
+      "role": "user",
+      "content": "hadn't thought about it that way. but yeah. if both populations are responding to the same changes in the landscape we'd see it. that's worth tracking."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. Same region, same environmental pressures, but two different species responding in their own ways. Comparing the datasets could reveal things neither one shows alone."
+    },
+    {
+      "role": "user",
+      "content": "the hard part is going to be patience. I want answers now but the data needs time. two seasons minimum like I said. can't rush it."
+    },
+    {
+      "role": "assistant",
+      "content": "That discipline is what separates good research from speculation. Two seasons will give you enough data to start seeing real patterns. In the meantime, even anecdotal observations can help you form hypotheses to test once the numbers come in."
+    },
+    {
+      "role": "user",
+      "content": "I've got plenty of those. 20 years of watching animals on this land. I know when things aren't right. now I need the data to back it up."
+    },
+    {
+      "role": "assistant",
+      "content": "Twenty years of field intuition is a powerful starting point. That kind of experience means you'll know where to look and what questions to ask. The data will either confirm what you're sensing or surprise you — either way, it moves things forward."
+    },
+    {
+      "role": "user",
+      "content": "thanks. lots of ground to cover before freeze-up. but that's the good part of the work."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like you're in your element. Hope the muskox start making more sense once the data comes in."
+    }
+  ]
+}

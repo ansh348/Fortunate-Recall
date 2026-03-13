@@ -1,0 +1,76 @@
+{
+  "session_id": 18,
+  "persona": "saga_lindqvist",
+  "date": "2025-07-15",
+  "type": "critical",
+  "topic": "team change",
+  "facts_disclosed": [
+    "Moved to music recommendations team after restructure"
+  ],
+  "turns": [
+    {
+      "role": "user",
+      "content": "so there was a restructure at work. i have been moved to a different team and i am still processing what it means."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a big shift. Restructures can be unsettling even when the outcome isn't bad. What team were you moved to, and was this something you had any input on?"
+    },
+    {
+      "role": "user",
+      "content": "i am now on the music recommendations team. previously i was on podcast analytics, which i had been on for over two years. the music recommendations team works on collaborative filtering models, which are algorithmically more interesting actually. the models are more complex, the feature space is larger, and the evaluation metrics are less straightforward than completion rates and skip patterns."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a genuine step up in technical complexity. Collaborative filtering at Spotify's scale — that's working with implicit feedback signals across hundreds of millions of users, sparse matrices, cold start problems. It's a rich problem space.\n\nBut I notice you said you're \"still processing.\" The technical side sounds like a positive — what's the part that's harder to sit with?"
+    },
+    {
+      "role": "user",
+      "content": "the part that is harder is that i did not choose it. the restructure happened and i was assigned to this team. nobody asked me. i read a McKinsey study last year that found people who are involuntarily moved to new roles are 23% less satisfied with the transition compared to people who chose to move, even when the new role is objectively equivalent or better. i keep thinking about that number."
+    },
+    {
+      "role": "assistant",
+      "content": "That McKinsey finding makes a lot of sense psychologically. Autonomy is one of the strongest predictors of job satisfaction — it's not just about whether the outcome is good, it's about whether you had agency in getting there. Being assigned a better role can still feel worse than choosing a lateral one.\n\nThe fact that you're aware of this dynamic is useful though. You can name exactly why you feel unsettled — it's the lack of choice, not the role itself. Does that distinction help at all, or does knowing the reason not actually change the feeling?"
+    },
+    {
+      "role": "user",
+      "content": "knowing the reason helps approximately 40% of the way. the remaining 60% is just the feeling of being moved like a piece on a board. i had built something on the podcast analytics team. i knew the data inside out. i had institutional knowledge that is not transferable, it just evaporates when you leave. and nobody acknowledged that."
+    },
+    {
+      "role": "assistant",
+      "content": "That loss of institutional knowledge is real and it's one of the most undervalued costs of restructuring. You spent two years learning the quirks of that dataset, the context behind anomalies, the relationships with stakeholders. That's not in any documentation — it lives in your head, and when you move, it's just gone.\n\nThe lack of acknowledgment makes it worse. It signals that the organization sees the role as interchangeable — plug in another analyst and the function continues. Which might be true from a management perspective, but it dismisses the craft of what you built.\n\nHave your new team members been welcoming at least? Sometimes the social side of a transition matters as much as the technical side."
+    },
+    {
+      "role": "user",
+      "content": "the team is lagom. my new manager seems competent and the other analysts are technically strong. one of them has published papers on matrix factorization methods, which is genuinely impressive. so the intellectual environment is arguably better than what i had before. i just need to get past the feeling that this was done to me rather than for me."
+    },
+    {
+      "role": "assistant",
+      "content": "\"Done to me rather than for me\" — that's a sharp way to put it. And it sounds like you're clear-eyed about the situation: the role is better, the team is strong, the technical work is more interesting. The grievance is specifically about process, not outcome.\n\nOne thing that might help is giving yourself a timeframe. Research on role transitions suggests that most people's satisfaction with a new role stabilizes within 8-12 weeks. You might set a mental checkpoint — say, mid-September — and reassess how you feel about the move once the novelty and the resentment have both faded. That separates the adjustment discomfort from any genuine long-term issues."
+    },
+    {
+      "role": "user",
+      "content": "that is a reasonable approach. i will set a checkpoint. i have actually already started tracking my daily satisfaction score on a 1 to 10 scale since the move was announced, so i will have real data by then. the first week averaged 4.3. this week is at 5.8. so the trend is positive."
+    },
+    {
+      "role": "assistant",
+      "content": "A 1.5-point improvement in one week is a meaningful upward trend. If that trajectory holds — even if it decelerates, which it likely will — you should be at a 7 or above by your mid-September checkpoint. That's solidly in the \"this was ultimately a good move\" range.\n\nTracking it daily is very you, and in this case it's genuinely useful. Feelings about job transitions are notoriously unreliable in the moment — having actual data to look back on prevents you from either catastrophizing or retroactively rewriting the narrative.\n\nWhat's the first big project on the recommendations team? Having something concrete to dig into usually accelerates the adjustment."
+    },
+    {
+      "role": "user",
+      "content": "they are working on improving the Discover Weekly algorithm. the current model has a cold start problem with new users who have fewer than 50 listening events. i have been asked to look at whether podcast listening data can improve early music recommendations, which is an interesting overlap with my previous work. so my podcast analytics experience is not entirely wasted."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a genuinely elegant assignment. They're leveraging exactly the institutional knowledge you were afraid of losing — your deep understanding of podcast listening patterns becomes a bridge between your old role and your new one. If podcast signals can improve cold start music recommendations, you're uniquely positioned to figure that out.\n\nIt also reframes the restructure slightly. Rather than your podcast expertise evaporating, it's being applied in a new context where it might have more impact. That doesn't fix the autonomy issue, but it does mean the move wasn't purely arbitrary from a talent allocation perspective.\n\nThis sounds like it could become a genuinely interesting project. How are you approaching the initial exploration?"
+    },
+    {
+      "role": "user",
+      "content": "i am starting with an exploratory analysis of the correlation between podcast genre preferences and music taste clusters. the hypothesis is that podcast listeners who favour certain categories, like true crime or indie music podcasts, have predictable music preferences that could inform early recommendations. i am building the feature matrix this week. it is actually the most intellectually engaging thing i have worked on in months, which i find slightly annoying given the circumstances."
+    },
+    {
+      "role": "assistant",
+      "content": "The slight annoyance is the most honest reaction possible. It's hard to stay resentful about a move that's giving you better problems to solve. The cognitive dissonance of \"I didn't want this but it might be exactly what I needed\" is uncomfortable precisely because it undermines a clean narrative.\n\nBut the work speaks for itself. Cross-domain feature engineering between podcast and music signals at that scale — that's a paper-worthy problem. If you find a meaningful correlation between podcast genre and music taste clusters, it has implications well beyond cold start.\n\nEnjoy the intellectual engagement. You can still be annoyed about the process. Both things are true at the same time."
+    }
+  ]
+}

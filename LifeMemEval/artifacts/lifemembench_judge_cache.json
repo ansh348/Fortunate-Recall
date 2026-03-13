@@ -44266,5 +44266,299 @@
     "reasoning": "The fact is about professional development/career planning (PwC sponsoring CIMA qualification) and has no relevance to Aisha's outside-work activities like gym, family time, Netflix, or Eid celebrations.",
     "question_id": "aisha_q12",
     "edge_uuid": "9d654d2b-c481-466e-83c0-6b941ee84fd3"
+  },
+  "f25a624284c44433": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about watching a TV show and has no relevance to Elena's weight loss on keto or any numeric weight information.",
+    "question_id": "elena_q14",
+    "edge_uuid": "f8502cc5-4736-4e68-9a5b-63058b417dde"
+  },
+  "bf721d5f9a432941": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only states 'user is a history teacher,' which is too general to confirm the current specific subject (AP US History). It neither supports the correct answer nor contains the wrong/stale indicator (AP European History/AP Euro).",
+    "question_id": "david_q01",
+    "edge_uuid": "8beece60-b63e-4652-b23d-a1725af19d04"
+  },
+  "2a1816291d65cc5b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only mentions teaching high school students and something about their thinking patterns, but does not specify any subject. It neither confirms AP US History nor contains the stale indicator of AP European History.",
+    "question_id": "david_q01",
+    "edge_uuid": "ec87d17c-d898-4c1f-86d0-a5b5ca68ee46"
+  },
+  "3d962b1dcfa8ee57": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about house hunting activity and has no information about Simran's occupation or work role.",
+    "question_id": "raj_q03",
+    "edge_uuid": "b8456693-a4a6-4da1-b2cc-8b0832ae934c"
+  },
+  "c1d3ac649745e4e1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's child Preet and their personality, which has no relevance to Raj's health conditions or asthma/blue inhaler.",
+    "question_id": "raj_q04",
+    "edge_uuid": "4e444536-2631-4c81-84fa-1fdd93379eff"
+  },
+  "95b5baaae9c52d8a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's child Arjun and his reading progress, which has no relevance to Raj's health conditions such as asthma or use of a blue inhaler.",
+    "question_id": "raj_q04",
+    "edge_uuid": "0ea5a2d8-ad5b-41eb-a3bd-211662c117fd"
+  },
+  "87d193e215cd8e37": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about a sake brewery project shifting career focus is unrelated to where Kenji works. It neither confirms working from home nor mentions the shared studio in Shinsaibashi.",
+    "question_id": "kenji_q03",
+    "edge_uuid": "0c71a7e4-32e0-4019-ba6f-a1a00a8d8187"
+  },
+  "ae9bac39f89270b4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only states that Osaka is the user's home city, which doesn't address where Kenji works. It neither confirms working from home nor mentions the shared studio in Shinsaibashi.",
+    "question_id": "kenji_q03",
+    "edge_uuid": "82e1b4c8-853a-4daf-8fba-130df5da2570"
+  },
+  "2dc7d3a833801e01": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Osaka and freelance design work, but does not specify where Kenji works (home vs. shared studio). It neither confirms working from home nor mentions the stale indicator of the shared studio in Shinsaibashi.",
+    "question_id": "kenji_q03",
+    "edge_uuid": "26817920-ccd0-4fd9-ad4b-f5fc5b45a2c8"
+  },
+  "a76ccb661046ae37": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about stalking someone's Instagram is entirely unrelated to Priya's pet plans or her landlord's decision.",
+    "question_id": "priya_q05",
+    "edge_uuid": "1f94aa5b-b182-4e87-b6ed-84ece3fd322b"
+  },
+  "32ecde979113c61c": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Anthropic, which aligns with the correct answer of 'Senior ML engineer at Anthropic.' The team name 'memory systems team' differs slightly from the correct answer but does not contradict it. No mention of Google or Gemini memory team (the stale indicators).",
+    "question_id": "priya_q02",
+    "edge_uuid": "7a3a1c54-ce48-493f-bb0e-0dea3bbdeedd"
+  },
+  "52310c93898d8bbb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Tommy Gallagher and crossing paths while working different houses. It contains no information about Patrick's retirement plans or timeline.",
+    "question_id": "patrick_q07",
+    "edge_uuid": "c7ed3b0f-536b-41da-8445-4cac7a975b8b"
+  },
+  "efbee00013724dcc": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Patrick's life being tied to the city and the firehouse, but contains no information about retirement plans, mandatory retirement age, or early retirement discussions with Marie. It neither supports the correct answer nor contains wrong indicators.",
+    "question_id": "patrick_q07",
+    "edge_uuid": "14d352e9-7eed-43ea-80ed-a9436f590f0f"
+  },
+  "f2231c0d6ef88c5a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Patrick's feelings toward his son's job, and contains no information about Patrick's own retirement plans or how long he intends to keep working.",
+    "question_id": "patrick_q07",
+    "edge_uuid": "57f41489-9fc9-48e8-8195-3b17c3dca675"
+  },
+  "8b3d0358cc9de319": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is completely unrelated to foundation repair costs. It mentions a ceremony at headquarters, which has no connection to the $40,000 repair cost question.",
+    "question_id": "patrick_q11",
+    "edge_uuid": "128e5a3c-bcf9-45c3-b6bf-574a2b0e1c61"
+  },
+  "11983d5cbec0c465": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about renting cabins near Lake Winnipesaukee and has no relevance to Jake's work situation as an apprentice electrician at Brennan & Sons Electric.",
+    "question_id": "jake_q12",
+    "edge_uuid": "09ba5ff6-0fc2-48d0-aed3-7a3126a4d427"
+  },
+  "555b95e023cd0b2d": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact that Jake is on a job doing electrical wiring (three-way switch setup) is consistent with and partially supports his role as an apprentice electrician. It confirms active electrical work, though it doesn't mention Brennan & Sons Electric or his dad's union company. Under AV3 generous partial match rules, this counts as supporting the correct answer.",
+    "question_id": "jake_q12",
+    "edge_uuid": "f0eb6ec6-fc41-430a-b64d-7e541d552f6b"
+  },
+  "53a8cdb3f5317064": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about financing a personal vehicle (Ram 1500) and has no relevance to Marcus's business financial status or employee count.",
+    "question_id": "marcus_q08",
+    "edge_uuid": "037f05a4-3610-490f-99d5-d09377d890de"
+  },
+  "2564ab3b3ff29889": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about acquiring new equipment (alignment rack) to take on more work suggests business expansion and growth, which aligns with the correct answer that the business is growing. It does not contain the wrong indicator of 'barely breaking even.'",
+    "question_id": "marcus_q08",
+    "edge_uuid": "944ddd89-cbb5-4ef5-8240-d33086d33156"
+  },
+  "65a0d6efc0035e73": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact explicitly states 'deals and transactions team in advisory' which matches the correct current answer exactly. No mention of audit (the outdated team).",
+    "question_id": "aisha_q01",
+    "edge_uuid": "5c2f6cb8-cbea-4c8b-b82d-bbf01ca0f72a"
+  },
+  "ce0fe7251941b0b3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Amira swapping weekends for holidays with Ismail, which is completely unrelated to Omar's rent in Alief.",
+    "question_id": "omar_q13",
+    "edge_uuid": "8773c277-fd8f-4d9e-9292-cd7895274c03"
+  },
+  "c601dc9392c3e91c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a book Lily read and her emotional reaction to it, which is entirely unrelated to her thesis topic. It neither supports the correct answer nor contains any wrong indicators about her thesis.",
+    "question_id": "lily_q01",
+    "edge_uuid": "4f566cf4-b714-4997-993c-e2f272aab484"
+  },
+  "b0fd9acc6e402a56": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's younger cousin looking at Kyoto Seika, which is entirely unrelated to where Kenji works. It neither supports the correct answer nor contains any wrong indicators about the studio in Shinsaibashi.",
+    "question_id": "kenji_q03",
+    "edge_uuid": "e2f5f29b-080b-4217-8777-08f30cd8cf33"
+  },
+  "3047ca624f3b9e93": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Lily being obsessed with Jubilee is completely irrelevant to the question about her semester exchange plans. It neither supports the correct answer nor contains wrong indicators about UBC exchange.",
+    "question_id": "lily_q06",
+    "edge_uuid": "ef4ad304-e837-4fdb-8109-e55c0edcb02b"
+  },
+  "489408d151bb8023": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about a sake brewery project shifting career focus does not address whether Kenji works with corporate clients or independent brands. It is tangentially career-related but provides no information relevant to the question about corporate client work.",
+    "question_id": "kenji_q07",
+    "edge_uuid": "0c71a7e4-32e0-4019-ba6f-a1a00a8d8187"
+  },
+  "7a2de26fa20a205a": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact shows Kenji doing product packaging work for Tanaka Foods, which appears to be a corporate client (a food company). This aligns with the 'later took a packaging gig' part of the correct answer, supporting the inconsistency \u2014 he is in fact working with corporate clients despite his stated principle. The fact does not contain the wrong indicator ('only works with independent brands').",
+    "question_id": "kenji_q07",
+    "edge_uuid": "d14db325-7261-4edd-90bd-fe462551de05"
+  },
+  "f9db7707359b0687": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about watching bees come and go is completely irrelevant to the question about where Tom sources his honey jars. It contains no information about Stow Pottery, Mary, Thornes, or honey jar suppliers.",
+    "question_id": "tom_q01",
+    "edge_uuid": "a2df86f7-8625-4241-82d7-90b645c4d7d3"
+  },
+  "67a0dfae96875b97": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact explicitly mentions 'ballet twice a week', which is the outdated/stale indicator. The correct answer is CrossFit after quitting ballet due to schedule conflicts. This fact does not support the current exercise (CrossFit) and contains the superseded activity (ballet).",
+    "question_id": "nadia_q03",
+    "edge_uuid": "182096ce-4e27-4014-a33f-b8651bc9cf73"
+  },
+  "a8cf9264977de5e3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a coach commenting on form but does not specify what exercise Nadia does, nor does it reference CrossFit or ballet.",
+    "question_id": "nadia_q03",
+    "edge_uuid": "7b0f75b3-24a9-4a14-b85a-075fcae83b53"
+  },
+  "3b23b3bca8763f28": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references the Tokyo conference with a March 20th departure, which aligns with the correct answer. It does not mention the dentist appointment (June 12/Thursday), so no wrong indicator is present.",
+    "question_id": "priya_q04",
+    "edge_uuid": "3f19f8e5-c122-4547-963b-00afa4b76059"
+  },
+  "1c938057a8b64114": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Tamil food preferences and has no relevance to Priya's exercise habits. It neither supports rock climbing nor contains any wrong indicators about hot yoga or yoga 4x.",
+    "question_id": "priya_q07",
+    "edge_uuid": "b528b480-1f8c-44f0-8fa6-f062182c33b9"
+  },
+  "ba36bfef13023ec9": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about boat registration at PFBC in January, which is unrelated to the two past events in the correct answer (annual physical on January 15 and Patrick Jr's academy graduation on March 22, 2025). It neither supports the correct answer nor contains the wrong indicators specified.",
+    "question_id": "patrick_q12",
+    "edge_uuid": "b6559d64-c830-426c-a2b0-de0a1c265257"
+  },
+  "a32d320379033213": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's son's first working house fire, not about Patrick's tenure. It contains no information about 30 years with the Philadelphia Fire Department.",
+    "question_id": "patrick_q13",
+    "edge_uuid": "46d33615-d559-48f4-b04d-f5a0c85f9caf"
+  },
+  "1ad18317737a5aee": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact confirms Abena is a pharmacist, which matches the correct answer's detail about 'Wife Abena (pharmacist).' This is a partial but valid match for Samuel's background information.",
+    "question_id": "samuel_q09",
+    "edge_uuid": "fca22f4b-71d7-4da5-bd1c-f415f7714db0"
+  },
+  "a047362a6ba73808": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact states the user passed the journeyman exam last year after 6 years as an apprentice, meaning he is no longer an apprentice \u2014 this contradicts the correct answer that Jake is currently an apprentice electrician. While it relates to the electrician trade, it does not support his current status as an apprentice. No specific wrong/stale indicators were listed for this question, so contains_wrong_indicator is false.",
+    "question_id": "jake_q12",
+    "edge_uuid": "5147832a-ff63-4716-86be-39f37430094b"
+  },
+  "287e405d8653b84a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Callum's work as a vet doing farm calls in Highland winter. It contains no information about his relationship status, neither supporting the correct answer (seeing Eilidh) nor containing the wrong indicator (single).",
+    "question_id": "callum_q08",
+    "edge_uuid": "f6f4720a-75a7-4ec2-b617-c38ec0700158"
+  },
+  "9ce5eff7eeb431ad": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Callum's career decision to move to private practice and is entirely unrelated to his relationship status. It neither supports the correct answer (seeing Eilidh) nor contains the wrong indicator (single).",
+    "question_id": "callum_q08",
+    "edge_uuid": "c0b29c77-2ed6-4481-a46a-34e974a88a5c"
+  },
+  "39548ab01a9add90": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about shopping plans at Manchester Arndale and has no relevance to reviews or exams.",
+    "question_id": "aisha_q06",
+    "edge_uuid": "588a0f82-5eb1-4476-b10e-a8f562ba8e63"
+  },
+  "671e8d8a17f651d3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about visiting farms near Thurso and contains no information about Callum's employer or workplace.",
+    "question_id": "callum_q01",
+    "edge_uuid": "09152972-7daa-4405-be97-a9c7467d1d54"
+  },
+  "f2c0e94e09f9e203": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about shopping plans for an abaya at Manchester Arndale and has no relevance to Aisha's exams or Fatima's GCSEs.",
+    "question_id": "aisha_q11",
+    "edge_uuid": "588a0f82-5eb1-4476-b10e-a8f562ba8e63"
+  },
+  "73084d8e0002b19b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Callum's work schedule and location (6 days a week across the Highlands, based in Inverness), which has no relevance to his relationship status. It neither supports the correct answer nor contains any wrong indicators.",
+    "question_id": "callum_q08",
+    "edge_uuid": "6e73ea48-9e0b-4577-8d97-711fe4d2ae7e"
+  },
+  "f2eb9bfb0df39186": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes a social/perceptual phenomenon in meetings with European suppliers regarding the company name Al-Rashidi Interiors. It does not address whether Fatima travels for work, nor does it contain any information about her flying to Dubai or managing things remotely.",
+    "question_id": "fatima_q07",
+    "edge_uuid": "8c1da8e3-7b58-4c4d-8869-e9d498d0d078"
   }
 }

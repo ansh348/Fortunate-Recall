@@ -1,0 +1,66 @@
+{
+  "session_id": 1,
+  "persona": "billy_kootook",
+  "date": "2024-11-05",
+  "type": "critical",
+  "topic": "work introduction",
+  "facts_disclosed": ["Wildlife researcher in Tuktoyaktuk, tracks Porcupine caribou herd, 27 collared animals"],
+  "turns": [
+    {
+      "role": "user",
+      "content": "looking for info on satellite collar battery life in extreme cold. we're getting inconsistent pings from some units and I want to know if it's a temperature issue or hardware failure."
+    },
+    {
+      "role": "assistant",
+      "content": "Good question — satellite collar battery performance drops significantly in extreme cold. Most GPS/Iridium collars use lithium thionyl chloride batteries, which are rated for cold but still lose capacity below about -30°C. You can see 20-40% reduced battery life at those temperatures.\n\nA few things to consider:\n\n1. **Intermittent pings** are usually temperature-related if they happen during the coldest periods and recover when it warms up. True hardware failure tends to be permanent.\n2. **Fix rate** — are you losing GPS fixes entirely, or just the satellite upload? Those are two different systems.\n3. **Collar age** — batteries degrade over time regardless of cold. Collars older than 2 years may just be running low.\n\nWhat kind of collars are you running, and how cold is it getting where your animals are?"
+    },
+    {
+      "role": "user",
+      "content": "Lotek LiteTrack units. it's been sitting around minus 35 the last week here in Tuk. but these collars are less than a year old so battery age shouldn't be the problem."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, LiteTrack units are generally solid in cold, but -35°C is pushing the edge of what any battery likes. If the collars are less than a year old, I'd rule out battery degradation.\n\nA few possibilities at those temperatures:\n\n- **Condensation freeze** — moisture can get into the antenna connector and freeze, blocking the satellite uplink. The GPS might still be logging fixes locally even if you're not seeing pings.\n- **Duty cycle** — some LiteTracks reduce their ping rate automatically when the battery voltage drops below a threshold. The collar thinks it's dying but it's just the cold suppressing voltage temporarily.\n- **Animal behavior** — if the caribou are bedded down in snow, the antenna may be physically blocked.\n\nAre you based in Tuktoyaktuk? That's serious cold country. Are these on caribou or another species?"
+    },
+    {
+      "role": "user",
+      "content": "caribou. Porcupine herd. I do wildlife research up here and run a guiding operation on the side. we've got 27 animals collared this season and about 4 of them have gone quiet in the last 10 days."
+    },
+    {
+      "role": "assistant",
+      "content": "Porcupine herd — that's a big, important population. 4 out of 27 going quiet at the same time is concerning but the timing with the cold snap makes me think it's environmental rather than 4 simultaneous hardware failures.\n\nHere's what I'd suggest:\n\n1. **Check if the 4 silent collars are geographically clustered.** If they were all in the same area before going quiet, they might be in a terrain shadow — deep valley, heavy tree cover — that's blocking the signal, especially if the herd has moved to sheltered wintering areas.\n2. **Look at the last known positions.** If they were heading into the Richardson Mountains or heavy boreal cover, that would explain signal loss.\n3. **Wait for a warm spell.** Even a few degrees above -30 can bring voltage back up enough for the collar to resume transmitting. You may see a burst of stored fixes come through.\n4. **Contact Lotek.** They can sometimes do a remote diagnostic ping to check if the collar is alive but just not uploading.\n\nWith 27 collared animals you've got a solid dataset. Do you typically lose a few collars each winter to cold-related issues?"
+    },
+    {
+      "role": "user",
+      "content": "last winter we lost 2 for good. turned out one was predation. found the collar chewed up in spring. the other just died. this year the 4 that went quiet are spread out so it's not a terrain thing. two were near the coast, two further inland."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, if they're geographically spread out, that points more toward a common environmental factor — and the obvious one is the cold snap itself. All four hit the same temperature wall at roughly the same time.\n\nSome next steps:\n\n- **Log the dates they went silent and cross-reference with temperature data.** If they all dropped out within a day or two of the same cold front, that's your answer.\n- **Check Lotek's firmware version.** There was an issue with some LiteTrack firmware where the cold-weather voltage cutoff was set too conservatively. Collars would go into sleep mode at temperatures they should have been fine at. Lotek issued a firmware update — might be worth checking if your batch has it.\n- **Predation check** — with 2 spread near the coast, keep that in mind. Wolves and bears can take collared animals, though bears should be denned by now at -35.\n\nLosing one to predation and one to hardware last year out of a full season isn't bad. That's a pretty normal attrition rate for satellite collars in the Arctic.\n\nDo you do any aerial surveys to supplement the collar data, or is it all remote telemetry?"
+    },
+    {
+      "role": "user",
+      "content": "we do overflights in spring when the herd is calving. rest of the year it's telemetry and ground observation. I spend a lot of time out on the land following them so I supplement the collar data with direct sightings when I can. bears are denned up already so that's not a concern. wolves are always around though."
+    },
+    {
+      "role": "assistant",
+      "content": "That combination of remote telemetry and ground-truthing is really valuable — collar data can tell you where they are, but direct observation tells you what they're doing and what condition they're in. Not many researchers put in the ground time anymore.\n\nFor your immediate situation, here's my recommendation:\n\n1. **Give the 4 silent collars another 7-10 days.** If the temperature comes back up above -25, there's a good chance you'll see them come back online with stored fixes.\n2. **Email Lotek support with your collar serial numbers.** Ask about the firmware voltage threshold issue and whether they can attempt a remote wake-up command.\n3. **If any of the 4 were near wolf activity zones, flag those for priority checking on your next ground trip.**\n4. **Document everything** — dates silent, temperatures, last known positions. If you end up needing warranty replacements from Lotek, you'll want that data.\n\nThe Porcupine herd migration routes have been shifting in recent years. Are you seeing that in your collar data too?"
+    },
+    {
+      "role": "user",
+      "content": "the routes are moving. that's half the reason we collar them. the traditional calving grounds are still used but the timing is off and the paths getting there are different than 10 years ago. hard to get anyone down south to pay attention to the data though."
+    },
+    {
+      "role": "assistant",
+      "content": "That's frustrating but unfortunately common — field researchers collecting critical data and the decision-makers hundreds or thousands of kilometers away not engaging with it. Shifting migration timing and routes is exactly the kind of data that should be driving policy.\n\nA few thoughts on getting more visibility for your work:\n\n- **Publish the route shift data.** Even a short technical note in Arctic or Rangifer journal would put it in the scientific record where it's harder to ignore.\n- **Collaborate with other Porcupine herd researchers** — there are groups in Yukon and Alaska tracking the same population. Combined datasets across jurisdictions carry more weight.\n- **Community-based monitoring reports** — if Tuktoyaktuk has a hunters and trappers committee, a joint report from researchers and traditional land users tends to get more political traction than science alone.\n\nYou're sitting on important long-term data. 27 collared animals across shifting routes is exactly the kind of evidence that builds a case over time."
+    },
+    {
+      "role": "user",
+      "content": "good points. the HTC here is supportive. I'll try the Lotek firmware thing and wait on the 4 collars. probably just the cold. thanks."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds like a solid plan. I'd bet on the cold too, especially with all four dropping out around the same time. Once it warms up a few degrees those collars will likely start pinging again with a backlog of stored positions.\n\nGood luck with the rest of the season. 27 collared animals through an Arctic winter is no small operation — hope the data keeps coming in. Feel free to come back if those collars stay quiet or if you need help with the Lotek diagnostics."
+    }
+  ]
+}

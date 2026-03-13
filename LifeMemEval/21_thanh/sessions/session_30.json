@@ -1,0 +1,74 @@
+{
+  "session_id": 30,
+  "persona": "thanh_nguyen",
+  "date": "2026-01-30",
+  "type": "filler",
+  "topic": "Lan wants to expand stall — asking about small business loans",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "friend my wife want to make her stall bigger. business going good now, she need more space. she ask me about loan from bank but i dont know anything about bank loan, you know"
+    },
+    {
+      "role": "assistant",
+      "content": "That's great that business is going well enough to expand! In Vietnam, there are several options for small loans, especially for rural households. What kind of expansion is she thinking about — just a bigger roof, or more equipment too?"
+    },
+    {
+      "role": "user",
+      "content": "bigger roof yes. more table for customer to sit. and she want refrigerator, you know. to keep stock fresh. right now everything sit out. hot day, product go bad fast. she think maybe need 30 million dong total"
+    },
+    {
+      "role": "assistant",
+      "content": "30 million dong is a reasonable amount for that kind of expansion. The refrigerator especially makes sense — it'll reduce waste and customers trust what they see kept cold. Does she have a formal business registration, or is it more informal?"
+    },
+    {
+      "role": "user",
+      "content": "no registration. just roadside, you know. everybody do it here, no paper. she worry maybe bank not give loan without paper"
+    },
+    {
+      "role": "assistant",
+      "content": "Without formal registration, a standard commercial bank loan is hard to get. But there are other options that work well for informal businesses:\n\nThe Vietnam Bank for Social Policies — VBSP — is a government bank for rural households. Low interest, around 6-7% per year. They don't always require business registration.\n\nAgribank also has programs for agricultural families. Your farm could actually help support the application since you're an established household.\n\nThere are also microfinance groups like TYM or CEP that operate in the delta. They specialize in small loans for informal businesses."
+    },
+    {
+      "role": "user",
+      "content": "VBSP. i hear that name before. some people in village get loan from them. what about interest, friend? i dont want pay too much, you know. interest eat all the profit"
+    },
+    {
+      "role": "assistant",
+      "content": "You're right to worry about that. Here's the rough comparison:\n\nVBSP is the cheapest — about 6-7% per year. For 30 million over 2 years, that's roughly 1.3-1.4 million dong monthly repayment, with about 2-2.5 million total interest over the whole loan.\n\nAgribank is slightly higher, 7-9% per year. Microfinance is 8-12%, easier to qualify but more expensive. And private lenders — avoid those completely. 20-30% interest."
+    },
+    {
+      "role": "user",
+      "content": "private lender no way. i know people who get in trouble with private lender, you know. lose their land. VBSP sound good. 1.3 million per month. i think her stall can cover that. what document we need?"
+    },
+    {
+      "role": "assistant",
+      "content": "Good — stay away from private lenders. For VBSP, the most important document is your land title certificate — the red book. Do you have that? Also household registration and ID cards for both of you."
+    },
+    {
+      "role": "user",
+      "content": "yes we have red book. household registration, ID card, all that we have. so just bring those paper to VBSP office?"
+    },
+    {
+      "role": "assistant",
+      "content": "Almost — but the best first step is actually to go to your local People's Committee and ask about VBSP loan programs in your commune. They can tell you which programs you qualify for and sometimes help with the application. Then visit the VBSP branch with the red book, IDs, and household registration.\n\nAsk specifically about household production loans — that's the category that fits best. And bring your wife along. Many of these programs actually prioritize women borrowers, so having her there as the applicant could help."
+    },
+    {
+      "role": "user",
+      "content": "bring my wife. yes she should go. she the one who know the business, you know. she know how much she sell, what she need. i just know shrimp hah. she is smarter than me about this thing"
+    },
+    {
+      "role": "assistant",
+      "content": "Ha — you each have your expertise. She knows the stall business, you know the ponds. That's a good partnership. Having her explain the business directly to the loan officer will be more convincing than you trying to explain it secondhand.\n\nThe refrigerator is the smartest part of the expansion by the way. Less spoiled stock means more profit per day. It'll probably pay for itself faster than the bigger roof."
+    },
+    {
+      "role": "user",
+      "content": "she say same thing about refrigerator. customer trust more when they see product in cold, not sitting in sun, you know. okay friend thank you. i tell her tonight. she will be happy. we go to People Committee next week. bye bye"
+    },
+    {
+      "role": "assistant",
+      "content": "Good plan — People's Committee first, then VBSP with all the documents. She'll have that refrigerator and bigger roof before you know it. Good luck to both of you!"
+    }
+  ]
+}

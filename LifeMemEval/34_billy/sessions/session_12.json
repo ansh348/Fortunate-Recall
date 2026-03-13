@@ -1,0 +1,50 @@
+{
+  "session_id": 12,
+  "persona": "billy_kootook",
+  "date": "2025-04-30",
+  "type": "filler",
+  "topic": "snowmobile carburetor repair",
+  "facts_disclosed": [],
+  "turns": [
+    {
+      "role": "user",
+      "content": "need a hand with a carburetor issue. snowmobile is bogging down at low rpm and flooding when I give it throttle. pretty sure the carb needs a rebuild."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like classic carburetor trouble — bogging at low RPM and flooding under throttle usually points to a stuck or worn needle valve, or the float height is off. Could also be a deteriorated float.\n\nWhat's the make and engine on the sled? That'll help me point you to the right rebuild kit and part numbers."
+    },
+    {
+      "role": "user",
+      "content": "it's a Mikuni TM series carb. 38mm. the needle valve seat looks worn when I pulled it apart. float seems okay but I want to replace the whole kit while I'm in there."
+    },
+    {
+      "role": "assistant",
+      "content": "Good call on doing the full rebuild while it's apart. For a Mikuni TM38 flat slide carburetor, you'll want:\n\n- **Rebuild kit**: Mikuni MK-TM38 — includes needle valve, seat, gaskets, O-rings, and float bowl gasket\n- **Needle valve assembly**: Mikuni N149.040 (if you want to order it separately as a spare)\n- **Pilot jet**: stock is usually 22.5 or 25 depending on your setup — worth checking and having a spare\n- **Main jet**: check your current size before ordering. Mikuni hex jets, size depends on altitude and temperature tuning\n\nIf the needle valve seat is visibly worn, that's almost certainly your flooding issue. Fuel gets past the worn seat and overwhelms the float chamber."
+    },
+    {
+      "role": "user",
+      "content": "that's what I thought. seat has a groove in it. fuel just pushes right past. I'll order the MK-TM38 kit. any tricks for setting the float height on these? I've done it before but it's been a while."
+    },
+    {
+      "role": "assistant",
+      "content": "For the TM38, the standard float height is typically **22mm** measured from the gasket surface of the float bowl (without the gasket) to the top of the float when the carb body is inverted and the float tang is just resting on the needle valve — not depressing the spring.\n\nTips:\n- Hold the carb body upside down and let gravity close the needle valve naturally. Don't push it.\n- Measure with a caliper from the mating surface down to the highest point of the float.\n- If it's off, bend the tang gently. Small adjustments — 1mm of tang movement changes fuel level significantly.\n- After reassembly, let it sit with fuel on for a few minutes and check for weeping at the float bowl gasket. New gasket should seal clean but worth confirming."
+    },
+    {
+      "role": "user",
+      "content": "22mm. good. I'll write that down. last question. the slide is moving a bit stiff. should I grease it or just clean the bore?"
+    },
+    {
+      "role": "assistant",
+      "content": "Don't grease it — grease attracts dirt and gums up over time, especially in cold conditions. Just clean the bore thoroughly with carb cleaner and make sure there's no varnish or residue built up. Check the slide itself for any burrs or scoring.\n\nA very light application of silicone spray on the slide is fine if it's still stiff after cleaning, but most of the time a clean bore and a clean slide move freely on their own. If it's still binding after that, the slide may be slightly worn or the carb body bore might have a scratch — hold it up to light and look through."
+    },
+    {
+      "role": "user",
+      "content": "makes sense. carb cleaner and check for scoring. I'll get that kit ordered. thanks."
+    },
+    {
+      "role": "assistant",
+      "content": "Sounds good. Once you get the rebuild done and the float set, it should run clean again. Good luck with the fix."
+    }
+  ]
+}
