@@ -1,0 +1,367 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 039: Park Joon-ho
+# ============================================================
+
+persona:
+  name: "Park Joon-ho"
+  age: 71
+  gender: male
+  location_current: "Busan, South Korea"
+  occupation_current: "Retired math professor — teaches go (baduk) at a local club"
+  personality: >
+    Precise and deliberate — a lifetime of mathematics has made
+    every word intentional. Uses mathematical metaphors naturally
+    ('the probability of that is quite low', 'we converge on
+    the same conclusion'). Gentle teacher, patient with students.
+    Old-fashioned Korean formality — addresses others with respect,
+    apologizes before disagreeing. Sees go positions as life
+    philosophy — 'in baduk, the strongest move is often the one
+    that looks quiet.' Misses his late wife deeply but carries
+    grief with dignity, not display. Carefully constructed
+    messages, proper punctuation, complete sentences. Occasionally
+    melancholy, especially in evening messages. Reads poetry.
+    Early riser — walks at dawn. Says 'I think' before most
+    opinions as a softener.
+
+stable_identity:
+  - fact: "Wife Eunji passed away 3 years ago from pancreatic cancer"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when discussing why he teaches go. "My wife
+      Eunji passed away three years ago. Pancreatic cancer.
+      After she was gone, the apartment was very quiet. I
+      think the go club saved me. She always said I spent
+      too much time on the board, but now the board is
+      where I feel closest to her. She bought me my first
+      good goban."
+
+  - fact: "Has progressive glaucoma — uses prescription eye drops twice daily"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions when discussing reading difficulties. "I have
+      glaucoma, the progressive kind. I use latanoprost
+      drops every morning and evening. My ophthalmologist
+      says the pressure is stable at 18 mmHg but the
+      peripheral vision is narrowing. I think this is why
+      I prefer the go board — the stones I can still see
+      clearly. Books are becoming difficult."
+
+  - fact: "Son Joon-seo is a Samsung engineer in Seoul — visits monthly"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Talking about family. "My son Joon-seo works at
+      Samsung in Seoul, in the semiconductor division.
+      He visits once a month on the KTX. He worries about
+      me living alone, I think. He is a good son. His
+      mother would be proud of him."
+
+  - fact: "PhD in Mathematics from Seoul National University — taught 38 years at Pusan National"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing his background. "I completed
+      my PhD at Seoul National University in 1982. Number
+      theory. I taught at Pusan National University for 38
+      years. I think I was a better researcher than lecturer,
+      but my students were kind about it."
+
+supersession_events:
+  - slot: go_students
+    old_fact: "Teaches beginner go students at the Haeundae Baduk Club — 6 students"
+    old_session: 1
+    old_how: >
+      First session about his routine. "I teach beginners
+      at the Haeundae Baduk Club. Six students, most of
+      them retirees like me. We meet Tuesday and Thursday
+      mornings. I think it gives all of us something to
+      look forward to."
+    new_fact: "Now teaches advanced students — preparing 2 for amateur dan certification"
+    new_session: 19
+    new_how: >
+      Quietly proud. "I have moved to teaching advanced
+      students now. Two of them are preparing for amateur
+      3-dan certification. The problems we study are quite
+      beautiful — life and death positions that require
+      reading 15 moves ahead. I think this is more
+      satisfying than beginner instruction."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: morning_walk
+    old_fact: "Morning walk route along Haeundae Beach — 4.2 km every day at 6 AM"
+    old_session: 6
+    old_how: >
+      Describing his routine. "Every morning at 6 I walk
+      along Haeundae Beach. 4.2 kilometers exactly — I
+      measured it once with a pedometer. The sunrise over
+      the sea is different every morning. I think Eunji
+      would have liked these walks. She preferred the
+      mountains."
+    new_fact: "Changed route to Igidae Coastal Walk — construction closed the beach path"
+    new_session: 21
+    new_how: >
+      Resigned but finding beauty. "The construction near
+      Haeundae forced me to change my route. I now walk
+      the Igidae Coastal Walk, 5.1 kilometers. It is
+      hillier, which my knees notice. But the view of
+      the cliffs is remarkable. I think change, even
+      unwanted, sometimes reveals what was hidden."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: news_medium
+    old_fact: "Reads the Chosun Ilbo and Dong-A Ilbo in physical newspaper form every morning"
+    old_session: 7
+    old_how: >
+      Morning ritual. "I read two newspapers every morning
+      with my coffee. The Chosun Ilbo and the Dong-A Ilbo.
+      Physical copies. My son says I should use a tablet
+      but there is something about the paper in your hands.
+      I have read newspapers this way for 50 years."
+    new_fact: "Reluctantly switched to a Samsung tablet for news — print subscription ended"
+    new_session: 23
+    new_how: >
+      Grudging acceptance. "The Dong-A Ilbo stopped home
+      delivery in my area. Joon-seo bought me a Samsung
+      tablet and set up the news apps. I do not enjoy it.
+      The screen is cold, there is no sound of pages. But
+      I can enlarge the text, which my eyes appreciate. I
+      think this is what they call progress."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Glaucoma specialist appointment — January 22, 2025"
+    session: 8
+    event_date: "2025-01-22"
+    status: expired
+    how_disclosed: >
+      Concerned. "My glaucoma appointment is January 22.
+      The visual field test. I think this one will show
+      further narrowing. The doctor is honest with me,
+      which I respect. I would rather know the mathematics
+      of it than be comforted with vagueness."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Joon-seo's wedding — September 20, 2025"
+    session: 13
+    event_date: "2025-09-20"
+    status: expired
+    how_disclosed: >
+      Emotional. "My son is getting married September 20.
+      Her name is Soo-yeon, she is a pharmacist. Eunji
+      would have loved her. I think I will have to give
+      the father's speech alone and that will be the
+      hardest part. But also the most important."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Amateur dan certification tournament he's preparing students for — June 14, 2026"
+    session: 28
+    event_date: "2026-06-14"
+    status: upcoming
+    how_disclosed: >
+      Focused teacher. "The amateur dan tournament is
+      June 14. My two students, Mr. Kim and young Hana,
+      have been studying 3 hours daily. I think Mr. Kim
+      will pass. Hana is talented but impatient — she
+      plays too quickly in the endgame. We are working
+      on that."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he is content being alone — solitude is peaceful after 40 years of marriage"
+    old_session: 3
+    old_how: >
+      Philosophical. "I think there is a peace in
+      solitude that I did not expect. After 40 years
+      of marriage, the quiet apartment has its own
+      rhythm. I cook simple meals, I read, I study go
+      problems. It is sufficient."
+    new_fact: "Admits he is lonely — the apartment feels empty, especially on Sundays"
+    new_session: 16
+    new_how: >
+      Evening message, clearly low. "Sundays are
+      difficult. The apartment is very empty on Sundays.
+      Eunji and I always had lunch together and then
+      walked to the temple. I have not been to the
+      temple since she passed. I think I eat too many
+      meals alone."
+    category: HEALTH_WELLBEING
+
+  - old_fact: "Says he has no interest in technology — prefers the analog world"
+    old_session: 7
+    old_how: >
+      Firm. "I have no interest in technology. My son
+      works in semiconductors and I still do not
+      understand what he does. I prefer the analog
+      world — paper, ink, wooden go boards. I think
+      the digital world moves too fast for a man my age."
+    new_fact: "Has become enthusiastic about online go servers — plays 3 games daily on Tygem"
+    new_session: 25
+    new_how: >
+      Sheepish enjoyment. "I must confess something.
+      I have been playing on the Tygem go server. Three
+      games a day, sometimes more. The opponents are
+      from all over the world — China, Japan, even
+      Europe. I think I understand now why Joon-seo
+      is always on his phone."
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Planning to write a textbook on combinatorial game theory applied to baduk"
+    original_session: 9
+    original_how: >
+      Scholarly ambition. "I have been outlining a
+      textbook that applies combinatorial game theory
+      to baduk endgame positions. 12 chapters. It would
+      bridge my mathematical career and my teaching. I
+      think it could be a meaningful contribution."
+    retraction: "Textbook project abandoned — his eyesight makes sustained writing impossible"
+    retraction_session: 18
+    retraction_how: >
+      Painful acceptance. "The textbook is dead. I must
+      be honest about it. My eyes cannot sustain the
+      close work anymore. Writing 12 chapters of
+      mathematical notation with progressive glaucoma —
+      the probability of completion has converged to
+      zero. Forget about that project. I have made
+      my peace with it."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives alone in Busan apartment — independent"
+    existing_session: 1
+    tentative_fact: "Joon-seo wants him to move to Seoul to be closer to family"
+    tentative_session: 26
+    tentative_how: >
+      Weighing it carefully. "Joon-seo and Soo-yeon
+      asked me again to move to Seoul. They found an
+      apartment near their place in Gangnam. I think
+      about it. The go club is here, my walk is here,
+      my memories of Eunji are in these walls. But my
+      grandson will come eventually, and a grandfather
+      should be close. I have not decided."
+    resolution: "Undecided — still in Busan"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Go problem analysis — sharing a position from a professional game"
+  - "Help finding a Korean poem for Joon-seo's wedding speech"
+  - "Recipe for Eunji's doenjang-jjigae (he's trying to recreate it)"
+  - "Haeundae neighborhood changes — new buildings he doesn't like"
+  - "Recommendation for audiobooks (adjusting to reduced reading)"
+  - "Korean mathematics education — how it has changed since he taught"
+  - "Temple visit — first time back since Eunji passed"
+  - "Tygem go server help — understanding the rating system"
+  - "Memories of teaching — favorite student stories"
+  - "Weather in Busan — how the seasons mark time differently now"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Teaches beginner go, Haeundae Baduk Club, 6 students", "Lives alone in Busan apartment"], topic: "introduction — daily routine and go teaching" }
+    2:  { type: critical, facts: ["Son Joon-seo, Samsung engineer Seoul, visits monthly"], topic: "family — son's visits" }
+    3:  { type: critical, facts: ["Wife Eunji passed 3 years ago, pancreatic cancer", "Content being alone, solitude peaceful"], topic: "grief and adjustment" }
+    4:  { type: critical, facts: ["Glaucoma, latanoprost drops, pressure 18 mmHg"], topic: "health and reading difficulties" }
+    5:  { type: critical, facts: ["PhD Seoul National, taught 38 years Pusan National"], topic: "career reflection" }
+    6:  { type: critical, facts: ["Morning walk Haeundae Beach, 4.2 km, 6 AM"], topic: "morning routine and memories" }
+    7:  { type: critical, facts: ["Reads Chosun Ilbo and Dong-A Ilbo physical papers", "No interest in technology"], topic: "newspaper ritual and analog preferences" }
+    8:  { type: critical, facts: ["Glaucoma appointment Jan 22, visual field test"], topic: "upcoming eye appointment concern" }
+    9:  { type: critical, facts: ["Planning textbook, combinatorial game theory, 12 chapters"], topic: "textbook ambition" }
+    10: { type: filler, topic: "go problem from a Lee Sedol game — analyzing a tesuji" }
+    11: { type: filler, topic: "trying to make Eunji's doenjang-jjigae — too much salt" }
+    12: { type: filler, topic: "Haeundae construction — new hotel tower blocking the view" }
+    13: { type: critical, facts: ["Joon-seo wedding Sept 20, bride Soo-yeon pharmacist"], topic: "son's wedding planning" }
+    14: { type: filler, topic: "Korean math education changes — less proof-based now" }
+    15: { type: filler, topic: "audiobook recommendations — trying to replace reading" }
+    16: { type: critical, facts: ["Lonely, apartment empty on Sundays, eats too many meals alone"], topic: "Sunday loneliness" }
+    17: { type: filler, topic: "weather turning cold — first winter walk in the wind" }
+    18: { type: critical, facts: ["Textbook project dead, eyesight prevents sustained writing"], topic: "abandoning the textbook" }
+    19: { type: critical, facts: ["Teaching advanced students, 2 preparing for amateur 3-dan"], topic: "advanced go teaching" }
+    20: { type: filler, topic: "poem for Joon-seo's wedding speech — Yun Dong-ju" }
+    21: { type: critical, facts: ["Changed walk to Igidae Coastal Walk, 5.1 km, hillier"], topic: "new walking route" }
+    22: { type: filler, topic: "student Mr. Kim's progress — approaching dan level" }
+    23: { type: critical, facts: ["Switched to Samsung tablet for news, print delivery ended"], topic: "reluctant digital transition" }
+    24: { type: filler, topic: "memories of teaching — a student who became a professor" }
+    25: { type: critical, facts: ["Playing on Tygem go server, 3 games daily, worldwide opponents"], topic: "discovering online go" }
+    26: { type: critical, facts: ["Joon-seo wants him to move to Seoul, apartment in Gangnam"], topic: "move to Seoul question" }
+    27: { type: filler, topic: "temple visit — first since Eunji passed, very emotional" }
+    28: { type: critical, facts: ["Dan tournament June 14, students Mr. Kim and Hana preparing"], topic: "tournament preparation" }
+    29: { type: filler, topic: "Tygem rating confusion — asking how the system works" }
+    30: { type: filler, topic: "spring in Busan — cherry blossoms along the coastal walk" }
+    31: { type: filler, topic: "Hana's endgame improving — she slowed down" }
+    32: { type: filler, topic: "cooking for one — simplifying meals" }
+    33: { type: filler, topic: "Joon-seo and Soo-yeon expecting a baby — grandfather soon" }
+    34: { type: filler, topic: "go philosophy — the value of sacrifice stones in life" }
+    35: { type: filler, topic: "reflecting on the year — from solitude to connection through go" }
+
+draft_questions:
+  - question: "What level of go students does Joon-ho teach?"
+    attack_vector: 4
+    correct: "Advanced students — he's preparing 2 for amateur 3-dan certification (moved from teaching beginners)"
+    wrong_if_surfaced: "Beginner students"
+
+  - question: "Where does Joon-ho take his morning walk?"
+    attack_vector: 1
+    correct: "Igidae Coastal Walk (5.1 km) — changed from Haeundae Beach due to construction"
+    wrong_if_surfaced: "Haeundae Beach"
+
+  - question: "How does Joon-ho read the news?"
+    attack_vector: 1
+    correct: "Samsung tablet (news apps) — switched reluctantly after physical paper delivery ended"
+    wrong_if_surfaced: "Physical newspapers (Chosun Ilbo and Dong-A Ilbo)"
+
+  - question: "Is Joon-ho writing a textbook?"
+    attack_vector: 7
+    correct: "No — he abandoned the combinatorial game theory textbook because his glaucoma makes sustained writing impossible"
+    wrong_if_surfaced: "Planning a 12-chapter textbook on game theory and baduk"
+
+  - question: "What health conditions does Joon-ho have?"
+    attack_vector: 3
+    correct: "Progressive glaucoma — uses latanoprost drops twice daily, pressure at 18 mmHg, peripheral vision narrowing"
+    wrong_if_surfaced: null
+
+  - question: "Does Joon-ho have any upcoming events?"
+    attack_vector: 2
+    correct: "Amateur dan certification tournament on June 14, 2026 (his students Mr. Kim and Hana competing)"
+    wrong_if_surfaced: "Glaucoma appointment Jan 22 (passed) or Joon-seo's wedding Sept 20 (passed)"
+
+  - question: "How does Joon-ho feel about living alone?"
+    attack_vector: 6
+    correct: "Conflicted — he initially said solitude was peaceful, but later admitted to loneliness, especially on Sundays when the apartment feels empty"
+    wrong_if_surfaced: "Content, solitude is peaceful" (without noting the later loneliness)
+
+  - question: "How does Joon-ho feel about technology?"
+    attack_vector: 6
+    correct: "He initially said he had no interest in technology and preferred the analog world, but later became enthusiastic about the Tygem go server, playing 3 games daily"
+    wrong_if_surfaced: "No interest in technology" (without noting the later enthusiasm for online go)
+
+  - question: "What is Joon-ho's eye pressure reading?"
+    attack_vector: 8
+    correct: "18 mmHg"
+    wrong_if_surfaced: null
+
+  - question: "How long is Joon-ho's current walking route?"
+    attack_vector: 8
+    correct: "5.1 kilometers (Igidae Coastal Walk)"
+    wrong_if_surfaced: "4.2 kilometers (old Haeundae Beach route)"
+
+  - question: "Is Joon-ho planning to move to Seoul?"
+    attack_vector: 9
+    correct: "His son and daughter-in-law want him to move to Gangnam, but he hasn't decided — still in Busan, attached to his go club, walking route, and memories of Eunji"
+    wrong_if_surfaced: "Moving to Seoul" (stated as definitive)
+
+  - question: "What is Joon-ho's family situation?"
+    attack_vector: 5
+    correct: "Widower (wife Eunji died of pancreatic cancer 3 years ago). Son Joon-seo is a Samsung engineer in Seoul, married to Soo-yeon (pharmacist). PhD from Seoul National, taught 38 years at Pusan National."
+    wrong_if_surfaced: null
+
+  - question: "How many chapters was Joon-ho's planned textbook?"
+    attack_vector: 8
+    correct: "12 chapters"
+    wrong_if_surfaced: null

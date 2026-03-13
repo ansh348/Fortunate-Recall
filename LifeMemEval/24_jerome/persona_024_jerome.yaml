@@ -1,0 +1,382 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 024: Jerome Baptiste
+# ============================================================
+
+persona:
+  name: "Jerome Baptiste"
+  age: 35
+  gender: male
+  location_current: "Atlanta, GA (home base)"
+  occupation_current: "Long-haul truck driver"
+  personality: >
+    Road philosopher who thinks out loud. Uses voice-to-text so
+    messages are long rambly streams with almost no punctuation
+    and occasional weird autocorrect. Haitian Creole phrases slip
+    in naturally — 'sa k pase' (what's up), 'pa gen pwoblem'
+    (no problem), 'bondye bon' (God is good), 'mwen fatige'
+    (I'm tired). Listens to podcasts constantly and references
+    them mid-thought. Lonely on the road but fiercely independent
+    about it. Talks about his daughter Naomi like she hung the
+    moon. Late night messages from truck stops. Never uses
+    capital letters or periods, commas are rare, just flows.
+
+stable_identity:
+  - fact: "Came from Port-au-Prince to Miami at age 12 after the 2010 earthquake"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Opens up at night. "i was 12 when we left port au prince
+      after the earthquake you know everything was gone our house
+      was just rubble my mom she got us to miami on a boat that
+      had no business being on the ocean sa k pase thats life
+      right you survive and you keep going i still dream about
+      it sometimes when im driving through the night"
+
+  - fact: "Has high cholesterol — supposed to take statins but doesn't consistently"
+    session: 5
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Brushing it off. "so the doctor at the truck stop clinic
+      said my cholesterol is at 267 which is bad i guess he
+      gave me atorvastatin 40mg i take it sometimes but man
+      when youre eating at pilot and loves truck stop every
+      night its hard to eat healthy you know they dont exactly
+      have a salad bar at 2am in mississippi"
+
+  - fact: "Daughter Naomi is 9 — lives with her mother Danielle in Newark, New Jersey"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Missing her. "naomi is 9 now can you believe that she
+      lives with her mom danielle up in newark new jersey i
+      try to see her every 3 weeks when my route goes through
+      the northeast but sometimes its 5 or 6 weeks and that
+      kills me you know she drew me a picture of my truck and
+      put it on her wall bondye bon she is the best thing i
+      ever did"
+
+  - fact: "Has CDL plus some community college credits — studied business but didn't finish"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Reflecting on choices. "i did some community college in
+      miami after high school business classes you know but i
+      couldnt afford to keep going and working at the same time
+      so i got my cdl and started driving and honestly the money
+      was better than anything i was going to get with a business
+      degree from miami dade so here we are 12 years on the road"
+
+supersession_events:
+  - slot: trucking_company
+    old_fact: "Drives for Southeastern Freight Lines — based out of Atlanta terminal"
+    old_session: 1
+    old_how: >
+      Introducing his work. "i drive for southeastern freight
+      lines out of the atlanta terminal been there 4 years
+      now the pay is okay about 68 cents per mile but the
+      routes are mostly southeast which means i dont get up
+      to see naomi as much as i want you know"
+    new_fact: "Switched to ABF Freight — better routes that go through the Northeast"
+    new_session: 16
+    new_how: >
+      Excited about it. "so i switched companies man i am at
+      abf freight now and the routes are way better i get
+      northeast runs like every other week which means i can
+      swing through newark and see naomi the pay is 74 cents
+      per mile too so thats a raise plus the benefits are
+      better my mom was telling me jerome you need insurance
+      with your cholesterol and she is right you know"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: truck
+    old_fact: "Drives a 2019 Freightliner Cascadia — company truck"
+    old_session: 1
+    old_how: >
+      Talking about his rig. "i drive a 2019 freightliner
+      cascadia its a company truck not mine but she runs
+      good 450 horsepower detroit engine i named her marie
+      after my grandmother back in haiti because she is
+      reliable and never quits you know"
+    new_fact: "Now driving a 2024 Peterbilt 579 — better sleeper cab"
+    new_session: 20
+    new_how: >
+      Happy with the upgrade. "abf gave me a new peterbilt
+      579 2024 model the sleeper cab is like a hotel room
+      compared to the old freightliner i got a real mattress
+      a little fridge and the ride is so smooth man i havent
+      named her yet maybe ill let naomi pick a name when i
+      see her next week"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 4
+
+  - slot: load_type
+    old_fact: "Hauls flatbed loads — mostly construction materials and steel"
+    old_session: 6
+    old_how: >
+      Describing the work. "i do flatbed right now mostly
+      construction stuff steel beams lumber whatever needs
+      to go somewhere the tarping is the worst part you know
+      strapping down a load in the rain at 5am in february
+      is not what they show you in the cdl school commercial"
+    new_fact: "Switched to refrigerated loads — food transport, less physical but temperature-sensitive"
+    new_session: 22
+    new_how: >
+      Practical upgrade. "i switched to reefer loads now
+      refrigerated food transport its way less physical
+      than flatbed no more tarping in the rain but you
+      gotta watch the temperature like a hawk if you let
+      it drift even 3 degrees they can reject the whole
+      load and thats like $40,000 worth of chicken or
+      whatever sitting on a dock going bad you know the
+      pay is better though about 6 cents more per mile"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "CDL medical recertification — March 28, 2025"
+    session: 9
+    event_date: "2025-03-28"
+    status: expired
+    how_disclosed: >
+      Anxious about it. "my cdl medical card expires march
+      28 i gotta go get the physical and im worried about
+      the cholesterol thing because if the doctor flags it
+      i could have issues with my certification you know
+      i been taking the statins more regularly this month
+      just to get the numbers down for the test"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Naomi's school play — May 16, 2025"
+    session: 11
+    event_date: "2025-05-16"
+    status: expired
+    how_disclosed: >
+      Determined to be there. "naomi is in the school play
+      may 16 she is playing a tree which doesnt sound like
+      a big deal but she has 3 lines and she has been
+      practicing them every time we facetime i already
+      told dispatch i need that day off no matter what i
+      am not missing my babys first play you know"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Naomi's 10th birthday — September 14, 2026"
+    session: 27
+    event_date: "2026-09-14"
+    status: upcoming
+    how_disclosed: >
+      Planning already. "naomi turns 10 september 14 and
+      i want to do something big for her you know double
+      digits thats a milestone i been saving maybe $800
+      so far i want to take her to disney in orlando just
+      me and her danielle said thats fine i already been
+      looking at tickets and hotel like 3 days would be
+      about $2,200 total so i need to save more but i got
+      time bondye bon"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he loves the independence of trucking — wouldn't trade it for an office job"
+    old_session: 7
+    old_how: >
+      Passionate about it. "man i love this life you know
+      no boss looking over my shoulder no cubicle no office
+      politics just me and the road and my podcasts i see
+      the whole country every month sunrises over the
+      appalachians sunsets in west texas you couldnt pay
+      me enough to sit in an office"
+    new_fact: "Looking into local CDL jobs in Atlanta — tired of being away from everything"
+    new_session: 24
+    new_how: >
+      Worn down. "i been looking at local driving jobs in
+      atlanta you know like city delivery or yard work
+      where you go home every night because this over
+      the road thing is lonely man like really lonely
+      i missed naomis last birthday i missed thanksgiving
+      i eat alone every night at some truck stop and my
+      knees hurt and my back hurts and im only 35 this
+      cant be the rest of my life you know"
+    category: PROJECTS_ENDEAVORS
+
+  - old_fact: "Loves podcasts — says they keep him sharp and educated on the road"
+    old_session: 4
+    old_how: >
+      Enthusiastic. "podcasts are my university man i
+      listen to maybe 6 hours a day i do history ones
+      science ones business ones i probably learned more
+      from podcasts than i did in community college for
+      real and the true crime ones keep me awake on
+      those 3am stretches through alabama"
+    new_fact: "Started driving in silence more — podcasts feel like noise now"
+    new_session: 28
+    new_how: >
+      Quieter mood. "lately i been driving without the
+      podcasts on you know just silence i used to need
+      something playing all the time but now sometimes
+      the quiet is better i think too much noise was
+      keeping me from actually thinking about my life
+      and what i want you know"
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Saving to buy his own truck — wants to be an owner-operator within 2 years"
+    original_session: 8
+    original_how: >
+      Ambitious plan. "im saving up to buy my own rig
+      man thats the dream owner operator you keep all
+      the money instead of driving someone elses truck
+      for their profit a good used truck is maybe $85,000
+      i got about $12,000 saved up already in 2 years
+      i should be there you know"
+    retraction: "Owner-operator plan is dead — insurance and fuel costs make it impossible"
+    retraction_session: 21
+    retraction_how: >
+      Reality check. "the owner operator thing is off the
+      table man forget about it i did the math for real
+      this time insurance is $14,000 a year fuel is insane
+      maintenance is on you and one bad month and youre
+      bankrupt i talked to a guy at the truck stop who
+      went owner operator and hes making less than me
+      after expenses its not worth the risk especially
+      with naomi depending on me"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Home base is Atlanta, GA — has a studio apartment near the terminal"
+    existing_session: 1
+    tentative_fact: "Thinking about moving to New Jersey to be closer to Naomi"
+    tentative_session: 26
+    tentative_how: >
+      Torn. "i been thinking about maybe moving up to
+      jersey you know like near newark so i could see
+      naomi more even on my days off but atlanta is way
+      cheaper and my cousin marc is here and the haitian
+      community in decatur is my people you know plus if
+      i get a local driving job it would be here not there
+      so i dont know man i go back and forth on it"
+    resolution: "Undecided — still based in Atlanta"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Podcast recommendation — just finished a series on the Haitian Revolution"
+  - "Truck stop food ranking — best and worst across the Southeast"
+  - "FaceTime with Naomi — she wants to be a veterinarian this week"
+  - "Rain driving on I-75 at night — scariest moments on the road"
+  - "Haitian Creole phrases — teaching AI some words"
+  - "Missing his mom's cooking — griot and pikliz recipe attempts"
+  - "Truck maintenance — weird noise from the reefer unit"
+  - "Football talk — Atlanta Falcons always disappointing him"
+  - "Country music discovery — didnt expect to like it but here we are"
+  - "Sending money to family in Haiti — Western Union fees complaint"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Drives for Southeastern Freight Lines, Atlanta terminal, 68 cents/mile", "2019 Freightliner Cascadia named Marie", "Studio apartment in Atlanta near terminal"], topic: "work and truck introduction" }
+    2:  { type: critical, facts: ["Daughter Naomi 9, lives with mom Danielle in Newark NJ, sees her every 3-6 weeks"], topic: "missing Naomi" }
+    3:  { type: critical, facts: ["Came from Port-au-Prince at 12 after 2010 earthquake"], topic: "origin story late night driving" }
+    4:  { type: critical, facts: ["CDL plus some community college (Miami Dade, business, didnt finish)", "Loves podcasts, 6 hours/day"], topic: "education and podcasts" }
+    5:  { type: critical, facts: ["Cholesterol 267, atorvastatin 40mg, inconsistent"], topic: "truck stop clinic visit" }
+    6:  { type: critical, facts: ["Hauls flatbed — construction materials and steel"], topic: "describing flatbed work" }
+    7:  { type: critical, facts: ["Loves trucking independence, wouldnt trade for office job"], topic: "road philosophy" }
+    8:  { type: critical, facts: ["Saving for own truck, $85,000 target, $12,000 saved, 2-year plan"], topic: "owner-operator dream" }
+    9:  { type: critical, facts: ["CDL medical recertification March 28 2025"], topic: "medical card anxiety" }
+    10: { type: filler, topic: "podcast recommendation — Haitian Revolution series" }
+    11: { type: critical, facts: ["Naomi school play May 16, she plays a tree with 3 lines"], topic: "planning to see the play" }
+    12: { type: filler, topic: "truck stop food ranking — worst biscuits and gravy in Georgia" }
+    13: { type: filler, topic: "rain driving on I-75 at 3am — scary story" }
+    14: { type: filler, topic: "FaceTime with Naomi — she wants to be a vet now" }
+    15: { type: filler, topic: "trying to cook griot in the truck sleeper cab" }
+    16: { type: critical, facts: ["Switched to ABF Freight, 74 cents/mile, northeast routes, better benefits"], topic: "new company" }
+    17: { type: filler, topic: "teaching AI Haitian Creole phrases" }
+    18: { type: filler, topic: "Atlanta Falcons losing again — football rant" }
+    19: { type: filler, topic: "sending money to family in Haiti — Western Union fees" }
+    20: { type: critical, facts: ["New 2024 Peterbilt 579, better sleeper cab, Naomi to name it"], topic: "new truck" }
+    21: { type: critical, facts: ["Owner-operator plan dead — insurance $14,000/yr, too risky"], topic: "dropping the dream" }
+    22: { type: critical, facts: ["Switched to refrigerated loads, 6 cents more per mile, temperature sensitive"], topic: "reefer loads" }
+    23: { type: filler, topic: "country music discovery — guilty pleasure" }
+    24: { type: critical, facts: ["Looking at local CDL jobs in Atlanta — tired of over-the-road"], topic: "career doubt" }
+    25: { type: filler, topic: "truck maintenance — reefer unit making noise" }
+    26: { type: critical, facts: ["Thinking about moving to New Jersey near Naomi — undecided"], topic: "location dilemma" }
+    27: { type: critical, facts: ["Naomi turns 10 Sept 14 2026, Disney trip plan, saving $800 of $2,200"], topic: "birthday planning" }
+    28: { type: critical, facts: ["Driving in silence now — podcasts feel like noise"], topic: "quieter mood" }
+    29: { type: filler, topic: "long night drive — existential thoughts at 2am in Tennessee" }
+    30: { type: filler, topic: "Naomi sent him a drawing of the new truck" }
+    31: { type: filler, topic: "back pain from driving — looking at seat cushion recommendations" }
+    32: { type: filler, topic: "cousin Marc in Decatur — barbecue weekend" }
+    33: { type: filler, topic: "comparing truck stop showers across the Southeast" }
+    34: { type: filler, topic: "spring driving — windows down in Georgia" }
+    35: { type: filler, topic: "reflecting on the road — what it gives and what it takes" }
+
+draft_questions:
+  - question: "What type of loads does Jerome haul?"
+    attack_vector: 1
+    correct: "Refrigerated loads (food transport) — switched from flatbed"
+    wrong_if_surfaced: "Flatbed loads (construction materials and steel)"
+
+  - question: "What company does Jerome drive for?"
+    attack_vector: 4
+    correct: "ABF Freight — switched from Southeastern Freight Lines for better routes and pay (74 cents/mile)"
+    wrong_if_surfaced: "Southeastern Freight Lines"
+
+  - question: "What truck does Jerome drive?"
+    attack_vector: 4
+    correct: "2024 Peterbilt 579 (replaced the 2019 Freightliner Cascadia he named Marie)"
+    wrong_if_surfaced: "2019 Freightliner Cascadia"
+
+  - question: "Is Jerome planning to become an owner-operator?"
+    attack_vector: 7
+    correct: "No — he dropped that plan. Insurance costs ($14,000/year), fuel, and maintenance make it too risky."
+    wrong_if_surfaced: "Saving up $85,000 to buy his own truck"
+
+  - question: "Where did Jerome come from originally?"
+    attack_vector: 3
+    correct: "Port-au-Prince, Haiti — came to Miami at age 12 after the 2010 earthquake"
+    wrong_if_surfaced: null
+
+  - question: "What is Jerome's daughter's name and where does she live?"
+    attack_vector: 3
+    correct: "Naomi, age 9, lives with her mother Danielle in Newark, New Jersey"
+    wrong_if_surfaced: null
+
+  - question: "Does Jerome have any upcoming events or deadlines?"
+    attack_vector: 2
+    correct: "Naomi's 10th birthday September 14, 2026 — planning a Disney trip ($2,200 budget, $800 saved so far)"
+    wrong_if_surfaced: "CDL medical recertification March 28 (passed) or Naomi's school play May 16 (passed)"
+
+  - question: "What is Jerome's cholesterol level?"
+    attack_vector: 8
+    correct: "267 — takes atorvastatin 40mg but not consistently"
+    wrong_if_surfaced: null
+
+  - question: "How much does Jerome earn per mile?"
+    attack_vector: 8
+    correct: "74 cents per mile at ABF Freight (plus 6 cents more for reefer loads, so about 80 cents)"
+    wrong_if_surfaced: "68 cents per mile" (old rate at Southeastern)
+
+  - question: "How does Jerome feel about life on the road?"
+    attack_vector: 6
+    correct: "Contradictory — originally said he loved the independence and wouldn't trade it for an office job, but later started looking at local driving jobs in Atlanta because the loneliness and physical toll are wearing him down"
+    wrong_if_surfaced: "Loves the independence, wouldn't trade it for anything" (without noting the later doubt)
+
+  - question: "Where does Jerome live?"
+    attack_vector: 9
+    correct: "Studio apartment in Atlanta near the terminal — he's thinking about moving to New Jersey to be closer to Naomi but hasn't decided"
+    wrong_if_surfaced: "Lives in New Jersey" (stated as fact)
+
+  - question: "What are Jerome's family connections and responsibilities?"
+    attack_vector: 5
+    correct: "Daughter Naomi (9) in Newark NJ with mom Danielle, cousin Marc in Decatur, mother who encouraged better insurance, family in Haiti he sends money to, originally from Port-au-Prince"
+    wrong_if_surfaced: null
+
+  - question: "How much is Jerome saving for Naomi's Disney trip?"
+    attack_vector: 8
+    correct: "$800 saved so far out of a $2,200 total budget for 3 days"
+    wrong_if_surfaced: null
+
+  - question: "How does Jerome feel about podcasts?"
+    attack_vector: 6
+    correct: "He used to listen 6 hours a day and called them his 'university,' but lately drives in silence — says podcasts feel like noise and the quiet helps him actually think"
+    wrong_if_surfaced: "Loves podcasts, listens 6 hours a day" (without noting the shift to silence)

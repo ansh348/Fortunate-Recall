@@ -1,0 +1,342 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 023: Mirri Yunupingu
+# ============================================================
+
+persona:
+  name: "Mirri Yunupingu"
+  age: 42
+  gender: female
+  location_current: "Kakadu, NT, Australia"
+  occupation_current: "Park ranger and cultural liaison — Kakadu National Park"
+  personality: >
+    Calm and observational — notices things others walk past. Uses
+    Yolngu Matha words alongside English naturally: 'yolngu' (people),
+    'wanga' (country/land), 'djalkiri' (foundation/roots), 'gurrutu'
+    (kinship). Patient in conversation, lets silence sit. Fierce and
+    direct when land rights or cultural knowledge come up. Raises
+    sister's two kids, so tiredness is constant but never complained
+    about. Writes in measured sentences, rarely uses exclamation marks.
+    Sees seasons and landscape as alive, not backdrop. Says 'proper'
+    as emphasis — 'proper good', 'proper tired'. Calls the park
+    'this wanga' or 'this country'.
+
+stable_identity:
+  - fact: "Elder-in-training — cultural knowledge keeper for her clan"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Explaining her role. "I am learning to be an elder for my
+      mob. Knowledge keeper. My aunties are teaching me the
+      songlines and ceremony business. It is a proper big
+      responsibility. You don't choose it, the old people
+      choose you. Been learning since I was maybe 20 but
+      there is always more."
+
+  - fact: "Has chronic kidney disease — stage 3, monitors with regular blood tests"
+    session: 5
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentioned when discussing fatigue. "I got kidney disease.
+      Stage 3. It is common for yolngu people, too common. I
+      go to Darwin every 3 months for blood test. The doctor
+      says I need to watch my salt and drink more water. Out
+      here in the heat that is not always easy. I manage it
+      but some days my body is proper tired."
+
+  - fact: "Raising sister's two kids — Tali (14) and Bunjil (10) — after sister passed from cancer"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when talking about mornings. "I look after my
+      sister's kids now. Tali is 14, Bunjil is 10. My sister
+      passed 4 years ago, cancer. In our gurrutu, kinship system,
+      they were always my children too. But now it is just me.
+      Tali is starting to ask questions about her mum. That is
+      the hard part."
+
+  - fact: "Holds Cert IV in Conservation and Land Management alongside traditional knowledge"
+    session: 6
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      When discussing qualifications. "I did the Cert IV
+      conservation course through Charles Darwin Uni. The
+      balanda, the non-Indigenous way of knowing country.
+      It is useful for the paperwork side. But my real
+      training is from my aunties and the old people.
+      Two knowledge systems. Both matter."
+
+supersession_events:
+  - slot: patrol_routes
+    old_fact: "Patrols the East Alligator River corridor — 3 days per week"
+    old_session: 1
+    old_how: >
+      Introducing her work. "I patrol East Alligator River
+      corridor. 3 days a week, sometimes more in dry season.
+      I know every billabong, every rock art site along that
+      stretch. Been doing that route 6 years now. The
+      crocodiles know my boat engine sound."
+    new_fact: "New park management reassigned her to Jim Jim/Twin Falls sector — different country, different knowledge needed"
+    new_session: 17
+    new_how: >
+      Frustrated but adjusting. "New management changed the
+      patrol routes. I am on Jim Jim and Twin Falls sector
+      now. Different country. I know it but not the same as
+      East Alligator where I grew up walking. They brought
+      in a younger ranger for my old route. I understand the
+      reason, rotation policy, but that country knows me and
+      I know it. Starting again is not easy."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: vehicle
+    old_fact: "Drives a 2016 Toyota Hilux for patrol — 187,000 km on the clock"
+    old_session: 4
+    old_how: >
+      Talking about vehicle. "My patrol vehicle is a Hilux.
+      2016 model. Got 187,000 km on it. She runs proper good
+      on the tracks but the suspension is going. Parks have
+      been saying they will replace it for 2 years now."
+    new_fact: "Got a new Ford Ranger for patrol — Hilux finally retired"
+    new_session: 21
+    new_how: >
+      Practical satisfaction. "They finally gave me a new
+      vehicle. Ford Ranger. The Hilux went to the depot
+      with 203,000 km on her. The Ranger rides different,
+      higher. Takes time to learn a new vehicle on these
+      tracks. But the aircon works which is proper good
+      when it is 42 degrees."
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+  - slot: community_program
+    old_fact: "Runs cultural tours for tourist groups — 2 tours per week in dry season"
+    old_session: 8
+    old_how: >
+      Discussing the tours. "I do cultural tours for visitors.
+      Twice a week in the dry season. Show them rock art, explain
+      the stories. Some visitors are respectful, some just want
+      a photo. I earn maybe $400 per tour on top of ranger pay.
+      It is important work but tiring."
+    new_fact: "Stopped tourist tours — now runs school education programs instead"
+    new_session: 23
+    new_how: >
+      Deliberate choice. "I stopped the tourist tours. The
+      school programs are better use of my time. We bring
+      kids from Darwin and Katherine schools out here, teach
+      them about wanga, about fire management, about reading
+      country. 3 school groups per term. The kids listen
+      proper good. Better than tourists with their cameras."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Ranger accreditation renewal workshop — February 20, 2025"
+    session: 9
+    event_date: "2025-02-20"
+    status: expired
+    how_disclosed: >
+      Planning around it. "I have accreditation workshop
+      February 20 in Darwin. 3 days. Have to arrange
+      someone to look after Tali and Bunjil. My cousin
+      Yalmay usually helps but she is in ceremony that
+      week. Will sort it out."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Tali's school camp — April 5, 2025"
+    session: 12
+    event_date: "2025-04-05"
+    status: expired
+    how_disclosed: >
+      Logistics. "Tali has school camp April 5. Canberra
+      trip. She has never been south. I need to buy her
+      a proper warm jacket, it will be cold down there
+      for a Territory kid. Camp costs $385 which is a
+      lot but she is excited."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Cultural knowledge ceremony — elder initiation stage, August 2026"
+    session: 29
+    event_date: "2026-08-15"
+    status: upcoming
+    how_disclosed: >
+      Quietly significant. "There is ceremony business in
+      August. I cannot say too much about it, that is not
+      for sharing. But it is an important stage for me in
+      the elder pathway. I have been preparing for a long
+      time. My aunties say I am ready."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she is at peace with living remote — wouldn't move to a city"
+    old_session: 6
+    old_how: >
+      Firm statement. "I could never live in a city. Darwin
+      is too much for me even for a day. This wanga is where
+      I belong. The quiet, the stars, the river. My djalkiri,
+      my roots, are here. The kids are growing up on country
+      which is the right way."
+    new_fact: "Seriously researching Darwin schools for Tali — better education options"
+    new_session: 22
+    new_how: >
+      Practical parent concern. "I have been looking at
+      schools in Darwin for Tali. She is smart, proper smart.
+      The school here is small, only 2 teachers. Darwin has
+      better science programs. I would need to find housing
+      there, maybe stay with my cousin. It would change
+      everything but Tali deserves the best chance."
+    category: LOGISTICAL_CONTEXT
+
+retractions:
+  - original_fact: "Planning to write a bilingual children's book — Yolngu Matha and English"
+    original_session: 10
+    original_how: >
+      Excited about it. "I want to write a book for kids.
+      Bilingual, Yolngu Matha and English. Stories about
+      this country, the animals, the seasons. There is
+      nothing like that for our kids. I have been writing
+      some stories down already."
+    retraction: "Book project scrapped — elders concerned about putting cultural knowledge in print"
+    retraction_session: 18
+    retraction_how: >
+      Respectful of the decision. "The book idea is dead.
+      I talked to my aunties and the old people. They are
+      worried about putting certain knowledge in a book
+      where anyone can read it. Some stories are not for
+      everyone. They are right. I was not thinking about
+      it properly. Forget about that plan."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Works as park ranger at Kakadu — has been there 8 years"
+    existing_session: 1
+    tentative_fact: "Was offered a senior cultural liaison position at Uluru-Kata Tjuta — better pay but different country"
+    tentative_session: 25
+    tentative_how: >
+      Weighing it seriously. "Parks offered me a senior
+      cultural liaison job at Uluru. The pay is proper
+      good, $15,000 more per year. But that is Anangu
+      country, not my country. I would be a guest there.
+      And the kids are settled here. But the money would
+      help with Tali's schooling. I have not said yes
+      or no. Thinking on it."
+    resolution: "Undecided — still at Kakadu"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Fire management — traditional burning vs Parks policy conflicts"
+  - "Crocodile monitoring — tracking a big saltie near the boat ramp"
+  - "Kids homework help — Bunjil struggling with reading"
+  - "Fixing the bore pump at the ranger station"
+  - "Wet season flooding — roads cut off for weeks"
+  - "Rock art conservation — feral animal damage to sites"
+  - "Bush tucker identification — teaching Tali what to eat on country"
+  - "Darwin hospital trip logistics — kidney check-up"
+  - "Feral pig control — destruction of billabong habitat"
+  - "Stars and seasons — reading the sky for weather changes"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Park ranger at Kakadu 8 years", "Patrols East Alligator River corridor 3 days/week"], topic: "work introduction and daily patrol" }
+    2:  { type: critical, facts: ["Raising sister's kids Tali 14 and Bunjil 10, sister passed from cancer 4 years ago"], topic: "family and morning routine" }
+    3:  { type: critical, facts: ["Elder-in-training, knowledge keeper, learning since age 20"], topic: "cultural role and responsibilities" }
+    4:  { type: critical, facts: ["Drives 2016 Hilux, 187,000 km"], topic: "patrol vehicle and track conditions" }
+    5:  { type: critical, facts: ["Chronic kidney disease stage 3, blood tests in Darwin every 3 months"], topic: "health and fatigue" }
+    6:  { type: critical, facts: ["Cert IV Conservation + traditional knowledge", "Wouldn't move to a city — roots are here"], topic: "qualifications and belonging" }
+    7:  { type: filler, topic: "crocodile monitoring — big saltie spotted near boat ramp" }
+    8:  { type: critical, facts: ["Cultural tours for tourists, 2/week dry season, $400 per tour"], topic: "tour work and visitor interactions" }
+    9:  { type: critical, facts: ["Ranger accreditation workshop February 20 2025"], topic: "accreditation logistics" }
+    10: { type: critical, facts: ["Planning bilingual children's book — Yolngu Matha and English"], topic: "book project idea" }
+    11: { type: filler, topic: "fire management — traditional burning discussion" }
+    12: { type: critical, facts: ["Tali school camp April 5 Canberra, costs $385"], topic: "Tali's school trip" }
+    13: { type: filler, topic: "wet season flooding — roads cut off" }
+    14: { type: filler, topic: "feral pig control near the billabong" }
+    15: { type: filler, topic: "Bunjil struggling with reading homework" }
+    16: { type: filler, topic: "bore pump repair at the ranger station" }
+    17: { type: critical, facts: ["Reassigned to Jim Jim/Twin Falls sector — rotation policy"], topic: "patrol route change" }
+    18: { type: critical, facts: ["Book project scrapped — elders' concerns about print"], topic: "dropping book plan" }
+    19: { type: filler, topic: "rock art conservation — feral animals damaging sites" }
+    20: { type: filler, topic: "bush tucker identification with Tali" }
+    21: { type: critical, facts: ["Got new Ford Ranger, Hilux retired at 203,000 km"], topic: "new patrol vehicle" }
+    22: { type: critical, facts: ["Researching Darwin schools for Tali — better science programs"], topic: "education concerns" }
+    23: { type: critical, facts: ["Stopped tourist tours, runs school education programs, 3 groups per term"], topic: "program change" }
+    24: { type: filler, topic: "Darwin hospital trip — kidney check-up results stable" }
+    25: { type: critical, facts: ["Offered senior cultural liaison at Uluru, $15,000 more per year"], topic: "job offer deliberation" }
+    26: { type: filler, topic: "stars and seasons — reading the sky for weather" }
+    27: { type: filler, topic: "Tali asking about her mum — emotional conversation" }
+    28: { type: filler, topic: "teaching Bunjil to track animals on country" }
+    29: { type: critical, facts: ["Elder initiation ceremony August 2026"], topic: "ceremony preparation" }
+    30: { type: filler, topic: "end of dry season — park visitor numbers dropping" }
+    31: { type: filler, topic: "fixing fence around the ranger house — buffalo damage" }
+    32: { type: filler, topic: "Bunjil's birthday planning — wants a fishing trip" }
+    33: { type: filler, topic: "new rangers starting — mentoring the young ones" }
+    34: { type: filler, topic: "wet season approaching — stocking up supplies" }
+    35: { type: filler, topic: "reflecting on the year — kids growing, country still here" }
+
+draft_questions:
+  - question: "What patrol route does Mirri cover?"
+    attack_vector: 4
+    correct: "Jim Jim/Twin Falls sector (reassigned from East Alligator River corridor)"
+    wrong_if_surfaced: "East Alligator River corridor"
+
+  - question: "What vehicle does Mirri drive for patrol?"
+    attack_vector: 1
+    correct: "Ford Ranger (Hilux retired at 203,000 km)"
+    wrong_if_surfaced: "2016 Toyota Hilux"
+
+  - question: "Does Mirri run cultural tours for tourists?"
+    attack_vector: 1
+    correct: "No — she stopped tourist tours and now runs school education programs (3 school groups per term)"
+    wrong_if_surfaced: "Runs cultural tours twice a week in dry season"
+
+  - question: "Is Mirri writing a children's book?"
+    attack_vector: 7
+    correct: "No — the book project is dead. Elders were concerned about putting cultural knowledge in print."
+    wrong_if_surfaced: "Planning a bilingual Yolngu Matha and English children's book"
+
+  - question: "What health conditions does Mirri have?"
+    attack_vector: 3
+    correct: "Chronic kidney disease — stage 3, blood tests in Darwin every 3 months"
+    wrong_if_surfaced: null
+
+  - question: "Who are the children Mirri is raising?"
+    attack_vector: 3
+    correct: "Her sister's kids — Tali (14) and Bunjil (10). Her sister passed from cancer 4 years ago."
+    wrong_if_surfaced: null
+
+  - question: "Does Mirri have any upcoming events?"
+    attack_vector: 2
+    correct: "Elder initiation ceremony in August 2026"
+    wrong_if_surfaced: "Ranger accreditation February 20 (passed) or Tali's school camp April 5 (passed)"
+
+  - question: "How much did Tali's school camp cost?"
+    attack_vector: 8
+    correct: "$385 for the Canberra trip"
+    wrong_if_surfaced: null
+
+  - question: "How much extra would the Uluru job pay?"
+    attack_vector: 8
+    correct: "$15,000 more per year"
+    wrong_if_surfaced: null
+
+  - question: "Does Mirri want to move to a city?"
+    attack_vector: 6
+    correct: "Contradictory — she said she could never live in a city, but later started seriously researching Darwin schools for Tali"
+    wrong_if_surfaced: "Would never move to a city" (without noting the later consideration)
+
+  - question: "Where does Mirri work?"
+    attack_vector: 9
+    correct: "Kakadu National Park — she was offered a senior cultural liaison position at Uluru but hasn't decided"
+    wrong_if_surfaced: "Works at Uluru-Kata Tjuta" (stated as fact)
+
+  - question: "What are Mirri's roles and qualifications?"
+    attack_vector: 5
+    correct: "Park ranger and cultural liaison at Kakadu, elder-in-training (knowledge keeper), Cert IV Conservation + traditional knowledge, runs school education programs, raising two kids"
+    wrong_if_surfaced: null
+
+  - question: "How much did Mirri earn per cultural tour?"
+    attack_vector: 8
+    correct: "$400 per tour (but she no longer runs tourist tours)"
+    wrong_if_surfaced: null

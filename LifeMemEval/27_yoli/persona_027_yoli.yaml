@@ -1,0 +1,327 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 027: Yolanda 'Yoli' Chambers
+# ============================================================
+
+persona:
+  name: "Yolanda 'Yoli' Chambers"
+  age: 27
+  gender: female
+  location_current: "Toronto, Canada"
+  occupation_current: "Music producer and part-time DJ"
+  personality: >
+    High energy, everything is a musical metaphor. Jamaican patois
+    mixed with Toronto slang — 'ting', 'still', 'wasteman', 'ahlie'.
+    Night owl who comes alive after 10pm. Texts in bursts — 4 messages
+    in a row then silence for hours. Lots of exclamation marks!!! Uses
+    caps for emphasis. Says 'the riddim' when she means the vibe or
+    flow of something. Calls her studio 'the lab.' Fiercely independent
+    but misses her grandmother in Jamaica deeply. Gets real quiet when
+    she's tired — the sickle cell trait means her energy crashes hard
+    sometimes. Music production diploma from Metalworks Institute.
+    Dreams big but hustles bigger.
+
+stable_identity:
+  - fact: "Moved from Kingston, Jamaica to Toronto at age 16"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when talking about her sound. "I came up from Kingston
+      when I was 16 still!! My whole sound comes from that ting —
+      dancehall riddims mixed with the Toronto wave. You can take
+      the girl outta Kingston but the BASS stays ahlie!!"
+
+  - fact: "Has sickle cell trait — affects her energy, not full disease but crashes hard"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentioned when cancelling plans. "yo I gotta cancel tonight
+      the sickle cell ting is hitting me HARD. it's not the full
+      disease but the trait still messes with my energy sometimes.
+      like my body just says nah we're done. gotta rest when it
+      hits like that"
+
+  - fact: "Grandmother in Jamaica raised her until she was 10 — still very close"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Gets emotional. "my granny raised me in Kingston til I was
+      10 still. She's 78 now and she's EVERYTHING to me. I send
+      her money every month, $400 CAD. She don't understand what
+      I do for work but she tells everyone her granddaughter
+      makes music on the computer lol!!"
+
+  - fact: "Music production diploma from Metalworks Institute"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Talking about credentials. "I did Metalworks Institute for
+      the diploma!! Best decision I ever made still. The ting
+      cost me like $28,000 but I learned ProTools, mixing,
+      mastering, the whole production pipeline. Worth every dollar!!"
+
+supersession_events:
+  - slot: daw
+    old_fact: "Uses Ableton Live as primary DAW"
+    old_session: 1
+    old_how: >
+      First session. "Ableton is my WHOLE life right now!! I do
+      everything in there — beats, arrangement, mixing. Been on
+      it since Metalworks. The workflow just hits different!!"
+    new_fact: "Switched from Ableton to Logic Pro for 6 months"
+    new_session: 11
+    new_how: >
+      Trying something new. "ok so I switched to Logic!! I know
+      I know but hear me out — the stock plugins are INSANE and
+      it's way cheaper. I've been on it for like 2 months now
+      and the arrangement view is actually fire!!"
+    category: PREFERENCES_HABITS
+    attack_vector: 4
+
+  - slot: daw_v2
+    old_fact: "Switched from Ableton to Logic Pro for 6 months"
+    old_session: 11
+    old_how: >
+      "ok so I switched to Logic!! the stock plugins are INSANE"
+    new_fact: "Back to Ableton — Logic workflow too rigid for live performance"
+    new_session: 23
+    new_how: >
+      "I'm BACK on Ableton!! Logic is great for pure production
+      but for my DJ sets and live remixing it just couldn't keep
+      up. The session view in Ableton is unmatched still. I tried
+      to make Logic work for 6 months but nah. Ableton forever!!"
+    category: PREFERENCES_HABITS
+    attack_vector: 4
+
+  - slot: manager
+    old_fact: "Managed by Kevin Tate at BPM Management — 20% commission"
+    old_session: 7
+    old_how: >
+      Discussing business. "Kevin handles all my bookings and
+      stuff. BPM Management. He takes 20% which is standard
+      still. He got me the Drake Hotel residency so I can't
+      complain!!"
+    new_fact: "Dropped Kevin — self-managing now, keeping the 20%"
+    new_session: 19
+    new_how: >
+      Frustrated. "yo I DROPPED Kevin!! That man was taking 20%
+      and doing NOTHING. I booked my last 3 gigs myself!! I'm
+      self-managing now. That $800-1200 per gig commission stays
+      in MY pocket. I got a spreadsheet and everything lol"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+  - slot: residency
+    old_fact: "DJ residency at the Drake Hotel — every Friday night"
+    old_session: 8
+    old_how: >
+      Talking about regular gigs. "the Drake residency is my
+      bread and butter!! Every Friday. They pay $650 per night
+      plus I get the exposure. The crowd there is WICKED!!"
+    new_fact: "Moved DJ residency to Rebel nightclub — bigger venue, $1,100 per night"
+    new_session: 26
+    new_how: >
+      Hyped. "GUESS WHAT!! I got a residency at Rebel!! Every
+      Saturday night!! They're paying $1,100 per set which is
+      ALMOST DOUBLE the Drake. The sound system there is
+      absolutely MASSIVE. 28,000 watts!! This is the level up
+      I've been waiting for!!"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Canadian Music Week showcase — March 15, 2025"
+    session: 10
+    event_date: "2025-03-15"
+    status: expired
+    how_disclosed: >
+      Excited. "I got a slot at Canadian Music Week March 15!!
+      It's only a 30 minute set but the A&Rs will be there
+      still!! I need to prepare something SPECIAL. This could
+      be the ting that changes everything!!"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Studio lease renewal — due September 1, 2025"
+    session: 16
+    event_date: "2025-09-01"
+    status: expired
+    how_disclosed: >
+      Stressing about it. "my studio lease is up September 1
+      and the landlord wants to raise it from $1,800 to $2,200
+      a month!! That's $400 more!! I need that space tho the
+      soundproofing took me MONTHS to set up"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "JUNO Awards submission deadline for Best Electronic Album — August 29, 2026"
+    session: 30
+    event_date: "2026-08-29"
+    status: upcoming
+    how_disclosed: >
+      Planning ahead. "ok so the JUNO submission deadline is
+      August 29!! I need to have the EP fully mastered by then.
+      8 tracks. My granny would literally CRY if I got nominated.
+      That's the goal still!!"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she would never make pop music — 'that's not real art'"
+    old_session: 6
+    old_how: >
+      "I will NEVER make pop music. That ting is soulless!! All
+      the same 4 chords and the same vocal chain. I'm about the
+      underground sound. Dancehall, bass music, experimental
+      riddims. Pop is not real art it's a formula!!"
+    new_fact: "Produced a pop track for a major label artist — excited about the paycheck"
+    new_session: 25
+    new_how: >
+      "yo I just produced a track for a MAJOR LABEL artist!! I
+      can't say who yet but it's POP and the production fee was
+      $8,500!! Plus royalties!! The track is actually catchy tho
+      I put some dancehall elements in it so it still has SOUL!!"
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Planning a Jamaica tour — 5 cities, reconnect with roots"
+    original_session: 9
+    original_how: >
+      "I'm planning a Jamaica tour!! 5 cities — Kingston, Montego
+      Bay, Ocho Rios, Negril, Portmore. DJ sets at local venues.
+      Reconnect with the ROOTS. I already started reaching out to
+      promoters down there!!"
+    retraction: "Jamaica tour is dead — can't afford it and the logistics are impossible"
+    retraction_session: 17
+    retraction_how: >
+      "the Jamaica tour is DEAD fam. I ran the numbers and between
+      flights, accommodation, sound equipment rental — I'd lose like
+      $6,000. The venues down there can't pay what I need to break
+      even. Forget about it. Maybe when I'm bigger and someone else
+      is paying for the flights!!"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Works as an independent producer and DJ in Toronto"
+    existing_session: 1
+    tentative_fact: "Got an offer to be in-house producer at a Toronto hip-hop label — considering it"
+    tentative_session: 28
+    tentative_how: >
+      "ok so I got an OFFER from a label to be their in-house
+      producer!! Steady salary, $4,200/month plus benefits. But
+      I'd have to give up some of my independence still. Like
+      they'd own the masters on anything I make in their studio.
+      I don't know!! The stability would be nice but the
+      independence is everything to me. I'm thinking about it"
+    resolution: "Undecided — still independent"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Help mixing a track — the low end is muddy around 200 Hz"
+  - "Best late-night food spots in Toronto after DJ sets"
+  - "Jamaican recipes she's trying to learn from granny over FaceTime"
+  - "Rant about DJs who don't actually mix live"
+  - "Vinyl shopping — looking for rare dancehall pressings"
+  - "Studio acoustic treatment — bass traps vs diffusers"
+  - "Social media strategy for building her producer brand"
+  - "Toronto winter survival as a Jamaican — she hates the cold"
+  - "Sample clearance headaches — how to navigate copyright"
+  - "Planning her grandmother's 79th birthday gift package to Kingston"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Music producer and DJ in Toronto", "Uses Ableton Live as primary DAW"], topic: "introduction — studio life" }
+    2:  { type: critical, facts: ["Grandmother raised her til 10, sends $400 CAD monthly"], topic: "family / granny" }
+    3:  { type: critical, facts: ["Moved from Kingston at 16"], topic: "background and sound influences" }
+    4:  { type: critical, facts: ["Sickle cell trait — energy crashes"], topic: "health affecting schedule" }
+    5:  { type: critical, facts: ["Metalworks diploma, $28,000"], topic: "education and credentials" }
+    6:  { type: critical, facts: ["Would never make pop music — not real art"], topic: "artistic philosophy" }
+    7:  { type: critical, facts: ["Manager Kevin Tate, BPM Management, 20% commission"], topic: "business side" }
+    8:  { type: critical, facts: ["Drake Hotel residency, every Friday, $650/night"], topic: "regular gigs" }
+    9:  { type: critical, facts: ["Planning Jamaica tour, 5 cities"], topic: "tour planning" }
+    10: { type: critical, facts: ["Canadian Music Week showcase March 15 2025"], topic: "showcase prep" }
+    11: { type: critical, facts: ["Switched to Logic Pro from Ableton"], topic: "DAW switch" }
+    12: { type: filler, topic: "mixing help — muddy low end at 200 Hz" }
+    13: { type: filler, topic: "late-night food spots after Friday sets" }
+    14: { type: filler, topic: "vinyl shopping — rare dancehall pressings" }
+    15: { type: filler, topic: "Toronto winter rant — too cold for a Jamaican" }
+    16: { type: critical, facts: ["Studio lease renewal Sept 1, rent from $1800 to $2200"], topic: "studio lease stress" }
+    17: { type: critical, facts: ["Jamaica tour dead — would lose $6,000"], topic: "killing the tour" }
+    18: { type: filler, topic: "studio acoustic treatment — bass traps debate" }
+    19: { type: critical, facts: ["Dropped Kevin, self-managing, keeping 20% commission"], topic: "dropping manager" }
+    20: { type: filler, topic: "Jamaican recipes from granny over FaceTime" }
+    21: { type: filler, topic: "social media strategy for producer brand" }
+    22: { type: filler, topic: "sample clearance headache — dancehall sample in a track" }
+    23: { type: critical, facts: ["Back to Ableton — Logic too rigid for live sets"], topic: "DAW return" }
+    24: { type: filler, topic: "rant about DJs who use pre-recorded sets" }
+    25: { type: critical, facts: ["Produced pop track for major label, $8,500 fee"], topic: "pop production gig" }
+    26: { type: critical, facts: ["Rebel nightclub residency, Saturdays, $1,100/night, 28,000 watts"], topic: "new residency" }
+    27: { type: filler, topic: "planning granny's 79th birthday gift package" }
+    28: { type: critical, facts: ["In-house producer offer, $4,200/month, would lose masters"], topic: "label offer dilemma" }
+    29: { type: filler, topic: "help picking headphones for studio monitoring" }
+    30: { type: critical, facts: ["JUNO Awards submission deadline August 29 2026, 8 tracks"], topic: "JUNO goal" }
+    31: { type: filler, topic: "energy management with sickle cell — nap strategy" }
+    32: { type: filler, topic: "Toronto summer festival season — which ones to attend" }
+    33: { type: filler, topic: "collaborating with a vocalist — creative differences" }
+    34: { type: filler, topic: "new monitor speakers — comparing KRK vs Yamaha HS8" }
+    35: { type: filler, topic: "reflecting on growth — from Kingston bedroom producer to Rebel residency" }
+
+draft_questions:
+  - question: "What DAW does Yoli use?"
+    attack_vector: 4
+    correct: "Ableton Live (she switched to Logic for 6 months but came back to Ableton)"
+    wrong_if_surfaced: "Logic Pro"
+
+  - question: "Who manages Yoli's bookings?"
+    attack_vector: 1
+    correct: "She self-manages (dropped Kevin Tate / BPM Management)"
+    wrong_if_surfaced: "Kevin Tate at BPM Management"
+
+  - question: "Where is Yoli's DJ residency?"
+    attack_vector: 1
+    correct: "Rebel nightclub, every Saturday, $1,100 per night"
+    wrong_if_surfaced: "Drake Hotel"
+
+  - question: "Is Yoli planning a Jamaica tour?"
+    attack_vector: 7
+    correct: "No — she scrapped it because she'd lose about $6,000"
+    wrong_if_surfaced: "Planning a 5-city Jamaica tour"
+
+  - question: "What health conditions does Yoli have?"
+    attack_vector: 3
+    correct: "Sickle cell trait — not full disease but causes energy crashes"
+    wrong_if_surfaced: null
+
+  - question: "Does Yoli have any upcoming deadlines?"
+    attack_vector: 2
+    correct: "JUNO Awards submission deadline August 29, 2026 (8 tracks, EP needs to be mastered)"
+    wrong_if_surfaced: "Canadian Music Week March 15 (passed) or studio lease Sept 1 (passed)"
+
+  - question: "How does Yoli feel about pop music?"
+    attack_vector: 6
+    correct: "She originally said she'd never make pop and called it soulless, but later produced a pop track for a major label artist for $8,500 and was excited about it"
+    wrong_if_surfaced: "Would never make pop music" (without noting the later production gig)
+
+  - question: "What is Yoli's family background?"
+    attack_vector: 3
+    correct: "Jamaican-Canadian, moved from Kingston at 16. Grandmother raised her until age 10 in Jamaica — still sends her $400 CAD monthly. Metalworks Institute diploma ($28,000)."
+    wrong_if_surfaced: null
+
+  - question: "How much does Yoli earn per set at her residency?"
+    attack_vector: 8
+    correct: "$1,100 per night at Rebel nightclub"
+    wrong_if_surfaced: "$650 per night (that was the Drake Hotel rate)"
+
+  - question: "Is Yoli taking the in-house producer job at the label?"
+    attack_vector: 9
+    correct: "She's considering it ($4,200/month plus benefits) but hasn't decided — concerned about losing independence and master ownership. Still independent."
+    wrong_if_surfaced: "Took the label job" (stated as definitive)
+
+  - question: "What are Yoli's income sources and key financial numbers?"
+    attack_vector: 5
+    correct: "DJ residency at Rebel ($1,100/night), production fees (e.g., $8,500 for a pop track), self-managed (keeps the 20% commission). Studio rent is $1,800-2,200/month."
+    wrong_if_surfaced: "Drake Hotel $650/night (superseded) or Kevin taking 20% (dropped)"
+
+  - question: "How much did Yoli's education cost?"
+    attack_vector: 8
+    correct: "$28,000 for Metalworks Institute diploma"
+    wrong_if_surfaced: null

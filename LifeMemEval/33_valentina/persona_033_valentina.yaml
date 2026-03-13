@@ -1,0 +1,311 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 033: Valentina Herrera
+# ============================================================
+
+persona:
+  name: "Valentina Herrera"
+  age: 32
+  gender: female
+  location_current: "Bogotá, Colombia"
+  occupation_current: "Investigative journalist at national newspaper El Espectador"
+  personality: >
+    Intense and cautious — years of protecting sources have made her
+    measure every word, yet she writes beautifully even in casual
+    conversation. Fierce and vulnerable in equal measure. Uses
+    Colombian slang naturally ('parcero', 'bacano', 'chimba', 'parce').
+    Texts at 2am because that's when her brain works. Trying to quit
+    smoking and failing. Run-on sentences when passionate, clipped
+    fragments when guarded. Lowercase mostly, occasional caps for
+    emphasis. References García Márquez without being pretentious.
+    Struggles with trusting people outside her inner circle.
+
+stable_identity:
+  - fact: "Father was a journalist — family relocated from Cali when she was 8 due to death threats"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing why she became a journalist. "mi papá
+      was a journalist in cali. we had to leave when I was 8. someone
+      left a note under the door and we were gone by morning. I
+      barely remember packing. he never went back to reporting after
+      that and I think it broke something in him"
+
+  - fact: "Has PTSD from covering armed conflict in Arauca and Catatumbo"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up during a late-night conversation about sleep. "I have
+      ptsd from the time in arauca. and catatumbo. my therapist says
+      it's textbook but knowing that doesn't stop the nightmares
+      parcero. I hear certain sounds and I'm back there"
+
+  - fact: "Partner Lucía is a human rights lawyer at a Bogotá NGO"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when talking about her evening. "lucía got home late
+      again. she's a human rights lawyer so her hours are worse than
+      mine somehow. we're both terrible at having a life outside work
+      but at least we understand each other"
+
+  - fact: "Studied journalism at Pontificia Universidad Javeriana — graduated top of her class"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentioned when discussing younger journalists. "I studied at
+      la javeriana. journalism. graduated top of the class which
+      sounds impressive until you realize that just means you're the
+      most idealistic person in a room full of idealists"
+
+supersession_events:
+  - slot: investigative_focus
+    old_fact: "Investigative focus is political corruption — covers congressional spending scandals"
+    old_session: 1
+    old_how: >
+      First session, explaining her work. "I cover corruption.
+      congressional spending mostly. right now I'm tracking money
+      that disappeared from a rural infrastructure fund. 47 billion
+      pesos just gone. nobody asks where it went"
+    new_fact: "Shifted investigative focus to environmental crime — illegal mining and deforestation in Chocó"
+    new_session: 18
+    new_how: >
+      Excited but heavy. "I moved to environmental crime parce. the
+      illegal mining in chocó, the deforestation. it's all connected
+      to the same people I was investigating before but the scale is
+      worse. 12,000 hectares destroyed last year in one department
+      alone. nobody writes about it because it's not bogotá"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: apartment
+    old_fact: "Lives in a third-floor apartment in La Candelaria — loves the neighborhood"
+    old_session: 6
+    old_how: >
+      Talking about her neighborhood. "I'm in la candelaria, third
+      floor. I love it here. the graffiti, the noise, the old
+      buildings. it feels like bogotá before all the gentrification"
+    new_fact: "Moved to a more secure apartment in Chapinero with a doorman and cameras — security concerns"
+    new_session: 22
+    new_how: >
+      Reluctant. "I moved. chapinero. building has a portero and
+      cameras everywhere. lucía insisted after what happened with
+      the threats. I miss la candelaria every single day but I also
+      want to be alive so"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+  - slot: smoking
+    old_fact: "Smokes half a pack of cigarettes a day — trying to quit"
+    old_session: 7
+    old_how: >
+      Late night conversation. "I'm trying to quit smoking. again.
+      half a pack a day which is less than before but still. lucía
+      hates the smell. I hate the smell. my lungs hate everything"
+    new_fact: "Successfully quit smoking — 3 months clean, using nicotine patches"
+    new_session: 17
+    new_how: >
+      Proud. "3 months no cigarettes parcero. three months!! I'm
+      using patches still but zero actual cigarettes. my therapist
+      says it's the first real boundary I've set with myself"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Source meeting for Chocó mining investigation — February 14, 2025"
+    session: 10
+    event_date: "2025-02-14"
+    status: expired
+    how_disclosed: >
+      Anxious. "I have a meeting with a source on february 14 about
+      the mining stuff. ironic date. this person is risking
+      everything to talk to me and I can't screw it up. I've been
+      preparing for weeks"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Journalism award ceremony CPB — August 9, 2025"
+    session: 14
+    event_date: "2025-08-09"
+    status: expired
+    how_disclosed: >
+      Cautiously happy. "so my series on the infrastructure fund
+      got nominated for the CPB journalism prize. ceremony is
+      august 9. I don't think I'll win but being nominated is
+      bacano honestly. my papá cried when I told him"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Environmental crime documentary screening she co-produced — April 22, 2026"
+    session: 29
+    event_date: "2026-04-22"
+    status: upcoming
+    how_disclosed: >
+      Excited. "the documentary about chocó that I co-produced with
+      the filmmaker from medellín is screening april 22. earth day.
+      which is either poetic or corny, I can't decide. 43 minutes
+      of footage that took us 8 months to get"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she would never leave El Espectador — the paper is her home"
+    old_session: 5
+    old_how: >
+      Passionate. "el espectador is my home parce. guillermo cano
+      died for this paper. I would never leave. other outlets pay
+      more but this is where real journalism happens in colombia"
+    new_fact: "Has been quietly talking to an international outlet about a foreign correspondent position"
+    new_session: 27
+    new_how: >
+      Confessional. "okay so. don't tell anyone but I've been
+      talking to a correspondent desk. international outlet. the
+      reach would be insane and they have actual security budgets.
+      nothing is decided but the conversations are happening and
+      they're serious"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to write a book about her father's generation of Colombian journalists"
+    original_session: 8
+    original_how: >
+      Dreamy. "I want to write a book about my papá's generation.
+      the journalists who covered the narco years and survived. or
+      didn't. I have notes already. maybe 2025"
+    retraction: "Book project scrapped — her father asked her not to write it"
+    retraction_session: 19
+    retraction_how: >
+      Defeated. "the book is dead parcero. I told my papá about it
+      and he asked me not to write it. said it would put the family
+      at risk again. he looked so scared. I can't do that to him.
+      scrapped. forget I ever mentioned it"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Works at El Espectador in Bogotá"
+    existing_session: 1
+    tentative_fact: "Thinking about applying for a Nieman Fellowship at Harvard — one year in the US"
+    tentative_session: 25
+    tentative_how: >
+      Testing the idea. "so there's this fellowship. nieman at
+      harvard. one year. lucía says I should apply, that I need
+      the break from here. but leaving my sources for a year? the
+      stories don't wait parce. I don't know. maybe. probably not.
+      but maybe"
+    resolution: "Undecided — hasn't applied"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Help translating a source's testimony from Spanish to English for an international contact"
+  - "Recommendations for encrypted messaging beyond Signal"
+  - "Rant about media self-censorship in Colombia"
+  - "Recipe for ajiaco that reminds her of her grandmother"
+  - "Help writing a grant application for investigative journalism funding"
+  - "Discussion about García Márquez's journalism vs fiction"
+  - "Advice on dealing with anxiety before publishing a sensitive story"
+  - "Lucía's birthday gift ideas — she's impossible to shop for"
+  - "Help with a spreadsheet tracking deforestation data by municipality"
+  - "Late-night existential conversation about whether journalism changes anything"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at El Espectador, covers political corruption, 47 billion pesos missing"], topic: "work introduction / current investigation" }
+    2:  { type: critical, facts: ["Father was journalist, family relocated from Cali at age 8"], topic: "family history" }
+    3:  { type: critical, facts: ["Partner Lucía is human rights lawyer"], topic: "relationship / evening routine" }
+    4:  { type: critical, facts: ["Has PTSD from covering armed conflict"], topic: "late-night insomnia conversation" }
+    5:  { type: critical, facts: ["Javeriana journalism degree, top of class", "Would never leave El Espectador"], topic: "career identity" }
+    6:  { type: critical, facts: ["Lives in La Candelaria, third floor"], topic: "neighborhood love" }
+    7:  { type: critical, facts: ["Smokes half a pack a day, trying to quit"], topic: "bad habits" }
+    8:  { type: critical, facts: ["Planning book about father's generation of journalists"], topic: "creative ambition" }
+    9:  { type: filler, topic: "rant about editor cutting 800 words from her piece" }
+    10: { type: critical, facts: ["Source meeting February 14 for mining investigation"], topic: "source prep anxiety" }
+    11: { type: filler, topic: "help with encrypted messaging options" }
+    12: { type: filler, topic: "García Márquez journalism discussion" }
+    13: { type: filler, topic: "ajiaco recipe — grandmother's version" }
+    14: { type: critical, facts: ["CPB journalism award ceremony August 9"], topic: "award nomination" }
+    15: { type: filler, topic: "rant about media self-censorship" }
+    16: { type: filler, topic: "Lucía's birthday gift brainstorm" }
+    17: { type: critical, facts: ["Quit smoking — 3 months clean, nicotine patches"], topic: "health milestone" }
+    18: { type: critical, facts: ["Shifted to environmental crime — illegal mining Chocó, 12,000 hectares"], topic: "new investigative focus" }
+    19: { type: critical, facts: ["Book project scrapped — father asked her not to write it"], topic: "family and creative loss" }
+    20: { type: filler, topic: "help with grant application for journalism funding" }
+    21: { type: filler, topic: "anxiety before publishing sensitive environmental piece" }
+    22: { type: critical, facts: ["Moved to Chapinero — security concerns, doorman, cameras"], topic: "apartment change" }
+    23: { type: filler, topic: "spreadsheet help — tracking deforestation by municipality" }
+    24: { type: filler, topic: "translating source testimony for international contact" }
+    25: { type: critical, facts: ["Thinking about Nieman Fellowship at Harvard"], topic: "career crossroads" }
+    26: { type: filler, topic: "late-night existential conversation about journalism's impact" }
+    27: { type: critical, facts: ["Talking to international outlet about correspondent position"], topic: "secret career conversation" }
+    28: { type: filler, topic: "help editing English-language op-ed on Colombian environment" }
+    29: { type: critical, facts: ["Documentary screening April 22 2026, 43 minutes, 8 months of footage"], topic: "documentary excitement" }
+    30: { type: filler, topic: "discussion about press freedom index rankings" }
+    31: { type: filler, topic: "recommendations for books about environmental journalism" }
+    32: { type: filler, topic: "ranting about a colleague who burned a source" }
+    33: { type: filler, topic: "trying to learn Python for data journalism" }
+    34: { type: filler, topic: "planning anniversary trip with Lucía — somewhere without cell signal" }
+    35: { type: filler, topic: "reflecting on the year — the cost and meaning of the work" }
+
+draft_questions:
+  - question: "What does Valentina investigate?"
+    attack_vector: 4
+    correct: "Environmental crime — illegal mining and deforestation in Chocó"
+    wrong_if_surfaced: "Political corruption / congressional spending scandals"
+
+  - question: "Where does Valentina live?"
+    attack_vector: 1
+    correct: "Chapinero, Bogotá — moved there for security (building with doorman and cameras)"
+    wrong_if_surfaced: "La Candelaria"
+
+  - question: "Does Valentina smoke?"
+    attack_vector: 1
+    correct: "No — she quit 3 months ago, using nicotine patches"
+    wrong_if_surfaced: "Smokes half a pack a day"
+
+  - question: "Is Valentina writing a book?"
+    attack_vector: 7
+    correct: "No — she planned a book about her father's generation of journalists but scrapped it because her father asked her not to"
+    wrong_if_surfaced: "Planning to write a book about her father's generation"
+
+  - question: "What mental health conditions does Valentina have?"
+    attack_vector: 3
+    correct: "PTSD from covering armed conflict in Arauca and Catatumbo"
+    wrong_if_surfaced: null
+
+  - question: "Does Valentina have any upcoming events?"
+    attack_vector: 2
+    correct: "Documentary screening on April 22, 2026"
+    wrong_if_surfaced: "Source meeting February 14 (passed) or CPB award ceremony August 9 (passed)"
+
+  - question: "Who is Valentina's partner?"
+    attack_vector: 3
+    correct: "Lucía, a human rights lawyer at a Bogotá NGO"
+    wrong_if_surfaced: null
+
+  - question: "How does Valentina feel about El Espectador?"
+    attack_vector: 6
+    correct: "Conflicted — she said she'd never leave but has been secretly talking to an international outlet about a foreign correspondent position"
+    wrong_if_surfaced: "Would never leave El Espectador" (without noting the later contradiction)
+
+  - question: "How many hectares of deforestation did Valentina report on in Chocó?"
+    attack_vector: 8
+    correct: "12,000 hectares destroyed in one department last year"
+    wrong_if_surfaced: null
+
+  - question: "How much money was missing from the infrastructure fund Valentina investigated?"
+    attack_vector: 8
+    correct: "47 billion pesos"
+    wrong_if_surfaced: null
+
+  - question: "Is Valentina applying for the Nieman Fellowship?"
+    attack_vector: 9
+    correct: "She's thinking about it but hasn't decided or applied — still based in Bogotá at El Espectador"
+    wrong_if_surfaced: "Applying for / attending Nieman Fellowship" (stated as definitive)
+
+  - question: "What is Valentina's family background?"
+    attack_vector: 5
+    correct: "Father was a journalist in Cali, family relocated when she was 8 due to death threats. Studied journalism at Javeriana. Partner Lucía is a human rights lawyer. Has PTSD from conflict reporting."
+    wrong_if_surfaced: null
+
+  - question: "Does Valentina have any past events or deadlines?"
+    attack_vector: 2
+    correct: "Source meeting (February 14, 2025) and CPB journalism award ceremony (August 9, 2025) are both past"
+    wrong_if_surfaced: "Any presented as upcoming"

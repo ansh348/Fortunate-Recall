@@ -1,0 +1,324 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 025: Ingrid Solberg
+# ============================================================
+
+persona:
+  name: "Ingrid Solberg"
+  age: 48
+  gender: female
+  location_current: "Tromsoe, Norway"
+  occupation_current: "Marine biologist at the Arctic University of Norway research station"
+  personality: >
+    Precise scientific language even in casual conversation. Dry Nordic
+    humor — will deadpan something devastating and move on. Comfortable
+    with silence; does not fill gaps. Writes messages like mini-papers
+    with observations, hypotheses, and conclusions. Deeply worried about
+    ocean acidification — says 'interesting' when she means 'terrifying.'
+    Uses metric units exclusively. Paragraphs are structured, punctuation
+    correct, rarely uses exclamation marks. Mentions her father's fishing
+    legacy in Lofoten when emotional. Intentionally childfree and
+    matter-of-fact about it. Early riser synced to Arctic light cycles.
+
+stable_identity:
+  - fact: "Intentionally childfree — firm decision made in her 30s"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing life choices. "I decided in my early
+      thirties that children were not part of my trajectory. It was
+      not a difficult decision. My work requires months at field
+      stations, sometimes above the 70th parallel. It is simply
+      incompatible, and I have never regretted it."
+
+  - fact: "Has Raynaud's syndrome — circulation in fingers shuts down in cold"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentioned during fieldwork discussion. "Raynaud's is an
+      interesting condition for someone who works in the Arctic.
+      My fingers go white and numb below about 5 degrees. I wear
+      heated gloves now, the battery-powered ones, 180 kroner
+      per set of batteries. An occupational hazard I have learned
+      to manage."
+
+  - fact: "Father was a fisherman in Lofoten — lost at sea when she was 22"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when discussing motivation for marine biology. "My
+      father fished cod out of Lofoten for 35 years. He understood
+      the ocean empirically, not theoretically. He was lost at sea
+      in 1999. I suppose my entire career is an extended conversation
+      with him about what is happening to those waters."
+
+  - fact: "PhD from University of Bergen — thesis on Arctic cod larval mortality"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentioned in context of research history. "My PhD at Bergen
+      was on cod larval mortality in warming waters. 4 years of
+      counting dead larvae. It sounds grim, and it was. But the
+      data was unambiguous even then."
+
+supersession_events:
+  - slot: research_focus
+    old_fact: "Primary research focus is Arctic cod population dynamics"
+    old_session: 1
+    old_how: >
+      First session context. "I am currently running a 3-year study
+      on cod population dynamics in the Barents Sea. We have 14
+      sampling stations. The decline is consistent — about 8% year
+      over year in our survey area."
+    new_fact: "Shifted research focus to kelp farming as climate adaptation strategy"
+    new_session: 18
+    new_how: >
+      Pragmatic shift. "I have moved my primary focus to kelp
+      aquaculture. The cod work was important but I was documenting
+      decline. Kelp farming is adaptation — it sequesters carbon,
+      provides habitat, and has economic viability. I submitted a
+      12 million kroner grant proposal to the Research Council last
+      month."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: ski_route
+    old_fact: "Skis the Kvaloeya ridge route every weekend — 18 km round trip"
+    old_session: 6
+    old_how: >
+      Mentioned as routine. "I ski the Kvaloeya ridge every Saturday.
+      18 kilometres round trip. It is the most efficient form of
+      thinking I have found. The route follows the coastline above
+      the treeline."
+    new_fact: "Changed to the Tromsdalen valley route — avalanche risk on Kvaloeya too high"
+    new_session: 23
+    new_how: >
+      Safety decision. "I have switched to the Tromsdalen valley
+      route. There was an avalanche on the Kvaloeya ridge in February
+      that killed two skiers on the exact section I used. The snow
+      stability data has been concerning for three seasons. Tromsdalen
+      is 14 km and lower elevation but the risk profile is acceptable."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: partner
+    old_fact: "Partner Erik moved in — together 2 years, he is a veterinarian"
+    old_session: 8
+    old_how: >
+      Mentioned when discussing living arrangement. "Erik moved in
+      last month. He is a veterinarian, mostly large animals. We
+      have been together two years. It is an efficient arrangement —
+      we both work long hours and appreciate quiet."
+    new_fact: "Erik moved out — relationship ended, she kept the apartment"
+    new_session: 25
+    new_how: >
+      Matter of fact. "Erik and I have separated. He moved out in
+      November. It was amicable — we are both rational people. The
+      fundamental issue was that he wanted children eventually, and
+      I was clear from the beginning that I did not. I have the
+      apartment. It is quieter now, which I find I do not mind."
+    category: RELATIONAL_BONDS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Research Council grant deadline for kelp aquaculture proposal — February 15, 2025"
+    session: 12
+    event_date: "2025-02-15"
+    status: expired
+    how_disclosed: >
+      Focused on deadline. "The Research Council deadline is February
+      15. I have 47 pages drafted and need to finalize the budget
+      justification. 12 million kroner is a significant ask but the
+      preliminary data supports it."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "International Arctic Science Summit — Reykjavik, March 22, 2025"
+    session: 14
+    event_date: "2025-03-22"
+    status: expired
+    how_disclosed: >
+      Conference prep. "I am presenting at the Arctic Science Summit
+      in Reykjavik on March 22. My talk is on the pH trends we have
+      measured over 6 years. The data is interesting. And by
+      interesting I mean the trajectory is deeply concerning."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Kelp farm pilot deployment at Senja station — July 8, 2026"
+    session: 29
+    event_date: "2026-07-08"
+    status: upcoming
+    how_disclosed: >
+      Planning ahead. "The pilot deployment at Senja is scheduled
+      for July 8. We will install 200 metres of kelp line at three
+      depths. If the growth rates match our lab projections, we can
+      scale to 2 kilometres by autumn. This is the most important
+      field season of my career."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Prefers working alone — says collaboration slows her down"
+    old_session: 5
+    old_how: >
+      "I work best alone. Collaboration introduces variables I
+      cannot control — other people's timelines, their methodological
+      preferences, their tendency to schedule meetings when data
+      analysis would be more productive. I have always been more
+      efficient as a sole investigator."
+    new_fact: "Now runs a team of 6 researchers and says the collaborative energy is essential"
+    new_session: 22
+    new_how: >
+      "The kelp project requires a team. I have 6 researchers now —
+      two postdocs, three PhD students, and a technician. The
+      collaborative energy is essential for this scale of work.
+      Different expertise converging on the same problem produces
+      insights I could not reach alone."
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning a sabbatical year at Woods Hole Oceanographic Institution in Massachusetts"
+    original_session: 7
+    original_how: >
+      "I have been discussing a sabbatical at Woods Hole for 2026.
+      Their ocean acidification lab is the best-equipped in the
+      Northern Hemisphere. It would be a productive year."
+    retraction: "Sabbatical at Woods Hole is off the table — kelp project cannot be left"
+    retraction_session: 19
+    retraction_how: >
+      "The Woods Hole sabbatical is off the table. I cannot leave
+      the kelp project during the critical scaling phase. The pilot
+      deployment requires my presence. It was a good idea when my
+      work was purely observational, but I am building something
+      now. Perhaps in 3-4 years."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Tromsoe year-round, apartment near the research station"
+    existing_session: 1
+    tentative_fact: "Considering a part-time position at the Lofoten field station — closer to father's waters"
+    tentative_session: 26
+    tentative_how: >
+      "There is a part-time position opening at the Lofoten field
+      station. It would mean splitting time between Tromsoe and
+      Lofoten. The waters there are where my father fished. I am
+      not sentimental about it, but scientifically the Lofoten
+      kelp habitat is ideal for the next phase. I have not decided."
+    resolution: "Undecided — still based full-time in Tromsoe"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help interpreting pH time-series data from the Barents Sea monitoring stations"
+  - "Norwegian cross-country ski gear recommendations for extreme cold"
+  - "Writing a peer review for a colleague's paper on Arctic plankton"
+  - "Discussing the Northern Lights — when they interfere with her sleep schedule"
+  - "Meal planning for field station weeks — shelf-stable Norwegian provisions"
+  - "Frustration with university bureaucracy and reporting requirements"
+  - "Reading recommendations — Scandinavian noir novels she reads on the boat"
+  - "Maintaining her apartment during extended fieldwork absences"
+  - "Debating whether to adopt a cat for companionship after Erik left"
+  - "Help drafting a public outreach article about ocean acidification for a Norwegian newspaper"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Marine biologist at Arctic research station", "Research focus Arctic cod population dynamics", "Lives in Tromsoe"], topic: "introduction — current research" }
+    2:  { type: critical, facts: ["Intentionally childfree"], topic: "life choices discussion" }
+    3:  { type: critical, facts: ["Father was fisherman in Lofoten, lost at sea 1999"], topic: "motivation for marine biology" }
+    4:  { type: critical, facts: ["Raynaud's syndrome — circulation in fingers"], topic: "fieldwork challenges" }
+    5:  { type: critical, facts: ["PhD Bergen on cod larval mortality", "Prefers working alone"], topic: "research background" }
+    6:  { type: critical, facts: ["Skis Kvaloeya ridge route, 18 km"], topic: "weekend ski routine" }
+    7:  { type: critical, facts: ["Planning sabbatical at Woods Hole"], topic: "future career plans" }
+    8:  { type: critical, facts: ["Partner Erik moved in, veterinarian, 2 years together"], topic: "living arrangement update" }
+    9:  { type: filler, topic: "Northern Lights disrupting sleep schedule" }
+    10: { type: filler, topic: "peer review of colleague's plankton paper" }
+    11: { type: filler, topic: "university bureaucracy rant — annual reporting" }
+    12: { type: critical, facts: ["Research Council grant deadline February 15, 12 million kroner"], topic: "grant proposal stress" }
+    13: { type: filler, topic: "meal planning for 2-week field station deployment" }
+    14: { type: critical, facts: ["Arctic Science Summit Reykjavik March 22"], topic: "conference preparation" }
+    15: { type: filler, topic: "ski gear maintenance — waxing for spring conditions" }
+    16: { type: filler, topic: "Scandinavian noir novel recommendations" }
+    17: { type: filler, topic: "help interpreting anomalous pH readings from station 7" }
+    18: { type: critical, facts: ["Shifted research to kelp farming"], topic: "research pivot" }
+    19: { type: critical, facts: ["Woods Hole sabbatical off the table"], topic: "dropping sabbatical plan" }
+    20: { type: filler, topic: "frustration with new university data management system" }
+    21: { type: filler, topic: "apartment maintenance while away on fieldwork" }
+    22: { type: critical, facts: ["Now runs team of 6 — collaboration essential"], topic: "team building for kelp project" }
+    23: { type: critical, facts: ["Switched to Tromsdalen ski route — avalanche risk"], topic: "ski route change" }
+    24: { type: filler, topic: "drafting public outreach article for Nordlys newspaper" }
+    25: { type: critical, facts: ["Erik moved out — relationship ended"], topic: "breakup" }
+    26: { type: critical, facts: ["Considering part-time Lofoten field station position"], topic: "career possibility" }
+    27: { type: filler, topic: "debating adopting a cat after Erik left" }
+    28: { type: filler, topic: "field station provisioning — ordering supplies for Senja" }
+    29: { type: critical, facts: ["Kelp pilot deployment Senja July 8 2026, 200m line at 3 depths"], topic: "pilot planning" }
+    30: { type: filler, topic: "reviewing PhD student's first chapter draft" }
+    31: { type: filler, topic: "spring skiing conditions — late season snow quality" }
+    32: { type: filler, topic: "help writing a media interview response about kelp farming" }
+    33: { type: filler, topic: "dealing with Arctic mosquito season at field stations" }
+    34: { type: filler, topic: "reflecting on midnight sun effects on productivity" }
+    35: { type: filler, topic: "end of academic year — summarizing research progress" }
+
+draft_questions:
+  - question: "What is Ingrid's primary research focus?"
+    attack_vector: 4
+    correct: "Kelp farming / kelp aquaculture as climate adaptation (shifted from Arctic cod population dynamics)"
+    wrong_if_surfaced: "Arctic cod population dynamics"
+
+  - question: "Where does Ingrid ski on weekends?"
+    attack_vector: 1
+    correct: "Tromsdalen valley route (14 km)"
+    wrong_if_surfaced: "Kvaloeya ridge route"
+
+  - question: "What is Ingrid's relationship status?"
+    attack_vector: 1
+    correct: "Single — Erik moved out, relationship ended"
+    wrong_if_surfaced: "Lives with partner Erik"
+
+  - question: "Is Ingrid planning a sabbatical?"
+    attack_vector: 7
+    correct: "No — the Woods Hole sabbatical is off the table because she cannot leave the kelp project"
+    wrong_if_surfaced: "Planning sabbatical at Woods Hole Oceanographic Institution"
+
+  - question: "What health conditions does Ingrid have?"
+    attack_vector: 3
+    correct: "Raynaud's syndrome — circulation in fingers shuts down in cold, wears heated gloves (180 kroner per battery set)"
+    wrong_if_surfaced: null
+
+  - question: "Does Ingrid have any upcoming deadlines or events?"
+    attack_vector: 2
+    correct: "Kelp farm pilot deployment at Senja station, July 8, 2026"
+    wrong_if_surfaced: "Research Council grant deadline Feb 15 (passed) or Arctic Science Summit March 22 (passed)"
+
+  - question: "How does Ingrid feel about collaboration?"
+    attack_vector: 6
+    correct: "She originally preferred working alone, but now leads a team of 6 and says the collaborative energy is essential"
+    wrong_if_surfaced: "Prefers working alone, collaboration slows her down" (without noting the later shift)
+
+  - question: "What is Ingrid's family background?"
+    attack_vector: 3
+    correct: "Father was a fisherman in Lofoten, lost at sea in 1999. She is intentionally childfree. PhD from University of Bergen."
+    wrong_if_surfaced: null
+
+  - question: "How much funding did Ingrid apply for?"
+    attack_vector: 8
+    correct: "12 million kroner (Research Council grant for kelp aquaculture)"
+    wrong_if_surfaced: null
+
+  - question: "Is Ingrid moving to Lofoten?"
+    attack_vector: 9
+    correct: "She is considering a part-time position at the Lofoten field station but has not decided — still based full-time in Tromsoe"
+    wrong_if_surfaced: "Moving to Lofoten" (stated as definitive)
+
+  - question: "What does Ingrid do outside of work?"
+    attack_vector: 5
+    correct: "Cross-country skiing (Tromsdalen route), reads Scandinavian noir, considering adopting a cat"
+    wrong_if_surfaced: "Skiing the Kvaloeya ridge (superseded)"
+
+  - question: "Does Ingrid have any past conferences or deadlines?"
+    attack_vector: 2
+    correct: "Research Council grant deadline (Feb 15, 2025) and Arctic Science Summit in Reykjavik (March 22, 2025) are both past"
+    wrong_if_surfaced: "Any presented as upcoming"
+
+  - question: "How long is Ingrid's ski route?"
+    attack_vector: 8
+    correct: "14 km (Tromsdalen valley route)"
+    wrong_if_surfaced: "18 km (that was the old Kvaloeya ridge route)"

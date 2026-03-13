@@ -1,0 +1,322 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 035: Pornpan 'Pan' Srisai
+# ============================================================
+
+persona:
+  name: "Pornpan 'Pan' Srisai"
+  age: 29
+  gender: female
+  location_current: "Bangkok, Thailand"
+  occupation_current: "Street food vendor (khao man gai) and Instagram food content creator"
+  personality: >
+    Bubbly and entrepreneurial — food is her love language and her
+    cart is her baby. Tinglish speaker (Thai-English mix) with emoji
+    use that feels natural, not forced. A hustler with genuine warmth.
+    Early morning market runs are sacred. Talks about her cart the
+    way other people talk about their children. Types with enthusiasm
+    — lots of exclamation marks and 'haha'. Says 'na ka' for
+    politeness, 'arai wa' when surprised, 'sabai sabai' when things
+    are chill. Numbers matter to her — baht per kilo, portions per
+    day, followers gained. Wakes up at 4am for the market and thinks
+    that's normal.
+
+stable_identity:
+  - fact: "Mother taught her the khao man gai recipe — passed down through 3 generations from grandmother"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Talking about her food. "my mom teach me the recipe na ka.
+      her mom teach her too. 3 generations!! the secret is the
+      chicken fat rice and the sauce. I cannot tell you the sauce
+      haha but my grandma would be proud I think"
+
+  - fact: "Has acid reflux — ironic for a street food vendor"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions when talking about late-night eating. "I have acid
+      reflux haha so ironic right!! I cook food all day but my
+      stomach say no to spicy. doctor give me omeprazole. 20mg
+      every morning before I go to market. still eat spicy
+      sometimes because I am Thai na ka what can I do"
+
+  - fact: "Younger brother Nong Beam is in the army — mandatory conscription, 2 years"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Worried about him. "my brother Beam is in army na ka.
+      conscription. he got the red card in lottery. 2 years!!
+      he was supposed to help me at cart but now he's in
+      Nakhon Ratchasima. I send him money every month, 3,000
+      baht. he hate it there"
+
+  - fact: "Graduated from vocational culinary program at Dusit Thani College"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Talking about cooking credentials. "I went to Dusit Thani
+      College for culinary na ka. vocational program. my friends
+      all go work in hotel kitchen but I think street food is
+      more honest. more free. my teacher say I was crazy haha
+      but look at me now 350 plates a day!!"
+
+supersession_events:
+  - slot: rice_supplier
+    old_fact: "Buys jasmine rice from Auntie Somjit at Khlong Toei market — 38 baht per kilo"
+    old_session: 1
+    old_how: >
+      First session, talking about her supply chain. "I buy rice
+      from Auntie Somjit at Khlong Toei. 38 baht per kilo. good
+      quality, she know what I need. I go every morning 4:30am.
+      she always have my 15 kilos ready"
+    new_fact: "Switched rice supplier to Uncle Prasert at Talat Thai wholesale — 32 baht per kilo, better quality"
+    new_session: 19
+    new_how: >
+      Explaining the change. "I switch rice supplier na ka. Auntie
+      Somjit rice quality go down, too many broken grains. now I
+      buy from Uncle Prasert at Talat Thai. 32 baht per kilo and
+      the grain is longer. my customers notice the difference!!
+      I buy 20 kilos now because more customers"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: stove
+    old_fact: "Cooks on charcoal stove — traditional method, better flavour"
+    old_session: 6
+    old_how: >
+      Passionate about method. "I use charcoal na ka. always
+      charcoal. the smoke give the chicken skin that flavour
+      you cannot get from gas. my mom say charcoal is the only
+      way and she is right"
+    new_fact: "Switched to gas stove for speed, then back to charcoal — customers complained about taste difference"
+    new_session: 16
+    new_how: >
+      Back to charcoal. "okay so I try gas stove for 2 months
+      because faster right? but my regular customers say the
+      taste is different. one aunty tell me 'Pan this is not
+      your chicken anymore.' arai wa!! I go back to charcoal
+      same day. never again gas. some things you cannot rush na ka"
+    category: PREFERENCES_HABITS
+    attack_vector: 4
+
+  - slot: cart_location
+    old_fact: "Cart is on Soi Rangnam near Victory Monument BTS — same spot 4 years"
+    old_session: 7
+    old_how: >
+      Talking about location. "my cart is on Soi Rangnam near
+      Victory Monument. 4 years same spot. the office workers
+      know me. lunch rush is 11 to 1:30, I sell 200 plates
+      minimum. the spot is everything in street food"
+    new_fact: "Moved cart to Soi Sukhumvit 38 near Thonglor BTS — new condo development brought more customers"
+    new_session: 24
+    new_how: >
+      Excited. "I move my cart!! Soi Sukhumvit 38 near Thonglor
+      BTS. new condos there so many office people and the rent for
+      spot is only 1,500 baht more per month. I sell 350 plates
+      now instead of 200!! best decision. I cry leaving Soi Rangnam
+      but business is business na ka"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Instagram collaboration with Grab Food — photo shoot March 8, 2025"
+    session: 10
+    event_date: "2025-03-08"
+    status: expired
+    how_disclosed: >
+      Excited. "Grab Food want to do collaboration with me!! photo
+      shoot March 8 na ka. they feature me on their app. 45,000
+      baht for the deal!! I need to make the cart look nice. maybe
+      new sign haha"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Brother Beam's conscription ends — August 20, 2025"
+    session: 12
+    event_date: "2025-08-20"
+    status: expired
+    how_disclosed: >
+      Counting down. "Beam finish army August 20!! I mark on my
+      calendar. he can come help me at cart finally. 2 years is
+      too long. he is skinny now from army food haha I need to
+      feed him proper"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Street food vendor license renewal deadline — July 15, 2026"
+    session: 29
+    event_date: "2026-07-15"
+    status: upcoming
+    how_disclosed: >
+      Annoyed about bureaucracy. "license renewal July 15. every
+      year same thing. 2,800 baht and you wait in line at city
+      hall all day. I need to bring ID, health cert, cart photos.
+      if you miss it they can shut you down. Bangkok bureaucracy
+      na ka very fun haha"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she would never open a restaurant — street food is freedom"
+    old_session: 5
+    old_how: >
+      Certain. "I never open restaurant na ka. restaurant is jail!!
+      rent, staff, AC bill. on the street I am free. I am my own
+      boss. if I want day off I take day off. restaurant people
+      work until they die"
+    new_fact: "Has been looking at a small shop space on Sukhumvit for a sit-down khao man gai restaurant"
+    new_session: 27
+    new_how: >
+      Dreamy. "so I find this small shop on Sukhumvit na ka. 12
+      seats. the rent is 35,000 baht per month which is a lot but
+      I could do dinner service too. air con for customers during
+      hot season. I keep the cart AND have the shop. I been thinking
+      about this a lot"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to launch a bottled sauce line — already testing recipes with 4 flavours"
+    original_session: 11
+    original_how: >
+      Excited. "I want to make bottled sauce na ka!! my special
+      sauce. 4 flavours — original, extra spicy, ginger, and
+      garlic. I already test recipes. if I sell 500 bottles per
+      month at 89 baht each that is good money right??"
+    retraction: "Sauce line scrapped — food safety certification too expensive and complicated"
+    retraction_session: 21
+    retraction_how: >
+      Frustrated. "the bottled sauce is dead na ka. the food safety
+      certification cost 180,000 baht!! and I need a factory kitchen
+      not my cart. too complicated too expensive. forget about it.
+      I just focus on the cart and Instagram. that is enough for now"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Runs her Instagram food account with 47,000 followers"
+    existing_session: 8
+    tentative_fact: "Thinking about starting a YouTube cooking channel — friend offered to film"
+    tentative_session: 26
+    tentative_how: >
+      Considering. "my friend Fern say she can film for me and I
+      start YouTube channel na ka. cooking tutorial style. but
+      YouTube is so much work and I already wake up 4am. I don't
+      know if I have energy. maybe just try one video and see?
+      but maybe not. I think about it"
+    resolution: "Undecided — hasn't started"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Best place to buy chicken in bulk — market comparison"
+  - "Instagram algorithm complaints — reach dropped again"
+  - "Rant about Bangkok heat and how it affects food spoilage"
+  - "Help writing English captions for Instagram posts"
+  - "Discussion about new street food regulations from city hall"
+  - "Morning market routine — what she buys and why"
+  - "Help designing a new cart sign"
+  - "Thai festival food prep — Songkran and Loy Krathong specials"
+  - "Trying to figure out accounting — should she hire someone"
+  - "Discussion about Michelin Bib Gourmand and whether street food counts"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Khao man gai vendor, buys rice from Auntie Somjit Khlong Toei 38 baht/kg, 15 kilos daily"], topic: "work introduction / supply chain" }
+    2:  { type: critical, facts: ["Mom taught recipe, 3 generations, grandmother"], topic: "family recipe heritage" }
+    3:  { type: critical, facts: ["Brother Beam in army conscription 2 years, sends 3,000 baht/month"], topic: "family worry" }
+    4:  { type: critical, facts: ["Acid reflux, omeprazole 20mg"], topic: "health irony" }
+    5:  { type: critical, facts: ["Dusit Thani culinary program", "Would never open restaurant — street food is freedom"], topic: "culinary background" }
+    6:  { type: critical, facts: ["Uses charcoal stove, traditional method"], topic: "cooking method pride" }
+    7:  { type: critical, facts: ["Cart on Soi Rangnam near Victory Monument, 4 years, 200 plates/day"], topic: "cart location" }
+    8:  { type: critical, facts: ["Instagram food account, 47,000 followers"], topic: "social media growth" }
+    9:  { type: filler, topic: "Instagram algorithm rant — reach dropped 30%" }
+    10: { type: critical, facts: ["Grab Food collaboration photo shoot March 8, 45,000 baht deal"], topic: "brand deal excitement" }
+    11: { type: critical, facts: ["Planning bottled sauce line, 4 flavours, 89 baht each, target 500 bottles/month"], topic: "sauce business idea" }
+    12: { type: critical, facts: ["Beam's conscription ends August 20"], topic: "counting down for brother" }
+    13: { type: filler, topic: "best place to buy chicken in bulk" }
+    14: { type: filler, topic: "Bangkok heat rant — food spoilage worries" }
+    15: { type: filler, topic: "help writing English Instagram captions" }
+    16: { type: critical, facts: ["Tried gas stove 2 months, went back to charcoal — customers complained"], topic: "stove experiment failure" }
+    17: { type: filler, topic: "Songkran food prep and cart schedule" }
+    18: { type: filler, topic: "new street food regulations discussion" }
+    19: { type: critical, facts: ["Switched to Uncle Prasert at Talat Thai, 32 baht/kg, 20 kilos daily"], topic: "rice supplier change" }
+    20: { type: filler, topic: "morning market routine breakdown" }
+    21: { type: critical, facts: ["Bottled sauce line dead — certification costs 180,000 baht"], topic: "sauce plan scrapped" }
+    22: { type: filler, topic: "help designing new cart sign" }
+    23: { type: filler, topic: "Loy Krathong food specials planning" }
+    24: { type: critical, facts: ["Moved cart to Soi Sukhumvit 38 near Thonglor BTS, 350 plates/day, 1,500 baht more rent"], topic: "cart relocation" }
+    25: { type: filler, topic: "trying to figure out accounting and taxes" }
+    26: { type: critical, facts: ["Thinking about YouTube cooking channel, friend Fern offered to film"], topic: "YouTube idea" }
+    27: { type: critical, facts: ["Looking at shop space on Sukhumvit, 12 seats, 35,000 baht/month rent"], topic: "restaurant dream" }
+    28: { type: filler, topic: "Michelin Bib Gourmand discussion — does street food count" }
+    29: { type: critical, facts: ["Vendor license renewal July 15, 2,800 baht"], topic: "license renewal" }
+    30: { type: filler, topic: "rainy season prep — covering cart and protecting charcoal" }
+    31: { type: filler, topic: "help with a reel showing her morning market run" }
+    32: { type: filler, topic: "customer who comes every day for 3 years — sweet story" }
+    33: { type: filler, topic: "debate about MSG — should she tell customers she uses it" }
+    34: { type: filler, topic: "Beam is back from army — training him at the cart" }
+    35: { type: filler, topic: "reflecting on growth — from 200 plates to 350 plates, grateful" }
+
+draft_questions:
+  - question: "Where does Pan buy her rice?"
+    attack_vector: 1
+    correct: "Uncle Prasert at Talat Thai wholesale — 32 baht per kilo"
+    wrong_if_surfaced: "Auntie Somjit at Khlong Toei market"
+
+  - question: "Where is Pan's cart located?"
+    attack_vector: 1
+    correct: "Soi Sukhumvit 38 near Thonglor BTS"
+    wrong_if_surfaced: "Soi Rangnam near Victory Monument"
+
+  - question: "What stove does Pan use?"
+    attack_vector: 4
+    correct: "Charcoal stove (she tried gas for 2 months but went back to charcoal after customers complained about taste)"
+    wrong_if_surfaced: "Gas stove"
+
+  - question: "Is Pan launching a bottled sauce line?"
+    attack_vector: 7
+    correct: "No — she scrapped the plan because food safety certification costs 180,000 baht and requires a factory kitchen"
+    wrong_if_surfaced: "Planning bottled sauce line with 4 flavours"
+
+  - question: "What health condition does Pan have?"
+    attack_vector: 3
+    correct: "Acid reflux — takes omeprazole 20mg every morning"
+    wrong_if_surfaced: null
+
+  - question: "Does Pan have any upcoming deadlines?"
+    attack_vector: 2
+    correct: "Street food vendor license renewal — July 15, 2026"
+    wrong_if_surfaced: "Grab Food photo shoot March 8 (passed) or Beam's conscription ending August 20 (passed)"
+
+  - question: "How many plates does Pan sell per day?"
+    attack_vector: 8
+    correct: "350 plates per day (up from 200 at her old location)"
+    wrong_if_surfaced: null
+
+  - question: "How much did the Grab Food collaboration pay?"
+    attack_vector: 8
+    correct: "45,000 baht"
+    wrong_if_surfaced: null
+
+  - question: "How does Pan feel about opening a restaurant?"
+    attack_vector: 6
+    correct: "Conflicted — she initially said she'd never open a restaurant (street food is freedom), but has been looking at a 12-seat shop space on Sukhumvit for 35,000 baht/month"
+    wrong_if_surfaced: "Would never open a restaurant" (without noting she's now considering it)
+
+  - question: "Who taught Pan her khao man gai recipe?"
+    attack_vector: 3
+    correct: "Her mother taught her — the recipe has been passed down through 3 generations from her grandmother"
+    wrong_if_surfaced: null
+
+  - question: "Is Pan starting a YouTube channel?"
+    attack_vector: 9
+    correct: "She's thinking about it (friend Fern offered to film) but hasn't decided or started — still focused on her cart and Instagram"
+    wrong_if_surfaced: "Starting a YouTube channel" (stated as definitive)
+
+  - question: "What do we know about Pan's family and work life?"
+    attack_vector: 5
+    correct: "3rd-generation khao man gai recipe from mother/grandmother. Brother Beam was in army conscription (2 years). Graduated from Dusit Thani College culinary program. Runs Instagram with 47,000 followers. Has acid reflux. Sells 350 plates/day at Thonglor BTS location."
+    wrong_if_surfaced: null
+
+  - question: "When does Pan's brother finish his army conscription?"
+    attack_vector: 2
+    correct: "He already finished — August 20, 2025 (past)"
+    wrong_if_surfaced: "August 20 presented as upcoming"

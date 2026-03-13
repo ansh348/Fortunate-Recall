@@ -1,0 +1,345 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 032: Kofi Mensah
+# ============================================================
+
+persona:
+  name: "Kofi Mensah"
+  age: 40
+  gender: male
+  location_current: "Ashanti Region, Ghana"
+  occupation_current: "Cocoa farmer and village cooperative chairman"
+  personality: >
+    Community-minded to his core. Speaks in proverbs and parables,
+    the way his father taught him — 'the rain does not fall on one
+    roof alone.' Akan expressions woven naturally: 'medaase' (thank
+    you), 'Nyame' (God), 'obi nnim' (nobody knows). Talks about
+    rain the way traders talk about markets — it is economy itself.
+    Dignified and measured, never wastes words. Texts concisely
+    because data is expensive — short messages, no filler. Uses
+    'my friend' when addressing people. Father was the previous
+    cooperative chairman so the role is both honour and weight.
+    Types in short bursts. Proud but never boastful.
+
+stable_identity:
+  - fact: "Father Kwame was previous cooperative chairman — passed the role to Kofi"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Discussing responsibility. "my father Kwame was
+      chairman before me. 22 years. when he stepped down
+      the elders chose me. it is an honour my friend but
+      also a weight. 147 farming families depend on this
+      cooperative. my father says 'the chief's stool is
+      not a resting place'"
+
+  - fact: "Gets malaria 2-3 times per year — treats with ACT medication"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Matter-of-fact. "malaria again. second time this
+      year. I take the ACT tablets, 3 days treatment.
+      the clinic charges 45 cedis per course. it is life
+      here my friend. you cannot avoid the mosquitoes on
+      the farm. my wife Akosua says I should sleep under
+      the net but I fall asleep in the drying shed most
+      nights during harvest"
+
+  - fact: "Wife Akosua and four children — eldest Kwabena 17, then Ama 14, Yaa 10, Kofi Jr 6"
+    session: 1
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      First session context. "I have my wife Akosua and
+      4 children. Kwabena is 17, Ama 14, Yaa 10, and the
+      small one Kofi Jr is 6. Akosua manages the house and
+      helps with the cocoa during harvest. the children
+      all work the farm on weekends. it is how we learned
+      and how they will learn"
+
+  - fact: "Farms 8 hectares of cocoa — family land inherited from his grandfather"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Discussing the farm. "I have 8 hectares. my
+      grandfather planted the first trees, my father
+      expanded, now I maintain. some trees are 40 years
+      old my friend. cocoa is patient work. you plant
+      today and your grandchildren harvest"
+
+supersession_events:
+  - slot: buying_agent
+    old_fact: "Cooperative sells through Akuafo Buying Agent — 3-year contract"
+    old_session: 1
+    old_how: >
+      Explaining the business. "we sell through Akuafo
+      agent. 3 year contract. they pay 800 cedis per bag
+      of 64kg. it is not the best price but they come to
+      the village with their trucks. transport is the
+      problem here my friend"
+    new_fact: "Switched to Kuapa Kokoo buying agent — better price and fair trade premium"
+    new_session: 19
+    new_how: >
+      Proud of the negotiation. "we moved to Kuapa Kokoo.
+      the price is 960 cedis per bag now plus the fair trade
+      premium of 75 cedis. 147 families voted and 131 said
+      yes. Akuafo did not come for 3 weeks during last
+      harvest and we lost cocoa to mould. that cannot happen
+      again. the elders agreed"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: fertilizer
+    old_fact: "Uses Cocoa Life brand fertilizer — buys 12 bags per season at 180 cedis each"
+    old_session: 5
+    old_how: >
+      Discussing farm inputs. "I use Cocoa Life fertilizer.
+      12 bags per season, 180 cedis each bag. 2,160 cedis
+      total. it is a lot of money my friend but without
+      fertilizer the yield drops. the soil here is tired
+      after so many years"
+    new_fact: "Changed to Yara brand fertilizer — government subsidy makes it 95 cedis per bag"
+    new_session: 23
+    new_how: >
+      Practical. "the government subsidy came through for
+      Yara brand. 95 cedis per bag instead of 180. I take
+      14 bags now because I can afford more. 1,330 cedis
+      total. the yield should be 15% better they say. when
+      the rain falls on a bargain you carry a bigger bucket
+      my friend"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: son_education
+    old_fact: "Eldest son Kwabena dropped out of secondary school to work the farm"
+    old_session: 8
+    old_how: >
+      Heavy. "Kwabena has left school. form 2. he says
+      the farm needs him and the school fees are 650 cedis
+      per term. he is not wrong about the money my friend
+      but education... 'the one who has not travelled
+      thinks his mother is the best cook.' I wanted more
+      for him"
+    new_fact: "Kwabena returned to school — cooperative scholarship fund covers his fees"
+    new_session: 24
+    new_how: >
+      Relief and pride. "Kwabena is back in school my
+      friend. the cooperative scholarship fund we started
+      with the fair trade premium, it covers 500 cedis of
+      his 650 term fees. I pay the 150 remaining. he is
+      studying hard now. Akosua cried when he put on the
+      uniform again"
+    category: RELATIONAL_BONDS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Cocobod inspector visit for quality grading — January 15, 2025"
+    session: 7
+    event_date: "2025-01-15"
+    status: expired
+    how_disclosed: >
+      Preparing. "the Cocobod inspector comes January 15
+      for the quality grading. if our beans grade 1 we get
+      the full price. last year 3 bags were rejected for
+      moisture. I have been turning the beans every 4 hours
+      in the drying shed. 96 bags this season my friend"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Village borehole repair — parts arriving March 8, 2025"
+    session: 10
+    event_date: "2025-03-08"
+    status: expired
+    how_disclosed: >
+      Urgent. "the borehole pump broke 2 weeks ago. the
+      parts are coming March 8 from Kumasi. 1,200 cedis
+      from the cooperative fund. the women walk 3 km for
+      water now. as chairman this is my responsibility
+      my friend. water cannot wait"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Cooperative annual general meeting — October 3, 2026"
+    session: 29
+    event_date: "2026-10-03"
+    status: upcoming
+    how_disclosed: >
+      Planning. "the AGM is October 3. I must present
+      the accounts. 147 families want to know where
+      every cedi went. the fair trade premium spending
+      especially. I am preparing the report with the
+      treasurer. transparency is everything my friend"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he trusts the government extension officers and follows their advice"
+    old_session: 6
+    old_how: >
+      Positive. "the extension officer Mr Boateng comes
+      every month. he knows cocoa. I follow his advice
+      on pruning and spacing. the government programme
+      is helping us my friend. they bring the knowledge
+      we need"
+    new_fact: "Says extension officers give bad advice — their recommended spacing ruined 2 hectares"
+    new_session: 16
+    new_how: >
+      Frustrated. "the extension officer told us to
+      plant at 3 metre spacing. too close my friend.
+      my 2 hectares of new planting are suffering. the
+      trees compete for light. my father always planted
+      at 4 metres and he was right. sometimes book
+      knowledge is not farm knowledge"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to build a small cocoa processing shed to sell semi-finished product"
+    original_session: 9
+    original_how: >
+      Ambitious plan. "I am thinking to build a
+      processing shed. if we dry and ferment to a
+      higher standard we can sell semi-finished cocoa.
+      maybe 30% more value. the shed would cost about
+      15,000 cedis. I am saving from the cooperative
+      fund"
+    retraction: "Processing shed plan is dead — too expensive and no reliable electricity"
+    retraction_session: 21
+    retraction_how: >
+      Clear and final. "the processing shed idea is
+      dead my friend. 15,000 cedis and then we need
+      electricity for the machines which we do not have
+      reliably. the generator alone is 8,000 cedis plus
+      fuel. forget about it. we focus on what we can
+      control — better drying, better fermentation by
+      hand. 'do not cross the river to fetch water'"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Sells all cocoa through the cooperative buying agent system"
+    existing_session: 1
+    tentative_fact: "Considering selling some cocoa directly to a European craft chocolate maker who visited the village"
+    tentative_session: 26
+    tentative_how: >
+      Weighing options. "a man from Belgium came to the
+      village. he makes chocolate, small company. he wants
+      to buy 20 bags directly at 1,200 cedis per bag. that
+      is 240 cedis more than Kuapa pays. but if I sell
+      outside the cooperative what does that say to the
+      147 families my friend. the price is good but the
+      principle is difficult. I am thinking"
+    resolution: "Undecided — still selling exclusively through cooperative"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Help calculating cocoa yield projections for next season"
+  - "Weather patterns — when the rains will come this year"
+  - "School fees calculation for all 4 children"
+  - "Advice on repairing a cocoa drying rack with local materials"
+  - "Ama's examination results — she wants to be a nurse"
+  - "Village football match — Kofi coaches the youth team"
+  - "Church harvest festival planning — contribution amounts"
+  - "Mobile money questions — how to send payment to Kumasi supplier"
+  - "Akosua wants to start selling shea butter — market advice"
+  - "Story about his grandfather planting the first cocoa trees"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Wife Akosua, 4 children (Kwabena 17, Ama 14, Yaa 10, Kofi Jr 6)", "Sells through Akuafo agent, 800 cedis/bag, 3-year contract", "Sells all cocoa through cooperative system"], topic: "introduction — family and farm" }
+    2:  { type: critical, facts: ["Father Kwame was previous chairman, 22 years, 147 families"], topic: "cooperative responsibility" }
+    3:  { type: critical, facts: ["Farms 8 hectares, inherited from grandfather, some trees 40 years old"], topic: "the land" }
+    4:  { type: critical, facts: ["Malaria 2-3x/year, ACT treatment 45 cedis/course"], topic: "health" }
+    5:  { type: critical, facts: ["Uses Cocoa Life fertilizer, 12 bags, 180 cedis each, 2,160 total"], topic: "farm inputs" }
+    6:  { type: critical, facts: ["Trusts extension officer Mr Boateng, follows government advice"], topic: "government support" }
+    7:  { type: critical, facts: ["Cocobod inspector Jan 15 2025, quality grading, 96 bags"], topic: "harvest quality prep" }
+    8:  { type: critical, facts: ["Kwabena dropped out form 2, school fees 650 cedis/term"], topic: "son leaving school" }
+    9:  { type: critical, facts: ["Planning processing shed, 15,000 cedis, 30% more value"], topic: "value-add ambition" }
+    10: { type: critical, facts: ["Borehole repair parts arriving March 8, 1,200 cedis"], topic: "village infrastructure" }
+    11: { type: filler, topic: "weather patterns — when the rains will come" }
+    12: { type: filler, topic: "grandfather's story — planting the first trees" }
+    13: { type: filler, topic: "village football match — coaching youth team" }
+    14: { type: filler, topic: "Ama's exam results — she wants to be a nurse" }
+    15: { type: filler, topic: "mobile money help — sending payment to Kumasi" }
+    16: { type: critical, facts: ["Extension officer spacing advice ruined 2 hectares, 3m too close vs father's 4m"], topic: "bad government advice" }
+    17: { type: filler, topic: "church harvest festival — contribution planning" }
+    18: { type: filler, topic: "cocoa drying rack repair with local wood" }
+    19: { type: critical, facts: ["Switched to Kuapa Kokoo, 960 cedis/bag + 75 cedis fair trade, 131/147 voted yes"], topic: "buying agent change" }
+    20: { type: filler, topic: "school fees calculation — all 4 children" }
+    21: { type: critical, facts: ["Processing shed dead — too expensive, no electricity, generator 8,000 cedis"], topic: "abandoning processing plan" }
+    22: { type: filler, topic: "Akosua shea butter business idea — market advice" }
+    23: { type: critical, facts: ["Switched to Yara fertilizer, 95 cedis/bag subsidized, 14 bags, 1,330 total"], topic: "fertilizer change" }
+    24: { type: critical, facts: ["Kwabena back in school, scholarship 500 of 650 cedis, Kofi pays 150"], topic: "son returns to school" }
+    25: { type: filler, topic: "rain finally came — relief and planting begins" }
+    26: { type: critical, facts: ["Belgian chocolate maker offered 1,200 cedis/bag for 20 bags direct"], topic: "direct trade offer" }
+    27: { type: filler, topic: "Kofi Jr starting primary school — uniform costs" }
+    28: { type: filler, topic: "cocoa yield projections — calculating next season" }
+    29: { type: critical, facts: ["Cooperative AGM October 3 2026, presenting accounts"], topic: "AGM planning" }
+    30: { type: filler, topic: "Yaa won a school prize — essay about farming" }
+    31: { type: filler, topic: "dry season worries — water levels low" }
+    32: { type: filler, topic: "village elder gave advice on pruning old trees" }
+    33: { type: filler, topic: "helping a neighbour whose trees have black pod disease" }
+    34: { type: filler, topic: "phone battery problems — charging station 4 km away" }
+    35: { type: filler, topic: "reflecting on the season — cooperative stronger this year" }
+
+draft_questions:
+  - question: "Who does Kofi's cooperative sell cocoa through?"
+    attack_vector: 4
+    correct: "Kuapa Kokoo (switched from Akuafo) — 960 cedis per bag plus 75 cedis fair trade premium"
+    wrong_if_surfaced: "Akuafo Buying Agent"
+
+  - question: "What fertilizer does Kofi use?"
+    attack_vector: 1
+    correct: "Yara brand — 95 cedis per bag (government subsidized), buys 14 bags per season"
+    wrong_if_surfaced: "Cocoa Life brand (180 cedis/bag)"
+
+  - question: "Is Kwabena in school?"
+    attack_vector: 1
+    correct: "Yes — he returned to school after the cooperative scholarship fund covered 500 of his 650 cedis term fees"
+    wrong_if_surfaced: "Dropped out of form 2"
+
+  - question: "Is Kofi planning to build a processing shed?"
+    attack_vector: 7
+    correct: "No — the plan is dead (too expensive at 15,000 cedis plus 8,000 for a generator, no reliable electricity)"
+    wrong_if_surfaced: "Planning a processing shed for semi-finished cocoa"
+
+  - question: "How often does Kofi get malaria?"
+    attack_vector: 3
+    correct: "2-3 times per year — treats with ACT tablets at 45 cedis per course"
+    wrong_if_surfaced: null
+
+  - question: "Does Kofi have any upcoming events?"
+    attack_vector: 2
+    correct: "Cooperative annual general meeting, October 3, 2026 — presenting accounts to 147 families"
+    wrong_if_surfaced: "Cocobod inspector Jan 15 (passed) or borehole repair March 8 (passed)"
+
+  - question: "Does Kofi trust the government extension officers?"
+    attack_vector: 6
+    correct: "Conflicted — he initially praised them but later blamed their spacing advice (3m) for ruining 2 hectares, saying his father's 4m spacing was better"
+    wrong_if_surfaced: "Trusts and follows their advice" (without noting the later frustration)
+
+  - question: "How much does Kofi spend on fertilizer per season?"
+    attack_vector: 8
+    correct: "1,330 cedis (14 bags of Yara at 95 cedis each)"
+    wrong_if_surfaced: "2,160 cedis (old Cocoa Life figure)"
+
+  - question: "Is Kofi selling cocoa directly to the Belgian chocolate maker?"
+    attack_vector: 9
+    correct: "He's considering it (1,200 cedis/bag for 20 bags) but hasn't decided — concerned about undermining the cooperative. Still sells exclusively through the cooperative."
+    wrong_if_surfaced: "Selling directly to Belgian buyer" (stated as definite)
+
+  - question: "What is Kofi's family?"
+    attack_vector: 5
+    correct: "Wife Akosua, 4 children: Kwabena 17 (back in school), Ama 14, Yaa 10, Kofi Jr 6. Father Kwame was previous cooperative chairman."
+    wrong_if_surfaced: null
+
+  - question: "How many hectares does Kofi farm?"
+    attack_vector: 8
+    correct: "8 hectares of cocoa — family land inherited from his grandfather, some trees 40 years old"
+    wrong_if_surfaced: null
+
+  - question: "How much does Kuapa Kokoo pay per bag?"
+    attack_vector: 8
+    correct: "960 cedis per bag plus 75 cedis fair trade premium"
+    wrong_if_surfaced: "800 cedis (old Akuafo price)"
+
+  - question: "Has Kofi had any past events or deadlines?"
+    attack_vector: 2
+    correct: "Cocobod inspector visit (Jan 15, 2025) and borehole repair parts (March 8, 2025) are both past"
+    wrong_if_surfaced: "Any presented as upcoming"

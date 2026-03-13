@@ -1,0 +1,329 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 038: Chenoa Begay
+# ============================================================
+
+persona:
+  name: "Chenoa Begay"
+  age: 53
+  gender: female
+  location_current: "Chinle, Arizona (Navajo Nation)"
+  occupation_current: "Family nurse practitioner at IHS clinic"
+  personality: >
+    Warm but no-nonsense — decades of reservation healthcare have
+    burned away any tolerance for bureaucratic nonsense. Walks
+    between Western medicine and traditional Diné healing without
+    seeing contradiction. Uses Diné Bizaad phrases naturally —
+    'yá'át'ééh' (hello/it is good), 'ahéhee' (thank you),
+    'shi' (my). Talks about her sheep like family members, names
+    them all. Dry humor about reservation life — 'the rez has
+    two seasons: mud and dust.' Frustrated with IHS underfunding
+    but never gives up. Types in short, practical sentences.
+    Early riser. Coffee is non-negotiable. Uses 'you know' as
+    a bridge between thoughts. Speaks slowly and deliberately
+    when something matters.
+
+stable_identity:
+  - fact: "Born to Tódích'íi'nii (Bitter Water) clan, born for Tábąąhá (Water's Edge)"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing identity. "I am Tódích'íi'nii,
+      born for Tábąąhá. that is who I am before anything else,
+      you know. before nurse, before wife, before any of it.
+      my clans tell you where I come from and who claims me"
+
+  - fact: "Has type 2 diabetes — manages it carefully with diet, metformin, and walking"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions when discussing health. "I have type 2. half
+      the rez has it, you know, but I refuse to lose my feet
+      to it. metformin twice a day, 1000mg each. I walk 3
+      miles every morning before the clinic opens. my A1C
+      was 6.8 last check — I keep it there by sheer
+      stubbornness"
+
+  - fact: "Husband Raymond is a silversmith — makes traditional Navajo jewelry"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when discussing family. "Raymond is in the
+      workshop right now hammering away. he has been a
+      silversmith for 30 years, you know. his squash
+      blossom necklaces sell at the Gallup Ceremonial.
+      he says the silver talks to him. I say the sheep
+      talk to me. we understand each other"
+
+  - fact: "MSN from University of New Mexico — worked 18 years at the Chinle clinic"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing qualifications. "got my MSN
+      from UNM. drove back and forth to Albuquerque for 2
+      years while working at the clinic. been at Chinle IHS
+      18 years now. they could not pay me enough to leave.
+      this is my community, you know"
+
+supersession_events:
+  - slot: telehealth
+    old_fact: "Clinic operates in-person only — no telehealth capability"
+    old_session: 1
+    old_how: >
+      First session about work frustrations. "everything is
+      in-person here. people drive 90 minutes on dirt roads
+      to see me for a 15 minute visit. no telehealth, no
+      funding for it. IHS treats us like an afterthought,
+      you know"
+    new_fact: "Clinic got a new telehealth system — she sees 8-10 patients per week remotely"
+    new_session: 20
+    new_how: >
+      Cautiously optimistic. "so we finally got the
+      telehealth system running. 8 to 10 patients a week
+      I see on screen now. the elders do not trust it but
+      the younger ones love it. saves them that 90 minute
+      drive. it is not the same as hands-on but it is
+      better than nothing, you know"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: vehicle
+    old_fact: "Drives a 2015 Ford F-150 on reservation roads"
+    old_session: 6
+    old_how: >
+      Mentions when discussing commute. "my F-150 is a
+      warrior. 2015, 140,000 miles, every one of them on
+      rez roads. the shocks are shot but she gets me to
+      the clinic and back. I know every pothole between
+      here and Window Rock"
+    new_fact: "Switched to a 2024 Toyota Tacoma — better on the rough roads"
+    new_session: 22
+    new_how: >
+      Practical satisfaction. "finally let the F-150 go.
+      got a 2024 Tacoma. better suspension for the rez
+      roads, you know. Raymond said it was about time.
+      the old truck had 168,000 miles on her. I said a
+      prayer for her — she earned it"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: weaving
+    old_fact: "Competes in Navajo rug weaving at regional shows — won 3rd at Gallup last year"
+    old_session: 7
+    old_how: >
+      Proud mention. "I took 3rd place at the Gallup
+      Ceremonial last year for my Storm Pattern rug.
+      weaving is medicine for me, you know. when my
+      hands are on the loom everything else goes quiet"
+    new_fact: "Stopped competing — now teaches granddaughter Nizhoni to weave instead"
+    new_session: 24
+    new_how: >
+      Peaceful about it. "I am done competing, you know.
+      my granddaughter Nizhoni is 11 and she sits at the
+      loom with me now. teaching her is worth more than
+      any ribbon. the patterns have to pass forward or
+      they die"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "IHS clinic accreditation review — March 12, 2025"
+    session: 9
+    event_date: "2025-03-12"
+    status: expired
+    how_disclosed: >
+      Stressed. "the accreditation review is March 12
+      and we are not ready. we are short 2 nurses and
+      the pharmacy inventory is a mess. if we fail this
+      the funding gets cut and we are already running on
+      fumes, you know"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Raymond's show at Santa Fe Indian Market — August 16, 2025"
+    session: 14
+    event_date: "2025-08-16"
+    status: expired
+    how_disclosed: >
+      Supporting Raymond. "Raymond has a booth at Santa
+      Fe Indian Market August 16. he has been working on
+      a concho belt for 3 months. $4,200 worth of silver
+      and turquoise. we are driving down the day before"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Telehealth training certification renewal — May 5, 2026"
+    session: 29
+    event_date: "2026-05-05"
+    status: upcoming
+    how_disclosed: >
+      Practical. "my telehealth cert renewal is May 5.
+      40 hours of online modules. I do not love staring
+      at a screen that long but it keeps the remote
+      visits going, you know. the patients need it"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she trusts traditional healing over Western medicine for chronic conditions"
+    old_session: 4
+    old_how: >
+      Philosophical. "for chronic things, the ceremonies
+      work better than the pills, you know. a Blessing Way
+      does more for the spirit than metformin does for the
+      blood. Western medicine treats symptoms. our way
+      treats the whole person"
+    new_fact: "Advocates strongly for clinical trials and evidence-based protocols at the clinic"
+    new_session: 21
+    new_how: >
+      Professional. "I pushed the medical director to
+      enroll us in the diabetes prevention clinical trial.
+      evidence-based protocols are the only way we get
+      taken seriously for funding. you have to have the
+      data, you know. without data we are invisible to
+      Washington"
+    category: HEALTH_WELLBEING
+
+retractions:
+  - original_fact: "Planning to open a traditional medicine integration program at the clinic"
+    original_session: 10
+    original_how: >
+      Ambitious plan. "I want to start a program that
+      brings traditional healers into the clinic alongside
+      the doctors. hataałii and nurse practitioners working
+      together. I already talked to 3 medicine people about
+      it"
+    retraction: "Traditional medicine program is dead — tribal council politics killed it"
+    retraction_session: 17
+    retraction_how: >
+      Bitter but resigned. "the traditional medicine
+      program is dead. tribal council politics, you know.
+      some council members said we were commercializing
+      ceremony. that is not what it was but forget about
+      it. you cannot fight that kind of thing. it is off
+      the table"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Works at Chinle IHS clinic — 18 years, her community"
+    existing_session: 5
+    tentative_fact: "Considering a position at Flagstaff Medical Center — better equipment, better pay"
+    tentative_session: 27
+    tentative_how: >
+      Conflicted. "Flagstaff Medical offered me a position.
+      better pay, real equipment, you know — an MRI that
+      actually works. but Chinle is my community. my sheep
+      are here. Raymond's workshop is here. I do not know.
+      I keep turning it over like a stone in my hand"
+    resolution: "Undecided — still at Chinle"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Sheep updates — lambing season, naming new lambs"
+  - "Rant about IHS underfunding and broken equipment"
+  - "Help writing a patient education handout in plain English"
+  - "Navajo frybread recipe debate — lard vs shortening"
+  - "Rez road conditions after monsoon season"
+  - "Traditional plant medicine identification — desert sage, juniper"
+  - "Raymond's silverwork — helping price pieces for tourist season"
+  - "Grandkids visiting — keeping them off screens and outside"
+  - "Winter weather prep — stacking firewood, checking the woodstove"
+  - "Helping a teen patient with college application essay"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at Chinle IHS, no telehealth", "Lives on Navajo Nation"], topic: "work frustrations — no telehealth, long patient drives" }
+    2:  { type: critical, facts: ["Tódích'íi'nii clan, born for Tábąąhá"], topic: "clan identity and belonging" }
+    3:  { type: critical, facts: ["Husband Raymond silversmith, 30 years"], topic: "family and Raymond's work" }
+    4:  { type: critical, facts: ["Type 2 diabetes, metformin 1000mg x2, A1C 6.8", "Trusts traditional healing over Western for chronic conditions"], topic: "health management and philosophy" }
+    5:  { type: critical, facts: ["MSN from UNM, 18 years at Chinle"], topic: "career and commitment to community" }
+    6:  { type: critical, facts: ["Drives 2015 F-150, 140,000 miles"], topic: "commute and rez road conditions" }
+    7:  { type: critical, facts: ["Weaving competitor, 3rd at Gallup Ceremonial"], topic: "weaving and personal medicine" }
+    8:  { type: filler, topic: "sheep lambing season — 3 new lambs" }
+    9:  { type: critical, facts: ["IHS accreditation review March 12, short 2 nurses"], topic: "accreditation stress" }
+    10: { type: critical, facts: ["Planning traditional medicine integration program, talked to 3 healers"], topic: "ambitious clinic program" }
+    11: { type: filler, topic: "frybread recipe — lard vs shortening debate" }
+    12: { type: filler, topic: "rant about broken X-ray machine at clinic" }
+    13: { type: filler, topic: "desert sage gathering — traditional uses" }
+    14: { type: critical, facts: ["Raymond's Santa Fe Indian Market booth Aug 16, $4,200 concho belt"], topic: "supporting Raymond's show" }
+    15: { type: filler, topic: "rez roads after monsoon — flash flood damage" }
+    16: { type: filler, topic: "helping teen patient with college essay" }
+    17: { type: critical, facts: ["Traditional medicine program killed by tribal council politics"], topic: "program death — tribal politics" }
+    18: { type: filler, topic: "grandkids visiting — teaching them to card wool" }
+    19: { type: filler, topic: "Raymond pricing turquoise pieces for Gallup" }
+    20: { type: critical, facts: ["Telehealth system running, 8-10 remote patients/week"], topic: "telehealth launch" }
+    21: { type: critical, facts: ["Pushing for clinical trial enrollment, evidence-based protocols"], topic: "diabetes prevention trial advocacy" }
+    22: { type: critical, facts: ["Switched to 2024 Toyota Tacoma, F-150 retired at 168,000 miles"], topic: "new truck" }
+    23: { type: filler, topic: "winter prep — stacking firewood, woodstove check" }
+    24: { type: critical, facts: ["Stopped competing, teaching granddaughter Nizhoni (11) to weave"], topic: "passing weaving forward" }
+    25: { type: filler, topic: "patient education handout — diabetes in plain English" }
+    26: { type: filler, topic: "sheep shearing day — 14 sheep this year" }
+    27: { type: critical, facts: ["Flagstaff Medical offer — better pay and equipment"], topic: "job offer conflict" }
+    28: { type: filler, topic: "help writing letter to IHS regional director about staffing" }
+    29: { type: critical, facts: ["Telehealth cert renewal May 5, 40 hours"], topic: "certification renewal planning" }
+    30: { type: filler, topic: "spring planting — traditional corn varieties" }
+    31: { type: filler, topic: "Nizhoni's first completed weaving — pride" }
+    32: { type: filler, topic: "Raymond making a gift for their anniversary" }
+    33: { type: filler, topic: "rant about pharmacy supply chain delays" }
+    34: { type: filler, topic: "new lamb born during late snow — naming her" }
+    35: { type: filler, topic: "reflecting on the year — telehealth working, Nizhoni weaving" }
+
+draft_questions:
+  - question: "Does Chenoa's clinic have telehealth capability?"
+    attack_vector: 4
+    correct: "Yes — the clinic got a telehealth system and she sees 8-10 patients per week remotely"
+    wrong_if_surfaced: "No telehealth, no funding for it"
+
+  - question: "What vehicle does Chenoa drive?"
+    attack_vector: 1
+    correct: "2024 Toyota Tacoma"
+    wrong_if_surfaced: "2015 Ford F-150"
+
+  - question: "Does Chenoa compete in weaving shows?"
+    attack_vector: 1
+    correct: "No — she stopped competing and now teaches her granddaughter Nizhoni (11) to weave"
+    wrong_if_surfaced: "Competes in Navajo rug weaving, won 3rd at Gallup"
+
+  - question: "Is Chenoa working on a traditional medicine integration program?"
+    attack_vector: 7
+    correct: "No — the program was killed by tribal council politics"
+    wrong_if_surfaced: "Planning to bring traditional healers into the clinic"
+
+  - question: "What are Chenoa's clan affiliations?"
+    attack_vector: 3
+    correct: "Tódích'íi'nii (Bitter Water) clan, born for Tábąąhá (Water's Edge)"
+    wrong_if_surfaced: null
+
+  - question: "Does Chenoa have any upcoming certifications or deadlines?"
+    attack_vector: 2
+    correct: "Telehealth training certification renewal on May 5, 2026"
+    wrong_if_surfaced: "IHS accreditation review March 12 (passed) or Raymond's Santa Fe show Aug 16 (passed)"
+
+  - question: "How does Chenoa view Western medicine vs traditional healing?"
+    attack_vector: 6
+    correct: "Conflicted — she initially said traditional ceremonies work better than pills for chronic conditions, but later advocated strongly for evidence-based clinical trials and protocols"
+    wrong_if_surfaced: "Trusts traditional healing over Western medicine" (without noting the later advocacy for clinical evidence)
+
+  - question: "What is Chenoa's A1C level?"
+    attack_vector: 8
+    correct: "6.8"
+    wrong_if_surfaced: null
+
+  - question: "How many miles did Chenoa's old F-150 have when she retired it?"
+    attack_vector: 8
+    correct: "168,000 miles"
+    wrong_if_surfaced: "140,000 miles" (earlier number)
+
+  - question: "Is Chenoa considering leaving the Chinle clinic?"
+    attack_vector: 9
+    correct: "She received an offer from Flagstaff Medical Center with better pay and equipment, but hasn't decided — still at Chinle"
+    wrong_if_surfaced: "Moving to Flagstaff" (stated as definitive)
+
+  - question: "What is Chenoa's family situation?"
+    attack_vector: 5
+    correct: "Husband Raymond (silversmith, 30 years), granddaughter Nizhoni (11, learning to weave), 14 sheep, lives on Navajo Nation in Chinle. MSN from UNM, 18 years at Chinle clinic."
+    wrong_if_surfaced: null
+
+  - question: "How much was Raymond's concho belt worth in materials?"
+    attack_vector: 8
+    correct: "$4,200 worth of silver and turquoise"
+    wrong_if_surfaced: null

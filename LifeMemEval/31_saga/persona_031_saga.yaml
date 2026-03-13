@@ -1,0 +1,344 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 031: Saga Lindqvist
+# ============================================================
+
+persona:
+  name: "Saga Lindqvist"
+  age: 34
+  gender: female
+  location_current: "Stockholm, Sweden"
+  occupation_current: "Data analyst at Spotify"
+  personality: >
+    Analytical to her core — quantifies everything, even emotions
+    ('I'd say I'm at a 6 out of 10 today'). Dry Swedish humor that
+    lands flat on purpose. Feminist without preamble. Loves
+    spreadsheets the way other people love music. Swedish word order
+    leaks into English ('I have always thought so' instead of 'I've
+    always thought that'). Fika is not a break, it is a personality
+    trait — she tracks her kanelbullar consumption in a spreadsheet.
+    Types in complete, structured sentences. Uses 'actually' and
+    'statistically' more than anyone should. Recently came out as
+    bisexual at 33, matter-of-fact about it. Says 'lagom' when
+    things are adequate.
+
+stable_identity:
+  - fact: "Recently came out as bisexual at 33 — took 2 years to tell her family"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing relationships. "I came out
+      at 33. statistically late but I needed the data, so
+      to speak. it took me 2 years from when I knew to when
+      I told my family. my parents were fine, which is lagom
+      Swedish of them. Erik just said 'finally' which is
+      the most twin-brother response possible"
+
+  - fact: "Has celiac disease — strict gluten-free diet since diagnosed at 22"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentioned during fika discussion. "I have celiac
+      disease, diagnosed at 22. gluten-free since then,
+      strictly. cross-contamination is a real problem —
+      I got glutened at a restaurant 3 months ago and was
+      out for 4 days. I track every reaction in a
+      spreadsheet. the correlation with stress is 0.67"
+
+  - fact: "Twin brother Erik is an architect in Gothenburg"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Casual mention. "my twin brother Erik lives in
+      Gothenburg. he is an architect. we are very different —
+      he builds things, I analyse things. but we talk every
+      Sunday at 19:00 sharp. 47 consecutive weeks now, I
+      have been tracking"
+
+  - fact: "MSc in Statistics from Stockholm University"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Discussing work credentials. "I did my masters in
+      statistics at Stockholm University. the thesis was on
+      Bayesian methods for sparse data, which sounds dry but
+      is actually the foundation of half of what I do at
+      Spotify. I graduated with distinction, 18.4 GPA on
+      the Swedish scale"
+
+supersession_events:
+  - slot: team
+    old_fact: "Works on podcast analytics team at Spotify"
+    old_session: 1
+    old_how: >
+      Introduction. "I work on the podcast analytics team
+      at Spotify. we track listener behaviour — completion
+      rates, skip patterns, that kind of thing. the dataset
+      is 340 million monthly users so it is never boring
+      from a statistical perspective"
+    new_fact: "Moved to music recommendations team after restructure"
+    new_session: 18
+    new_how: >
+      Mixed feelings but analytical about it. "there was a
+      restructure and I am on the music recommendations team
+      now. algorithmically more interesting actually — the
+      collaborative filtering models are more complex than
+      podcast analytics. but I did not choose the move, which
+      statistically makes people 23% less satisfied with
+      transitions according to a McKinsey study I read"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: climbing_gym
+    old_fact: "Climbs at Klättercentret Telefonplan — goes 2x per week"
+    old_session: 6
+    old_how: >
+      Discussing exercise. "I climb at Klättercentret
+      Telefonplan, 2 times per week. I track my grades —
+      currently projecting 6b+ on lead. the improvement
+      curve has been linear over 8 months which is
+      satisfying"
+    new_fact: "Switched to Karbin climbing gym in Södermalm — better setting, closer to new apartment"
+    new_session: 22
+    new_how: >
+      Practical explanation. "I switched to Karbin in
+      Södermalm. 12 minutes walk from my apartment versus
+      25 on the tunnelbana. the route-setting is arguably
+      better and the monthly cost is only 50 kronor more.
+      by my calculation I save 3.5 hours per month on
+      commute which more than compensates"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: relationship
+    old_fact: "In a 6-year relationship with boyfriend Anders"
+    old_session: 7
+    old_how: >
+      Mentioned when discussing weekends. "Anders and I
+      usually do something low-key on Saturdays. we have
+      been together 6 years. he is a UX designer. it is
+      comfortable, which is not a criticism — Swedes value
+      lagom in relationships too"
+    new_fact: "Ended relationship with Anders — now dating a woman named Maja"
+    new_session: 25
+    new_how: >
+      Calm but significant. "Anders and I ended things 3
+      months ago. it was mutual, approximately. I am dating
+      a woman now, Maja. she is a documentary filmmaker. it
+      feels different in a way that is hard to quantify,
+      which for me is actually a good sign. I am 72% sure
+      this is the most honest version of my life"
+    category: RELATIONAL_BONDS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Spotify annual performance review — March 14, 2025"
+    session: 10
+    event_date: "2025-03-14"
+    status: expired
+    how_disclosed: >
+      Preparing methodically. "my performance review is
+      March 14. I have prepared a 12-slide deck with
+      quantified impact metrics. last year I got 'exceeds
+      expectations' and I would estimate a 78% probability
+      of the same outcome this year"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Erik's wedding in Gothenburg — August 23, 2025"
+    session: 13
+    event_date: "2025-08-23"
+    status: expired
+    how_disclosed: >
+      Planning logistics. "Erik is getting married August
+      23 in Gothenburg. I am doing a speech which requires
+      me to be publicly emotional, a prospect I find
+      statistically unlikely to go well. I have drafted 3
+      versions already. none of them are funny enough"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Data conference talk in Copenhagen — August 8, 2026"
+    session: 28
+    event_date: "2026-08-08"
+    status: upcoming
+    how_disclosed: >
+      Nervous in her own way. "I am presenting at the
+      Nordic Data Science Summit in Copenhagen, August 8.
+      my talk is on causal inference in recommendation
+      systems. 30 minutes plus 10 for questions. I have
+      started the slides already which is 5 months early
+      but that is how I regulate anxiety"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she thrives on data-driven decisions and never acts on emotion"
+    old_session: 5
+    old_how: >
+      Declarative. "I make decisions based on data, always.
+      emotional decisions have a much higher regret rate,
+      somewhere around 40% based on what I have read. I
+      track my major decisions and their outcomes. data
+      is the only reliable framework"
+    new_fact: "Ended her relationship with Anders partly on gut feeling — 'something just felt wrong'"
+    new_session: 25
+    new_how: >
+      Reflective. "with Anders it was not any single thing.
+      the data said it was fine — we were compatible on
+      paper, low conflict frequency, aligned life goals.
+      but something just felt wrong. I could not quantify
+      it. maybe some things are not meant to be measured"
+    category: IDENTITY_SELF_CONCEPT
+
+retractions:
+  - original_fact: "Planning to apply for a senior analyst role at Klarna"
+    original_session: 11
+    original_how: >
+      Strategic. "I am considering Klarna. their data team
+      is doing interesting work in credit risk modelling.
+      the senior analyst role pays approximately 15% more
+      than Spotify and the equity package is better. I plan
+      to apply by end of Q1"
+    retraction: "Klarna application scrapped — team restructure at Spotify made the new role more interesting"
+    retraction_session: 19
+    retraction_how: >
+      Decisive. "the Klarna thing is dead. after the
+      restructure I ended up on music recommendations which
+      is actually more interesting algorithmically than
+      anything Klarna is doing. the probability of me
+      leaving Spotify dropped from 65% to approximately 12%.
+      scrapped the whole plan"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Stockholm — 15-minute bike to Spotify HQ"
+    existing_session: 1
+    tentative_fact: "Thinking about spending 3 months in Gothenburg to be near Erik and his new family"
+    tentative_session: 27
+    tentative_how: >
+      Exploring. "Spotify allows remote work for up to 3
+      months per year. I have been thinking about spending
+      that time in Gothenburg near Erik. he and Sara are
+      expecting a baby in November and the idea of being
+      near them is appealing. but my climbing gym, Maja,
+      my apartment — it is a lot to leave temporarily.
+      I am running the numbers but this is not a numbers
+      decision"
+    resolution: "Undecided — still full-time in Stockholm"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help optimizing a SQL query for playlist clustering"
+  - "Gluten-free restaurant recommendations in Stockholm"
+  - "Spreadsheet design — tracking personal fitness metrics"
+  - "Rant about A/B testing misuse by product managers at Spotify"
+  - "Climbing technique — how to improve overhangs"
+  - "Swedish election data analysis — she votes Miljöpartiet"
+  - "Fika culture — ranking Stockholm's best kanelbullar"
+  - "Help writing the speech for Erik's wedding"
+  - "Feminist book recommendations — recently read Invisible Women by Perez"
+  - "Dating as a bi woman in Stockholm — app vs social"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Works on podcast analytics at Spotify, 340M users", "Lives in Stockholm, 15-min bike to HQ"], topic: "work introduction" }
+    2:  { type: critical, facts: ["Twin brother Erik, architect in Gothenburg, weekly calls Sundays 19:00"], topic: "family" }
+    3:  { type: critical, facts: ["Came out bisexual at 33, 2 years to tell family"], topic: "identity and coming out" }
+    4:  { type: critical, facts: ["Celiac disease, diagnosed at 22, tracks reactions in spreadsheet, stress correlation 0.67"], topic: "health and fika" }
+    5:  { type: critical, facts: ["MSc Statistics Stockholm U, 18.4 GPA", "Makes decisions based on data, never emotion"], topic: "career credentials and philosophy" }
+    6:  { type: critical, facts: ["Climbs at Klättercentret Telefonplan 2x/week, projecting 6b+"], topic: "climbing routine" }
+    7:  { type: critical, facts: ["In 6-year relationship with boyfriend Anders, UX designer"], topic: "relationship" }
+    8:  { type: filler, topic: "SQL optimization for playlist clustering" }
+    9:  { type: filler, topic: "A/B testing rant — product managers misinterpreting p-values" }
+    10: { type: critical, facts: ["Performance review March 14 2025, 12-slide deck prepared"], topic: "review prep" }
+    11: { type: critical, facts: ["Considering Klarna senior analyst role, 15% more pay"], topic: "career exploration" }
+    12: { type: filler, topic: "gluten-free restaurant recs — new place in Södermalm" }
+    13: { type: critical, facts: ["Erik's wedding August 23 2025 Gothenburg, giving speech"], topic: "wedding planning" }
+    14: { type: filler, topic: "climbing technique — struggling with overhangs" }
+    15: { type: filler, topic: "fika ranking — best kanelbullar in Stockholm" }
+    16: { type: filler, topic: "Swedish election data — analyzing Miljöpartiet trends" }
+    17: { type: filler, topic: "reading Invisible Women — discussing gender data gap" }
+    18: { type: critical, facts: ["Moved to music recommendations team after restructure"], topic: "team change" }
+    19: { type: critical, facts: ["Klarna application scrapped — new Spotify role more interesting"], topic: "career pivot" }
+    20: { type: filler, topic: "personal fitness tracking spreadsheet design" }
+    21: { type: filler, topic: "help editing Erik's wedding speech — draft 4" }
+    22: { type: critical, facts: ["Switched to Karbin gym Södermalm, 12 min walk, 50 kr more"], topic: "gym change" }
+    23: { type: filler, topic: "dating as a bi woman — app experiences" }
+    24: { type: filler, topic: "gluten-free baking experiment — disastrous kanelbullar attempt" }
+    25: { type: critical, facts: ["Ended relationship with Anders, now dating Maja (filmmaker), 72% honest version"], topic: "relationship change" }
+    26: { type: filler, topic: "Maja's documentary about Swedish fishing communities" }
+    27: { type: critical, facts: ["Thinking about 3 months remote in Gothenburg near Erik"], topic: "life direction" }
+    28: { type: critical, facts: ["Data conference Copenhagen August 8 2026, causal inference talk"], topic: "conference prep" }
+    29: { type: filler, topic: "help structuring conference talk slides" }
+    30: { type: filler, topic: "tracking November darkness hours — SAD management" }
+    31: { type: filler, topic: "Maja wants to move in together — Saga running the numbers" }
+    32: { type: filler, topic: "Erik's baby born — processing becoming an aunt" }
+    33: { type: filler, topic: "new climbing project — attempting 6c for the first time" }
+    34: { type: filler, topic: "spring in Stockholm — quantifying mood improvement with daylight" }
+    35: { type: filler, topic: "reflecting on year — team change, coming out, new relationship" }
+
+draft_questions:
+  - question: "What team does Saga work on at Spotify?"
+    attack_vector: 4
+    correct: "Music recommendations (moved from podcast analytics after a restructure)"
+    wrong_if_surfaced: "Podcast analytics"
+
+  - question: "Which climbing gym does Saga go to?"
+    attack_vector: 1
+    correct: "Karbin in Södermalm (switched from Klättercentret Telefonplan)"
+    wrong_if_surfaced: "Klättercentret Telefonplan"
+
+  - question: "What is Saga's relationship status?"
+    attack_vector: 1
+    correct: "Dating a woman named Maja, a documentary filmmaker (ended 6-year relationship with Anders)"
+    wrong_if_surfaced: "In a relationship with Anders"
+
+  - question: "Is Saga applying to Klarna?"
+    attack_vector: 7
+    correct: "No — she considered it but scrapped the plan after her new Spotify role turned out more interesting"
+    wrong_if_surfaced: "Planning to apply for senior analyst at Klarna"
+
+  - question: "What health conditions does Saga have?"
+    attack_vector: 3
+    correct: "Celiac disease — diagnosed at 22, strict gluten-free. Tracks reactions in a spreadsheet (stress correlation 0.67)."
+    wrong_if_surfaced: null
+
+  - question: "Does Saga have any upcoming events?"
+    attack_vector: 2
+    correct: "Nordic Data Science Summit in Copenhagen, August 8, 2026 — presenting on causal inference in recommendation systems"
+    wrong_if_surfaced: "Performance review March 14 (passed) or Erik's wedding August 23 (passed)"
+
+  - question: "How does Saga make decisions?"
+    attack_vector: 6
+    correct: "She claims to be strictly data-driven but ended her relationship with Anders on gut feeling ('something just felt wrong'), contradicting her own framework"
+    wrong_if_surfaced: "Always data-driven, never emotional" (without noting the contradiction)
+
+  - question: "What was Saga's GPA?"
+    attack_vector: 8
+    correct: "18.4 on the Swedish scale (MSc Statistics, Stockholm University, graduated with distinction)"
+    wrong_if_surfaced: null
+
+  - question: "Is Saga planning to move to Gothenburg?"
+    attack_vector: 9
+    correct: "She's thinking about spending 3 months remote there (near Erik and his new family) but hasn't decided — still in Stockholm"
+    wrong_if_surfaced: "Moving to Gothenburg" (stated as definite)
+
+  - question: "What are Saga's interests and activities outside work?"
+    attack_vector: 5
+    correct: "Climbing (Karbin gym, projecting 6b+), fika culture, spreadsheet tracking, reading feminist literature, dating Maja, considering visiting Erik in Gothenburg"
+    wrong_if_surfaced: "Klättercentret Telefonplan (superseded)"
+
+  - question: "Who is Saga's brother?"
+    attack_vector: 3
+    correct: "Twin brother Erik, architect in Gothenburg. They talk every Sunday at 19:00 — 47+ consecutive weeks tracked."
+    wrong_if_surfaced: null
+
+  - question: "How much more does Saga's new climbing gym cost?"
+    attack_vector: 8
+    correct: "50 kronor more per month than Klättercentret Telefonplan"
+    wrong_if_surfaced: null
+
+  - question: "Has Saga had any past deadlines?"
+    attack_vector: 2
+    correct: "Spotify performance review (March 14, 2025) and Erik's wedding (August 23, 2025) are both in the past"
+    wrong_if_surfaced: "Any presented as upcoming"

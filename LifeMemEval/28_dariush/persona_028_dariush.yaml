@@ -1,0 +1,345 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 028: Dariush Farhadi
+# ============================================================
+
+persona:
+  name: "Dariush Farhadi"
+  age: 51
+  gender: male
+  location_current: "San Diego, CA"
+  occupation_current: "Periodontist — owns Farhadi Periodontics & Implant Center"
+  personality: >
+    Meticulous perfectionist in everything — clinical precision extends
+    to how he arranges his desk, his sentences, his dinner parties.
+    Warm Persian hospitality layered over exacting professional standards.
+    Calls everyone 'jan' (dear) as a term of affection. Loves hosting
+    elaborate dinners — tahdig is his signature dish. Nostalgic about
+    Tehran though he left at 4. Formal in emails, casual in texts.
+    Uses proper grammar and complete sentences in professional contexts
+    but relaxes with friends. References his father's journey from Iran
+    often. DDS from UCLA. Proud of building his practice from nothing.
+    Gets emotional about his heritage but channels it into hospitality
+    rather than sadness.
+
+stable_identity:
+  - fact: "Family fled Iran during the 1979 revolution — he was 4 years old"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing identity. "We left Tehran in 1979,
+      jan. I was four. My father was a dentist there too, had a
+      beautiful practice in Tajrish. He lost everything overnight.
+      Came to Los Angeles with $2,000 sewn into my mother's coat
+      lining. I think about that every time I walk into my own
+      practice."
+
+  - fact: "Wife Shirin teaches Farsi at the community center — married 23 years"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentioned with pride. "Shirin jan teaches Farsi at the
+      Persian Cultural Center every Saturday. She has been doing
+      this for 11 years now. We have been married 23 years. She
+      says I am more precise about dinner seasoning than about
+      periodontal measurements, which I take as a compliment."
+
+  - fact: "Has gout — flares in right big toe, loves red meat anyway"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentioned with self-aware humor. "The gout flared again
+      last week, jan. My right big toe feels like it contains a
+      small fire. My rheumatologist says to stop eating red meat.
+      I told him I would rather limp. He was not amused. I take
+      allopurinol 300 mg daily but I refuse to give up kabob
+      koobideh."
+
+  - fact: "DDS from UCLA School of Dentistry plus periodontal residency at USC"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Professional background. "UCLA for dental school, then USC
+      for the periodontal residency. My father drove me to the
+      UCLA campus when I was 12 and said, 'This is where you will
+      study.' He had no doubt. Neither did I, eventually. The
+      residency was 3 years of 80-hour weeks but it made me the
+      clinician I am."
+
+supersession_events:
+  - slot: laser_equipment
+    old_fact: "Uses LANAP laser protocol for periodontal treatment — Periolase MVP-7"
+    old_session: 1
+    old_how: >
+      First session. "I use the LANAP protocol with the Periolase
+      MVP-7. It was a $95,000 investment when I bought it in 2019.
+      The outcomes are excellent — 85% of my implant patients avoid
+      traditional surgery. It changed my practice, jan."
+    new_fact: "Upgraded to the Fotona LightWalker system — dual wavelength, better outcomes"
+    new_session: 21
+    new_how: >
+      Excited about the upgrade. "I finally made the switch to the
+      Fotona LightWalker, jan. Dual wavelength — Er:YAG and Nd:YAG.
+      The investment was $128,000 but the treatment versatility is
+      incomparable. I can do hard and soft tissue procedures with
+      one unit. The Periolase was excellent but this is the next
+      generation."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: investment_advisor
+    old_fact: "Investment advisor is Howard Chen at Merrill Lynch — manages his portfolio since 2015"
+    old_session: 6
+    old_how: >
+      Discussing finances. "Howard at Merrill Lynch handles my
+      investments. He has managed the portfolio since 2015. About
+      $1.2 million in retirement accounts plus the practice value.
+      He is conservative which I appreciate — I take enough risk
+      in business."
+    new_fact: "Switched to Priya Sharma at Vanguard — lower fees, better returns"
+    new_session: 22
+    new_how: >
+      "I left Howard, jan. Moved everything to Priya Sharma at
+      Vanguard. The fee difference alone saves me $14,000 a year.
+      Howard was charging 1.2% and Priya's model is 0.3% plus
+      advisory. The portfolio is $1.4 million now and at those
+      numbers every basis point matters."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: country_club
+    old_fact: "Member at Rancho Santa Fe Golf Club — plays every Sunday"
+    old_session: 8
+    old_how: >
+      Discussing weekends. "Sunday is golf at Rancho Santa Fe, jan.
+      I have been a member for 7 years. The initiation fee was
+      $35,000 but the course is immaculate. I shoot in the low 90s
+      which my partners find impressive and I find unacceptable."
+    new_fact: "Switched to The Bridges at Rancho Santa Fe — better Persian community there"
+    new_session: 27
+    new_how: >
+      "I moved to The Bridges, jan. Several of my Persian friends
+      are members there. The initiation was $45,000 which Shirin
+      thought was excessive but the community is worth it. We host
+      Nowruz dinner there now. And the course is more challenging
+      which I need — I was getting complacent at the old club."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "California Dental Board license renewal — due April 30, 2025"
+    session: 10
+    event_date: "2025-04-30"
+    status: expired
+    how_disclosed: >
+      "My dental license renewal is due April 30, jan. I need 25
+      continuing education credits. I have 18 so far. There is a
+      periodontal laser symposium in LA next month that covers 8
+      credits, so I will be fine. But I prefer not to cut it close."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Nowruz dinner party for 40 guests — March 20, 2025"
+    session: 12
+    event_date: "2025-03-20"
+    status: expired
+    how_disclosed: >
+      Planning mode. "Nowruz is March 20 and Shirin and I are
+      hosting 40 people, jan. I have been marinating the lamb
+      since Tuesday. 12 pounds. The tahdig alone requires 6 cups
+      of basmati. This is my favorite night of the year."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "American Academy of Periodontology annual meeting — San Francisco, September 12, 2026"
+    session: 29
+    event_date: "2026-09-12"
+    status: upcoming
+    how_disclosed: >
+      "I am presenting my Fotona LightWalker outcomes data at the
+      AAP meeting in San Francisco, September 12. I have 14 months
+      of cases now — 127 patients. The data is very strong, jan.
+      This will be a significant presentation for the practice."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he never works weekends — weekends are for family and golf"
+    old_session: 7
+    old_how: >
+      "I do not work weekends, jan. My father worked 7 days a week
+      when we first came to America and it nearly destroyed his
+      marriage. I promised Shirin — Saturday is for family, Sunday
+      is for golf. The practice can wait."
+    new_fact: "Has been coming in on Saturdays to handle overflow patients from the new laser demand"
+    new_session: 24
+    new_how: >
+      "I have been coming in Saturday mornings since the Fotona
+      publicity. We have a 6-week waitlist, jan. I cannot turn
+      away patients in pain. I see 4-5 cases Saturday morning
+      and I am home by 1pm. Shirin understands. Mostly."
+    category: PREFERENCES_HABITS
+
+  - old_fact: "Claims he is not competitive about golf — it's purely for relaxation"
+    old_session: 8
+    old_how: >
+      "Golf for me is meditation, jan. I do not keep score
+      seriously. It is about the fresh air and the company.
+      Competition is for the office."
+    new_fact: "Hired a golf coach and is obsessed with breaking 85"
+    new_session: 26
+    new_how: >
+      "I hired a coach, jan. $150 per lesson, twice a month.
+      I need to break 85 before the club championship in October.
+      My friend Babak shot an 83 last week and I cannot let this
+      stand. I have been at the range every evening this week."
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Planning to open a second practice location in La Jolla"
+    original_session: 9
+    original_how: >
+      "I have been looking at spaces in La Jolla, jan. A second
+      location would increase referral reach significantly. I
+      found a suite on Prospect Street — 1,800 square feet,
+      $8,500 per month. I am running the numbers."
+    retraction: "La Jolla second practice is off the table — too much overhead"
+    retraction_session: 18
+    retraction_how: >
+      "The La Jolla location is dead, jan. I ran the full
+      financial model — between buildout, equipment, staffing,
+      and the $8,500 rent, I would need $425,000 in first-year
+      revenue just to break even. With the Fotona investment
+      still being amortized, it is not prudent. Forget about it.
+      One excellent practice is better than two mediocre ones."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Runs a solo periodontal practice — he is the only periodontist"
+    existing_session: 1
+    tentative_fact: "Interviewing a younger periodontist to join as associate — Dr. Kaveh Bahrami"
+    tentative_session: 28
+    tentative_how: >
+      "I am interviewing Dr. Kaveh Bahrami as a potential
+      associate, jan. He finished his residency at Loma Linda.
+      Excellent credentials. But bringing in another periodontist
+      changes the dynamic of the practice. I have always been the
+      sole clinician. Shirin thinks I should do it — the waitlist
+      is too long. I am not sure yet. Perhaps a trial period."
+    resolution: "Undecided — still sole periodontist"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Help planning the menu for a Persian dinner party — 25 guests"
+  - "Discussing the best tahdig technique — crispy rice is an art"
+  - "Rant about insurance companies denying periodontal claims"
+  - "Golf swing analysis — trying to fix a slice"
+  - "Nostalgic about Tehran — watching Iranian films with Shirin"
+  - "Help drafting a patient education brochure about gum disease"
+  - "Discussing his daughter Yasmin's college applications — she wants pre-med"
+  - "Wine pairing for Persian food — he has been studying it"
+  - "Office renovation — new waiting room design"
+  - "Debating whether to start a clinical podcast about periodontics"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Periodontist, owns practice in San Diego", "LANAP protocol, Periolase MVP-7, $95,000"], topic: "practice overview" }
+    2:  { type: critical, facts: ["Family fled Iran 1979, father had practice in Tajrish, came with $2,000"], topic: "family history" }
+    3:  { type: critical, facts: ["Wife Shirin teaches Farsi, married 23 years"], topic: "family life" }
+    4:  { type: critical, facts: ["Gout, allopurinol 300mg, refuses to stop red meat"], topic: "health" }
+    5:  { type: critical, facts: ["DDS UCLA, residency USC, 3 years of 80-hour weeks"], topic: "professional background" }
+    6:  { type: critical, facts: ["Investment advisor Howard Chen, Merrill Lynch, $1.2M portfolio"], topic: "finances" }
+    7:  { type: critical, facts: ["Never works weekends — promised Shirin"], topic: "work-life balance" }
+    8:  { type: critical, facts: ["Rancho Santa Fe Golf Club, 7 years, $35,000 initiation, low 90s", "Golf is meditation not competition"], topic: "golf routine" }
+    9:  { type: critical, facts: ["Planning La Jolla second location, $8,500/month rent"], topic: "expansion plan" }
+    10: { type: critical, facts: ["Dental license renewal April 30, needs 25 CE credits, has 18"], topic: "license renewal" }
+    11: { type: filler, topic: "insurance company rant — denied periodontal claim" }
+    12: { type: critical, facts: ["Nowruz dinner March 20, 40 guests, 12 lbs lamb"], topic: "Nowruz planning" }
+    13: { type: filler, topic: "tahdig technique — crispy rice debate" }
+    14: { type: filler, topic: "watching Iranian films with Shirin — Farhadi's 'A Separation'" }
+    15: { type: filler, topic: "daughter Yasmin's college applications — pre-med interest" }
+    16: { type: filler, topic: "wine pairing for Persian food — Shiraz with ghormeh sabzi" }
+    17: { type: filler, topic: "office waiting room renovation ideas" }
+    18: { type: critical, facts: ["La Jolla location dead — $425,000 break-even too high"], topic: "killing expansion plan" }
+    19: { type: filler, topic: "golf swing fix — persistent slice" }
+    20: { type: filler, topic: "patient education brochure about gum disease" }
+    21: { type: critical, facts: ["Upgraded to Fotona LightWalker, $128,000, dual wavelength"], topic: "new laser system" }
+    22: { type: critical, facts: ["Switched to Priya Sharma at Vanguard, saves $14,000/year, portfolio $1.4M"], topic: "financial advisor change" }
+    23: { type: filler, topic: "debating starting a periodontics podcast" }
+    24: { type: critical, facts: ["Working Saturday mornings — 4-5 patients, 6-week waitlist"], topic: "weekend work creep" }
+    25: { type: filler, topic: "planning a trip to Isfahan with Shirin — her first time in Iran" }
+    26: { type: critical, facts: ["Hired golf coach $150/lesson, obsessed with breaking 85, rival Babak shot 83"], topic: "golf competition" }
+    27: { type: critical, facts: ["Switched to The Bridges, $45,000 initiation, Persian community, Nowruz dinner there"], topic: "new country club" }
+    28: { type: critical, facts: ["Interviewing Dr. Kaveh Bahrami as associate, Loma Linda residency"], topic: "potential associate" }
+    29: { type: critical, facts: ["AAP meeting San Francisco Sept 12 2026, 127 patients data, Fotona outcomes"], topic: "conference presentation" }
+    30: { type: filler, topic: "menu planning for 25-person dinner party" }
+    31: { type: filler, topic: "Yasmin got into UC San Diego pre-med — celebrating" }
+    32: { type: filler, topic: "new office carpet — choosing between two Persian rug vendors" }
+    33: { type: filler, topic: "nostalgic conversation about Tehran street food" }
+    34: { type: filler, topic: "reviewing latest periodontal literature — regenerative techniques" }
+    35: { type: filler, topic: "reflecting on practice growth — from solo start to 6-week waitlist" }
+
+draft_questions:
+  - question: "What laser system does Dariush use?"
+    attack_vector: 4
+    correct: "Fotona LightWalker — dual wavelength Er:YAG and Nd:YAG ($128,000 investment)"
+    wrong_if_surfaced: "LANAP / Periolase MVP-7"
+
+  - question: "Who is Dariush's investment advisor?"
+    attack_vector: 1
+    correct: "Priya Sharma at Vanguard (saves $14,000/year in fees)"
+    wrong_if_surfaced: "Howard Chen at Merrill Lynch"
+
+  - question: "Which country club does Dariush belong to?"
+    attack_vector: 1
+    correct: "The Bridges at Rancho Santa Fe ($45,000 initiation, Persian community)"
+    wrong_if_surfaced: "Rancho Santa Fe Golf Club"
+
+  - question: "Is Dariush opening a second practice in La Jolla?"
+    attack_vector: 7
+    correct: "No — he scrapped it because the $425,000 first-year break-even was too high with the Fotona investment still being amortized"
+    wrong_if_surfaced: "Planning a second location on Prospect Street in La Jolla"
+
+  - question: "What health conditions does Dariush have?"
+    attack_vector: 3
+    correct: "Gout — flares in right big toe, takes allopurinol 300 mg daily, refuses to give up red meat"
+    wrong_if_surfaced: null
+
+  - question: "Does Dariush have any upcoming events?"
+    attack_vector: 2
+    correct: "AAP annual meeting in San Francisco, September 12, 2026 (presenting Fotona outcomes, 127 patients)"
+    wrong_if_surfaced: "Dental license renewal April 30 (passed) or Nowruz dinner March 20 (passed)"
+
+  - question: "Does Dariush work on weekends?"
+    attack_vector: 6
+    correct: "He originally said he never works weekends (promised Shirin), but now comes in Saturday mornings to handle overflow from the 6-week waitlist (4-5 patients)"
+    wrong_if_surfaced: "Never works weekends" (without noting the later change)
+
+  - question: "How competitive is Dariush about golf?"
+    attack_vector: 6
+    correct: "He originally called golf 'meditation, not competition,' but later hired a coach at $150/lesson and is obsessed with breaking 85 to beat his friend Babak's 83"
+    wrong_if_surfaced: "Not competitive — golf is purely relaxation" (without noting the later obsession)
+
+  - question: "What is Dariush's family background?"
+    attack_vector: 3
+    correct: "Iranian-American, family fled Tehran during 1979 revolution when he was 4. Father was a dentist in Tajrish, came to LA with $2,000. Wife Shirin teaches Farsi, married 23 years. DDS UCLA, residency USC."
+    wrong_if_surfaced: null
+
+  - question: "How much is Dariush's investment portfolio worth?"
+    attack_vector: 8
+    correct: "$1.4 million (was $1.2 million when managed by Howard Chen)"
+    wrong_if_surfaced: "$1.2 million (outdated figure)"
+
+  - question: "Is Dariush hiring an associate?"
+    attack_vector: 9
+    correct: "He is interviewing Dr. Kaveh Bahrami (Loma Linda residency) but hasn't decided — still sole periodontist"
+    wrong_if_surfaced: "Hired Dr. Kaveh Bahrami" (stated as definitive)
+
+  - question: "What are the key financial figures for Dariush's practice?"
+    attack_vector: 5
+    correct: "Fotona LightWalker ($128,000), The Bridges initiation ($45,000), portfolio $1.4M at Vanguard, saves $14,000/year on advisory fees, golf lessons $150 each, allopurinol 300mg"
+    wrong_if_surfaced: "Periolase MVP-7 $95,000 (superseded), Howard Chen at Merrill (superseded), Rancho Santa Fe $35,000 (superseded)"
+
+  - question: "How much did the Fotona LightWalker cost?"
+    attack_vector: 8
+    correct: "$128,000"
+    wrong_if_surfaced: "$95,000 (that was the Periolase MVP-7)"

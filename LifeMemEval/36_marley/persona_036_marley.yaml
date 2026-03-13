@@ -1,0 +1,338 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 036: Marcus 'Marley' Williams
+# ============================================================
+
+persona:
+  name: "Marcus 'Marley' Williams"
+  age: 25
+  gender: male
+  location_current: "Bristol, UK"
+  occupation_current: "Physio student (completing BSc Physiotherapy) and youth football coach"
+  personality: >
+    Bristol meets Caribbean family culture. Uses UK slang naturally —
+    'init', 'bare', 'proper', 'mad', 'bruv'. Passionate about making
+    physiotherapy accessible to communities that can't afford it.
+    Code-switches between uni mode (structured, clinical language),
+    coaching mode (motivational, direct), and home mode (Caribbean
+    warmth, grandmother's influence). Types fast with abbreviations —
+    'tbh', 'ngl', 'icl' (I can't lie). 'You know' is his filler.
+    First to hype someone up, last to talk about his own struggles.
+    Gets emotional about his grandmother but covers it with humour.
+
+stable_identity:
+  - fact: "Raised by grandmother Iris after mother passed when he was 7 — grandmother is from Barbados"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up when talking about family. "my nan raised me you
+      know. my mum passed when I was 7. nan Iris is from Barbados,
+      came over in the 60s. she's 78 now and still cooks rice and
+      peas every sunday like clockwork. that woman is everything
+      to me bruv I owe her the world"
+
+  - fact: "Tore his ACL playing football at 17 — surgery and 9-month rehab is what got him into physiotherapy"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Explaining his career choice. "I tore my ACL when I was 17.
+      playing for the youth team. the physio who rehabbed me was
+      this guy called Marcus too which is mad. 9 months of rehab
+      and I was like yeah this is what I want to do. help people
+      get back to moving you know"
+
+  - fact: "Has a repaired ACL — still gets stiffness in cold weather"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions during a rainy day. "my knee is proper stiff today
+      init. the ACL repair is solid but cold weather and rain make
+      it ache. I'm 25 with an old man's knee. the irony of a
+      physio student with a dodgy knee you know"
+
+  - fact: "Studying BSc Physiotherapy at University of the West of England (UWE)"
+    session: 1
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      First session. "I'm doing physio at UWE. third year now.
+      placements are mad intense but I love it. I want to work
+      in community physio when I graduate, not private practice.
+      accessible physio you know. for people who can't pay 60
+      quid a session"
+
+supersession_events:
+  - slot: coaching_team
+    old_fact: "Coaches the U-14s at Easton Cowboys FC — Tuesday and Thursday evenings"
+    old_session: 6
+    old_how: >
+      Talking about coaching. "I coach the U-14s at Easton Cowboys.
+      Tuesday Thursday evenings. 18 kids on the roster. some of
+      them are proper talented but they don't believe it yet you
+      know. that's my job. make them believe it"
+    new_fact: "Moved up to coaching U-17s — the older team needed someone who understands injury prevention"
+    new_session: 21
+    new_how: >
+      Proud. "so I'm coaching the U-17s now. they needed someone
+      who gets injury prevention because 3 kids did their hamstrings
+      last season. 3!! I literally study this stuff so it made sense.
+      the U-14s were gutted but the older lads need me more tbh"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: placement
+    old_fact: "Clinical placement at Southmead Hospital — MSK outpatients"
+    old_session: 8
+    old_how: >
+      Talking about placement. "I'm at Southmead for placement.
+      MSK outpatients. seeing like 12 patients a day. the
+      supervisor is bare strict but I'm learning loads. mostly
+      knee and shoulder stuff which is perfect for me you know"
+    new_fact: "Changed placement to Bristol Royal Infirmary — neurological rehab ward"
+    new_session: 22
+    new_how: >
+      Adjusting. "switched placement to the BRI. neurological
+      rehab. completely different world from MSK. stroke patients,
+      spinal cord injuries. it's humbling init. I had a patient
+      yesterday relearning how to hold a cup. makes you realise
+      what physio actually means"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+  - slot: housing
+    old_fact: "Lives in a shared house in Easton with roommate Dev — £475 each per month"
+    old_session: 7
+    old_how: >
+      Talking about living situation. "I live with my mate Dev in
+      Easton. £475 each which is decent for Bristol tbh. he works
+      at Deliveroo so the house always smells like takeaway. it's
+      calm though"
+    new_fact: "Dev moved out — Marley got a studio flat in St Pauls, £625 per month"
+    new_session: 25
+    new_how: >
+      Mixed feelings. "Dev moved back to Leicester so I had to
+      find somewhere quick. got a studio in St Pauls. £625 a month
+      which is more than I was paying but it's just me now.
+      quieter for studying but icl I miss having someone around
+      you know"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Placement assessment at Southmead — March 7, 2025"
+    session: 9
+    event_date: "2025-03-07"
+    status: expired
+    how_disclosed: >
+      Stressed. "my placement assessment is March 7. the supervisor
+      watches you do a full patient session and marks you on like
+      15 criteria. I need to pass this to stay on track for
+      graduating. proper nervous tbh"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Nan Iris's 78th birthday party — July 5, 2025"
+    session: 14
+    event_date: "2025-07-05"
+    status: expired
+    how_disclosed: >
+      Planning with love. "nan's 78th is July 5 and I'm throwing
+      her a proper party. Caribbean food, her friends from church,
+      the whole thing. she doesn't want a fuss but she's getting
+      one. I already ordered a cake from this Bajan bakery in
+      St Pauls. £85 but she's worth every penny"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "BSc Physiotherapy final dissertation deadline — April 30, 2026"
+    session: 28
+    event_date: "2026-04-30"
+    status: upcoming
+    how_disclosed: >
+      Anxious. "dissertation is due April 30. I'm doing it on ACL
+      rehab outcomes in community vs private settings. got 8,000
+      words written out of 12,000. the stats are doing my head in
+      but the findings are actually interesting ngl"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he doesn't want to work in elite sport — community physio is where the need is"
+    old_session: 3
+    old_how: >
+      Passionate. "I'm not trying to be a Premier League physio
+      you know. those players have access to everything already.
+      I want to work in community. the kid who tears his ACL
+      playing Sunday league and can't afford rehab. that's who
+      needs me"
+    new_fact: "Has been shadowing a physio at Bristol City FC and admits he loves the elite environment"
+    new_session: 26
+    new_how: >
+      Conflicted but honest. "so I've been shadowing the physio
+      at Bristol City. twice a week. and bruv the facilities are
+      unreal. hydrotherapy pool, anti-gravity treadmill, the lot.
+      icl I love it. the level of detail in their rehab programs
+      is next level. I could see myself doing this you know"
+    category: PROJECTS_ENDEAVORS
+
+  - old_fact: "Says he manages his workload fine — coaching and studying balance each other"
+    old_session: 8
+    old_how: >
+      Confident. "nah I manage it fine init. coaching twice a week
+      and studying the rest. they balance each other out. coaching
+      is my break from the textbooks. I've got a good routine"
+    new_fact: "Admits he's been running on 4 hours sleep and his grades are slipping"
+    new_session: 23
+    new_how: >
+      Tired. "tbh I'm barely sleeping. 4 hours most nights. the
+      placement is full time, coaching is Tuesday Thursday, and I
+      still have assignments. my last essay came back at 58 which
+      is bare low for me. something's gotta give but I don't know
+      what"
+    category: HEALTH_WELLBEING
+
+retractions:
+  - original_fact: "Planning to do an MSc in Sports Rehabilitation straight after graduating"
+    original_session: 10
+    original_how: >
+      Ambitious. "I'm looking at the MSc in Sports Rehab at Bath.
+      straight after I graduate. keep the momentum going you know.
+      they've got a good program and it's close enough to Bristol
+      that I can keep coaching"
+    retraction: "MSc plan is off the table — needs to earn money first, student debt is too much"
+    retraction_session: 20
+    retraction_how: >
+      Realistic. "the MSc is off the table bruv. I can't do
+      another year of being skint. I've got £28,000 in student
+      debt and nan doesn't have savings. I need to work for a
+      few years first. earn proper money. maybe come back to it
+      but right now it's not happening"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Plans to work in community physiotherapy in Bristol after graduating"
+    existing_session: 1
+    tentative_fact: "Thinking about applying for a physio role in Barbados — could be near nan's family, combine work and heritage"
+    tentative_session: 27
+    tentative_how: >
+      Dreaming. "so I saw this physio job in Bridgetown, Barbados
+      you know. community clinic. and I thought like... nan's whole
+      family is there. I've never lived there but it's home in a
+      way init. probably mad but what if I applied. but also Bristol
+      is my city. I don't know man. just thinking out loud"
+    resolution: "Undecided — hasn't applied"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help with anatomy revision — brachial plexus is doing his head in"
+  - "Football coaching drills for U-17s — warm-up routines"
+  - "Rant about NHS physio waiting lists — 18 weeks is a joke"
+  - "Caribbean food — trying to learn nan's rice and peas recipe"
+  - "Help writing a cover letter for a Band 5 physio job"
+  - "Discussion about whether physio students should learn manual therapy earlier"
+  - "Budget meal prep — student budget, Caribbean influence"
+  - "Music recommendations — UK rap and old-school dancehall"
+  - "Dealing with a difficult patient on placement who doesn't trust young physios"
+  - "Nan's church fundraiser — she volunteered him to help"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["BSc Physio at UWE, third year, wants community physio, 60 quid/session reference"], topic: "introduction / career goals" }
+    2:  { type: critical, facts: ["Raised by nan Iris from Barbados after mum passed age 7, nan is 78"], topic: "family background" }
+    3:  { type: critical, facts: ["Tore ACL at 17, 9-month rehab, inspired physio career", "Doesn't want elite sport — community physio is where need is"], topic: "origin story" }
+    4:  { type: critical, facts: ["Repaired ACL still stiff in cold weather"], topic: "health / rainy day" }
+    5:  { type: filler, topic: "anatomy revision — brachial plexus struggles" }
+    6:  { type: critical, facts: ["Coaches U-14s Easton Cowboys FC, Tuesday Thursday, 18 kids"], topic: "coaching" }
+    7:  { type: critical, facts: ["Lives with Dev in Easton, £475 each"], topic: "housing" }
+    8:  { type: critical, facts: ["Placement at Southmead, MSK outpatients, 12 patients/day", "Manages workload fine, coaching balances studying"], topic: "placement" }
+    9:  { type: critical, facts: ["Placement assessment March 7, 15 criteria"], topic: "assessment stress" }
+    10: { type: critical, facts: ["Planning MSc Sports Rehab at Bath after graduating"], topic: "future plans" }
+    11: { type: filler, topic: "football coaching drills — warm-up routines for teens" }
+    12: { type: filler, topic: "rant about NHS physio waiting lists" }
+    13: { type: filler, topic: "trying to cook nan's rice and peas" }
+    14: { type: critical, facts: ["Nan's 78th birthday July 5, Caribbean food, church friends, £85 cake"], topic: "nan's birthday planning" }
+    15: { type: filler, topic: "UK rap and dancehall music chat" }
+    16: { type: filler, topic: "budget meal prep ideas — student budget" }
+    17: { type: filler, topic: "difficult patient on placement who questions young physios" }
+    18: { type: filler, topic: "nan's church fundraiser — she volunteered him" }
+    19: { type: filler, topic: "discussion about manual therapy in physio curriculum" }
+    20: { type: critical, facts: ["MSc off the table — £28,000 student debt, nan has no savings"], topic: "financial reality" }
+    21: { type: critical, facts: ["Moved to coaching U-17s — 3 hamstring injuries last season"], topic: "coaching change" }
+    22: { type: critical, facts: ["Switched placement to BRI, neurological rehab"], topic: "placement change" }
+    23: { type: critical, facts: ["4 hours sleep, last essay 58%, workload unsustainable"], topic: "burnout admission" }
+    24: { type: filler, topic: "help writing cover letter for Band 5 physio jobs" }
+    25: { type: critical, facts: ["Dev moved out, studio in St Pauls, £625/month"], topic: "housing change" }
+    26: { type: critical, facts: ["Shadowing physio at Bristol City FC, loves elite environment"], topic: "elite sport temptation" }
+    27: { type: critical, facts: ["Thinking about physio job in Bridgetown Barbados, nan's family there"], topic: "Barbados dream" }
+    28: { type: critical, facts: ["Dissertation due April 30, ACL rehab topic, 8,000 of 12,000 words"], topic: "dissertation crunch" }
+    29: { type: filler, topic: "coaching highlights — a kid scored his first hat-trick" }
+    30: { type: filler, topic: "help with dissertation statistics — confused about p-values" }
+    31: { type: filler, topic: "graduation ceremony logistics — making sure nan has a good seat" }
+    32: { type: filler, topic: "job applications — comparing community clinics in Bristol" }
+    33: { type: filler, topic: "new studio flat setup — trying to make it feel like home" }
+    34: { type: filler, topic: "end of coaching season — organizing awards for the U-17s" }
+    35: { type: filler, topic: "reflecting on the year — tired but proud, nan is proud too" }
+
+draft_questions:
+  - question: "What age group does Marley coach?"
+    attack_vector: 4
+    correct: "U-17s at Easton Cowboys FC (moved up from U-14s)"
+    wrong_if_surfaced: "U-14s"
+
+  - question: "Where is Marley doing his clinical placement?"
+    attack_vector: 1
+    correct: "Bristol Royal Infirmary — neurological rehab ward"
+    wrong_if_surfaced: "Southmead Hospital MSK outpatients"
+
+  - question: "Where does Marley live?"
+    attack_vector: 1
+    correct: "Studio flat in St Pauls, £625 per month (Dev moved out)"
+    wrong_if_surfaced: "Shared house in Easton with Dev"
+
+  - question: "Is Marley doing an MSc after graduating?"
+    attack_vector: 7
+    correct: "No — he was planning MSc Sports Rehab at Bath but it's off the table due to £28,000 student debt and financial need"
+    wrong_if_surfaced: "Planning MSc Sports Rehabilitation at Bath"
+
+  - question: "What health issues does Marley have?"
+    attack_vector: 3
+    correct: "Repaired ACL from a tear at age 17 — still gets stiffness in cold weather"
+    wrong_if_surfaced: null
+
+  - question: "Does Marley have any upcoming deadlines?"
+    attack_vector: 2
+    correct: "BSc dissertation deadline — April 30, 2026"
+    wrong_if_surfaced: "Placement assessment March 7 (passed) or nan's birthday July 5 (passed)"
+
+  - question: "How much does Marley pay in rent?"
+    attack_vector: 8
+    correct: "£625 per month for a studio in St Pauls"
+    wrong_if_surfaced: null
+
+  - question: "How much student debt does Marley have?"
+    attack_vector: 8
+    correct: "£28,000"
+    wrong_if_surfaced: null
+
+  - question: "How does Marley feel about working in elite sport?"
+    attack_vector: 6
+    correct: "Conflicted — he initially said community physio is where the need is and he didn't want elite sport, but he's been shadowing at Bristol City FC and admits he loves the elite environment"
+    wrong_if_surfaced: "Doesn't want elite sport" (without noting the later interest)
+
+  - question: "Who raised Marley?"
+    attack_vector: 3
+    correct: "His grandmother Iris, who is from Barbados. She raised him after his mother passed when he was 7. She's 78."
+    wrong_if_surfaced: null
+
+  - question: "Is Marley moving to Barbados?"
+    attack_vector: 9
+    correct: "He's thinking about applying for a physio job in Bridgetown where his nan's family is, but hasn't decided or applied — still based in Bristol"
+    wrong_if_surfaced: "Moving to Barbados" (stated as definitive)
+
+  - question: "What do we know about Marley's background and activities?"
+    attack_vector: 5
+    correct: "Raised by grandmother Iris from Barbados after mum passed at age 7. Tore ACL at 17 (inspired physio career). BSc Physio at UWE. Coaches U-17s at Easton Cowboys. Lives in St Pauls studio flat. Dissertation on ACL rehab outcomes. Shadowing at Bristol City FC."
+    wrong_if_surfaced: null
+
+  - question: "Does Marley manage his workload well?"
+    attack_vector: 6
+    correct: "No — he initially said coaching and studying balanced each other, but later admitted he's sleeping 4 hours a night and his grades slipped (58% on an essay)"
+    wrong_if_surfaced: "Manages workload fine" (without noting burnout)

@@ -1,0 +1,326 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 037: Leila Handal
+# ============================================================
+
+persona:
+  name: "Leila Handal"
+  age: 46
+  gender: female
+  location_current: "Santiago, Chile"
+  occupation_current: "Architect specializing in heritage restoration"
+  personality: >
+    Poetic and contemplative — sees buildings as living memory.
+    Switches between Spanish and English with occasional Arabic
+    phrases inherited from her grandparents ('yalla', 'habibi',
+    'inshallah'). References Neruda and Darwish in equal measure.
+    Types in flowing, almost literary sentences. Passionate about
+    Palestinian diaspora architecture and how exile communities
+    build echoes of the homeland. Gets emotional about old
+    stonework. Uses architectural metaphors for life ('load-bearing
+    relationships', 'foundations cracking'). Migraines make her
+    irritable — apologizes afterward. Deeply loyal to colleagues
+    and family. Morning person, coffee ritualist.
+
+stable_identity:
+  - fact: "Grandparents fled Bethlehem in 1948 — Palestinian diaspora family in Chile"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing a restoration project. "my
+      grandparents left Bethlehem in 1948, they carried nothing
+      but the memory of stone. that is why I do this work —
+      buildings remember what people are forced to forget"
+
+  - fact: "Husband Diego is a civil engineer — they collaborate on structural assessments"
+    session: 4
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when discussing a tricky wall assessment. "Diego
+      looked at the load calculations for me, he is a civil
+      engineer so between us we have the building covered from
+      the bones to the skin. 22 years married and still arguing
+      about rebar"
+
+  - fact: "Suffers from chronic migraines triggered by fluorescent lighting"
+    session: 3
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Apologizes for delayed response. "forgive me, I had a
+      migraine since yesterday. the fluorescent lights at the
+      municipal office — every time I go there it is like they
+      are punishing me. I have had these migraines since my
+      twenties, the neurologist says fluorescent flicker is
+      the main trigger"
+
+  - fact: "MArch from Pontificia Universidad Católica de Chile"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing academic credentials for a
+      grant application. "I did my MArch at la Católica, the
+      thesis was on Ottoman-era domestic architecture in
+      Bethlehem. my professor said I was writing a love
+      letter to a city I had never seen. he was right"
+
+supersession_events:
+  - slot: firm_focus
+    old_fact: "Works on residential architecture projects at her firm"
+    old_session: 1
+    old_how: >
+      First session context. "we have been doing mostly
+      residential work, high-end houses in Vitacura and
+      Lo Barnechea. it pays the bills but my soul is
+      somewhere else, you know"
+    new_fact: "Firm shifted focus entirely to heritage restoration — she led the transition"
+    new_session: 18
+    new_how: >
+      Excited and proud. "the firm has officially pivoted
+      to heritage restoration and I am leading it. we won
+      the contract for the old Palacio Cousiño annex. this
+      is what I was born to do — as Darwish says, we have
+      on this earth what makes life worth living"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: yoga_studio
+    old_fact: "Attends yoga at Estudio Bambú in Providencia — goes 3 times a week"
+    old_session: 6
+    old_how: >
+      Mentions as migraine management. "I go to Estudio
+      Bambú in Providencia, 3 times a week. the yoga helps
+      with my migraines more than any pill. the teacher
+      Camila understands my body"
+    new_fact: "Switched to a smaller studio in Barrio Italia — Refugio Yoga"
+    new_session: 23
+    new_how: >
+      Casual mention. "I changed yoga studios, now I go
+      to Refugio Yoga in Barrio Italia. it is smaller,
+      quieter, no fluorescent lights — just candles and
+      natural light. much better for my head"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: teaching
+    old_fact: "Teaches a seminar on vernacular architecture at Universidad de Chile"
+    old_session: 7
+    old_how: >
+      Mentions when discussing schedule. "I teach a seminar
+      on vernacular architecture at la Chile on Tuesdays,
+      12 students. I love it but it eats my fieldwork days"
+    new_fact: "Stopped university teaching to focus on fieldwork full-time"
+    new_session: 25
+    new_how: >
+      Reflective. "I finally let go of the university
+      seminar. it was a hard decision but Neruda was right —
+      you cannot embrace what you are holding with closed
+      hands. I need to be in the field, touching the walls,
+      not lecturing about them"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Heritage grant submission deadline — February 15, 2025"
+    session: 8
+    event_date: "2025-02-15"
+    status: expired
+    how_disclosed: >
+      Stressed about paperwork. "the FONDART heritage grant
+      deadline is February 15 and I still need Diego to
+      finish the structural appendix. 12 million pesos
+      would fund the entire Barrio Yungay survey"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Presentation at Bienal de Arquitectura — October 4, 2025"
+    session: 15
+    event_date: "2025-10-04"
+    status: expired
+    how_disclosed: >
+      Nervous but honored. "I was invited to present at
+      the Bienal de Arquitectura on October 4. the topic
+      is diaspora memory in built form. I am terrified
+      and honored in equal measure"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Fieldwork trip to Bethlehem with Diego — April 22, 2026"
+    session: 28
+    event_date: "2026-04-22"
+    status: upcoming
+    how_disclosed: >
+      Emotional. "we are going to Bethlehem on April 22.
+      Diego and I, together. it will be the first time
+      I walk the streets my grandparents walked. I have
+      been preparing for this my whole life. I want to
+      document what remains of the old houses"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she prefers working alone — collaboration slows her down"
+    old_session: 5
+    old_how: >
+      Discussing work style. "I work best alone honestly.
+      collaboration sounds beautiful in theory but in
+      practice it is like building by committee — every
+      wall gets compromised. give me silence and a
+      measuring tape"
+    new_fact: "Raves about the collaborative team she's built — says the best ideas come from dialogue"
+    new_session: 22
+    new_how: >
+      Enthusiastic about her team. "the team we have
+      assembled is extraordinary. Sofía the historian,
+      Tomás the conservator — when we are in the field
+      together the building speaks to us differently.
+      the best ideas come from dialogue, I truly believe
+      that now"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to write a book on Palestinian-Chilean architectural heritage"
+    original_session: 9
+    original_how: >
+      Ambitious literary plan. "I am going to write a book —
+      the architecture of exile, how Palestinian families in
+      Chile built echoes of Bethlehem in Santiago. I have 6
+      chapters outlined already"
+    retraction: "Book project scrapped — realized a documentary would reach more people"
+    retraction_session: 19
+    retraction_how: >
+      Definitive. "the book is scrapped. forget about it.
+      I realized I was trying to describe walls in words
+      when a camera can show you the truth in one frame.
+      we are making a documentary instead with a filmmaker
+      friend. the book is dead"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Santiago — apartment in Barrio Yungay near her projects"
+    existing_session: 1
+    tentative_fact: "Thinking about spending 6 months in Valparaíso to restore a heritage house there"
+    tentative_session: 26
+    tentative_how: >
+      Daydreaming. "there is a beautiful old house in Cerro
+      Alegre, Valparaíso, falling apart slowly. I keep
+      thinking about spending 6 months there to restore it.
+      Diego says I am crazy but the heart wants what it
+      wants. I do not know yet — Santiago is my base, my
+      roots are here"
+    resolution: "Undecided — still in Santiago"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help researching Chilean building codes for heritage structures"
+  - "Recipe for her grandmother's Palestinian maftoul (hand-rolled couscous)"
+  - "Rant about developers demolishing historic buildings in Santiago"
+  - "Gift ideas for Diego's 50th birthday"
+  - "Neruda vs Darwish — who writes better about exile"
+  - "Recommendations for migraine-safe lighting in offices"
+  - "Help drafting a funding proposal in English"
+  - "Photography tips for documenting architectural details"
+  - "Chilean wine recommendations for a dinner party"
+  - "Arabic calligraphy — learning her grandfather's handwriting style"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Works on residential architecture", "Lives in Barrio Yungay, Santiago"], topic: "work introduction — residential projects feeling empty" }
+    2:  { type: critical, facts: ["Grandparents fled Bethlehem 1948"], topic: "Palestinian heritage and motivation" }
+    3:  { type: critical, facts: ["Chronic migraines, fluorescent trigger"], topic: "migraine episode after municipal visit" }
+    4:  { type: critical, facts: ["Husband Diego civil engineer, 22 years married"], topic: "collaboration with Diego on assessment" }
+    5:  { type: critical, facts: ["MArch PUC Chile, prefers working alone"], topic: "grant application credentials" }
+    6:  { type: critical, facts: ["Yoga at Estudio Bambú, Providencia, 3x/week"], topic: "migraine management routine" }
+    7:  { type: critical, facts: ["Teaches vernacular architecture at U de Chile"], topic: "balancing teaching and fieldwork" }
+    8:  { type: critical, facts: ["FONDART grant deadline Feb 15, 12 million pesos"], topic: "grant stress" }
+    9:  { type: critical, facts: ["Planning book on Palestinian-Chilean architecture, 6 chapters"], topic: "book outline excitement" }
+    10: { type: filler, topic: "rant about developer demolishing 1890s house in Yungay" }
+    11: { type: filler, topic: "grandmother's maftoul recipe — trying to recreate it" }
+    12: { type: filler, topic: "photography tips for documenting stonework textures" }
+    13: { type: filler, topic: "Neruda poem discussion — 'Ode to the Building'" }
+    14: { type: filler, topic: "migraine-safe lighting research for new office" }
+    15: { type: critical, facts: ["Bienal de Arquitectura presentation Oct 4"], topic: "conference preparation anxiety" }
+    16: { type: filler, topic: "Chilean wine for hosting a dinner for her team" }
+    17: { type: filler, topic: "Arabic calligraphy — grandfather's letters" }
+    18: { type: critical, facts: ["Firm pivoted to heritage restoration, Palacio Cousiño annex"], topic: "firm transition celebration" }
+    19: { type: critical, facts: ["Book scrapped, making documentary instead"], topic: "pivoting from book to film" }
+    20: { type: filler, topic: "help drafting English email to international conservation body" }
+    21: { type: filler, topic: "Diego's 50th birthday gift ideas" }
+    22: { type: critical, facts: ["Team collaboration is extraordinary, best ideas from dialogue"], topic: "team fieldwork in Barrio Yungay" }
+    23: { type: critical, facts: ["Switched to Refugio Yoga in Barrio Italia"], topic: "new yoga studio discovery" }
+    24: { type: filler, topic: "building codes for heritage facade retention" }
+    25: { type: critical, facts: ["Stopped university teaching, full-time fieldwork"], topic: "letting go of the seminar" }
+    26: { type: critical, facts: ["Considering 6 months in Valparaíso for restoration"], topic: "Valparaíso daydream" }
+    27: { type: filler, topic: "Darwish poetry — 'In Jerusalem' analysis" }
+    28: { type: critical, facts: ["Bethlehem fieldwork trip with Diego April 22 2026"], topic: "planning the Bethlehem trip" }
+    29: { type: filler, topic: "help writing artist statement for documentary funding" }
+    30: { type: filler, topic: "Palestinian embroidery — tatreez patterns in architecture" }
+    31: { type: filler, topic: "earthquake preparedness for heritage buildings" }
+    32: { type: filler, topic: "spring garden — planting jasmine like grandparents had" }
+    33: { type: filler, topic: "migraine episode — venting about bad week" }
+    34: { type: filler, topic: "Bethlehem trip logistics — packing and documents" }
+    35: { type: filler, topic: "reflecting on the year — from residential to heritage, a homecoming" }
+
+draft_questions:
+  - question: "What type of architecture does Leila's firm focus on?"
+    attack_vector: 4
+    correct: "Heritage restoration (shifted from residential)"
+    wrong_if_surfaced: "Residential architecture"
+
+  - question: "Which yoga studio does Leila attend?"
+    attack_vector: 1
+    correct: "Refugio Yoga in Barrio Italia"
+    wrong_if_surfaced: "Estudio Bambú in Providencia"
+
+  - question: "Does Leila teach at a university?"
+    attack_vector: 1
+    correct: "No — she stopped teaching the seminar at Universidad de Chile to focus on fieldwork"
+    wrong_if_surfaced: "Teaches vernacular architecture at Universidad de Chile"
+
+  - question: "Is Leila writing a book about Palestinian-Chilean architecture?"
+    attack_vector: 7
+    correct: "No — she scrapped the book and is making a documentary instead"
+    wrong_if_surfaced: "Planning a book with 6 chapters outlined"
+
+  - question: "What health conditions does Leila have?"
+    attack_vector: 3
+    correct: "Chronic migraines triggered by fluorescent lighting"
+    wrong_if_surfaced: null
+
+  - question: "Does Leila have any upcoming events or deadlines?"
+    attack_vector: 2
+    correct: "Fieldwork trip to Bethlehem with Diego on April 22, 2026"
+    wrong_if_surfaced: "FONDART grant deadline Feb 15 (passed) or Bienal presentation Oct 4 (passed)"
+
+  - question: "How does Leila feel about collaboration?"
+    attack_vector: 6
+    correct: "She initially said she preferred working alone but later raved about her team and said the best ideas come from dialogue"
+    wrong_if_surfaced: "Prefers working alone, collaboration slows her down" (without noting the later change)
+
+  - question: "What is Leila's family background?"
+    attack_vector: 3
+    correct: "Palestinian-Chilean — grandparents fled Bethlehem in 1948. Married to Diego (civil engineer, 22 years). MArch from PUC Chile."
+    wrong_if_surfaced: null
+
+  - question: "Is Leila planning to move?"
+    attack_vector: 9
+    correct: "She's considered spending 6 months in Valparaíso for a restoration project, but hasn't decided — still based in Santiago"
+    wrong_if_surfaced: "Moving to Valparaíso" (stated as definitive)
+
+  - question: "How much funding did Leila apply for from FONDART?"
+    attack_vector: 8
+    correct: "12 million pesos"
+    wrong_if_surfaced: null
+
+  - question: "Has Leila ever been to Bethlehem?"
+    attack_vector: 2
+    correct: "Not yet — she has a fieldwork trip planned with Diego for April 22, 2026"
+    wrong_if_surfaced: null
+
+  - question: "What does Leila do outside of architecture?"
+    attack_vector: 5
+    correct: "Yoga (Refugio Yoga in Barrio Italia), Arabic calligraphy, cooking Palestinian recipes (grandmother's maftoul), poetry (Neruda and Darwish), documentary filmmaking"
+    wrong_if_surfaced: "Yoga at Estudio Bambú (superseded) or university teaching (stopped)"
+
+  - question: "How many times a week does Leila do yoga?"
+    attack_vector: 8
+    correct: "3 times a week"
+    wrong_if_surfaced: null

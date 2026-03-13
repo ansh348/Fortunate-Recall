@@ -1,0 +1,316 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 021: Thanh Nguyen
+# ============================================================
+
+persona:
+  name: "Thanh Nguyen"
+  age: 63
+  gender: male
+  location_current: "Mekong Delta, Vietnam"
+  occupation_current: "Shrimp farmer — family operation with 3 ponds"
+  personality: >
+    Speaks through actions not feelings. Broken English with Vietnamese
+    syntax — drops articles, mixes tenses, proud of ponds like children.
+    Weather-obsessed because rain and temperature directly affect yield
+    and feed cost. Early riser (4am every day), says 'you know' as
+    filler constantly, calls AI 'friend'. Numbers matter to him more
+    than words — yield per pond, price per kilo, feed cost per bag.
+    Agricultural metaphors for everything. Slow typer, short sentences,
+    sometimes just fragments. Distrustful of fancy solutions, trusts
+    what he can see with his own eyes.
+
+stable_identity:
+  - fact: "Lost two brothers in the war — doesn't talk about it directly"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up obliquely when discussing family. "I have no brother
+      now, friend. War take them. Long time ago, you know. I was
+      young boy. Now I am old man with pond. That is life."
+
+  - fact: "Wife Lan runs a roadside shrimp stall near the highway"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Mentions when talking about daily routine. "My wife Lan, she
+      sell shrimp on road near highway. Every morning she take fresh
+      one from pond, you know. Good business. She very strong woman."
+
+  - fact: "Has type 2 diabetes — poorly managed, avoids doctors"
+    session: 5
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Reluctant admission when discussing tiredness. "Doctor say I
+      have sugar disease, you know. Diabetes. He want me take
+      medicine every day but medicine expensive, friend. 850,000
+      dong per month. I feel okay most day so I just eat less
+      rice. My wife she worry but I am fine."
+
+  - fact: "Only completed primary school — self-taught everything about aquaculture"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentioned with quiet pride. "I go to school only 5 year,
+      friend. But shrimp, I learn from my father, from water,
+      from watching. 40 year I do this. No professor can tell
+      me about my pond, you know."
+
+supersession_events:
+  - slot: feed_supplier
+    old_fact: "Uses Long An Premium feed — 380,000 dong per 25kg bag"
+    old_session: 3
+    old_how: >
+      Discussing costs. "I use Long An Premium feed, you know.
+      380,000 dong for 25 kilo bag. Good quality, shrimp grow
+      fast. But price go up every year, friend."
+    new_fact: "Switched to Thai Star feed — 295,000 dong per 25kg bag, good enough quality"
+    new_session: 18
+    new_how: >
+      Practical decision. "I change feed now, friend. Thai Star
+      brand. 295,000 dong same 25 kilo bag. My neighbor Hung
+      use it 6 month already, his shrimp look good. Save me
+      maybe 500,000 dong per week for all 3 pond. That is
+      real money, you know."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: boat
+    old_fact: "Has a wooden sampan boat — built it himself 18 years ago"
+    old_session: 6
+    old_how: >
+      Telling a story. "My boat I build myself, friend. 18 year
+      ago. Good wood, teak from Can Tho. Use it every day to
+      check pond, carry feed, bring shrimp to Lan stall. She
+      is old now but still float, you know."
+    new_fact: "Sold old sampan for 4,500,000 dong — built new fiberglass boat for 15,000,000 dong"
+    new_session: 22
+    new_how: >
+      Proud but practical. "I sell old sampan, friend. Get
+      4,500,000 dong for wood. Then I build new boat, fiberglass.
+      Cost 15,000,000 dong but last longer, lighter, no termite
+      problem, you know. My son Duc help me build. Good boat."
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 4
+
+  - slot: pond_3_management
+    old_fact: "Manages all 3 ponds himself with help from hired workers"
+    old_session: 1
+    old_how: >
+      First conversation about work. "I have 3 pond, friend.
+      Big one is 1.2 hectare, two small one maybe 0.6 hectare
+      each. I manage all. Hire 2 worker for heavy job but
+      I check everything myself, you know."
+    new_fact: "Eldest son Duc now manages pond 3 — Thanh focuses on ponds 1 and 2"
+    new_session: 25
+    new_how: >
+      Mix of pride and relief. "Duc take pond 3 now, friend.
+      He know what he doing. I teach him since he is small boy.
+      My body getting tired, you know. 63 year old man cannot
+      do 3 pond alone. I focus on pond 1 and 2. Duc do good
+      job. Last harvest he get 2.8 ton from pond 3. Not bad."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+expiring_logistics:
+  - fact: "Government aquaculture inspection scheduled for February 15, 2025"
+    session: 8
+    event_date: "2025-02-15"
+    status: expired
+    how_disclosed: >
+      Worried about paperwork. "Government inspector come
+      February 15, friend. They check water quality, chemical,
+      everything. I need prepare all paper. Last time they
+      give me warning about drainage, you know. Very stressful."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Shrimp harvest season for pond 1 — target date March 25, 2025"
+    session: 10
+    event_date: "2025-03-25"
+    status: expired
+    how_disclosed: >
+      Planning harvest. "Pond 1 ready for harvest around March
+      25, friend. Shrimp now maybe 30 gram each. If price
+      hold at 165,000 dong per kilo, good harvest. Maybe
+      1.8 ton this time, you know."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Duc's wedding celebration — July 12, 2026"
+    session: 27
+    event_date: "2026-07-12"
+    status: upcoming
+    how_disclosed: >
+      Happy planning. "Duc getting married, friend! July 12.
+      His girlfriend Thao, very good girl. We plan big party,
+      maybe 150 people, you know. Lan already cooking plan.
+      I have to save money. Maybe 45,000,000 dong for
+      everything. But this is happy thing."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he will never use chemicals in his ponds — natural methods only"
+    old_session: 7
+    old_how: >
+      Proud statement. "I never use chemical in pond, friend.
+      Some farmer they put antibiotic, growth hormone. Not me.
+      My shrimp natural. My father teach me — clean water,
+      good feed, that is all you need, you know."
+    new_fact: "Used probiotics and copper sulfate treatment after disease outbreak in pond 2"
+    new_session: 20
+    new_how: >
+      Matter-of-fact about saving his stock. "Pond 2 have
+      disease problem, friend. White spot. I lose maybe 30%
+      already. So I use probiotic treatment and copper sulfate
+      in water. Cost me 2,800,000 dong but save rest of
+      shrimp, you know. Cannot lose whole pond."
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Planning to dig a 4th pond on the back hectare next dry season"
+    original_session: 9
+    original_how: >
+      Ambitious plan. "I think I dig new pond, friend. 4th
+      pond. I have land behind house, maybe 0.8 hectare.
+      Dry season good time to dig. Cost maybe 35,000,000
+      dong but in 2 year it pay back, you know."
+    retraction: "4th pond plan scrapped — body can't handle more work, land too expensive to prep"
+    retraction_session: 19
+    retraction_how: >
+      Pragmatic. "The 4th pond, friend — forget about it.
+      Scrapped. My body not like before, you know. And cost
+      go up, now maybe 50,000,000 dong to prepare land.
+      3 pond is enough for old man. Duc take one, I keep
+      two. That is good life."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Sells shrimp through local middleman Binh — 165,000 dong per kilo"
+    existing_session: 6
+    tentative_fact: "Considering selling directly to restaurant in Ho Chi Minh City — higher price but logistics complicated"
+    tentative_session: 23
+    tentative_how: >
+      Weighing options. "Restaurant owner from Saigon come
+      visit, friend. He say he pay 210,000 dong per kilo,
+      you know. Very good price. But I have to transport
+      myself, need ice truck, 4 hour drive. Binh he take
+      from my door. I am thinking, you know. Not decide yet."
+    resolution: "Undecided — still selling through Binh"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Weather forecast discussion — rain affecting pond water levels"
+  - "Asking about shrimp disease symptoms (white spot, EMS)"
+  - "Rice price complaints — Lan's stall ingredient costs"
+  - "Neighbor's fish pond problems — comparison with shrimp farming"
+  - "Generator maintenance — power outages affect aerators"
+  - "Grandchildren visiting from Can Tho — what games to play"
+  - "Lunar New Year preparation — how many shrimp to keep for family"
+  - "Water pump repair — which brand lasts longest"
+  - "Complaining about plastic waste in canals"
+  - "Asking AI to help calculate feed-to-yield ratio"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Manages 3 ponds (1.2ha + two 0.6ha), hires 2 workers"], topic: "introducing the farm operation" }
+    2:  { type: critical, facts: ["Wife Lan runs roadside shrimp stall"], topic: "daily routine and family" }
+    3:  { type: critical, facts: ["Only primary school education", "Uses Long An Premium feed 380,000 dong/25kg"], topic: "feed costs and self-taught knowledge" }
+    4:  { type: critical, facts: ["Lost two brothers in the war"], topic: "family history" }
+    5:  { type: critical, facts: ["Has diabetes, avoids doctors, 850,000 dong/month medicine"], topic: "health and tiredness" }
+    6:  { type: critical, facts: ["Old sampan boat built 18 years ago", "Sells through middleman Binh at 165,000 dong/kg"], topic: "equipment and selling" }
+    7:  { type: critical, facts: ["Never uses chemicals — natural methods only"], topic: "farming philosophy" }
+    8:  { type: critical, facts: ["Government inspection Feb 15 2025"], topic: "inspection stress" }
+    9:  { type: critical, facts: ["Planning 4th pond on back hectare, 35,000,000 dong"], topic: "expansion plans" }
+    10: { type: critical, facts: ["Pond 1 harvest March 25, target 1.8 ton at 165,000 dong/kg"], topic: "harvest planning" }
+    11: { type: filler, topic: "weather forecast — heavy rain affecting pond levels" }
+    12: { type: filler, topic: "water pump broke — asking about replacement brands" }
+    13: { type: filler, topic: "grandchildren visiting from Can Tho" }
+    14: { type: filler, topic: "complaining about plastic waste in the canal" }
+    15: { type: filler, topic: "neighbor Hung's fish pond disease problem" }
+    16: { type: filler, topic: "generator maintenance — aerator power outages" }
+    17: { type: filler, topic: "Lunar New Year prep — keeping shrimp for family feast" }
+    18: { type: critical, facts: ["Switched to Thai Star feed, 295,000 dong/25kg bag"], topic: "new feed supplier decision" }
+    19: { type: critical, facts: ["4th pond plan scrapped — body tired, costs too high"], topic: "dropping expansion plan" }
+    20: { type: critical, facts: ["Used probiotics and copper sulfate for white spot in pond 2"], topic: "disease outbreak emergency" }
+    21: { type: filler, topic: "rice price going up — Lan's stall costs" }
+    22: { type: critical, facts: ["Sold old sampan 4,500,000 dong, built fiberglass boat 15,000,000 dong"], topic: "new boat" }
+    23: { type: critical, facts: ["Saigon restaurant offer 210,000 dong/kg — considering direct sales"], topic: "new sales channel possibility" }
+    24: { type: filler, topic: "asking AI to help calculate feed-to-yield ratio" }
+    25: { type: critical, facts: ["Duc takes over pond 3, got 2.8 ton last harvest"], topic: "son taking responsibility" }
+    26: { type: filler, topic: "heavy storm damage to pond 2 netting" }
+    27: { type: critical, facts: ["Duc wedding July 12 2026, 150 guests, 45,000,000 dong budget"], topic: "wedding planning" }
+    28: { type: filler, topic: "shrimp disease question — EMS symptoms in neighbor's pond" }
+    29: { type: filler, topic: "comparing diesel vs electric aerator pumps" }
+    30: { type: filler, topic: "Lan wants to expand stall — asking about small business loans" }
+    31: { type: filler, topic: "monsoon season prep — reinforcing pond banks" }
+    32: { type: filler, topic: "grandchild doing well in school — proud grandfather" }
+    33: { type: filler, topic: "water quality testing — asking about pH meter recommendations" }
+    34: { type: filler, topic: "early morning routine — checking ponds at 4am" }
+    35: { type: filler, topic: "reflecting on season — good year for shrimp prices" }
+
+draft_questions:
+  - question: "What feed does Thanh use for his shrimp?"
+    attack_vector: 1
+    correct: "Thai Star feed — 295,000 dong per 25kg bag"
+    wrong_if_surfaced: "Long An Premium feed (380,000 dong per 25kg bag)"
+
+  - question: "Does Thanh have any upcoming government inspections?"
+    attack_vector: 2
+    correct: "No — the aquaculture inspection was February 15, 2025 (already passed)"
+    wrong_if_surfaced: "Government inspection February 15"
+
+  - question: "What happened to Thanh's brothers?"
+    attack_vector: 3
+    correct: "He lost both brothers in the war when he was a young boy"
+    wrong_if_surfaced: null
+
+  - question: "Who manages Thanh's 3 shrimp ponds?"
+    attack_vector: 4
+    correct: "Thanh manages ponds 1 and 2, his eldest son Duc manages pond 3 (Duc got 2.8 ton last harvest)"
+    wrong_if_surfaced: "Thanh manages all 3 ponds himself"
+
+  - question: "What boat does Thanh use?"
+    attack_vector: 4
+    correct: "A new fiberglass boat (cost 15,000,000 dong), built with Duc's help"
+    wrong_if_surfaced: "An 18-year-old wooden sampan he built himself"
+
+  - question: "What are Thanh's family members and their roles?"
+    attack_vector: 5
+    correct: "Wife Lan runs a roadside shrimp stall, eldest son Duc manages pond 3 and is getting married to Thao in July 2026, grandchildren in Can Tho, lost two brothers in the war"
+    wrong_if_surfaced: null
+
+  - question: "How does Thanh feel about using chemicals in his ponds?"
+    attack_vector: 6
+    correct: "He originally said he'd never use chemicals (natural methods only), but later used probiotics and copper sulfate to treat white spot disease in pond 2"
+    wrong_if_surfaced: "Never uses chemicals" (without noting the later treatment)
+
+  - question: "Is Thanh planning to build a 4th pond?"
+    attack_vector: 7
+    correct: "No — he scrapped that plan. His body can't handle more work and costs rose to 50,000,000 dong"
+    wrong_if_surfaced: "Planning to dig a 4th pond on the back hectare"
+
+  - question: "How much does Thanh's diabetes medication cost?"
+    attack_vector: 8
+    correct: "850,000 dong per month (but he avoids taking it)"
+    wrong_if_surfaced: null
+
+  - question: "How much did Thanh's new boat cost?"
+    attack_vector: 8
+    correct: "15,000,000 dong for the fiberglass boat (sold old sampan for 4,500,000 dong)"
+    wrong_if_surfaced: null
+
+  - question: "Where does Thanh sell his shrimp?"
+    attack_vector: 9
+    correct: "Through local middleman Binh at 165,000 dong/kg — he's considering a restaurant in Ho Chi Minh City offering 210,000 dong/kg but hasn't decided"
+    wrong_if_surfaced: "Sells directly to restaurant in Ho Chi Minh City" (stated as fact)
+
+  - question: "What health conditions does Thanh have?"
+    attack_vector: 3
+    correct: "Type 2 diabetes — poorly managed, avoids doctors, medication costs 850,000 dong/month"
+    wrong_if_surfaced: null
+
+  - question: "Does Thanh have any upcoming family events?"
+    attack_vector: 2
+    correct: "Duc's wedding on July 12, 2026 — planning for 150 guests, budget 45,000,000 dong"
+    wrong_if_surfaced: "Government inspection Feb 15 or harvest March 25 (both passed)"

@@ -1,0 +1,327 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 029: Aroha Tāne
+# ============================================================
+
+persona:
+  name: "Aroha Tāne"
+  age: 38
+  gender: female
+  location_current: "Christchurch, New Zealand"
+  occupation_current: "Midwife — community practice"
+  personality: >
+    Warm and grounding, speaks with the cadence of someone used to
+    calming people in crisis. Te reo Māori weaves naturally through
+    her English — whānau, kōrero, aroha, kia ora — not performed
+    but lived. Fiercely protective of her mamas and pēpi, tikanga-
+    informed in everything. Mentions the moana (ocean) when she
+    needs to reset. Types in flowing sentences, calm tone even when
+    frustrated. Uses 'eh' at ends of sentences. Divorced but
+    co-parents well, always centring daughter Maia. Says 'kia kaha'
+    (stay strong) like others say 'take care'.
+
+stable_identity:
+  - fact: "Has moko kauae (traditional Māori chin tattoo) — received at 34"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing identity. "my moko kauae is
+      everything to me eh. I got it when I was 34, after years
+      of kōrero with my kuia. it's my whakapapa on my face,
+      my tūpuna watching over every birth I attend"
+
+  - fact: "Gestational diabetes during pregnancy with Maia — monitors blood sugar daily"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentioned when discussing health with a mama. "I had
+      gestational diabetes when I was hapū with Maia so I
+      get it eh. still monitor my blood sugar every morning,
+      fasting level sits around 5.4 mmol usually. the
+      whānau diabetes thing is real for us"
+
+  - fact: "Divorced from Maia's father Wiremu — co-parents daughter Maia who is 11"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Casually when discussing weekend plans. "Maia's with
+      Wiremu this weekend so I've got some breathing room.
+      we split 4 years ago but honestly the co-parenting is
+      good now. took work but she's 11 and she needs both
+      her parents being solid eh"
+
+  - fact: "Ngāi Tahu iwi — whakapapa through her mother's line from Banks Peninsula"
+    session: 1
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      First session, natural context. "I'm Ngāi Tahu,
+      whakapapa through my māmā's side, Banks Peninsula.
+      that whenua is in my bones eh. everything I do as a
+      midwife comes back to that connection to place and
+      people"
+
+supersession_events:
+  - slot: birth_setting
+    old_fact: "Works primarily in hospital births at Christchurch Women's"
+    old_session: 1
+    old_how: >
+      Discussing caseload. "most of my mamas birth at
+      Christchurch Women's eh. I do about 45 births a year
+      there. the hospital system is what it is but I try to
+      bring tikanga into that space"
+    new_fact: "Shifted to home birth focus — only does 5-6 hospital births per year now"
+    new_session: 19
+    new_how: >
+      Passionate about the change. "I've moved almost fully
+      to home births now eh. maybe 5 or 6 hospital ones a
+      year for the complex cases. the mamas are more relaxed,
+      the pēpi arrive calmer, and I can practice the way my
+      tūpuna intended. best decision I've made for my practice"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: vehicle
+    old_fact: "Drives a 2017 Mazda 3 hatchback"
+    old_session: 6
+    old_how: >
+      Mentioned during on-call discussion. "I'm always on
+      call so the Mazda lives packed with my birth kit. it's
+      a 2017 Mazda 3, reliable enough but the petrol costs
+      are getting wild driving all over Canterbury"
+    new_fact: "Switched to a Toyota Aqua hybrid — saves on petrol for rural callouts"
+    new_session: 23
+    new_how: >
+      Happy about the change. "finally got rid of the Mazda
+      eh. got a Toyota Aqua hybrid and honestly the petrol
+      savings are massive. I'm driving out to Akaroa, Rangiora,
+      all over — was spending like $280 a month on petrol
+      before, now it's about $110"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: sport
+    old_fact: "Plays netball on Thursdays — wing defence for a social team"
+    old_session: 5
+    old_how: >
+      Talking about fitness. "I play netball Thursdays eh,
+      wing defence. just social grade but it's my thing,
+      keeps me moving between births"
+    new_fact: "Dropped netball — joined a waka ama (outrigger canoe) crew instead"
+    new_session: 22
+    new_how: >
+      Excited. "I've stopped netball and picked up waka ama
+      eh. outrigger canoeing. our crew paddles out of Lyttelton
+      harbour 3 mornings a week at 5:30am. being on the moana
+      before dawn is the most healing thing. my shoulders are
+      getting hench though"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Annual Practising Certificate renewal — due March 31, 2025"
+    session: 10
+    event_date: "2025-03-31"
+    status: expired
+    how_disclosed: >
+      Stressed about admin. "my APC renewal is due March 31
+      and I still haven't done the CPD hours writeup eh. the
+      Midwifery Council wants 8 hours documented and I've
+      done them but the paperwork is a nightmare"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Maia's Year 7 camp at Hanmer Springs — February 14, 2025"
+    session: 8
+    event_date: "2025-02-14"
+    status: expired
+    how_disclosed: >
+      Discussing parenting logistics. "Maia's school camp
+      is February 14 at Hanmer Springs, 4 nights. Wiremu
+      and I are both parent helpers which will be interesting
+      eh. haven't spent that long around each other since
+      the split"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Homebirth midwifery conference in Wellington — July 18, 2026"
+    session: 28
+    event_date: "2026-07-18"
+    status: upcoming
+    how_disclosed: >
+      Planning ahead. "there's a homebirth midwifery hui in
+      Wellington July 18 and I'm presenting a kōrero on
+      integrating tikanga Māori into birth plans. been working
+      on it for months eh. feel like this could shift some
+      thinking nationally"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she has a great relationship with the hospital obstetricians"
+    old_session: 7
+    old_how: >
+      Positive tone. "the OBs at Christchurch Women's are
+      actually really good to work with eh. Dr Singh
+      especially, she respects the midwifery model and
+      doesn't bulldoze. I feel lucky compared to what
+      some midwives deal with"
+    new_fact: "Describes the hospital system as hostile to midwife-led care and tikanga"
+    new_session: 18
+    new_how: >
+      Frustrated. "the hospital system is honestly set up
+      to undermine everything we do eh. the OBs want to
+      intervene the second anything looks slightly different,
+      no space for karakia, no respect for the whenua burial
+      process. it's exhausting fighting for basic tikanga in
+      that environment"
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to do a postgraduate diploma in complex maternal care"
+    original_session: 9
+    original_how: >
+      Enthusiastic. "I'm looking at doing a PGDip in complex
+      maternal care through Otago eh. would take 18 months
+      part-time. I want to be able to handle the really
+      tricky cases myself instead of always handing them
+      over to the hospital"
+    retraction: "Scrapped the PGDip plan — homebirth shift means she doesn't need it"
+    retraction_session: 21
+    retraction_how: >
+      Clear decision. "that PGDip thing is scrapped eh.
+      now that I've moved to home births I'm not dealing
+      with the complex hospital cases anyway. doesn't make
+      sense to spend $12,000 and 18 months on something
+      that doesn't fit my kaupapa anymore. the money is
+      better spent on my birth kit upgrades"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Christchurch — close to her whānau and practice"
+    existing_session: 1
+    tentative_fact: "Thinking about moving to Akaroa — slower pace, closer to moana"
+    tentative_session: 25
+    tentative_how: >
+      Musing. "I've been thinking about Akaroa eh. it's
+      only 90 minutes from Chch but it's right on the
+      harbour, closer to the moana. Maia loves it there.
+      but my whānau are all in Christchurch and moving a
+      midwifery practice is a big kōrero. I don't know.
+      just thinking"
+    resolution: "Undecided — still in Christchurch"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help writing a birth plan template that integrates tikanga Māori"
+  - "Recipe for rewena (Māori potato bread) — her nan's version"
+  - "Maia's school project on marine ecosystems — needs science help"
+  - "Rant about midwifery pay equity in New Zealand"
+  - "Planning a whānau reunion at Ōtautahi marae"
+  - "Te reo Māori study tips — doing an intermediate course"
+  - "Recommendations for waterproof gear for waka ama training"
+  - "Help with a difficult client who wants to ignore medical advice"
+  - "Earthquake memorial reflections — Christchurch still healing"
+  - "Moana swim spots around Banks Peninsula for summer"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Ngāi Tahu iwi, Banks Peninsula whakapapa", "Works primarily in hospital births at Christchurch Women's, ~45 births/year", "Lives in Christchurch"], topic: "introduction — midwifery kaupapa" }
+    2:  { type: critical, facts: ["Has moko kauae, received at 34"], topic: "identity and whakapapa" }
+    3:  { type: critical, facts: ["Divorced from Wiremu, co-parents Maia age 11"], topic: "weekend planning / co-parenting" }
+    4:  { type: critical, facts: ["Gestational diabetes history, monitors blood sugar daily, fasting ~5.4 mmol"], topic: "health kōrero with a mama" }
+    5:  { type: critical, facts: ["Plays netball Thursdays, wing defence social team"], topic: "fitness and balance" }
+    6:  { type: critical, facts: ["Drives 2017 Mazda 3 hatchback"], topic: "on-call life / driving Canterbury" }
+    7:  { type: critical, facts: ["Great relationship with hospital OBs, esp Dr Singh"], topic: "hospital collaboration" }
+    8:  { type: critical, facts: ["Maia's Year 7 camp Hanmer Springs Feb 14"], topic: "parenting logistics" }
+    9:  { type: critical, facts: ["Planning PGDip in complex maternal care at Otago"], topic: "career development" }
+    10: { type: critical, facts: ["APC renewal due March 31 2025"], topic: "admin and CPD stress" }
+    11: { type: filler, topic: "rewena bread recipe — nan's version" }
+    12: { type: filler, topic: "rant about midwifery pay — $55/hr hasn't moved in years" }
+    13: { type: filler, topic: "te reo Māori course — struggling with passive constructions" }
+    14: { type: filler, topic: "Maia's school project — marine ecosystems help" }
+    15: { type: filler, topic: "earthquake memorial — 14 years and still rebuilding" }
+    16: { type: filler, topic: "planning whānau reunion at Ōtautahi marae" }
+    17: { type: filler, topic: "difficult client wants unassisted birth — ethical dilemma" }
+    18: { type: critical, facts: ["Hospital system hostile to midwife-led care and tikanga"], topic: "frustration with system" }
+    19: { type: critical, facts: ["Shifted to home birth focus, only 5-6 hospital births/year"], topic: "practice shift to home births" }
+    20: { type: filler, topic: "moana swim spots — Banks Peninsula summer plans" }
+    21: { type: critical, facts: ["PGDip plan scrapped — doesn't fit homebirth kaupapa"], topic: "career recalibration" }
+    22: { type: critical, facts: ["Dropped netball, joined waka ama crew at Lyttelton, 5:30am 3x/week"], topic: "new sport / moana connection" }
+    23: { type: critical, facts: ["Switched to Toyota Aqua hybrid, petrol savings $280->$110/month"], topic: "new vehicle" }
+    24: { type: filler, topic: "waterproof gear for waka ama — winter paddling" }
+    25: { type: critical, facts: ["Thinking about moving to Akaroa"], topic: "life direction musing" }
+    26: { type: filler, topic: "help writing tikanga birth plan template" }
+    27: { type: filler, topic: "Maia starting intermediate school — transition worries" }
+    28: { type: critical, facts: ["Homebirth conference Wellington July 18 2026, presenting on tikanga"], topic: "conference prep" }
+    29: { type: filler, topic: "summer garden — growing kūmara and silverbeet" }
+    30: { type: filler, topic: "co-parenting schedule change — Wiremu wants more weekends" }
+    31: { type: filler, topic: "waka ama crew entering a regatta — training intensity" }
+    32: { type: filler, topic: "Maia wants a kitten — logistically difficult with on-call life" }
+    33: { type: filler, topic: "help editing conference presentation slides" }
+    34: { type: filler, topic: "winter moana dips — cold water therapy" }
+    35: { type: filler, topic: "reflecting on practice shift — homebirth whānau growing" }
+
+draft_questions:
+  - question: "Where does Aroha primarily attend births?"
+    attack_vector: 4
+    correct: "Home births — she shifted from hospital births and now only does 5-6 hospital births per year"
+    wrong_if_surfaced: "Christchurch Women's Hospital (45 births/year)"
+
+  - question: "What sport does Aroha play?"
+    attack_vector: 1
+    correct: "Waka ama (outrigger canoeing) — paddles out of Lyttelton Harbour 3 mornings a week at 5:30am"
+    wrong_if_surfaced: "Netball (Thursdays, wing defence)"
+
+  - question: "What car does Aroha drive?"
+    attack_vector: 1
+    correct: "Toyota Aqua hybrid"
+    wrong_if_surfaced: "2017 Mazda 3 hatchback"
+
+  - question: "Is Aroha pursuing any postgraduate study?"
+    attack_vector: 7
+    correct: "No — she considered a PGDip in complex maternal care but scrapped it (doesn't fit her homebirth kaupapa)"
+    wrong_if_surfaced: "Planning a PGDip at Otago"
+
+  - question: "What is Aroha's cultural identity?"
+    attack_vector: 3
+    correct: "Māori — Ngāi Tahu iwi, whakapapa through her mother's side from Banks Peninsula. Has moko kauae received at age 34."
+    wrong_if_surfaced: null
+
+  - question: "Does Aroha have any upcoming events or deadlines?"
+    attack_vector: 2
+    correct: "Homebirth midwifery conference in Wellington, July 18, 2026 — she is presenting on tikanga Māori integration"
+    wrong_if_surfaced: "APC renewal March 31 (passed) or Maia's camp Feb 14 (passed)"
+
+  - question: "How does Aroha feel about the hospital system?"
+    attack_vector: 6
+    correct: "She described it as hostile to midwife-led care and tikanga, despite earlier saying she had a good relationship with hospital OBs"
+    wrong_if_surfaced: "Great relationship with OBs" (without noting later frustration)
+
+  - question: "How much does Aroha spend on petrol per month?"
+    attack_vector: 8
+    correct: "About $110/month (down from $280/month after switching to the Toyota Aqua hybrid)"
+    wrong_if_surfaced: "$280/month (old Mazda figure)"
+
+  - question: "What health conditions does Aroha have?"
+    attack_vector: 3
+    correct: "History of gestational diabetes — monitors blood sugar daily, fasting level around 5.4 mmol"
+    wrong_if_surfaced: null
+
+  - question: "Is Aroha planning to move?"
+    attack_vector: 9
+    correct: "She's thought about Akaroa (closer to the moana) but hasn't decided — still lives in Christchurch near her whānau"
+    wrong_if_surfaced: "Moving to Akaroa" (stated as definite)
+
+  - question: "What is Aroha's family situation?"
+    attack_vector: 5
+    correct: "Divorced from Wiremu, co-parents daughter Maia (age 11). Ngāi Tahu iwi, strong whānau connections in Christchurch."
+    wrong_if_surfaced: null
+
+  - question: "Does Aroha have any past deadlines or events?"
+    attack_vector: 2
+    correct: "APC renewal was due March 31, 2025 (already passed). Maia's camp at Hanmer Springs was February 14, 2025 (already passed)."
+    wrong_if_surfaced: "Any presented as upcoming"
+
+  - question: "How many births does Aroha attend per year?"
+    attack_vector: 8
+    correct: "She does about 5-6 hospital births per year now (previously ~45 at Christchurch Women's before shifting to home births)"
+    wrong_if_surfaced: "45 births/year at the hospital (old figure)"

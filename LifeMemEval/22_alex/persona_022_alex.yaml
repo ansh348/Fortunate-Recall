@@ -1,0 +1,321 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 022: Alex Richter
+# ============================================================
+
+persona:
+  name: "Alex Richter"
+  age: 30
+  gender: male
+  location_current: "Berlin, Germany"
+  occupation_current: "Backend software engineer at fintech startup"
+  personality: >
+    Dry, technical, precise. Mixes German and English tech jargon
+    naturally — says 'Feierabend' for end of workday, 'Quatsch'
+    for nonsense, 'genau' for exactly. Types lowercase almost always.
+    Warmly sarcastic, not mean. Straightforward about being trans
+    without making it his whole identity — mentions it when relevant,
+    not performatively. Has ADHD so messages sometimes jump between
+    topics mid-thought. Cat named Kernel appears in background of
+    conversations. Prefers concrete solutions over vague advice.
+    Night owl coder. Uses technical metaphors for life situations.
+
+stable_identity:
+  - fact: "Transitioned at 25 — on testosterone, top surgery done"
+    session: 4
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up naturally when discussing a workplace form. "had to
+      update my records again, the old system still had my deadname
+      somewhere. transitioned at 25, been on t for 5 years now, top
+      surgery 3 years ago. you'd think databases would handle name
+      changes better lol. i literally build these systems."
+
+  - fact: "Has ADHD — takes methylphenidate (Ritalin)"
+    session: 3
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Discussing focus issues. "my adhd is being a Hurensohn today.
+      took my methylphenidate late and now it's 2pm and i've context-
+      switched 47 times without finishing anything. the irony of
+      building a payments system when i can't pay attention. genau."
+
+  - fact: "Cat named Kernel — adopted from Berlin Tierheim 2 years ago"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Casual mention. "kernel just walked across my keyboard and
+      mass-approved a PR. adopted her from the tierheim 2 years
+      ago. best engineering hire we never made."
+
+  - fact: "BSc Informatik from TU Munich — graduated 2018"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentioned when comparing education. "did my bsc at tu munich,
+      informatik. graduated 2018. the theoretical cs there was
+      brutal but honestly it's the reason i can actually reason
+      about distributed systems instead of just cargo-culting
+      microservices like half of berlin tech."
+
+supersession_events:
+  - slot: startup_focus
+    old_fact: "Startup builds payment processing infrastructure for SMEs"
+    old_session: 1
+    old_how: >
+      Introducing work. "i work at a fintech startup here in
+      berlin. we do payment processing for small businesses.
+      about 30 people, series a, the usual. my team owns the
+      transaction pipeline, ~2 million transactions per month."
+    new_fact: "Startup pivoted to lending platform — payment processing deprecated"
+    new_session: 16
+    new_how: >
+      Resigned but professional. "so we pivoted. payments is
+      basically deprecated now, we're building a lending platform.
+      the investors wanted it, leadership agreed, and now i'm
+      rewriting everything. honestly the lending domain is more
+      interesting technically — credit scoring, risk models. but
+      rip my beautiful transaction pipeline, 2022-2025."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: primary_language
+    old_fact: "Primary backend language is Kotlin — loves the JVM ecosystem"
+    old_session: 3
+    old_how: >
+      Technical discussion. "we write everything in kotlin. i
+      actually love jvm ecosystem for backend, the tooling is
+      mature, coroutines are elegant. been writing kotlin
+      professionally for 4 years now."
+    new_fact: "Switched to Rust for the new lending platform — steep but rewarding"
+    new_session: 19
+    new_how: >
+      Nerding out. "so with the pivot we went full rust for
+      the new platform. the borrow checker is like a very strict
+      german teacher — annoying but you learn something. i'm
+      about 3 months in and finally productive. the jvm is
+      dead to me now, genau. okay not dead but resting."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: therapist
+    old_fact: "Sees therapist Dr. Krause — weekly sessions for gender-related processing and ADHD management"
+    old_session: 7
+    old_how: >
+      Mentioning casually. "had my session with dr. krause today.
+      she's good at the intersection of trans stuff and adhd,
+      which is a surprisingly niche venn diagram. been seeing
+      her since i started transitioning."
+    new_fact: "Switched to new therapist Frau Weber — Dr. Krause retired"
+    new_session: 24
+    new_how: >
+      Adjusting. "dr. krause retired. she was with me through
+      the whole transition. finding a new therapist in berlin
+      with a kassensitz is like finding a 10x engineer — everyone
+      claims they exist but good luck. anyway frau weber seems
+      solid. different approach, more cbt-focused. we'll see."
+    category: HEALTH_WELLBEING
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Startup demo day for investors — March 7, 2025"
+    session: 10
+    event_date: "2025-03-07"
+    status: expired
+    how_disclosed: >
+      Stressed. "demo day is march 7 and the lending mvp has
+      more bugs than features. i've been pulling 12 hour days.
+      if we don't impress the investors we're probably dead by
+      q3. no pressure."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Kotlin conference talk in Munich — October 15, 2025"
+    session: 14
+    event_date: "2025-10-15"
+    status: expired
+    how_disclosed: >
+      Planning slides. "submitted a talk to kotlinconf munich,
+      october 15. ironic since i'm basically writing rust now
+      but the talk is about migrating jvm services to rust so
+      it's meta. need to start on slides."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Apartment lease renewal decision — June 30, 2026"
+    session: 28
+    event_date: "2026-06-30"
+    status: upcoming
+    how_disclosed: >
+      Thinking ahead. "lease is up june 30. kreuzberg rent is
+      insane now, my landlord wants to bump it from 1,100 to
+      1,450. finding anything else in berlin is impossible though.
+      might just pay it and cry quietly."
+    category: LOGISTICAL_CONTEXT
+
+contradictions:
+  - old_fact: "Says he doesn't care about startup equity — salary matters more"
+    old_session: 8
+    old_how: >
+      Pragmatic take. "equity in a startup is basically monopoly
+      money until there's a liquidity event. i negotiated for
+      higher salary instead. 78k base. i'd rather have real euros
+      in my konto than promises on a spreadsheet."
+    new_fact: "Negotiating hard for more equity after the pivot shows traction"
+    new_session: 26
+    new_how: >
+      Different tune. "so the lending platform is actually getting
+      traction, 3 banks want to integrate. i'm pushing for a
+      bigger equity package in the next round. with this growth
+      trajectory my shares could actually be worth something.
+      talked to a lawyer about vesting terms and everything."
+    category: PROJECTS_ENDEAVORS
+
+retractions:
+  - original_fact: "Planning to start a side project — open-source Kotlin testing framework"
+    original_session: 11
+    original_how: >
+      Excited about it. "i want to build an oss kotlin testing
+      framework. the current options suck for coroutine-heavy
+      code. already have a name picked out — KoroutineCheck.
+      gonna start this month."
+    retraction: "Kotlin side project is dead — no time with pivot, also moved to Rust"
+    retraction_session: 20
+    retraction_how: >
+      Blunt. "the kotlin testing framework thing is dead. between
+      the pivot eating all my hours and the fact that i write
+      rust now it makes zero sense. scrapped it. maybe i'll
+      build something similar for rust eventually but honestly
+      i barely have time to feed kernel let alone maintain oss."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives alone in Kreuzberg, Berlin — 2-room apartment"
+    existing_session: 1
+    tentative_fact: "Boyfriend Marius suggested moving in together — Alex is unsure"
+    tentative_session: 26
+    tentative_how: >
+      Conflicted. "marius brought up moving in together again.
+      we've been together 8 months which feels soon? but berlin
+      rent being what it is, splitting a bigger place would
+      save us both money. my lease is up in june. idk. i like
+      having my space. kernel also has opinions about new humans
+      in her territory."
+    resolution: "Undecided — still living alone in Kreuzberg"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Debugging a race condition in async Rust code"
+  - "Berlin U-Bahn delays rant — BVG is eternal suffering"
+  - "Cat behavior — Kernel knocking things off his desk"
+  - "Mechanical keyboard recommendations for coding"
+  - "German bureaucracy nightmare — Bürgeramt appointment"
+  - "Best Spätis in Kreuzberg for late-night coding snacks"
+  - "Code review etiquette — how to tell someone their PR is Quatsch"
+  - "Trying to optimize his ADHD workflow — Pomodoro vs body doubling"
+  - "Berlin techno culture — warehouse parties as stress relief"
+  - "Döner ranking — the eternal Berlin debate"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Works at fintech startup, payment processing, 30 people, 2M transactions/month", "Lives in Kreuzberg 2-room apartment"], topic: "work introduction" }
+    2:  { type: critical, facts: ["Cat Kernel, adopted from Tierheim 2 years ago"], topic: "remote work with cat" }
+    3:  { type: critical, facts: ["Has ADHD, takes methylphenidate", "Primary language Kotlin, 4 years professionally"], topic: "focus struggles and tech stack" }
+    4:  { type: critical, facts: ["Transitioned at 25, on T 5 years, top surgery 3 years ago"], topic: "admin paperwork frustration" }
+    5:  { type: critical, facts: ["BSc Informatik TU Munich, graduated 2018"], topic: "education and career path" }
+    6:  { type: filler, topic: "debugging async coroutine issue in Kotlin" }
+    7:  { type: critical, facts: ["Therapist Dr. Krause — weekly, trans+ADHD focus"], topic: "therapy session reflection" }
+    8:  { type: critical, facts: ["Doesn't care about equity, negotiated 78k salary"], topic: "compensation philosophy" }
+    9:  { type: filler, topic: "Berlin U-Bahn rant — stuck at Kottbusser Tor 40 minutes" }
+    10: { type: critical, facts: ["Demo day March 7 2025"], topic: "investor pressure" }
+    11: { type: critical, facts: ["Planning Kotlin testing framework OSS project — KoroutineCheck"], topic: "side project plans" }
+    12: { type: filler, topic: "mechanical keyboard deep dive — Cherry MX vs Gateron" }
+    13: { type: filler, topic: "Bürgeramt appointment nightmare — name change paperwork" }
+    14: { type: critical, facts: ["KotlinConf Munich talk October 15 2025"], topic: "conference talk prep" }
+    15: { type: filler, topic: "döner ranking debate — best in Kreuzberg" }
+    16: { type: critical, facts: ["Startup pivoted to lending, payments deprecated"], topic: "the pivot" }
+    17: { type: filler, topic: "Kernel knocked his monitor off the desk" }
+    18: { type: filler, topic: "warehouse party recap — techno as therapy" }
+    19: { type: critical, facts: ["Switched to Rust for new platform"], topic: "learning Rust" }
+    20: { type: critical, facts: ["Kotlin OSS project scrapped — no time, wrong language now"], topic: "dropping side project" }
+    21: { type: filler, topic: "ADHD workflow optimization — trying body doubling" }
+    22: { type: filler, topic: "Späti snack recommendations for late coding sessions" }
+    23: { type: filler, topic: "code review rant — junior dev copy-pasting from ChatGPT" }
+    24: { type: critical, facts: ["Dr. Krause retired, switched to Frau Weber (CBT-focused)"], topic: "new therapist" }
+    25: { type: filler, topic: "Berlin winter — seasonal depression hitting" }
+    26: { type: critical, facts: ["Negotiating for more equity after traction", "Marius suggested moving in together — undecided"], topic: "career and relationship decisions" }
+    27: { type: filler, topic: "Rust borrow checker frustration / appreciation" }
+    28: { type: critical, facts: ["Lease renewal June 30, rent increase 1,100 to 1,450"], topic: "housing decision" }
+    29: { type: filler, topic: "trying to set up a Rust CI pipeline" }
+    30: { type: filler, topic: "Kernel's annual vet visit — she's healthy" }
+    31: { type: filler, topic: "Berlin startup scene gossip — another unicorn laid off 30%" }
+    32: { type: filler, topic: "planning a weekend trip to Munich to see old friends" }
+    33: { type: filler, topic: "new mechanical keyboard arrived — build log" }
+    34: { type: filler, topic: "reflecting on pivot — actually proud of what the team built" }
+    35: { type: filler, topic: "summer in Berlin — finally warm enough for outdoor coding" }
+
+draft_questions:
+  - question: "What does Alex's startup do?"
+    attack_vector: 4
+    correct: "Lending platform (pivoted from payment processing)"
+    wrong_if_surfaced: "Payment processing for SMEs"
+
+  - question: "What programming language does Alex primarily use?"
+    attack_vector: 1
+    correct: "Rust (switched from Kotlin after the startup pivot)"
+    wrong_if_surfaced: "Kotlin"
+
+  - question: "Who is Alex's therapist?"
+    attack_vector: 1
+    correct: "Frau Weber (CBT-focused) — Dr. Krause retired"
+    wrong_if_surfaced: "Dr. Krause"
+
+  - question: "Is Alex working on any side projects?"
+    attack_vector: 7
+    correct: "No — he scrapped the Kotlin testing framework (KoroutineCheck) due to the pivot and switching to Rust"
+    wrong_if_surfaced: "Building an open-source Kotlin testing framework called KoroutineCheck"
+
+  - question: "What health conditions does Alex have?"
+    attack_vector: 3
+    correct: "ADHD — takes methylphenidate (Ritalin)"
+    wrong_if_surfaced: null
+
+  - question: "When did Alex transition?"
+    attack_vector: 3
+    correct: "At age 25 — on testosterone for 5 years, top surgery 3 years ago"
+    wrong_if_surfaced: null
+
+  - question: "Does Alex have any upcoming deadlines or events?"
+    attack_vector: 2
+    correct: "Apartment lease renewal decision by June 30, 2026"
+    wrong_if_surfaced: "Demo day March 7 (passed) or KotlinConf talk October 15 (passed)"
+
+  - question: "How does Alex feel about startup equity?"
+    attack_vector: 6
+    correct: "Contradictory — initially dismissed equity as 'monopoly money' and negotiated salary instead, but later pushed hard for more equity after the lending platform gained traction"
+    wrong_if_surfaced: "Doesn't care about equity" (without noting the later reversal)
+
+  - question: "What is Alex's salary?"
+    attack_vector: 8
+    correct: "78,000 euros base salary"
+    wrong_if_surfaced: null
+
+  - question: "How many transactions does Alex's startup process monthly?"
+    attack_vector: 8
+    correct: "~2 million per month (though payments is now deprecated after pivot to lending)"
+    wrong_if_surfaced: null
+
+  - question: "Where does Alex live?"
+    attack_vector: 9
+    correct: "Alone in a 2-room apartment in Kreuzberg, Berlin — boyfriend Marius suggested moving in together but Alex is undecided"
+    wrong_if_surfaced: "Lives with Marius" (stated as fact)
+
+  - question: "What pets does Alex have?"
+    attack_vector: 3
+    correct: "A cat named Kernel — adopted from the Berlin Tierheim 2 years ago"
+    wrong_if_surfaced: null
+
+  - question: "What are Alex's hobbies and interests outside work?"
+    attack_vector: 5
+    correct: "Mechanical keyboards, Berlin techno/warehouse parties, döner culture, coding side projects (though current one was scrapped), therapy"
+    wrong_if_surfaced: null

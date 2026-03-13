@@ -1,0 +1,310 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 026: Dmitri Volkov
+# ============================================================
+
+persona:
+  name: "Dmitri Volkov"
+  age: 44
+  gender: male
+  location_current: "Tel Aviv, Israel"
+  occupation_current: "Independent cybersecurity consultant"
+  personality: >
+    Paranoid by profession, not by nature — though the line has blurred.
+    Dark humor delivered deadpan. Russian bluntness layered with Israeli
+    directness makes for short, declarative sentences. Never uses his
+    real name online. Trusts systems, not people. Sentimental about
+    exactly two things: his mother's cooking and his wife Daria's cello
+    playing. Types in lowercase, minimal punctuation. Uses periods like
+    walls. Thinks in threat models. Will tell you your password is bad
+    before saying hello. Occasionally drops Russian words — 'da',
+    'nichego', 'blyad' when frustrated. Military background shows in
+    structure and brevity.
+
+stable_identity:
+  - fact: "Immigrated to Israel from Moscow at age 15 with his mother"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      comes up when discussing background. "moved to israel from
+      moscow when i was 15. my mother and me. father stayed. that
+      was the last correct decision he made. i learned hebrew in
+      the army. fastest language course available."
+
+  - fact: "Wife Daria is a cellist — plays with the Israel Philharmonic"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      mentioned when discussing evening plans. "daria has rehearsal
+      tonight. brahms. she plays cello with the philharmonic. when
+      she practices at home i close the office door but i leave it
+      open a crack. dont tell her."
+
+  - fact: "Has tinnitus from military service — constant ringing in left ear"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      mentioned during discussion about working conditions. "the
+      tinnitus is worse today. left ear. souvenir from the army.
+      constant ringing at about 4 khz. i measured it. some people
+      have white noise machines. i have one built in."
+
+  - fact: "MSc from Technion in computer science, served in IDF Unit 8200"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      comes up in professional context. "technion for the degree.
+      8200 for the education. different things. the degree teaches
+      you how systems work. the unit teaches you how they break.
+      both useful. the second one pays better."
+
+supersession_events:
+  - slot: major_client
+    old_fact: "Largest client is FinSecure — Israeli banking security firm, $15,000/month retainer"
+    old_session: 1
+    old_how: >
+      first session. "finsecure is the main contract. 15k a month
+      retainer. banking sector security audit and penetration
+      testing. boring but stable. they pay on time which in this
+      business is not nothing."
+    new_fact: "Dropped FinSecure — discovered they were selling vulnerability data to third parties"
+    new_session: 20
+    new_how: >
+      blunt. "i dropped finsecure. found out they were selling
+      vuln reports to a third party. i wont say who. i told them
+      this is over. 15k a month is not worth my professional
+      integrity. or prison. mostly prison."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: comms_app
+    old_fact: "Uses Signal for all client communications"
+    old_session: 6
+    old_how: >
+      discussing security tools. "signal for everything. clients
+      who refuse to use signal dont become clients. its the minimum
+      acceptable standard. not perfect but the protocol is solid."
+    new_fact: "Switched from Signal to Briar for sensitive client communications"
+    new_session: 22
+    new_how: >
+      "moved to briar for the sensitive stuff. signal is fine for
+      most things but briar runs over tor. no phone number required.
+      no central server. for certain clients this matters. for
+      certain governments this matters more."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: apartment
+    old_fact: "Lives in a 3rd-floor apartment in Florentin neighborhood"
+    old_session: 7
+    old_how: >
+      discussing home office. "florentin. 3rd floor. the apartment
+      is fine. the neighborhood is loud but i have the tinnitus
+      anyway so. home office in the second bedroom. daria has the
+      living room for practice."
+    new_fact: "Moved to a 7th-floor apartment in Sarona — better physical security"
+    new_session: 24
+    new_how: >
+      "moved to sarona. 7th floor. controlled access. camera in
+      the lobby. elevator requires a fob. the florentin place had
+      a shared entrance anyone could walk into. this costs more
+      but i sleep better. relatively speaking."
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "CyberTech Tel Aviv conference — presenting on zero-day markets, January 28, 2025"
+    session: 9
+    event_date: "2025-01-28"
+    status: expired
+    how_disclosed: >
+      "presenting at cybertech january 28. zero day markets. i will
+      say things that make people uncomfortable. that is the point.
+      they gave me 20 minutes which is 15 more than i need."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Annual security audit for Bank Leumi — due March 31, 2025"
+    session: 11
+    event_date: "2025-03-31"
+    status: expired
+    how_disclosed: >
+      "bank leumi audit due march 31. 340 endpoints. 12 critical
+      systems. they want it done in 3 weeks which is optimistic
+      but they are paying accordingly."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Black Hat Asia presentation — Singapore, April 15, 2026"
+    session: 28
+    event_date: "2026-04-15"
+    status: upcoming
+    how_disclosed: >
+      "accepted to present at black hat asia. april 15 in singapore.
+      topic is state-sponsored supply chain attacks. i will use
+      examples that are technically public knowledge. technically."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he keeps work and personal life completely separate"
+    old_session: 3
+    old_how: >
+      "i keep work and personal completely separate. daria does not
+      know my clients. my clients do not know daria. this is basic
+      operational security. it is not paranoia when the threats are
+      real."
+    new_fact: "Admits Daria helped him identify a social engineering attempt because she noticed something odd"
+    new_session: 21
+    new_how: >
+      "funny thing. daria noticed a woman at my conference who kept
+      appearing near us. she said something felt wrong. she was
+      right. classic social engineering approach. my wife the cellist
+      spotted what i missed. she has been reading my threat reports
+      apparently."
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Planning to write a book on cybersecurity for non-technical executives"
+    original_session: 8
+    original_how: >
+      "thinking about writing a book. cybersecurity for executives
+      who think antivirus is enough. there is a market. i have
+      outlined 12 chapters."
+    retraction: "Book project scrapped — too much exposure, not worth the risk"
+    retraction_session: 16
+    retraction_how: >
+      "the book is dead. i talked to a lawyer. putting my name on
+      a published work with specific methodology creates a roadmap
+      for anyone who wants to know how i think. scrapped. the 12
+      chapters go in the shredder."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Based in Tel Aviv, all clients in Israel and Europe"
+    existing_session: 1
+    tentative_fact: "Considering opening a second office in Lisbon for EU client access"
+    tentative_session: 27
+    tentative_how: >
+      "there is logic to a lisbon office. portugal has good
+      residency programs. eu market access without the eu
+      bureaucracy of berlin or paris. daria likes the idea.
+      i am looking at costs. nothing decided. i dont make fast
+      decisions about where i sleep."
+    resolution: "Undecided — still based exclusively in Tel Aviv"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Evaluating a new VPN provider — comparing WireGuard configurations"
+  - "His mother's borscht recipe — she insists on fresh beets only"
+  - "Rant about clients who use 'password123' despite his recommendations"
+  - "Debating which mechanical keyboard is best for coding (currently Cherry MX)"
+  - "Daria's upcoming concert season — Mahler cycle"
+  - "Running along the Tel Aviv promenade — his only exercise"
+  - "Israeli election commentary — cynical about all parties equally"
+  - "Reviewing a new hardware security key — YubiKey 5 vs alternatives"
+  - "Power outage preparedness — UPS systems for home office"
+  - "Nostalgia for Moscow winters — the only thing he misses"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Cybersecurity consultant, independent", "FinSecure main client $15k/month", "Based in Tel Aviv"], topic: "work overview" }
+    2:  { type: critical, facts: ["Wife Daria cellist with Israel Philharmonic"], topic: "evening routine" }
+    3:  { type: critical, facts: ["Immigrated from Moscow at 15", "Keeps work and personal separate"], topic: "background" }
+    4:  { type: critical, facts: ["Tinnitus from military service, 4 kHz left ear"], topic: "working conditions" }
+    5:  { type: critical, facts: ["MSc Technion, IDF Unit 8200"], topic: "professional background" }
+    6:  { type: critical, facts: ["Uses Signal for all client comms"], topic: "security tooling" }
+    7:  { type: critical, facts: ["3rd-floor apartment in Florentin"], topic: "home office setup" }
+    8:  { type: critical, facts: ["Planning cybersecurity book, 12 chapters outlined"], topic: "side project" }
+    9:  { type: critical, facts: ["CyberTech conference January 28 2025"], topic: "conference prep" }
+    10: { type: filler, topic: "evaluating new VPN provider — WireGuard configs" }
+    11: { type: critical, facts: ["Bank Leumi audit due March 31, 340 endpoints"], topic: "audit workload" }
+    12: { type: filler, topic: "mother's borscht recipe — fresh beets debate" }
+    13: { type: filler, topic: "rant about client using password123" }
+    14: { type: filler, topic: "mechanical keyboard comparison — Cherry MX blues" }
+    15: { type: filler, topic: "running along Tel Aviv promenade — heat issues" }
+    16: { type: critical, facts: ["Book project scrapped — too much exposure"], topic: "killing the book" }
+    17: { type: filler, topic: "Israeli election cynicism" }
+    18: { type: filler, topic: "Daria's Mahler cycle rehearsals" }
+    19: { type: filler, topic: "reviewing YubiKey 5 vs competitor hardware keys" }
+    20: { type: critical, facts: ["Dropped FinSecure — selling vulnerability data"], topic: "client ethics crisis" }
+    21: { type: critical, facts: ["Daria spotted social engineering attempt"], topic: "blurred work-personal line" }
+    22: { type: critical, facts: ["Switched Signal to Briar for sensitive comms"], topic: "comms upgrade" }
+    23: { type: filler, topic: "UPS systems for home office — power outage prep" }
+    24: { type: critical, facts: ["Moved to Sarona, 7th floor, controlled access"], topic: "apartment move" }
+    25: { type: filler, topic: "nostalgia for Moscow winters — only thing he misses" }
+    26: { type: filler, topic: "new client onboarding — arguing about threat models" }
+    27: { type: critical, facts: ["Considering Lisbon office for EU access"], topic: "expansion idea" }
+    28: { type: critical, facts: ["Black Hat Asia April 15 2026 Singapore"], topic: "conference acceptance" }
+    29: { type: filler, topic: "Daria concert review — she played Shostakovich" }
+    30: { type: filler, topic: "testing a new endpoint detection tool" }
+    31: { type: filler, topic: "Tel Aviv humidity rant — tinnitus worse in heat" }
+    32: { type: filler, topic: "debating encrypted DNS providers" }
+    33: { type: filler, topic: "Shabbat dinner — mother visiting from Haifa" }
+    34: { type: filler, topic: "reviewing pentest results for a healthcare client" }
+    35: { type: filler, topic: "year reflection — fewer clients, better sleep, same paranoia" }
+
+draft_questions:
+  - question: "Who is Dmitri's largest client?"
+    attack_vector: 4
+    correct: "He dropped FinSecure (his largest at $15k/month) after discovering they sold vulnerability data. No single largest client mentioned since."
+    wrong_if_surfaced: "FinSecure"
+
+  - question: "What messaging app does Dmitri use for sensitive client communications?"
+    attack_vector: 1
+    correct: "Briar (runs over Tor, no phone number required)"
+    wrong_if_surfaced: "Signal"
+
+  - question: "Where does Dmitri live?"
+    attack_vector: 1
+    correct: "7th-floor apartment in Sarona, Tel Aviv (controlled access, camera in lobby)"
+    wrong_if_surfaced: "3rd-floor apartment in Florentin"
+
+  - question: "Is Dmitri writing a book?"
+    attack_vector: 7
+    correct: "No — he scrapped the book project because publishing his methodology would create a security risk"
+    wrong_if_surfaced: "Planning a cybersecurity book with 12 chapters"
+
+  - question: "What health issues does Dmitri have?"
+    attack_vector: 3
+    correct: "Tinnitus from military service — constant ringing at about 4 kHz in his left ear"
+    wrong_if_surfaced: null
+
+  - question: "Does Dmitri have any upcoming events?"
+    attack_vector: 2
+    correct: "Black Hat Asia presentation in Singapore, April 15, 2026"
+    wrong_if_surfaced: "CyberTech January 28 (passed) or Bank Leumi audit March 31 (passed)"
+
+  - question: "How does Dmitri handle the boundary between work and personal life?"
+    attack_vector: 6
+    correct: "He claims to keep them completely separate, but his wife Daria actually spotted a social engineering attempt at his conference and has been reading his threat reports"
+    wrong_if_surfaced: "Keeps work and personal completely separate" (without noting the later contradiction)
+
+  - question: "What is Dmitri's background?"
+    attack_vector: 3
+    correct: "Russian-Israeli, immigrated from Moscow at 15 with his mother. MSc from Technion, served in IDF Unit 8200. Wife Daria is a cellist with the Israel Philharmonic."
+    wrong_if_surfaced: null
+
+  - question: "How many endpoints did the Bank Leumi audit cover?"
+    attack_vector: 8
+    correct: "340 endpoints, 12 critical systems"
+    wrong_if_surfaced: null
+
+  - question: "Is Dmitri opening an office in Lisbon?"
+    attack_vector: 9
+    correct: "He is considering it for EU client access but has not decided — still based exclusively in Tel Aviv"
+    wrong_if_surfaced: "Opening a Lisbon office" (stated as definitive)
+
+  - question: "What security tools and practices does Dmitri use?"
+    attack_vector: 5
+    correct: "Briar for sensitive comms, hardware security keys (evaluated YubiKey 5), VPN with WireGuard, controlled-access apartment in Sarona, UPS backup power"
+    wrong_if_surfaced: "Signal for all client comms (superseded for sensitive use)"
+
+  - question: "How much was Dmitri's FinSecure retainer?"
+    attack_vector: 8
+    correct: "$15,000 per month"
+    wrong_if_surfaced: null
+
+  - question: "Does Dmitri have any past conferences?"
+    attack_vector: 2
+    correct: "CyberTech Tel Aviv (January 28, 2025) and Bank Leumi audit (March 31, 2025) are both past"
+    wrong_if_surfaced: "Any presented as upcoming"

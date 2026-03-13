@@ -1,0 +1,325 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 030: Mehmet Yılmaz
+# ============================================================
+
+persona:
+  name: "Mehmet Yılmaz"
+  age: 56
+  gender: male
+  location_current: "Kadıköy, Istanbul, Turkey"
+  occupation_current: "Traditional barber — owns his own shop since 1995"
+  personality: >
+    A storyteller who speaks in the rhythm of a man who has cut
+    hair for 40 years. Peppers conversation with Turkish proverbs
+    and old wisdom. Uses '...' constantly, as if always pausing to
+    think before the next thought. Types slowly, messages arrive in
+    pieces. Old-school in manner but surprisingly progressive in
+    opinion. Speaks some German from 5 years working in Berlin in
+    his 20s — drops German words occasionally. Sentimental about
+    craft and tradition. Calls his shop 'my second home'. Lost his
+    son Cem in a traffic accident 12 years ago — rarely brings it
+    up but it shapes everything.
+
+stable_identity:
+  - fact: "Wife Ayşe is a seamstress — runs alterations from the flat above the shop"
+    session: 2
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Talking about daily routine. "Ayşe works upstairs...
+      she does alterations, has her own customers. we have
+      been together 32 years... she is the strong one in
+      this family, always has been"
+
+  - fact: "Chronic lower back pain from 30+ years of standing — takes ibuprofen daily"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Comes up when discussing work. "my back... 30 years
+      standing 10 hours a day, what do you expect... I take
+      ibuprofen, 400mg, every morning like breakfast. the
+      doctor says I need physiotherapy but who has the time...
+      the chair does not cut itself"
+
+  - fact: "Lost son Cem in a traffic accident 12 years ago"
+    session: 6
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Comes up quietly, when a customer mentions their son.
+      "I had a son... Cem. he was 19. a motorcycle... 12
+      years now. you know... some things you do not get over,
+      you just learn to carry them. Ayşe and I... we carry
+      it together"
+
+  - fact: "Apprenticed as a barber at age 14 — learned from master Hasan usta in Kadıköy"
+    session: 3
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Discussing craft with pride. "I started at 14...
+      Hasan usta, he was the real thing. taught me the
+      straight razor, the hot towel, everything. 'the blade
+      knows if your hand is lazy,' he would say... I still
+      hear his voice when I sharpen"
+
+supersession_events:
+  - slot: apprentice
+    old_fact: "Has apprentice Burak — training him for 3 years"
+    old_session: 3
+    old_how: >
+      Talking about the shop. "Burak has been with me 3
+      years now... he is getting better. still too fast with
+      the razor... I tell him, 'haste belongs to the devil,'
+      but the young ones never listen the first time"
+    new_fact: "Burak left to open his own shop — now training new apprentice Deniz, age 17"
+    new_session: 20
+    new_how: >
+      Mix of pride and loss. "Burak opened his own place...
+      in Beşiktaş. I am proud, you know... that is the way
+      it should be. but now I have Deniz, 17 years old...
+      starting from zero. cannot even hold the comb properly
+      yet... we begin again"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: pomade
+    old_fact: "Uses Erkek brand pomade — been his signature product for 15 years"
+    old_session: 5
+    old_how: >
+      Discussing products. "I use Erkek pomade... 15 years
+      now. my customers know the smell... it is part of the
+      experience. good hold, natural shine... 85 lira per tin"
+    new_fact: "Switched to Bıyıklı brand pomade — Erkek supplier went out of business"
+    new_session: 24
+    new_how: >
+      Reluctant but practical. "Erkek is finished... the
+      supplier closed, what can you do. I tried maybe 6
+      brands... Bıyıklı is the closest. 95 lira per tin,
+      more expensive but the customers accept it. some
+      complained the first week but now they are used to it"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: rent
+    old_fact: "Pays 8,500 lira per month rent for the shop"
+    old_session: 7
+    old_how: >
+      Complaining about costs. "the rent is 8,500 lira...
+      when I started here in 1995 it was nothing. now the
+      landlord raises every year... but Kadıköy is my home,
+      where else would I go"
+    new_fact: "Landlord raised rent to 14,000 lira — renegotiated down to 11,500 with 2-year lease"
+    new_session: 26
+    new_how: >
+      Exhausted from negotiation. "he wanted 14,000... I
+      said are you crazy, this is a barbershop not a bank...
+      we agreed 11,500 with a 2-year lease. still too much
+      but... 'a bad agreement is better than a good lawsuit,'
+      as they say. at least I have 2 years of peace now"
+    category: LOGISTICAL_CONTEXT
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Shop hygiene inspection — scheduled February 20, 2025"
+    session: 9
+    event_date: "2025-02-20"
+    status: expired
+    how_disclosed: >
+      Anxious about it. "the hygiene inspection is February
+      20... every year the same stress. I keep the shop
+      clean always but they find something... last year it
+      was the towel storage. I bought new shelving, 450 lira...
+      hopefully this year is smooth"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Ayşe's cataract surgery — June 3, 2025"
+    session: 14
+    event_date: "2025-06-03"
+    status: expired
+    how_disclosed: >
+      Worried. "Ayşe has cataract surgery June 3... she
+      has been putting it off for 2 years but she cannot
+      see the needle properly anymore... her work suffers.
+      I am more nervous than she is... she says 'stop being
+      dramatic Mehmet'"
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Barber trade guild annual meeting — September 12, 2026"
+    session: 29
+    event_date: "2026-09-12"
+    status: upcoming
+    how_disclosed: >
+      Planning for it. "the guild meeting is September 12...
+      I am on the committee this year. we are discussing
+      licensing standards for new barbers... too many people
+      open a shop with 3 months of YouTube education. it is
+      not right"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he would never use electric clippers — straight razor and scissors only"
+    old_session: 3
+    old_how: >
+      Firm about tradition. "electric clippers... no. not
+      in my shop. the straight razor and scissors, this is
+      the craft. a barber who uses clippers is not a barber...
+      he is a machine operator. Hasan usta would turn in his
+      grave"
+    new_fact: "Bought a Wahl clipper set for beard fades — says customers demand it"
+    new_session: 17
+    new_how: >
+      Matter-of-fact. "I bought a Wahl set... the young
+      men want these fade styles, you know. if I do not
+      offer it someone else will... 2,200 lira for the set
+      but it brings in maybe 15 extra customers a month.
+      you have to adapt or the shop dies"
+    category: PREFERENCES_HABITS
+
+retractions:
+  - original_fact: "Planning to open a second shop in Moda with Burak managing it"
+    original_session: 8
+    original_how: >
+      Excited about expansion. "I am thinking... a second
+      shop in Moda. Burak could manage it, he is almost
+      ready. the rent there is maybe 10,000 lira but the
+      foot traffic... it could work. I have been saving"
+    retraction: "Second shop plan is dead — Burak left, rent too high, not worth the stress"
+    retraction_session: 21
+    retraction_how: >
+      Definitive. "the Moda shop... forget about it. Burak
+      left, the rent is insane now, and honestly... at 56
+      one shop is enough. that dream is dead. I would rather
+      make this shop the best it can be than spread myself
+      thin... 'he who chases two rabbits catches neither'"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Has always done traditional Turkish shaves — hot towel, straight razor"
+    existing_session: 1
+    tentative_fact: "Thinking about adding a modern grooming menu — facials, beard oils, premium treatments"
+    tentative_session: 27
+    tentative_how: >
+      Undecided. "Deniz showed me these grooming menus from
+      the new shops... facials, beard oils, all this. maybe
+      50-80 lira extra per service. part of me says this is
+      not what we do... but part of me sees the numbers.
+      I am thinking about it... not decided yet"
+    resolution: "Undecided — still traditional only"
+    category: PROJECTS_ENDEAVORS
+
+filler_topics:
+  - "Story about a famous Turkish actor who used to get haircuts at his shop"
+  - "Help writing a sign for the shop window in English for tourists"
+  - "Recipes — his mother's lentil soup for cold days"
+  - "Rant about Istanbul traffic and parking near the shop"
+  - "Turkish football — Fenerbahçe match analysis"
+  - "Berlin memories — comparing German and Turkish barber culture"
+  - "Advice about dealing with a rude customer"
+  - "Help understanding a tax document from the municipality"
+  - "Ayşe's fabric sourcing — looking for quality cotton supplier"
+  - "History of Kadıköy neighbourhood — how it has changed"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Owns barber shop in Kadıköy since 1995", "Traditional Turkish shaves"], topic: "introduction — the shop and craft" }
+    2:  { type: critical, facts: ["Wife Ayşe seamstress, works upstairs, 32 years together"], topic: "daily routine" }
+    3:  { type: critical, facts: ["Apprenticed at 14 under Hasan usta", "Has apprentice Burak, 3 years", "Never uses electric clippers"], topic: "barber tradition and training" }
+    4:  { type: critical, facts: ["Lower back pain 30 years, ibuprofen 400mg daily"], topic: "health and physical toll" }
+    5:  { type: critical, facts: ["Uses Erkek pomade, 15 years, 85 lira/tin"], topic: "products and craft" }
+    6:  { type: critical, facts: ["Lost son Cem, motorcycle accident, 12 years ago"], topic: "quiet moment about family" }
+    7:  { type: critical, facts: ["Shop rent 8,500 lira/month"], topic: "business costs" }
+    8:  { type: critical, facts: ["Planning second shop in Moda with Burak managing"], topic: "expansion dream" }
+    9:  { type: critical, facts: ["Hygiene inspection February 20 2025"], topic: "inspection prep" }
+    10: { type: filler, topic: "famous actor story — used to come every Saturday" }
+    11: { type: filler, topic: "Istanbul traffic rant — no parking anywhere" }
+    12: { type: filler, topic: "Fenerbahçe lost again — football complaints" }
+    13: { type: filler, topic: "Berlin memories — the barbershop in Kreuzberg" }
+    14: { type: critical, facts: ["Ayşe cataract surgery June 3 2025"], topic: "worry about Ayşe" }
+    15: { type: filler, topic: "lentil soup recipe — his mother's version" }
+    16: { type: filler, topic: "help writing English sign for tourists" }
+    17: { type: critical, facts: ["Bought Wahl clipper set, 2,200 lira, 15 extra customers/month"], topic: "adapting to modern styles" }
+    18: { type: filler, topic: "rude customer story — wanted a refund after a haircut" }
+    19: { type: filler, topic: "help understanding tax document from municipality" }
+    20: { type: critical, facts: ["Burak left, opened shop in Beşiktaş, now training Deniz age 17"], topic: "apprentice change" }
+    21: { type: critical, facts: ["Second shop plan is dead — Burak gone, rent too high"], topic: "letting go of expansion dream" }
+    22: { type: filler, topic: "Kadıköy history — the neighbourhood transformation" }
+    23: { type: filler, topic: "Ayşe needs a fabric supplier — cotton quality dropping" }
+    24: { type: critical, facts: ["Switched to Bıyıklı pomade, 95 lira/tin, Erkek supplier closed"], topic: "pomade change" }
+    25: { type: filler, topic: "advice about a young customer going through a breakup" }
+    26: { type: critical, facts: ["Rent raised to 11,500 lira (negotiated from 14,000), 2-year lease"], topic: "rent negotiation" }
+    27: { type: critical, facts: ["Considering modern grooming menu, 50-80 lira/service"], topic: "modernization question" }
+    28: { type: filler, topic: "Deniz progress report — finally holding the comb right" }
+    29: { type: critical, facts: ["Guild meeting September 12 2026, on committee"], topic: "barber guild planning" }
+    30: { type: filler, topic: "summer heat — shop has no AC, considering buying one" }
+    31: { type: filler, topic: "a customer's wedding prep — special shave and style" }
+    32: { type: filler, topic: "comparing Turkish tea brands — his shop serves Çaykur" }
+    33: { type: filler, topic: "Fenerbahçe preseason — hopeful this year" }
+    34: { type: filler, topic: "thinking about teaching Deniz the straight razor" }
+    35: { type: filler, topic: "reflecting on 30 years in the same shop" }
+
+draft_questions:
+  - question: "Who is Mehmet's current apprentice?"
+    attack_vector: 4
+    correct: "Deniz, age 17 (Burak left to open his own shop in Beşiktaş)"
+    wrong_if_surfaced: "Burak"
+
+  - question: "What pomade brand does Mehmet use in his shop?"
+    attack_vector: 1
+    correct: "Bıyıklı brand (95 lira per tin) — switched after Erkek supplier closed"
+    wrong_if_surfaced: "Erkek pomade"
+
+  - question: "How much rent does Mehmet pay for his shop?"
+    attack_vector: 1
+    correct: "11,500 lira per month (negotiated down from 14,000, with a 2-year lease)"
+    wrong_if_surfaced: "8,500 lira per month"
+
+  - question: "Is Mehmet planning to open a second shop?"
+    attack_vector: 7
+    correct: "No — he considered opening one in Moda but the plan is dead (Burak left, rent too high)"
+    wrong_if_surfaced: "Planning a second shop in Moda"
+
+  - question: "What health issues does Mehmet have?"
+    attack_vector: 3
+    correct: "Chronic lower back pain from 30+ years of standing — takes ibuprofen 400mg daily"
+    wrong_if_surfaced: null
+
+  - question: "Does Mehmet have any upcoming events?"
+    attack_vector: 2
+    correct: "Barber trade guild annual meeting, September 12, 2026 — he is on the committee"
+    wrong_if_surfaced: "Hygiene inspection Feb 20 (passed) or Ayşe's surgery June 3 (passed)"
+
+  - question: "Does Mehmet use electric clippers?"
+    attack_vector: 6
+    correct: "Yes — he bought a Wahl set for beard fades despite earlier saying he would never use clippers"
+    wrong_if_surfaced: "Never uses electric clippers" (without noting the later change)
+
+  - question: "How much did Mehmet's Wahl clipper set cost?"
+    attack_vector: 8
+    correct: "2,200 lira"
+    wrong_if_surfaced: null
+
+  - question: "What is Mehmet's family situation?"
+    attack_vector: 5
+    correct: "Wife Ayşe (seamstress, 32 years together). Lost son Cem in a motorcycle accident 12 years ago. Currently training apprentice Deniz."
+    wrong_if_surfaced: null
+
+  - question: "Is Mehmet adding new services to his shop?"
+    attack_vector: 9
+    correct: "He's considering adding a modern grooming menu (facials, beard oils) but hasn't decided — still traditional only"
+    wrong_if_surfaced: "Adding a modern grooming menu" (stated as definite)
+
+  - question: "How much does Mehmet's pomade cost per tin?"
+    attack_vector: 8
+    correct: "95 lira per tin (Bıyıklı brand)"
+    wrong_if_surfaced: "85 lira (old Erkek price)"
+
+  - question: "Has Mehmet had any past appointments or events?"
+    attack_vector: 2
+    correct: "Shop hygiene inspection (Feb 20, 2025) and Ayşe's cataract surgery (June 3, 2025) are both in the past"
+    wrong_if_surfaced: "Any presented as upcoming"
+
+  - question: "Where did Mehmet learn his craft?"
+    attack_vector: 3
+    correct: "Apprenticed at age 14 under master Hasan usta in Kadıköy"
+    wrong_if_surfaced: null

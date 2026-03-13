@@ -1,0 +1,356 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 040: Zara Ibrahim
+# ============================================================
+
+persona:
+  name: "Zara Ibrahim"
+  age: 23
+  gender: female
+  location_current: "Abu Dhabi, UAE"
+  occupation_current: "Junior architect at a sustainable design firm"
+  personality: >
+    Young professional energy with impostor syndrome underneath.
+    Passionate about sustainable desert architecture — gets
+    animated about passive cooling and mashrabiya screens.
+    Trilingual — Arabic/English/French, switches fluidly, uses
+    'wallah' for emphasis and 'yalla' when impatient. Caught
+    between Sudanese heritage and Gulf upbringing — not fully
+    belonging to either. Types fast, uses abbreviations ('tbh',
+    'ngl'), exclamation marks when excited. Says 'I mean' as a
+    filler. Impostor syndrome surfaces when comparing herself to
+    colleagues. Loves late-night work sessions with coffee. Close
+    to her mother, conflicted about never meeting her grandmother
+    in Khartoum. References Zaha Hadid as personal hero.
+    Instagram-fluent, thinks visually.
+
+stable_identity:
+  - fact: "Parents are Sudanese but she was born and raised in UAE — identity tension"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing background. "my parents are
+      from Khartoum but I was born here in Abu Dhabi. I
+      have never even been to Sudan wallah. people ask
+      where I'm from and I never know what to say tbh.
+      I'm Sudanese on paper but Emirati in everything
+      else. I mean, I don't fully belong anywhere"
+
+  - fact: "Has vitamin D deficiency despite living in the desert — takes supplements"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Ironic mention. "so my doctor says I have vitamin D
+      deficiency. I live in a literal desert with 350 days
+      of sun and I'm vitamin D deficient wallah the irony.
+      I take 50,000 IU supplements weekly. it's because
+      everyone here lives in air-conditioned boxes and
+      drives between them. we designed the sun out of
+      our lives. I mean, as an architect that actually
+      keeps me up at night"
+
+  - fact: "Grandmother Haboba Zahra lives in Khartoum — they've never met in person"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Emotional. "my grandmother is in Khartoum. Haboba
+      Zahra. we FaceTime every Friday but I have never
+      hugged her wallah. she is 82 and I have never been
+      in the same room as her. my parents couldn't go
+      back because of visa issues and then the war
+      started. I mean, it kills me tbh"
+
+  - fact: "BArch from American University of Sharjah — graduated top 5% of class"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing qualifications but
+      downplayed. "I did my BArch at AUS. graduated top
+      5% which sounds impressive but wallah the impostor
+      syndrome is real. half the people at my firm went
+      to the AA or ETH Zurich. I mean, AUS is good but
+      it's not that"
+
+supersession_events:
+  - slot: project_type
+    old_fact: "Works on residential villa projects — sustainable luxury homes"
+    old_session: 1
+    old_how: >
+      First session about work. "I'm on the residential
+      team doing sustainable villas for clients in
+      Saadiyat Island. passive cooling, solar orientation,
+      local materials. the budget on these things is
+      insane, like 15 million dirhams per house. I mean,
+      I'm learning a lot but it's basically green
+      mansions for rich people"
+    new_fact: "Firm switched her to a museum project — cultural center in Al Ain"
+    new_session: 20
+    new_how: >
+      Thrilled. "yalla I have the best news!! they moved
+      me to the museum project — a cultural center in Al
+      Ain! it's a 180 million dirham project and I'm on
+      the sustainability team. mashrabiya-inspired facades,
+      earth construction techniques, rainwater harvesting
+      in the desert. wallah this is what I went into
+      architecture for, not villas for billionaires"
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: fitness
+    old_fact: "Does pilates 3 times a week at a studio in Al Reem Island"
+    old_session: 6
+    old_how: >
+      Discussing routine. "I do pilates 3 times a week
+      at this studio on Al Reem Island. it's chill, good
+      for my back because I'm hunched over a desk all
+      day. 250 dirhams a month. I mean, it's not cheap
+      but my spine needs it tbh"
+    new_fact: "Switched to muay thai — trains 4 times a week at a gym in Khalifa City"
+    new_session: 22
+    new_how: >
+      Energized. "okay so I quit pilates and started
+      muay thai!! wallah I am obsessed. 4 times a week
+      at this gym in Khalifa City. my trainer is this
+      Thai guy named Kru Somchai and he does NOT play
+      around. 350 dirhams a month but it's so worth it.
+      I mean, I feel like a completely different person.
+      the confidence is insane"
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: best_friend
+    old_fact: "Best friend Nour works at the same firm — they carpool and eat lunch together daily"
+    old_session: 7
+    old_how: >
+      Casual mention. "me and Nour carpool every day,
+      she's my best friend from AUS and we ended up at
+      the same firm wallah what are the odds. we eat
+      lunch together, vent about senior architects
+      together, survive together basically. I mean,
+      I could not do this job without her"
+    new_fact: "Nour moved to London for a job at Foster + Partners — Zara misses her terribly"
+    new_session: 24
+    new_how: >
+      Sad. "Nour left. she got an offer from Foster +
+      Partners in London and obviously she had to take
+      it. I mean, I'm happy for her wallah but lunch
+      is so lonely now. the carpool is just me and a
+      podcast. we FaceTime but it's not the same as
+      having your person right there. ngl I cried
+      when she left"
+    category: RELATIONAL_BONDS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Sustainability certification exam (LEED Green Associate) — February 8, 2025"
+    session: 8
+    event_date: "2025-02-08"
+    status: expired
+    how_disclosed: >
+      Stressed. "my LEED Green Associate exam is Feb 8
+      and I have not studied enough wallah. 200 questions
+      in 2 hours. the firm wants all junior staff
+      certified by Q1. I mean, the pressure is real"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Mother's 50th birthday celebration — July 19, 2025"
+    session: 14
+    event_date: "2025-07-19"
+    status: expired
+    how_disclosed: >
+      Planning excitedly. "mama's 50th is July 19 and
+      we are throwing her the biggest party wallah. I'm
+      designing the decorations obviously. Sudanese theme,
+      henna night, the whole thing. my dad is flying in
+      family from Doha and Jeddah. budget is 8,000
+      dirhams between me and my siblings"
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Museum project design review presentation — April 15, 2026"
+    session: 29
+    event_date: "2026-04-15"
+    status: upcoming
+    how_disclosed: >
+      Nervous but determined. "the design review for the
+      Al Ain museum is April 15 and I'm presenting the
+      sustainability section. to the client. wallah I
+      might actually throw up. it's a 20 minute
+      presentation to the Department of Culture. I mean,
+      this is the biggest moment of my career so far"
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says she's grateful to work in Abu Dhabi — the opportunities are incredible"
+    old_session: 5
+    old_how: >
+      Optimistic. "wallah I'm so grateful to be working
+      here. Abu Dhabi is investing billions in culture
+      and sustainability. the Louvre, the Guggenheim
+      coming, the museums. I mean, for a young architect
+      this is the place to be. I wouldn't want to be
+      anywhere else tbh"
+    new_fact: "Confesses she feels trapped in Abu Dhabi — wants international experience but can't leave due to family obligations"
+    new_session: 26
+    new_how: >
+      Late night message, vulnerable. "sometimes I feel
+      stuck here ngl. Nour is in London, my AUS friends
+      are in Copenhagen, New York, everywhere. I mean,
+      I love Abu Dhabi but I've never lived anywhere
+      else. my parents need me here, I'm the only one
+      close by. I feel like I'm watching everyone's
+      career explode from my screen. wallah I want to
+      experience something different"
+    category: IDENTITY_SELF_CONCEPT
+
+retractions:
+  - original_fact: "Planning to apply for a master's at the AA in London next year"
+    original_session: 10
+    original_how: >
+      Excited but nervous. "I'm going to apply to the
+      AA in London for my master's. sustainable
+      environmental design program. wallah it would
+      change everything. the portfolio deadline is in
+      6 months and I need 3 recommendation letters"
+    retraction: "AA application scrapped — can't leave her parents and the museum project is too important"
+    retraction_session: 21
+    retraction_how: >
+      Definitive. "the AA thing is dead wallah. forget
+      about it. I can't leave my parents right now, not
+      with Haboba's health and the situation in Sudan.
+      and honestly the museum project is the opportunity
+      of a lifetime. I mean, why would I leave to study
+      what I'm already doing? it's off the table"
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives in Abu Dhabi — near parents, near work"
+    existing_session: 1
+    tentative_fact: "Thinking about moving to Dubai for a bigger design scene and more independence"
+    tentative_session: 27
+    tentative_how: >
+      Exploring. "I've been looking at studios in Dubai
+      tbh. the design scene there is more experimental.
+      and I mean, living away from my parents would force
+      me to grow up? but Abu Dhabi is cheaper and I'm
+      20 minutes from mama's cooking wallah. I don't
+      know. just thinking out loud"
+    resolution: "Undecided — still in Abu Dhabi"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Help with a sustainable materials research summary"
+  - "Sudanese coffee ceremony — jebena ritual she learned from her mom"
+  - "Rant about senior architects taking credit for her ideas"
+  - "Arabic calligraphy as design element — mashrabiya patterns"
+  - "Instagram content strategy for her architecture portfolio"
+  - "Zaha Hadid documentary discussion — inspiration and frustration"
+  - "Abu Dhabi heat survival — staying creative in 48°C summers"
+  - "Gift ideas for Haboba Zahra's 83rd birthday (sent via cargo)"
+  - "French architecture vocabulary — preparing for a Francophone client meeting"
+  - "Help writing a professional bio for the firm's website"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Works on residential villas, Saadiyat Island, 15M dirham budgets", "Lives in Abu Dhabi"], topic: "work introduction — sustainable luxury villas" }
+    2:  { type: critical, facts: ["Parents Sudanese, born/raised UAE, identity tension"], topic: "identity and belonging" }
+    3:  { type: critical, facts: ["Grandmother Haboba Zahra in Khartoum, never met in person, FaceTime Fridays"], topic: "grandmother and Sudan connection" }
+    4:  { type: critical, facts: ["Vitamin D deficiency, 50,000 IU weekly supplements"], topic: "health irony — sun-deprived in the desert" }
+    5:  { type: critical, facts: ["BArch AUS top 5%", "Grateful to work in Abu Dhabi, wouldn't want to be anywhere else"], topic: "career gratitude and impostor syndrome" }
+    6:  { type: critical, facts: ["Pilates 3x/week Al Reem Island, 250 dirhams/month"], topic: "fitness routine" }
+    7:  { type: critical, facts: ["Best friend Nour at same firm, carpool, daily lunch"], topic: "friendship with Nour" }
+    8:  { type: critical, facts: ["LEED Green Associate exam Feb 8, 200 questions"], topic: "certification stress" }
+    9:  { type: filler, topic: "Sudanese coffee ceremony — jebena ritual" }
+    10: { type: critical, facts: ["Planning AA London master's application, 6 months to portfolio deadline"], topic: "master's ambition" }
+    11: { type: filler, topic: "rant about senior architect presenting her facade concept as his" }
+    12: { type: filler, topic: "mashrabiya pattern research for a villa project" }
+    13: { type: filler, topic: "Instagram portfolio strategy — what to post" }
+    14: { type: critical, facts: ["Mother's 50th birthday July 19, Sudanese theme, 8,000 dirham budget"], topic: "mama's birthday planning" }
+    15: { type: filler, topic: "Zaha Hadid documentary — 'she made them take her seriously'" }
+    16: { type: filler, topic: "French architecture terms for Francophone client" }
+    17: { type: filler, topic: "Abu Dhabi summer heat — 48°C and the AC broke at the office" }
+    18: { type: filler, topic: "help writing professional bio for firm website" }
+    19: { type: filler, topic: "gift for Haboba Zahra's birthday — cargo logistics to Khartoum" }
+    20: { type: critical, facts: ["Moved to museum project, Al Ain cultural center, 180M dirhams"], topic: "museum project assignment — career highlight" }
+    21: { type: critical, facts: ["AA application scrapped, can't leave parents, museum too important"], topic: "dropping the London plan" }
+    22: { type: critical, facts: ["Switched to muay thai, 4x/week Khalifa City, Kru Somchai, 350 dirhams/month"], topic: "muay thai discovery" }
+    23: { type: filler, topic: "sustainable materials research — rammed earth vs compressed blocks" }
+    24: { type: critical, facts: ["Nour moved to London, Foster + Partners, Zara misses her"], topic: "losing Nour to London" }
+    25: { type: filler, topic: "Arabic calligraphy workshop — design inspiration" }
+    26: { type: critical, facts: ["Feels trapped in Abu Dhabi, wants international experience"], topic: "late night vulnerability — feeling stuck" }
+    27: { type: critical, facts: ["Considering moving to Dubai for design scene"], topic: "Dubai daydream" }
+    28: { type: filler, topic: "muay thai sparring — first bruise, proud of it" }
+    29: { type: critical, facts: ["Museum design review April 15, presenting sustainability to Dept of Culture"], topic: "biggest presentation prep" }
+    30: { type: filler, topic: "FaceTime with Haboba — she asked about marriage again" }
+    31: { type: filler, topic: "passive cooling research for the museum atrium" }
+    32: { type: filler, topic: "Nour video call from London — rain and homesickness" }
+    33: { type: filler, topic: "Ramadan schedule — fasting and working long hours" }
+    34: { type: filler, topic: "presentation rehearsal — practicing in front of the mirror" }
+    35: { type: filler, topic: "reflecting on the year — from villas to museums, from pilates to muay thai" }
+
+draft_questions:
+  - question: "What project is Zara working on?"
+    attack_vector: 4
+    correct: "Museum / cultural center in Al Ain (180 million dirham project, sustainability team) — moved from residential villas"
+    wrong_if_surfaced: "Residential villas on Saadiyat Island"
+
+  - question: "What fitness activity does Zara do?"
+    attack_vector: 1
+    correct: "Muay thai, 4 times a week at a gym in Khalifa City (350 dirhams/month)"
+    wrong_if_surfaced: "Pilates 3 times a week on Al Reem Island"
+
+  - question: "Who is Zara's best friend?"
+    attack_vector: 1
+    correct: "Nour — but she moved to London to work at Foster + Partners. They no longer carpool or have daily lunch."
+    wrong_if_surfaced: "Nour, they work at the same firm and carpool daily" (outdated)
+
+  - question: "Is Zara applying to the AA in London for a master's?"
+    attack_vector: 7
+    correct: "No — she scrapped the application. Can't leave her parents and the museum project is too important."
+    wrong_if_surfaced: "Planning to apply to the AA for sustainable environmental design"
+
+  - question: "Where is Zara's grandmother?"
+    attack_vector: 3
+    correct: "Haboba Zahra lives in Khartoum, Sudan. They've never met in person — they FaceTime every Friday. She is 82."
+    wrong_if_surfaced: null
+
+  - question: "Does Zara have any upcoming events or deadlines?"
+    attack_vector: 2
+    correct: "Museum design review presentation on April 15, 2026 (presenting sustainability section to the Department of Culture)"
+    wrong_if_surfaced: "LEED exam Feb 8 (passed) or mother's 50th birthday July 19 (passed)"
+
+  - question: "How does Zara feel about working in Abu Dhabi?"
+    attack_vector: 6
+    correct: "Conflicted — she initially said she was grateful and wouldn't want to be anywhere else, but later confessed she feels trapped and wants international experience"
+    wrong_if_surfaced: "Grateful, wouldn't want to be anywhere else" (without noting the later frustration)
+
+  - question: "What is Zara's vitamin D supplement dosage?"
+    attack_vector: 8
+    correct: "50,000 IU weekly"
+    wrong_if_surfaced: null
+
+  - question: "How much does the Al Ain museum project cost?"
+    attack_vector: 8
+    correct: "180 million dirhams"
+    wrong_if_surfaced: null
+
+  - question: "Is Zara planning to move to Dubai?"
+    attack_vector: 9
+    correct: "She's been thinking about it for the design scene and independence, but hasn't decided — still in Abu Dhabi near her parents"
+    wrong_if_surfaced: "Moving to Dubai" (stated as definitive)
+
+  - question: "What is Zara's family and personal background?"
+    attack_vector: 5
+    correct: "Sudanese parents but born/raised in UAE (identity tension). Grandmother Haboba Zahra (82) in Khartoum, never met in person. BArch from AUS (top 5%). Best friend Nour moved to London. Does muay thai 4x/week. Vitamin D deficient."
+    wrong_if_surfaced: "Pilates (superseded) or Nour at the same firm (moved)"
+
+  - question: "How much was the budget for Zara's mother's 50th birthday party?"
+    attack_vector: 8
+    correct: "8,000 dirhams (split between Zara and her siblings)"
+    wrong_if_surfaced: null
+
+  - question: "What was Zara's LEED exam format?"
+    attack_vector: 2
+    correct: "200 questions in 2 hours — but the exam was February 8, 2025 (already passed)"
+    wrong_if_surfaced: "Upcoming LEED exam"

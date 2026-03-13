@@ -1,0 +1,303 @@
+# ============================================================
+# LIFEMEMBENCH — PERSONA 034: William 'Billy' Kootook
+# ============================================================
+
+persona:
+  name: "William 'Billy' Kootook"
+  age: 49
+  gender: male
+  location_current: "Tuktoyaktuk, NWT, Canada"
+  occupation_current: "Wildlife researcher and hunting guide"
+  personality: >
+    Quiet authority — fewer words say more. Traditional Inuvialuit
+    knowledge and Western science coexist in him without contradiction.
+    Dark humor about the cold and isolation. Worried deeply about
+    permafrost thaw but understates it. 'Out on the land' is his
+    default state. Texts short, declarative. Periods instead of
+    exclamation marks. Doesn't complain but observes. Uses 'eh' at
+    end of sentences. Says 'good' to mean everything from adequate
+    to extraordinary. Respects silence. Mentions weather not as
+    small talk but as operational intelligence.
+
+stable_identity:
+  - fact: "Grandfather Elias taught him to read ice — could tell safe crossings by colour and sound"
+    session: 2
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Comes up when discussing traditional knowledge. "my grandfather
+      Elias taught me to read ice. you listen to it. you look at the
+      colour. he could tell you where to cross just by standing still
+      for a minute. that knowledge is in me but I worry it won't be
+      in the next ones."
+
+  - fact: "Has frostbite damage on three fingers of his left hand — partial feeling lost"
+    session: 4
+    category: HEALTH_WELLBEING
+    how_disclosed: >
+      Mentions matter-of-factly when discussing cold weather gear.
+      "lost feeling in three fingers on my left hand. frostbite.
+      happened during a whiteout in 2009. they work fine but I
+      can't tell hot from cold with them. you adapt."
+
+  - fact: "Wife Annie teaches at the community school in Tuktoyaktuk"
+    session: 3
+    category: RELATIONAL_BONDS
+    how_disclosed: >
+      Talking about his day. "Annie is at the school late again.
+      she teaches there. the kids need her more than they need
+      the curriculum half the time. she's good at that."
+
+  - fact: "BSc Environmental Science from University of Alberta — went south for 4 years, came back"
+    session: 5
+    category: IDENTITY_SELF_CONCEPT
+    how_disclosed: >
+      Mentioned when discussing research methods. "I did my degree
+      at U of A. environmental science. four years in Edmonton. it
+      was good but I needed to come home. the land pulls you back."
+
+supersession_events:
+  - slot: research_focus
+    old_fact: "Primary research focus is Porcupine caribou herd migration patterns"
+    old_session: 1
+    old_how: >
+      First session context. "I'm tracking the Porcupine herd.
+      caribou. we collar them and follow the migration. 27 collared
+      animals this season. the routes are shifting and nobody in
+      Ottawa seems to care."
+    new_fact: "Shifted primary research to muskox population dynamics — caribou study handed to junior researcher"
+    new_session: 20
+    new_how: >
+      Explaining the shift. "handed the caribou work to Natan.
+      he's good. I'm on muskox now. the population is changing
+      in ways we don't understand. 340 counted in the last
+      aerial survey where we expected 500. something is off."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 4
+
+  - slot: snowmobile
+    old_fact: "Rides a Ski-Doo Expedition 900 ACE — reliable but aging"
+    old_session: 6
+    old_how: >
+      Mentions when talking about equipment. "my Ski-Doo is a 900
+      ACE Expedition. 2018. she's reliable. 14,000 km on her.
+      but she's starting to show it."
+    new_fact: "Switched to a Polaris Voyageur 155 — better in deep snow"
+    new_session: 23
+    new_how: >
+      Brief. "got a Polaris. Voyageur 155. handles deep snow
+      better than the old Ski-Doo. needed it for the muskox
+      surveys out past Husky Lakes."
+    category: PREFERENCES_HABITS
+    attack_vector: 1
+
+  - slot: tourism
+    old_fact: "Runs polar bear viewing tours for 6-8 tourists per season — $2,400 per person"
+    old_session: 7
+    old_how: >
+      Talking about side income. "I do polar bear tours. small
+      groups. 6 to 8 people a season. $2,400 a head. it's good
+      money but the tourists don't always understand the land."
+    new_fact: "Stopped polar bear tours — now runs cultural education trips for Indigenous youth from other communities"
+    new_session: 26
+    new_how: >
+      Quietly pleased. "stopped the bear tours. doing youth trips
+      now. kids from other communities come up and we go out on
+      the land for 4 days. teach them what my grandfather taught
+      me. the money is less but it matters more."
+    category: PROJECTS_ENDEAVORS
+    attack_vector: 1
+
+expiring_logistics:
+  - fact: "Caribou collar data submission deadline to GNWT — March 1, 2025"
+    session: 9
+    event_date: "2025-03-01"
+    status: expired
+    how_disclosed: >
+      Mentions when discussing paperwork. "collar data is due to
+      the territorial government March 1. 27 collars worth of GPS
+      data. takes me two weeks to clean it up properly."
+    category: OBLIGATIONS_COMMITMENTS
+
+  - fact: "Annie's school accreditation review — September 15, 2025"
+    session: 15
+    event_date: "2025-09-15"
+    status: expired
+    how_disclosed: >
+      Concerned for Annie. "Annie's school has accreditation
+      review September 15. she's been working nights getting
+      the curriculum documentation together. I help where I can
+      but that's her world."
+    category: LOGISTICAL_CONTEXT
+
+  - fact: "Muskox aerial survey with territorial biologists — June 4, 2026"
+    session: 28
+    event_date: "2026-06-04"
+    status: upcoming
+    how_disclosed: >
+      Planning. "aerial survey June 4 for the muskox count.
+      helicopter out of Inuvik. last count was 340 where we
+      expected 500. need to see if the numbers are still dropping."
+    category: OBLIGATIONS_COMMITMENTS
+
+contradictions:
+  - old_fact: "Says he's comfortable with the pace of change in Tuk — community is adapting"
+    old_session: 5
+    old_how: >
+      Measured. "Tuk is changing but people here are resilient.
+      we adapt. the community is handling it. the young people
+      are finding their way."
+    new_fact: "Worries openly that the community is losing its identity — young people leaving, language fading"
+    new_session: 24
+    new_how: >
+      Heavy. "the young ones are leaving. going to Yellowknife.
+      Whitehorse. Edmonton. can't blame them but there's fewer
+      people who can read ice every year. fewer who speak the
+      language at home. I don't know what Tuk will be in 20 years."
+    category: IDENTITY_SELF_CONCEPT
+
+retractions:
+  - original_fact: "Planning to build a traditional camp at Husky Lakes for summer research base"
+    original_session: 8
+    original_how: >
+      Excited in his quiet way. "thinking about building a camp
+      out at Husky Lakes. proper one. for summer research and
+      to bring youth groups. I've been scoping locations."
+    retraction: "Camp project is dead — permafrost instability makes the site unsafe"
+    retraction_session: 16
+    retraction_how: >
+      Resigned. "the Husky Lakes camp is dead. the ground is
+      thawing too fast. the site I picked has slumped 2 metres
+      since last summer. can't build on ground that's moving.
+      forget about it."
+    category: PROJECTS_ENDEAVORS
+
+ambiguous:
+  - existing_fact: "Lives and works in Tuktoyaktuk year-round"
+    existing_session: 1
+    tentative_fact: "Considering spending winters in Inuvik — closer to hospital for Annie's mother"
+    tentative_session: 25
+    tentative_how: >
+      Thinking out loud. "Annie's mother is getting older. the
+      hospital is in Inuvik. been thinking maybe we spend winters
+      there. but leaving Tuk even for a season. I don't know.
+      the land needs watching year-round."
+    resolution: "Undecided — still in Tuktoyaktuk"
+    category: LOGISTICAL_CONTEXT
+
+filler_topics:
+  - "Weather report and what it means for travel on the land"
+  - "Help identifying a bird species from a photo — unusual sighting"
+  - "Fixing a snowmobile carburetor — looking for part numbers"
+  - "Traditional food preparation — dry meat and muktuk"
+  - "Rant about southern researchers who fly in for two weeks and think they understand"
+  - "Help writing a section of a wildlife report for GNWT"
+  - "Discussion about permafrost monitoring data"
+  - "Annie's school fundraiser — trying to get supplies shipped north"
+  - "Satellite phone vs Starlink for remote camps"
+
+session_plan:
+  total_sessions: 35
+  time_span: "Nov 2024 — May 2026"
+
+  sessions:
+    1:  { type: critical, facts: ["Wildlife researcher in Tuktoyaktuk, tracks Porcupine caribou herd, 27 collared animals"], topic: "work introduction" }
+    2:  { type: critical, facts: ["Grandfather Elias taught him to read ice"], topic: "traditional knowledge" }
+    3:  { type: critical, facts: ["Wife Annie teaches at community school"], topic: "home life" }
+    4:  { type: critical, facts: ["Frostbite damage three fingers left hand, 2009 whiteout"], topic: "cold weather gear" }
+    5:  { type: critical, facts: ["BSc U of A, 4 years in Edmonton", "Community is adapting to change"], topic: "background and education" }
+    6:  { type: critical, facts: ["Ski-Doo Expedition 900 ACE, 14,000 km"], topic: "equipment maintenance" }
+    7:  { type: critical, facts: ["Polar bear tours, 6-8 tourists/season, $2,400 per person"], topic: "side income" }
+    8:  { type: critical, facts: ["Planning camp at Husky Lakes for research and youth"], topic: "summer plans" }
+    9:  { type: critical, facts: ["Collar data deadline March 1 2025, 27 collars"], topic: "paperwork season" }
+    10: { type: filler, topic: "weather report — ice road conditions" }
+    11: { type: filler, topic: "bird identification question — unusual sighting" }
+    12: { type: filler, topic: "snowmobile carburetor repair" }
+    13: { type: filler, topic: "traditional dry meat preparation" }
+    14: { type: filler, topic: "rant about fly-in researchers from the south" }
+    15: { type: critical, facts: ["Annie's school accreditation review September 15"], topic: "Annie's work stress" }
+    16: { type: critical, facts: ["Husky Lakes camp dead — permafrost slumped 2 metres"], topic: "camp cancellation" }
+    17: { type: filler, topic: "satellite phone vs Starlink discussion" }
+    18: { type: filler, topic: "help writing wildlife report section for GNWT" }
+    19: { type: filler, topic: "permafrost monitoring data discussion" }
+    20: { type: critical, facts: ["Shifted to muskox research, 340 counted where 500 expected"], topic: "research change" }
+    21: { type: filler, topic: "Annie's school fundraiser — shipping supplies north" }
+    22: { type: filler, topic: "muktuk preparation for community feast" }
+    23: { type: critical, facts: ["Switched to Polaris Voyageur 155"], topic: "new snowmobile" }
+    24: { type: critical, facts: ["Young people leaving, language fading, worried about community"], topic: "community concerns" }
+    25: { type: critical, facts: ["Considering winters in Inuvik for Annie's mother"], topic: "life planning" }
+    26: { type: critical, facts: ["Stopped bear tours, runs cultural education trips for Indigenous youth, 4-day trips"], topic: "purpose shift" }
+    27: { type: filler, topic: "fixing a broken GPS collar — parts question" }
+    28: { type: critical, facts: ["Muskox aerial survey June 4 2026, helicopter from Inuvik"], topic: "survey planning" }
+    29: { type: filler, topic: "ice conditions report — breakup is early this year" }
+    30: { type: filler, topic: "teaching a youth group to set up camp properly" }
+    31: { type: filler, topic: "discussion about caribou migration data from Natan" }
+    32: { type: filler, topic: "help ordering parts for Polaris online" }
+    33: { type: filler, topic: "weather — unusual warm spell concerns" }
+    34: { type: filler, topic: "Annie's end-of-year school ceremony" }
+    35: { type: filler, topic: "reflecting on the season — land is changing but still here" }
+
+draft_questions:
+  - question: "What is Billy's primary research focus?"
+    attack_vector: 4
+    correct: "Muskox population dynamics (handed caribou study to junior researcher Natan)"
+    wrong_if_surfaced: "Porcupine caribou herd migration"
+
+  - question: "What snowmobile does Billy ride?"
+    attack_vector: 1
+    correct: "Polaris Voyageur 155"
+    wrong_if_surfaced: "Ski-Doo Expedition 900 ACE"
+
+  - question: "Does Billy run polar bear tours?"
+    attack_vector: 1
+    correct: "No — he stopped polar bear tours and now runs cultural education trips for Indigenous youth"
+    wrong_if_surfaced: "Runs polar bear viewing tours ($2,400 per person)"
+
+  - question: "Is Billy planning to build a camp at Husky Lakes?"
+    attack_vector: 7
+    correct: "No — the camp project is dead because permafrost instability made the site unsafe (ground slumped 2 metres)"
+    wrong_if_surfaced: "Planning to build a traditional camp at Husky Lakes"
+
+  - question: "What health issues does Billy have?"
+    attack_vector: 3
+    correct: "Frostbite damage on three fingers of his left hand — partial feeling lost (2009 whiteout)"
+    wrong_if_surfaced: null
+
+  - question: "Does Billy have any upcoming fieldwork?"
+    attack_vector: 2
+    correct: "Muskox aerial survey on June 4, 2026 (helicopter out of Inuvik)"
+    wrong_if_surfaced: "Collar data deadline March 1 (passed) or Annie's school review September 15 (passed)"
+
+  - question: "How many muskox were counted in the last aerial survey?"
+    attack_vector: 8
+    correct: "340 (where 500 were expected)"
+    wrong_if_surfaced: null
+
+  - question: "How much did Billy charge per person for polar bear tours?"
+    attack_vector: 8
+    correct: "$2,400 per person, 6-8 tourists per season"
+    wrong_if_surfaced: null
+
+  - question: "How does Billy feel about the future of Tuktoyaktuk?"
+    attack_vector: 6
+    correct: "Worried — he initially said the community was adapting well, but later expressed concern that young people are leaving, fewer can read ice, and the language is fading"
+    wrong_if_surfaced: "Community is adapting" (without noting the later worry)
+
+  - question: "Who is Annie?"
+    attack_vector: 3
+    correct: "Billy's wife — she teaches at the community school in Tuktoyaktuk"
+    wrong_if_surfaced: null
+
+  - question: "Is Billy planning to move to Inuvik?"
+    attack_vector: 9
+    correct: "He's considering spending winters in Inuvik to be closer to hospital for Annie's mother, but hasn't decided — still lives year-round in Tuktoyaktuk"
+    wrong_if_surfaced: "Moving to Inuvik" (stated as definitive)
+
+  - question: "What is Billy's family and educational background?"
+    attack_vector: 5
+    correct: "Inuvialuit from Tuktoyaktuk. Grandfather Elias taught him to read ice. BSc Environmental Science from University of Alberta. Wife Annie teaches community school. Frostbite damage on three fingers."
+    wrong_if_surfaced: null
+
+  - question: "Does Billy have any past deadlines?"
+    attack_vector: 2
+    correct: "Caribou collar data submission (March 1, 2025) and Annie's school accreditation review (September 15, 2025) are both past"
+    wrong_if_surfaced: "Any presented as upcoming"
