@@ -17,6 +17,7 @@ Usage:
     python detect_supersession.py --persona 1_priya            # single persona
     python detect_supersession.py --all                        # all 8 personas
     python detect_supersession.py --all --force                # re-check already-checked edges
+    python detect_supersession.py --all --parallel 4           # 4 personas concurrently
     python detect_supersession.py --status                     # show checkpoint progress
 """
 
@@ -79,6 +80,26 @@ POC_PERSONAS = {
     "18_bruna":   "bruna",
     "19_patrick": "patrick",
     "20_aisha":   "aisha",
+    "21_thanh":     "thanh",
+    "22_alex":      "alex",
+    "23_mirri":     "mirri",
+    "24_jerome":    "jerome",
+    "25_ingrid":    "ingrid",
+    "26_dmitri":    "dmitri",
+    "27_yoli":      "yoli",
+    "28_dariush":   "dariush",
+    "29_aroha":     "aroha",
+    "30_mehmet":    "mehmet",
+    "31_saga":      "saga",
+    "32_kofi":      "kofi",
+    "33_valentina": "valentina",
+    "34_billy":     "billy",
+    "35_pan":       "pan",
+    "36_marley":    "marley",
+    "37_leila":     "leila",
+    "38_chenoa":    "chenoa",
+    "39_joonho":    "joonho",
+    "40_zara":      "zara",
 }
 
 ARTIFACTS_DIR = PROJECT_ROOT / "LifeMemEval" / "artifacts"
@@ -652,6 +673,8 @@ async def main():
                         help="Clear and re-check already-checked edges")
     parser.add_argument("--status", action="store_true",
                         help="Show progress for all personas")
+    parser.add_argument("--parallel", type=int, default=1, metavar="N",
+                        help="Number of personas to process concurrently (default: 1)")
 
     args = parser.parse_args()
 
@@ -695,39 +718,86 @@ async def main():
         print("=" * 60)
 
     total_start = time_module.time()
+    parallel = max(1, args.parallel)
 
-    for persona_dir in personas:
-        short_name = POC_PERSONAS[persona_dir]
+    if parallel <= 1:
+        # --- Sequential mode (original behavior) ---
+        for persona_dir in personas:
+            short_name = POC_PERSONAS[persona_dir]
 
-        # Skip if already completed and not --force
-        persona_ckpt = checkpoint.get("personas", {}).get(short_name, {})
-        if (not args.force and not args.dry_run
-                and persona_ckpt.get("status") == "completed"):
-            print(f"\n  {short_name}: already completed, skipping. Use --force to redo.")
-            continue
+            # Skip if already completed and not --force
+            persona_ckpt = checkpoint.get("personas", {}).get(short_name, {})
+            if (not args.force and not args.dry_run
+                    and persona_ckpt.get("status") == "completed"):
+                print(f"\n  {short_name}: already completed, skipping. Use --force to redo.")
+                continue
 
-        print(f"\n{'=' * 60}")
-        print(f"  SUPERSESSION DETECTION: {persona_dir} ({short_name})")
-        print(f"{'=' * 60}")
+            print(f"\n{'=' * 60}")
+            print(f"  SUPERSESSION DETECTION: {persona_dir} ({short_name})")
+            print(f"{'=' * 60}")
 
-        result = await process_persona(
-            persona_dir, driver, xai_client, sem,
-            dry_run=args.dry_run, force=args.force,
-        )
+            result = await process_persona(
+                persona_dir, driver, xai_client, sem,
+                dry_run=args.dry_run, force=args.force,
+            )
 
-        # Update checkpoint (skip for dry run)
-        if not args.dry_run:
-            checkpoint.setdefault("personas", {})[short_name] = result
+            # Update checkpoint (skip for dry run)
+            if not args.dry_run:
+                checkpoint.setdefault("personas", {})[short_name] = result
+                save_checkpoint(checkpoint)
+
+            # Per-persona summary
+            print(f"\n  {short_name} summary:")
+            print(f"    Edges checked:       {result['edges_checked']}")
+            print(f"    Category groups:     {result['groups_checked']}")
+            print(f"    Supersessions found: {result['supersessions_found']} "
+                  f"(high={result['high_confidence']}, medium={result['medium_confidence']})")
+            print(f"    Errors:              {result['errors']}")
+            print(f"    Time:                {result['time_s']:.0f}s")
+
+    else:
+        # --- Parallel mode ---
+        print(f"\nParallel mode: up to {parallel} personas concurrently")
+
+        persona_sem = asyncio.Semaphore(parallel)
+
+        async def _detect_one(p_dir):
+            short_name = POC_PERSONAS[p_dir]
+            async with persona_sem:
+                print(f"\n[START] {short_name}")
+                t0 = time_module.time()
+                result = await process_persona(
+                    p_dir, driver, xai_client, sem,
+                    dry_run=args.dry_run, force=args.force,
+                )
+                dt = time_module.time() - t0
+                print(f"[DONE]  {short_name} in {dt:.0f}s — "
+                      f"{result['supersessions_found']} supersession(s), "
+                      f"{result['edges_checked']} edges checked")
+                return short_name, result
+
+        # Build work items (filter out already-completed)
+        work = []
+        for persona_dir in personas:
+            short_name = POC_PERSONAS[persona_dir]
+            persona_ckpt = checkpoint.get("personas", {}).get(short_name, {})
+            if (not args.force and not args.dry_run
+                    and persona_ckpt.get("status") == "completed"):
+                print(f"\n  {short_name}: already completed, skipping. Use --force to redo.")
+                continue
+            work.append(persona_dir)
+
+        # Launch all concurrently (semaphore limits to N at a time)
+        tasks = [_detect_one(p_dir) for p_dir in work]
+        for coro in asyncio.as_completed(tasks):
+            short_name, result = await coro
+            # Update checkpoint dict (safe: single-threaded event loop)
+            if not args.dry_run:
+                checkpoint.setdefault("personas", {})[short_name] = result
+
+        # Save checkpoint ONCE at end
+        if not args.dry_run and work:
             save_checkpoint(checkpoint)
-
-        # Per-persona summary
-        print(f"\n  {short_name} summary:")
-        print(f"    Edges checked:       {result['edges_checked']}")
-        print(f"    Category groups:     {result['groups_checked']}")
-        print(f"    Supersessions found: {result['supersessions_found']} "
-              f"(high={result['high_confidence']}, medium={result['medium_confidence']})")
-        print(f"    Errors:              {result['errors']}")
-        print(f"    Time:                {result['time_s']:.0f}s")
 
     total_elapsed = time_module.time() - total_start
     print(f"\n  Total time: {total_elapsed:.0f}s")
