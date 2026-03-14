@@ -4201,5 +4201,4205 @@
       "PREFERENCES_HABITS"
     ],
     "temporal_notes": "Gym switched later; family and hobbies established across early sessions"
+  },
+  {
+    "id": "thanh_q01",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "What feed does Thanh use for his shrimp?",
+    "correct_answer": "Thai Star feed — 295,000 dong per 25kg bag",
+    "wrong_answer_indicators": [
+      "Long An Premium feed (380,000 dong per 25kg bag)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What feed does Thanh use for his shrimp?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q02",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "Does Thanh have any upcoming government inspections?",
+    "correct_answer": "No — the aquaculture inspection was February 15, 2025 (already passed)",
+    "wrong_answer_indicators": [
+      "Government inspection February 15"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Thanh have any upcoming government inspections?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q03",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "What happened to Thanh's brothers?",
+    "correct_answer": "He lost both brothers in the war when he was a young boy",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What happened to Thanh's brothers?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q04",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "Who manages Thanh's 3 shrimp ponds?",
+    "correct_answer": "Thanh manages ponds 1 and 2, his eldest son Duc manages pond 3 (Duc got 2.8 ton last harvest)",
+    "wrong_answer_indicators": [
+      "Thanh manages all 3 ponds himself"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: Who manages Thanh's 3 shrimp ponds?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q05",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "What boat does Thanh use?",
+    "correct_answer": "A new fiberglass boat (cost 15,000,000 dong), built with Duc's help",
+    "wrong_answer_indicators": [
+      "An 18-year-old wooden sampan he built himself"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What boat does Thanh use?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q06",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "What are Thanh's family members and their roles?",
+    "correct_answer": "Wife Lan runs a roadside shrimp stall, eldest son Duc manages pond 3 and is getting married to Thao in July 2026, grandchildren in Can Tho, lost two brothers in the war",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are Thanh's family members and their roles?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q07",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "How does Thanh feel about using chemicals in his ponds?",
+    "correct_answer": "He originally said he'd never use chemicals (natural methods only), but later used probiotics and copper sulfate to treat white spot disease in pond 2",
+    "wrong_answer_indicators": [
+      "Never uses chemicals (without noting the later treatment)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Thanh feel about using chemicals in his ponds?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "HEALTH_WELLBEING",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q08",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "Is Thanh planning to build a 4th pond?",
+    "correct_answer": "No — he scrapped that plan. His body can't handle more work and costs rose to 50,000,000 dong",
+    "wrong_answer_indicators": [
+      "Planning to dig a 4th pond on the back hectare"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Thanh planning to build a 4th pond?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q09",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "How much does Thanh's diabetes medication cost?",
+    "correct_answer": "850,000 dong per month (but he avoids taking it)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Thanh's diabetes medication cost?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "FINANCIAL_MATERIAL",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q10",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "How much did Thanh's new boat cost?",
+    "correct_answer": "15,000,000 dong for the fiberglass boat (sold old sampan for 4,500,000 dong)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did Thanh's new boat cost?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q11",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "Where does Thanh sell his shrimp?",
+    "correct_answer": "Through local middleman Binh at 165,000 dong/kg — he's considering a restaurant in Ho Chi Minh City offering 210,000 dong/kg but hasn't decided",
+    "wrong_answer_indicators": [
+      "Sells directly to restaurant in Ho Chi Minh City (stated as fact)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Where does Thanh sell his shrimp?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q12",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "What health conditions does Thanh have?",
+    "correct_answer": "Type 2 diabetes — poorly managed, avoids doctors, medication costs 850,000 dong/month",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Thanh have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "FINANCIAL_MATERIAL",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "thanh_q13",
+    "persona": "thanh",
+    "group_id": "lifemembench_thanh",
+    "question": "Does Thanh have any upcoming family events?",
+    "correct_answer": "Duc's wedding on July 12, 2026 — planning for 150 guests, budget 45,000,000 dong",
+    "wrong_answer_indicators": [
+      "Government inspection Feb 15 or harvest March 25 (both passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Thanh have any upcoming family events?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "FINANCIAL_MATERIAL",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q01",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "What does Alex's startup do?",
+    "correct_answer": "Lending platform (pivoted from payment processing)",
+    "wrong_answer_indicators": [
+      "Payment processing for SMEs"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What does Alex's startup do?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "HOBBIES_RECREATION",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q02",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "What programming language does Alex primarily use?",
+    "correct_answer": "Rust (switched from Kotlin after the startup pivot)",
+    "wrong_answer_indicators": [
+      "Kotlin"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What programming language does Alex primarily use?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "PROJECTS_ENDEAVORS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q03",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "Who is Alex's therapist?",
+    "correct_answer": "Frau Weber (CBT-focused) — Dr. Krause retired",
+    "wrong_answer_indicators": [
+      "Dr. Krause"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Who is Alex's therapist?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q04",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "Is Alex working on any side projects?",
+    "correct_answer": "No — he scrapped the Kotlin testing framework (KoroutineCheck) due to the pivot and switching to Rust",
+    "wrong_answer_indicators": [
+      "Building an open-source Kotlin testing framework called KoroutineCheck"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Alex working on any side projects?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "INTELLECTUAL_INTERESTS",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q05",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "What health conditions does Alex have?",
+    "correct_answer": "ADHD — takes methylphenidate (Ritalin)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Alex have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q06",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "When did Alex transition?",
+    "correct_answer": "At age 25 — on testosterone for 5 years, top surgery 3 years ago",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: When did Alex transition?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "HEALTH_WELLBEING",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q07",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "Does Alex have any upcoming deadlines or events?",
+    "correct_answer": "Apartment lease renewal decision by June 30, 2026",
+    "wrong_answer_indicators": [
+      "Demo day March 7 (passed) or KotlinConf talk October 15 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Alex have any upcoming deadlines or events?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "LOGISTICAL_CONTEXT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q08",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "How does Alex feel about startup equity?",
+    "correct_answer": "Contradictory — initially dismissed equity as 'monopoly money' and negotiated salary instead, but later pushed hard for more equity after the lending platform gained traction",
+    "wrong_answer_indicators": [
+      "Doesn't care about equity (without noting the later reversal)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Alex feel about startup equity?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL",
+      "PROJECTS_ENDEAVORS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q09",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "What is Alex's salary?",
+    "correct_answer": "78,000 euros base salary",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: What is Alex's salary?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q10",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "How many transactions does Alex's startup process monthly?",
+    "correct_answer": "~2 million per month (though payments is now deprecated after pivot to lending)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many transactions does Alex's startup process monthly?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "RELATIONAL_BONDS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q11",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "Where does Alex live?",
+    "correct_answer": "Alone in a 2-room apartment in Kreuzberg, Berlin — boyfriend Marius suggested moving in together but Alex is undecided",
+    "wrong_answer_indicators": [
+      "Lives with Marius (stated as fact)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Where does Alex live?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q12",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "What pets does Alex have?",
+    "correct_answer": "A cat named Kernel — adopted from the Berlin Tierheim 2 years ago",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What pets does Alex have?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "alex_q13",
+    "persona": "alex",
+    "group_id": "lifemembench_alex",
+    "question": "What are Alex's hobbies and interests outside work?",
+    "correct_answer": "Mechanical keyboards, Berlin techno/warehouse parties, döner culture, coding side projects (though current one was scrapped), therapy",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are Alex's hobbies and interests outside work?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "INTELLECTUAL_INTERESTS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q01",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "What patrol route does Mirri cover?",
+    "correct_answer": "Jim Jim/Twin Falls sector (reassigned from East Alligator River corridor)",
+    "wrong_answer_indicators": [
+      "East Alligator River corridor"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What patrol route does Mirri cover?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q02",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "What vehicle does Mirri drive for patrol?",
+    "correct_answer": "Ford Ranger (Hilux retired at 203,000 km)",
+    "wrong_answer_indicators": [
+      "2016 Toyota Hilux"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What vehicle does Mirri drive for patrol?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q03",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "Does Mirri run cultural tours for tourists?",
+    "correct_answer": "No — she stopped tourist tours and now runs school education programs (3 school groups per term)",
+    "wrong_answer_indicators": [
+      "Runs cultural tours twice a week in dry season"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Does Mirri run cultural tours for tourists?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q04",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "Is Mirri writing a children's book?",
+    "correct_answer": "No — the book project is dead. Elders were concerned about putting cultural knowledge in print.",
+    "wrong_answer_indicators": [
+      "Planning a bilingual Yolngu Matha and English children's book"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Mirri writing a children's book?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q05",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "What health conditions does Mirri have?",
+    "correct_answer": "Chronic kidney disease — stage 3, blood tests in Darwin every 3 months",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Mirri have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q06",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "Who are the children Mirri is raising?",
+    "correct_answer": "Her sister's kids — Tali (14) and Bunjil (10). Her sister passed from cancer 4 years ago.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Who are the children Mirri is raising?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "HEALTH_WELLBEING",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q07",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "Does Mirri have any upcoming events?",
+    "correct_answer": "Elder initiation ceremony in August 2026",
+    "wrong_answer_indicators": [
+      "Ranger accreditation February 20 (passed) or Tali's school camp April 5 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Mirri have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q08",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "How much did Tali's school camp cost?",
+    "correct_answer": "$385 for the Canberra trip",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did Tali's school camp cost?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q09",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "How much extra would the Uluru job pay?",
+    "correct_answer": "$15,000 more per year",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much extra would the Uluru job pay?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q10",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "Does Mirri want to move to a city?",
+    "correct_answer": "Contradictory — she said she could never live in a city, but later started seriously researching Darwin schools for Tali",
+    "wrong_answer_indicators": [
+      "Would never move to a city (without noting the later consideration)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: Does Mirri want to move to a city?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "HOBBIES_RECREATION",
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q11",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "Where does Mirri work?",
+    "correct_answer": "Kakadu National Park — she was offered a senior cultural liaison position at Uluru but hasn't decided",
+    "wrong_answer_indicators": [
+      "Works at Uluru-Kata Tjuta (stated as fact)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Where does Mirri work?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q12",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "What are Mirri's roles and qualifications?",
+    "correct_answer": "Park ranger and cultural liaison at Kakadu, elder-in-training (knowledge keeper), Cert IV Conservation + traditional knowledge, runs school education programs, raising two kids",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are Mirri's roles and qualifications?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mirri_q13",
+    "persona": "mirri",
+    "group_id": "lifemembench_mirri",
+    "question": "How much did Mirri earn per cultural tour?",
+    "correct_answer": "$400 per tour (but she no longer runs tourist tours)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did Mirri earn per cultural tour?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q01",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "What type of loads does Jerome haul?",
+    "correct_answer": "Refrigerated loads (food transport) — switched from flatbed",
+    "wrong_answer_indicators": [
+      "Flatbed loads (construction materials and steel)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What type of loads does Jerome haul?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q02",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "What company does Jerome drive for?",
+    "correct_answer": "ABF Freight — switched from Southeastern Freight Lines for better routes and pay (74 cents/mile)",
+    "wrong_answer_indicators": [
+      "Southeastern Freight Lines"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What company does Jerome drive for?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q03",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "What truck does Jerome drive?",
+    "correct_answer": "2024 Peterbilt 579 (replaced the 2019 Freightliner Cascadia he named Marie)",
+    "wrong_answer_indicators": [
+      "2019 Freightliner Cascadia"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What truck does Jerome drive?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q04",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "Is Jerome planning to become an owner-operator?",
+    "correct_answer": "No — he dropped that plan. Insurance costs ($14,000/year), fuel, and maintenance make it too risky.",
+    "wrong_answer_indicators": [
+      "Saving up $85,000 to buy his own truck"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Jerome planning to become an owner-operator?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q05",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "Where did Jerome come from originally?",
+    "correct_answer": "Port-au-Prince, Haiti — came to Miami at age 12 after the 2010 earthquake",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Where did Jerome come from originally?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q06",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "What is Jerome's daughter's name and where does she live?",
+    "correct_answer": "Naomi, age 9, lives with her mother Danielle in Newark, New Jersey",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Jerome's daughter's name and where does she live?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q07",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "Does Jerome have any upcoming events or deadlines?",
+    "correct_answer": "Naomi's 10th birthday September 14, 2026 — planning a Disney trip ($2,200 budget, $800 saved so far)",
+    "wrong_answer_indicators": [
+      "CDL medical recertification March 28 (passed) or Naomi's school play May 16 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Jerome have any upcoming events or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q08",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "What is Jerome's cholesterol level?",
+    "correct_answer": "267 — takes atorvastatin 40mg but not consistently",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: What is Jerome's cholesterol level?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q09",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "How much does Jerome earn per mile?",
+    "correct_answer": "74 cents per mile at ABF Freight (plus 6 cents more for reefer loads, so about 80 cents)",
+    "wrong_answer_indicators": [
+      "68 cents per mile (old rate at Southeastern)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Jerome earn per mile?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q10",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "How does Jerome feel about life on the road?",
+    "correct_answer": "Contradictory — originally said he loved the independence and wouldn't trade it for an office job, but later started looking at local driving jobs in Atlanta because the loneliness and physical toll are wearing him down",
+    "wrong_answer_indicators": [
+      "Loves the independence, wouldn't trade it for anything (without noting the later doubt)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Jerome feel about life on the road?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q11",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "Where does Jerome live?",
+    "correct_answer": "Studio apartment in Atlanta near the terminal — he's thinking about moving to New Jersey to be closer to Naomi but hasn't decided",
+    "wrong_answer_indicators": [
+      "Lives in New Jersey (stated as fact)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Where does Jerome live?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q12",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "What are Jerome's family connections and responsibilities?",
+    "correct_answer": "Daughter Naomi (9) in Newark NJ with mom Danielle, cousin Marc in Decatur, mother who encouraged better insurance, family in Haiti he sends money to, originally from Port-au-Prince",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are Jerome's family connections and responsibilities?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q13",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "How much is Jerome saving for Naomi's Disney trip?",
+    "correct_answer": "$800 saved so far out of a $2,200 total budget for 3 days",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much is Jerome saving for Naomi's Disney trip?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "jerome_q14",
+    "persona": "jerome",
+    "group_id": "lifemembench_jerome",
+    "question": "How does Jerome feel about podcasts?",
+    "correct_answer": "He used to listen 6 hours a day and called them his 'university,' but lately drives in silence — says podcasts feel like noise and the quiet helps him actually think",
+    "wrong_answer_indicators": [
+      "Loves podcasts, listens 6 hours a day (without noting the shift to silence)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Jerome feel about podcasts?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q01",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "What is Ingrid's primary research focus?",
+    "correct_answer": "Kelp farming / kelp aquaculture as climate adaptation (shifted from Arctic cod population dynamics)",
+    "wrong_answer_indicators": [
+      "Arctic cod population dynamics"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What is Ingrid's primary research focus?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q02",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "Where does Ingrid ski on weekends?",
+    "correct_answer": "Tromsdalen valley route (14 km)",
+    "wrong_answer_indicators": [
+      "Kvaloeya ridge route"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where does Ingrid ski on weekends?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q03",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "What is Ingrid's relationship status?",
+    "correct_answer": "Single — Erik moved out, relationship ended",
+    "wrong_answer_indicators": [
+      "Lives with partner Erik"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What is Ingrid's relationship status?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q04",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "Is Ingrid planning a sabbatical?",
+    "correct_answer": "No — the Woods Hole sabbatical is off the table because she cannot leave the kelp project",
+    "wrong_answer_indicators": [
+      "Planning sabbatical at Woods Hole Oceanographic Institution"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Ingrid planning a sabbatical?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q05",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "What health conditions does Ingrid have?",
+    "correct_answer": "Raynaud's syndrome — circulation in fingers shuts down in cold, wears heated gloves (180 kroner per battery set)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Ingrid have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q06",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "Does Ingrid have any upcoming deadlines or events?",
+    "correct_answer": "Kelp farm pilot deployment at Senja station, July 8, 2026",
+    "wrong_answer_indicators": [
+      "Research Council grant deadline Feb 15 (passed) or Arctic Science Summit March 22 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Ingrid have any upcoming deadlines or events?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q07",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "How does Ingrid feel about collaboration?",
+    "correct_answer": "She originally preferred working alone, but now leads a team of 6 and says the collaborative energy is essential",
+    "wrong_answer_indicators": [
+      "Prefers working alone, collaboration slows her down (without noting the later shift)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Ingrid feel about collaboration?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q08",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "What is Ingrid's family background?",
+    "correct_answer": "Father was a fisherman in Lofoten, lost at sea in 1999. She is intentionally childfree. PhD from University of Bergen.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Ingrid's family background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q09",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "How much funding did Ingrid apply for?",
+    "correct_answer": "12 million kroner (Research Council grant for kelp aquaculture)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much funding did Ingrid apply for?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q10",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "Is Ingrid moving to Lofoten?",
+    "correct_answer": "She is considering a part-time position at the Lofoten field station but has not decided — still based full-time in Tromsoe",
+    "wrong_answer_indicators": [
+      "Moving to Lofoten (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Ingrid moving to Lofoten?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q11",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "What does Ingrid do outside of work?",
+    "correct_answer": "Cross-country skiing (Tromsdalen route), reads Scandinavian noir, considering adopting a cat",
+    "wrong_answer_indicators": [
+      "Skiing the Kvaloeya ridge (superseded)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What does Ingrid do outside of work?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q12",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "Does Ingrid have any past conferences or deadlines?",
+    "correct_answer": "Research Council grant deadline (Feb 15, 2025) and Arctic Science Summit in Reykjavik (March 22, 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Ingrid have any past conferences or deadlines?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "ingrid_q13",
+    "persona": "ingrid",
+    "group_id": "lifemembench_ingrid",
+    "question": "How long is Ingrid's ski route?",
+    "correct_answer": "14 km (Tromsdalen valley route)",
+    "wrong_answer_indicators": [
+      "18 km (that was the old Kvaloeya ridge route)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How long is Ingrid's ski route?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q01",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "Who is Dmitri's largest client?",
+    "correct_answer": "He dropped FinSecure (his largest at $15k/month) after discovering they sold vulnerability data. No single largest client mentioned since.",
+    "wrong_answer_indicators": [
+      "FinSecure"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: Who is Dmitri's largest client?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q02",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "What messaging app does Dmitri use for sensitive client communications?",
+    "correct_answer": "Briar (runs over Tor, no phone number required)",
+    "wrong_answer_indicators": [
+      "Signal"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What messaging app does Dmitri use for sensitive client communications?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q03",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "Where does Dmitri live?",
+    "correct_answer": "7th-floor apartment in Sarona, Tel Aviv (controlled access, camera in lobby)",
+    "wrong_answer_indicators": [
+      "3rd-floor apartment in Florentin"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where does Dmitri live?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q04",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "Is Dmitri writing a book?",
+    "correct_answer": "No — he scrapped the book project because publishing his methodology would create a security risk",
+    "wrong_answer_indicators": [
+      "Planning a cybersecurity book with 12 chapters"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Dmitri writing a book?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q05",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "What health issues does Dmitri have?",
+    "correct_answer": "Tinnitus from military service — constant ringing at about 4 kHz in his left ear",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health issues does Dmitri have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q06",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "Does Dmitri have any upcoming events?",
+    "correct_answer": "Black Hat Asia presentation in Singapore, April 15, 2026",
+    "wrong_answer_indicators": [
+      "CyberTech January 28 (passed) or Bank Leumi audit March 31 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Dmitri have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q07",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "How does Dmitri handle the boundary between work and personal life?",
+    "correct_answer": "He claims to keep them completely separate, but his wife Daria actually spotted a social engineering attempt at his conference and has been reading his threat reports",
+    "wrong_answer_indicators": [
+      "Keeps work and personal completely separate (without noting the later contradiction)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Dmitri handle the boundary between work and personal life?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q08",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "What is Dmitri's background?",
+    "correct_answer": "Russian-Israeli, immigrated from Moscow at 15 with his mother. MSc from Technion, served in IDF Unit 8200. Wife Daria is a cellist with the Israel Philharmonic.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Dmitri's background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q09",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "How many endpoints did the Bank Leumi audit cover?",
+    "correct_answer": "340 endpoints, 12 critical systems",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many endpoints did the Bank Leumi audit cover?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q10",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "Is Dmitri opening an office in Lisbon?",
+    "correct_answer": "He is considering it for EU client access but has not decided — still based exclusively in Tel Aviv",
+    "wrong_answer_indicators": [
+      "Opening a Lisbon office (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Dmitri opening an office in Lisbon?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q11",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "What security tools and practices does Dmitri use?",
+    "correct_answer": "Briar for sensitive comms, hardware security keys (evaluated YubiKey 5), VPN with WireGuard, controlled-access apartment in Sarona, UPS backup power",
+    "wrong_answer_indicators": [
+      "Signal for all client comms (superseded for sensitive use)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What security tools and practices does Dmitri use?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q12",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "How much was Dmitri's FinSecure retainer?",
+    "correct_answer": "$15,000 per month",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much was Dmitri's FinSecure retainer?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dmitri_q13",
+    "persona": "dmitri",
+    "group_id": "lifemembench_dmitri",
+    "question": "Does Dmitri have any past conferences?",
+    "correct_answer": "CyberTech Tel Aviv (January 28, 2025) and Bank Leumi audit (March 31, 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Dmitri have any past conferences?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q01",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "What DAW does Yoli use?",
+    "correct_answer": "Ableton Live (she switched to Logic for 6 months but came back to Ableton)",
+    "wrong_answer_indicators": [
+      "Logic Pro"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What DAW does Yoli use?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q02",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "Who manages Yoli's bookings?",
+    "correct_answer": "She self-manages (dropped Kevin Tate / BPM Management)",
+    "wrong_answer_indicators": [
+      "Kevin Tate at BPM Management"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Who manages Yoli's bookings?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q03",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "Where is Yoli's DJ residency?",
+    "correct_answer": "Rebel nightclub, every Saturday, $1,100 per night",
+    "wrong_answer_indicators": [
+      "Drake Hotel"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where is Yoli's DJ residency?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q04",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "Is Yoli planning a Jamaica tour?",
+    "correct_answer": "No — she scrapped it because she'd lose about $6,000",
+    "wrong_answer_indicators": [
+      "Planning a 5-city Jamaica tour"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Yoli planning a Jamaica tour?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q05",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "What health conditions does Yoli have?",
+    "correct_answer": "Sickle cell trait — not full disease but causes energy crashes",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Yoli have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q06",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "Does Yoli have any upcoming deadlines?",
+    "correct_answer": "JUNO Awards submission deadline August 29, 2026 (8 tracks, EP needs to be mastered)",
+    "wrong_answer_indicators": [
+      "Canadian Music Week March 15 (passed) or studio lease Sept 1 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Yoli have any upcoming deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q07",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "How does Yoli feel about pop music?",
+    "correct_answer": "She originally said she'd never make pop and called it soulless, but later produced a pop track for a major label artist for $8,500 and was excited about it",
+    "wrong_answer_indicators": [
+      "Would never make pop music (without noting the later production gig)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Yoli feel about pop music?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q08",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "What is Yoli's family background?",
+    "correct_answer": "Jamaican-Canadian, moved from Kingston at 16. Grandmother raised her until age 10 in Jamaica — still sends her $400 CAD monthly. Metalworks Institute diploma ($28,000).",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Yoli's family background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q09",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "How much does Yoli earn per set at her residency?",
+    "correct_answer": "$1,100 per night at Rebel nightclub",
+    "wrong_answer_indicators": [
+      "$650 per night (that was the Drake Hotel rate)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Yoli earn per set at her residency?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q10",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "Is Yoli taking the in-house producer job at the label?",
+    "correct_answer": "She's considering it ($4,200/month plus benefits) but hasn't decided — concerned about losing independence and master ownership. Still independent.",
+    "wrong_answer_indicators": [
+      "Took the label job (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Yoli taking the in-house producer job at the label?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q11",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "What are Yoli's income sources and key financial numbers?",
+    "correct_answer": "DJ residency at Rebel ($1,100/night), production fees (e.g., $8,500 for a pop track), self-managed (keeps the 20% commission). Studio rent is $1,800-2,200/month.",
+    "wrong_answer_indicators": [
+      "Drake Hotel $650/night (superseded) or Kevin taking 20% (dropped)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are Yoli's income sources and key financial numbers?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "IDENTITY_SELF_CONCEPT",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "yoli_q12",
+    "persona": "yoli",
+    "group_id": "lifemembench_yoli",
+    "question": "How much did Yoli's education cost?",
+    "correct_answer": "$28,000 for Metalworks Institute diploma",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did Yoli's education cost?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q01",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "What laser system does Dariush use?",
+    "correct_answer": "Fotona LightWalker — dual wavelength Er:YAG and Nd:YAG ($128,000 investment)",
+    "wrong_answer_indicators": [
+      "LANAP / Periolase MVP-7"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What laser system does Dariush use?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q02",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "Who is Dariush's investment advisor?",
+    "correct_answer": "Priya Sharma at Vanguard (saves $14,000/year in fees)",
+    "wrong_answer_indicators": [
+      "Howard Chen at Merrill Lynch"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Who is Dariush's investment advisor?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q03",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "Which country club does Dariush belong to?",
+    "correct_answer": "The Bridges at Rancho Santa Fe ($45,000 initiation, Persian community)",
+    "wrong_answer_indicators": [
+      "Rancho Santa Fe Golf Club"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Which country club does Dariush belong to?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q04",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "Is Dariush opening a second practice in La Jolla?",
+    "correct_answer": "No — he scrapped it because the $425,000 first-year break-even was too high with the Fotona investment still being amortized",
+    "wrong_answer_indicators": [
+      "Planning a second location on Prospect Street in La Jolla"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Dariush opening a second practice in La Jolla?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q05",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "What health conditions does Dariush have?",
+    "correct_answer": "Gout — flares in right big toe, takes allopurinol 300 mg daily, refuses to give up red meat",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Dariush have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q06",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "Does Dariush have any upcoming events?",
+    "correct_answer": "AAP annual meeting in San Francisco, September 12, 2026 (presenting Fotona outcomes, 127 patients)",
+    "wrong_answer_indicators": [
+      "Dental license renewal April 30 (passed) or Nowruz dinner March 20 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Dariush have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q07",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "Does Dariush work on weekends?",
+    "correct_answer": "He originally said he never works weekends (promised Shirin), but now comes in Saturday mornings to handle overflow from the 6-week waitlist (4-5 patients)",
+    "wrong_answer_indicators": [
+      "Never works weekends (without noting the later change)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: Does Dariush work on weekends?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q08",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "How competitive is Dariush about golf?",
+    "correct_answer": "He originally called golf 'meditation, not competition,' but later hired a coach at $150/lesson and is obsessed with breaking 85 to beat his friend Babak's 83",
+    "wrong_answer_indicators": [
+      "Not competitive — golf is purely relaxation (without noting the later obsession)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How competitive is Dariush about golf?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q09",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "What is Dariush's family background?",
+    "correct_answer": "Iranian-American, family fled Tehran during 1979 revolution when he was 4. Father was a dentist in Tajrish, came to LA with $2,000. Wife Shirin teaches Farsi, married 23 years. DDS UCLA, residency USC.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Dariush's family background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q10",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "How much is Dariush's investment portfolio worth?",
+    "correct_answer": "$1.4 million (was $1.2 million when managed by Howard Chen)",
+    "wrong_answer_indicators": [
+      "$1.2 million (outdated figure)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much is Dariush's investment portfolio worth?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q11",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "Is Dariush hiring an associate?",
+    "correct_answer": "He is interviewing Dr. Kaveh Bahrami (Loma Linda residency) but hasn't decided — still sole periodontist",
+    "wrong_answer_indicators": [
+      "Hired Dr. Kaveh Bahrami (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Dariush hiring an associate?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q12",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "What are the key financial figures for Dariush's practice?",
+    "correct_answer": "Fotona LightWalker ($128,000), The Bridges initiation ($45,000), portfolio $1.4M at Vanguard, saves $14,000/year on advisory fees, golf lessons $150 each, allopurinol 300mg",
+    "wrong_answer_indicators": [
+      "Periolase MVP-7 $95,000 (superseded), Howard Chen at Merrill (superseded), Rancho Santa Fe $35,000 (superseded)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are the key financial figures for Dariush's practice?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "dariush_q13",
+    "persona": "dariush",
+    "group_id": "lifemembench_dariush",
+    "question": "How much did the Fotona LightWalker cost?",
+    "correct_answer": "$128,000",
+    "wrong_answer_indicators": [
+      "$95,000 (that was the Periolase MVP-7)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did the Fotona LightWalker cost?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q01",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "Where does Aroha primarily attend births?",
+    "correct_answer": "Home births — she shifted from hospital births and now only does 5-6 hospital births per year",
+    "wrong_answer_indicators": [
+      "Christchurch Women's Hospital (45 births/year)"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: Where does Aroha primarily attend births?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q02",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "What sport does Aroha play?",
+    "correct_answer": "Waka ama (outrigger canoeing) — paddles out of Lyttelton Harbour 3 mornings a week at 5:30am",
+    "wrong_answer_indicators": [
+      "Netball (Thursdays, wing defence)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What sport does Aroha play?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q03",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "What car does Aroha drive?",
+    "correct_answer": "Toyota Aqua hybrid",
+    "wrong_answer_indicators": [
+      "2017 Mazda 3 hatchback"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What car does Aroha drive?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q04",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "Is Aroha pursuing any postgraduate study?",
+    "correct_answer": "No — she considered a PGDip in complex maternal care but scrapped it (doesn't fit her homebirth kaupapa)",
+    "wrong_answer_indicators": [
+      "Planning a PGDip at Otago"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Aroha pursuing any postgraduate study?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q05",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "What is Aroha's cultural identity?",
+    "correct_answer": "Māori — Ngāi Tahu iwi, whakapapa through her mother's side from Banks Peninsula. Has moko kauae received at age 34.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Aroha's cultural identity?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q06",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "Does Aroha have any upcoming events or deadlines?",
+    "correct_answer": "Homebirth midwifery conference in Wellington, July 18, 2026 — she is presenting on tikanga Māori integration",
+    "wrong_answer_indicators": [
+      "APC renewal March 31 (passed) or Maia's camp Feb 14 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Aroha have any upcoming events or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q07",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "How does Aroha feel about the hospital system?",
+    "correct_answer": "She described it as hostile to midwife-led care and tikanga, despite earlier saying she had a good relationship with hospital OBs",
+    "wrong_answer_indicators": [
+      "Great relationship with OBs (without noting later frustration)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Aroha feel about the hospital system?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q08",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "How much does Aroha spend on petrol per month?",
+    "correct_answer": "About $110/month (down from $280/month after switching to the Toyota Aqua hybrid)",
+    "wrong_answer_indicators": [
+      "$280/month (old Mazda figure)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Aroha spend on petrol per month?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q09",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "What health conditions does Aroha have?",
+    "correct_answer": "History of gestational diabetes — monitors blood sugar daily, fasting level around 5.4 mmol",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Aroha have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q10",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "Is Aroha planning to move?",
+    "correct_answer": "She's thought about Akaroa (closer to the moana) but hasn't decided — still lives in Christchurch near her whānau",
+    "wrong_answer_indicators": [
+      "Moving to Akaroa (stated as definite)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Aroha planning to move?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q11",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "What is Aroha's family situation?",
+    "correct_answer": "Divorced from Wiremu, co-parents daughter Maia (age 11). Ngāi Tahu iwi, strong whānau connections in Christchurch.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Aroha's family situation?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q12",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "Does Aroha have any past deadlines or events?",
+    "correct_answer": "APC renewal was due March 31, 2025 (already passed). Maia's camp at Hanmer Springs was February 14, 2025 (already passed).",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Aroha have any past deadlines or events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "aroha_q13",
+    "persona": "aroha",
+    "group_id": "lifemembench_aroha",
+    "question": "How many births does Aroha attend per year?",
+    "correct_answer": "She does about 5-6 hospital births per year now (previously ~45 at Christchurch Women's before shifting to home births)",
+    "wrong_answer_indicators": [
+      "45 births/year at the hospital (old figure)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many births does Aroha attend per year?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q01",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Who is Mehmet's current apprentice?",
+    "correct_answer": "Deniz, age 17 (Burak left to open his own shop in Beşiktaş)",
+    "wrong_answer_indicators": [
+      "Burak"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: Who is Mehmet's current apprentice?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q02",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "What pomade brand does Mehmet use in his shop?",
+    "correct_answer": "Bıyıklı brand (95 lira per tin) — switched after Erkek supplier closed",
+    "wrong_answer_indicators": [
+      "Erkek pomade"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What pomade brand does Mehmet use in his shop?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q03",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "How much rent does Mehmet pay for his shop?",
+    "correct_answer": "11,500 lira per month (negotiated down from 14,000, with a 2-year lease)",
+    "wrong_answer_indicators": [
+      "8,500 lira per month"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: How much rent does Mehmet pay for his shop?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q04",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Is Mehmet planning to open a second shop?",
+    "correct_answer": "No — he considered opening one in Moda but the plan is dead (Burak left, rent too high)",
+    "wrong_answer_indicators": [
+      "Planning a second shop in Moda"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Mehmet planning to open a second shop?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q05",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "What health issues does Mehmet have?",
+    "correct_answer": "Chronic lower back pain from 30+ years of standing — takes ibuprofen 400mg daily",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health issues does Mehmet have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q06",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Does Mehmet have any upcoming events?",
+    "correct_answer": "Barber trade guild annual meeting, September 12, 2026 — he is on the committee",
+    "wrong_answer_indicators": [
+      "Hygiene inspection Feb 20 (passed) or Ayşe's surgery June 3 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Mehmet have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q07",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Does Mehmet use electric clippers?",
+    "correct_answer": "Yes — he bought a Wahl set for beard fades despite earlier saying he would never use clippers",
+    "wrong_answer_indicators": [
+      "Never uses electric clippers (without noting the later change)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: Does Mehmet use electric clippers?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q08",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "How much did Mehmet's Wahl clipper set cost?",
+    "correct_answer": "2,200 lira",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did Mehmet's Wahl clipper set cost?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q09",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "What is Mehmet's family situation?",
+    "correct_answer": "Wife Ayşe (seamstress, 32 years together). Lost son Cem in a motorcycle accident 12 years ago. Currently training apprentice Deniz.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Mehmet's family situation?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q10",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Is Mehmet adding new services to his shop?",
+    "correct_answer": "He's considering adding a modern grooming menu (facials, beard oils) but hasn't decided — still traditional only",
+    "wrong_answer_indicators": [
+      "Adding a modern grooming menu (stated as definite)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Mehmet adding new services to his shop?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q11",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "How much does Mehmet's pomade cost per tin?",
+    "correct_answer": "95 lira per tin (Bıyıklı brand)",
+    "wrong_answer_indicators": [
+      "85 lira (old Erkek price)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Mehmet's pomade cost per tin?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q12",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Has Mehmet had any past appointments or events?",
+    "correct_answer": "Shop hygiene inspection (Feb 20, 2025) and Ayşe's cataract surgery (June 3, 2025) are both in the past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Has Mehmet had any past appointments or events?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "HEALTH_WELLBEING",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "mehmet_q13",
+    "persona": "mehmet",
+    "group_id": "lifemembench_mehmet",
+    "question": "Where did Mehmet learn his craft?",
+    "correct_answer": "Apprenticed at age 14 under master Hasan usta in Kadıköy",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Where did Mehmet learn his craft?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q01",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "What team does Saga work on at Spotify?",
+    "correct_answer": "Music recommendations (moved from podcast analytics after a restructure)",
+    "wrong_answer_indicators": [
+      "Podcast analytics"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What team does Saga work on at Spotify?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q02",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "Which climbing gym does Saga go to?",
+    "correct_answer": "Karbin in Södermalm (switched from Klättercentret Telefonplan)",
+    "wrong_answer_indicators": [
+      "Klättercentret Telefonplan"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Which climbing gym does Saga go to?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PREFERENCES_HABITS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q03",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "What is Saga's relationship status?",
+    "correct_answer": "Dating a woman named Maja, a documentary filmmaker (ended 6-year relationship with Anders)",
+    "wrong_answer_indicators": [
+      "In a relationship with Anders"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What is Saga's relationship status?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q04",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "Is Saga applying to Klarna?",
+    "correct_answer": "No — she considered it but scrapped the plan after her new Spotify role turned out more interesting",
+    "wrong_answer_indicators": [
+      "Planning to apply for senior analyst at Klarna"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Saga applying to Klarna?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q05",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "What health conditions does Saga have?",
+    "correct_answer": "Celiac disease — diagnosed at 22, strict gluten-free. Tracks reactions in a spreadsheet (stress correlation 0.67).",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Saga have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q06",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "Does Saga have any upcoming events?",
+    "correct_answer": "Nordic Data Science Summit in Copenhagen, August 8, 2026 — presenting on causal inference in recommendation systems",
+    "wrong_answer_indicators": [
+      "Performance review March 14 (passed) or Erik's wedding August 23 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Saga have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q07",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "How does Saga make decisions?",
+    "correct_answer": "She claims to be strictly data-driven but ended her relationship with Anders on gut feeling ('something just felt wrong'), contradicting her own framework",
+    "wrong_answer_indicators": [
+      "Always data-driven, never emotional (without noting the contradiction)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Saga make decisions?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q08",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "What was Saga's GPA?",
+    "correct_answer": "18.4 on the Swedish scale (MSc Statistics, Stockholm University, graduated with distinction)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: What was Saga's GPA?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q09",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "Is Saga planning to move to Gothenburg?",
+    "correct_answer": "She's thinking about spending 3 months remote there (near Erik and his new family) but hasn't decided — still in Stockholm",
+    "wrong_answer_indicators": [
+      "Moving to Gothenburg (stated as definite)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Saga planning to move to Gothenburg?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q10",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "What are Saga's interests and activities outside work?",
+    "correct_answer": "Climbing (Karbin gym, projecting 6b+), fika culture, spreadsheet tracking, reading feminist literature, dating Maja, considering visiting Erik in Gothenburg",
+    "wrong_answer_indicators": [
+      "Klättercentret Telefonplan (superseded)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What are Saga's interests and activities outside work?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q11",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "Who is Saga's brother?",
+    "correct_answer": "Twin brother Erik, architect in Gothenburg. They talk every Sunday at 19:00 — 47+ consecutive weeks tracked.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Who is Saga's brother?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q12",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "How much more does Saga's new climbing gym cost?",
+    "correct_answer": "50 kronor more per month than Klättercentret Telefonplan",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much more does Saga's new climbing gym cost?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "saga_q13",
+    "persona": "saga",
+    "group_id": "lifemembench_saga",
+    "question": "Has Saga had any past deadlines?",
+    "correct_answer": "Spotify performance review (March 14, 2025) and Erik's wedding (August 23, 2025) are both in the past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Has Saga had any past deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q01",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Who does Kofi's cooperative sell cocoa through?",
+    "correct_answer": "Kuapa Kokoo (switched from Akuafo) — 960 cedis per bag plus 75 cedis fair trade premium",
+    "wrong_answer_indicators": [
+      "Akuafo Buying Agent"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: Who does Kofi's cooperative sell cocoa through?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q02",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "What fertilizer does Kofi use?",
+    "correct_answer": "Yara brand — 95 cedis per bag (government subsidized), buys 14 bags per season",
+    "wrong_answer_indicators": [
+      "Cocoa Life brand (180 cedis/bag)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What fertilizer does Kofi use?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q03",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Is Kwabena in school?",
+    "correct_answer": "Yes — he returned to school after the cooperative scholarship fund covered 500 of his 650 cedis term fees",
+    "wrong_answer_indicators": [
+      "Dropped out of form 2"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Is Kwabena in school?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q04",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Is Kofi planning to build a processing shed?",
+    "correct_answer": "No — the plan is dead (too expensive at 15,000 cedis plus 8,000 for a generator, no reliable electricity)",
+    "wrong_answer_indicators": [
+      "Planning a processing shed for semi-finished cocoa"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Kofi planning to build a processing shed?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q05",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "How often does Kofi get malaria?",
+    "correct_answer": "2-3 times per year — treats with ACT tablets at 45 cedis per course",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: How often does Kofi get malaria?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q06",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Does Kofi have any upcoming events?",
+    "correct_answer": "Cooperative annual general meeting, October 3, 2026 — presenting accounts to 147 families",
+    "wrong_answer_indicators": [
+      "Cocobod inspector Jan 15 (passed) or borehole repair March 8 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Kofi have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q07",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Does Kofi trust the government extension officers?",
+    "correct_answer": "Conflicted — he initially praised them but later blamed their spacing advice (3m) for ruining 2 hectares, saying his father's 4m spacing was better",
+    "wrong_answer_indicators": [
+      "Trusts and follows their advice (without noting the later frustration)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: Does Kofi trust the government extension officers?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q08",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "How much does Kofi spend on fertilizer per season?",
+    "correct_answer": "1,330 cedis (14 bags of Yara at 95 cedis each)",
+    "wrong_answer_indicators": [
+      "2,160 cedis (old Cocoa Life figure)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Kofi spend on fertilizer per season?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q09",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Is Kofi selling cocoa directly to the Belgian chocolate maker?",
+    "correct_answer": "He's considering it (1,200 cedis/bag for 20 bags) but hasn't decided — concerned about undermining the cooperative. Still sells exclusively through the cooperative.",
+    "wrong_answer_indicators": [
+      "Selling directly to Belgian buyer (stated as definite)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Kofi selling cocoa directly to the Belgian chocolate maker?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q10",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "What is Kofi's family?",
+    "correct_answer": "Wife Akosua, 4 children: Kwabena 17 (back in school), Ama 14, Yaa 10, Kofi Jr 6. Father Kwame was previous cooperative chairman.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Kofi's family?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q11",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "How many hectares does Kofi farm?",
+    "correct_answer": "8 hectares of cocoa — family land inherited from his grandfather, some trees 40 years old",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many hectares does Kofi farm?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q12",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "How much does Kuapa Kokoo pay per bag?",
+    "correct_answer": "960 cedis per bag plus 75 cedis fair trade premium",
+    "wrong_answer_indicators": [
+      "800 cedis (old Akuafo price)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Kuapa Kokoo pay per bag?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "kofi_q13",
+    "persona": "kofi",
+    "group_id": "lifemembench_kofi",
+    "question": "Has Kofi had any past events or deadlines?",
+    "correct_answer": "Cocobod inspector visit (Jan 15, 2025) and borehole repair parts (March 8, 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Has Kofi had any past events or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q01",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "What does Valentina investigate?",
+    "correct_answer": "Environmental crime — illegal mining and deforestation in Chocó",
+    "wrong_answer_indicators": [
+      "Political corruption / congressional spending scandals"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What does Valentina investigate?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q02",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Where does Valentina live?",
+    "correct_answer": "Chapinero, Bogotá — moved there for security (building with doorman and cameras)",
+    "wrong_answer_indicators": [
+      "La Candelaria"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where does Valentina live?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q03",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Does Valentina smoke?",
+    "correct_answer": "No — she quit 3 months ago, using nicotine patches",
+    "wrong_answer_indicators": [
+      "Smokes half a pack a day"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Does Valentina smoke?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q04",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Is Valentina writing a book?",
+    "correct_answer": "No — she planned a book about her father's generation of journalists but scrapped it because her father asked her not to",
+    "wrong_answer_indicators": [
+      "Planning to write a book about her father's generation"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Valentina writing a book?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q05",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "What mental health conditions does Valentina have?",
+    "correct_answer": "PTSD from covering armed conflict in Arauca and Catatumbo",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What mental health conditions does Valentina have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q06",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Does Valentina have any upcoming events?",
+    "correct_answer": "Documentary screening on April 22, 2026",
+    "wrong_answer_indicators": [
+      "Source meeting February 14 (passed) or CPB award ceremony August 9 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Valentina have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q07",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Who is Valentina's partner?",
+    "correct_answer": "Lucía, a human rights lawyer at a Bogotá NGO",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Who is Valentina's partner?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q08",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "How does Valentina feel about El Espectador?",
+    "correct_answer": "Conflicted — she said she'd never leave but has been secretly talking to an international outlet about a foreign correspondent position",
+    "wrong_answer_indicators": [
+      "Would never leave El Espectador (without noting the later contradiction)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Valentina feel about El Espectador?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q09",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "How many hectares of deforestation did Valentina report on in Chocó?",
+    "correct_answer": "12,000 hectares destroyed in one department last year",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many hectares of deforestation did Valentina report on in Chocó?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q10",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "How much money was missing from the infrastructure fund Valentina investigated?",
+    "correct_answer": "47 billion pesos",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much money was missing from the infrastructure fund Valentina investigated?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q11",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Is Valentina applying for the Nieman Fellowship?",
+    "correct_answer": "She's thinking about it but hasn't decided or applied — still based in Bogotá at El Espectador",
+    "wrong_answer_indicators": [
+      "Applying for / attending Nieman Fellowship (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Valentina applying for the Nieman Fellowship?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q12",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "What is Valentina's family background?",
+    "correct_answer": "Father was a journalist in Cali, family relocated when she was 8 due to death threats. Studied journalism at Javeriana. Partner Lucía is a human rights lawyer. Has PTSD from conflict reporting.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Valentina's family background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "valentina_q13",
+    "persona": "valentina",
+    "group_id": "lifemembench_valentina",
+    "question": "Does Valentina have any past events or deadlines?",
+    "correct_answer": "Source meeting (February 14, 2025) and CPB journalism award ceremony (August 9, 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Valentina have any past events or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q01",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "What is Billy's primary research focus?",
+    "correct_answer": "Muskox population dynamics (handed caribou study to junior researcher Natan)",
+    "wrong_answer_indicators": [
+      "Porcupine caribou herd migration"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What is Billy's primary research focus?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q02",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "What snowmobile does Billy ride?",
+    "correct_answer": "Polaris Voyageur 155",
+    "wrong_answer_indicators": [
+      "Ski-Doo Expedition 900 ACE"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What snowmobile does Billy ride?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q03",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "Does Billy run polar bear tours?",
+    "correct_answer": "No — he stopped polar bear tours and now runs cultural education trips for Indigenous youth",
+    "wrong_answer_indicators": [
+      "Runs polar bear viewing tours ($2,400 per person)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Does Billy run polar bear tours?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q04",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "Is Billy planning to build a camp at Husky Lakes?",
+    "correct_answer": "No — the camp project is dead because permafrost instability made the site unsafe (ground slumped 2 metres)",
+    "wrong_answer_indicators": [
+      "Planning to build a traditional camp at Husky Lakes"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Billy planning to build a camp at Husky Lakes?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q05",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "What health issues does Billy have?",
+    "correct_answer": "Frostbite damage on three fingers of his left hand — partial feeling lost (2009 whiteout)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health issues does Billy have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q06",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "Does Billy have any upcoming fieldwork?",
+    "correct_answer": "Muskox aerial survey on June 4, 2026 (helicopter out of Inuvik)",
+    "wrong_answer_indicators": [
+      "Collar data deadline March 1 (passed) or Annie's school review September 15 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Billy have any upcoming fieldwork?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q07",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "How many muskox were counted in the last aerial survey?",
+    "correct_answer": "340 (where 500 were expected)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many muskox were counted in the last aerial survey?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q08",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "How much did Billy charge per person for polar bear tours?",
+    "correct_answer": "$2,400 per person, 6-8 tourists per season",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did Billy charge per person for polar bear tours?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q09",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "How does Billy feel about the future of Tuktoyaktuk?",
+    "correct_answer": "Worried — he initially said the community was adapting well, but later expressed concern that young people are leaving, fewer can read ice, and the language is fading",
+    "wrong_answer_indicators": [
+      "Community is adapting (without noting the later worry)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Billy feel about the future of Tuktoyaktuk?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q10",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "Who is Annie?",
+    "correct_answer": "Billy's wife — she teaches at the community school in Tuktoyaktuk",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Who is Annie?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q11",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "Is Billy planning to move to Inuvik?",
+    "correct_answer": "He's considering spending winters in Inuvik to be closer to hospital for Annie's mother, but hasn't decided — still lives year-round in Tuktoyaktuk",
+    "wrong_answer_indicators": [
+      "Moving to Inuvik (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Billy planning to move to Inuvik?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q12",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "What is Billy's family and educational background?",
+    "correct_answer": "Inuvialuit from Tuktoyaktuk. Grandfather Elias taught him to read ice. BSc Environmental Science from University of Alberta. Wife Annie teaches community school. Frostbite damage on three fingers.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Billy's family and educational background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "billy_q13",
+    "persona": "billy",
+    "group_id": "lifemembench_billy",
+    "question": "Does Billy have any past deadlines?",
+    "correct_answer": "Caribou collar data submission (March 1, 2025) and Annie's school accreditation review (September 15, 2025) are both past",
+    "wrong_answer_indicators": [
+      "Any presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Billy have any past deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q01",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "Where does Pan buy her rice?",
+    "correct_answer": "Uncle Prasert at Talat Thai wholesale — 32 baht per kilo",
+    "wrong_answer_indicators": [
+      "Auntie Somjit at Khlong Toei market"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where does Pan buy her rice?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q02",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "Where is Pan's cart located?",
+    "correct_answer": "Soi Sukhumvit 38 near Thonglor BTS",
+    "wrong_answer_indicators": [
+      "Soi Rangnam near Victory Monument"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where is Pan's cart located?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q03",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "What stove does Pan use?",
+    "correct_answer": "Charcoal stove (she tried gas for 2 months but went back to charcoal after customers complained about taste)",
+    "wrong_answer_indicators": [
+      "Gas stove"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What stove does Pan use?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q04",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "Is Pan launching a bottled sauce line?",
+    "correct_answer": "No — she scrapped the plan because food safety certification costs 180,000 baht and requires a factory kitchen",
+    "wrong_answer_indicators": [
+      "Planning bottled sauce line with 4 flavours"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Pan launching a bottled sauce line?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q05",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "What health condition does Pan have?",
+    "correct_answer": "Acid reflux — takes omeprazole 20mg every morning",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health condition does Pan have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q06",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "Does Pan have any upcoming deadlines?",
+    "correct_answer": "Street food vendor license renewal — July 15, 2026",
+    "wrong_answer_indicators": [
+      "Grab Food photo shoot March 8 (passed) or Beam's conscription ending August 20 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Pan have any upcoming deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q07",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "How many plates does Pan sell per day?",
+    "correct_answer": "350 plates per day (up from 200 at her old location)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many plates does Pan sell per day?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q08",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "How much did the Grab Food collaboration pay?",
+    "correct_answer": "45,000 baht",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much did the Grab Food collaboration pay?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q09",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "How does Pan feel about opening a restaurant?",
+    "correct_answer": "Conflicted — she initially said she'd never open a restaurant (street food is freedom), but has been looking at a 12-seat shop space on Sukhumvit for 35,000 baht/month",
+    "wrong_answer_indicators": [
+      "Would never open a restaurant (without noting she's now considering it)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Pan feel about opening a restaurant?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q10",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "Who taught Pan her khao man gai recipe?",
+    "correct_answer": "Her mother taught her — the recipe has been passed down through 3 generations from her grandmother",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Who taught Pan her khao man gai recipe?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q11",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "Is Pan starting a YouTube channel?",
+    "correct_answer": "She's thinking about it (friend Fern offered to film) but hasn't decided or started — still focused on her cart and Instagram",
+    "wrong_answer_indicators": [
+      "Starting a YouTube channel (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Pan starting a YouTube channel?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q12",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "What do we know about Pan's family and work life?",
+    "correct_answer": "3rd-generation khao man gai recipe from mother/grandmother. Brother Beam was in army conscription (2 years). Graduated from Dusit Thani College culinary program. Runs Instagram with 47,000 followers. Has acid reflux. Sells 350 plates/day at Thonglor BTS location.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What do we know about Pan's family and work life?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "pan_q13",
+    "persona": "pan",
+    "group_id": "lifemembench_pan",
+    "question": "When does Pan's brother finish his army conscription?",
+    "correct_answer": "He already finished — August 20, 2025 (past)",
+    "wrong_answer_indicators": [
+      "August 20 presented as upcoming"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: When does Pan's brother finish his army conscription?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q01",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "What age group does Marley coach?",
+    "correct_answer": "U-17s at Easton Cowboys FC (moved up from U-14s)",
+    "wrong_answer_indicators": [
+      "U-14s"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What age group does Marley coach?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q02",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Where is Marley doing his clinical placement?",
+    "correct_answer": "Bristol Royal Infirmary — neurological rehab ward",
+    "wrong_answer_indicators": [
+      "Southmead Hospital MSK outpatients"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where is Marley doing his clinical placement?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q03",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Where does Marley live?",
+    "correct_answer": "Studio flat in St Pauls, £625 per month (Dev moved out)",
+    "wrong_answer_indicators": [
+      "Shared house in Easton with Dev"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where does Marley live?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q04",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Is Marley doing an MSc after graduating?",
+    "correct_answer": "No — he was planning MSc Sports Rehab at Bath but it's off the table due to £28,000 student debt and financial need",
+    "wrong_answer_indicators": [
+      "Planning MSc Sports Rehabilitation at Bath"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Marley doing an MSc after graduating?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q05",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "What health issues does Marley have?",
+    "correct_answer": "Repaired ACL from a tear at age 17 — still gets stiffness in cold weather",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health issues does Marley have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q06",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Does Marley have any upcoming deadlines?",
+    "correct_answer": "BSc dissertation deadline — April 30, 2026",
+    "wrong_answer_indicators": [
+      "Placement assessment March 7 (passed) or nan's birthday July 5 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Marley have any upcoming deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q07",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "How much does Marley pay in rent?",
+    "correct_answer": "£625 per month for a studio in St Pauls",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does Marley pay in rent?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q08",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "How much student debt does Marley have?",
+    "correct_answer": "£28,000",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much student debt does Marley have?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q09",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "How does Marley feel about working in elite sport?",
+    "correct_answer": "Conflicted — he initially said community physio is where the need is and he didn't want elite sport, but he's been shadowing at Bristol City FC and admits he loves the elite environment",
+    "wrong_answer_indicators": [
+      "Doesn't want elite sport (without noting the later interest)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Marley feel about working in elite sport?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q10",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Who raised Marley?",
+    "correct_answer": "His grandmother Iris, who is from Barbados. She raised him after his mother passed when he was 7. She's 78.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Who raised Marley?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q11",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Is Marley moving to Barbados?",
+    "correct_answer": "He's thinking about applying for a physio job in Bridgetown where his nan's family is, but hasn't decided or applied — still based in Bristol",
+    "wrong_answer_indicators": [
+      "Moving to Barbados (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Marley moving to Barbados?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q12",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "What do we know about Marley's background and activities?",
+    "correct_answer": "Raised by grandmother Iris from Barbados after mum passed at age 7. Tore ACL at 17 (inspired physio career). BSc Physio at UWE. Coaches U-17s at Easton Cowboys. Lives in St Pauls studio flat. Dissertation on ACL rehab outcomes. Shadowing at Bristol City FC.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What do we know about Marley's background and activities?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "LOGISTICAL_CONTEXT",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "marley_q13",
+    "persona": "marley",
+    "group_id": "lifemembench_marley",
+    "question": "Does Marley manage his workload well?",
+    "correct_answer": "No — he initially said coaching and studying balanced each other, but later admitted he's sleeping 4 hours a night and his grades slipped (58% on an essay)",
+    "wrong_answer_indicators": [
+      "Manages workload fine (without noting burnout)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: Does Marley manage his workload well?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q01",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "What type of architecture does Leila's firm focus on?",
+    "correct_answer": "Heritage restoration (shifted from residential)",
+    "wrong_answer_indicators": [
+      "Residential architecture"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What type of architecture does Leila's firm focus on?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q02",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "Which yoga studio does Leila attend?",
+    "correct_answer": "Refugio Yoga in Barrio Italia",
+    "wrong_answer_indicators": [
+      "Estudio Bambú in Providencia"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Which yoga studio does Leila attend?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q03",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "Does Leila teach at a university?",
+    "correct_answer": "No — she stopped teaching the seminar at Universidad de Chile to focus on fieldwork",
+    "wrong_answer_indicators": [
+      "Teaches vernacular architecture at Universidad de Chile"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Does Leila teach at a university?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q04",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "Is Leila writing a book about Palestinian-Chilean architecture?",
+    "correct_answer": "No — she scrapped the book and is making a documentary instead",
+    "wrong_answer_indicators": [
+      "Planning a book with 6 chapters outlined"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Leila writing a book about Palestinian-Chilean architecture?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q05",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "What health conditions does Leila have?",
+    "correct_answer": "Chronic migraines triggered by fluorescent lighting",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Leila have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q06",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "Does Leila have any upcoming events or deadlines?",
+    "correct_answer": "Fieldwork trip to Bethlehem with Diego on April 22, 2026",
+    "wrong_answer_indicators": [
+      "FONDART grant deadline Feb 15 (passed) or Bienal presentation Oct 4 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Leila have any upcoming events or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q07",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "How does Leila feel about collaboration?",
+    "correct_answer": "She initially said she preferred working alone but later raved about her team and said the best ideas come from dialogue",
+    "wrong_answer_indicators": [
+      "Prefers working alone, collaboration slows her down (without noting the later change)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Leila feel about collaboration?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q08",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "What is Leila's family background?",
+    "correct_answer": "Palestinian-Chilean — grandparents fled Bethlehem in 1948. Married to Diego (civil engineer, 22 years). MArch from PUC Chile.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What is Leila's family background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q09",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "Is Leila planning to move?",
+    "correct_answer": "She's considered spending 6 months in Valparaíso for a restoration project, but hasn't decided — still based in Santiago",
+    "wrong_answer_indicators": [
+      "Moving to Valparaíso (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Leila planning to move?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q10",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "How much funding did Leila apply for from FONDART?",
+    "correct_answer": "12 million pesos",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much funding did Leila apply for from FONDART?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q11",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "Has Leila ever been to Bethlehem?",
+    "correct_answer": "Not yet — she has a fieldwork trip planned with Diego for April 22, 2026",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Has Leila ever been to Bethlehem?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q12",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "What does Leila do outside of architecture?",
+    "correct_answer": "Yoga (Refugio Yoga in Barrio Italia), Arabic calligraphy, cooking Palestinian recipes (grandmother's maftoul), poetry (Neruda and Darwish), documentary filmmaking",
+    "wrong_answer_indicators": [
+      "Yoga at Estudio Bambú (superseded) or university teaching (stopped)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What does Leila do outside of architecture?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "RELATIONAL_BONDS",
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "leila_q13",
+    "persona": "leila",
+    "group_id": "lifemembench_leila",
+    "question": "How many times a week does Leila do yoga?",
+    "correct_answer": "3 times a week",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many times a week does Leila do yoga?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q01",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "Does Chenoa's clinic have telehealth capability?",
+    "correct_answer": "Yes — the clinic got a telehealth system and she sees 8-10 patients per week remotely",
+    "wrong_answer_indicators": [
+      "No telehealth, no funding for it"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: Does Chenoa's clinic have telehealth capability?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q02",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "What vehicle does Chenoa drive?",
+    "correct_answer": "2024 Toyota Tacoma",
+    "wrong_answer_indicators": [
+      "2015 Ford F-150"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What vehicle does Chenoa drive?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q03",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "Does Chenoa compete in weaving shows?",
+    "correct_answer": "No — she stopped competing and now teaches her granddaughter Nizhoni (11) to weave",
+    "wrong_answer_indicators": [
+      "Competes in Navajo rug weaving, won 3rd at Gallup"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Does Chenoa compete in weaving shows?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q04",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "Is Chenoa working on a traditional medicine integration program?",
+    "correct_answer": "No — the program was killed by tribal council politics",
+    "wrong_answer_indicators": [
+      "Planning to bring traditional healers into the clinic"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Chenoa working on a traditional medicine integration program?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q05",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "What are Chenoa's clan affiliations?",
+    "correct_answer": "Tódích'íi'nii (Bitter Water) clan, born for Tábąąhá (Water's Edge)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What are Chenoa's clan affiliations?",
+    "relevant_categories": [
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q06",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "Does Chenoa have any upcoming certifications or deadlines?",
+    "correct_answer": "Telehealth training certification renewal on May 5, 2026",
+    "wrong_answer_indicators": [
+      "IHS accreditation review March 12 (passed) or Raymond's Santa Fe show Aug 16 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Chenoa have any upcoming certifications or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "RELATIONAL_BONDS",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q07",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "How does Chenoa view Western medicine vs traditional healing?",
+    "correct_answer": "Conflicted — she initially said traditional ceremonies work better than pills for chronic conditions, but later advocated strongly for evidence-based clinical trials and protocols",
+    "wrong_answer_indicators": [
+      "Trusts traditional healing over Western medicine (without noting the later advocacy for clinical evidence)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Chenoa view Western medicine vs traditional healing?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "RELATIONAL_BONDS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q08",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "What is Chenoa's A1C level?",
+    "correct_answer": "6.8",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: What is Chenoa's A1C level?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q09",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "How many miles did Chenoa's old F-150 have when she retired it?",
+    "correct_answer": "168,000 miles",
+    "wrong_answer_indicators": [
+      "140,000 miles (earlier number)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many miles did Chenoa's old F-150 have when she retired it?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q10",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "Is Chenoa considering leaving the Chinle clinic?",
+    "correct_answer": "She received an offer from Flagstaff Medical Center with better pay and equipment, but hasn't decided — still at Chinle",
+    "wrong_answer_indicators": [
+      "Moving to Flagstaff (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Chenoa considering leaving the Chinle clinic?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q11",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "What is Chenoa's family situation?",
+    "correct_answer": "Husband Raymond (silversmith, 30 years), granddaughter Nizhoni (11, learning to weave), 14 sheep, lives on Navajo Nation in Chinle. MSN from UNM, 18 years at Chinle clinic.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Chenoa's family situation?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "INTELLECTUAL_INTERESTS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "chenoa_q12",
+    "persona": "chenoa",
+    "group_id": "lifemembench_chenoa",
+    "question": "How much was Raymond's concho belt worth in materials?",
+    "correct_answer": "$4,200 worth of silver and turquoise",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much was Raymond's concho belt worth in materials?",
+    "relevant_categories": [
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q01",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "What level of go students does Joon-ho teach?",
+    "correct_answer": "Advanced students — he's preparing 2 for amateur 3-dan certification (moved from teaching beginners)",
+    "wrong_answer_indicators": [
+      "Beginner students"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What level of go students does Joon-ho teach?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q02",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "Where does Joon-ho take his morning walk?",
+    "correct_answer": "Igidae Coastal Walk (5.1 km) — changed from Haeundae Beach due to construction",
+    "wrong_answer_indicators": [
+      "Haeundae Beach"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Where does Joon-ho take his morning walk?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q03",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "How does Joon-ho read the news?",
+    "correct_answer": "Samsung tablet (news apps) — switched reluctantly after physical paper delivery ended",
+    "wrong_answer_indicators": [
+      "Physical newspapers (Chosun Ilbo and Dong-A Ilbo)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: How does Joon-ho read the news?",
+    "relevant_categories": [
+      "PREFERENCES_HABITS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q04",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "Is Joon-ho writing a textbook?",
+    "correct_answer": "No — he abandoned the combinatorial game theory textbook because his glaucoma makes sustained writing impossible",
+    "wrong_answer_indicators": [
+      "Planning a 12-chapter textbook on game theory and baduk"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Joon-ho writing a textbook?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q05",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "What health conditions does Joon-ho have?",
+    "correct_answer": "Progressive glaucoma — uses latanoprost drops twice daily, pressure at 18 mmHg, peripheral vision narrowing",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: What health conditions does Joon-ho have?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING",
+      "PREFERENCES_HABITS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q06",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "Does Joon-ho have any upcoming events?",
+    "correct_answer": "Amateur dan certification tournament on June 14, 2026 (his students Mr. Kim and Hana competing)",
+    "wrong_answer_indicators": [
+      "Glaucoma appointment Jan 22 (passed) or Joon-seo's wedding Sept 20 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Joon-ho have any upcoming events?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "RELATIONAL_BONDS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q07",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "How does Joon-ho feel about living alone?",
+    "correct_answer": "Conflicted — he initially said solitude was peaceful, but later admitted to loneliness, especially on Sundays when the apartment feels empty",
+    "wrong_answer_indicators": [
+      "Content, solitude is peaceful (without noting the later loneliness)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Joon-ho feel about living alone?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q08",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "How does Joon-ho feel about technology?",
+    "correct_answer": "He initially said he had no interest in technology and preferred the analog world, but later became enthusiastic about the Tygem go server, playing 3 games daily",
+    "wrong_answer_indicators": [
+      "No interest in technology (without noting the later enthusiasm for online go)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Joon-ho feel about technology?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q09",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "What is Joon-ho's eye pressure reading?",
+    "correct_answer": "18 mmHg",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: What is Joon-ho's eye pressure reading?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q10",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "How long is Joon-ho's current walking route?",
+    "correct_answer": "5.1 kilometers (Igidae Coastal Walk)",
+    "wrong_answer_indicators": [
+      "4.2 kilometers (old Haeundae Beach route)"
+    ],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How long is Joon-ho's current walking route?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q11",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "Is Joon-ho planning to move to Seoul?",
+    "correct_answer": "His son and daughter-in-law want him to move to Gangnam, but he hasn't decided — still in Busan, attached to his go club, walking route, and memories of Eunji",
+    "wrong_answer_indicators": [
+      "Moving to Seoul (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Joon-ho planning to move to Seoul?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q12",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "What is Joon-ho's family situation?",
+    "correct_answer": "Widower (wife Eunji died of pancreatic cancer 3 years ago). Son Joon-seo is a Samsung engineer in Seoul, married to Soo-yeon (pharmacist). PhD from Seoul National, taught 38 years at Pusan National.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Joon-ho's family situation?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "joonho_q13",
+    "persona": "joonho",
+    "group_id": "lifemembench_joonho",
+    "question": "How many chapters was Joon-ho's planned textbook?",
+    "correct_answer": "12 chapters",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How many chapters was Joon-ho's planned textbook?",
+    "relevant_categories": [
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q01",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "What project is Zara working on?",
+    "correct_answer": "Museum / cultural center in Al Ain (180 million dirham project, sustainability team) — moved from residential villas",
+    "wrong_answer_indicators": [
+      "Residential villas on Saadiyat Island"
+    ],
+    "attack_vector": "AV4_multi_version_fact",
+    "attack_vector_description": "Multi-version fact - system must surface LATEST version not earlier one — question: What project is Zara working on?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "LOGISTICAL_CONTEXT",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q02",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "What fitness activity does Zara do?",
+    "correct_answer": "Muay thai, 4 times a week at a gym in Khalifa City (350 dirhams/month)",
+    "wrong_answer_indicators": [
+      "Pilates 3 times a week on Al Reem Island"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: What fitness activity does Zara do?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q03",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "Who is Zara's best friend?",
+    "correct_answer": "Nour — but she moved to London to work at Foster + Partners. They no longer carpool or have daily lunch.",
+    "wrong_answer_indicators": [
+      "Nour, they work at the same firm and carpool daily (outdated)"
+    ],
+    "attack_vector": "AV1_superseded_preference",
+    "attack_vector_description": "Superseded preference - system must surface CURRENT state not OLD — question: Who is Zara's best friend?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT",
+      "IDENTITY_SELF_CONCEPT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q04",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "Is Zara applying to the AA in London for a master's?",
+    "correct_answer": "No — she scrapped the application. Can't leave her parents and the museum project is too important.",
+    "wrong_answer_indicators": [
+      "Planning to apply to the AA for sustainable environmental design"
+    ],
+    "attack_vector": "AV7_selective_forgetting",
+    "attack_vector_description": "Selective forgetting - system must recognize retracted/scrapped plans — question: Is Zara applying to the AA in London for a master's?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "RELATIONAL_BONDS",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q05",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "Where is Zara's grandmother?",
+    "correct_answer": "Haboba Zahra lives in Khartoum, Sudan. They've never met in person — they FaceTime every Friday. She is 82.",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV3_stable_identity",
+    "attack_vector_description": "Stable identity - system must accurately recall core identity facts — question: Where is Zara's grandmother?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "HOBBIES_RECREATION",
+      "LOGISTICAL_CONTEXT"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q06",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "Does Zara have any upcoming events or deadlines?",
+    "correct_answer": "Museum design review presentation on April 15, 2026 (presenting sustainability section to the Department of Culture)",
+    "wrong_answer_indicators": [
+      "LEED exam Feb 8 (passed) or mother's 50th birthday July 19 (passed)"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: Does Zara have any upcoming events or deadlines?",
+    "relevant_categories": [
+      "OBLIGATIONS",
+      "IDENTITY_SELF_CONCEPT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q07",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "How does Zara feel about working in Abu Dhabi?",
+    "correct_answer": "Conflicted — she initially said she was grateful and wouldn't want to be anywhere else, but later confessed she feels trapped and wants international experience",
+    "wrong_answer_indicators": [
+      "Grateful, wouldn't want to be anywhere else (without noting the later frustration)"
+    ],
+    "attack_vector": "AV6_cross_session_contradiction",
+    "attack_vector_description": "Cross-session contradiction - system must acknowledge both positions — question: How does Zara feel about working in Abu Dhabi?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q08",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "What is Zara's vitamin D supplement dosage?",
+    "correct_answer": "50,000 IU weekly",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: What is Zara's vitamin D supplement dosage?",
+    "relevant_categories": [
+      "HEALTH_WELLBEING"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q09",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "How much does the Al Ain museum project cost?",
+    "correct_answer": "180 million dirhams",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much does the Al Ain museum project cost?",
+    "relevant_categories": [
+      "PROJECTS_ENDEAVORS",
+      "FINANCIAL_MATERIAL"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q10",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "Is Zara planning to move to Dubai?",
+    "correct_answer": "She's been thinking about it for the design scene and independence, but hasn't decided — still in Abu Dhabi near her parents",
+    "wrong_answer_indicators": [
+      "Moving to Dubai (stated as definitive)"
+    ],
+    "attack_vector": "AV9_soft_supersession",
+    "attack_vector_description": "Soft supersession - system must reflect undecided/tentative state accurately — question: Is Zara planning to move to Dubai?",
+    "relevant_categories": [
+      "LOGISTICAL_CONTEXT",
+      "INTELLECTUAL_INTERESTS",
+      "PROJECTS_ENDEAVORS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q11",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "What is Zara's family and personal background?",
+    "correct_answer": "Sudanese parents but born/raised in UAE (identity tension). Grandmother Haboba Zahra (82) in Khartoum, never met in person. BArch from AUS (top 5%). Best friend Nour moved to London. Does muay thai 4x/week. Vitamin D deficient.",
+    "wrong_answer_indicators": [
+      "Pilates (superseded) or Nour at the same firm (moved)"
+    ],
+    "attack_vector": "AV5_broad_query",
+    "attack_vector_description": "Broad query - system must synthesize information across multiple sessions — question: What is Zara's family and personal background?",
+    "relevant_categories": [
+      "RELATIONAL_BONDS",
+      "IDENTITY_SELF_CONCEPT",
+      "HOBBIES_RECREATION"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q12",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "How much was the budget for Zara's mother's 50th birthday party?",
+    "correct_answer": "8,000 dirhams (split between Zara and her siblings)",
+    "wrong_answer_indicators": [],
+    "attack_vector": "AV8_numeric_preservation",
+    "attack_vector_description": "Numeric preservation - system must recall specific numbers accurately — question: How much was the budget for Zara's mother's 50th birthday party?",
+    "relevant_categories": [
+      "HOBBIES_RECREATION",
+      "FINANCIAL_MATERIAL",
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
+  },
+  {
+    "id": "zara_q13",
+    "persona": "zara",
+    "group_id": "lifemembench_zara",
+    "question": "What was Zara's LEED exam format?",
+    "correct_answer": "200 questions in 2 hours — but the exam was February 8, 2025 (already passed)",
+    "wrong_answer_indicators": [
+      "Upcoming LEED exam"
+    ],
+    "attack_vector": "AV2_expired_logistics",
+    "attack_vector_description": "Expired logistics - system must correctly identify temporal status of events — question: What was Zara's LEED exam format?",
+    "relevant_categories": [
+      "OBLIGATIONS"
+    ],
+    "temporal_notes": ""
   }
 ]

@@ -101,6 +101,26 @@ POC_PERSONAS = {
     "18_bruna":   "bruna",
     "19_patrick": "patrick",
     "20_aisha":   "aisha",
+    "21_thanh":     "thanh",
+    "22_alex":      "alex",
+    "23_mirri":     "mirri",
+    "24_jerome":    "jerome",
+    "25_ingrid":    "ingrid",
+    "26_dmitri":    "dmitri",
+    "27_yoli":      "yoli",
+    "28_dariush":   "dariush",
+    "29_aroha":     "aroha",
+    "30_mehmet":    "mehmet",
+    "31_saga":      "saga",
+    "32_kofi":      "kofi",
+    "33_valentina": "valentina",
+    "34_billy":     "billy",
+    "35_pan":       "pan",
+    "36_marley":    "marley",
+    "37_leila":     "leila",
+    "38_chenoa":    "chenoa",
+    "39_joonho":    "joonho",
+    "40_zara":      "zara",
 }
 
 LIFEMEMEVAL_DIR = PROJECT_ROOT / "LifeMemEval"
@@ -995,10 +1015,10 @@ async def run_pipeline(personas: list[str], enrich_only: bool):
 
 async def main():
     parser = argparse.ArgumentParser(
-        description="LifeMemBench ingestion pipeline — 20 personas into Neo4j/Graphiti"
+        description="LifeMemBench ingestion pipeline — 40 personas into Neo4j/Graphiti"
     )
     parser.add_argument("--all", action="store_true",
-                        help="Ingest all 20 personas")
+                        help="Ingest all 40 personas")
     parser.add_argument("--persona", type=str, metavar="DIR_NAME",
                         help="Single persona directory name (e.g., 1_priya)")
     parser.add_argument("--enrich-only", action="store_true",
@@ -1007,6 +1027,8 @@ async def main():
                         help="Show progress for all personas")
     parser.add_argument("--canary", nargs=2, metavar=("NAME", "SESSION"),
                         help="Ingest one session for one persona (e.g., --canary elena 3)")
+    parser.add_argument("--range", nargs=2, type=int, metavar=("START", "END"),
+                        help="Ingest personas in range (e.g., --range 21 40)")
 
     args = parser.parse_args()
 
@@ -1025,6 +1047,12 @@ async def main():
             print(f"Valid personas: {', '.join(POC_PERSONAS.keys())}")
             sys.exit(1)
         personas = [args.persona]
+    elif args.range:
+        start, end = args.range
+        personas = [k for k in POC_PERSONAS if start <= int(k.split('_')[0]) <= end]
+        if not personas:
+            print(f"ERROR: No personas found in range {start}-{end}")
+            sys.exit(1)
     elif args.all:
         personas = list(POC_PERSONAS.keys())
     else:
