@@ -86,6 +86,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from decay_engine import DecayEngine, TemporalContext, FactNode, CATEGORIES
 from graphiti_bridge import build_temporal_context
 from retrieval_router import route_and_retrieve, RoutingConfig, reset_routing_state
+from query_classifier import classify_query
 
 
 # ===========================================================================
@@ -285,6 +286,7 @@ CYPHER_SOURCE_BASELINES = {
     "cypher_intersect": 0.5,
     "cypher_neighbor": 0.3,
     "category_routed": 0.35,
+    "category_forced": 0.35,
 }
 
 def _to_unix_ts(value) -> float:
@@ -549,7 +551,7 @@ async def build_candidate_pool(
     xai_client=None, edge_cache: dict = None, routing_config=None,
     embedder=None,
 ) -> list[Candidate]:
-    """Build fat candidate pool using 5 retrieval strategies."""
+    """Build fat candidate pool using 6 retrieval strategies."""
     uuid_to_candidate: dict[str, Candidate] = {}
 
     def add(c: Candidate):
@@ -670,6 +672,32 @@ async def build_candidate_pool(
                 add(Candidate(uuid, fact, source, score))
         except Exception as e:
             print(f"    Strategy error (category_routed): {e}")
+
+    # --- Strategy 6: Category-forced retrieval (top-1 category, deep pull) ---
+    if xai_client is not None:
+        try:
+            classification = await classify_query(question, xai_client)
+            if classification.matches:
+                top_cat = classification.matches[0].category
+                result = await driver.execute_query(
+                    """
+                    MATCH (src)-[e:RELATES_TO]->(tgt)
+                    WHERE e.group_id = $group_id
+                      AND e.fr_primary_category = $category
+                    RETURN e.uuid AS uuid, e.fact AS fact
+                    ORDER BY e.created_at DESC
+                    LIMIT 20
+                    """,
+                    group_id=group_id,
+                    category=top_cat,
+                )
+                records = result.records if hasattr(result, "records") else result
+                for rec in records:
+                    d = rec.data() if hasattr(rec, "data") else dict(rec)
+                    add(Candidate(d["uuid"], d["fact"], "category_forced",
+                                  CYPHER_SOURCE_BASELINES["category_forced"]))
+        except Exception as e:
+            print(f"    Strategy error (category_forced): {e}")
 
     candidates = list(uuid_to_candidate.values())
 
@@ -1617,7 +1645,7 @@ async def evaluate_persona(
             pool = pools[q["id"]]
             orig_pool_size = len(pool)
             if not routing_enabled:
-                pool = [c for c in pool if c.source != "category_routed"]
+                pool = [c for c in pool if c.source not in ("category_routed", "category_forced")]
 
             # Filter superseded edges for behavioral configs
             # Skip filter for backward-looking queries that need historical edges
