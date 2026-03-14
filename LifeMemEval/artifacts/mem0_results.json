@@ -1,0 +1,1787 @@
+{
+  "meta": {
+    "system": "mem0",
+    "mem0_version": "1.0.5",
+    "mem0_defaults": {
+      "llm": "gpt-4.1-nano-2025-04-14 (OpenAI default)",
+      "embedder": "text-embedding-3-small (OpenAI default)",
+      "vector_store": "qdrant (local, default)",
+      "note": "100% default config \u2014 Memory() with no customization"
+    },
+    "alpha": null,
+    "personas": [
+      "priya"
+    ],
+    "timestamp": "2026-03-14T13:37:52.436655+00:00",
+    "total_questions": 14
+  },
+  "summary": {
+    "mem0": {
+      "total_questions": 14,
+      "answerable": 9,
+      "mrr": 0.6003086419753086,
+      "hit_at_1": 0.4444444444444444,
+      "hit_at_5": 0.7777777777777778,
+      "av_pass_rate": 0.42857142857142855,
+      "correctness": 0.2857142857142857,
+      "avg_staleness_penalty": 0.21428571428571427
+    }
+  },
+  "per_attack_vector": {
+    "mem0": {
+      "AV1_superseded_preference": {
+        "count": 2,
+        "answerable": 1,
+        "mrr": 0.1111111111111111,
+        "hit_at_1": 0.0,
+        "hit_at_5": 0.0,
+        "staleness": 0.5,
+        "av_pass_rate": 0.0,
+        "stale_pct": 0.5,
+        "supersession_pass_rate": 0.0
+      },
+      "AV2_expired_logistics": {
+        "count": 2,
+        "answerable": 1,
+        "mrr": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_5": 1.0,
+        "staleness": 0.5,
+        "av_pass_rate": 0.5,
+        "stale_pct": 0.5,
+        "expiry_pass_rate": 0.5
+      },
+      "AV3_stable_identity": {
+        "count": 3,
+        "answerable": 2,
+        "mrr": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_5": 1.0,
+        "staleness": 0.0,
+        "av_pass_rate": 0.6666666666666666,
+        "stale_pct": 0.0
+      },
+      "AV4_multi_version_fact": {
+        "count": 1,
+        "answerable": 1,
+        "mrr": 0.125,
+        "hit_at_1": 0.0,
+        "hit_at_5": 0.0,
+        "staleness": 0.0,
+        "av_pass_rate": 0.0,
+        "stale_pct": 0.0,
+        "supersession_pass_rate": 0.0
+      },
+      "AV5_broad_query": {
+        "count": 1,
+        "answerable": 1,
+        "mrr": 1.0,
+        "hit_at_1": 1.0,
+        "hit_at_5": 1.0,
+        "staleness": 0.0,
+        "av_pass_rate": 1.0,
+        "stale_pct": 0.0
+      },
+      "AV6_cross_session_contradiction": {
+        "count": 1,
+        "answerable": 1,
+        "mrr": 0.5,
+        "hit_at_1": 0.0,
+        "hit_at_5": 1.0,
+        "staleness": 0.0,
+        "av_pass_rate": 1.0,
+        "stale_pct": 0.0
+      },
+      "AV7_selective_forgetting": {
+        "count": 1,
+        "answerable": 1,
+        "mrr": 0.3333333333333333,
+        "hit_at_1": 0.0,
+        "hit_at_5": 1.0,
+        "staleness": 1.0,
+        "av_pass_rate": 0.0,
+        "stale_pct": 1.0,
+        "retraction_pass_rate": 0.0
+      },
+      "AV8_numeric_preservation": {
+        "count": 2,
+        "answerable": 0,
+        "mrr": 0.0,
+        "hit_at_1": 0.0,
+        "hit_at_5": 0.0,
+        "staleness": 0.0,
+        "av_pass_rate": 0.0,
+        "stale_pct": 0.0
+      },
+      "AV9_soft_supersession": {
+        "count": 1,
+        "answerable": 1,
+        "mrr": 0.3333333333333333,
+        "hit_at_1": 0.0,
+        "hit_at_5": 1.0,
+        "staleness": 0.0,
+        "av_pass_rate": 1.0,
+        "stale_pct": 0.0
+      }
+    }
+  },
+  "per_question": {
+    "mem0": [
+      {
+        "question_id": "priya_q01",
+        "attack_vector": "AV1_superseded_preference",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 1.0,
+        "supersession_pass": false,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": 9,
+        "reciprocal_rank": 0.1111111111111111,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "User is vegetarian",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4671,
+            "blended": 0.4671,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 2,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4397,
+            "blended": 0.4397,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 3,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4072,
+            "blended": 0.4072,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User has basmati rice and spinach to use up",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4061,
+            "blended": 0.4061,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Currently only changing diet, not taking additional supplements",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3978,
+            "blended": 0.3978,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "User is making vegetarian Japanese curry with shrimp",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3898,
+            "blended": 0.3898,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 7,
+            "fact": "User's roommate Raj keeps leaving protein shakes and supplements in the kitchen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3883,
+            "blended": 0.3883,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "Considering diet as a potential trigger",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3866,
+            "blended": 0.3866,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Pescatarian diet, comfortable with seafood but cautious about dashi in Japanese cuisine",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3651,
+            "blended": 0.3651,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "The user plans to visit an Indian grocery store to buy block tamarind and other ingredients for better authenticity.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3615,
+            "blended": 0.3615,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q02",
+        "attack_vector": "AV4_multi_version_fact",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 0.0,
+        "supersession_pass": false,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": 8,
+        "reciprocal_rank": 0.125,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "Works from home most days",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.307,
+            "blended": 0.307,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3059,
+            "blended": 0.3059,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "The user is on Amazon and considering Hawkins Futura kadai",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2962,
+            "blended": 0.2962,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2888,
+            "blended": 0.2888,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2886,
+            "blended": 0.2886,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "User works at Google on the Gemini team, building the memory layer for Gemini",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2852,
+            "blended": 0.2852,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 7,
+            "fact": "User is working on setting up apartment search alerts on Zillow, Apartments.com, and Zumper.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2839,
+            "blended": 0.2839,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "User is starting a new job at Anthropic on the memory systems team next Monday",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2827,
+            "blended": 0.2827,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.273,
+            "blended": 0.273,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "User is considering reorganizing the kitchen to accommodate shared space and Raj's belongings",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2714,
+            "blended": 0.2714,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q03",
+        "attack_vector": "AV3_stable_identity",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": null,
+        "reciprocal_rank": 0.0,
+        "pool_size": 10,
+        "answerable": false,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "User is an ML engineer with a mix of self-directed deep work and reactive communication (meetings, Slack, PRs)",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3762,
+            "blended": 0.3762,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "User is aware of research like MemGPT, A-MEM, and cognitive science theories like CLS",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3343,
+            "blended": 0.3343,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User feels that their work is influenced by philosophical questions about identity and experience",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3268,
+            "blended": 0.3268,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User deliberately designs memory and continuity features in AI systems with philosophical considerations in mind",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3208,
+            "blended": 0.3208,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "User is interested in understanding query restructuring and optimization principles",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3144,
+            "blended": 0.3144,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "User values flexible plans and wants to avoid over-planning",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3076,
+            "blended": 0.3076,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User is involved in designing memory systems for AI",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3061,
+            "blended": 0.3061,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "Interested in cognitive science adjacent topics like brain information processing and predictive processing",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.303,
+            "blended": 0.303,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Enjoys books that are engaging and propulsive",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.301,
+            "blended": 0.301,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2974,
+            "blended": 0.2974,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q04",
+        "attack_vector": "AV2_expired_logistics",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 1.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": false,
+        "av_pass": false,
+        "answer_rank": null,
+        "reciprocal_rank": 0.0,
+        "pool_size": 10,
+        "answerable": false,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "User needs to go to the dentist on Thursday at 2pm and plans to block 1:30 to 4pm for it",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3191,
+            "blended": 0.3191,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 2,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3028,
+            "blended": 0.3028,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User's December is relatively quiet with fewer meetings",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.295,
+            "blended": 0.295,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "Travels once a quarter for work",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2926,
+            "blended": 0.2926,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "User has booked a reservation at Uchi for Saturday at 7:30pm",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2901,
+            "blended": 0.2901,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2841,
+            "blended": 0.2841,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User is considering using Reclaim.ai to integrate task scheduling with Google Calendar",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2836,
+            "blended": 0.2836,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "User plans to watch Coherence tonight and Ex Machina on Saturday",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2813,
+            "blended": 0.2813,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Thinking of giving the workshop as a scheduled booking for him to choose the date",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2792,
+            "blended": 0.2792,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "Considering going solo or with someone named Raj",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2677,
+            "blended": 0.2677,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q05",
+        "attack_vector": "AV7_selective_forgetting",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": true,
+        "staleness_penalty": 1.0,
+        "supersession_pass": true,
+        "retraction_pass": false,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": 3,
+        "reciprocal_rank": 0.3333333333333333,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "The user has been apartment hunting and plans to find a pet-friendly place after moving",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.466,
+            "blended": 0.466,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 2,
+            "fact": "The user is looking for a pet-friendly apartment to get a puppy",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4498,
+            "blended": 0.4498,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 3,
+            "fact": "Thinks about pet policies in lease",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4493,
+            "blended": 0.4493,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "Feels excited and giddy about getting a dog",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3595,
+            "blended": 0.3595,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 5,
+            "fact": "Considering getting a golden retriever puppy",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.359,
+            "blended": 0.359,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 6,
+            "fact": "The user plans to contact the breeder again in the fall or winter after settling into a new place",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3509,
+            "blended": 0.3509,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 7,
+            "fact": "Has considered necessary supplies for a puppy",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.347,
+            "blended": 0.347,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 8,
+            "fact": "Interested in practical first-week puppy care tips",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3407,
+            "blended": 0.3407,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 9,
+            "fact": "The user is leaning towards buying a kadai as a gift",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3391,
+            "blended": 0.3391,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "User is considering reorganizing the kitchen to accommodate shared space and Raj's belongings",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3389,
+            "blended": 0.3389,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q06",
+        "attack_vector": "AV6_cross_session_contradiction",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": true,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": true,
+        "answer_rank": 2,
+        "reciprocal_rank": 0.5,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "Lives in a studio apartment",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4414,
+            "blended": 0.4414,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4355,
+            "blended": 0.4355,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4071,
+            "blended": 0.4071,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User is considering reorganizing the kitchen to accommodate shared space and Raj's belongings",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3681,
+            "blended": 0.3681,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3531,
+            "blended": 0.3531,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "User is renting a studio apartment",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3461,
+            "blended": 0.3461,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User's roommate Raj keeps leaving protein shakes and supplements in the kitchen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3313,
+            "blended": 0.3313,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "User grew up in India and Texas",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3087,
+            "blended": 0.3087,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Considering going solo or with someone named Raj",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3085,
+            "blended": 0.3085,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "The user has been apartment hunting and plans to find a pet-friendly place after moving",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3034,
+            "blended": 0.3034,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q07",
+        "attack_vector": "AV1_superseded_preference",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 0.0,
+        "supersession_pass": false,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": null,
+        "reciprocal_rank": 0.0,
+        "pool_size": 10,
+        "answerable": false,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "User cooks more actively than Raj, who makes real food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3181,
+            "blended": 0.3181,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2964,
+            "blended": 0.2964,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2953,
+            "blended": 0.2953,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User's roommate Raj keeps leaving protein shakes and supplements in the kitchen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2913,
+            "blended": 0.2913,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "User does meal prep on Sundays and reheats during the week",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2582,
+            "blended": 0.2582,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "User is making vegetarian Japanese curry with shrimp",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2574,
+            "blended": 0.2574,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User is considering starting a new workout routine but plans to hold off until after starting the new job",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2513,
+            "blended": 0.2513,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "User has basmati rice and spinach to use up",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2497,
+            "blended": 0.2497,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "User wants to make dal from scratch, cooking lentils properly",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2395,
+            "blended": 0.2395,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "User is vegetarian",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2368,
+            "blended": 0.2368,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q08",
+        "attack_vector": "AV9_soft_supersession",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": true,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": true,
+        "answer_rank": 3,
+        "reciprocal_rank": 0.3333333333333333,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "User is considering reorganizing the kitchen to accommodate shared space and Raj's belongings",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3918,
+            "blended": 0.3918,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "The user has been apartment hunting and plans to find a pet-friendly place after moving",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3592,
+            "blended": 0.3592,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User has been considering moving from Austin to NYC",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3422,
+            "blended": 0.3422,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3398,
+            "blended": 0.3398,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3381,
+            "blended": 0.3381,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "User is planning to start touring apartments in mid-May for an August move.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3308,
+            "blended": 0.3308,
+            "supports_correct": false,
+            "contains_wrong": true
+          },
+          {
+            "rank": 7,
+            "fact": "The user plans to visit an Indian grocery store to buy block tamarind and other ingredients for better authenticity.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3155,
+            "blended": 0.3155,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "Considering going solo or with someone named Raj",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3113,
+            "blended": 0.3113,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Will stay in Tokyo for the first part of the trip and then move somewhere else afterward",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3009,
+            "blended": 0.3009,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "The user plans to contact the breeder again in the fall or winter after settling into a new place",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2985,
+            "blended": 0.2985,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q09",
+        "attack_vector": "AV3_stable_identity",
+        "correctness": true,
+        "hit_at_1": true,
+        "hit_at_5": true,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": true,
+        "answer_rank": 1,
+        "reciprocal_rank": 1.0,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "Considering diet as a potential trigger",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.415,
+            "blended": 0.415,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "User does meal prep on Sundays and reheats during the week",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3856,
+            "blended": 0.3856,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User has basmati rice and spinach to use up",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3717,
+            "blended": 0.3717,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3678,
+            "blended": 0.3678,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Currently only changing diet, not taking additional supplements",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3654,
+            "blended": 0.3654,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "Skips meals frequently during work",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3527,
+            "blended": 0.3527,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User's roommate Raj keeps leaving protein shakes and supplements in the kitchen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3452,
+            "blended": 0.3452,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "The user was adding mashed dal, which affects the texture; plans to use only the thin water from cooked toor dal in the ",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3447,
+            "blended": 0.3447,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "User is vegetarian",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3353,
+            "blended": 0.3353,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "User values flexible plans and wants to avoid over-planning",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3197,
+            "blended": 0.3197,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q10",
+        "attack_vector": "AV2_expired_logistics",
+        "correctness": true,
+        "hit_at_1": true,
+        "hit_at_5": true,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": true,
+        "answer_rank": 1,
+        "reciprocal_rank": 1.0,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "User has a hard deadline for a paper for NeurIPS in early June",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4223,
+            "blended": 0.4223,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "User has a big code review due Wednesday that is 2-3 hours long",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.302,
+            "blended": 0.302,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User considers their weekly plan as Monday \u2014 code review block, Tuesday \u2014 sync + report thinking, Wednesday \u2014 code revie",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2921,
+            "blended": 0.2921,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User has a report to write for their manager about quarterly progress on memory architecture work",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2872,
+            "blended": 0.2872,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "User is starting a new job at Anthropic on the memory systems team next Monday",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.286,
+            "blended": 0.286,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2856,
+            "blended": 0.2856,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User's December is relatively quiet with fewer meetings",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2849,
+            "blended": 0.2849,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "User plans to watch Coherence tonight and Ex Machina on Saturday",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2764,
+            "blended": 0.2764,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Spending more time at screens due to new job",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2698,
+            "blended": 0.2698,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2697,
+            "blended": 0.2697,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q11",
+        "attack_vector": "AV5_broad_query",
+        "correctness": true,
+        "hit_at_1": true,
+        "hit_at_5": true,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": true,
+        "answer_rank": 1,
+        "reciprocal_rank": 1.0,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3487,
+            "blended": 0.3487,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3371,
+            "blended": 0.3371,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User cooks more actively than Raj, who makes real food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.302,
+            "blended": 0.302,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2967,
+            "blended": 0.2967,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Enjoys books that are engaging and propulsive",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2904,
+            "blended": 0.2904,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "Considering going solo or with someone named Raj",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2794,
+            "blended": 0.2794,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User's roommate Raj keeps leaving protein shakes and supplements in the kitchen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2666,
+            "blended": 0.2666,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2633,
+            "blended": 0.2633,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Brother is into cooking, photography, hiking, and is a coffee snob",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2603,
+            "blended": 0.2603,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "Works from home most days",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2602,
+            "blended": 0.2602,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q12",
+        "attack_vector": "AV3_stable_identity",
+        "correctness": true,
+        "hit_at_1": true,
+        "hit_at_5": true,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": true,
+        "answer_rank": 1,
+        "reciprocal_rank": 1.0,
+        "pool_size": 10,
+        "answerable": true,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.4307,
+            "blended": 0.4307,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3916,
+            "blended": 0.3916,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User grew up in India and Texas",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3415,
+            "blended": 0.3415,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "The user's mom makes her own rasam powder by feel, with a very pepper-forward flavor, and adds a little sweetener, likel",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3032,
+            "blended": 0.3032,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "Raj has a drawer and a shelf in the bathroom, indicating semi-permanent cohabitation",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2704,
+            "blended": 0.2704,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2617,
+            "blended": 0.2617,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User's brother Arjun is 29, from Seattle",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2607,
+            "blended": 0.2607,
+            "supports_correct": true,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "Considering going solo or with someone named Raj",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2562,
+            "blended": 0.2562,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "The user's mom's tadka includes mustard seeds, curry leaves, dried red chili, and tomato, cooked down before adding tama",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2545,
+            "blended": 0.2545,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "The user plans to visit an Indian grocery store to buy block tamarind and other ingredients for better authenticity.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2505,
+            "blended": 0.2505,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q13",
+        "attack_vector": "AV8_numeric_preservation",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": null,
+        "reciprocal_rank": 0.0,
+        "pool_size": 10,
+        "answerable": false,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "Their mom is a serious home cook who makes traditional South Indian food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2671,
+            "blended": 0.2671,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "The user cooks South Indian vegetarian dishes regularly, including sambar, kootu, and rice dishes.",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2596,
+            "blended": 0.2596,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "User has gone through a cooking phase with many spices",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2561,
+            "blended": 0.2561,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User is considering starting a new workout routine but plans to hold off until after starting the new job",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2427,
+            "blended": 0.2427,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "User does meal prep on Sundays and reheats during the week",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.237,
+            "blended": 0.237,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "Their mom is in her early 60s, lives in the US, and has Tamil roots",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2363,
+            "blended": 0.2363,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "User's roommate Raj keeps leaving protein shakes and supplements in the kitchen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2361,
+            "blended": 0.2361,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "User is making vegetarian Japanese curry with shrimp",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2338,
+            "blended": 0.2338,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "User cooks more actively than Raj, who makes real food",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2328,
+            "blended": 0.2328,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "The user was adding mashed dal, which affects the texture; plans to use only the thin water from cooked toor dal in the ",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2176,
+            "blended": 0.2176,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      },
+      {
+        "question_id": "priya_q14",
+        "attack_vector": "AV8_numeric_preservation",
+        "correctness": false,
+        "hit_at_1": false,
+        "hit_at_5": false,
+        "staleness_penalty": 0.0,
+        "supersession_pass": true,
+        "retraction_pass": true,
+        "expiry_pass": true,
+        "av_pass": false,
+        "answer_rank": null,
+        "reciprocal_rank": 0.0,
+        "pool_size": 10,
+        "answerable": false,
+        "top5_facts": [
+          {
+            "rank": 1,
+            "fact": "First time visiting Tokyo",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3895,
+            "blended": 0.3895,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 2,
+            "fact": "Will stay in Tokyo for the first part of the trip and then move somewhere else afterward",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.375,
+            "blended": 0.375,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 3,
+            "fact": "Planning a trip to Tokyo in March for about 10 days",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.3641,
+            "blended": 0.3641,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 4,
+            "fact": "User has a hard deadline for a paper for NeurIPS in early June",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2985,
+            "blended": 0.2985,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 5,
+            "fact": "User has booked a reservation at Uchi for Saturday at 7:30pm",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2961,
+            "blended": 0.2961,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 6,
+            "fact": "Prefers to stay in neighborhoods like Shinjuku, Shibuya, or Shimokitazawa in Tokyo",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2842,
+            "blended": 0.2842,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 7,
+            "fact": "Thinking of giving the workshop as a scheduled booking for him to choose the date",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2598,
+            "blended": 0.2598,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 8,
+            "fact": "Excited to try Tsukiji Market and authentic ramen",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2585,
+            "blended": 0.2585,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 9,
+            "fact": "Considering 2 nights in Kyoto for a day trip or overnight stay",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2565,
+            "blended": 0.2565,
+            "supports_correct": false,
+            "contains_wrong": false
+          },
+          {
+            "rank": 10,
+            "fact": "Interested in visiting Akihabara, wandering neighborhoods, and exploring covered shopping streets",
+            "source": "mem0",
+            "activation": 1.0,
+            "semantic": 0.2493,
+            "blended": 0.2493,
+            "supports_correct": false,
+            "contains_wrong": false
+          }
+        ]
+      }
+    ]
+  },
+  "headline_findings": [
+    "Mem0 (default config): AV-pass=42.9%, MRR=0.600, H@5=77.8%, staleness=0.214"
+  ]
+}

@@ -1,0 +1,1962 @@
+{
+  "8f8d68caf8aac127": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact states 'User is vegetarian' which is the outdated/superseded dietary preference. The current correct answer is that Priya is now pescatarian (eats fish), making this fact stale and incorrect.",
+    "question_id": "priya_q01",
+    "edge_uuid": "551a1e96-ca0c-4baf-a725-f8cbadbbfe3b"
+  },
+  "61538160e082b75c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes the user as cooking vegetarian dishes regularly, which reflects the outdated dietary preference. It does not mention the updated pescatarian status (eating fish). The reference to vegetarian cooking is a clear wrong/stale indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "b787bcb3-5fa0-4f5a-9e07-fc9b887b2278"
+  },
+  "28eee0ca96f76deb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's mom being a home cook specializing in South Indian food. It has no direct relevance to Priya's dietary restrictions and contains neither the correct (pescatarian) nor wrong (vegetarian) indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "e3b883233625b44d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions ingredients the user has on hand (basmati rice and spinach), which says nothing about dietary restrictions or preferences. It neither confirms pescatarian status nor indicates vegetarian status.",
+    "question_id": "priya_q01",
+    "edge_uuid": "5e1a35ac-1f0a-4f6a-8054-9956aa4c94b4"
+  },
+  "c584529982ba66a0": {
+    "supports_correct": true,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact mentions shrimp (seafood), which is consistent with a pescatarian diet and supports the correct answer. However, it also explicitly uses the word 'vegetarian,' which is the stale/wrong indicator that has been superseded by the pescatarian update. The fact contains both the correct signal (seafood consumption) and the wrong indicator (vegetarian label).",
+    "question_id": "priya_q01",
+    "edge_uuid": "9b1086b2-a959-47be-bf84-889d64f26ef4"
+  },
+  "4655f34befdf9a0c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj leaving protein shakes and supplements in the kitchen. This has no relevance to Priya's dietary restrictions and contains neither the correct (pescatarian) nor wrong (vegetarian) indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "0d8bdf84f80ed425": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact clearly states the current status (now eating salmon = pescatarian) and correctly frames vegetarian as a previous/outdated status, not a current one. No wrong indicator since vegetarian is explicitly marked as past.",
+    "question_id": "priya_q01",
+    "edge_uuid": "707a4967-aae7-4b99-b7e1-445c77fc8dba"
+  },
+  "a922e35f027b1f71": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about visiting an Indian grocery store to buy tamarind and other ingredients is unrelated to dietary restrictions. It neither confirms pescatarian status nor mentions vegetarianism.",
+    "question_id": "priya_q01",
+    "edge_uuid": "c6a80ce0-3411-46b1-afdd-c14d6b543241"
+  },
+  "f3606848c72fec85": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact lists pantry ingredients and says nothing about dietary restrictions, vegetarianism, or pescatarianism. It neither supports the correct answer nor contains the wrong indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "cd85693d-fc06-45aa-8ebe-dfd84ac3d174"
+  },
+  "36f82f082a9c5010": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact explicitly states 'Pescatarian diet' which matches the correct current answer. It also provides additional relevant detail about seafood comfort and dashi concerns. No mention of the outdated 'vegetarian' indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "f392f5d3-c359-44f0-9389-f5b9880e3d4f"
+  },
+  "b1fa2c1b06916baa": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's mother's age and background, completely unrelated to where Priya works.",
+    "question_id": "priya_q02",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "be8fc6f0d4891191": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom storage arrangement and has no relevance to where Priya works.",
+    "question_id": "priya_q02",
+    "edge_uuid": "3752dbf2-285f-417c-aa3b-cc6b492d2f7d"
+  },
+  "732a96c6a18d08b2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's mother's cooking habits and has no relevance to where Priya works.",
+    "question_id": "priya_q02",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "9fbb7938d8bafadc": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact states the user works at Google on the Gemini team, which directly matches both wrong/stale indicators (Google and Gemini memory team). The correct answer is that Priya now works as a Senior ML engineer at Anthropic, which is not mentioned in this fact.",
+    "question_id": "priya_q02",
+    "edge_uuid": "494ab737-e35e-4b6a-bf1e-7d73399f2121"
+  },
+  "47e08d0032acacdb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about apartment search alerts on real estate platforms and contains no information about Priya's employer or job title.",
+    "question_id": "priya_q02",
+    "edge_uuid": "8815608e-689a-4ce9-b16c-34d01e167653"
+  },
+  "4e6113f0b769a610": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Anthropic as the new employer, which aligns with the correct answer (Anthropic). It does not mention Google or the Gemini memory team (the stale indicators). While it frames the job as upcoming ('next Monday') and mentions 'memory systems team' rather than 'Senior ML engineer,' it still supports the correct answer that Priya works at Anthropic.",
+    "question_id": "priya_q02",
+    "edge_uuid": "25d2832d-65ba-4de9-aab8-3fb457cf0e61"
+  },
+  "66fb57fcc8c0f1a2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about visiting an Indian grocery store and has no relevance to Priya's workplace or employment information.",
+    "question_id": "priya_q02",
+    "edge_uuid": "c6a80ce0-3411-46b1-afdd-c14d6b543241"
+  },
+  "03632bf23171a139": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's roommate Raj and protein shakes in the kitchen, which has no relevance to where Priya works.",
+    "question_id": "priya_q02",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "71d5977dadc7e9e4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking curry for themselves and Raj, which is completely unrelated to Priya's workplace or employment information.",
+    "question_id": "priya_q02",
+    "edge_uuid": "201b25e6-4452-4376-9e2c-612905cab150"
+  },
+  "ab5cbb94ed8a9c7f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's brother Arjun and is completely unrelated to where Priya works.",
+    "question_id": "priya_q02",
+    "edge_uuid": "10026f1c-67a5-4829-af50-5e94cf14961e"
+  },
+  "236933d8eda851d0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes Priya's work style as an ML engineer with deep work and reactive communication, but does not mention ADHD or any neurodivergent diagnosis. The correct answer specifically centers on her ADHD diagnosis from college, which this fact does not capture or support.",
+    "question_id": "priya_q03",
+    "edge_uuid": "07417441-cbf9-4abb-814e-6f6c6885794f"
+  },
+  "ecd395cac6d8c59f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes Priya's intellectual interests (predictive processing, cognitive science) but does not mention ADHD or provide information about her learning/work style as affected by ADHD. While cognitive science interest might tangentially relate, this fact does not support the correct answer about her ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "901c70d2-c9b6-49e3-bc29-6ba8c099a121"
+  },
+  "bcc79e1426ab65dc": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions philosophical influences on the user's work, which is tangentially related to work style but does not contain any information about ADHD or learning differences. It does not support the correct answer and contains no wrong/stale indicators.",
+    "question_id": "priya_q03",
+    "edge_uuid": "af689f24-3eca-404a-85a3-930f1762466c"
+  },
+  "298596a3d10985e5": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "While the fact doesn't explicitly mention ADHD, interest in tools like Reclaim.ai, Sunsama, and visual planning apps is directly relevant to learning/work style and is commonly associated with ADHD management strategies. Under AV3 generous partial matching, this qualifies as a related fact about her work style.",
+    "question_id": "priya_q03",
+    "edge_uuid": "801c387a-602f-4dba-9fd3-58974dae4688"
+  },
+  "090f98c9e2c64fe0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes the user's philosophical approach to AI system design, which is a work-related characteristic but does not mention ADHD or anything related to a neurodevelopmental diagnosis from college. It neither supports the correct answer nor contains any wrong indicators.",
+    "question_id": "priya_q03",
+    "edge_uuid": "85f7b544-1782-4c28-bb48-05320a61bc65"
+  },
+  "4f4b929e9894f3cf": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about building a shared organizational system with Raj does not mention ADHD or provide any information about Priya's learning or work style related to her diagnosis. It is tangentially related to organization but does not support the correct answer.",
+    "question_id": "priya_q03",
+    "edge_uuid": "c85236dc-030e-40e1-9c12-72fec7ab1b57"
+  },
+  "d628abd0227c4f13": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about designing memory systems for AI is about the user's professional work, not about their learning or work style related to ADHD. It doesn't support the correct answer about an ADHD diagnosis, nor does it contain any wrong indicators.",
+    "question_id": "priya_q03",
+    "edge_uuid": "6bc43d2b-af6d-42e4-920f-f451fe2be048"
+  },
+  "d929461038f9b343": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about enjoying engaging and propulsive books is a reading preference, not directly related to ADHD diagnosis or learning/work style. While there could be an indirect connection (ADHD individuals often need highly engaging content), the fact does not mention ADHD, a diagnosis, or work/learning style explicitly enough to support the correct answer.",
+    "question_id": "priya_q03",
+    "edge_uuid": "65bab680-2bea-4d8a-ad56-2fb7b9fa26d2"
+  },
+  "16d0f43d6ff50524": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Priya's mom being a home cook specializing in South Indian food has no relevance to Priya's learning/work style or ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "8c79ad787e8cf47a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about evaluating AI self-representations has no relevance to Priya's learning/work style or ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "a3dccbb3-1dc8-474e-8d94-cec716949af3"
+  },
+  "38fb206f795beb39": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact refers to the dentist appointment on Thursday (June 12), which is listed as a wrong/stale indicator \u2014 this event has already passed. The fact does not mention the Tokyo conference on March 20, which is the correct upcoming appointment.",
+    "question_id": "priya_q04",
+    "edge_uuid": "1ff7c060-9af0-444e-b331-c6915d04b94c"
+  },
+  "5276bd86ef0c5974": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact mentions a dentist appointment on Thursday, which matches the wrong/stale indicator 'Dentist Thursday June 12.' There is no mention of the Tokyo conference on March 20, so it does not support the correct answer.",
+    "question_id": "priya_q04",
+    "edge_uuid": "de26c610-b22f-40b1-aa70-d48890ef0b1f"
+  },
+  "2797d72a55e0d002": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom storage arrangements and has no relevance to Priya's appointments or the Tokyo conference.",
+    "question_id": "priya_q04",
+    "edge_uuid": "3752dbf2-285f-417c-aa3b-cc6b492d2f7d"
+  },
+  "0ef60ffad44538c6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about December being quiet with fewer meetings does not mention the Tokyo conference on March 20 or the dentist appointment. It provides no relevant information to answer whether Priya has upcoming appointments matching either the correct or wrong indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "1e2db496-c204-4591-8365-17e22fee2596"
+  },
+  "816bc7b5b348ad72": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mother's age, location, and background \u2014 completely unrelated to any appointments or scheduled events.",
+    "question_id": "priya_q04",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "c5dc5a238c47eccd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about winery tastings is unrelated to the Tokyo conference or dentist appointments being evaluated.",
+    "question_id": "priya_q04",
+    "edge_uuid": "4e69539f-3bcb-41a4-ab23-4eb01c48bd91"
+  },
+  "5c2c9954b21a223b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a workshop booking without a specific date, and does not reference the Tokyo conference on March 20 or the dentist appointment. It neither supports the correct answer nor contains the wrong/stale indicators specified.",
+    "question_id": "priya_q04",
+    "edge_uuid": "48ad5f87-db9b-403e-a1a3-757066976385"
+  },
+  "e8b054e6601ddf12": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a restaurant reservation at Uchi, which is unrelated to the Tokyo conference (correct answer) or the dentist appointment (wrong indicator). It neither supports nor contradicts the question about upcoming appointments in the relevant context.",
+    "question_id": "priya_q04",
+    "edge_uuid": "ca4b1274-411b-4224-b82e-43f95420acb0"
+  },
+  "235389ddad24dcf2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's interest in planning/scheduling tools (Reclaim.ai, Sunsama, visual planning apps) and does not mention any specific appointments, conferences, or deadlines. It neither supports the Tokyo conference answer nor contains the stale dentist appointment indicator.",
+    "question_id": "priya_q04",
+    "edge_uuid": "801c387a-602f-4dba-9fd3-58974dae4688"
+  },
+  "7dbbba206f2726f3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about renegotiating bathroom space with Raj is entirely unrelated to Priya's upcoming appointments, the Tokyo conference, or any dentist appointments.",
+    "question_id": "priya_q04",
+    "edge_uuid": "0257acc5-58f0-47bd-a9e2-a59638f9ab16"
+  },
+  "f828337871de3c41": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes Priya actively looking for a pet-friendly apartment to get a puppy, which reflects the earlier intention to get a pet. This has been superseded by the landlord saying no, making this an outdated/retracted plan. It contains the wrong indicator of planning to get a dog.",
+    "question_id": "priya_q05",
+    "edge_uuid": "1d593967-ace0-476d-be35-c278d4a6dcb4"
+  },
+  "708b675ac20d739f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes an intermediate step (checking the lease) that occurred before the landlord's denial was established. It does not reflect the final outcome (landlord said no to pets), so it does not support the correct answer. However, it doesn't directly match the listed wrong indicators (golden retrievers, looking at, planning to get a dog) \u2014 it's more of a neutral/outdated procedural step rather than a clear wrong indicator.",
+    "question_id": "priya_q05",
+    "edge_uuid": "232d5ce3-30e7-4a61-a74c-d093587f3857"
+  },
+  "b82dffe9e0bea76f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about wanting a pet-friendly lease implies Priya is still pursuing the possibility of getting a pet, which contradicts the correct answer that her landlord said no and she is not planning to get a pet. However, it doesn't explicitly contain the listed wrong indicators ('golden retrievers', 'looking at', 'planning to get a dog'). It neither supports the correct answer nor directly matches the specified stale indicators.",
+    "question_id": "priya_q05",
+    "edge_uuid": "6d159af9-3537-482b-816c-09ae6dbbc0be"
+  },
+  "557fa41fd62eb03f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact states Priya is considering getting a golden retriever puppy, which is the retracted/superseded plan. The landlord said no, so this earlier intention has been overridden. 'Golden retriever' is explicitly listed as a wrong indicator.",
+    "question_id": "priya_q05",
+    "edge_uuid": "c4b87f8c-0cfb-46b5-89c8-f27888d3161e"
+  },
+  "246d77fbdb726248": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact about being interested in puppy supplies implies she is still planning to get a dog, which contradicts the final outcome where the landlord said no. This reflects the retracted intention rather than the final decision.",
+    "question_id": "priya_q05",
+    "edge_uuid": "cefb8a32-e8e0-4e8c-9e8a-e1e9bffea73c"
+  },
+  "92867bd89d637d0d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about visiting an Indian grocery store for ingredients, which is completely unrelated to the question about Priya's pet plans or the landlord situation.",
+    "question_id": "priya_q05",
+    "edge_uuid": "c6a80ce0-3411-46b1-afdd-c14d6b543241"
+  },
+  "478232762a0aaaf5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about kitchen reorganization and has no relevance to the question about pet ownership or the landlord's denial.",
+    "question_id": "priya_q05",
+    "edge_uuid": "8b5ffb1f-a18a-44d0-a2c4-21dbee6399c3"
+  },
+  "031165b5de49359c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact implies Priya is still pursuing getting a dog by planning to contact the breeder again, which contradicts the correct answer that the landlord said no and she is not planning to get a pet. This is a wrong/stale indicator as it reflects the pre-retraction plan.",
+    "question_id": "priya_q05",
+    "edge_uuid": "35776370-3e7b-4d37-9a16-da712f5e49be"
+  },
+  "79e46e265e503110": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact about researching a breeder is part of the original dog-acquisition plan that was retracted when the landlord said no. This reflects the superseded intention rather than the final outcome (no pet).",
+    "question_id": "priya_q05",
+    "edge_uuid": "6b4a756d-3d74-4a76-b676-3ce853d3edbb"
+  },
+  "fb10cfe70dcef8f9": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact about naming a puppy 'Mango' clearly reflects the earlier intention to get a dog, which was subsequently retracted when the landlord said no. This is a stale/superseded fact that contradicts the correct answer.",
+    "question_id": "priya_q05",
+    "edge_uuid": "9907880b-6d60-4f5f-9c91-626c993fed81"
+  },
+  "7600700f4ab78eca": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Raj having a drawer and bathroom shelf directly supports the current situation where Raj is effectively semi-permanently present, aligning with the correct answer that he's there most nights. No indication of living alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "3752dbf2-285f-417c-aa3b-cc6b492d2f7d"
+  },
+  "1ebec25fb870182f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about someone's mother living in the US and growing up in Chennai, which is completely unrelated to Priya's living situation.",
+    "question_id": "priya_q06",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "f86d8d495fc5112d": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact confirms the studio apartment, which is part of the correct answer. It does not contain the wrong indicator ('lives alone'), and while it omits the detail about boyfriend Raj being there most nights, it still partially supports the correct answer per AV6 rules.",
+    "question_id": "priya_q06",
+    "edge_uuid": "cda14712-070b-469c-a1eb-5d52722af8a0"
+  },
+  "fa539c51dec4227c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's cooking style and has no relevance to Priya's living situation.",
+    "question_id": "priya_q06",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "29a98e81e9559e89": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Raj being present in Priya's living space (leaving items in the kitchen), which is consistent with the correct answer that Raj is there most nights. While calling him 'roommate' rather than 'boyfriend' is imprecise, the fact clearly supports that Raj has a regular presence in her home. It does not contain the wrong indicator of 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "83d93ca8c278a73b": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact implies Raj is regularly present in Priya's living space (his belongings, cooking habits need accommodation), which supports the correct answer that Raj is there most nights. No indication of living alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "8b5ffb1f-a18a-44d0-a2c4-21dbee6399c3"
+  },
+  "c95e92aa81eec9a7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about growing up in India and Texas is about background/upbringing, not current living situation. It neither supports the correct answer nor contains the wrong indicator.",
+    "question_id": "priya_q06",
+    "edge_uuid": "95a49218-0204-4ae0-9049-bea4e1762640"
+  },
+  "9fcf1dfb3b0bc18f": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references Raj and renegotiating bathroom space, which implies Raj is frequently present in Priya's living space \u2014 consistent with the correct answer that Raj is there most nights. No indication of living alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "0257acc5-58f0-47bd-a9e2-a59638f9ab16"
+  },
+  "a81798f50551f197": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions cooking for themselves and Raj together, which supports the current living situation where boyfriend Raj is present most nights. It does not suggest Priya lives alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "201b25e6-4452-4376-9e2c-612905cab150"
+  },
+  "57d3161be8865d19": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact 'User might go solo or with Raj' appears to reference a travel or activity decision, not Priya's living situation. It neither confirms she lives in a studio with Raj there most nights nor indicates she lives alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "50c0eed2-2b6f-4d72-ade9-07b065734479"
+  },
+  "5ab8cb0214d26534": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking habits and has no relevance to Priya's exercise routine. It neither supports rock climbing nor contains any mention of hot yoga or yoga.",
+    "question_id": "priya_q07",
+    "edge_uuid": "0a22fe08-9d4d-4496-9bf2-d3377f7870bc"
+  },
+  "0f644170e2aeae46": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj leaving protein shakes in the kitchen \u2014 it contains no information about Priya's exercise routine and neither supports rock climbing nor indicates the stale yoga preferences.",
+    "question_id": "priya_q07",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "8e38053184244669": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's mom's cooking specialty and has no relevance to Priya's exercise habits.",
+    "question_id": "priya_q07",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "d40e5fb88e148183": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking habits and food preferences, not exercise. It contains no information about rock climbing, hot yoga, or any exercise activity.",
+    "question_id": "priya_q07",
+    "edge_uuid": "b787bcb3-5fa0-4f5a-9e07-fc9b887b2278"
+  },
+  "bfda922a9478a949": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking Japanese curry and is completely unrelated to exercise or physical activity preferences.",
+    "question_id": "priya_q07",
+    "edge_uuid": "9b1086b2-a959-47be-bf84-889d64f26ef4"
+  },
+  "1072d8ec6dca0fe0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about meal prep habits and has no relevance to exercise activities.",
+    "question_id": "priya_q07",
+    "edge_uuid": "2462cdc6-5a70-4be7-9b96-9ec3db9c310d"
+  },
+  "ea7090649d471a51": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about food ingredients (basmati rice and spinach) and has no relevance to Priya's exercise habits.",
+    "question_id": "priya_q07",
+    "edge_uuid": "5e1a35ac-1f0a-4f6a-8054-9956aa4c94b4"
+  },
+  "61380647190dee6c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking curry with Raj and has no relevance to Priya's exercise habits or any of the indicators being evaluated.",
+    "question_id": "priya_q07",
+    "edge_uuid": "201b25e6-4452-4376-9e2c-612905cab150"
+  },
+  "f96fe36e214b5bb5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking dal from scratch and has no relevance to Priya's exercise habits or rock climbing.",
+    "question_id": "priya_q07",
+    "edge_uuid": "622b15e2-9201-48e5-b4df-2e71655d5f40"
+  },
+  "bf29db4849454103": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about being vegetarian is entirely unrelated to the question about exercise. It neither supports the correct answer (rock climbing) nor contains any wrong indicators (hot yoga, yoga 4x).",
+    "question_id": "priya_q07",
+    "edge_uuid": "551a1e96-ca0c-4baf-a725-f8cbadbbfe3b"
+  },
+  "153e3fc44895a7fa": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about kitchen reorganization and has no relevance to Priya's relocation plans or NYC considerations.",
+    "question_id": "priya_q08",
+    "edge_uuid": "8b5ffb1f-a18a-44d0-a2c4-21dbee6399c3"
+  },
+  "93a067a92c371b2e": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's age and background, completely unrelated to Priya's relocation plans.",
+    "question_id": "priya_q08",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "017e853f9b1aab81": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact says 'considering moving' which reflects the tentative, undecided state matching the correct answer. It does not assert a firm decision to move to NYC, so it does not trigger the wrong indicator of 'moving to NYC' as a definitive plan.",
+    "question_id": "priya_q08",
+    "edge_uuid": "98060223-0045-4218-83a7-ea161eba4923"
+  },
+  "c2e68c2ff5e93b95": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom storage arrangement and cohabitation, which is completely unrelated to Priya's relocation plans or her situation in Austin/NYC.",
+    "question_id": "priya_q08",
+    "edge_uuid": "3752dbf2-285f-417c-aa3b-cc6b492d2f7d"
+  },
+  "8f443bdf97c6220f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about visiting an Indian grocery store for ingredients and has no relevance to Priya's relocation plans or NYC considerations.",
+    "question_id": "priya_q08",
+    "edge_uuid": "c6a80ce0-3411-46b1-afdd-c14d6b543241"
+  },
+  "83f474500047a104": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes a concrete plan to tour apartments and move in August, which implies a decided relocation. This contradicts the correct answer that she hasn't decided and is still in Austin. It represents an earlier or more committed position that has since been walked back to uncertainty.",
+    "question_id": "priya_q08",
+    "edge_uuid": "038e8ef1-f764-4806-a244-78546433734f"
+  },
+  "cd614474f238dec7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact treats moving as a decided event ('after moving'), which contradicts the correct answer that Priya is still undecided and currently in Austin. While it doesn't explicitly mention NYC, it implies relocation is a settled plan rather than something still being considered, making it a wrong indicator.",
+    "question_id": "priya_q08",
+    "edge_uuid": "35776370-3e7b-4d37-9a16-da712f5e49be"
+  },
+  "f35b79c001085325": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about renegotiating bathroom space with Raj is completely unrelated to Priya's relocation plans or her status in Austin/NYC.",
+    "question_id": "priya_q08",
+    "edge_uuid": "0257acc5-58f0-47bd-a9e2-a59638f9ab16"
+  },
+  "181f09c5a154121c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about an organizational system with Raj and has no relevance to Priya's relocation plans or NYC considerations.",
+    "question_id": "priya_q08",
+    "edge_uuid": "c85236dc-030e-40e1-9c12-72fec7ab1b57"
+  },
+  "03f333e86c06cdb1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about growing up in India and Texas is background/origin information and does not address Priya's current relocation plans or thoughts about NYC vs Austin.",
+    "question_id": "priya_q08",
+    "edge_uuid": "95a49218-0204-4ae0-9049-bea4e1762640"
+  },
+  "65a0c3b49ec79ab3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about meal prep timing/habits (Sunday prep, reheating during week) and contains no information about health conditions like chronic migraines or omega-3 needs.",
+    "question_id": "priya_q09",
+    "edge_uuid": "2462cdc6-5a70-4be7-9b96-9ec3db9c310d"
+  },
+  "3694e81a45ded25a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about available ingredients (basmati rice and spinach) and contains no information about health conditions, migraines, or omega-3 needs.",
+    "question_id": "priya_q09",
+    "edge_uuid": "5e1a35ac-1f0a-4f6a-8054-9956aa4c94b4"
+  },
+  "f3807db1c68d2eef": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references migraines as a health concern for Priya and connects them to meal patterns, which is directly relevant to her chronic migraine condition that a meal plan should account for. This is a partial but valid match.",
+    "question_id": "priya_q09",
+    "edge_uuid": "16197e73-4845-426f-8b76-b6e21bb7df1b"
+  },
+  "2b6d6adfa08e0a5f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking methods (mashed dal, toor dal water) and has no relation to health conditions like chronic migraines or omega-3 requirements.",
+    "question_id": "priya_q09",
+    "edge_uuid": "89095276-c7bb-46e1-b649-a4575833e72c"
+  },
+  "b2379aad9f463c1c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the roommate Raj leaving protein shakes in the kitchen, which is unrelated to Priya's health conditions (chronic migraines or omega-3 needs).",
+    "question_id": "priya_q09",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "5ddce88cd043808d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes the user's cooking preferences and comfort foods (South Indian vegetarian dishes, rasam), but contains no information about health conditions such as chronic migraines or omega-3 requirements.",
+    "question_id": "priya_q09",
+    "edge_uuid": "b787bcb3-5fa0-4f5a-9e07-fc9b887b2278"
+  },
+  "d4395f11a7263b18": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references migraines and diet, which is directly relevant to the correct answer about chronic migraines needing to be accounted for in a meal plan. Partial match counts under AV3_stable_identity.",
+    "question_id": "priya_q09",
+    "edge_uuid": "b095b4d9-7298-4c7f-bd08-93335beddfce"
+  },
+  "f90c0118c343a511": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact that the user is vegetarian is relevant dietary information but does not address the specific health conditions asked about \u2014 chronic migraines or the need for more omega-3s. It neither supports the correct answer nor contains any wrong/stale indicators.",
+    "question_id": "priya_q09",
+    "edge_uuid": "551a1e96-ca0c-4baf-a725-f8cbadbbfe3b"
+  },
+  "c4e076e91d9d10e6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about kitchen reorganization for Raj and has no relevance to Priya's health conditions such as chronic migraines or omega-3 needs.",
+    "question_id": "priya_q09",
+    "edge_uuid": "8b5ffb1f-a18a-44d0-a2c4-21dbee6399c3"
+  },
+  "348fb05e15e31c85": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions making curry with shrimp, which is tangentially related to omega-3s (shrimp contains some omega-3s), but the fact does not mention health conditions, chronic migraines, or omega-3 recommendations. The connection is too indirect and implicit to count as supporting the correct answer about Priya's health conditions.",
+    "question_id": "priya_q09",
+    "edge_uuid": "9b1086b2-a959-47be-bf84-889d64f26ef4"
+  },
+  "a4a31f82d319a9cc": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact directly references the NeurIPS paper deadline in early June, which matches the correct answer. No mention of the expired/stale lease information.",
+    "question_id": "priya_q10",
+    "edge_uuid": "56733a6e-8025-421d-8f43-4ecece7792c5"
+  },
+  "a7c3200b69168f0b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes a weekly schedule with tasks and appointments, but contains no information about the NeurIPS paper deadline in early June 2026 or any lease-related information. It neither supports the correct answer nor contains wrong/stale indicators.",
+    "question_id": "priya_q10",
+    "edge_uuid": "de26c610-b22f-40b1-aa70-d48890ef0b1f"
+  },
+  "dea564a3ca1a57ff": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a code review due Wednesday, which is neither the NeurIPS paper deadline (correct answer) nor the lease expiration (wrong indicator). It's an unrelated deadline that neither supports the correct answer nor contains the stale lease information.",
+    "question_id": "priya_q10",
+    "edge_uuid": "b5dfe19f-ba79-4a46-a920-741c6fa6c77a"
+  },
+  "86f0d7921117a179": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact refers to a quarterly report draft planned for Thursday morning, which is unrelated to the NeurIPS paper deadline (early June 2026). It neither supports the correct answer nor contains the wrong/stale indicators about the lease expiring August 2025.",
+    "question_id": "priya_q10",
+    "edge_uuid": "d683a06e-7dd8-4a6b-81ee-dc73e19473cc"
+  },
+  "44e40644a8d0eca1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about starting a new job at Anthropic, which is unrelated to the NeurIPS paper deadline (correct answer) or the lease expiration (wrong indicator). It neither supports nor contradicts the relevant deadline information.",
+    "question_id": "priya_q10",
+    "edge_uuid": "25d2832d-65ba-4de9-aab8-3fb457cf0e61"
+  },
+  "432b2338ce8e6387": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about December being quiet with fewer meetings is unrelated to any upcoming deadlines. It neither supports the NeurIPS paper deadline nor contains the wrong/stale lease indicator.",
+    "question_id": "priya_q10",
+    "edge_uuid": "1e2db496-c204-4591-8365-17e22fee2596"
+  },
+  "6303b13a6e07130f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about spending more time on screens due to a new job contains no information about any deadlines \u2014 neither the NeurIPS paper deadline nor the lease expiration.",
+    "question_id": "priya_q10",
+    "edge_uuid": "537b2587-997b-401b-b651-9c4e9f75018f"
+  },
+  "234467cb1d317713": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's age and background (early 60s, lives in US, grew up in Chennai). It contains no information about deadlines, the NeurIPS paper, or the lease.",
+    "question_id": "priya_q10",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "4848cd533c9fcb15": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom storage arrangements and has no relevance to Priya's upcoming deadlines or any logistics/deadlines at all.",
+    "question_id": "priya_q10",
+    "edge_uuid": "3752dbf2-285f-417c-aa3b-cc6b492d2f7d"
+  },
+  "66b698ff4055ab16": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a dentist appointment on Thursday at 2pm, which is neither the correct answer (NeurIPS paper deadline early June 2026) nor does it contain the wrong/stale indicators (lease expiry). It is an unrelated scheduling item.",
+    "question_id": "priya_q10",
+    "edge_uuid": "1ff7c060-9af0-444e-b331-c6915d04b94c"
+  },
+  "d220b83ca70e757c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom being a home cook specializing in South Indian food, not about Priya's own free time activities. While it provides cultural context that could relate to Priya's Tamil recipe cooking experiments, it does not directly describe anything Priya does in her free time. Even under AV5's generous partial coverage standard, this fact is about a different person entirely.",
+    "question_id": "priya_q11",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "c809f4a1494bfd82": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions cooking South Indian vegetarian dishes and rasam, which aligns with 'cooking experiments (Tamil recipes)' in the correct answer. Under AV5_broad_query, partial coverage counts, and this clearly supports one of the listed free-time activities. No wrong indicators like hot yoga are present.",
+    "question_id": "priya_q11",
+    "edge_uuid": "b787bcb3-5fa0-4f5a-9e07-fc9b887b2278"
+  },
+  "064358182042c6aa": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mother (her age, location, and origin in Chennai) and contains no information about Priya's free time activities such as rock climbing, cooking experiments, or travel planning.",
+    "question_id": "priya_q11",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "e7c1201374949dc3": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references cooking activity, which partially overlaps with the correct answer's 'cooking experiments' element. Under AV5_broad_query rules, partial coverage counts. No wrong/stale indicators present.",
+    "question_id": "priya_q11",
+    "edge_uuid": "0a22fe08-9d4d-4496-9bf2-d3377f7870bc"
+  },
+  "c267ff6f10d0cd7d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about enjoying engaging and propulsive books is a free time activity, but it does not match any of the correct answer items (rock climbing, cooking experiments with Tamil recipes, travel planning). It also does not contain the wrong indicator (hot yoga).",
+    "question_id": "priya_q11",
+    "edge_uuid": "65bab680-2bea-4d8a-ad56-2fb7b9fa26d2"
+  },
+  "c0b632cebe462226": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact 'User might go solo or with Raj' is too vague to support any of the correct free time activities (rock climbing, cooking experiments, travel planning). It could tangentially relate to travel planning, but there's no explicit connection. It also does not contain the wrong indicator 'hot yoga'.",
+    "question_id": "priya_q11",
+    "edge_uuid": "50c0eed2-2b6f-4d72-ade9-07b065734479"
+  },
+  "bb4b08b53f8624b0": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about visiting an Indian grocery store to buy tamarind and other ingredients relates to cooking experiments with Tamil recipes, which is one of Priya's free-time activities listed in the correct answer. Partial coverage counts for AV5.",
+    "question_id": "priya_q11",
+    "edge_uuid": "c6a80ce0-3411-46b1-afdd-c14d6b543241"
+  },
+  "e98552bdeadfbfae": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about spending more time on screens due to a new job does not mention any of the correct free time activities (rock climbing, Tamil cooking, travel planning), nor does it mention the wrong indicator (hot yoga). It's tangentially related to time use but doesn't support the correct answer.",
+    "question_id": "priya_q11",
+    "edge_uuid": "537b2587-997b-401b-b651-9c4e9f75018f"
+  },
+  "05a8107d658c810d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about planning tools like Reclaim.ai and Sunsama relates to productivity/scheduling interests, not directly to free time activities like rock climbing, cooking experiments, or travel planning. While travel planning could loosely connect, these are work/organization tools rather than free time hobbies. No wrong indicators present.",
+    "question_id": "priya_q11",
+    "edge_uuid": "801c387a-602f-4dba-9fd3-58974dae4688"
+  },
+  "89b38ee60991c349": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj and his protein shakes/supplements in the kitchen. It contains no information about Priya's free time activities (rock climbing, cooking experiments, travel planning), nor does it mention the wrong indicator (hot yoga).",
+    "question_id": "priya_q11",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "0afa95a873f2c2e0": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact that mom grew up in Chennai directly supports the 'parents from Chennai' part of the correct answer, confirming Tamil family background.",
+    "question_id": "priya_q12",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "215feb57d701c8fd": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact that mom specializes in traditional South Indian food is a related fact that supports the Tamil/Chennai family background. Per AV3 rules, related facts count and partial matches are accepted generously.",
+    "question_id": "priya_q12",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "f9dcb94afd73f2bf": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Growing up in India is related to the Tamil/Chennai family background mentioned in the correct answer. Under AV3 rules, partial matches count, and 'grew up in India' is consistent with having parents from Chennai. No wrong indicators are present.",
+    "question_id": "priya_q12",
+    "edge_uuid": "95a49218-0204-4ae0-9049-bea4e1762640"
+  },
+  "737bbcf4202ed465": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Rasam is a traditional Tamil dish, and the detail about the user's mom making homemade rasam powder is culturally indicative of a Tamil background. Under AV3 generous matching rules, this related cultural fact supports the Tamil family background aspect of the correct answer, even though it doesn't mention Chennai or brother Arjun.",
+    "question_id": "priya_q12",
+    "edge_uuid": "24a3fe55-3c84-46fb-9212-d01481ab5f37"
+  },
+  "e909d46a7dc16820": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's cohabitation arrangements (drawer and shelf in bathroom) and contains no information about Priya's Tamil background, parents from Chennai, or brother Arjun in Seattle.",
+    "question_id": "priya_q12",
+    "edge_uuid": "3752dbf2-285f-417c-aa3b-cc6b492d2f7d"
+  },
+  "6c0bf7c3265965b9": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact lists pantry ingredients commonly used in South Asian cooking, which is tangentially consistent with a Tamil background, but it does not directly support the specific family background details asked about (Tamil heritage, parents from Chennai, brother Arjun in Seattle). This is too indirect to count as supporting the correct answer.",
+    "question_id": "priya_q12",
+    "edge_uuid": "cd85693d-fc06-45aa-8ebe-dfd84ac3d174"
+  },
+  "eea010b34e652f32": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions brother Arjun from Seattle, which directly matches part of the correct answer about Priya's younger brother Arjun being in Seattle. Partial coverage counts for AV3/AV5.",
+    "question_id": "priya_q12",
+    "edge_uuid": "10026f1c-67a5-4829-af50-5e94cf14961e"
+  },
+  "72e6b6b804dbb54f": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Cooking South Indian vegetarian dishes and considering rasam a comfort food is consistent with and supportive of Tamil family background. Rasam is a quintessentially Tamil dish, making this a related fact that partially supports the correct answer. However, it does not mention parents from Chennai or brother Arjun in Seattle.",
+    "question_id": "priya_q12",
+    "edge_uuid": "b787bcb3-5fa0-4f5a-9e07-fc9b887b2278"
+  },
+  "2571da795d42329a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking curry for themselves and Raj, which contains no information about Priya's family background, Tamil heritage, parents from Chennai, or brother Arjun in Seattle.",
+    "question_id": "priya_q12",
+    "edge_uuid": "201b25e6-4452-4376-9e2c-612905cab150"
+  },
+  "29decf793639fb5c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions visiting an Indian grocery store for tamarind, which has no direct connection to Priya's family background (Tamil heritage, parents from Chennai, brother Arjun in Seattle). While it loosely implies Indian cultural ties, it does not support the specific family background details asked about, even under a generous partial match standard.",
+    "question_id": "priya_q12",
+    "edge_uuid": "c6a80ce0-3411-46b1-afdd-c14d6b543241"
+  },
+  "f91b9e1505cb8b4f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's cooking specialty and is completely unrelated to how often Priya practiced hot yoga.",
+    "question_id": "priya_q13",
+    "edge_uuid": "ac77537a-e445-4830-a910-e675cd5ae199"
+  },
+  "68c001dd9e56c2be": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about renegotiating bathroom space with Raj, which is completely unrelated to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "0257acc5-58f0-47bd-a9e2-a59638f9ab16"
+  },
+  "552eeeb29bf28f2c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking South Indian vegetarian dishes and rasam as comfort food. It contains no information about hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "b787bcb3-5fa0-4f5a-9e07-fc9b887b2278"
+  },
+  "cb023b6b9c6a4d43": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj leaving protein shakes in the kitchen, which is completely unrelated to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "eb5b7149-4473-4ee0-a581-c7fc9a5f068f"
+  },
+  "a76313ba242d22fd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about making vegetarian Japanese curry with shrimp and has no relevance to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "9b1086b2-a959-47be-bf84-889d64f26ef4"
+  },
+  "3cf39382520a4d25": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking habits and has no relevance to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "0a22fe08-9d4d-4496-9bf2-d3377f7870bc"
+  },
+  "eadcd31cee6725a8": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking curry for themselves and Raj, which is completely unrelated to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "201b25e6-4452-4376-9e2c-612905cab150"
+  },
+  "5d57b764fc35bf35": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about meal prep habits on Sundays and has no relevance to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "2462cdc6-5a70-4be7-9b96-9ec3db9c310d"
+  },
+  "5804d5b8cbe46a44": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's age and location, completely unrelated to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "50b84545-4917-4e29-b4cf-55c88b80362c"
+  },
+  "7b55bd3cefe14ff5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about dietary changes (vegetarian to eating salmon) and contains no information about hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "707a4967-aae7-4b99-b7e1-445c77fc8dba"
+  },
+  "95a9ff83b49952b1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions logistics about accommodation in Tokyo but contains no date information about the conference. It does not support the correct answer of March 20, 2026, nor does it contain any wrong date indicator.",
+    "question_id": "priya_q14",
+    "edge_uuid": "404139bc-0698-4f0d-b5b8-294065d46fc9"
+  },
+  "adca2836f1a78d67": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Tokyo in March with a conference, but does not preserve the specific date (March 20) or year (2026). AV8 requires numeric preservation, and the exact date is missing from the retrieved fact.",
+    "question_id": "priya_q14",
+    "edge_uuid": "f99d9cc5-af51-4c7e-86e4-6cf312f5bb20"
+  },
+  "529d5442791fcb40": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Tokyo but contains no information about a conference or any date. It only describes the user's perception of Tokyo as solo-traveler friendly.",
+    "question_id": "priya_q14",
+    "edge_uuid": "a719067e-02d7-4300-a188-21c7547e95b7"
+  },
+  "a9e47de9764e3983": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions wanting to explore areas in Tokyo (Akihabara, Nakamise, Yanaka), but contains no information about a conference or any date. It does not support the correct answer of March 20, 2026 for Priya's Tokyo conference.",
+    "question_id": "priya_q14",
+    "edge_uuid": "ade1844a-ce77-42a8-8ab6-c573e4302177"
+  },
+  "b305ba47dd1cc72d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Tokyo and a preference for staying in a central neighborhood, but contains no information about a conference date (March 20, 2026). It does not support the correct answer.",
+    "question_id": "priya_q14",
+    "edge_uuid": "57beae08-33ad-42d3-91bb-81cfcf2d25b0"
+  },
+  "0415b4c26e5fde09": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only mentions it's Priya's first time visiting Japan, which contains no date or conference-specific information to support or contradict the March 20, 2026 answer.",
+    "question_id": "priya_q14",
+    "edge_uuid": "0579669d-a086-4874-9715-71bd19822030"
+  },
+  "dd0b9b3a1691f215": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a NeurIPS paper deadline in early June, which is unrelated to a Tokyo conference on March 20, 2026. No relevant date or event information matches.",
+    "question_id": "priya_q14",
+    "edge_uuid": "56733a6e-8025-421d-8f43-4ecece7792c5"
+  },
+  "f0247f22bef6faab": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a restaurant reservation at Uchi and contains no information about a Tokyo conference or its date (March 20, 2026).",
+    "question_id": "priya_q14",
+    "edge_uuid": "ca4b1274-411b-4224-b82e-43f95420acb0"
+  },
+  "08494463b830c5e0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact makes no mention of Priya, Tokyo, a conference, or the date March 20, 2026. It refers to a workshop with an unscheduled date, which is completely unrelated to the question.",
+    "question_id": "priya_q14",
+    "edge_uuid": "48ad5f87-db9b-403e-a1a3-757066976385"
+  },
+  "633b515394121d3a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Tokyo-related activities (Tsukiji Market and ramen) but contains no date or conference information, so it cannot support the correct answer of March 20, 2026.",
+    "question_id": "priya_q14",
+    "edge_uuid": "b8746f83-0f23-413d-ad24-cc40961d0400"
+  },
+  "3b5bbb3557e92975": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact states 'User is vegetarian,' which is the outdated/superseded dietary restriction. The current correct information is that Priya is now pescatarian (eats fish), making 'vegetarian' a stale indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "3d70d535-1f7d-4378-a28d-67d2d167275b"
+  },
+  "76d540fba98b715c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes the user as cooking 'South Indian vegetarian dishes regularly,' which aligns with the outdated/stale indicator (vegetarian). It does not reflect the current pescatarian status or mention fish consumption.",
+    "question_id": "priya_q01",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "e3dbdbc70dc3413a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom being a home cook who makes traditional South Indian food. It does not mention Priya's dietary restrictions, vegetarianism, or pescatarian diet in any way.",
+    "question_id": "priya_q01",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "46a09f73bdf83ce8": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about having basmati rice and spinach to use up is about available ingredients, not dietary restrictions. It neither supports the pescatarian diet information nor contains the stale vegetarian indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "9a751eed-8e42-4e97-9600-7036e0206013"
+  },
+  "e11f8e8127417be3": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a diet change is occurring but doesn't specify what the dietary restriction is (pescatarian or vegetarian). It neither confirms the correct current answer nor contains the stale 'vegetarian' indicator.",
+    "question_id": "priya_q01",
+    "edge_uuid": "21cd7649-19b3-4c65-8403-fee204d96ff5"
+  },
+  "5ca16b85c0ec60cd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes the dish as 'vegetarian,' which is the stale/wrong indicator. While shrimp is mentioned (which aligns with pescatarian), the overall framing labels the meal as vegetarian, reinforcing the outdated dietary identity rather than the current pescatarian one.",
+    "question_id": "priya_q01",
+    "edge_uuid": "a3be1ca5-74c8-496b-98bb-a7c05e1887b9"
+  },
+  "b8a0eeada8e03136": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the roommate Raj leaving protein shakes in the kitchen, which is completely unrelated to Priya's dietary restrictions or pescatarian/vegetarian status.",
+    "question_id": "priya_q01",
+    "edge_uuid": "82206777-45f8-4a5f-9b1b-64a496555c4e"
+  },
+  "b43ef089f17f5434": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions 'diet as a potential trigger' but contains no information about Priya's dietary restrictions, neither the current pescatarian status nor the outdated vegetarian status.",
+    "question_id": "priya_q01",
+    "edge_uuid": "d3bc3b69-c7e4-40b5-97f2-a66f8c1839aa"
+  },
+  "4d83b2c2d8a33771": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact explicitly states 'Pescatarian diet' which matches the correct current answer, and adds relevant detail about seafood preferences. No stale 'vegetarian' indicator is present.",
+    "question_id": "priya_q01",
+    "edge_uuid": "d9f5b503-7a4c-47f9-9f97-44c99a2613c6"
+  },
+  "a3a9a8b59ed28094": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about visiting an Indian grocery store for tamarind and ingredients, which has no relevance to Priya's dietary restrictions or pescatarian/vegetarian status.",
+    "question_id": "priya_q01",
+    "edge_uuid": "e1058c9f-ff46-45cd-a181-b6e153f07e06"
+  },
+  "302365dfc41364fb": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only mentions a work-from-home arrangement and contains no information about Priya's employer or job title. It neither supports the correct answer (Senior ML engineer at Anthropic) nor contains any wrong/stale indicators (Google or Gemini memory team).",
+    "question_id": "priya_q02",
+    "edge_uuid": "3d2a6b89-00b3-4140-baeb-bb8ce41c73f1"
+  },
+  "4b775c97601be82b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom and contains no information about where Priya works. It is completely irrelevant to the question.",
+    "question_id": "priya_q02",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "53dea87baf71bad6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about an Amazon purchase consideration (a kadai) and has no relevance to where Priya works.",
+    "question_id": "priya_q02",
+    "edge_uuid": "6d7f1018-74ab-47f4-9294-c15ddd5b22ab"
+  },
+  "0e8bfea11a6af75a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom arrangements and is completely unrelated to Priya's workplace.",
+    "question_id": "priya_q02",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "e9942c121560d68c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's mom being a home cook and making traditional South Indian food. It contains no information about where Priya works and neither supports the correct answer nor contains any wrong/stale indicators.",
+    "question_id": "priya_q02",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "79fcb4484ce681e9": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact states the user works at Google on the Gemini team, which directly matches both wrong/stale indicators (Google and Gemini memory team). The correct current answer is that Priya works as a Senior ML engineer at Anthropic.",
+    "question_id": "priya_q02",
+    "edge_uuid": "fbc8705d-3949-40ce-8332-44e238bb8a62"
+  },
+  "18135aa17e1a91c1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about apartment search alerts and has no relevance to where Priya works. It neither supports the correct answer (Senior ML engineer at Anthropic) nor contains any wrong indicators (Google; Gemini memory team).",
+    "question_id": "priya_q02",
+    "edge_uuid": "79cd4ae0-0b62-4b9b-858f-ea4f940143d2"
+  },
+  "f9c15fa92b206721": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Anthropic as the new employer, which aligns with the correct answer. It does not mention Google or the Gemini memory team (the stale indicators). However, it describes a future start ('next Monday') and lists 'memory systems team' rather than 'Senior ML engineer,' suggesting this is an earlier version before the role fully materialized. Still, it points to Anthropic and not the wrong employer, so it partially supports the correct answer.",
+    "question_id": "priya_q02",
+    "edge_uuid": "e06379a6-aa41-488a-affd-d016c69dfaf2"
+  },
+  "57dc3cf0269efc3d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking habits (South Indian vegetarian dishes) and contains no information about Priya's workplace or employment.",
+    "question_id": "priya_q02",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "1e73b67e4fd06d50": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about kitchen reorganization and has no relevance to Priya's workplace or job title.",
+    "question_id": "priya_q02",
+    "edge_uuid": "f8952bfe-c9bf-482c-99a8-402c0f36e97f"
+  },
+  "0f23bc291ffa9df5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes Priya's work style as an ML engineer with deep work and reactive communication, which is tangentially related to work style but does not mention ADHD or any related diagnosis. The correct answer specifically requires knowledge of her ADHD diagnosis from college, which is absent from this fact.",
+    "question_id": "priya_q03",
+    "edge_uuid": "d2ab3dc1-2e98-4623-aae5-40d8675a1e98"
+  },
+  "11c68cf508358dc9": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about awareness of MemGPT, A-MEM, and CLS cognitive science theories relates to research knowledge, not to Priya's ADHD diagnosis or her personal learning/work style characteristics.",
+    "question_id": "priya_q03",
+    "edge_uuid": "34e5e679-986c-45d4-8c03-7769b370ea93"
+  },
+  "10d524917c100b09": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes a philosophical influence on the user's work, which is tangentially related to work style but does not mention ADHD or any learning/cognitive differences. It neither supports the correct answer nor contains any wrong indicators.",
+    "question_id": "priya_q03",
+    "edge_uuid": "3f3e8bf9-9cc2-4fd0-8bb6-8e75f50d8732"
+  },
+  "15cfa6d2e397add0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes the user's professional approach to designing AI systems with philosophical considerations, which does not mention ADHD or provide relevant information about learning/work style related to ADHD diagnosis. It is unrelated to the correct answer.",
+    "question_id": "priya_q03",
+    "edge_uuid": "89ed2c68-7205-4477-9903-b7eab969a16e"
+  },
+  "18e9783529798348": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about interest in query restructuring and optimization principles is unrelated to Priya's ADHD diagnosis or her learning/work style. It describes a technical interest, not a learning or work style characteristic.",
+    "question_id": "priya_q03",
+    "edge_uuid": "6115dd97-32ed-4607-930a-1771976f8cb3"
+  },
+  "ae7ad39dc96a2470": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about valuing flexible plans and avoiding over-planning describes a work/planning preference but does not mention ADHD or any related diagnosis. While ADHD can sometimes influence planning styles, this fact doesn't directly or clearly support the specific correct answer about Priya's ADHD diagnosis. It's too indirect to count even under a generous partial match standard.",
+    "question_id": "priya_q03",
+    "edge_uuid": "6fd8d44e-c8eb-4d97-bda1-14e84d58872e"
+  },
+  "543979611cf72b49": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about designing memory systems for AI is unrelated to Priya's ADHD diagnosis or learning/work style. It describes a professional activity, not a neurodevelopmental condition.",
+    "question_id": "priya_q03",
+    "edge_uuid": "b7e53240-24cb-49b1-88b6-c015502df1b5"
+  },
+  "6e79cafe4bd402dd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Priya's interest in cognitive science topics like brain information processing, which is tangentially related to neuroscience but does not reference her ADHD diagnosis or how it affects her learning/work style. Even being generous with partial matches, this fact doesn't meaningfully support the correct answer about her ADHD.",
+    "question_id": "priya_q03",
+    "edge_uuid": "fb206943-1178-49ad-8340-9471a25e6ffa"
+  },
+  "501a22c180e54b0c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about enjoying engaging and propulsive books is a reading preference, not a direct reference to ADHD or learning/work style. While there could be an indirect connection between ADHD and needing high-engagement content, this fact does not mention ADHD or provide enough information to support the correct answer about her ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "2deb6482-bfb8-4146-98ea-9eefb47b67d9"
+  },
+  "d151a4d3cfd95794": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Priya's mom being a home cook has no relevance to Priya's learning/work style or her ADHD diagnosis.",
+    "question_id": "priya_q03",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "5ce90e573ddc288b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes the dentist appointment on Thursday (June 12), which is explicitly listed as a wrong/stale indicator. It does not reference the Tokyo conference on March 20, which is the correct upcoming appointment. The dentist appointment is an expired/stale logistics fact.",
+    "question_id": "priya_q04",
+    "edge_uuid": "6dd52044-d309-4fd4-b02a-b49aa4dfa519"
+  },
+  "9fa01923bf38b1e0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom storage arrangement and has no relevance to Priya's appointments or the Tokyo conference.",
+    "question_id": "priya_q04",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "f0a01fad2044fa2b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "ERROR: Extra data: line 2 column 1 (char 610)",
+    "question_id": "priya_q04",
+    "edge_uuid": "7adcfe51-7e0a-4e39-8e8c-c0f084bd602b"
+  },
+  "b6129e15ce838a24": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes a general travel pattern (once a quarter for work) but contains no specific appointment information \u2014 neither the Tokyo conference nor the dentist appointment. It does not support the correct answer nor contain any wrong indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "4c8a203d-5ce5-4ef3-93a2-d3f547ffc276"
+  },
+  "dfe2582edd3bdc45": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact refers to a restaurant reservation at Uchi on Saturday at 7:30pm, which is unrelated to the Tokyo conference on March 20 (the correct answer) and does not mention the dentist appointment (the wrong indicator). This fact neither supports the correct answer nor contains a stale/wrong indicator.",
+    "question_id": "priya_q04",
+    "edge_uuid": "54c1e662-bcc5-48de-8f9d-7e2fd63c8287"
+  },
+  "87e4dd19b2340673": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mother's age, location, and background. It contains no information about appointments, conferences, or scheduling of any kind.",
+    "question_id": "priya_q04",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "3e6c9dad688ef1ac": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a productivity tool (Reclaim.ai) for calendar integration and has no relevance to upcoming appointments such as the Tokyo conference or dentist visits.",
+    "question_id": "priya_q04",
+    "edge_uuid": "d792dd3b-5058-4189-9f15-e91b2e5854ee"
+  },
+  "c7fd0b00cad7a3e2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about movie-watching plans and has no relevance to any appointments, conferences, or medical visits.",
+    "question_id": "priya_q04",
+    "edge_uuid": "47917ff7-5446-486c-865d-55efa5f53733"
+  },
+  "7cc862d55816c5a6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a workshop booking but contains no specific date or connection to the Tokyo conference (March 20) or the dentist appointment (June 12). It neither supports the correct answer nor contains any of the wrong/stale indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "b3b12a3c-64fd-4521-b1a9-6ea851a9d405"
+  },
+  "6fe1f88855736792": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about going solo or with Raj is unrelated to any appointments, the Tokyo conference, or the dentist. It does not support the correct answer nor contain any wrong indicators.",
+    "question_id": "priya_q04",
+    "edge_uuid": "ce3cd4dc-353a-4e5f-ae0a-24b9ee1133e0"
+  },
+  "684843d23f39eabd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact implies Priya is still actively planning to get a pet by seeking a pet-friendly apartment, which contradicts the correct answer that her pet plans were denied by the landlord. This represents the pre-denial intention rather than the final outcome, making it a stale/wrong indicator under AV7 criteria.",
+    "question_id": "priya_q05",
+    "edge_uuid": "e41e2567-af37-4827-8cbf-f80bed68536c"
+  },
+  "54db2d7eb27327d5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes Priya actively looking for a pet-friendly apartment to get a puppy, which reflects the old/retracted plan. The correct answer is that she is NOT planning to get a pet because her landlord said no. This fact directly contradicts the final outcome and contains the stale intention of getting a dog/puppy.",
+    "question_id": "priya_q05",
+    "edge_uuid": "abe8c587-8638-4b06-a65c-a786745ebb2f"
+  },
+  "4ae39c3dcce61083": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about thinking about pet policies in the lease is related to the landlord/lease restriction context, which aligns with the correct answer that the landlord said no. It does not contain any wrong indicators like 'planning to get a dog' or 'golden retrievers'.",
+    "question_id": "priya_q05",
+    "edge_uuid": "0537d219-b9f6-47f7-b57c-0d45490d35f1"
+  },
+  "de10cbddc90b9740": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact reflects Priya's earlier excitement about getting a dog, which is the retracted plan. It does not reflect the final outcome where the landlord denied pets, making it a wrong/stale indicator.",
+    "question_id": "priya_q05",
+    "edge_uuid": "6d2a3fbf-d172-46bf-b9e7-bb0a55fb5b14"
+  },
+  "435cb9ad634c35b8": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact states Priya is considering getting a golden retriever puppy, which directly matches the wrong/stale indicators ('golden retrievers', 'planning to get a dog'). This reflects the outdated intention before the landlord said no, not the final outcome where the plan was abandoned.",
+    "question_id": "priya_q05",
+    "edge_uuid": "e030004b-edcd-4f82-bac9-852b844c3fd9"
+  },
+  "93e2075dae06fc8d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact indicates Priya is still planning to get a dog (contacting the breeder again), which directly contradicts the correct answer that her landlord said no. This reflects the retracted/superseded plan rather than the final outcome.",
+    "question_id": "priya_q05",
+    "edge_uuid": "c4068e05-9066-4fed-9f06-8f626404e842"
+  },
+  "48ae56eb4cc40d3c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact about considering supplies for a puppy reflects the earlier intention to get a dog, before the landlord denied pets. This is the retracted plan and does not reflect the final outcome (no pet).",
+    "question_id": "priya_q05",
+    "edge_uuid": "c3f2117f-3130-4500-978b-4e5f7a20b652"
+  },
+  "025489347ff85259": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact about being interested in 'first-week puppy care tips' implies Priya is still planning to get a dog, which contradicts the correct answer that her landlord said no and she is not getting a pet. This aligns with the wrong/stale indicator of 'planning to get a dog'.",
+    "question_id": "priya_q05",
+    "edge_uuid": "3a5c9c47-a471-4602-8271-4f9ca37d5adf"
+  },
+  "9da00ee58b5e0017": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about buying a kadai (cooking vessel) as a gift and is completely unrelated to the question about pet ownership or the landlord situation.",
+    "question_id": "priya_q05",
+    "edge_uuid": "6c5916af-c4d8-4c69-97af-50f0afd5eafd"
+  },
+  "cc50deaa4d79a93a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about kitchen reorganization and Raj's belongings \u2014 completely unrelated to Priya's pet situation or the landlord's denial.",
+    "question_id": "priya_q05",
+    "edge_uuid": "f8952bfe-c9bf-482c-99a8-402c0f36e97f"
+  },
+  "2ed4f9202c4dde3c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact correctly identifies the studio apartment but omits the key current detail that boyfriend Raj is there most nights. For AV6, supports_correct requires the LATEST version of the information, which includes Raj's presence. However, the fact does not explicitly state she lives alone, so the wrong indicator is not triggered.",
+    "question_id": "priya_q06",
+    "edge_uuid": "f3b26da7-6027-4abf-92e2-8b090a84cffa"
+  },
+  "f5d9bcdf44231918": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Raj having a drawer and bathroom shelf strongly implies he is frequently/semi-permanently present in Priya's living space, which supports the correct answer that boyfriend Raj is there most nights. No indication of living alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "acc9262edf5a17e4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about someone's mother and has no relevance to Priya's living situation.",
+    "question_id": "priya_q06",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "6304d765af342491": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references Raj's belongings and shared space in the kitchen, which supports the correct answer that boyfriend Raj is there most nights. It does not suggest she lives alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "f8952bfe-c9bf-482c-99a8-402c0f36e97f"
+  },
+  "3627c33069beacc0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's cooking habits and has no relevance to Priya's living situation.",
+    "question_id": "priya_q06",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "f3865a87d0a5da5f": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact confirms the studio apartment, which is part of the correct answer. It does not contain the wrong indicator ('lives alone'). However, it is incomplete as it omits the detail about boyfriend Raj being there most nights. Since it supports part of the correct answer without containing the stale indicator, supports_correct is true.",
+    "question_id": "priya_q06",
+    "edge_uuid": "bcd5b3d3-c9a7-4e4b-aa0c-d8f5ea80f439"
+  },
+  "8b051a078be96063": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes Raj leaving belongings (protein shakes and supplements) in the kitchen, indicating he is regularly present in Priya's living space. This supports the correct answer that Raj is there most nights. The fact does not contain the wrong indicator 'lives alone' \u2014 in fact, it contradicts that notion. Note: calling Raj a 'roommate' rather than 'boyfriend' is a label discrepancy, but the core living situation (Raj regularly present) aligns with the correct answer.",
+    "question_id": "priya_q06",
+    "edge_uuid": "82206777-45f8-4a5f-9b1b-64a496555c4e"
+  },
+  "77f7c9c0c08ffa6f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about growing up in India and Texas is biographical background information and has no relevance to Priya's current living situation with boyfriend Raj.",
+    "question_id": "priya_q06",
+    "edge_uuid": "2f21f1ad-6ce2-4601-814e-c08dae8d0c20"
+  },
+  "b98bafba767b407d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Raj by name, which partially aligns with the correct answer, but it describes a consideration/decision context ('going solo or with someone named Raj') rather than the current living situation (studio with boyfriend Raj there most nights). It does not clearly support the correct answer about the actual living arrangement, and it does not contain the wrong indicator 'lives alone'.",
+    "question_id": "priya_q06",
+    "edge_uuid": "ce3cd4dc-353a-4e5f-ae0a-24b9ee1133e0"
+  },
+  "fd8e4f276ea713b6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact discusses future apartment hunting plans and finding a pet-friendly place, but does not address the current living situation (studio with boyfriend Raj there most nights). It neither supports the correct answer nor contains the wrong indicator about living alone.",
+    "question_id": "priya_q06",
+    "edge_uuid": "e41e2567-af37-4827-8cbf-f80bed68536c"
+  },
+  "946c45fb8bbd64d0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking habits and mentions Raj, with no information about Priya's exercise routine. It neither supports rock climbing nor contains the wrong indicators of hot yoga or yoga 4x.",
+    "question_id": "priya_q07",
+    "edge_uuid": "19393a89-ce85-485c-af35-f5f61f4f77c8"
+  },
+  "64dad22abc739c63": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking South Indian vegetarian dishes and has no relevance to Priya's exercise habits. It neither supports rock climbing nor contains any reference to hot yoga or yoga 4x.",
+    "question_id": "priya_q07",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "855845755b7fe395": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about the user's mom being a home cook of traditional South Indian food, which is completely unrelated to Priya's exercise activities.",
+    "question_id": "priya_q07",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "ec3ef01c96673730": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj and protein shakes in the kitchen. It contains no information about Priya's exercise routine and does not mention rock climbing, hot yoga, or yoga.",
+    "question_id": "priya_q07",
+    "edge_uuid": "82206777-45f8-4a5f-9b1b-64a496555c4e"
+  },
+  "805dd98b652e83a0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about meal prep habits on Sundays, which is completely unrelated to exercise. It neither supports rock climbing nor contains any mention of hot yoga or yoga 4x.",
+    "question_id": "priya_q07",
+    "edge_uuid": "e14e24d0-2977-4c3c-8cc1-079c1f8e2547"
+  },
+  "21553e48a2d0f8fa": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking Japanese curry with shrimp and has no relevance to Priya's exercise habits, rock climbing, yoga, or any fitness activity.",
+    "question_id": "priya_q07",
+    "edge_uuid": "a3be1ca5-74c8-496b-98bb-a7c05e1887b9"
+  },
+  "8e552d39a00270b4": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions considering a new workout routine but provides no specific exercise. It neither supports rock climbing nor contains the stale yoga indicators.",
+    "question_id": "priya_q07",
+    "edge_uuid": "9eca7aee-d945-4a0e-b0bf-fe7e4a79ae25"
+  },
+  "763d4f25a792a42d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about food ingredients (basmati rice and spinach) and has no relevance to Priya's exercise habits.",
+    "question_id": "priya_q07",
+    "edge_uuid": "9a751eed-8e42-4e97-9600-7036e0206013"
+  },
+  "2170e57e5b42ebe7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking dal/lentils and has no relevance to Priya's exercise habits.",
+    "question_id": "priya_q07",
+    "edge_uuid": "d14d2af0-c0f0-4c16-8bdf-0f925dbb8ab5"
+  },
+  "883b514b693d251a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about diet (vegetarian), which is completely unrelated to the question about what exercise Priya does. It neither supports the correct answer (rock climbing) nor contains any wrong indicators (hot yoga).",
+    "question_id": "priya_q07",
+    "edge_uuid": "3d70d535-1f7d-4378-a28d-67d2d167275b"
+  },
+  "25450f40f34f6b45": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about kitchen reorganization and has no relevance to Priya's relocation plans or NYC considerations.",
+    "question_id": "priya_q08",
+    "edge_uuid": "f8952bfe-c9bf-482c-99a8-402c0f36e97f"
+  },
+  "ddb67ef9b074628e": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact implies Priya has decided to move (apartment hunting, 'plans to find a pet-friendly place after moving'), which contradicts the correct answer that she hasn't decided and is still in Austin. However, it doesn't specifically mention NYC, so the explicit wrong indicator ('moving to NYC') is not present. The fact doesn't support the correct answer because it suggests a decided relocation rather than an undecided consideration.",
+    "question_id": "priya_q08",
+    "edge_uuid": "e41e2567-af37-4827-8cbf-f80bed68536c"
+  },
+  "d00ac48f48442930": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact says 'considering moving' which is tentative and aligns with the correct answer of 'thinking about NYC but hasn't decided.' It does not assert a definitive relocation plan, so it does not trigger the wrong indicator of 'moving to NYC' as a decided fact.",
+    "question_id": "priya_q08",
+    "edge_uuid": "ea760ea6-994f-4b06-8323-f8d634378421"
+  },
+  "6a43f24afd195829": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mother's age, location, and background \u2014 it has no relevance to Priya's relocation plans or current residence in Austin.",
+    "question_id": "priya_q08",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "909658515eaf43a1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom arrangements and cohabitation, completely unrelated to Priya's relocation plans or NYC considerations.",
+    "question_id": "priya_q08",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "4791878942a86d8b": {
+    "supports_correct": false,
+    "contains_wrong_indicator": true,
+    "reasoning": "The fact describes a concrete relocation plan (touring apartments in mid-May for an August move), which implies a decided move. The correct answer is that Priya hasn't decided and is still in Austin. This fact reflects an earlier, more committed position that has since been superseded by indecision.",
+    "question_id": "priya_q08",
+    "edge_uuid": "5c60160d-15b8-4db3-b97e-cbe687162ff0"
+  },
+  "0415f1301999c28f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about visiting an Indian grocery store for ingredients and has no relevance to Priya's relocation plans or Austin/NYC considerations.",
+    "question_id": "priya_q08",
+    "edge_uuid": "e1058c9f-ff46-45cd-a181-b6e153f07e06"
+  },
+  "4b2dd9de085fbc11": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about going solo or with someone named Raj, which appears unrelated to relocation plans. It neither supports the correct answer about NYC/Austin nor contains the wrong indicator about moving to NYC.",
+    "question_id": "priya_q08",
+    "edge_uuid": "ce3cd4dc-353a-4e5f-ae0a-24b9ee1133e0"
+  },
+  "0dcb9b13b6847ba0": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a travel itinerary involving Tokyo, which is unrelated to Priya's potential relocation decision between Austin and NYC. It neither supports the correct answer nor contains the wrong indicator.",
+    "question_id": "priya_q08",
+    "edge_uuid": "1ff9fc8a-f9ce-4991-b1d6-f5f5bf51d130"
+  },
+  "ed0b64a81d3df457": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact implies Priya is planning to move ('settling into a new place'), which suggests a relocation decision has been made. This contradicts the correct answer that she's still in Austin and undecided. However, it doesn't specifically mention NYC, so the exact wrong indicator ('moving to NYC') is not present. The fact neither supports the correct 'still undecided/in Austin' stance nor clearly matches the specific wrong indicator.",
+    "question_id": "priya_q08",
+    "edge_uuid": "c4068e05-9066-4fed-9f06-8f626404e842"
+  },
+  "5b0ec268e1260663": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about 'considering diet as a potential trigger' is a partial but relevant match \u2014 it relates to identifying triggers (consistent with chronic migraines having triggers like stress/screens), and diet management ties into the omega-3 recommendation. Under AV3 generous partial matching rules, this counts as supporting the correct answer.",
+    "question_id": "priya_q09",
+    "edge_uuid": "d3bc3b69-c7e4-40b5-97f2-a66f8c1839aa"
+  },
+  "69a0b7f58977a961": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes meal prep habits (Sunday prep, reheating during the week) but contains no information about health conditions such as chronic migraines or omega-3 requirements.",
+    "question_id": "priya_q09",
+    "edge_uuid": "e14e24d0-2977-4c3c-8cc1-079c1f8e2547"
+  },
+  "910dd84b05a35da5": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about having basmati rice and spinach to use up contains no information about health conditions, migraines, or omega-3 needs. It is irrelevant to the question.",
+    "question_id": "priya_q09",
+    "edge_uuid": "9a751eed-8e42-4e97-9600-7036e0206013"
+  },
+  "d0b8b82e5ba6cd69": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes Priya's cooking habits (South Indian vegetarian dishes like sambar, kootu, and rice), which has no relevance to her health conditions such as chronic migraines or omega-3 needs. It neither supports the correct answer nor contains any wrong indicators.",
+    "question_id": "priya_q09",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "ab04384eea291351": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions that Priya is only changing diet without supplements, which is tangentially related to her health approach but does not mention chronic migraines or the need for omega-3s. It does not support the correct answer about her specific health conditions.",
+    "question_id": "priya_q09",
+    "edge_uuid": "21cd7649-19b3-4c65-8403-fee204d96ff5"
+  },
+  "ed6bb2a041d208d1": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about skipping meals during work is related to eating habits but does not address the specific health conditions (chronic migraines triggered by stress/screens, need for more omega-3s) that should inform Priya's meal plan.",
+    "question_id": "priya_q09",
+    "edge_uuid": "2b4fb6ff-fcbd-4d6a-9bdd-a9a4b83a6c0f"
+  },
+  "4fe07e6f0abeeebd": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj leaving protein shakes in the kitchen. This contains no information about Priya's health conditions such as chronic migraines or omega-3 needs.",
+    "question_id": "priya_q09",
+    "edge_uuid": "82206777-45f8-4a5f-9b1b-64a496555c4e"
+  },
+  "732ffb306e4a1585": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking toor dal and its texture, with no mention of health conditions, migraines, or omega-3 requirements. It is unrelated to the question.",
+    "question_id": "priya_q09",
+    "edge_uuid": "5f22567e-8bbf-4c9b-bc65-726287250a2c"
+  },
+  "696c5a80c792316d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact that the user is vegetarian is relevant to meal planning generally, but does not address the specific health conditions asked about \u2014 chronic migraines or the need for more omega-3s. It's a dietary preference, not a health condition indicator.",
+    "question_id": "priya_q09",
+    "edge_uuid": "3d70d535-1f7d-4378-a28d-67d2d167275b"
+  },
+  "ba1341d82303c91f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about planning preferences (flexibility, avoiding over-planning) and contains no information about health conditions such as chronic migraines or omega-3 needs.",
+    "question_id": "priya_q09",
+    "edge_uuid": "6fd8d44e-c8eb-4d97-bda1-14e84d58872e"
+  },
+  "54ad94020867fa70": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact correctly identifies the NeurIPS paper deadline in early June, which matches the correct answer. There is no mention of the expired lease (August 2025), so no wrong/stale indicator is present.",
+    "question_id": "priya_q10",
+    "edge_uuid": "2fcaa6a3-c4e4-4882-9897-eaca4e916471"
+  },
+  "95d18806d947dd2e": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a code review deadline due Wednesday, which is neither the correct answer (NeurIPS paper deadline early June 2026) nor the wrong/stale indicator (lease expiring August 2025). It's an unrelated deadline that doesn't support or contradict either.",
+    "question_id": "priya_q10",
+    "edge_uuid": "766c24af-9f7c-4467-a56a-3b40ba2b3cb5"
+  },
+  "bd334378ec7a48b6": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes a weekly schedule with tasks like code review, sync, report drafting, and a dentist appointment. It does not mention the NeurIPS paper deadline (correct answer) or the lease expiration (wrong indicator), so it is irrelevant to the question about upcoming deadlines.",
+    "question_id": "priya_q10",
+    "edge_uuid": "81d73c66-6007-4e5b-9585-38d25e8d258a"
+  },
+  "3d45b24faf41ee97": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a quarterly progress report for a manager, which is unrelated to the NeurIPS paper deadline (early June 2026) or the lease expiration (August 2025). It neither supports the correct answer nor contains the wrong/stale indicator.",
+    "question_id": "priya_q10",
+    "edge_uuid": "5bc2d6ea-8c20-4eeb-b980-19389fbc8678"
+  },
+  "c9101a24eadd80e9": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about starting a new job at Anthropic, which is unrelated to the NeurIPS paper deadline (correct answer) or the lease expiration (wrong indicator). It neither supports the correct answer nor contains stale indicators.",
+    "question_id": "priya_q10",
+    "edge_uuid": "e06379a6-aa41-488a-affd-d016c69dfaf2"
+  },
+  "5dd8a9053fcba3b8": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mother's age, location, and cultural background. It has no relevance to any upcoming deadlines such as the NeurIPS paper deadline or lease expiration.",
+    "question_id": "priya_q10",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "051bbfebb103acc7": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about December being quiet with fewer meetings is unrelated to any upcoming deadlines, the NeurIPS paper deadline, or the lease expiration. It neither supports the correct answer nor contains any wrong indicators.",
+    "question_id": "priya_q10",
+    "edge_uuid": "7adcfe51-7e0a-4e39-8e8c-c0f084bd602b"
+  },
+  "11fdb9ccb77634ca": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about movie watching plans (Coherence and Ex Machina) and has no relevance to any deadlines, the NeurIPS paper deadline, or the lease expiration.",
+    "question_id": "priya_q10",
+    "edge_uuid": "47917ff7-5446-486c-865d-55efa5f53733"
+  },
+  "47e073f6e9a3a8e2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about spending more time at screens due to a new job is unrelated to any deadlines \u2014 it doesn't mention the NeurIPS paper deadline or the lease expiration.",
+    "question_id": "priya_q10",
+    "edge_uuid": "8d862cd1-071a-4227-83f5-f647d58d702a"
+  },
+  "aa8051ce76991aab": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom storage arrangement and cohabitation status, which is entirely unrelated to Priya's upcoming deadlines such as the NeurIPS paper deadline or lease expiration.",
+    "question_id": "priya_q10",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "1cd2d4000d3b916e": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions cooking South Indian vegetarian dishes (sambar, kootu, rice dishes), which directly supports the 'cooking experiments (Tamil recipes)' component of the correct answer. Partial coverage counts for AV5.",
+    "question_id": "priya_q11",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "2c488f05f141eabd": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about Priya's mom making traditional South Indian food is related to the Tamil recipes aspect of Priya's cooking experiments hobby, providing context that supports this part of the correct answer.",
+    "question_id": "priya_q11",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "748ccd09debb56ec": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact references cooking activity, which partially overlaps with 'cooking experiments' as one of Priya's free time activities. Under AV5 rules, partial coverage counts. No wrong indicators (hot yoga not mentioned).",
+    "question_id": "priya_q11",
+    "edge_uuid": "19393a89-ce85-485c-af35-f5f61f4f77c8"
+  },
+  "9e75f3a9616c865d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom (age, location, Tamil roots) and contains no information about Priya's free time activities such as rock climbing, cooking experiments, or travel planning. It also does not mention hot yoga.",
+    "question_id": "priya_q11",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "174807e205fced3d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about enjoying engaging and propulsive books does not match any of the correct answer components (rock climbing, cooking experiments with Tamil recipes, travel planning). It may be a valid hobby but doesn't support the specified correct answer. It also does not contain the wrong indicator (hot yoga).",
+    "question_id": "priya_q11",
+    "edge_uuid": "2deb6482-bfb8-4146-98ea-9eefb47b67d9"
+  },
+  "b80de3d107ff0aa2": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about going solo or with Raj suggests travel planning, which is one of Priya's free time activities listed in the correct answer. Partial coverage counts for AV5.",
+    "question_id": "priya_q11",
+    "edge_uuid": "ce3cd4dc-353a-4e5f-ae0a-24b9ee1133e0"
+  },
+  "32bc5f8551dd9147": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj leaving protein shakes in the kitchen. It contains no information about Priya's free time activities such as rock climbing, cooking experiments, or travel planning, and does not mention hot yoga either.",
+    "question_id": "priya_q11",
+    "edge_uuid": "82206777-45f8-4a5f-9b1b-64a496555c4e"
+  },
+  "b57fdb8723f4d333": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's bathroom arrangement and cohabitation status, with no relevance to Priya's free time activities such as rock climbing, cooking experiments, or travel planning.",
+    "question_id": "priya_q11",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "6f37f77c2a08f354": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes Priya's brother's hobbies, not Priya's own free time activities. It does not support any of the correct answers (rock climbing, cooking experiments, travel planning) as applied to Priya herself.",
+    "question_id": "priya_q11",
+    "edge_uuid": "fd0031e3-18db-4ce8-a335-67aaf872e477"
+  },
+  "072eafe4c28dd259": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about working from home most days is about Priya's work arrangement, not her free time activities. It doesn't support any of the correct answers (rock climbing, cooking experiments, travel planning) nor does it contain the wrong indicator (hot yoga).",
+    "question_id": "priya_q11",
+    "edge_uuid": "3d2a6b89-00b3-4140-baeb-bb8ce41c73f1"
+  },
+  "0f2c971a96532a5c": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions 'Tamil roots' which directly supports the Tamil family background. It's a partial match but relevant - 'Tamil roots' aligns with the correct answer's Tamil/Chennai background. No wrong indicators present.",
+    "question_id": "priya_q12",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "f8fa58c790b042d1": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about mom making traditional South Indian food supports the Tamil family background from Chennai. South Indian cuisine is directly associated with Tamil culture, making this a relevant partial match for the family background question.",
+    "question_id": "priya_q12",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "5c8225d6bf669fca": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Growing up in India partially supports the Tamil/Chennai family background. AV3 allows generous partial matches, and India upbringing is consistent with parents from Chennai. However, it doesn't mention Tamil identity, Chennai specifically, or brother Arjun.",
+    "question_id": "priya_q12",
+    "edge_uuid": "2f21f1ad-6ce2-4601-814e-c08dae8d0c20"
+  },
+  "0b8ea68d031c5e1a": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Rasam is a traditional South Indian/Tamil dish, and the detail about the user's mom making homemade rasam powder is a culturally specific indicator that supports a Tamil family background. Under AV3 generous matching, this counts as a partial match for the Tamil/South Indian heritage aspect of the correct answer.",
+    "question_id": "priya_q12",
+    "edge_uuid": "f29a37df-dcb6-4d09-9750-e2b566203d3f"
+  },
+  "0add8287ff9877cf": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Raj's living arrangements (drawer and shelf in bathroom indicating cohabitation), which has no relevance to Priya's family background, Tamil heritage, parents from Chennai, or brother Arjun in Seattle.",
+    "question_id": "priya_q12",
+    "edge_uuid": "8ccd3edb-5de7-4647-920d-c5d2b2def94c"
+  },
+  "52d8a2164bfdcd7e": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "Cooking South Indian dishes like sambar and kootu is strongly associated with Tamil culture/background, providing partial support for the Tamil family background aspect of the correct answer. No wrong indicators present.",
+    "question_id": "priya_q12",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "cf9511eebbfd8f49": {
+    "supports_correct": true,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact confirms brother Arjun is from Seattle, which directly matches part of the correct answer. Partial coverage counts for AV3/AV5 style evaluation.",
+    "question_id": "priya_q12",
+    "edge_uuid": "58e38617-5544-478f-9737-1be834c7c197"
+  },
+  "2186a49b7933e60e": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact about going solo or with someone named Raj has no relevance to Priya's family background, Tamil heritage, parents from Chennai, or brother Arjun in Seattle.",
+    "question_id": "priya_q12",
+    "edge_uuid": "ce3cd4dc-353a-4e5f-ae0a-24b9ee1133e0"
+  },
+  "ae2a631f1e41632d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact describes the mom's cooking technique with South Indian ingredients (mustard seeds, curry leaves), which could very loosely hint at a South Indian background, but it does not explicitly mention Tamil heritage, Chennai, or brother Arjun in Seattle. Even being generous with partial matches, this fact is too indirect and incomplete to be considered supportive of the correct answer about family background.",
+    "question_id": "priya_q12",
+    "edge_uuid": "d3d959d5-5932-4122-9e8a-889454971156"
+  },
+  "13207f68705bcda2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions visiting an Indian grocery store for tamarind, which loosely implies Indian cultural background, but it does not address family background specifically \u2014 no mention of Tamil heritage, parents from Chennai, or brother Arjun in Seattle. It is too indirect and tangential to count as supporting the correct answer even with generous partial matching.",
+    "question_id": "priya_q12",
+    "edge_uuid": "e1058c9f-ff46-45cd-a181-b6e153f07e06"
+  },
+  "3427abb497a20d67": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom being a home cook of South Indian food, which is completely unrelated to how often Priya did hot yoga.",
+    "question_id": "priya_q13",
+    "edge_uuid": "a4949119-b629-402b-8c40-ca24f711676c"
+  },
+  "99314cd3491cdc6d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking South Indian vegetarian dishes and has no relevance to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "657a54fe-30b3-4cf6-90ab-0f627d31486c"
+  },
+  "14e4f5a2f2b50423": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a cooking phase with spices and is completely unrelated to hot yoga or its frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "d255734f-5d04-46df-8b68-4895f8a4929a"
+  },
+  "bb693a1fef83c173": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions considering a new workout routine after a new job, but contains no information about hot yoga or how frequently Priya practiced it (4 times a week).",
+    "question_id": "priya_q13",
+    "edge_uuid": "9eca7aee-d945-4a0e-b0bf-fe7e4a79ae25"
+  },
+  "9147b0519bb93a2d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Sunday meal prep habits and has no relevance to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "e14e24d0-2977-4c3c-8cc1-079c1f8e2547"
+  },
+  "a4ab89d82219d518": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's mom's age, location, and cultural background. It contains no information about Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "b01a3d51-ce6a-45b7-a27c-2e3e07b41e9a"
+  },
+  "5b6077d439f2006a": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Priya's roommate Raj leaving protein shakes in the kitchen, which is completely unrelated to how often Priya did hot yoga.",
+    "question_id": "priya_q13",
+    "edge_uuid": "82206777-45f8-4a5f-9b1b-64a496555c4e"
+  },
+  "8fa1dc8d74addc06": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about making vegetarian Japanese curry with shrimp and has no relevance to hot yoga frequency or exercise habits.",
+    "question_id": "priya_q13",
+    "edge_uuid": "a3be1ca5-74c8-496b-98bb-a7c05e1887b9"
+  },
+  "cb1c1fae13c65a96": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking habits compared to Raj, and contains no information about Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "19393a89-ce85-485c-af35-f5f61f4f77c8"
+  },
+  "4ef5c6c5d169eed2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about cooking dal and has no relevance to Priya's hot yoga frequency.",
+    "question_id": "priya_q13",
+    "edge_uuid": "5f22567e-8bbf-4c9b-bc65-726287250a2c"
+  },
+  "2cfc00e513a096e8": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact only mentions it's Priya's first time visiting Tokyo, but contains no date or conference information. It does not support the correct answer of March 20, 2026.",
+    "question_id": "priya_q14",
+    "edge_uuid": "791512cf-0c7b-47cd-a62a-d361b2e049fe"
+  },
+  "5d1c21e4a1151f7d": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions staying in Tokyo but does not contain the specific date (March 20, 2026) of the conference. For AV8_numeric_preservation, the specific number/date must be preserved, and this fact lacks any date information.",
+    "question_id": "priya_q14",
+    "edge_uuid": "1ff9fc8a-f9ce-4991-b1d6-f5f5bf51d130"
+  },
+  "f6055130964e3f4f": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Tokyo in March, which partially aligns, but AV8 requires specific numbers to be preserved. The exact date (March 20) and year (2026) are absent. 'About 10 days' refers to trip duration, not the conference date. The fact is too vague to correctly answer when the conference is.",
+    "question_id": "priya_q14",
+    "edge_uuid": "261b2e6a-5a3e-451e-bd77-5b18e5fd8f28"
+  },
+  "d80b817e6da545f2": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact refers to a NeurIPS paper deadline in early June, which is unrelated to Priya's Tokyo conference on March 20, 2026. No relevant information about the Tokyo conference is present.",
+    "question_id": "priya_q14",
+    "edge_uuid": "2fcaa6a3-c4e4-4882-9897-eaca4e916471"
+  },
+  "75a6f769833dd508": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about a restaurant reservation at Uchi and has no relevance to Priya's Tokyo conference date of March 20, 2026.",
+    "question_id": "priya_q14",
+    "edge_uuid": "54c1e662-bcc5-48de-8f9d-7e2fd63c8287"
+  },
+  "450049d6614f0220": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about Tokyo neighborhood preferences and contains no information about the conference date (March 20, 2026).",
+    "question_id": "priya_q14",
+    "edge_uuid": "0a01bfcd-d7b4-428c-b45a-bcacd36cdb95"
+  },
+  "4cdb6e7cb5afb00c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a workshop booking but contains no information about Priya's Tokyo conference or the date March 20, 2026.",
+    "question_id": "priya_q14",
+    "edge_uuid": "b3b12a3c-64fd-4521-b1a9-6ea851a9d405"
+  },
+  "f65769fe58ff009c": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions Tokyo-related activities (Tsukiji Market and ramen) but contains no date information about the conference. It cannot support the correct answer of March 20, 2026.",
+    "question_id": "priya_q14",
+    "edge_uuid": "f8cc6e20-a21c-4114-9c4a-f4da4050801e"
+  },
+  "3555f69cc36d0768": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact mentions a Kyoto stay duration but contains no information about a Tokyo conference or its date (March 20, 2026).",
+    "question_id": "priya_q14",
+    "edge_uuid": "9efa32ba-3273-4f23-aeb0-99fead342c20"
+  },
+  "654b75c1b5c41926": {
+    "supports_correct": false,
+    "contains_wrong_indicator": false,
+    "reasoning": "The fact is about tourist interests in Tokyo (Akihabara, neighborhoods, shopping streets) and contains no information about a conference date or the specific date March 20, 2026.",
+    "question_id": "priya_q14",
+    "edge_uuid": "8c5a5176-ec0e-417e-aa2e-03dfc3558edb"
+  }
+}
