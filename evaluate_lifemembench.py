@@ -263,6 +263,23 @@ def extract_numbers(text: str) -> list[str]:
     return re.findall(r"\b\d+(?:,\d{3})*(?:\.\d+)?\b", text.replace(",", ""))
 
 
+# Numeric rescue: detect monetary/quantity values so rerank_candidates can
+# protect them from aggressive category-decay (AV8 numeric preservation).
+_NUMERIC_RESCUE_RE = re.compile(
+    r'(?:'
+    r'[\$\u20ac\u00a3\u00a5\u20ab]\s*[\d,]+(?:\.\d+)?'
+    r'|[\d,]+(?:\.\d+)?\s*(?:dong|pesos?|kroner?|kronor|dirhams?|euros?|dollars?|pounds?)'
+    r'|[\d,]+(?:\.\d+)?\s+(?:million|billion|thousand)\b'
+    r'|\d{1,3}(?:,\d{3}){2,}'
+    r')', re.I,
+)
+
+
+def _contains_monetary_or_quantity(text: str) -> bool:
+    """True if *text* contains a monetary amount or large formatted number."""
+    return bool(_NUMERIC_RESCUE_RE.search(text))
+
+
 CYPHER_SOURCE_BASELINES = {
     "cypher_kw": 0.4,
     "cypher_intersect": 0.5,
@@ -742,6 +759,16 @@ def rerank_candidates(
         if category_decay is not None and c.graphiti_score >= 0.95:
             floor = SEMANTIC_FLOOR.get(cat, 0.0)
             blended = max(blended, floor * c.graphiti_score)
+        # Numeric rescue: facts with monetary/quantity values get extra
+        # protection against category-decay crushing.  Uses lower semantic
+        # threshold (0.90) and guaranteed floor (0.92) to keep numeric
+        # facts retrievable even in high-alpha categories like
+        # PROJECTS_ENDEAVORS.  Safe for AV2: expiry filter runs before
+        # reranking, so expired logistics are already removed.
+        if (category_decay is not None
+                and c.graphiti_score >= 0.90
+                and _contains_monetary_or_quantity(c.fact)):
+            blended = max(blended, 0.92 * c.graphiti_score)
         scored.append((c, activation, c.graphiti_score, blended))
     scored.sort(key=lambda x: (-x[3], -x[2]))
     return scored
@@ -947,7 +974,7 @@ def filter_expired_candidates(
     candidates: list[Candidate],
     edge_cache: dict[str, dict],
     t_now: float,
-    buffer_days: int = 7,
+    buffer_days: int = 14,
 ) -> tuple[list[Candidate], int]:
     """Remove candidates whose fact text contains a date that has already passed.
 
