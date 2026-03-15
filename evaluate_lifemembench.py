@@ -380,9 +380,12 @@ def _resolve_year(month: int, day: int, created_at_ts: float, t_now: float) -> i
     Heuristic: the event most likely falls within ~6 months after the fact's
     creation date (facts describe upcoming events at time of writing).
     If the resulting date is >6 months *before* created_at, bump year +1.
+    Second guard: if resolved date is past relative to t_now, prefer the
+    future interpretation (ambiguous dates are more likely upcoming events).
     """
     created_dt = datetime.fromtimestamp(created_at_ts, tz=timezone.utc) if created_at_ts > 0 else \
         datetime.fromtimestamp(t_now, tz=timezone.utc)
+    t_now_dt = datetime.fromtimestamp(t_now, tz=timezone.utc)
     year = created_dt.year
     try:
         candidate = datetime(year, month, min(day, 28), tzinfo=timezone.utc)
@@ -390,6 +393,17 @@ def _resolve_year(month: int, day: int, created_at_ts: float, t_now: float) -> i
         return year
     if (candidate - created_dt).days < -180:
         year += 1
+    # Second guard: if resolved date is already past relative to t_now but
+    # bumping the year would make it future, prefer the future interpretation.
+    # Only bump if the future date is within ~18 months of t_now.
+    try:
+        resolved = datetime(year, month, min(day, 28), tzinfo=timezone.utc)
+        if resolved < t_now_dt:
+            future = datetime(year + 1, month, min(day, 28), tzinfo=timezone.utc)
+            if (future - t_now_dt).days <= 548:
+                year += 1
+    except ValueError:
+        pass
     return year
 
 
@@ -788,15 +802,15 @@ def rerank_candidates(
             floor = SEMANTIC_FLOOR.get(cat, 0.0)
             blended = max(blended, floor * c.graphiti_score)
         # Numeric rescue: facts with monetary/quantity values get extra
-        # protection against category-decay crushing.  Uses lower semantic
-        # threshold (0.90) and guaranteed floor (0.92) to keep numeric
+        # protection against category-decay crushing.  Uses semantic
+        # threshold (0.85) and guaranteed floor (0.95) to keep numeric
         # facts retrievable even in high-alpha categories like
         # PROJECTS_ENDEAVORS.  Safe for AV2: expiry filter runs before
         # reranking, so expired logistics are already removed.
         if (category_decay is not None
-                and c.graphiti_score >= 0.90
+                and c.graphiti_score >= 0.85
                 and _contains_monetary_or_quantity(c.fact)):
-            blended = max(blended, 0.92 * c.graphiti_score)
+            blended = max(blended, 0.95 * c.graphiti_score)
         scored.append((c, activation, c.graphiti_score, blended))
     scored.sort(key=lambda x: (-x[3], -x[2]))
     return scored
@@ -819,7 +833,10 @@ def filter_superseded(
         if (attrs
                 and attrs.get("superseded_by")
                 and float(attrs.get("supersession_confidence") or 0) >= confidence_threshold):
-            continue
+            # Preserve numeric/monetary edges even if superseded — they contain
+            # precise values useful for AV8 numeric preservation.
+            if not _contains_monetary_or_quantity(c.fact):
+                continue
         filtered.append(c)
     return filtered
 
@@ -1033,6 +1050,13 @@ def filter_expired_candidates(
 
         cat = attrs.get("primary_category", "")
         if cat not in _EXPIRY_ELIGIBLE_CATEGORIES:
+            filtered.append(c)
+            continue
+
+        # Numeric rescue: protect edges with monetary/quantity values from
+        # expiry filtering (AV8 support).  Precise numeric facts remain
+        # valuable for recall even after the associated event passes.
+        if _contains_monetary_or_quantity(c.fact):
             filtered.append(c)
             continue
 
@@ -1664,10 +1688,13 @@ async def evaluate_persona(
                     print(f"        >> Retraction filter ({q['id']}): removed {retraction_removed} candidates")
 
             # Filter expired logistics/obligations before reranking (AV2 support)
-            if apply_supersession:
+            # Skip for backward-looking queries that ask about past events
+            if apply_supersession and not backward:
                 pool, expiry_removed = filter_expired_candidates(pool, edge_cache, t_now)
                 if expiry_removed and verbose:
                     print(f"        >> Expiry filter ({q['id']}): removed {expiry_removed} candidates")
+            elif backward and apply_supersession and verbose:
+                print(f"        >> Skipped expiry filter (backward-looking): {q['id']}")
 
             total_pool_size += len(pool)
 
