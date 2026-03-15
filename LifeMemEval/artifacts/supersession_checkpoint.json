@@ -3,403 +3,403 @@
   "personas": {
     "priya": {
       "status": "completed",
-      "edges_checked": 349,
+      "edges_checked": 353,
       "groups_checked": 11,
-      "supersessions_found": 16,
+      "supersessions_found": 17,
       "high_confidence": 16,
-      "medium_confidence": 0,
+      "medium_confidence": 1,
       "errors": 0,
-      "time_s": 187.1
+      "time_s": 170.7
     },
     "marcus": {
       "status": "completed",
-      "edges_checked": 256,
-      "groups_checked": 11,
-      "supersessions_found": 15,
-      "high_confidence": 15,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 183.9
-    },
-    "elena": {
-      "status": "completed",
-      "edges_checked": 305,
-      "groups_checked": 11,
-      "supersessions_found": 19,
-      "high_confidence": 19,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 188.2
-    },
-    "david": {
-      "status": "completed",
-      "edges_checked": 361,
+      "edges_checked": 259,
       "groups_checked": 11,
       "supersessions_found": 13,
       "high_confidence": 13,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 191.0
+      "time_s": 154.6
+    },
+    "elena": {
+      "status": "completed",
+      "edges_checked": 325,
+      "groups_checked": 11,
+      "supersessions_found": 27,
+      "high_confidence": 27,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 205.3
+    },
+    "david": {
+      "status": "completed",
+      "edges_checked": 374,
+      "groups_checked": 11,
+      "supersessions_found": 13,
+      "high_confidence": 13,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 249.2
     },
     "amara": {
       "status": "completed",
-      "edges_checked": 327,
+      "edges_checked": 333,
       "groups_checked": 11,
       "supersessions_found": 10,
       "high_confidence": 10,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 179.9
+      "time_s": 138.0
     },
     "jake": {
       "status": "completed",
-      "edges_checked": 350,
+      "edges_checked": 357,
       "groups_checked": 11,
-      "supersessions_found": 18,
-      "high_confidence": 18,
+      "supersessions_found": 20,
+      "high_confidence": 20,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 209.1
+      "time_s": 195.5
     },
     "tom": {
       "status": "completed",
-      "edges_checked": 395,
+      "edges_checked": 398,
       "groups_checked": 10,
-      "supersessions_found": 18,
-      "high_confidence": 18,
+      "supersessions_found": 16,
+      "high_confidence": 16,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 206.3
+      "time_s": 193.2
     },
     "omar": {
       "status": "completed",
       "edges_checked": 228,
       "groups_checked": 9,
-      "supersessions_found": 28,
-      "high_confidence": 28,
+      "supersessions_found": 21,
+      "high_confidence": 21,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 168.8
+      "time_s": 171.2
     },
     "fatima": {
       "status": "completed",
-      "edges_checked": 295,
-      "groups_checked": 11,
-      "supersessions_found": 6,
-      "high_confidence": 6,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 129.3
-    },
-    "kenji": {
-      "status": "completed",
-      "edges_checked": 292,
-      "groups_checked": 11,
-      "supersessions_found": 20,
-      "high_confidence": 19,
-      "medium_confidence": 1,
-      "errors": 0,
-      "time_s": 117.4
-    },
-    "rosa": {
-      "status": "completed",
-      "edges_checked": 338,
+      "edges_checked": 300,
       "groups_checked": 11,
       "supersessions_found": 4,
       "high_confidence": 4,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 178.0
+      "time_s": 145.9
     },
-    "callum": {
+    "kenji": {
       "status": "completed",
-      "edges_checked": 291,
+      "edges_checked": 298,
       "groups_checked": 11,
-      "supersessions_found": 15,
-      "high_confidence": 15,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 159.9
-    },
-    "diane": {
-      "status": "completed",
-      "edges_checked": 302,
-      "groups_checked": 11,
-      "supersessions_found": 6,
-      "high_confidence": 6,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 153.3
-    },
-    "raj": {
-      "status": "completed",
-      "edges_checked": 301,
-      "groups_checked": 10,
-      "supersessions_found": 12,
-      "high_confidence": 12,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 188.6
-    },
-    "nadia": {
-      "status": "completed",
-      "edges_checked": 314,
-      "groups_checked": 11,
-      "supersessions_found": 6,
-      "high_confidence": 6,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 154.3
-    },
-    "samuel": {
-      "status": "completed",
-      "edges_checked": 354,
-      "groups_checked": 11,
-      "supersessions_found": 17,
-      "high_confidence": 17,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 183.4
-    },
-    "lily": {
-      "status": "completed",
-      "edges_checked": 325,
-      "groups_checked": 11,
-      "supersessions_found": 12,
-      "high_confidence": 12,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 140.4
-    },
-    "bruna": {
-      "status": "completed",
-      "edges_checked": 353,
-      "groups_checked": 11,
-      "supersessions_found": 10,
-      "high_confidence": 10,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 172.8
-    },
-    "patrick": {
-      "status": "completed",
-      "edges_checked": 260,
-      "groups_checked": 10,
-      "supersessions_found": 12,
-      "high_confidence": 12,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 105.4
-    },
-    "aisha": {
-      "status": "completed",
-      "edges_checked": 310,
-      "groups_checked": 11,
-      "supersessions_found": 9,
-      "high_confidence": 9,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 132.2
-    },
-    "aroha": {
-      "status": "completed",
-      "edges_checked": 288,
-      "groups_checked": 11,
-      "supersessions_found": 6,
-      "high_confidence": 6,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 148.3
-    },
-    "saga": {
-      "status": "completed",
-      "edges_checked": 270,
-      "groups_checked": 11,
-      "supersessions_found": 10,
-      "high_confidence": 10,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 148.6
-    },
-    "marley": {
-      "status": "completed",
-      "edges_checked": 278,
-      "groups_checked": 11,
-      "supersessions_found": 12,
-      "high_confidence": 12,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 159.1
-    },
-    "mirri": {
-      "status": "completed",
-      "edges_checked": 315,
-      "groups_checked": 11,
-      "supersessions_found": 9,
-      "high_confidence": 9,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 162.8
-    },
-    "mehmet": {
-      "status": "completed",
-      "edges_checked": 260,
-      "groups_checked": 10,
-      "supersessions_found": 10,
-      "high_confidence": 10,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 170.8
-    },
-    "leila": {
-      "status": "completed",
-      "edges_checked": 303,
-      "groups_checked": 11,
-      "supersessions_found": 6,
-      "high_confidence": 6,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 174.8
-    },
-    "ingrid": {
-      "status": "completed",
-      "edges_checked": 309,
-      "groups_checked": 11,
-      "supersessions_found": 10,
-      "high_confidence": 10,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 197.3
-    },
-    "zara": {
-      "status": "completed",
-      "edges_checked": 290,
-      "groups_checked": 11,
-      "supersessions_found": 12,
-      "high_confidence": 12,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 197.5
-    },
-    "pan": {
-      "status": "completed",
-      "edges_checked": 353,
-      "groups_checked": 10,
-      "supersessions_found": 11,
-      "high_confidence": 11,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 229.2
-    },
-    "chenoa": {
-      "status": "completed",
-      "edges_checked": 310,
-      "groups_checked": 10,
-      "supersessions_found": 6,
-      "high_confidence": 6,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 119.8
-    },
-    "dmitri": {
-      "status": "completed",
-      "edges_checked": 284,
-      "groups_checked": 11,
-      "supersessions_found": 3,
-      "high_confidence": 3,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 111.4
-    },
-    "valentina": {
-      "status": "completed",
-      "edges_checked": 236,
-      "groups_checked": 11,
-      "supersessions_found": 8,
-      "high_confidence": 8,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 116.9
-    },
-    "jerome": {
-      "status": "completed",
-      "edges_checked": 355,
-      "groups_checked": 10,
-      "supersessions_found": 22,
-      "high_confidence": 22,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 290.3
-    },
-    "joonho": {
-      "status": "completed",
-      "edges_checked": 266,
-      "groups_checked": 11,
-      "supersessions_found": 13,
-      "high_confidence": 13,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 131.4
-    },
-    "kofi": {
-      "status": "completed",
-      "edges_checked": 348,
-      "groups_checked": 11,
-      "supersessions_found": 7,
-      "high_confidence": 6,
-      "medium_confidence": 1,
-      "errors": 0,
-      "time_s": 148.3
-    },
-    "billy": {
-      "status": "completed",
-      "edges_checked": 265,
-      "groups_checked": 11,
-      "supersessions_found": 12,
-      "high_confidence": 12,
-      "medium_confidence": 0,
-      "errors": 0,
-      "time_s": 117.5
-    },
-    "yoli": {
-      "status": "completed",
-      "edges_checked": 299,
-      "groups_checked": 10,
       "supersessions_found": 14,
       "high_confidence": 14,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 145.0
+      "time_s": 125.5
     },
-    "thanh": {
+    "rosa": {
       "status": "completed",
-      "edges_checked": 356,
+      "edges_checked": 362,
       "groups_checked": 11,
-      "supersessions_found": 3,
-      "high_confidence": 3,
+      "supersessions_found": 4,
+      "high_confidence": 4,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 133.0
+      "time_s": 184.9
     },
-    "dariush": {
+    "callum": {
       "status": "completed",
-      "edges_checked": 344,
+      "edges_checked": 299,
+      "groups_checked": 11,
+      "supersessions_found": 19,
+      "high_confidence": 19,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 158.7
+    },
+    "diane": {
+      "status": "completed",
+      "edges_checked": 320,
+      "groups_checked": 11,
+      "supersessions_found": 10,
+      "high_confidence": 10,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 185.7
+    },
+    "raj": {
+      "status": "completed",
+      "edges_checked": 306,
+      "groups_checked": 10,
+      "supersessions_found": 10,
+      "high_confidence": 10,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 175.1
+    },
+    "nadia": {
+      "status": "completed",
+      "edges_checked": 322,
+      "groups_checked": 11,
+      "supersessions_found": 2,
+      "high_confidence": 2,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 149.7
+    },
+    "samuel": {
+      "status": "completed",
+      "edges_checked": 378,
+      "groups_checked": 11,
+      "supersessions_found": 12,
+      "high_confidence": 12,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 166.3
+    },
+    "lily": {
+      "status": "completed",
+      "edges_checked": 329,
+      "groups_checked": 11,
+      "supersessions_found": 9,
+      "high_confidence": 9,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 163.6
+    },
+    "bruna": {
+      "status": "completed",
+      "edges_checked": 391,
       "groups_checked": 11,
       "supersessions_found": 7,
       "high_confidence": 7,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 124.4
+      "time_s": 194.0
+    },
+    "patrick": {
+      "status": "completed",
+      "edges_checked": 272,
+      "groups_checked": 10,
+      "supersessions_found": 11,
+      "high_confidence": 11,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 109.9
+    },
+    "aisha": {
+      "status": "completed",
+      "edges_checked": 326,
+      "groups_checked": 11,
+      "supersessions_found": 10,
+      "high_confidence": 9,
+      "medium_confidence": 1,
+      "errors": 0,
+      "time_s": 137.6
+    },
+    "aroha": {
+      "status": "completed",
+      "edges_checked": 304,
+      "groups_checked": 11,
+      "supersessions_found": 7,
+      "high_confidence": 7,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 183.0
+    },
+    "saga": {
+      "status": "completed",
+      "edges_checked": 272,
+      "groups_checked": 11,
+      "supersessions_found": 12,
+      "high_confidence": 12,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 116.6
+    },
+    "marley": {
+      "status": "completed",
+      "edges_checked": 288,
+      "groups_checked": 11,
+      "supersessions_found": 9,
+      "high_confidence": 9,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 127.1
+    },
+    "mirri": {
+      "status": "completed",
+      "edges_checked": 324,
+      "groups_checked": 11,
+      "supersessions_found": 12,
+      "high_confidence": 12,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 167.2
+    },
+    "mehmet": {
+      "status": "completed",
+      "edges_checked": 267,
+      "groups_checked": 10,
+      "supersessions_found": 8,
+      "high_confidence": 8,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 142.5
+    },
+    "leila": {
+      "status": "completed",
+      "edges_checked": 312,
+      "groups_checked": 11,
+      "supersessions_found": 10,
+      "high_confidence": 10,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 169.5
+    },
+    "ingrid": {
+      "status": "completed",
+      "edges_checked": 311,
+      "groups_checked": 11,
+      "supersessions_found": 8,
+      "high_confidence": 8,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 167.0
+    },
+    "zara": {
+      "status": "completed",
+      "edges_checked": 301,
+      "groups_checked": 11,
+      "supersessions_found": 7,
+      "high_confidence": 6,
+      "medium_confidence": 1,
+      "errors": 0,
+      "time_s": 171.6
+    },
+    "pan": {
+      "status": "completed",
+      "edges_checked": 355,
+      "groups_checked": 10,
+      "supersessions_found": 10,
+      "high_confidence": 10,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 192.5
+    },
+    "chenoa": {
+      "status": "completed",
+      "edges_checked": 326,
+      "groups_checked": 10,
+      "supersessions_found": 8,
+      "high_confidence": 8,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 122.7
+    },
+    "dmitri": {
+      "status": "completed",
+      "edges_checked": 293,
+      "groups_checked": 11,
+      "supersessions_found": 3,
+      "high_confidence": 3,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 120.8
+    },
+    "valentina": {
+      "status": "completed",
+      "edges_checked": 258,
+      "groups_checked": 11,
+      "supersessions_found": 7,
+      "high_confidence": 7,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 179.9
+    },
+    "jerome": {
+      "status": "completed",
+      "edges_checked": 366,
+      "groups_checked": 10,
+      "supersessions_found": 22,
+      "high_confidence": 22,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 274.6
+    },
+    "joonho": {
+      "status": "completed",
+      "edges_checked": 272,
+      "groups_checked": 11,
+      "supersessions_found": 16,
+      "high_confidence": 15,
+      "medium_confidence": 1,
+      "errors": 0,
+      "time_s": 154.7
+    },
+    "kofi": {
+      "status": "completed",
+      "edges_checked": 355,
+      "groups_checked": 11,
+      "supersessions_found": 5,
+      "high_confidence": 5,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 149.7
+    },
+    "billy": {
+      "status": "completed",
+      "edges_checked": 270,
+      "groups_checked": 11,
+      "supersessions_found": 14,
+      "high_confidence": 14,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 186.9
+    },
+    "yoli": {
+      "status": "completed",
+      "edges_checked": 305,
+      "groups_checked": 10,
+      "supersessions_found": 15,
+      "high_confidence": 15,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 190.4
+    },
+    "thanh": {
+      "status": "completed",
+      "edges_checked": 361,
+      "groups_checked": 11,
+      "supersessions_found": 4,
+      "high_confidence": 4,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 148.8
+    },
+    "dariush": {
+      "status": "completed",
+      "edges_checked": 356,
+      "groups_checked": 11,
+      "supersessions_found": 8,
+      "high_confidence": 8,
+      "medium_confidence": 0,
+      "errors": 0,
+      "time_s": 188.6
     },
     "alex": {
       "status": "completed",
-      "edges_checked": 268,
+      "edges_checked": 280,
       "groups_checked": 11,
-      "supersessions_found": 23,
-      "high_confidence": 23,
+      "supersessions_found": 19,
+      "high_confidence": 19,
       "medium_confidence": 0,
       "errors": 0,
-      "time_s": 152.6
+      "time_s": 184.5
     }
   }
 }
