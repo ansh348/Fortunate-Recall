@@ -1,0 +1,458 @@
+{
+  "gpt54_nr": {
+    "table_a": {
+      "fr": {
+        "total": 516,
+        "CORRECT": 118,
+        "PARTIAL": 105,
+        "WRONG": 66,
+        "ABSTAIN": 227,
+        "JUDGE_ERROR": 0,
+        "correct_pct": 22.868217054263564,
+        "partial_pct": 20.348837209302324,
+        "wrong_pct": 12.790697674418606,
+        "abstain_pct": 43.992248062015506,
+        "confab_count": 69,
+        "confab_pct": 23.875432525951556
+      },
+      "mem0": {
+        "total": 516,
+        "CORRECT": 96,
+        "PARTIAL": 147,
+        "WRONG": 125,
+        "ABSTAIN": 148,
+        "JUDGE_ERROR": 0,
+        "correct_pct": 18.6046511627907,
+        "partial_pct": 28.488372093023255,
+        "wrong_pct": 24.224806201550386,
+        "abstain_pct": 28.68217054263566,
+        "confab_count": 166,
+        "confab_pct": 45.108695652173914
+      }
+    },
+    "table_b": {
+      "AV1_superseded_preference": {
+        "n": 75,
+        "fr_correct": 24,
+        "fr_correct_pct": 32.0,
+        "fr_confab": 9,
+        "fr_confab_pct": 21.951219512195124,
+        "mem0_correct": 18,
+        "mem0_correct_pct": 24.0,
+        "mem0_confab": 35,
+        "mem0_confab_pct": 56.451612903225815
+      },
+      "AV2_expired_logistics": {
+        "n": 75,
+        "fr_correct": 5,
+        "fr_correct_pct": 6.666666666666667,
+        "fr_confab": 18,
+        "fr_confab_pct": 42.857142857142854,
+        "mem0_correct": 5,
+        "mem0_correct_pct": 6.666666666666667,
+        "mem0_confab": 33,
+        "mem0_confab_pct": 67.3469387755102
+      },
+      "AV3_stable_identity": {
+        "n": 94,
+        "fr_correct": 15,
+        "fr_correct_pct": 15.957446808510639,
+        "fr_confab": 6,
+        "fr_confab_pct": 11.11111111111111,
+        "mem0_correct": 22,
+        "mem0_correct_pct": 23.404255319148938,
+        "mem0_confab": 7,
+        "mem0_confab_pct": 11.29032258064516
+      },
+      "AV4_multi_version_fact": {
+        "n": 44,
+        "fr_correct": 17,
+        "fr_correct_pct": 38.63636363636363,
+        "fr_confab": 5,
+        "fr_confab_pct": 18.51851851851852,
+        "mem0_correct": 13,
+        "mem0_correct_pct": 29.545454545454547,
+        "mem0_confab": 13,
+        "mem0_confab_pct": 38.23529411764706
+      },
+      "AV5_broad_query": {
+        "n": 40,
+        "fr_correct": 0,
+        "fr_correct_pct": 0.0,
+        "fr_confab": 6,
+        "fr_confab_pct": 30.0,
+        "mem0_correct": 1,
+        "mem0_correct_pct": 2.5,
+        "mem0_confab": 12,
+        "mem0_confab_pct": 46.15384615384615
+      },
+      "AV6_cross_session_contradiction": {
+        "n": 45,
+        "fr_correct": 0,
+        "fr_correct_pct": 0.0,
+        "fr_confab": 13,
+        "fr_confab_pct": 72.22222222222221,
+        "mem0_correct": 0,
+        "mem0_correct_pct": 0.0,
+        "mem0_confab": 21,
+        "mem0_confab_pct": 58.333333333333336
+      },
+      "AV7_selective_forgetting": {
+        "n": 40,
+        "fr_correct": 11,
+        "fr_correct_pct": 27.500000000000004,
+        "fr_confab": 6,
+        "fr_confab_pct": 33.33333333333333,
+        "mem0_correct": 1,
+        "mem0_correct_pct": 2.5,
+        "mem0_confab": 32,
+        "mem0_confab_pct": 91.42857142857143
+      },
+      "AV8_numeric_preservation": {
+        "n": 63,
+        "fr_correct": 41,
+        "fr_correct_pct": 65.07936507936508,
+        "fr_confab": 4,
+        "fr_confab_pct": 7.4074074074074066,
+        "mem0_correct": 31,
+        "mem0_correct_pct": 49.2063492063492,
+        "mem0_confab": 6,
+        "mem0_confab_pct": 13.636363636363635
+      },
+      "AV9_soft_supersession": {
+        "n": 40,
+        "fr_correct": 5,
+        "fr_correct_pct": 12.5,
+        "fr_confab": 2,
+        "fr_confab_pct": 13.333333333333334,
+        "mem0_correct": 5,
+        "mem0_correct_pct": 12.5,
+        "mem0_confab": 7,
+        "mem0_confab_pct": 35.0
+      }
+    },
+    "table_c": {
+      "fr": {
+        "stale_count": 42,
+        "stale_correct": 6,
+        "stale_correct_pct": 14.285714285714285,
+        "stale_confab": 21,
+        "stale_confab_pct": 72.41379310344827,
+        "clean_count": 474,
+        "clean_correct": 112,
+        "clean_correct_pct": 23.628691983122362,
+        "clean_confab": 48,
+        "clean_confab_pct": 18.461538461538463
+      },
+      "mem0": {
+        "stale_count": 139,
+        "stale_correct": 10,
+        "stale_correct_pct": 7.194244604316546,
+        "stale_confab": 91,
+        "stale_confab_pct": 78.44827586206897,
+        "clean_count": 377,
+        "clean_correct": 86,
+        "clean_correct_pct": 22.811671087533156,
+        "clean_confab": 75,
+        "clean_confab_pct": 29.761904761904763
+      }
+    },
+    "table_d": {
+      "AV1_superseded_preference": {
+        "n": 75,
+        "fr_stale_pct": 13.333333333333334,
+        "fr_confab_pct": 21.951219512195124,
+        "mem0_stale_pct": 49.333333333333336,
+        "mem0_confab_pct": 56.451612903225815
+      },
+      "AV2_expired_logistics": {
+        "n": 75,
+        "fr_stale_pct": 6.666666666666667,
+        "fr_confab_pct": 42.857142857142854,
+        "mem0_stale_pct": 33.33333333333333,
+        "mem0_confab_pct": 67.3469387755102
+      },
+      "AV3_stable_identity": {
+        "n": 94,
+        "fr_stale_pct": 0.0,
+        "fr_confab_pct": 11.11111111111111,
+        "mem0_stale_pct": 0.0,
+        "mem0_confab_pct": 11.29032258064516
+      },
+      "AV4_multi_version_fact": {
+        "n": 44,
+        "fr_stale_pct": 20.454545454545457,
+        "fr_confab_pct": 18.51851851851852,
+        "mem0_stale_pct": 38.63636363636363,
+        "mem0_confab_pct": 38.23529411764706
+      },
+      "AV5_broad_query": {
+        "n": 40,
+        "fr_stale_pct": 2.5,
+        "fr_confab_pct": 30.0,
+        "mem0_stale_pct": 2.5,
+        "mem0_confab_pct": 46.15384615384615
+      },
+      "AV6_cross_session_contradiction": {
+        "n": 45,
+        "fr_stale_pct": 20.0,
+        "fr_confab_pct": 72.22222222222221,
+        "mem0_stale_pct": 46.666666666666664,
+        "mem0_confab_pct": 58.333333333333336
+      },
+      "AV7_selective_forgetting": {
+        "n": 40,
+        "fr_stale_pct": 12.5,
+        "fr_confab_pct": 33.33333333333333,
+        "mem0_stale_pct": 80.0,
+        "mem0_confab_pct": 91.42857142857143
+      },
+      "AV8_numeric_preservation": {
+        "n": 63,
+        "fr_stale_pct": 4.761904761904762,
+        "fr_confab_pct": 7.4074074074074066,
+        "mem0_stale_pct": 7.936507936507936,
+        "mem0_confab_pct": 13.636363636363635
+      },
+      "AV9_soft_supersession": {
+        "n": 40,
+        "fr_stale_pct": 0.0,
+        "fr_confab_pct": 13.333333333333334,
+        "mem0_stale_pct": 2.5,
+        "mem0_confab_pct": 35.0
+      }
+    },
+    "table_e": [
+      {
+        "question_id": "aroha_q02",
+        "persona": "aroha",
+        "attack_vector": "AV1_superseded_preference",
+        "question": "What sport does Aroha play?",
+        "correct_answer": "Waka ama (outrigger canoeing) — paddles out of Lyttelton Harbour 3 mornings a week at 5:30am",
+        "wrong_indicators": [
+          "Netball (Thursdays, wing defence)"
+        ],
+        "fr_response": "Aroha does waka ama. She joined a waka ama crew that paddles out of Lyttelton Harbour.",
+        "mem0_response": "Aroha plays netball, and her position is wing defence.",
+        "fr_reasoning": "The response correctly identifies waka ama and Lyttelton Harbour without mentioning any outdated information about netball.",
+        "mem0_reasoning": "The response confidently states Aroha plays netball at wing defence, which is explicitly identified as outdated/wrong information, while the correct answer is waka ama (outrigger canoeing)."
+      },
+      {
+        "question_id": "billy_q04",
+        "persona": "billy",
+        "attack_vector": "AV7_selective_forgetting",
+        "question": "Is Billy planning to build a camp at Husky Lakes?",
+        "correct_answer": "No — the camp project is dead because permafrost instability made the site unsafe (ground slumped 2 metres)",
+        "wrong_indicators": [
+          "Planning to build a traditional camp at Husky Lakes"
+        ],
+        "fr_response": "No. The plan to camp at Husky Lakes was abandoned because the ground had slumped about 2 metres since last year.",
+        "mem0_response": "I don't have enough information about Billy specifically. I only know that you are planning to build a camp at Husky Lakes.",
+        "fr_reasoning": "The response correctly states that the Husky Lakes camp plan was abandoned due to ground slumping approximately 2 metres, matching the correct answer criteria without stating any outdated information.",
+        "mem0_reasoning": "The response confidently states that the user is 'planning to build a camp at Husky Lakes,' which is exactly the outdated/wrong information flagged as incorrect — the camp project is dead due to permafrost instability."
+      },
+      {
+        "question_id": "bruna_q02",
+        "persona": "bruna",
+        "attack_vector": "AV1_superseded_preference",
+        "question": "What exercise does Bruna do regularly?",
+        "correct_answer": "Cycling (switched from running due to patellofemoral knee syndrome)",
+        "wrong_indicators": [
+          "Runs 5x/week",
+          "training for Dubai Marathon"
+        ],
+        "fr_response": "Bruna regularly cycles, including Friday morning rides at Al Qudra with a cycling group.",
+        "mem0_response": "Bruna regularly runs, with a plan to keep running 3 times a week at an easy pace. She also trains five times a week and includes strength-focused work in her fitness approach.",
+        "fr_reasoning": "The response correctly identifies cycling as Bruna's current exercise and provides specific accurate details, without mentioning the outdated running/Dubai Marathon information.",
+        "mem0_reasoning": "The response states Bruna regularly runs and trains five times a week, which matches the outdated/wrong indicators, while failing to mention cycling which is her current exercise after switching due to patellofemoral knee syndrome."
+      },
+      {
+        "question_id": "chenoa_q02",
+        "persona": "chenoa",
+        "attack_vector": "AV1_superseded_preference",
+        "question": "What vehicle does Chenoa drive?",
+        "correct_answer": "2024 Toyota Tacoma",
+        "wrong_indicators": [
+          "2015 Ford F-150"
+        ],
+        "fr_response": "Chenoa drives a 2024 Toyota Tacoma.",
+        "mem0_response": "Chenoa drives a 2015 Ford F-150. The facts also mention an older Ford F-150 that was retired.",
+        "fr_reasoning": "The response correctly identifies that Chenoa drives a 2024 Toyota Tacoma, matching the expected answer without mentioning any outdated information.",
+        "mem0_reasoning": "The response confidently states Chenoa drives a 2015 Ford F-150, which is the outdated/incorrect answer, while the correct answer is a 2024 Toyota Tacoma."
+      },
+      {
+        "question_id": "jake_q01",
+        "persona": "jake",
+        "attack_vector": "AV1_superseded_preference",
+        "question": "Does Jake vape?",
+        "correct_answer": "No — he quit vaping and is using nicotine gum instead",
+        "wrong_indicators": [
+          "vapes constantly",
+          "Juul mango pods",
+          "vapes"
+        ],
+        "fr_response": "No — Jake said he finally kicked the vape for real three weeks ago.",
+        "mem0_response": "Yes. Jake uses a Juul heavily, about 1.5 to 2 pods per day, so he does vape.",
+        "fr_reasoning": "The response correctly states that Jake quit vaping without mentioning any outdated information, though it omits the nicotine gum detail; the core answer (he no longer vapes) is accurate.",
+        "mem0_reasoning": "The response confidently states Jake vapes heavily with a Juul, which contradicts the correct answer that he quit vaping and switched to nicotine gum."
+      },
+      {
+        "question_id": "jake_q04",
+        "persona": "jake",
+        "attack_vector": "AV2_expired_logistics",
+        "question": "Does Jake have any upcoming events?",
+        "correct_answer": "Sister Bridget's wedding June 14, 2026",
+        "wrong_indicators": [
+          "journeyman exam March 8",
+          "Bruins playoff tickets April 20"
+        ],
+        "fr_response": "Yes — Jake has at least two upcoming events: a lake trip near Lake Winnipesaukee in New Hampshire, and Bridget’s wedding, where he’s a groomsman.",
+        "mem0_response": "Yes — Jake has several upcoming events: a Bruins playoff game on April 20, dealer visits this weekend, a visit to the Quincy apartment this weekend, helping Danny build a PC, a 4th or 5th date with Kayla, and a bachelor party weekend at Foxwoods.",
+        "fr_reasoning": "The response correctly references Bridget's wedding (matching the correct answer) and does not mention any of the outdated events (journeyman exam or Bruins playoff tickets); the additional lake trip detail is not flagged as wrong/outdated information.",
+        "mem0_reasoning": "The response lists the Bruins playoff tickets on April 20 as a current upcoming event (which is outdated/wrong) and completely omits Sister Bridget's wedding on June 14, 2026 (the correct answer)."
+      },
+      {
+        "question_id": "jerome_q04",
+        "persona": "jerome",
+        "attack_vector": "AV7_selective_forgetting",
+        "question": "Is Jerome planning to become an owner-operator?",
+        "correct_answer": "No — he dropped that plan. Insurance costs ($14,000/year), fuel, and maintenance make it too risky.",
+        "wrong_indicators": [
+          "Saving up $85,000 to buy his own truck"
+        ],
+        "fr_response": "No. Jerome abandoned the plan to become an owner-operator and buy his own truck because the numbers, including insurance, didn’t work out.",
+        "mem0_response": "Yes — Jerome is considering becoming an owner-operator.",
+        "fr_reasoning": "The response correctly states Jerome abandoned the owner-operator plan due to insurance costs, without mentioning the outdated saving-up detail.",
+        "mem0_reasoning": "The response states Jerome is considering becoming an owner-operator, when in fact he dropped that plan due to high insurance, fuel, and maintenance costs."
+      },
+      {
+        "question_id": "kofi_q01",
+        "persona": "kofi",
+        "attack_vector": "AV4_multi_version_fact",
+        "question": "Who does Kofi's cooperative sell cocoa through?",
+        "correct_answer": "Kuapa Kokoo (switched from Akuafo) — 960 cedis per bag plus 75 cedis fair trade premium",
+        "wrong_indicators": [
+          "Akuafo Buying Agent"
+        ],
+        "fr_response": "Kofi's cooperative sells cocoa through Kuapa Kokoo.",
+        "mem0_response": "Kofi's cooperative sells cocoa through a cooperative system with an Akuafo agent.",
+        "fr_reasoning": "The response correctly identifies Kuapa Kokoo as the selling channel, matching the correct answer without mentioning the outdated Akuafo Buying Agent.",
+        "mem0_reasoning": "The response confidently states that Kofi's cooperative sells through an Akuafo agent, which is explicitly listed as outdated/wrong information, when the correct answer is Kuapa Kokoo."
+      },
+      {
+        "question_id": "leila_q04",
+        "persona": "leila",
+        "attack_vector": "AV7_selective_forgetting",
+        "question": "Is Leila writing a book about Palestinian-Chilean architecture?",
+        "correct_answer": "No — she scrapped the book and is making a documentary instead",
+        "wrong_indicators": [
+          "Planning a book with 6 chapters outlined"
+        ],
+        "fr_response": "I don't have enough information about that. I know Leila is working on a documentary about diaspora architecture, including Palestinian influences, but nothing here says she’s writing a book.",
+        "mem0_response": "Yes. You’re writing a book about the architecture of exile of Palestinian families in Chile, using Palestinian houses in Chile as case studies.",
+        "fr_reasoning": "The response correctly identifies that Leila is working on a documentary rather than a book, aligning with the correct answer, and does not mention any outdated information about a book with chapters outlined.",
+        "mem0_reasoning": "The assistant confidently states Leila is writing a book, when in fact she scrapped the book and is making a documentary instead."
+      },
+      {
+        "question_id": "lily_q06",
+        "persona": "lily",
+        "attack_vector": "AV7_selective_forgetting",
+        "question": "Is Lily doing a semester exchange?",
+        "correct_answer": "No — she wanted to go to UBC in Vancouver but cancelled it (too expensive, would delay graduation)",
+        "wrong_indicators": [
+          "Applying for UBC exchange"
+        ],
+        "fr_response": "No. Lily abandoned the UBC semester exchange plan because the flights and Vancouver living costs were too expensive.",
+        "mem0_response": "I don't have enough information about that. The facts say you’re interested in applying for a semester exchange at UBC, but they don’t confirm that Lily is doing one.",
+        "fr_reasoning": "The response correctly states Lily is not doing the exchange and abandoned the UBC plan due to cost, though it omits the graduation delay reason; it does not present outdated information as current.",
+        "mem0_reasoning": "The response presents the outdated information ('interested in applying for a semester exchange at UBC') as a current fact from its data, completely missing the correct answer that Lily cancelled the exchange plan because it was too expensive and would delay graduation."
+      },
+      {
+        "question_id": "mehmet_q04",
+        "persona": "mehmet",
+        "attack_vector": "AV7_selective_forgetting",
+        "question": "Is Mehmet planning to open a second shop?",
+        "correct_answer": "No — he considered opening one in Moda but the plan is dead (Burak left, rent too high)",
+        "wrong_indicators": [
+          "Planning a second shop in Moda"
+        ],
+        "fr_response": "No. Mehmet abandoned the plan for a second barbershop in Moda.",
+        "mem0_response": "Yes. Mehmet is considering opening a second shop in Moda, Istanbul, though he plans to wait another two or three months to save more and train Burak further.",
+        "fr_reasoning": "The response correctly states that Mehmet abandoned the plan for a second shop in Moda, matching the correct answer without stating any outdated information.",
+        "mem0_reasoning": "The response confidently states Mehmet is planning to open a second shop in Moda, which is exactly the outdated/wrong information — the correct answer is that the plan is dead because Burak left and rent was too high."
+      },
+      {
+        "question_id": "nadia_q06",
+        "persona": "nadia",
+        "attack_vector": "AV7_selective_forgetting",
+        "question": "Is Nadia planning to stage at Noma?",
+        "correct_answer": "No — that's over. Noma closed and she can't afford the trip. She explicitly said to forget it.",
+        "wrong_indicators": [
+          "Applied to stage at Noma"
+        ],
+        "fr_response": "No. Nadia abandoned her plan to do a stage at Noma, and she told her coworker it is not happening.",
+        "mem0_response": "Yes — Nadia applied for a two-week stage at Noma in Copenhagen after thinking about it for years. However, she also intends to move on from the Noma chapter.",
+        "fr_reasoning": "The response correctly states that Nadia is not planning to stage at Noma and has abandoned the plan, which aligns with the correct answer without presenting any outdated information as current.",
+        "mem0_reasoning": "The AI confidently states Nadia applied for a stage at Noma, which is explicitly flagged as outdated/wrong information, while the correct answer is that Noma closed, she can't afford the trip, and she explicitly said to forget it."
+      },
+      {
+        "question_id": "raj_q09",
+        "persona": "raj",
+        "attack_vector": "AV3_stable_identity",
+        "question": "What's Raj's family situation?",
+        "correct_answer": "Wife Simran, son Arjun (8), daughter Preet (5). Parents in Jalandhar, Punjab — visits yearly.",
+        "wrong_indicators": [],
+        "fr_response": "Raj is married to Simran, and they have two children: Arjun, who is about 8, and Preet, who is about 5. They’ve been looking at houses in Solihull for better schools for Arjun.",
+        "mem0_response": "Raj is married to Simran, and they have children including Arjun, Preet, and Simran. Arjun is 9, and the family is attending a tournament with Preet and Raj’s parents.",
+        "fr_reasoning": "The response correctly identifies wife Simran, son Arjun (~8), and daughter Preet (~5); it omits the parents in Jalandhar but adds extra context about house-hunting in Solihull that is neither confirmed nor flagged as outdated, so no confabulation is present.",
+        "mem0_reasoning": "The response incorrectly states Arjun is 9 (should be 8), erroneously lists 'Simran' as a child (Simran is the wife), fabricates details about attending a tournament, and omits the correct information about parents in Jalandhar, Punjab with yearly visits."
+      },
+      {
+        "question_id": "zara_q09",
+        "persona": "zara",
+        "attack_vector": "AV8_numeric_preservation",
+        "question": "How much does the Al Ain museum project cost?",
+        "correct_answer": "180 million dirhams",
+        "wrong_indicators": [],
+        "fr_response": "The Al Ain museum project costs 180 million dirhams.",
+        "mem0_response": "The Al Ain museum project budget is 8,000 dirhams.",
+        "fr_reasoning": "The response correctly states the Al Ain museum project costs 180 million dirhams, matching the expected answer exactly.",
+        "mem0_reasoning": "The response states the budget is 8,000 dirhams, which is incorrect; the correct amount is 180 million dirhams."
+      }
+    ],
+    "table_f": {
+      "fr": {
+        "total": 516,
+        "abstain_count": 227,
+        "abstain_pct": 43.992248062015506,
+        "by_av": {
+          "AV1_superseded_preference": 34,
+          "AV2_expired_logistics": 33,
+          "AV3_stable_identity": 40,
+          "AV4_multi_version_fact": 17,
+          "AV5_broad_query": 20,
+          "AV6_cross_session_contradiction": 27,
+          "AV7_selective_forgetting": 22,
+          "AV8_numeric_preservation": 9,
+          "AV9_soft_supersession": 25
+        }
+      },
+      "mem0": {
+        "total": 516,
+        "abstain_count": 148,
+        "abstain_pct": 28.68217054263566,
+        "by_av": {
+          "AV1_superseded_preference": 13,
+          "AV2_expired_logistics": 26,
+          "AV3_stable_identity": 32,
+          "AV4_multi_version_fact": 10,
+          "AV5_broad_query": 14,
+          "AV6_cross_session_contradiction": 9,
+          "AV7_selective_forgetting": 5,
+          "AV8_numeric_preservation": 19,
+          "AV9_soft_supersession": 20
+        }
+      }
+    }
+  }
+}
